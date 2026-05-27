@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI &amp; Search Intelligence — Edel Roofing | RankRGV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blue: #1d4ed8; --blue-dark: #1e3a8a; --blue-light: #3b82f6;
+    --purple: #7c3aed; --dark: #0f172a; --text: #0f172a; --muted: #64748b;
+    --border: #e2e8f0; --surface: #f8fafc; --white: #ffffff;
+    --success: #10b981; --warning: #f59e0b; --danger: #ef4444;
+    --grad: linear-gradient(135deg, #1d4ed8, #7c3aed);
+  }
+  body { font-family: 'Inter', sans-serif; background: var(--surface); color: var(--text); }
+
+  .hero {
+    background: var(--dark);
+    background-image: radial-gradient(circle, rgba(124,58,237,0.20) 1px, transparent 1px);
+    background-size: 24px 24px;
+    padding: 52px 24px 44px;
+    text-align: center;
+    color: white;
+  }
+  .hero-badge {
+    display: inline-block; background: rgba(124,58,237,0.3); border: 1px solid rgba(124,58,237,0.5);
+    border-radius: 20px; padding: 5px 14px; font-size: 12px; color: #c4b5fd;
+    letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 20px;
+  }
+  .hero h1 { font-size: 36px; font-weight: 800; margin-bottom: 10px; }
+  .hero h1 span { background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero-sub { font-size: 16px; color: #94a3b8; max-width: 600px; margin: 0 auto 32px; line-height: 1.6; }
+  .hero-meta { font-size: 13px; color: #475569; margin-top: 24px; }
+
+  .hero-stats { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 32px; }
+  .hero-stat { text-align: center; }
+  .hero-stat-val { font-size: 40px; font-weight: 800; line-height: 1; }
+  .hero-stat-val.red { color: #f87171; }
+  .hero-stat-val.amber { color: #fbbf24; }
+  .hero-stat-val.green { color: #34d399; }
+  .hero-stat-val.purple { color: #a78bfa; }
+  .hero-stat-label { font-size: 12px; color: #64748b; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.05em; max-width: 150px; }
+
+  .tabs-wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px 60px; }
+  .tab-nav {
+    display: flex; gap: 4px; flex-wrap: wrap;
+    border-bottom: 2px solid var(--border); margin: 32px 0 28px;
+  }
+  .tab-btn {
+    padding: 10px 18px; font-size: 13px; font-weight: 500; color: var(--muted);
+    background: none; border: none; cursor: pointer; border-bottom: 2px solid transparent;
+    margin-bottom: -2px; border-radius: 6px 6px 0 0; transition: all 0.2s;
+  }
+  .tab-btn:hover { color: var(--blue); background: #eff6ff; }
+  .tab-btn.active { color: var(--blue); border-bottom-color: var(--blue); font-weight: 700; }
+  .tab-btn.headline { color: var(--purple); }
+  .tab-btn.headline.active { color: var(--purple); border-bottom-color: var(--purple); }
+  .tab-pane { display: none; }
+  .tab-pane.active { display: block; }
+
+  .section { margin-bottom: 36px; }
+  .section-title { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+  .section-sub { font-size: 14px; color: var(--muted); margin-bottom: 20px; }
+
+  .rank-table { width: 100%; border-collapse: collapse; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.07); border: 1px solid var(--border); }
+  .rank-table th { background: #f1f5f9; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); padding: 12px 16px; text-align: left; }
+  .rank-table td { padding: 14px 16px; font-size: 14px; border-top: 1px solid var(--border); vertical-align: middle; }
+  .rank-table tr.cm-row { background: #eff6ff; }
+  .rank-table tr.cm-row td { font-weight: 600; color: var(--blue-dark); }
+  .rank-table tr:hover { background: #f8fafc; }
+  .rank-table tr.cm-row:hover { background: #dbeafe; }
+
+  .rank-badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 32px; height: 32px; border-radius: 50%; font-weight: 700; font-size: 14px;
+  }
+  .rank-1 { background: #fef3c7; color: #92400e; }
+  .rank-2 { background: #f1f5f9; color: #475569; }
+  .rank-3 { background: #fef3c7; color: #92400e; }
+  .rank-4 { background: #fff7ed; color: #9a3412; }
+  .rank-low { background: #fee2e2; color: #991b1b; }
+  .rank-mid { background: #fff7ed; color: #9a3412; }
+  .rank-none { background: #f1f5f9; color: #94a3b8; }
+
+  .tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+  .tag-cm { background: #dbeafe; color: #1e40af; border: 1px solid #93c5fd; }
+  .tag-threat { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
+  .tag-win { background: #dcfce7; color: #166534; border: 1px solid #86efac; }
+  .tag-improved { background: #dcfce7; color: #166534; border: 1px solid #86efac; font-size: 11px; padding: 2px 8px; border-radius: 4px; font-weight: 700; display: inline-block; }
+
+  .opp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+  .opp-card { background: white; border-radius: 12px; border: 1px solid var(--border); padding: 22px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .opp-num { font-size: 32px; font-weight: 800; background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 8px; }
+  .opp-title { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+  .opp-body { font-size: 13px; color: var(--muted); line-height: 1.6; }
+  .opp-result { margin-top: 12px; font-size: 13px; font-weight: 600; color: var(--success); }
+
+  .comp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+  .comp-card { background: white; border-radius: 12px; border: 1px solid var(--border); padding: 22px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .comp-card.threat { border-left: 4px solid var(--danger); }
+  .comp-card.medium { border-left: 4px solid var(--warning); }
+  .comp-card.low { border-left: 4px solid var(--success); }
+  .comp-name { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+  .comp-meta { font-size: 12px; color: var(--muted); margin-bottom: 14px; }
+  .comp-row { display: flex; justify-content: space-between; font-size: 13px; padding: 6px 0; border-top: 1px solid #f1f5f9; }
+  .comp-row-label { color: var(--muted); }
+  .comp-row-val { font-weight: 600; }
+  .comp-edge { margin-top: 12px; font-size: 13px; color: var(--muted); line-height: 1.5; }
+  .comp-edge strong { color: var(--text); }
+
+  .callout { border-radius: 10px; padding: 18px 20px; margin-bottom: 24px; font-size: 14px; line-height: 1.6; }
+  .callout.blue { background: #eff6ff; border: 1px solid #bfdbfe; color: #1e40af; }
+  .callout.amber { background: #fffbeb; border: 1px solid #fde68a; color: #92400e; }
+  .callout.green { background: #f0fdf4; border: 1px solid #bbf7d0; color: #14532d; }
+  .callout.red { background: #fff1f2; border: 1px solid #fecdd3; color: #9f1239; }
+  .callout.purple { background: #faf5ff; border: 1px solid #e9d5ff; color: #6b21a8; }
+
+  .footer { text-align: center; padding: 32px; font-size: 13px; color: #94a3b8; border-top: 1px solid var(--border); }
+  .footer a { color: var(--blue); text-decoration: none; }
+
+  .vs-wrap { background: white; border-radius: 12px; border: 1px solid var(--border); padding: 24px; margin-bottom: 20px; }
+  .vs-title { font-size: 14px; font-weight: 600; margin-bottom: 16px; color: var(--muted); }
+  .vs-row { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+  .vs-label { width: 220px; font-size: 13px; font-weight: 500; flex-shrink: 0; }
+  .vs-label.them { color: var(--danger); }
+  .vs-label.cm { color: var(--blue); }
+  .vs-bar-track { flex: 1; background: #f1f5f9; border-radius: 4px; height: 10px; overflow: hidden; }
+  .vs-bar-fill { height: 100%; border-radius: 4px; }
+  .vs-bar-fill.them { background: var(--danger); }
+  .vs-bar-fill.cm { background: var(--blue); }
+  .vs-bar-fill.neutral { background: var(--warning); }
+  .vs-val { width: 64px; font-size: 13px; font-weight: 700; text-align: right; flex-shrink: 0; }
+
+  /* AEO SCORE */
+  .aeo-hero { display: grid; grid-template-columns: 260px 1fr; gap: 28px; align-items: center; background: var(--dark); border-radius: 16px; padding: 32px; color: white; margin-bottom: 28px; background-image: radial-gradient(circle, rgba(124,58,237,0.14) 1px, transparent 1px); background-size: 20px 20px; }
+  @media (max-width: 700px) { .aeo-hero { grid-template-columns: 1fr; text-align: center; } }
+  .aeo-ring { position: relative; width: 200px; height: 200px; margin: 0 auto; }
+  .aeo-ring svg { transform: rotate(-90deg); }
+  .aeo-ring-num { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .aeo-ring-num .n { font-size: 56px; font-weight: 800; line-height: 1; }
+  .aeo-ring-num .band { font-size: 12px; color: #c4b5fd; text-transform: uppercase; letter-spacing: 0.08em; margin-top: 4px; }
+  .aeo-hero h3 { font-size: 22px; font-weight: 800; margin-bottom: 10px; }
+  .aeo-hero p { color: #94a3b8; font-size: 14px; line-height: 1.7; margin-bottom: 8px; }
+  .aeo-cats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 24px; margin-top: 16px; }
+  @media (max-width: 700px) { .aeo-cats { grid-template-columns: 1fr; } }
+  .aeo-cat { }
+  .aeo-cat-top { display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 4px; }
+  .aeo-cat-label { color: #cbd5e1; }
+  .aeo-cat-val { font-weight: 700; color: white; font-family: 'JetBrains Mono', monospace; }
+  .aeo-cat-track { background: rgba(255,255,255,0.08); height: 6px; border-radius: 4px; overflow: hidden; }
+  .aeo-cat-fill { height: 100%; border-radius: 4px; }
+
+  .layer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
+  .layer-card { background: white; border-radius: 12px; border: 1px solid var(--border); padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); border-top: 3px solid var(--purple); }
+  .layer-num { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--purple); margin-bottom: 8px; }
+  .layer-title { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+  .layer-body { font-size: 13px; color: var(--muted); line-height: 1.6; }
+  .layer-status { margin-top: 12px; font-size: 12px; font-weight: 700; }
+  .layer-status.bad { color: var(--danger); }
+  .layer-status.warn { color: var(--warning); }
+  .layer-status.good { color: var(--success); }
+
+  .stat-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; }
+  @media (max-width: 700px) { .stat-strip { grid-template-columns: 1fr; } }
+  .stat-box { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+  .stat-box-num { font-size: 30px; font-weight: 800; color: var(--purple); }
+  .stat-box-label { font-size: 13px; color: var(--muted); margin-top: 4px; line-height: 1.4; }
+  .stat-box-src { font-size: 11px; color: #94a3b8; margin-top: 8px; }
+
+  /* AUTOMATION DIAGRAM */
+  .flow { background: white; border: 1px solid var(--border); border-radius: 14px; padding: 32px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); margin-bottom: 24px; }
+  .flow-row { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
+  .flow-node { background: var(--dark); color: white; border-radius: 12px; padding: 18px 22px; text-align: center; min-width: 150px; }
+  .flow-node .fn-icon { font-size: 24px; margin-bottom: 6px; }
+  .flow-node .fn-title { font-size: 14px; font-weight: 700; }
+  .flow-node .fn-sub { font-size: 11px; color: #94a3b8; margin-top: 3px; }
+  .flow-engine { background: var(--grad); }
+  .flow-engine .fn-sub { color: #e0e7ff; }
+  .flow-arrow { font-size: 24px; color: var(--purple); font-weight: 700; }
+  .flow-arrow.down { width: 100%; text-align: center; margin: 8px 0; }
+  .flow-fanout { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px; margin-top: 4px; }
+  .flow-platform { background: #f8fafc; border: 1px solid var(--border); border-radius: 10px; padding: 14px 10px; text-align: center; }
+  .flow-platform .fp-icon { font-size: 22px; }
+  .flow-platform .fp-name { font-size: 12px; font-weight: 700; margin-top: 4px; }
+  .flow-platform .fp-format { font-size: 10px; color: var(--muted); margin-top: 2px; }
+
+  /* SIDE NAV */
+  .sidenav { position: fixed; left: 20px; top: 50%; transform: translateY(-50%); z-index: 200; display: flex; flex-direction: column; gap: 6px; }
+  .sidenav-item { display: flex; align-items: center; gap: 10px; padding: 10px 16px; border-radius: 10px; cursor: pointer; background: white; border: 1px solid var(--border); font-size: 12px; font-weight: 600; color: var(--muted); transition: all 0.18s; white-space: nowrap; box-shadow: 0 1px 4px rgba(0,0,0,0.08); user-select: none; }
+  .sidenav-item:hover { color: var(--blue); border-color: #93c5fd; background: #f0f7ff; }
+  .sidenav-item.active { color: var(--blue); border-color: var(--blue); border-left: 3px solid var(--blue); background: #eff6ff; font-weight: 700; }
+  .sidenav-dot { width: 7px; height: 7px; border-radius: 50%; background: #cbd5e1; flex-shrink: 0; transition: background 0.18s; }
+  .sidenav-item.active .sidenav-dot { background: var(--blue); }
+  @media (max-width: 1180px) { .sidenav { display: none; } }
+
+  /* SERVICES INTRO */
+  .services-intro { max-width: 1100px; margin: 0 auto; padding: 48px 24px 0; }
+  .services-intro-headline { font-size: 20px; font-weight: 700; color: var(--dark); margin-bottom: 6px; }
+  .services-intro-sub { font-size: 14px; color: var(--muted); margin-bottom: 28px; }
+  .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 20px; }
+  @media (max-width: 800px) { .services-grid { grid-template-columns: 1fr; } }
+  .service-card { background: white; border-radius: 14px; border: 1px solid var(--border); padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); position: relative; overflow: hidden; }
+  .service-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--grad); }
+  .service-icon { font-size: 28px; margin-bottom: 12px; }
+  .service-name { font-size: 15px; font-weight: 800; color: var(--dark); margin-bottom: 6px; }
+  .service-desc { font-size: 13px; color: var(--muted); line-height: 1.6; margin-bottom: 14px; }
+  .service-includes { font-size: 12px; color: var(--text); line-height: 1.8; }
+  .service-includes strong { color: var(--blue); }
+  .services-note { font-size: 13px; color: var(--muted); background: #f8fafc; border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px; line-height: 1.6; }
+  .services-note strong { color: var(--dark); }
+
+  /* ONE-PAGER */
+  .onepager { background: #ffffff; max-width: 1100px; margin: 0 auto; padding: 48px 24px 0; }
+  .op-headline { font-size: 28px; font-weight: 800; color: var(--dark); margin-bottom: 6px; }
+  .op-sub { font-size: 16px; color: var(--muted); margin-bottom: 40px; }
+  .op-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 32px; }
+  @media (max-width: 700px) { .op-grid { grid-template-columns: 1fr; } }
+  .op-card { border-radius: 14px; padding: 26px 28px; border: 1px solid var(--border); box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .op-card.dark { background: var(--dark); color: white; border-color: transparent; background-image: radial-gradient(circle, rgba(124,58,237,0.12) 1px, transparent 1px); background-size: 18px 18px; }
+  .op-card.light { background: white; }
+  .op-card-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #64748b; margin-bottom: 14px; }
+  .op-card.dark .op-card-label { color: #a78bfa; }
+  .op-stat-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 10px; }
+  .op-stat-num { font-size: 44px; font-weight: 800; line-height: 1; }
+  .op-stat-num.amber { color: #f59e0b; }
+  .op-stat-num.red { color: #ef4444; }
+  .op-stat-num.green { color: #34d399; }
+  .op-stat-num.blue { color: #3b82f6; }
+  .op-stat-num.purple { color: #a78bfa; }
+  .op-stat-desc { font-size: 14px; color: var(--muted); line-height: 1.5; }
+  .op-card.dark .op-stat-desc { color: #94a3b8; }
+  .op-divider { border: none; border-top: 1px solid var(--border); margin: 10px 0; }
+  .op-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-top: 1px solid rgba(255,255,255,0.07); font-size: 14px; }
+  .op-card.light .op-row { border-top-color: var(--border); }
+  .op-row-label { color: #94a3b8; }
+  .op-card.light .op-row-label { color: var(--muted); }
+  .op-row-val { font-weight: 700; color: white; }
+  .op-card.light .op-row-val { color: var(--dark); }
+  .op-row-val.bad { color: #f87171; }
+  .op-row-val.warn { color: #fbbf24; }
+  .op-row-val.good { color: #34d399; }
+  .op-plan { background: white; border: 1px solid var(--border); border-radius: 14px; padding: 28px; margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .op-plan-title { font-size: 16px; font-weight: 700; margin-bottom: 20px; color: var(--dark); }
+  .op-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 0; }
+  .op-step { padding: 0 20px 0 0; border-right: 1px solid var(--border); }
+  .op-step:last-child { border-right: none; padding-right: 0; }
+  .op-step-period { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--blue); margin-bottom: 8px; }
+  .op-step-title { font-size: 14px; font-weight: 700; color: var(--dark); margin-bottom: 6px; }
+  .op-step-body { font-size: 12px; color: var(--muted); line-height: 1.6; }
+  .op-pricing { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 12px; }
+  @media (max-width: 700px) { .op-pricing { grid-template-columns: 1fr; } .op-steps { grid-template-columns: 1fr 1fr; } .op-step { border-right: none; padding-right: 0; border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 4px; } .op-step:last-child { border-bottom: none; } }
+  .op-price-card { border-radius: 12px; border: 1px solid var(--border); padding: 20px; text-align: center; background: white; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+  .op-price-card.featured { border: 2px solid var(--purple); }
+  .op-price-name { font-size: 13px; font-weight: 700; color: var(--muted); margin-bottom: 8px; }
+  .op-price-num { font-size: 32px; font-weight: 800; color: var(--dark); }
+  .op-price-period { font-size: 13px; color: var(--muted); }
+  .op-price-desc { font-size: 12px; color: var(--muted); margin-top: 8px; line-height: 1.5; }
+  .op-scroll-hint { text-align: center; padding: 28px 0 0; color: var(--muted); font-size: 13px; }
+  .op-scroll-hint .arrow { font-size: 20px; display: block; margin-top: 6px; animation: bounce 1.5s infinite; }
+  @keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(6px)} }
+
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 26px; }
+    .hero-stats { gap: 24px; }
+    .hero-stat-val { font-size: 32px; }
+    .tab-btn { padding: 8px 12px; font-size: 12px; }
+    .aeo-ring { width: 160px; height: 160px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- SIDE NAV -->
+<nav class="sidenav" id="sidenav">
+  <div class="sidenav-item active" data-nav="services" onclick="navTo('services')">
+    <span class="sidenav-dot"></span>What RankRGV Does
+  </div>
+  <div class="sidenav-item" data-nav="onepager" onclick="navTo('onepager')">
+    <span class="sidenav-dot"></span>Where You Stand
+  </div>
+  <div class="sidenav-item" data-nav="aivisibility" onclick="navTo('aivisibility')">
+    <span class="sidenav-dot"></span>AI Visibility
+  </div>
+  <div class="sidenav-item" data-nav="plan" onclick="navTo('plan')">
+    <span class="sidenav-dot"></span>The Plan
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">AI &amp; Search Intelligence Report</div>
+  <h1>Edel Roofing<br><span>Get Found by Customers — and the AI They Ask</span></h1>
+  <p class="hero-sub">You already lead Edinburg on reviews. This report shows where you stand in Google today, what's holding back the rest, and how we get you recommended when someone asks ChatGPT or Gemini for a Valley roofer. Built from live Google &amp; Maps data, pulled May 26, 2026.</p>
+
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="hero-stat-val purple">59<span style="font-size:20px">/100</span></div>
+      <div class="hero-stat-label">AI Visibility readiness — "Emerging"</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-val green">#3</div>
+      <div class="hero-stat-label">Edinburg map pack (4.8&#9733;)</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-val green">244</div>
+      <div class="hero-stat-label">Google reviews — most in the Edinburg pack</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-val amber">17</div>
+      <div class="hero-stat-label">Keywords ranked vs Marva's 123</div>
+    </div>
+  </div>
+  <div class="hero-meta">Prepared by RankRGV &middot; McAllen, TX &middot; rankrgv.com &middot; hello@rankrgv.com</div>
+</div>
+
+<!-- SERVICES INTRO -->
+<div class="services-intro" id="section-services">
+  <div class="services-intro-headline">What We'd Do — and How It Applies to You</div>
+  <div class="services-intro-sub">You said it yourself: you don't want to reinvent the wheel, you want to own everything, and you want to be the name AI recommends. Here's how that breaks down. Start with one layer, add the rest when you're ready.</div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon">&#129302;</div>
+      <div class="service-name">AI Visibility &amp; Local SEO</div>
+      <div class="service-desc">We make Edel the business that ChatGPT, Gemini, and Google's AI recommend when someone asks for a Valley roofer — and tighten the same signals that move your Google Maps and organic rankings. It's one body of work, not two.</div>
+      <div class="service-includes">
+        <strong>Includes:</strong><br>
+        AI-readiness fixes (schema, answer-first content)<br>
+        Google Business Profile optimization<br>
+        City pages built for real local targeting<br>
+        Bing indexation (where ChatGPT looks)<br>
+        Monthly rank + AI-mention tracking
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">&#9881;&#65039;</div>
+      <div class="service-name">Content &amp; Automation</div>
+      <div class="service-desc">You post once — we reformat and publish everywhere (YouTube, Facebook, Instagram, TikTok, your Profile). Plus consistent educational blog content written the way AI likes to read it, so it doubles as ranking fuel and citation bait.</div>
+      <div class="service-includes">
+        <strong>Includes:</strong><br>
+        Post-once &rarr; multi-platform distribution<br>
+        Educational blog cadence (EN + ES)<br>
+        YouTube channel setup<br>
+        HeyGen AI-clone workflow rebuild<br>
+        Platform-specific reformatting
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">&#127919;</div>
+      <div class="service-name">Paid Ads Management</div>
+      <div class="service-desc">You're already spending on Google. We make sure it's tracked, targeted, and tied to the right landing pages — so you stop guessing whether the money is working, and capture storm-season demand the moment it spikes.</div>
+      <div class="service-includes">
+        <strong>Includes:</strong><br>
+        Google Ads structure + call tracking<br>
+        City + storm-season targeting<br>
+        Landing-page alignment<br>
+        Meta (FB/IG) retargeting available<br>
+        Monthly spend + conversion reporting
+      </div>
+    </div>
+  </div>
+  <div class="services-note">
+    <strong>How we work together:</strong> You own everything — every domain, every account, every asset. We work under your name with the access you grant, and you keep all of it no matter what. We start month-to-month for the first three months — no pressure, no lock-in. That gives us time to show results and confirm we're a good fit. After month three, we move to 3-month agreements so we can execute longer-term strategy together. No setup fees. No surprises.
+  </div>
+</div>
+<!-- END SERVICES INTRO -->
+
+<!-- ONE-PAGER SUMMARY -->
+<div class="onepager" id="section-onepager">
+
+  <div class="op-headline">Here's where you stand — and what we'd do about it.</div>
+  <div class="op-sub">A plain-language summary before the data. You're further ahead than most — the gaps are specific and fixable.</div>
+
+  <div class="op-grid">
+
+    <div class="op-card dark">
+      <div class="op-card-label">Where You Are Right Now</div>
+
+      <div class="op-stat-row">
+        <div class="op-stat-num purple">59<span style="font-size:20px">/100</span></div>
+        <div class="op-stat-desc">AI Visibility readiness — "Emerging." Strong reputation, but the AI-trust and content layers are unbuilt.</div>
+      </div>
+      <div class="op-stat-row" style="margin-top:6px">
+        <div class="op-stat-num green">#3</div>
+        <div class="op-stat-desc">Edinburg map pack — and you have more reviews than the #1 and #2 shops combined.</div>
+      </div>
+
+      <hr class="op-divider" style="border-color:rgba(255,255,255,0.08);margin:18px 0">
+
+      <div class="op-row"><span class="op-row-label">Google reviews (Edinburg pack)</span><span class="op-row-val good">244 — the leader</span></div>
+      <div class="op-row"><span class="op-row-label">Edinburg keywords you rank for</span><span class="op-row-val good">7 of 9, 5 in top 10</span></div>
+      <div class="op-row"><span class="op-row-label">Total keywords vs Marva Roofing</span><span class="op-row-val warn">17 vs 123</span></div>
+      <div class="op-row"><span class="op-row-label">Review count in your schema</span><span class="op-row-val bad">Not shown — 244 wasted</span></div>
+      <div class="op-row"><span class="op-row-label">Phone: website vs Google listing</span><span class="op-row-val bad">Mismatch</span></div>
+    </div>
+
+    <div class="op-card light">
+      <div class="op-card-label">Why It's Happening</div>
+      <div style="font-size:14px;color:var(--muted);line-height:1.8;">
+        <p style="margin-bottom:14px"><strong>You found us through Gemini.</strong> That's the whole thesis — AI already routes roofing questions, and the businesses it recommends are the ones it can verify. Your site is structurally solid, but it's missing the signals that make you easy for AI to trust and quote: your 244 reviews aren't in your structured data, your phone number doesn't match between your site and your Google listing, and your pages aren't written answer-first.</p>
+        <p style="margin-bottom:14px"><strong>On the search side</strong>, you own Edinburg on the terms that matter — but Marva Roofing ranks for 7&times; more keywords because they have the service and city pages you don't. That's a content gap, not a quality gap.</p>
+        <p>None of this is a rebuild. It's targeted work on a good foundation.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- roadmap -->
+  <div class="op-plan">
+    <div class="op-plan-title">What Happens — Month by Month</div>
+    <div class="op-steps">
+      <div class="op-step">
+        <div class="op-step-period">Week 1</div>
+        <div class="op-step-title">Fix the Trust Signals</div>
+        <div class="op-step-body">Match your phone everywhere, add your 244 reviews into your structured data, clean up duplicate code, point your listing to the right page. The AI-trust layer, fixed fast.</div>
+      </div>
+      <div class="op-step">
+        <div class="op-step-period">Weeks 2&ndash;4</div>
+        <div class="op-step-title">Strengthen Edinburg</div>
+        <div class="op-step-body">Rewrite your top pages answer-first (how AI reads), add FAQs, and verify Bing — where ChatGPT looks. Push "roofing companies edinburg tx" from #2 to #1.</div>
+      </div>
+      <div class="op-step">
+        <div class="op-step-period">Month 2</div>
+        <div class="op-step-title">Build the Content Engine</div>
+        <div class="op-step-body">Service + city pages (hail, storm, replacement, metal, commercial) — real content, not copy-paste. Each one a new way to get found and cited. Bilingual where it counts.</div>
+      </div>
+      <div class="op-step">
+        <div class="op-step-period">Month 2&ndash;3</div>
+        <div class="op-step-title">Turn On Automation</div>
+        <div class="op-step-body">Post once &rarr; everywhere. YouTube live. HeyGen clone workflow rebuilt so video stops being a chore. Your social presence runs without eating your week.</div>
+      </div>
+      <div class="op-step">
+        <div class="op-step-period">Month 3&ndash;6</div>
+        <div class="op-step-title">Compound &amp; Expand</div>
+        <div class="op-step-body">Edinburg map pack pushing #1. AI mentions tracked and growing. Then roll the same playbook into McAllen and Pharr.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pricing (hidden until P key) -->
+  <div id="op-pricing-section" style="display:none">
+  <div class="op-plan" style="margin-bottom:0">
+    <div class="op-plan-title">Investment Options</div>
+    <div class="op-pricing">
+      <div class="op-price-card">
+        <div class="op-price-name">AI + Local Foundation</div>
+        <div><span class="op-price-num">$850</span><span class="op-price-period">/mo</span></div>
+        <div class="op-price-desc">AI-readiness fixes, GBP optimization, Edinburg page work, schema + reviews, monthly tracking. The core.</div>
+      </div>
+      <div class="op-price-card featured">
+        <div class="op-price-name" style="color:var(--purple)">Growth — Most Popular</div>
+        <div><span class="op-price-num">$1,250</span><span class="op-price-period">/mo</span></div>
+        <div class="op-price-desc">Foundation + city pages, blog content engine (EN/ES), and post-once content automation. Built to expand.</div>
+      </div>
+      <div class="op-price-card">
+        <div class="op-price-name">Full Partner</div>
+        <div><span class="op-price-num">$1,800</span><span class="op-price-period">/mo</span></div>
+        <div class="op-price-desc">Everything in Growth + Google Ads management, video/HeyGen workflow, and full bilingual buildout.</div>
+      </div>
+    </div>
+    <p style="font-size:13px;color:var(--muted);text-align:center;margin-top:12px">You own every asset. Month-to-month for the first three months, then 3-month agreements. No setup fees. No surprises. Your site stays as-is — no rebuild needed.</p>
+  </div>
+  </div>
+
+  <div class="op-scroll-hint">
+    The data behind this is below — scroll or use the tabs to dig in. Start with <strong>AI Visibility</strong>.
+    <span class="arrow">&#8595;</span>
+  </div>
+
+</div>
+<!-- END ONE-PAGER -->
+
+<div class="tabs-wrap" id="section-tabs">
+
+  <nav class="tab-nav">
+    <button class="tab-btn active" onclick="showTab('stand')">Where You Stand</button>
+    <button class="tab-btn headline" onclick="showTab('ai')">&#129302; AI Visibility</button>
+    <button class="tab-btn" onclick="showTab('mappack')">Map Pack &amp; Reviews</button>
+    <button class="tab-btn" onclick="showTab('citypages')">City Pages</button>
+    <button class="tab-btn" onclick="showTab('content')">Content Engine</button>
+    <button class="tab-btn" onclick="showTab('automation')">Automation</button>
+    <button class="tab-btn" onclick="showTab('competitors')">Competitors</button>
+    <button class="tab-btn" onclick="showTab('plan')">The Plan</button>
+  </nav>
+
+  <!-- TAB: WHERE YOU STAND -->
+  <div id="tab-stand" class="tab-pane active">
+    <div class="callout green">
+      <strong>Lead with the good news:</strong> In the Edinburg map pack you sit at <strong>#3 with 4.8&#9733; and 244 reviews</strong> — more than the #1 shop (64) and #2 shop (40) combined. On reviews, the hardest thing to build, you've already won. The rest of this report is about removing what's holding the other pieces back.
+    </div>
+
+    <div class="stat-strip">
+      <div class="stat-box"><div class="stat-box-num" style="color:var(--success)">7 / 9</div><div class="stat-box-label">Edinburg-intent keywords you already rank for (5 in the top 10, 2 at #1)</div></div>
+      <div class="stat-box"><div class="stat-box-num" style="color:var(--blue)">#2</div><div class="stat-box-label">Organic for "roofing companies edinburg tx" — one push from #1</div></div>
+      <div class="stat-box"><div class="stat-box-num" style="color:var(--warning)">17</div><div class="stat-box-label">Total keywords ranked — vs Marva Roofing's 123. The content gap.</div></div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">The Quick Wins We'd Hit First</div>
+      <div class="section-sub">Small fixes on a strong site. Each one is days, not months.</div>
+      <table class="rank-table">
+        <thead><tr><th>What</th><th>Where you are</th><th>The fix</th><th>Effort</th></tr></thead>
+        <tbody>
+          <tr><td>Your 244 reviews in structured data</td><td class="status-missing" style="color:var(--danger);font-weight:600">Not present</td><td>Add aggregateRating &rarr; star snippets in Google + an AI trust signal</td><td>2 hrs</td></tr>
+          <tr><td>Phone: website vs Google listing</td><td style="color:var(--danger);font-weight:600">Mismatch</td><td>Make every number match — a known Maps ranking drag</td><td>30 min</td></tr>
+          <tr><td>"construction companies edinburg tx"</td><td>#12 (3 variants)</td><td>One page strengthened &rarr; top 10 on all three at once</td><td>1 day</td></tr>
+          <tr><td>"roofing companies edinburg tx"</td><td>#2 (behind BBB)</td><td>Answer-first rewrite &rarr; push to #1</td><td>1 day</td></tr>
+          <tr><td>Spanish content</td><td>Page shell only</td><td>Feed the /es-mx/ side you already have — uncontested lane</td><td>Ongoing</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout blue">
+      <strong>The honest framing:</strong> You don't need a new website. You need your existing one to send the signals that match the business you actually run — a 15-year, 244-review roofer that customers already trust. Right now the site undersells you to both Google and AI.
+    </div>
+  </div>
+
+  <!-- TAB: AI VISIBILITY (HEADLINE) -->
+  <div id="tab-ai" class="tab-pane">
+
+    <div class="callout purple">
+      <strong>You found RankRGV through Gemini.</strong> That's not a coincidence — it's the entire opportunity. AI tools already answer "who's a good roofer in the Valley?" The businesses they name are the ones the AI can <em>verify</em>: consistent listings, structured data, reviews it can read, and content written to answer questions directly. Here's how ready Edel is today.
+    </div>
+
+    <div class="aeo-hero">
+      <div>
+        <div class="aeo-ring">
+          <svg width="200" height="200" viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="86" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="16"></circle>
+            <circle cx="100" cy="100" r="86" fill="none" stroke="#a78bfa" stroke-width="16" stroke-linecap="round"
+                    stroke-dasharray="540" stroke-dashoffset="221"></circle>
+          </svg>
+          <div class="aeo-ring-num"><span class="n">59</span><span class="band">Emerging</span></div>
+        </div>
+      </div>
+      <div>
+        <h3>AI Visibility Readiness: 59 / 100</h3>
+        <p>You score in the <strong>"Emerging"</strong> band — meaning you have real, usable signals (your reviews and rankings carry you), but clear weaknesses in entity consistency, content structure, and AI/Bing indexation are holding back how often AI can confidently recommend you. The foundation is good. The AI-readiness layer is unbuilt.</p>
+        <div class="aeo-cats">
+          <div class="aeo-cat"><div class="aeo-cat-top"><span class="aeo-cat-label">Entity &amp; Trust</span><span class="aeo-cat-val">16/25</span></div><div class="aeo-cat-track"><div class="aeo-cat-fill" style="width:64%;background:#f59e0b"></div></div></div>
+          <div class="aeo-cat"><div class="aeo-cat-top"><span class="aeo-cat-label">Content Structure</span><span class="aeo-cat-val">11/25</span></div><div class="aeo-cat-track"><div class="aeo-cat-fill" style="width:44%;background:#ef4444"></div></div></div>
+          <div class="aeo-cat"><div class="aeo-cat-top"><span class="aeo-cat-label">Local &amp; Reputation</span><span class="aeo-cat-val">14/20</span></div><div class="aeo-cat-track"><div class="aeo-cat-fill" style="width:70%;background:#10b981"></div></div></div>
+          <div class="aeo-cat"><div class="aeo-cat-top"><span class="aeo-cat-label">Indexation &amp; Tech</span><span class="aeo-cat-val">11/15</span></div><div class="aeo-cat-track"><div class="aeo-cat-fill" style="width:73%;background:#10b981"></div></div></div>
+          <div class="aeo-cat"><div class="aeo-cat-top"><span class="aeo-cat-label">Third-Party Proof</span><span class="aeo-cat-val">5/10</span></div><div class="aeo-cat-track"><div class="aeo-cat-fill" style="width:50%;background:#f59e0b"></div></div></div>
+          <div class="aeo-cat"><div class="aeo-cat-top"><span class="aeo-cat-label">Current AI Visibility</span><span class="aeo-cat-val">2/5</span></div><div class="aeo-cat-track"><div class="aeo-cat-fill" style="width:40%;background:#f59e0b"></div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">What the Research Actually Says</div>
+      <div class="section-sub">No hype. These are the numbers we'd stake our name on.</div>
+      <div class="stat-strip">
+        <div class="stat-box"><div class="stat-box-num">86%</div><div class="stat-box-label">of AI citations come from brand-managed sources — your website, listings, and reviews. Not random web pages.</div><div class="stat-box-src">Yext, across ChatGPT / Gemini / Perplexity</div></div>
+        <div class="stat-box"><div class="stat-box-num">55.8%</div><div class="stat-box-label">of pages AI cites also ranked in Google's top 20. AI visibility and SEO are the same fight.</div><div class="stat-box-src">AirOps, via Search Engine Land</div></div>
+        <div class="stat-box"><div class="stat-box-num">87%</div><div class="stat-box-label">of ChatGPT-style citations match Bing's top results. If Bing can't see you, ChatGPT can't quote you.</div><div class="stat-box-src">Seer Interactive</div></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">The Four Layers We Build — and Your Gaps in Each</div>
+      <div class="section-sub">AI recommends businesses it can trust, understand, extract, and corroborate. Here's where Edel sits.</div>
+      <div class="layer-grid">
+        <div class="layer-card">
+          <div class="layer-num">Layer 1</div>
+          <div class="layer-title">Entity &amp; Trust</div>
+          <div class="layer-body">Can a machine confirm who you are? Consistent name, address, phone, schema, and profiles.</div>
+          <div class="layer-status bad">Gap: phone mismatch (site vs Google), no sameAs links, Bing unverified</div>
+        </div>
+        <div class="layer-card">
+          <div class="layer-num">Layer 2</div>
+          <div class="layer-title">Answerable Content</div>
+          <div class="layer-body">Pages that answer the question right after the heading, with FAQs and clear structure AI can lift.</div>
+          <div class="layer-status bad">Gap: no FAQ blocks, not answer-first, no city/service depth</div>
+        </div>
+        <div class="layer-card">
+          <div class="layer-num">Layer 3</div>
+          <div class="layer-title">Local &amp; Reputation</div>
+          <div class="layer-body">Reviews, profile quality, and local corroboration that back up the recommendation.</div>
+          <div class="layer-status good">Strong: 244 reviews, 4.8&#9733; — but not surfaced in schema yet</div>
+        </div>
+        <div class="layer-card">
+          <div class="layer-num">Layer 4</div>
+          <div class="layer-title">Third-Party Proof</div>
+          <div class="layer-body">Directories, best-of lists, associations, and mentions that tell AI you're known and real.</div>
+          <div class="layer-status warn">Partial: BBB + manufacturer certs; thin on local listicles + YouTube</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout blue">
+      <strong>How we'd prove it works:</strong> We test a set of real prompts — "best roofer in Edinburg TX," "who should I hire to replace my roof in the Rio Grande Valley," "emergency roof repair near McAllen" — across ChatGPT, Gemini, and Perplexity, monthly. You see exactly when and where Edel starts getting named. That's the scoreboard.
+    </div>
+  </div>
+
+  <!-- TAB: MAP PACK & REVIEWS -->
+  <div id="tab-mappack" class="tab-pane">
+    <div class="callout green">
+      <strong>Edinburg map pack — you're #3, and you're the review leader.</strong> The two shops above you win on physical proximity to the map's center, not on trust. You have 244 reviews; they have 64 and 40. Close the proximity gap with profile activity and review velocity, and #1 is realistic within six months.
+    </div>
+
+    <div class="section">
+      <div class="section-title">Edinburg Map Pack — "roofing contractor edinburg tx"</div>
+      <div class="section-sub">Live pull, May 26, 2026 &middot; from Edinburg, TX coordinates</div>
+      <table class="rank-table">
+        <thead><tr><th>#</th><th>Business</th><th>Rating</th><th>Reviews</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td><span class="rank-badge rank-1">1</span></td><td>McAllen Valley Roofing Co. <span style="color:var(--muted);font-size:12px">(edinburg-roofing.com)</span></td><td>5.0</td><td>64</td><td><span class="tag tag-threat">Proximity + exact-match domain</span></td></tr>
+          <tr><td><span class="rank-badge rank-2">2</span></td><td>Martinez Roofing &amp; Restoration</td><td>5.0</td><td>40</td><td>Proximity only — thin content</td></tr>
+          <tr class="cm-row"><td><span class="rank-badge rank-3">3</span></td><td>EDEL Roofing &amp; Construction</td><td>4.8</td><td>244</td><td><span class="tag tag-cm">You — review leader</span></td></tr>
+          <tr><td><span class="rank-badge rank-4">4</span></td><td>Marva Roofing</td><td>4.8</td><td>174</td><td><span class="tag tag-threat">Real organic threat</span></td></tr>
+          <tr><td><span class="rank-badge rank-mid">5</span></td><td>Southern Pro Roofing</td><td>5.0</td><td>16</td><td>Light footprint</td></tr>
+          <tr><td><span class="rank-badge rank-mid">7</span></td><td>Skylight Roofing</td><td>3.3</td><td>25</td><td><span class="tag tag-win">Vulnerable — low rating</span></td></tr>
+          <tr><td><span class="rank-badge rank-mid">10</span></td><td>Texas Damage Consultants</td><td>5.0</td><td>66</td><td>Insurance-claim angle</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Review Count — Edinburg Pack vs Edel</div>
+      <div class="vs-wrap">
+        <div class="vs-title">You lead the pack on the one signal that's hardest to fake</div>
+        <div class="vs-row"><div class="vs-label cm">EDEL Roofing</div><div class="vs-bar-track"><div class="vs-bar-fill cm" style="width:100%"></div></div><div class="vs-val" style="color:var(--blue)">244</div></div>
+        <div class="vs-row"><div class="vs-label them">Marva Roofing (#4)</div><div class="vs-bar-track"><div class="vs-bar-fill them" style="width:71%"></div></div><div class="vs-val" style="color:var(--danger)">174</div></div>
+        <div class="vs-row"><div class="vs-label them">McAllen Valley / #1</div><div class="vs-bar-track"><div class="vs-bar-fill them" style="width:26%"></div></div><div class="vs-val" style="color:var(--danger)">64</div></div>
+        <div class="vs-row"><div class="vs-label them">Martinez / #2</div><div class="vs-bar-track"><div class="vs-bar-fill them" style="width:16%"></div></div><div class="vs-val" style="color:var(--danger)">40</div></div>
+      </div>
+      <div class="callout green" style="margin-bottom:0">
+        <strong>You beat the #1 and #2 shops combined.</strong> The fact that they still outrank you means the lever is proximity + profile activity, not reputation. That's a fixable, mechanical gap.
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">GBP &amp; Trust Fixes That Move the Pack</div>
+      <div class="opp-grid">
+        <div class="opp-card">
+          <div class="opp-num">01</div>
+          <div class="opp-title">Fix the NAP Mismatch</div>
+          <div class="opp-body">Your website lists one phone, your Google profile another. Google reads that inconsistency as uncertainty about who you are — a documented map pack drag and an AI-trust problem.</div>
+          <div class="opp-result">Clean entity signal across the board</div>
+        </div>
+        <div class="opp-card">
+          <div class="opp-num">02</div>
+          <div class="opp-title">Activate the Profile</div>
+          <div class="opp-body">Weekly posts, fresh geo-tagged photos, Q&amp;A seeding, all categories and service areas filled. The shops above you are simply more active. We make Edel the most active profile in the pack.</div>
+          <div class="opp-result">Closes the proximity gap over 3-6 months</div>
+        </div>
+        <div class="opp-card">
+          <div class="opp-num">03</div>
+          <div class="opp-title">Review Velocity</div>
+          <div class="opp-body">You're at 244 lifetime — the pace of <em>new</em> reviews is what keeps you climbing. A post-job text system keeps a steady flow without your team lifting a finger.</div>
+          <div class="opp-result">Widens an already-winning lead</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB: CITY PAGES -->
+  <div id="tab-citypages" class="tab-pane">
+    <div class="callout blue">
+      <strong>This is the gap you asked about on the call.</strong> You rank for 17 keywords; Marva Roofing ranks for 123. The difference isn't quality — it's that they have dedicated service and city pages, and you don't. Every page is a new door for both Google and AI to find you. We build them as real content, never copy-paste — Google penalizes the lazy version.
+    </div>
+
+    <div class="section">
+      <div class="section-title">Edinburg First — Then Expand</div>
+      <div class="section-sub">Win your home city completely before spending effort where proximity fights you.</div>
+      <div class="opp-grid">
+        <div class="opp-card">
+          <div class="opp-num">01</div>
+          <div class="opp-title">Edinburg Service Pages</div>
+          <div class="opp-body">Dedicated, genuinely-written pages: hail damage, storm damage, roof replacement, roof inspection, metal &amp; tile roofing, commercial, insurance claims. Each targets a real search and answers it directly.</div>
+          <div class="opp-result">17 keywords &rarr; ~45 over six months</div>
+        </div>
+        <div class="opp-card">
+          <div class="opp-num">02</div>
+          <div class="opp-title">Then McAllen &amp; Pharr</div>
+          <div class="opp-body">Today you're invisible in McAllen and Pharr — Castro and Frontline own them with city pages you don't have. Once Edinburg is locked, we roll the exact same playbook outward.</div>
+          <div class="opp-result">New markets, proven template</div>
+        </div>
+        <div class="opp-card">
+          <div class="opp-num">03</div>
+          <div class="opp-title">Real Content Only</div>
+          <div class="opp-body">You said it on the call — you don't want copy-paste that gets penalized. Agreed. Every page is written for that city and that service, structured the way AI likes to read it.</div>
+          <div class="opp-result">Ranking fuel + citation bait in one</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">The Page Buildout (Edinburg)</div>
+      <table class="rank-table">
+        <thead><tr><th>Page</th><th>Targets</th><th>Why it matters</th></tr></thead>
+        <tbody>
+          <tr><td><code>/hail-damage-edinburg/</code></td><td>hail / storm damage</td><td>Storm-season demand — highest-intent, highest-value</td></tr>
+          <tr><td><code>/roof-replacement-edinburg/</code></td><td>replacement</td><td>Marva ranks here weakly — beatable</td></tr>
+          <tr><td><code>/roof-inspection-edinburg/</code></td><td>inspection</td><td>Top-of-funnel — feeds quotes</td></tr>
+          <tr><td><code>/metal-roofing-edinburg/</code></td><td>metal / tile</td><td>Roof-type cluster, no one owns it</td></tr>
+          <tr><td><code>/commercial-roofing-edinburg/</code></td><td>commercial</td><td>Higher ticket, less competition</td></tr>
+          <tr><td><code>/insurance-claims-edinburg/</code></td><td>insurance claims</td><td>The question every storm customer asks</td></tr>
+          <tr><td><code>/home-construction-edinburg/</code></td><td>construction / builders</td><td>"edinburg home builders" — 70 vol, no one in top 10</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout purple">
+      <strong>The bilingual angle no competitor is using:</strong> Hidalgo County is ~92% Hispanic, but every roofer competes in English online. You already have the Spanish side of your site built — it's just empty. Feeding it (techos, reparación de techos, daño de granizo) opens a lane with almost zero competition.
+    </div>
+  </div>
+
+  <!-- TAB: CONTENT ENGINE -->
+  <div id="tab-content" class="tab-pane">
+    <div class="callout blue">
+      <strong>You already blog — you said you want more, and more educational.</strong> Right. In the AI era, educational content does double duty: it ranks in Google <em>and</em> it's exactly what ChatGPT and Gemini lift when they answer questions. Written answer-first, every post is a chance to be the cited source.
+    </div>
+
+    <div class="section">
+      <div class="section-title">Content Built for Both Google and AI</div>
+      <div class="opp-grid">
+        <div class="opp-card">
+          <div class="opp-num">01</div>
+          <div class="opp-title">Answer-First Structure</div>
+          <div class="opp-body">Every post leads with the direct answer, then the detail. Headings are real questions. Lists and tables where they help. This is what makes content extractable by AI — and it's how we already write, which is how you found us.</div>
+        </div>
+        <div class="opp-card">
+          <div class="opp-num">02</div>
+          <div class="opp-title">Educational Topics That Convert</div>
+          <div class="opp-body">"How much does a new roof cost in the RGV?" "What does insurance actually cover after hail?" "Metal vs. shingle in Valley heat?" The questions customers ask before they call — answered by you, found by AI.</div>
+        </div>
+        <div class="opp-card">
+          <div class="opp-num">03</div>
+          <div class="opp-title">Bilingual Cadence</div>
+          <div class="opp-body">Consistent posting in English and Spanish. Steady, not sporadic — freshness is a ranking and citation signal. We handle the calendar so it actually happens.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Starter Topic Slate</div>
+      <table class="rank-table">
+        <thead><tr><th>Topic</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td>How much does a new roof cost in the Rio Grande Valley?</td><td>The #1 pre-call question — high-volume, high-intent</td></tr>
+          <tr><td>Hail damage &amp; insurance: what's actually covered in South Texas</td><td>Storm-season magnet + the insurance angle customers fear</td></tr>
+          <tr><td>Metal vs. shingle roofing in the Valley climate</td><td>Comparison content captures research-stage buyers</td></tr>
+          <tr><td>What "CertainTeed Select ShingleMaster" really means for your roof</td><td>You hold the cert — own the SERP and the AI answer for it</td></tr>
+          <tr><td>Guía bilingüe: términos de techado que debe conocer</td><td>Spanish content — the uncontested lane</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- TAB: AUTOMATION -->
+  <div id="tab-automation" class="tab-pane">
+    <div class="callout purple">
+      <strong>Your words: "I don't like doing videos."</strong> And your wife checks if a roofer is active on social before trusting them. Both true at once. The answer isn't more work — it's a system where you create once and it shows up everywhere, properly formatted, without you touching five apps.
+    </div>
+
+    <div class="section">
+      <div class="section-title">Post Once &rarr; Everywhere</div>
+      <div class="section-sub">You (or your HeyGen clone) create one piece. The system handles the rest.</div>
+      <div class="flow">
+        <div class="flow-row">
+          <div class="flow-node">
+            <div class="fn-icon">&#127909;</div>
+            <div class="fn-title">You Post Once</div>
+            <div class="fn-sub">One video, photo, or update</div>
+          </div>
+          <div class="flow-arrow">&rarr;</div>
+          <div class="flow-node flow-engine">
+            <div class="fn-icon">&#9881;&#65039;</div>
+            <div class="fn-title">RankRGV Engine</div>
+            <div class="fn-sub">Reformats per platform</div>
+          </div>
+        </div>
+        <div class="flow-arrow down">&darr;</div>
+        <div class="flow-fanout">
+          <div class="flow-platform"><div class="fp-icon">&#9654;&#65039;</div><div class="fp-name">YouTube</div><div class="fp-format">Long + Shorts</div></div>
+          <div class="flow-platform"><div class="fp-icon">&#128241;</div><div class="fp-name">Facebook</div><div class="fp-format">Post + Reel</div></div>
+          <div class="flow-platform"><div class="fp-icon">&#128247;</div><div class="fp-name">Instagram</div><div class="fp-format">Reel + Story</div></div>
+          <div class="flow-platform"><div class="fp-icon">&#127925;</div><div class="fp-name">TikTok</div><div class="fp-format">Vertical cut</div></div>
+          <div class="flow-platform"><div class="fp-icon">&#128205;</div><div class="fp-name">Google Profile</div><div class="fp-format">GBP post</div></div>
+        </div>
+      </div>
+      <p style="font-size:12px;color:var(--muted);text-align:center;margin-top:-10px">No more chopped-up reposts that look wrong on each platform. Each output is cut and captioned for where it lives.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">What We'd Set Up</div>
+      <div class="opp-grid">
+        <div class="opp-card">
+          <div class="opp-num">01</div>
+          <div class="opp-title">YouTube Channel, Done Right</div>
+          <div class="opp-body">You mentioned needing to open it. We set it up properly — branding, playlists, descriptions written for search and AI — so it's an asset from day one, not an empty page.</div>
+        </div>
+        <div class="opp-card">
+          <div class="opp-num">02</div>
+          <div class="opp-title">HeyGen Clone Workflow</div>
+          <div class="opp-body">You already started a clone. We rebuild the workflow so producing a branded video is a few minutes of typing a script — not a shoot. That's how you stay consistent without being on camera.</div>
+        </div>
+        <div class="opp-card">
+          <div class="opp-num">03</div>
+          <div class="opp-title">Fits Your Proline Setup</div>
+          <div class="opp-body">You run Proline with call tracking and automations already. We work <em>with</em> it, not over it — we'll map what you have at the in-person meeting and only add what's missing.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout blue">
+      <strong>The point:</strong> buy your time back. You focus on roofing and remodels. The presence your wife (rightly) says matters runs in the background — and feeds the same content the AI engines read.
+    </div>
+  </div>
+
+  <!-- TAB: COMPETITORS -->
+  <div id="tab-competitors" class="tab-pane">
+    <div class="callout blue">
+      <strong>When you focus on Edinburg, the real competitor set is small.</strong> Frontline and Castro are McAllen/Pharr plays — they barely touch Edinburg. These three are who actually matter, in order of how much they should worry you.
+    </div>
+
+    <div class="comp-grid">
+      <div class="comp-card threat">
+        <div class="comp-name">McAllen Valley Roofing Co.</div>
+        <div class="comp-meta">edinburg-roofing.com (exact-match) + mcallenvalleyroofing.com</div>
+        <div class="comp-row"><span class="comp-row-label">Edinburg map pack</span><span class="comp-row-val">#1</span></div>
+        <div class="comp-row"><span class="comp-row-label">Reviews</span><span class="comp-row-val">64</span></div>
+        <div class="comp-row"><span class="comp-row-label">Keywords (main site)</span><span class="comp-row-val">300</span></div>
+        <div class="comp-edge"><strong>The angle:</strong> They run a separate exact-match domain to hold the Edinburg pack while their main site dominates McAllen. Smart. <strong>Their weakness:</strong> 64 reviews to your 244. Close the proximity gap and you have the trust advantage.</div>
+      </div>
+
+      <div class="comp-card threat">
+        <div class="comp-name">Marva Roofing</div>
+        <div class="comp-meta">marvaroofing.com</div>
+        <div class="comp-row"><span class="comp-row-label">Edinburg map pack</span><span class="comp-row-val">#4</span></div>
+        <div class="comp-row"><span class="comp-row-label">Reviews</span><span class="comp-row-val">174</span></div>
+        <div class="comp-row"><span class="comp-row-label">Keywords</span><span class="comp-row-val">123</span></div>
+        <div class="comp-edge"><strong>The angle:</strong> Your true organic threat — 7&times; your keyword footprint and 6&times; your traffic, from the content pages you don't have yet. <strong>Their weakness:</strong> fewer reviews than you (174 vs 244). You're winning a fight you haven't entered.</div>
+      </div>
+
+      <div class="comp-card medium">
+        <div class="comp-name">Martinez Roofing &amp; Restoration</div>
+        <div class="comp-meta">martinezroofingandrestoration.com</div>
+        <div class="comp-row"><span class="comp-row-label">Edinburg map pack</span><span class="comp-row-val">#2</span></div>
+        <div class="comp-row"><span class="comp-row-label">Reviews</span><span class="comp-row-val">40</span></div>
+        <div class="comp-row"><span class="comp-row-label">Keywords</span><span class="comp-row-val">8</span></div>
+        <div class="comp-edge"><strong>The angle:</strong> Pure proximity — they sit at #2 only because they're near the map center. <strong>Their weakness:</strong> 40 reviews, almost no content, 1 ranking keyword. The first one you flip.</div>
+      </div>
+    </div>
+
+    <div class="callout green">
+      <strong>Bottom line:</strong> McAllen Valley Roofing is the long game. Marva is the next twelve months. Martinez is the one you pass first. Everyone else in the pack has thin content and low reviews — noise. The path to Edinburg #1 runs straight through the content gap and a tighter profile.
+    </div>
+  </div>
+
+  <!-- TAB: THE PLAN -->
+  <div id="tab-plan" class="tab-pane">
+    <div class="callout blue">
+      <strong>One sequenced plan, Edinburg-first, headlined by AI.</strong> Built to respect what you said: own everything, no rebuild, buy back time, be the name AI recommends.
+    </div>
+
+    <div class="section">
+      <div class="section-title">90 Days &rarr; 6 Months</div>
+      <table class="rank-table">
+        <thead><tr><th>When</th><th>What</th><th>Why it matters</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Week 1</strong></td><td>NAP fix, add 244 reviews to schema, consolidate duplicate code, point listing to the right page</td><td>The AI-trust layer, fixed fast. Star snippets appear.</td></tr>
+          <tr><td><strong>Wks 2-4</strong></td><td>Answer-first rewrites of top pages, FAQ blocks, Bing verification</td><td>How AI reads + where ChatGPT looks. "roofing companies edinburg tx" #2&rarr;#1.</td></tr>
+          <tr><td><strong>Month 2</strong></td><td>Edinburg service + city pages (real content), bilingual where it counts</td><td>17 keywords &rarr; ~45. Closes the Marva gap.</td></tr>
+          <tr><td><strong>Month 2-3</strong></td><td>Post-once automation live, YouTube set up, HeyGen workflow rebuilt</td><td>Consistent presence without the time cost.</td></tr>
+          <tr><td><strong>Month 3-6</strong></td><td>Review velocity, profile activity, AI-mention tracking; then McAllen + Pharr</td><td>Edinburg pack pushing #1. Proven playbook expands outward.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section">
+      <div class="section-title">What You'd See, and When</div>
+      <div class="opp-grid">
+        <div class="opp-card"><div class="opp-num" style="font-size:22px">30 days</div><div class="opp-body">Star ratings showing in Google. Trust signals clean. New pages indexed and gathering impressions. AI prompt baseline established.</div></div>
+        <div class="opp-card"><div class="opp-num" style="font-size:22px">90 days</div><div class="opp-body">~25 keywords ranked. Edinburg map pack #3 &rarr; #2 contention. Automation running. First AI mentions appearing.</div></div>
+        <div class="opp-card"><div class="opp-num" style="font-size:22px">6 months</div><div class="opp-body">~45 keywords. Map pack #1 or #2. Named in AI answers for Valley roofing prompts. McAllen + Pharr underway.</div></div>
+      </div>
+    </div>
+
+    <!-- PRICING: hidden until P key -->
+    <div id="pricing-section" style="display:none">
+    <div class="section" style="margin-top:8px">
+      <div class="section-title">Investment Options</div>
+      <div class="opp-grid">
+        <div class="opp-card">
+          <div class="opp-num" style="font-size:22px">AI + Local Foundation</div>
+          <div style="font-size:28px;font-weight:800;margin-bottom:8px">$850<span style="font-size:14px;font-weight:500;color:var(--muted)">/mo</span></div>
+          <div class="opp-body">AI-readiness fixes, GBP optimization, Edinburg page work, schema + reviews, monthly rank + AI-mention tracking. The core engine.</div>
+          <div class="opp-result" style="margin-top:10px">Schema &amp; NAP &middot; GBP &middot; Edinburg pages &middot; AI prompt tracking</div>
+        </div>
+        <div class="opp-card" style="border:2px solid var(--purple)">
+          <div class="opp-num" style="font-size:22px">Growth <span style="font-size:12px;background:var(--purple);color:white;padding:2px 8px;border-radius:10px;font-weight:600">Most Popular</span></div>
+          <div style="font-size:28px;font-weight:800;margin-bottom:8px">$1,250<span style="font-size:14px;font-weight:500;color:var(--muted)">/mo</span></div>
+          <div class="opp-body">Foundation plus the full content engine (EN/ES blog + city pages) and post-once content automation. Built to expand into McAllen and Pharr.</div>
+          <div class="opp-result" style="margin-top:10px">Everything in Foundation + content engine + automation</div>
+        </div>
+        <div class="opp-card">
+          <div class="opp-num" style="font-size:22px">Full Partner</div>
+          <div style="font-size:28px;font-weight:800;margin-bottom:8px">$1,800<span style="font-size:14px;font-weight:500;color:var(--muted)">/mo</span></div>
+          <div class="opp-body">Everything in Growth plus Google Ads management, the HeyGen/video workflow, and full bilingual buildout. The whole machine.</div>
+          <div class="opp-result" style="margin-top:10px">Everything in Growth + Ads + video + full bilingual</div>
+        </div>
+      </div>
+      <div class="callout blue" style="margin-top:20px">
+        <strong>You own every asset</strong> — domains, accounts, content, all of it, under your name, no matter what. We start <strong>month-to-month for the first three months</strong> — no lock-in. After that, 3-month agreements to execute long-term strategy together. No setup fees. No surprises. <strong>Your website stays as-is</strong> — no rebuild, exactly like you asked.
+      </div>
+    </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="footer">
+  Prepared by <a href="https://rankrgv.com">RankRGV</a> &middot; McAllen, TX &middot; hello@rankrgv.com<br>
+  Rankings &amp; reviews pulled live from Google &amp; Google Maps — May 26, 2026, from Edinburg, TX coordinates. AI readiness scored on the RankRGV AI Visibility model.
+</div>
+
+<script>
+  let currentTab = 'stand';
+
+  function showTab(id) {
+    document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => {
+      b.classList.remove('active');
+      if (b.getAttribute('onclick') === `showTab('${id}')`) b.classList.add('active');
+    });
+    document.getElementById('tab-' + id).classList.add('active');
+    currentTab = id;
+  }
+
+  function setActiveNav(id) {
+    document.querySelectorAll('.sidenav-item').forEach(el => el.classList.remove('active'));
+    const item = document.querySelector(`.sidenav-item[data-nav="${id}"]`);
+    if (item) item.classList.add('active');
+  }
+
+  function navTo(section) {
+    if (section === 'services') {
+      document.getElementById('section-services').scrollIntoView({ behavior: 'smooth' });
+      setActiveNav('services');
+    } else if (section === 'onepager') {
+      document.getElementById('section-onepager').scrollIntoView({ behavior: 'smooth' });
+      setActiveNav('onepager');
+    } else if (section === 'aivisibility') {
+      showTab('ai');
+      document.getElementById('section-tabs').scrollIntoView({ behavior: 'smooth' });
+      setActiveNav('aivisibility');
+    } else if (section === 'plan') {
+      showTab('plan');
+      document.getElementById('section-tabs').scrollIntoView({ behavior: 'smooth' });
+      setActiveNav('plan');
+    }
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const id = entry.target.id;
+      if (id === 'section-services') setActiveNav('services');
+      else if (id === 'section-onepager') setActiveNav('onepager');
+      else if (id === 'section-tabs') {
+        if (currentTab === 'plan') setActiveNav('plan');
+        else if (currentTab === 'ai') setActiveNav('aivisibility');
+        else setActiveNav('aivisibility');
+      }
+    });
+  }, { threshold: 0.25 });
+
+  ['section-services', 'section-onepager', 'section-tabs'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) observer.observe(el);
+  });
+
+  // Press P to reveal pricing
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'p' || e.key === 'P') {
+      const op = document.getElementById('op-pricing-section');
+      const deep = document.getElementById('pricing-section');
+      if (op) op.style.display = op.style.display === 'none' ? 'block' : op.style.display;
+      if (deep) deep.style.display = deep.style.display === 'none' ? 'block' : deep.style.display;
+      if (op) op.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+</script>
+</body>
+</html>
