@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proposal — Edel Roofing × RankRGV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blue: #1d4ed8; --blue-dark: #1e3a8a; --blue-light: #3b82f6;
+    --purple: #7c3aed; --dark: #0f172a; --text: #0f172a; --muted: #64748b;
+    --border: #e2e8f0; --surface: #f8fafc; --white: #ffffff;
+    --success: #10b981; --warning: #f59e0b; --danger: #ef4444;
+    --grad: linear-gradient(135deg, #1d4ed8, #7c3aed);
+  }
+  body { font-family: 'Inter', sans-serif; background: var(--surface); color: var(--text); line-height: 1.55; }
+
+  /* HERO */
+  .hero {
+    background: var(--dark);
+    background-image: radial-gradient(circle, rgba(124,58,237,0.20) 1px, transparent 1px);
+    background-size: 24px 24px;
+    padding: 60px 24px 52px;
+    text-align: center;
+    color: white;
+  }
+  .hero-badge {
+    display: inline-block; background: rgba(124,58,237,0.3); border: 1px solid rgba(124,58,237,0.5);
+    border-radius: 20px; padding: 5px 14px; font-size: 12px; color: #c4b5fd;
+    letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 20px;
+  }
+  .hero h1 { font-size: 40px; font-weight: 800; margin-bottom: 12px; line-height: 1.15; }
+  .hero h1 span { background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero-sub { font-size: 17px; color: #94a3b8; max-width: 640px; margin: 0 auto 32px; line-height: 1.6; }
+
+  .hero-headline-box {
+    display: inline-flex; flex-direction: column; align-items: center;
+    background: rgba(255,255,255,0.04); border: 1px solid rgba(124,58,237,0.35);
+    border-radius: 16px; padding: 24px 40px; margin-top: 8px;
+  }
+  .hero-headline-num { font-size: 56px; font-weight: 800; line-height: 1; color: white; }
+  .hero-headline-num .per { font-size: 18px; color: #94a3b8; font-weight: 500; }
+  .hero-headline-label { font-size: 13px; color: #c4b5fd; text-transform: uppercase; letter-spacing: 0.08em; margin-top: 8px; }
+  .hero-headline-sub { font-size: 13px; color: #94a3b8; margin-top: 10px; max-width: 320px; text-align: center; }
+
+  .hero-meta { font-size: 13px; color: #475569; margin-top: 28px; }
+
+  /* CONTAINER */
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 56px 24px 24px; }
+  .wrap-tight { max-width: 1080px; margin: 0 auto; padding: 0 24px 24px; }
+
+  /* SECTION */
+  .section { margin-bottom: 56px; }
+  .section-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--purple); margin-bottom: 8px; }
+  .section-title { font-size: 26px; font-weight: 800; color: var(--dark); margin-bottom: 8px; line-height: 1.25; }
+  .section-sub { font-size: 15px; color: var(--muted); margin-bottom: 28px; max-width: 720px; line-height: 1.6; }
+
+  /* CALLOUT */
+  .callout { border-radius: 12px; padding: 20px 24px; margin-bottom: 28px; font-size: 14px; line-height: 1.65; }
+  .callout.blue { background: #eff6ff; border: 1px solid #bfdbfe; color: #1e40af; }
+  .callout.amber { background: #fffbeb; border: 1px solid #fde68a; color: #92400e; }
+  .callout.green { background: #f0fdf4; border: 1px solid #bbf7d0; color: #14532d; }
+  .callout.purple { background: #faf5ff; border: 1px solid #e9d5ff; color: #6b21a8; }
+  .callout.dark { background: var(--dark); color: white; border: 1px solid rgba(124,58,237,0.3); }
+  .callout.dark strong { color: #c4b5fd; }
+
+  /* PACKAGE CARDS */
+  .pkg-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 24px; }
+  @media (max-width: 800px) { .pkg-grid { grid-template-columns: 1fr; } }
+  .pkg-card { background: white; border-radius: 16px; border: 1px solid var(--border); padding: 28px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); position: relative; overflow: hidden; }
+  .pkg-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--grad); }
+  .pkg-icon { font-size: 28px; margin-bottom: 14px; }
+  .pkg-name { font-size: 18px; font-weight: 800; color: var(--dark); margin-bottom: 4px; }
+  .pkg-price { font-size: 28px; font-weight: 800; color: var(--blue); margin-bottom: 14px; }
+  .pkg-price .per { font-size: 14px; color: var(--muted); font-weight: 500; }
+  .pkg-desc { font-size: 14px; color: var(--muted); margin-bottom: 18px; line-height: 1.6; }
+  .pkg-list { list-style: none; padding: 0; margin: 0; }
+  .pkg-list li { font-size: 13.5px; color: var(--text); padding: 8px 0; padding-left: 24px; position: relative; border-top: 1px solid var(--border); line-height: 1.5; }
+  .pkg-list li:first-child { border-top: none; padding-top: 0; }
+  .pkg-list li::before { content: '✓'; position: absolute; left: 0; top: 8px; color: var(--success); font-weight: 700; }
+  .pkg-list li:first-child::before { top: 0; }
+
+  /* SUMMARY ROW */
+  .pkg-total {
+    background: var(--dark); border-radius: 16px; padding: 28px 32px; color: white;
+    display: flex; justify-content: space-between; align-items: center; gap: 24px;
+    background-image: radial-gradient(circle, rgba(124,58,237,0.12) 1px, transparent 1px);
+    background-size: 18px 18px; flex-wrap: wrap;
+  }
+  .pkg-total-label { font-size: 14px; color: #94a3b8; }
+  .pkg-total-label strong { color: white; font-size: 16px; display: block; margin-bottom: 4px; }
+  .pkg-total-num { font-size: 38px; font-weight: 800; color: white; line-height: 1; }
+  .pkg-total-num .per { font-size: 16px; color: #94a3b8; font-weight: 500; }
+  .pkg-total-setup { font-size: 13px; color: #c4b5fd; margin-top: 4px; text-align: right; }
+
+  /* ROADMAP */
+  .roadmap { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; background: white; border: 1px solid var(--border); border-radius: 16px; padding: 28px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  @media (max-width: 900px) { .roadmap { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px) { .roadmap { grid-template-columns: 1fr; } }
+  .roadmap-step { padding: 0 20px; border-right: 1px solid var(--border); }
+  .roadmap-step:last-child { border-right: none; padding-right: 0; }
+  .roadmap-step:first-child { padding-left: 0; }
+  @media (max-width: 900px) { .roadmap-step { border-right: none; border-bottom: 1px solid var(--border); padding: 18px 0; } .roadmap-step:last-child { border-bottom: none; padding-bottom: 0; } .roadmap-step:first-child { padding-top: 0; } }
+  .rm-period { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--blue); margin-bottom: 8px; }
+  .rm-title { font-size: 15px; font-weight: 800; color: var(--dark); margin-bottom: 8px; line-height: 1.3; }
+  .rm-body { font-size: 12.5px; color: var(--muted); line-height: 1.6; }
+
+  /* ADDON CARDS */
+  .addon-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  @media (max-width: 900px) { .addon-grid { grid-template-columns: 1fr; } }
+  .addon-card { background: white; border-radius: 14px; border: 1px solid var(--border); padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .addon-icon { font-size: 24px; margin-bottom: 10px; }
+  .addon-name { font-size: 16px; font-weight: 800; color: var(--dark); margin-bottom: 4px; }
+  .addon-price { font-size: 18px; font-weight: 700; color: var(--purple); margin-bottom: 12px; }
+  .addon-price .per { font-size: 13px; color: var(--muted); font-weight: 500; }
+  .addon-desc { font-size: 13.5px; color: var(--muted); line-height: 1.6; }
+  .addon-tag { display: inline-block; background: #faf5ff; border: 1px solid #e9d5ff; color: #6b21a8; font-size: 11px; font-weight: 600; padding: 3px 8px; border-radius: 4px; margin-top: 10px; }
+
+  /* TERMS GRID */
+  .terms-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  @media (max-width: 700px) { .terms-grid { grid-template-columns: 1fr; } }
+  .term-card { background: white; border-radius: 12px; border: 1px solid var(--border); padding: 20px 22px; }
+  .term-card-icon { font-size: 18px; margin-bottom: 6px; }
+  .term-card-title { font-size: 14px; font-weight: 800; color: var(--dark); margin-bottom: 4px; }
+  .term-card-body { font-size: 13px; color: var(--muted); line-height: 1.6; }
+
+  /* NEXT STEPS */
+  .ns-card { background: white; border-radius: 16px; border: 1px solid var(--border); padding: 28px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .ns-row { display: flex; gap: 16px; padding: 14px 0; border-top: 1px solid var(--border); align-items: flex-start; }
+  .ns-row:first-child { border-top: none; padding-top: 0; }
+  .ns-num { background: var(--grad); color: white; font-weight: 800; font-size: 13px; width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .ns-content { flex: 1; }
+  .ns-title { font-size: 14.5px; font-weight: 700; color: var(--dark); margin-bottom: 3px; }
+  .ns-body { font-size: 13px; color: var(--muted); line-height: 1.6; }
+
+  /* ACCESS LIST */
+  .access-list { background: #f8fafc; border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; margin-top: 12px; }
+  .access-list li { font-size: 13px; color: var(--text); padding: 4px 0 4px 20px; position: relative; list-style: none; }
+  .access-list li::before { content: '→'; position: absolute; left: 0; color: var(--blue); font-weight: 700; }
+
+  /* FOOTER */
+  .footer { text-align: center; padding: 40px 24px; font-size: 13px; color: #94a3b8; border-top: 1px solid var(--border); margin-top: 40px; background: white; }
+  .footer a { color: var(--blue); text-decoration: none; }
+  .footer-brand { font-weight: 700; color: var(--text); margin-bottom: 6px; font-size: 14px; }
+
+  /* RESPONSIVE HERO */
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 28px; }
+    .hero-sub { font-size: 15px; }
+    .hero-headline-num { font-size: 42px; }
+    .pkg-total { flex-direction: column; align-items: flex-start; }
+    .pkg-total-setup { text-align: left; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">Proposal · Prepared May 29, 2026</div>
+  <h1>Edel Roofing<br><span>× RankRGV — Let's Build the Engine.</span></h1>
+  <p class="hero-sub">A plain-language breakdown of what we'd run together, what it costs, and what happens month by month. Built from our conversation Friday — every line ties back to something you actually said you wanted.</p>
+
+  <div class="hero-headline-box">
+    <div class="hero-headline-num">$1,250<span class="per">/mo</span></div>
+    <div class="hero-headline-label">Starting Investment</div>
+    <div class="hero-headline-sub">SEO + AI Visibility ($850) + Social Media Automation ($400) — one combined engine, one monthly invoice.</div>
+  </div>
+
+  <div class="hero-meta">Prepared by RankRGV · McAllen, TX · rankrgv.com · hello@rankrgv.com · (956) 391-5991</div>
+</div>
+
+<!-- WHY THIS PROPOSAL -->
+<div class="wrap">
+
+  <div class="section">
+    <div class="section-label">Where We Left Things</div>
+    <div class="section-title">You're already ahead — we're not starting from zero.</div>
+
+    <div class="callout green">
+      <strong>The quick recap:</strong> 244 Google reviews (more than the #1 and #2 Edinburg shops combined), a structurally sound Duda site, real certifications, an instant-quote tool that's already converting, and Olivia handling after-hours. The foundation is built. What's missing is the visibility layer — city pages, AI-readiness, content cadence, and a profile that's the most active in the pack. That's what this proposal goes after.
+    </div>
+
+    <p style="font-size:15px;color:var(--muted);line-height:1.7;">McAllen Valley Roofing is beating you with a satellite-office content strategy — separate sites for each city, plus the page depth to back it up. Marva ranks for 123 keywords to your 17 for the same reason: pages, not quality. We close that gap from the inside first (your existing domain), and the satellite-office expansion is on the table when you're ready (see Add-Ons below).</p>
+  </div>
+
+  <!-- WHAT'S INCLUDED -->
+  <div class="section">
+    <div class="section-label">The Starting Package</div>
+    <div class="section-title">What's included at $1,250/mo</div>
+    <div class="section-sub">Two services, one combined engine. The SEO work feeds the content; the automation distributes it. They're better together than apart — which is why we recommend running them as a unit.</div>
+
+    <div class="pkg-grid">
+
+      <!-- SEO + AI -->
+      <div class="pkg-card">
+        <div class="pkg-icon">🤖</div>
+        <div class="pkg-name">Local SEO + AI Visibility</div>
+        <div class="pkg-price">$850<span class="per">/mo</span></div>
+        <div class="pkg-desc">The ranking engine. Everything Google and AI search engines need to confidently recommend Edel as <em>the</em> Valley roofer — in the map pack, in organic, and in ChatGPT/Gemini answers.</div>
+        <ul class="pkg-list">
+          <li>AI-readiness fixes — schema (aggregateRating, FAQ, LocalBusiness), answer-first content rewrites, Bing indexation</li>
+          <li>Google Business Profile optimization — categories, services, weekly posts, geo-tagged photos, Q&A seeding</li>
+          <li>NAP cleanup across web (fix the phone mismatch on day one)</li>
+          <li>City service pages — Edinburg first, then McAllen, Pharr, Mission, Brownsville (one every 2 weeks)</li>
+          <li>Bilingual content (English + Spanish) on the pages and posts that matter most</li>
+          <li>2 educational blog posts per month — written answer-first for both Google and AI</li>
+          <li>Keyword rank tracking + monthly AI-mention monitoring (ChatGPT, Gemini, Perplexity)</li>
+          <li>Monthly performance report — rankings, traffic, leads, what we did, what's next</li>
+        </ul>
+      </div>
+
+      <!-- AUTOMATION -->
+      <div class="pkg-card">
+        <div class="pkg-icon">⚙️</div>
+        <div class="pkg-name">Social Media Automation</div>
+        <div class="pkg-price">$400<span class="per">/mo</span></div>
+        <div class="pkg-desc">Post once, show up everywhere. You shoot one video or photo and it gets reformatted and published to every platform that matters — without eating your week.</div>
+        <ul class="pkg-list">
+          <li>Post-once → multi-platform distribution (Facebook, Instagram, TikTok, YouTube Shorts, GBP posts)</li>
+          <li>Platform-specific reformatting — vertical for TikTok/Reels, square for feed, horizontal for YouTube</li>
+          <li>Automated captions + hashtags tuned per platform</li>
+          <li>Consistent posting cadence — handled, not chased</li>
+          <li>Monthly content calendar so you know what we're capturing on-site</li>
+          <li>Profile + bio cleanup across all platforms (consistency feeds AI trust)</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="pkg-total">
+      <div>
+        <div class="pkg-total-label">
+          <strong>Starting Monthly Investment</strong>
+          One combined invoice. No surprises.
+        </div>
+      </div>
+      <div style="text-align:right">
+        <div class="pkg-total-num">$1,250<span class="per">/mo</span></div>
+        <div class="pkg-total-setup">+ $500 one-time setup</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROADMAP -->
+  <div class="section">
+    <div class="section-label">The Plan</div>
+    <div class="section-title">What happens, month by month.</div>
+    <div class="section-sub">Edinburg first — lock the home market completely before spending effort where proximity fights us. Then roll the same playbook outward.</div>
+
+    <div class="roadmap">
+      <div class="roadmap-step">
+        <div class="rm-period">Month 1</div>
+        <div class="rm-title">Fix the Foundation</div>
+        <div class="rm-body">Backend audit, NAP cleanup, schema added (244 reviews into structured data), GBP fully optimized, Bing verified, baseline reports built. The quiet, unsexy work that makes everything else compound.</div>
+      </div>
+      <div class="roadmap-step">
+        <div class="rm-period">Month 2</div>
+        <div class="rm-title">Edinburg Locked</div>
+        <div class="rm-body">Edinburg service pages live (hail, replacement, inspection, metal, commercial, insurance). Answer-first rewrites of your top pages. First blog posts published. Automation engine turned on — post once, everywhere.</div>
+      </div>
+      <div class="roadmap-step">
+        <div class="rm-period">Months 3–4</div>
+        <div class="rm-title">City Expansion</div>
+        <div class="rm-body">McAllen, Brownsville, Mission, Rio Grande City pages — one city every two weeks, real content, bilingual where it counts. Commercial page overhaul (Starbucks, Little Caesars, Texas Regional Bank). Blog cadence holds steady.</div>
+      </div>
+      <div class="roadmap-step">
+        <div class="rm-period">Months 4–5</div>
+        <div class="rm-title">Compound</div>
+        <div class="rm-body">Edinburg map pack pushing #1. AI mentions tracked and rising. New city pages indexing and ranking. Automation flywheel running on its own. Reports show keyword count climbing toward 85+.</div>
+      </div>
+      <div class="roadmap-step">
+        <div class="rm-period">Month 6</div>
+        <div class="rm-title">Review &amp; Scale</div>
+        <div class="rm-body">Full six-month review — what's working, what to double down on. Decision point: layer in satellite-office expansion, Google Ads management, or video/HeyGen workflow rebuild. You've earned options.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ADDONS -->
+  <div class="section">
+    <div class="section-label">Optional Add-Ons</div>
+    <div class="section-title">When you're ready — not before.</div>
+    <div class="section-sub">These came up on the call. None are required to start. We layer them in as the core engine proves itself, so you're not paying for everything at once and you can see what each piece adds.</div>
+
+    <div class="addon-grid">
+
+      <div class="addon-card">
+        <div class="addon-icon">🎯</div>
+        <div class="addon-name">Google Ads Management</div>
+        <div class="addon-price">$350–$1,000+<span class="per">/mo</span></div>
+        <div class="addon-desc">Structure, call tracking, city + storm-season targeting, landing-page alignment, monthly conversion reporting. Management fee scales with ad spend. <strong>Recommended start: $20–30/day</strong> to establish baseline before scaling.</div>
+        <div class="addon-tag">Recommended after Month 2</div>
+      </div>
+
+      <div class="addon-card">
+        <div class="addon-icon">🏢</div>
+        <div class="addon-name">Satellite Office Strategy</div>
+        <div class="addon-price">Custom<span class="per"> · scoped per city</span></div>
+        <div class="addon-desc">The McAllen Valley Roofing playbook — separate city domains, Chamber-of-Commerce small-suite addresses ($200–300/yr each), Google verification via video walkthrough. We build the sites and run the SEO; you handle the lease and verification calls.</div>
+        <div class="addon-tag">Best after city pages prove the model</div>
+      </div>
+
+      <div class="addon-card">
+        <div class="addon-icon">🛠️</div>
+        <div class="addon-name">Commercial Page Overhaul</div>
+        <div class="addon-price">$1,500<span class="per"> one-time</span></div>
+        <div class="addon-desc">Your current commercial page undersells you and shows safety issues. We rebuild it around your completed projects (Starbucks, Little Caesars, Texas Regional Bank), commercial-specific terminology, and the case-study format buyers actually want to read.</div>
+        <div class="addon-tag">High-margin lead capture</div>
+      </div>
+
+      <div class="addon-card">
+        <div class="addon-icon">🎬</div>
+        <div class="addon-name">HeyGen / Video Workflow</div>
+        <div class="addon-price">$600<span class="per"> setup · $200/mo</span></div>
+        <div class="addon-desc">Rebuild your HeyGen AI-clone workflow so video stops being a chore. Script → clone-rendered video → auto-distributed through the social automation engine. Bilingual output. We hand you the system and the SOP.</div>
+        <div class="addon-tag">Pairs with social automation</div>
+      </div>
+
+      <div class="addon-card">
+        <div class="addon-icon">📞</div>
+        <div class="addon-name">Proline Workflow Migration</div>
+        <div class="addon-price">$800<span class="per"> one-time</span></div>
+        <div class="addon-desc">Migrate your legacy "campaigns" into Proline's new "workflows," clean up Olivia's friction points, tune your lead + follow-up sequences, and document everything so your team owns the system after we hand it back.</div>
+        <div class="addon-tag">Pays back in lead recovery alone</div>
+      </div>
+
+      <div class="addon-card">
+        <div class="addon-icon">⭐</div>
+        <div class="addon-name">Review Velocity System</div>
+        <div class="addon-price">$300<span class="per"> setup · included in SEO after</span></div>
+        <div class="addon-desc">Post-job text + email sequence that asks for the review at the moment satisfaction peaks. Routes happy customers to Google, intercepts unhappy ones internally. Aim: +10–15 new reviews/month, on autopilot.</div>
+        <div class="addon-tag">Widens your existing review lead</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- HOW WE WORK -->
+  <div class="section">
+    <div class="section-label">How We Work</div>
+    <div class="section-title">No contracts. No lock-in. You own everything.</div>
+    <div class="section-sub">You said it on the call — you've been burned before and you want to own every asset. Same page. Here's exactly how that works.</div>
+
+    <div class="terms-grid">
+      <div class="term-card">
+        <div class="term-card-icon">🤝</div>
+        <div class="term-card-title">Month-to-Month</div>
+        <div class="term-card-body">No annual contracts, no auto-renewals. We work month-to-month. Two weeks' written notice if you ever want to pause or stop.</div>
+      </div>
+      <div class="term-card">
+        <div class="term-card-icon">🔑</div>
+        <div class="term-card-title">You Own Every Asset</div>
+        <div class="term-card-body">Every domain, every account, every page, every workflow — registered to you, in your accounts, under your control. We work with the access <em>you</em> grant. You keep it all, no matter what.</div>
+      </div>
+      <div class="term-card">
+        <div class="term-card-icon">📊</div>
+        <div class="term-card-title">Monthly Reporting</div>
+        <div class="term-card-body">One report a month. What we did, what moved, what's next. No 30-page PDFs nobody reads — just the numbers you actually need to make decisions.</div>
+      </div>
+      <div class="term-card">
+        <div class="term-card-icon">💳</div>
+        <div class="term-card-title">Simple Billing</div>
+        <div class="term-card-body">$500 one-time setup, then $1,250/mo on the same day each month. One invoice covers both services. Add-ons billed separately when activated.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROI FRAMING -->
+  <div class="section">
+    <div class="callout dark">
+      <strong>A note on the math.</strong> You mentioned you're spending around $260K/year on marketing today and pulled back recently because ROI wasn't clear. $1,250/mo is $15K/year — about 5.8% of that. The job here is to make the <em>rest</em> of your marketing spend more accountable: better landing pages mean Google Ads convert harder, better SEO means you pay less for the same leads over time, and clear monthly reporting means you finally see what's actually working. The goal isn't to add another line item — it's to make every line item perform better.
+    </div>
+  </div>
+
+  <!-- NEXT STEPS -->
+  <div class="section">
+    <div class="section-label">Next Steps</div>
+    <div class="section-title">To get started this week.</div>
+    <div class="section-sub">If this looks right, here's what we need from you. Once we have access, we can be working on Day 1.</div>
+
+    <div class="ns-card">
+
+      <div class="ns-row">
+        <div class="ns-num">1</div>
+        <div class="ns-content">
+          <div class="ns-title">Sign off on the proposal</div>
+          <div class="ns-body">A quick "let's go" reply works. We send a one-page service agreement (month-to-month, no lock-in) and the first invoice — $500 setup + $1,250 first month.</div>
+        </div>
+      </div>
+
+      <div class="ns-row">
+        <div class="ns-num">2</div>
+        <div class="ns-content">
+          <div class="ns-title">Grant access to the accounts we'll be working in</div>
+          <div class="ns-body">All access goes to <strong>hello@rankrgv.com</strong>. You stay the owner on everything — we get the level of access we need to do the work.</div>
+          <ul class="access-list">
+            <li>Google Business Profile (Manager access)</li>
+            <li>Google Analytics 4 (Editor)</li>
+            <li>Google Search Console (Owner or Full User)</li>
+            <li>Bing Webmaster Tools (Administrator)</li>
+            <li>Duda website (Editor / Site Manager)</li>
+            <li>Meta Business Suite — Facebook + Instagram (Admin)</li>
+            <li>Google Ads (Standard Access — for read + monthly reporting)</li>
+            <li>Proline CRM (read access to campaigns + workflows for the migration scope)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ns-row">
+        <div class="ns-num">3</div>
+        <div class="ns-content">
+          <div class="ns-title">30-minute kickoff call</div>
+          <div class="ns-body">We walk through the Month 1 punch list together, confirm priorities (Edinburg first, NAP fix, schema), agree on a content cadence, and set up our recurring monthly check-in.</div>
+        </div>
+      </div>
+
+      <div class="ns-row">
+        <div class="ns-num">4</div>
+        <div class="ns-content">
+          <div class="ns-title">Week 1 deliverables hit your inbox</div>
+          <div class="ns-body">Backend audit findings, GBP optimization complete, NAP mismatch fixed, schema deployed, Bing verified, baseline rank tracker live. You see motion in seven days, not seventy.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="callout purple" style="margin-top:32px">
+    <strong>One last thing.</strong> You told us straight on the call: you don't want to reinvent the wheel, you want to own everything, and you want to be the name AI recommends. That's the brief we're working from. Every piece of this proposal exists to deliver on one of those three. If anything reads otherwise, tell us and we'll cut it.
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-brand">RankRGV — Local SEO &amp; AI Visibility, built in the Valley.</div>
+  <div>McAllen, TX · <a href="https://rankrgv.com">rankrgv.com</a> · <a href="mailto:hello@rankrgv.com">hello@rankrgv.com</a> · (956) 391-5991</div>
+  <div style="margin-top:14px;font-size:12px;color:#cbd5e1">Proposal prepared for Edel Roofing &amp; Construction · May 29, 2026 · Valid 30 days</div>
+</div>
+
+</body>
+</html>
