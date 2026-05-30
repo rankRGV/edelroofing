@@ -45,13 +45,17 @@
   .hero-headline-label { font-size: 13px; color: #c4b5fd; text-transform: uppercase; letter-spacing: 0.08em; margin-top: 8px; }
   .hero-headline-sub { font-size: 13px; color: #94a3b8; margin-top: 10px; max-width: 360px; text-align: center; line-height: 1.55; }
 
+  .hero-cta { display: inline-block; background: var(--grad); color: white; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 12px; text-decoration: none; margin-top: 22px; box-shadow: 0 4px 14px rgba(124,58,237,0.35); transition: transform 0.15s; }
+  .hero-cta:hover { transform: translateY(-2px); }
+  .hero-cta-note { font-size: 12px; color: #64748b; margin-top: 10px; }
+
   .hero-meta { font-size: 13px; color: #475569; margin-top: 28px; }
 
   /* CONTAINER */
   .wrap { max-width: 1080px; margin: 0 auto; padding: 56px 24px 24px; }
 
   /* SECTION */
-  .section { margin-bottom: 56px; }
+  .section { margin-bottom: 40px; }
   .section-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--purple); margin-bottom: 8px; }
   .section-title { font-size: 26px; font-weight: 800; color: var(--dark); margin-bottom: 8px; line-height: 1.25; }
   .section-sub { font-size: 15px; color: var(--muted); margin-bottom: 28px; max-width: 740px; line-height: 1.6; }
@@ -64,6 +68,34 @@
   .callout.purple { background: #faf5ff; border: 1px solid #e9d5ff; color: #6b21a8; }
   .callout.dark { background: var(--dark); color: white; border: 1px solid rgba(124,58,237,0.3); }
   .callout.dark strong { color: #c4b5fd; }
+
+  /* ACCORDION */
+  .accordions { margin-bottom: 36px; }
+  .accordion { background: white; border: 1px solid var(--border); border-radius: 14px; margin-bottom: 12px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+  .accordion[open] { box-shadow: 0 4px 14px rgba(0,0,0,0.07); }
+  .accordion-summary {
+    padding: 20px 22px; cursor: pointer; display: flex; align-items: center; gap: 14px;
+    list-style: none; font-weight: 700; font-size: 15.5px; color: var(--dark);
+    transition: background 0.15s; user-select: none;
+  }
+  .accordion-summary::-webkit-details-marker { display: none; }
+  .accordion-summary::marker { content: none; }
+  .accordion-summary:hover { background: var(--surface); }
+  .accordion-icon { font-size: 20px; flex-shrink: 0; }
+  .accordion-toggle { margin-left: auto; width: 28px; height: 28px; border-radius: 50%; background: #faf5ff; color: var(--purple); display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 400; flex-shrink: 0; transition: transform 0.2s, background 0.2s; }
+  .accordion[open] .accordion-toggle { background: var(--purple); color: white; transform: rotate(45deg); }
+  .accordion-content { padding: 4px 22px 24px; border-top: 1px solid var(--border); }
+  .accordion-content > *:first-child { margin-top: 18px; }
+  @media (max-width: 600px) {
+    .accordion-summary { padding: 16px 18px; font-size: 14.5px; gap: 10px; }
+    .accordion-content { padding: 4px 18px 20px; }
+  }
+
+  /* INLINE CTA INSIDE ACCORDION */
+  .inline-cta { background: var(--dark); border-radius: 12px; padding: 22px 24px; margin-top: 24px; text-align: center; background-image: radial-gradient(circle, rgba(124,58,237,0.14) 1px, transparent 1px); background-size: 18px 18px; }
+  .inline-cta-text { color: #94a3b8; font-size: 14px; margin-bottom: 14px; }
+  .inline-cta-btn { display: inline-block; background: var(--grad); color: white; font-weight: 700; font-size: 15px; padding: 12px 28px; border-radius: 10px; text-decoration: none; box-shadow: 0 3px 10px rgba(124,58,237,0.35); transition: transform 0.15s; }
+  .inline-cta-btn:hover { transform: translateY(-2px); }
 
   /* PACKAGE CARDS */
   .pkg-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 24px; }
@@ -123,9 +155,8 @@
   .ladder-price .per { font-size: 13px; color: var(--muted); font-weight: 500; }
   .ladder-spend { font-size: 13px; color: var(--muted); }
 
-  /* ADDON CARDS */
-  .addon-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
-  @media (max-width: 700px) { .addon-grid { grid-template-columns: 1fr; } }
+  /* SATELLITE CARD */
+  .addon-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
   .addon-card { background: white; border-radius: 14px; border: 1px solid var(--border); padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
   .addon-icon { font-size: 24px; margin-bottom: 10px; }
   .addon-name { font-size: 16px; font-weight: 800; color: var(--dark); margin-bottom: 4px; }
@@ -143,9 +174,9 @@
   .term-card-body { font-size: 13px; color: var(--muted); line-height: 1.6; }
 
   /* NEXT STEPS */
-  .ns-card { background: white; border-radius: 16px; border: 1px solid var(--border); padding: 28px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .ns-card { background: white; border-radius: 12px; border: 1px solid var(--border); padding: 4px 0; }
   .ns-row { display: flex; gap: 16px; padding: 14px 0; border-top: 1px solid var(--border); align-items: flex-start; }
-  .ns-row:first-child { border-top: none; padding-top: 0; }
+  .ns-row:first-child { border-top: none; padding-top: 4px; }
   .ns-num { background: var(--grad); color: white; font-weight: 800; font-size: 13px; width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
   .ns-content { flex: 1; }
   .ns-title { font-size: 14.5px; font-weight: 700; color: var(--dark); margin-bottom: 3px; }
@@ -161,6 +192,16 @@
   .footer a { color: var(--blue); text-decoration: none; }
   .footer-brand { font-weight: 700; color: var(--text); margin-bottom: 6px; font-size: 14px; }
 
+  /* SIGN-UP CTA AT BOTTOM */
+  .signup-card { background: var(--dark); border-radius: 18px; padding: 44px 32px; text-align: center; color: white; background-image: radial-gradient(circle, rgba(124,58,237,0.16) 1px, transparent 1px); background-size: 22px 22px; }
+  .signup-badge { display: inline-block; background: rgba(124,58,237,0.3); border: 1px solid rgba(124,58,237,0.5); border-radius: 20px; padding: 4px 14px; font-size: 11px; color: #c4b5fd; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 18px; font-weight: 700; }
+  .signup-h { font-size: 28px; font-weight: 800; margin-bottom: 14px; line-height: 1.2; }
+  .signup-p { font-size: 15px; color: #94a3b8; max-width: 540px; margin: 0 auto 26px; line-height: 1.6; }
+  .signup-btn { display: inline-block; background: var(--grad); color: white; font-weight: 700; font-size: 16px; padding: 16px 36px; border-radius: 12px; text-decoration: none; transition: transform 0.15s; box-shadow: 0 4px 14px rgba(124,58,237,0.35); }
+  .signup-btn:hover { transform: translateY(-2px); }
+  .signup-sub { font-size: 13px; color: #64748b; margin-top: 20px; }
+  .signup-sub strong { color: #c4b5fd; }
+
   /* RESPONSIVE HERO */
   @media (max-width: 600px) {
     .hero h1 { font-size: 28px; }
@@ -168,6 +209,8 @@
     .hero-headline-num { font-size: 42px; }
     .pkg-total { flex-direction: column; align-items: flex-start; }
     .pkg-total-setup { text-align: left; }
+    .signup-h { font-size: 22px; }
+    .signup-card { padding: 32px 22px; }
   }
 </style>
 </head>
@@ -175,7 +218,7 @@
 
 <!-- HERO -->
 <div class="hero">
-  <div class="hero-badge">Proposal · Prepared May 29, 2026</div>
+  <div class="hero-badge">Proposal · Prepared May 30, 2026</div>
   <h1>Edel Roofing<br><span>× RankRGV — Let's Build the Engine.</span></h1>
   <p class="hero-sub">A plain-language breakdown of what we'd run together, what it costs, and what happens month by month. Built from our conversation Friday — every line ties back to something you actually said you wanted.</p>
 
@@ -185,12 +228,18 @@
     <div class="hero-headline-sub">SEO Domination ($850) + Social Media &amp; Automation ($400) + Ads Management Starter ($350) — one combined engine, one monthly invoice.</div>
   </div>
 
+  <div>
+    <a class="hero-cta" href="https://buy.stripe.com/7sY7sM2KV5EdcHi3gm1Jm03">Get Started →</a>
+    <div class="hero-cta-note">Already convinced? Tap to start. Otherwise scroll for details.</div>
+  </div>
+
   <div class="hero-meta">Prepared by RankRGV · McAllen, TX · rankrgv.com · hello@rankrgv.com · (956) 391-5991</div>
 </div>
 
-<!-- WHERE WE LEFT THINGS -->
+<!-- WRAP -->
 <div class="wrap">
 
+  <!-- WHERE WE LEFT THINGS (visible) -->
   <div class="section">
     <div class="section-label">Where We Left Things</div>
     <div class="section-title">You're already ahead — we're not starting from zero.</div>
@@ -199,273 +248,311 @@
       <strong>The quick recap:</strong> 244 Google reviews (more than the #1 and #2 Edinburg shops combined), a structurally sound Duda site, real certifications, an instant-quote tool that's already converting, and Olivia handling after-hours. The foundation is built. What's missing is the visibility layer — city pages, AI-readiness, content cadence, and a profile that's the most active in the pack. That's what this proposal goes after.
     </div>
 
-    <p style="font-size:15px;color:var(--muted);line-height:1.7;">McAllen Valley Roofing is beating you with a satellite-office content strategy — separate sites for each city, plus the page depth to back it up. Marva ranks for 123 keywords to your 17 for the same reason: pages, not quality. We close that gap from the inside first (your existing domain), and the satellite-office expansion is on the table when you're ready (see Add-Ons below).</p>
+    <p style="font-size:15px;color:var(--muted);line-height:1.7;">McAllen Valley Roofing is beating you with a satellite-office content strategy — separate sites for each city, plus the page depth to back it up. Marva ranks for 123 keywords to your 17 for the same reason: pages, not quality. We close that gap from the inside first (your existing domain), and the satellite-office expansion is on the table when you're ready.</p>
   </div>
 
-  <!-- WHAT'S INCLUDED -->
-  <div class="section">
-    <div class="section-label">The Starting Package</div>
-    <div class="section-title">What's included at $1,600/mo</div>
-    <div class="section-sub">Three services, one combined engine. SEO builds the rankings. Automation distributes the content. Ads management turns spend into measurable leads while the organic side compounds. All three run from Day 1 — that's what the meeting notes called for.</div>
+  <!-- ACCORDIONS -->
+  <div class="accordions">
 
-    <div class="pkg-grid">
+    <!-- ACCORDION 1: NEXT STEPS -->
+    <details class="accordion">
+      <summary class="accordion-summary">
+        <span class="accordion-icon">🚀</span>
+        <span>To get started this week</span>
+        <span class="accordion-toggle">+</span>
+      </summary>
+      <div class="accordion-content">
+        <p style="font-size:14px;color:var(--muted);margin-bottom:20px;line-height:1.6;">If this looks right, here's what we need from you. Once we have access, we can be working on Day 1.</p>
 
-      <!-- SEO DOMINATION -->
-      <div class="pkg-card">
-        <div class="pkg-icon">🚀</div>
-        <div class="pkg-name">Local SEO</div>
-        <div class="pkg-tier">Domination Package</div>
-        <div class="pkg-price">$850<span class="per">/mo</span></div>
-        <div class="pkg-desc">Full local SEO — built to own your category across every RGV city you serve. The same tier published at <a href="https://rankrgv.com/pricing/" style="color:var(--blue);text-decoration:none">rankrgv.com/pricing</a>.</div>
-        <ul class="pkg-list">
-          <li>GBP optimization &amp; management (posts, photos, Q&amp;A, categories)</li>
-          <li>2 content pieces per month — answer-first, AI-readable</li>
-          <li>Local citation cleanup + NAP consistency (fixes your phone mismatch on Day 1)</li>
-          <li>Rank tracking across target keywords (English + Spanish)</li>
-          <li>City page expansion — Edinburg strengthened, plus full builds for McAllen, Pharr, Mission, Weslaco, and Rio Grande City</li>
-          <li>Commercial page overhaul — rebuilt around Starbucks, Little Caesars, and Texas Regional Bank case studies</li>
-          <li>Geo-grid ranking reports — see your map pack position from every neighborhood, not just city center</li>
-          <li>Competitor gap analysis (Marva, McAllen Valley, Martinez)</li>
-          <li>Quarterly strategy call</li>
-          <li>Monthly ranking + performance report</li>
-        </ul>
-        <div class="pkg-card-note">AI Visibility work — schema, answer-first content, Bing indexation, ChatGPT/Gemini mention tracking — is built into this package. It's how local SEO has to be done in 2026, not a separate add-on. Commercial page overhaul is included as part of the Edel build because it's where your high-margin lead capture lives.</div>
-      </div>
+        <div class="ns-card">
 
-      <!-- SOCIAL + AUTOMATION -->
-      <div class="pkg-card">
-        <div class="pkg-icon">⚙️</div>
-        <div class="pkg-name">Social Media &amp; Automation</div>
-        <div class="pkg-tier">Custom retainer for Edel</div>
-        <div class="pkg-price">$400<span class="per">/mo</span></div>
-        <div class="pkg-desc">Custom-scoped because every business runs different systems. For Edel, that means social distribution plus targeted automation work — Proline, content, video.</div>
-        <ul class="pkg-list">
-          <li>Post-once → multi-platform distribution (Facebook, Instagram, TikTok, YouTube Shorts, GBP)</li>
-          <li>Platform-specific reformatting + captions tuned per channel</li>
-          <li>Consistent posting cadence — handled, not chased</li>
-          <li>HeyGen AI-clone workflow rebuild so video stops being a chore</li>
-          <li>Proline campaigns / workflows — modernized and tuned to your current pipeline</li>
-          <li>Monthly content calendar so you know what we're capturing on-site</li>
-          <li>Bilingual social copy (English + Spanish) where the audience warrants it</li>
-          <li>Profile + bio cleanup across all platforms (consistency feeds AI trust)</li>
-        </ul>
-        <div class="pkg-card-note">Custom quote — our public Business Automation pricing is "scoped per project." $400/mo is the Edel-specific bundle based on the systems you already run.</div>
-      </div>
+          <div class="ns-row">
+            <div class="ns-num">1</div>
+            <div class="ns-content">
+              <div class="ns-title">Sign off &amp; pay via the Stripe link</div>
+              <div class="ns-body">One click sends you to checkout — $500 setup + $1,600 first month. Once payment clears, we send the service agreement (month-to-month, no lock-in) and you land on a welcome page with everything that happens next.</div>
+            </div>
+          </div>
 
-      <!-- ADS MANAGEMENT -->
-      <div class="pkg-card">
-        <div class="pkg-icon">🎯</div>
-        <div class="pkg-name">Ads Management</div>
-        <div class="pkg-tier">Starter Tier</div>
-        <div class="pkg-price">$350<span class="per">/mo</span></div>
-        <div class="pkg-desc">Flat monthly management fee for up to $1,000/mo in ad spend. Google Ads, Meta Ads, or both. Same tier published at <a href="https://rankrgv.com/pricing/" style="color:var(--blue);text-decoration:none">rankrgv.com/pricing</a>.</div>
-        <ul class="pkg-list">
-          <li>Campaign setup + structure (Google + Meta if needed)</li>
-          <li>Ongoing bid + audience optimization</li>
-          <li>Conversion tracking setup (so we actually know what works)</li>
-          <li>Basic ad copy support — storm-season, city-specific creative</li>
-          <li>Landing-page alignment with your existing site + quote tool</li>
-          <li>Monthly performance report</li>
-        </ul>
-        <div class="pkg-card-note"><strong>Ad spend is separate</strong> — $350 covers management only. We recommend starting at $20–30/day ($600–$900/mo) to establish a baseline before scaling.</div>
-      </div>
+          <div class="ns-row">
+            <div class="ns-num">2</div>
+            <div class="ns-content">
+              <div class="ns-title">Grant access to the accounts we'll be working in</div>
+              <div class="ns-body">All access goes to <strong>hturbano@gmail.com</strong>. You stay the owner on everything — we get the level of access we need to do the work. <strong>Don't have one of these set up yet?</strong> No problem — we'll set it up or help you set it up at no extra cost. Just tell us which ones.</div>
+              <ul class="access-list">
+                <li>Google Business Profile (Manager access)</li>
+                <li>Google Analytics 4 (Editor)</li>
+                <li>Google Search Console (Owner or Full User)</li>
+                <li>Bing Webmaster Tools (Administrator)</li>
+                <li>Duda website (Editor / Site Manager)</li>
+                <li>Meta Business Suite — Facebook + Instagram (Admin)</li>
+                <li>Google Ads (Standard Access for management)</li>
+                <li>Proline CRM (read access to campaigns + workflows)</li>
+              </ul>
+            </div>
+          </div>
 
-    </div>
+          <div class="ns-row">
+            <div class="ns-num">3</div>
+            <div class="ns-content">
+              <div class="ns-title">30-minute kickoff call</div>
+              <div class="ns-body">We walk through the Month 1 punch list together, confirm priorities (Edinburg first, NAP fix, schema, ads baseline), agree on a content cadence, and set the schedule for your bi-weekly Loom updates. Live check-in calls are available anytime on request — but the Looms replace the need for a forced monthly call.</div>
+            </div>
+          </div>
 
-    <div class="pkg-total">
-      <div>
-        <div class="pkg-total-label">
-          <strong>Starting Monthly Investment</strong>
-          One combined invoice. No surprises.
+          <div class="ns-row">
+            <div class="ns-num">4</div>
+            <div class="ns-content">
+              <div class="ns-title">Week 1 deliverables hit your inbox</div>
+              <div class="ns-body">Backend audit findings, GBP optimization complete, NAP mismatch fixed, schema deployed, Bing verified, baseline rank tracker live, ad campaigns structured and tracked. You see motion in seven days, not seventy.</div>
+            </div>
+          </div>
+
         </div>
       </div>
-      <div style="text-align:right">
-        <div class="pkg-total-num">$1,600<span class="per">/mo</span></div>
-        <div class="pkg-total-setup">+ $500 one-time setup</div>
-      </div>
-    </div>
+    </details>
 
-    <div class="ad-math">
-      <strong>The full math, no surprises:</strong> $1,600/mo to RankRGV (the line item above) <em>plus</em> your ad spend goes directly to Google &amp; Meta — not to us. At our recommended $20–30/day starter spend, that's an additional $600–$900/mo paid directly to the ad platforms. <strong>All-in month 1: roughly $2,200–$2,500/mo</strong> ($1,600 RankRGV + $500 setup is one-time; ongoing months drop to $2,200–$2,500). We never take a percentage of ad spend.
-    </div>
-  </div>
+    <!-- ACCORDION 2: WHAT'S INCLUDED -->
+    <details class="accordion">
+      <summary class="accordion-summary">
+        <span class="accordion-icon">📦</span>
+        <span>What's included at $1,600/mo</span>
+        <span class="accordion-toggle">+</span>
+      </summary>
+      <div class="accordion-content">
+        <p style="font-size:14px;color:var(--muted);margin-bottom:24px;line-height:1.6;">Three services, one combined engine. SEO builds the rankings. Automation distributes the content. Ads management turns spend into measurable leads while the organic side compounds. All three run from Day 1.</p>
 
-  <!-- ADS SCALING -->
-  <div class="section">
-    <div class="section-label">Ads — How Management Scales</div>
-    <div class="section-title">As ad spend grows, management scales with it.</div>
-    <div class="section-sub">You start at the Starter tier because $20–30/day is the right place to baseline. If spend grows past $1K/mo because the leads are working, management moves up the ladder — same tiers we publish on rankrgv.com/pricing.</div>
+        <div class="pkg-grid">
 
-    <div class="ladder">
-      <div class="ladder-step current">
-        <div class="ladder-tier">Starter</div>
-        <div class="ladder-price">$350<span class="per">/mo</span></div>
-        <div class="ladder-spend">Up to $1,000/mo ad spend</div>
-      </div>
-      <div class="ladder-step">
-        <div class="ladder-tier">Growth</div>
-        <div class="ladder-price">$500<span class="per">/mo</span></div>
-        <div class="ladder-spend">$1,000–$3,000/mo ad spend · A/B testing, retargeting, bi-weekly optimization</div>
-      </div>
-      <div class="ladder-step">
-        <div class="ladder-tier">Scale</div>
-        <div class="ladder-price">$750<span class="per">/mo</span></div>
-        <div class="ladder-spend">$3,000–$10,000/mo ad spend · cross-platform strategy, weekly optimization, priority support</div>
-      </div>
-    </div>
-  </div>
+          <div class="pkg-card">
+            <div class="pkg-icon">🚀</div>
+            <div class="pkg-name">Local SEO</div>
+            <div class="pkg-tier">Domination Package</div>
+            <div class="pkg-price">$850<span class="per">/mo</span></div>
+            <div class="pkg-desc">Full local SEO — built to own your category across every RGV city you serve. The same tier published at <a href="https://rankrgv.com/pricing/" style="color:var(--blue);text-decoration:none">rankrgv.com/pricing</a>.</div>
+            <ul class="pkg-list">
+              <li>GBP optimization &amp; management (posts, photos, Q&amp;A, categories)</li>
+              <li>2 content pieces per month — answer-first, AI-readable</li>
+              <li>Local citation cleanup + NAP consistency (fixes your phone mismatch on Day 1)</li>
+              <li>Rank tracking across target keywords (English + Spanish)</li>
+              <li>City page expansion — Edinburg strengthened, plus full builds for McAllen, Pharr, Mission, Weslaco, and Rio Grande City</li>
+              <li>Commercial page overhaul — rebuilt around Starbucks, Little Caesars, and Texas Regional Bank case studies</li>
+              <li>Geo-grid ranking reports — see your map pack position from every neighborhood, not just city center</li>
+              <li>Competitor gap analysis (Marva, McAllen Valley, Martinez)</li>
+              <li>Quarterly strategy call</li>
+              <li>Monthly ranking + performance report</li>
+            </ul>
+            <div class="pkg-card-note">AI Visibility work — schema, answer-first content, Bing indexation, ChatGPT/Gemini mention tracking — is built into this package. Commercial page overhaul is included as part of the Edel build because it's where your high-margin lead capture lives.</div>
+          </div>
 
-  <!-- ROADMAP -->
-  <div class="section">
-    <div class="section-label">The Plan</div>
-    <div class="section-title">What happens, month by month.</div>
-    <div class="section-sub">Edinburg first — lock the home market completely before spending effort where proximity fights us. Then roll the same playbook outward.</div>
+          <div class="pkg-card">
+            <div class="pkg-icon">⚙️</div>
+            <div class="pkg-name">Social Media &amp; Automation</div>
+            <div class="pkg-tier">Custom retainer for Edel</div>
+            <div class="pkg-price">$400<span class="per">/mo</span></div>
+            <div class="pkg-desc">Custom-scoped because every business runs different systems. For Edel, that means social distribution plus targeted automation work — Proline, content, video.</div>
+            <ul class="pkg-list">
+              <li>Post-once → multi-platform distribution (Facebook, Instagram, TikTok, YouTube Shorts, GBP)</li>
+              <li>Platform-specific reformatting + captions tuned per channel</li>
+              <li>Consistent posting cadence — handled, not chased</li>
+              <li>HeyGen AI-clone workflow rebuild so video stops being a chore</li>
+              <li>Proline campaigns / workflows — modernized and tuned to your current pipeline</li>
+              <li>Monthly content calendar so you know what we're capturing on-site</li>
+              <li>Bilingual social copy (English + Spanish) where the audience warrants it</li>
+              <li>Profile + bio cleanup across all platforms (consistency feeds AI trust)</li>
+            </ul>
+            <div class="pkg-card-note">Custom quote — our public Business Automation pricing is "scoped per project." $400/mo is the Edel-specific bundle based on the systems you already run.</div>
+          </div>
 
-    <div class="roadmap">
-      <div class="roadmap-step">
-        <div class="rm-period">Month 1</div>
-        <div class="rm-title">Foundation + GBP Optimization</div>
-        <div class="rm-body">Backend audit, NAP cleanup, schema added (244 reviews into structured data), GBP fully optimized, Bing verified, baseline reports built. Automation engine turned on. The quiet, unsexy work that makes everything else compound — done first so we're not running ads to a leaky site.</div>
-      </div>
-      <div class="roadmap-step">
-        <div class="rm-period">Month 2</div>
-        <div class="rm-title">Edinburg Strengthening + Ads Live</div>
-        <div class="rm-body">Edinburg service pages strengthened (hail, replacement, inspection, metal, commercial, insurance). Answer-first rewrites of your top pages. First content piece published. Ads launched with conversion tracking now that the foundation is clean. Baseline week, then optimize.</div>
-      </div>
-      <div class="roadmap-step">
-        <div class="rm-period">Months 3–4</div>
-        <div class="rm-title">City Expansion</div>
-        <div class="rm-body">McAllen, Pharr, Mission, Weslaco, and Rio Grande City pages — one every two weeks, real content, bilingual on every page. Commercial page overhaul launches (Starbucks, Little Caesars, Texas Regional Bank). HeyGen workflow rebuilt. Ads scaling based on which cities convert.</div>
-      </div>
-      <div class="roadmap-step">
-        <div class="rm-period">Months 4–5</div>
-        <div class="rm-title">Compound</div>
-        <div class="rm-body">Edinburg map pack pushing #1. AI mentions tracked and rising. New city pages indexing and ranking. Automation flywheel running on its own. Reports show keyword count climbing toward 85+. Blog cadence holds steady — hyper-targeted competitor-keyword posts, answer-first for LLM extraction, bilingual on every one.</div>
-      </div>
-      <div class="roadmap-step">
-        <div class="rm-period">Month 6</div>
-        <div class="rm-title">Review &amp; Scale</div>
-        <div class="rm-body">Full six-month review — what's working, what to double down on. Decision point: layer in satellite-office expansion or scale ads to the Growth tier. You've earned options.</div>
-      </div>
-    </div>
+          <div class="pkg-card">
+            <div class="pkg-icon">🎯</div>
+            <div class="pkg-name">Ads Management</div>
+            <div class="pkg-tier">Starter Tier</div>
+            <div class="pkg-price">$350<span class="per">/mo</span></div>
+            <div class="pkg-desc">Flat monthly management fee for up to $1,000/mo in ad spend. Google Ads, Meta Ads, or both. Same tier published at <a href="https://rankrgv.com/pricing/" style="color:var(--blue);text-decoration:none">rankrgv.com/pricing</a>.</div>
+            <ul class="pkg-list">
+              <li>Campaign setup + structure (Google + Meta if needed)</li>
+              <li>Ongoing bid + audience optimization</li>
+              <li>Conversion tracking setup (so we actually know what works)</li>
+              <li>Basic ad copy support — storm-season, city-specific creative</li>
+              <li>Landing-page alignment with your existing site + quote tool</li>
+              <li>Monthly performance report</li>
+            </ul>
+            <div class="pkg-card-note"><strong>Ad spend is separate</strong> — $350 covers management only. We recommend starting at $20–30/day ($600–$900/mo) to establish a baseline before scaling.</div>
+          </div>
 
-    <div class="callout blue" style="margin-top:20px">
-      <strong>City cadence: one new city every two weeks.</strong> Deliberate, not rushed. Throwing five city pages live at once looks unnatural to Google and risks a thin-content penalty. The two-week cadence lets each page index cleanly, lets us monitor performance, and lets us refine the template before stamping the next one out. If you want cities beyond the five we listed (Edinburg + McAllen, Pharr, Mission, Weslaco, Rio Grande City), we add them at the same cadence — no extra charge if they're part of the agreed scope.
-    </div>
-  </div>
+        </div>
 
-  <!-- FUTURE EXPANSION -->
-  <div class="section">
-    <div class="section-label">Future Expansion</div>
-    <div class="section-title">When the core engine is humming.</div>
-    <div class="section-sub">Not required to start, and not priced firmly yet — we scope this at the six-month review once we see what's working. Just so you know what's on the table.</div>
+        <div class="pkg-total">
+          <div>
+            <div class="pkg-total-label">
+              <strong>Starting Monthly Investment</strong>
+              One combined invoice. No surprises.
+            </div>
+          </div>
+          <div style="text-align:right">
+            <div class="pkg-total-num">$1,600<span class="per">/mo</span></div>
+            <div class="pkg-total-setup">+ $500 one-time setup</div>
+          </div>
+        </div>
 
-    <div class="addon-grid">
+        <div class="ad-math">
+          <strong>The full math, no surprises:</strong> $1,600/mo to RankRGV (the line item above) <em>plus</em> your ad spend goes directly to Google &amp; Meta — not to us. At our recommended $20–30/day starter spend, that's an additional $600–$900/mo paid directly to the ad platforms. <strong>All-in month 1: roughly $2,200–$2,500/mo</strong> ($1,600 RankRGV + $500 setup is one-time; ongoing months drop to $2,200–$2,500). We never take a percentage of ad spend.
+        </div>
 
-      <div class="addon-card">
-        <div class="addon-icon">🏢</div>
-        <div class="addon-name">Satellite Office Strategy — Done Right</div>
-        <div class="addon-price">~$1,500<span class="per"> one-time per site</span> + $300<span class="per">/mo per location</span></div>
-        <div class="addon-desc"><strong>McAllen Valley's playbook works — but theirs is a ticking time bomb.</strong> They run 7+ satellite sites that are skin-deep clones of each other: same content, same owner bio, same identical review block copy-pasted across every domain. Google's helpful-content system already penalizes this pattern, and the moment it tightens further they could lose the entire network's traction overnight.<br><br><strong>Ours is built defensibly.</strong> Each satellite gets a <em>custom, content-rich website</em> — unique service pages written for that specific city, real local project photos, neighborhood-level case studies, distinct copy. Smaller, by-appointment-only satellite offices in each target city (Chamber-of-Commerce small-suite addresses, $200–300/yr each) for the local GBP. Same growth mechanic, none of the duplicate-content risk.<br><br><strong>Per satellite:</strong> $1,500 one-time site build (matches our Foundation tier — 5–7 pages, Vercel hosting included) plus $300/mo ongoing for GBP management + content updates. You own the domain in your account (~$15/yr). Final scope confirmed when we implement.</div>
-        <div class="addon-tag">Discuss at month-6 review</div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- HOW WE WORK -->
-  <div class="section">
-    <div class="section-label">How We Work</div>
-    <div class="section-title">No contracts. No lock-in. You own everything.</div>
-    <div class="section-sub">You said it on the call — you've been burned before and you want to own every asset. Same page. Here's exactly how that works.</div>
-
-    <div class="terms-grid">
-      <div class="term-card">
-        <div class="term-card-icon">🤝</div>
-        <div class="term-card-title">Month-to-Month</div>
-        <div class="term-card-body">No annual contracts, no auto-renewals. We work month-to-month. Two weeks' written notice if you ever want to pause or stop.</div>
-      </div>
-      <div class="term-card">
-        <div class="term-card-icon">🔑</div>
-        <div class="term-card-title">You Own Every Asset</div>
-        <div class="term-card-body">Every domain, every account, every page, every workflow — registered to you, in your accounts, under your control. We work with the access <em>you</em> grant. You keep it all, no matter what.</div>
-      </div>
-      <div class="term-card">
-        <div class="term-card-icon">🎥</div>
-        <div class="term-card-title">Bi-Weekly Loom Updates</div>
-        <div class="term-card-body">Every two weeks, a short Loom video walking you through what we did, what moved, and what's next. Watch it on your phone between jobs. No 30-page PDFs nobody reads — just the signal you need to make decisions.</div>
-      </div>
-      <div class="term-card">
-        <div class="term-card-icon">💳</div>
-        <div class="term-card-title">Simple Billing</div>
-        <div class="term-card-body">$500 one-time setup, then $1,600/mo on the same day each month. One invoice covers all three services. Ad spend invoiced directly by Google/Meta. Add-ons billed separately when activated.</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- NEXT STEPS -->
-  <div class="section">
-    <div class="section-label">Next Steps</div>
-    <div class="section-title">To get started this week.</div>
-    <div class="section-sub">If this looks right, here's what we need from you. Once we have access, we can be working on Day 1.</div>
-
-    <div class="ns-card">
-
-      <div class="ns-row">
-        <div class="ns-num">1</div>
-        <div class="ns-content">
-          <div class="ns-title">Sign off on the proposal</div>
-          <div class="ns-body">A quick "let's go" reply works. We send a one-page service agreement (month-to-month, no lock-in) and the first invoice — $500 setup + $1,600 first month.</div>
+        <!-- INLINE CTA INSIDE WHAT'S INCLUDED -->
+        <div class="inline-cta">
+          <div class="inline-cta-text">Ready to roll? One click to checkout.</div>
+          <a class="inline-cta-btn" href="https://buy.stripe.com/7sY7sM2KV5EdcHi3gm1Jm03">Get Started →</a>
         </div>
       </div>
+    </details>
 
-      <div class="ns-row">
-        <div class="ns-num">2</div>
-        <div class="ns-content">
-          <div class="ns-title">Grant access to the accounts we'll be working in</div>
-          <div class="ns-body">All access goes to <strong>hturbano@gmail.com</strong>. You stay the owner on everything — we get the level of access we need to do the work. <strong>Don't have one of these set up yet?</strong> No problem — we'll set it up or help you set it up at no extra cost. Just tell us which ones.</div>
-          <ul class="access-list">
-            <li>Google Business Profile (Manager access)</li>
-            <li>Google Analytics 4 (Editor)</li>
-            <li>Google Search Console (Owner or Full User)</li>
-            <li>Bing Webmaster Tools (Administrator)</li>
-            <li>Duda website (Editor / Site Manager)</li>
-            <li>Meta Business Suite — Facebook + Instagram (Admin)</li>
-            <li>Google Ads (Standard Access for management)</li>
-            <li>Proline CRM (read access to campaigns + workflows)</li>
-          </ul>
+    <!-- ACCORDION 3: ADS MANAGEMENT SCALING -->
+    <details class="accordion">
+      <summary class="accordion-summary">
+        <span class="accordion-icon">📈</span>
+        <span>How ads management scales as you grow</span>
+        <span class="accordion-toggle">+</span>
+      </summary>
+      <div class="accordion-content">
+        <p style="font-size:14px;color:var(--muted);margin-bottom:24px;line-height:1.6;">You start at the Starter tier because $20–30/day is the right place to baseline. If spend grows past $1K/mo because the leads are working, management moves up the ladder — same tiers we publish on rankrgv.com/pricing.</p>
+
+        <div class="ladder">
+          <div class="ladder-step current">
+            <div class="ladder-tier">Starter</div>
+            <div class="ladder-price">$350<span class="per">/mo</span></div>
+            <div class="ladder-spend">Up to $1,000/mo ad spend</div>
+          </div>
+          <div class="ladder-step">
+            <div class="ladder-tier">Growth</div>
+            <div class="ladder-price">$500<span class="per">/mo</span></div>
+            <div class="ladder-spend">$1,000–$3,000/mo ad spend · A/B testing, retargeting, bi-weekly optimization</div>
+          </div>
+          <div class="ladder-step">
+            <div class="ladder-tier">Scale</div>
+            <div class="ladder-price">$750<span class="per">/mo</span></div>
+            <div class="ladder-spend">$3,000–$10,000/mo ad spend · cross-platform strategy, weekly optimization, priority support</div>
+          </div>
         </div>
       </div>
+    </details>
 
-      <div class="ns-row">
-        <div class="ns-num">3</div>
-        <div class="ns-content">
-          <div class="ns-title">30-minute kickoff call</div>
-          <div class="ns-body">We walk through the Month 1 punch list together, confirm priorities (Edinburg first, NAP fix, schema, ads baseline), agree on a content cadence, and set the schedule for your bi-weekly Loom updates. Live check-in calls are available anytime on request — but the Looms replace the need for a forced monthly call.</div>
+    <!-- ACCORDION 4: THE PLAN -->
+    <details class="accordion">
+      <summary class="accordion-summary">
+        <span class="accordion-icon">🗓️</span>
+        <span>The plan — what happens month by month</span>
+        <span class="accordion-toggle">+</span>
+      </summary>
+      <div class="accordion-content">
+        <p style="font-size:14px;color:var(--muted);margin-bottom:24px;line-height:1.6;">Edinburg first — lock the home market completely before spending effort where proximity fights us. Then roll the same playbook outward.</p>
+
+        <div class="roadmap">
+          <div class="roadmap-step">
+            <div class="rm-period">Month 1</div>
+            <div class="rm-title">Foundation + GBP Optimization</div>
+            <div class="rm-body">Backend audit, NAP cleanup, schema added (244 reviews into structured data), GBP fully optimized, Bing verified, baseline reports built. Automation engine turned on. The quiet, unsexy work that makes everything else compound — done first so we're not running ads to a leaky site.</div>
+          </div>
+          <div class="roadmap-step">
+            <div class="rm-period">Month 2</div>
+            <div class="rm-title">Edinburg Strengthening + Ads Live</div>
+            <div class="rm-body">Edinburg service pages strengthened (hail, replacement, inspection, metal, commercial, insurance). Answer-first rewrites of your top pages. First content piece published. Ads launched with conversion tracking now that the foundation is clean. Baseline week, then optimize.</div>
+          </div>
+          <div class="roadmap-step">
+            <div class="rm-period">Months 3–4</div>
+            <div class="rm-title">City Expansion</div>
+            <div class="rm-body">McAllen, Pharr, Mission, Weslaco, and Rio Grande City pages — one every two weeks, real content, bilingual on every page. Commercial page overhaul launches (Starbucks, Little Caesars, Texas Regional Bank). HeyGen workflow rebuilt. Ads scaling based on which cities convert.</div>
+          </div>
+          <div class="roadmap-step">
+            <div class="rm-period">Months 4–5</div>
+            <div class="rm-title">Compound</div>
+            <div class="rm-body">Edinburg map pack pushing #1. AI mentions tracked and rising. New city pages indexing and ranking. Automation flywheel running on its own. Reports show keyword count climbing toward 85+. Blog cadence holds steady — hyper-targeted competitor-keyword posts, answer-first for LLM extraction, bilingual on every one.</div>
+          </div>
+          <div class="roadmap-step">
+            <div class="rm-period">Month 6</div>
+            <div class="rm-title">Review &amp; Scale</div>
+            <div class="rm-body">Full six-month review — what's working, what to double down on. Decision point: layer in satellite-office expansion or scale ads to the Growth tier. You've earned options.</div>
+          </div>
+        </div>
+
+        <div class="callout blue" style="margin-top:20px;margin-bottom:0">
+          <strong>City cadence: one new city every two weeks.</strong> Deliberate, not rushed. Throwing five city pages live at once looks unnatural to Google and risks a thin-content penalty. The two-week cadence lets each page index cleanly, lets us monitor performance, and lets us refine the template before stamping the next one out. If you want cities beyond the five we listed (Edinburg + McAllen, Pharr, Mission, Weslaco, Rio Grande City), we add them at the same cadence — no extra charge if they're part of the agreed scope.
         </div>
       </div>
+    </details>
 
-      <div class="ns-row">
-        <div class="ns-num">4</div>
-        <div class="ns-content">
-          <div class="ns-title">Week 1 deliverables hit your inbox</div>
-          <div class="ns-body">Backend audit findings, GBP optimization complete, NAP mismatch fixed, schema deployed, Bing verified, baseline rank tracker live, ad campaigns structured and tracked. You see motion in seven days, not seventy.</div>
+    <!-- ACCORDION 5: FUTURE EXPANSION -->
+    <details class="accordion">
+      <summary class="accordion-summary">
+        <span class="accordion-icon">🏢</span>
+        <span>Future expansion — when the engine is humming</span>
+        <span class="accordion-toggle">+</span>
+      </summary>
+      <div class="accordion-content">
+        <p style="font-size:14px;color:var(--muted);margin-bottom:24px;line-height:1.6;">Not required to start, and not priced firmly yet — we scope this at the six-month review once we see what's working. Just so you know what's on the table.</p>
+
+        <div class="addon-grid">
+          <div class="addon-card">
+            <div class="addon-icon">🏢</div>
+            <div class="addon-name">Satellite Office Strategy — Done Right</div>
+            <div class="addon-price">~$1,500<span class="per"> one-time per site</span> + $300<span class="per">/mo per location</span></div>
+            <div class="addon-desc"><strong>McAllen Valley's playbook works — but theirs is a ticking time bomb.</strong> They run 7+ satellite sites that are skin-deep clones of each other: same content, same owner bio, same identical review block copy-pasted across every domain. Google's helpful-content system already penalizes this pattern, and the moment it tightens further they could lose the entire network's traction overnight.<br><br><strong>Ours is built defensibly.</strong> Each satellite gets a <em>custom, content-rich website</em> — unique service pages written for that specific city, real local project photos, neighborhood-level case studies, distinct copy. Smaller, by-appointment-only satellite offices in each target city (Chamber-of-Commerce small-suite addresses, $200–300/yr each) for the local GBP. Same growth mechanic, none of the duplicate-content risk.<br><br><strong>Per satellite:</strong> $1,500 one-time site build (matches our Foundation tier — 5–7 pages, Vercel hosting included) plus $300/mo ongoing for GBP management + content updates. You own the domain in your account (~$15/yr). Final scope confirmed when we implement.</div>
+            <div class="addon-tag">Discuss at month-6 review</div>
+          </div>
         </div>
       </div>
+    </details>
 
-    </div>
+    <!-- ACCORDION 6: TERMS -->
+    <details class="accordion">
+      <summary class="accordion-summary">
+        <span class="accordion-icon">📋</span>
+        <span>Terms &amp; how we work</span>
+        <span class="accordion-toggle">+</span>
+      </summary>
+      <div class="accordion-content">
+        <p style="font-size:14px;color:var(--muted);margin-bottom:20px;line-height:1.6;">The handshake stuff, written down for the record. Nothing new from what we discussed.</p>
+
+        <div class="terms-grid">
+          <div class="term-card">
+            <div class="term-card-icon">🤝</div>
+            <div class="term-card-title">Month-to-Month</div>
+            <div class="term-card-body">No annual contracts, no auto-renewals. We work month-to-month. Two weeks' written notice if you ever want to pause or stop.</div>
+          </div>
+          <div class="term-card">
+            <div class="term-card-icon">🔑</div>
+            <div class="term-card-title">You Own Every Asset</div>
+            <div class="term-card-body">Every domain, every account, every page, every workflow — registered to you, in your accounts, under your control. We work with the access <em>you</em> grant. You keep it all, no matter what.</div>
+          </div>
+          <div class="term-card">
+            <div class="term-card-icon">🎥</div>
+            <div class="term-card-title">Bi-Weekly Loom Updates</div>
+            <div class="term-card-body">Every two weeks, a short Loom video walking you through what we did, what moved, and what's next. Live check-ins available on request.</div>
+          </div>
+          <div class="term-card">
+            <div class="term-card-icon">💳</div>
+            <div class="term-card-title">Simple Billing</div>
+            <div class="term-card-body">$500 one-time setup, then $1,600/mo on the same day each month via Stripe. One invoice covers all three services. Ad spend invoiced directly by Google/Meta.</div>
+          </div>
+        </div>
+      </div>
+    </details>
+
   </div>
+  <!-- END ACCORDIONS -->
 
-  <div class="callout purple" style="margin-top:32px">
+  <!-- ONE LAST THING -->
+  <div class="callout purple">
     <strong>One last thing.</strong> You told us straight on the call: you don't want to reinvent the wheel, you want to own everything, and you want to be the name AI recommends. That's the brief we're working from. Every piece of this proposal exists to deliver on one of those three. If anything reads otherwise, tell us and we'll cut it.
   </div>
 
-  <!-- SIGN-UP CTA -->
+  <!-- SIGN-UP CTA AT BOTTOM -->
   <div class="section" style="margin-top:48px;margin-bottom:24px">
     <div class="signup-card">
       <div class="signup-badge">Ready to start?</div>
       <h3 class="signup-h">If everything looks good, let's go.</h3>
-      <p class="signup-p">One click sends us your "let's go." We send the service agreement (month-to-month, no lock-in) and the Stripe link for the first invoice — $500 setup + $1,600 first month — that same day. Week 1 deliverables hit your inbox within seven days of payment.</p>
+      <p class="signup-p">One click sends you to checkout. We send the service agreement (month-to-month, no lock-in) and Week 1 deliverables hit your inbox within seven business days of payment.</p>
       <a class="signup-btn" href="https://buy.stripe.com/7sY7sM2KV5EdcHi3gm1Jm03">Get Started →</a>
       <p class="signup-sub">Or call us at <strong>(956) 391-5991</strong> if you'd rather talk it through first.</p>
     </div>
@@ -473,23 +560,11 @@
 
 </div>
 
-<style>
-  .signup-card { background: var(--dark); border-radius: 18px; padding: 44px 32px; text-align: center; color: white; background-image: radial-gradient(circle, rgba(124,58,237,0.16) 1px, transparent 1px); background-size: 22px 22px; }
-  .signup-badge { display: inline-block; background: rgba(124,58,237,0.3); border: 1px solid rgba(124,58,237,0.5); border-radius: 20px; padding: 4px 14px; font-size: 11px; color: #c4b5fd; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 18px; font-weight: 700; }
-  .signup-h { font-size: 28px; font-weight: 800; margin-bottom: 14px; line-height: 1.2; }
-  .signup-p { font-size: 15px; color: #94a3b8; max-width: 540px; margin: 0 auto 26px; line-height: 1.6; }
-  .signup-btn { display: inline-block; background: var(--grad); color: white; font-weight: 700; font-size: 16px; padding: 16px 36px; border-radius: 12px; text-decoration: none; transition: transform 0.15s; box-shadow: 0 4px 14px rgba(124,58,237,0.35); }
-  .signup-btn:hover { transform: translateY(-2px); }
-  .signup-sub { font-size: 13px; color: #64748b; margin-top: 20px; }
-  .signup-sub strong { color: #c4b5fd; }
-  @media (max-width: 600px) { .signup-h { font-size: 22px; } .signup-card { padding: 32px 22px; } }
-</style>
-
 <!-- FOOTER -->
 <div class="footer">
   <div class="footer-brand">RankRGV — Local SEO &amp; AI Visibility, built in the Valley.</div>
   <div>McAllen, TX · <a href="https://rankrgv.com">rankrgv.com</a> · <a href="mailto:hello@rankrgv.com">hello@rankrgv.com</a> · (956) 391-5991</div>
-  <div style="margin-top:14px;font-size:12px;color:#cbd5e1">Proposal prepared for Edel Roofing &amp; Construction · May 29, 2026 · Valid 30 days</div>
+  <div style="margin-top:14px;font-size:12px;color:#cbd5e1">Proposal prepared for Edel Roofing &amp; Construction · May 30, 2026 · Valid 30 days</div>
 </div>
 
 </body>
