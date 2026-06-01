@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Access Checklist — Edel Roofing × RankRGV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blue: #1d4ed8; --purple: #7c3aed; --dark: #0f172a; --text: #0f172a;
+    --muted: #64748b; --border: #e2e8f0; --surface: #f8fafc; --white: #ffffff;
+    --success: #10b981; --warning: #f59e0b;
+    --grad: linear-gradient(135deg, #1d4ed8, #7c3aed);
+  }
+  body { font-family: 'Inter', sans-serif; background: var(--surface); color: var(--text); line-height: 1.55; }
+
+  .hero {
+    background: var(--dark); background-image: radial-gradient(circle, rgba(124,58,237,0.20) 1px, transparent 1px);
+    background-size: 24px 24px; padding: 50px 24px 44px; text-align: center; color: white;
+  }
+  .hero-badge {
+    display: inline-block; background: rgba(124,58,237,0.3); border: 1px solid rgba(124,58,237,0.5);
+    border-radius: 20px; padding: 5px 14px; font-size: 12px; color: #c4b5fd;
+    letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 18px;
+  }
+  .hero h1 { font-size: 34px; font-weight: 800; margin-bottom: 12px; line-height: 1.15; }
+  .hero h1 span { background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero-sub { font-size: 16px; color: #94a3b8; max-width: 640px; margin: 0 auto; line-height: 1.6; }
+  .hero-meta { font-size: 13px; color: #475569; margin-top: 22px; }
+
+  .wrap { max-width: 880px; margin: 0 auto; padding: 48px 24px; }
+
+  .callout { border-radius: 12px; padding: 20px 24px; margin-bottom: 36px; font-size: 14.5px; line-height: 1.65; }
+  .callout.blue { background: #eff6ff; border: 1px solid #bfdbfe; color: #1e40af; }
+  .callout.amber { background: #fffbeb; border: 1px solid #fde68a; color: #92400e; }
+
+  .access-card {
+    background: white; border: 1px solid var(--border); border-radius: 14px;
+    margin-bottom: 14px; padding: 24px 26px; box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .access-head { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+  .access-num { background: var(--grad); color: white; font-weight: 800; font-size: 14px;
+    width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .access-name { font-size: 17px; font-weight: 800; color: var(--dark); flex: 1; }
+  .access-level { font-size: 11px; font-weight: 700; color: var(--purple); text-transform: uppercase;
+    letter-spacing: 0.06em; background: #faf5ff; border: 1px solid #e9d5ff; padding: 3px 10px; border-radius: 6px; }
+  .access-need { font-size: 13.5px; color: var(--muted); margin-bottom: 12px; line-height: 1.6; }
+  .access-steps { font-size: 13.5px; color: var(--text); line-height: 1.7; padding-left: 22px; }
+  .access-steps li { margin-bottom: 4px; }
+  .access-note { font-size: 12.5px; color: var(--muted); margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--border); font-style: italic; }
+
+  .access-email-box {
+    background: var(--dark); border-radius: 12px; padding: 22px 26px; margin-bottom: 32px;
+    color: white; background-image: radial-gradient(circle, rgba(124,58,237,0.14) 1px, transparent 1px);
+    background-size: 18px 18px; text-align: center;
+  }
+  .access-email-label { font-size: 12px; color: #c4b5fd; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 6px; font-weight: 700; }
+  .access-email-addr { font-size: 22px; font-weight: 800; color: white; font-family: 'JetBrains Mono', monospace; }
+  .access-email-note { font-size: 13px; color: #94a3b8; margin-top: 8px; }
+
+  .help-card {
+    background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px;
+    padding: 22px 26px; margin-top: 32px; color: #14532d;
+  }
+  .help-card-title { font-weight: 800; margin-bottom: 8px; font-size: 15px; }
+  .help-card-body { font-size: 14px; line-height: 1.65; }
+
+  .footer { text-align: center; padding: 36px 24px; font-size: 13px; color: #94a3b8;
+    border-top: 1px solid var(--border); background: white; }
+  .footer a { color: var(--blue); text-decoration: none; }
+  .footer-brand { font-weight: 700; color: var(--text); margin-bottom: 6px; font-size: 14px; }
+
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 26px; }
+    .hero-sub { font-size: 14.5px; }
+    .access-head { flex-wrap: wrap; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-badge">Step 2 of Kickoff · Access Checklist</div>
+  <h1>Let's get us <span>plugged in</span>.</h1>
+  <p class="hero-sub">Eight accounts. About 15 minutes total. Once these are granted, we can start Week 1 deliverables on Day 1.</p>
+  <div class="hero-meta">Edel Roofing × RankRGV · Phase 1 Kickoff</div>
+</div>
+
+<div class="wrap">
+
+  <div class="callout blue">
+    <strong>Before you start:</strong> All access goes to a single email — <strong>hturbano@gmail.com</strong>. You stay the owner on everything. We get the level of access we need to do the work, never more.
+  </div>
+
+  <div class="access-email-box">
+    <div class="access-email-label">Grant access to</div>
+    <div class="access-email-addr">hturbano@gmail.com</div>
+    <div class="access-email-note">Eddie Hernandez · RankRGV</div>
+  </div>
+
+  <!-- 1. GBP -->
+  <div class="access-card">
+    <div class="access-head">
+      <div class="access-num">1</div>
+      <div class="access-name">Google Business Profile</div>
+      <div class="access-level">Manager</div>
+    </div>
+    <div class="access-need">We need this to update categories, post weekly, respond to reviews, fix the NAP mismatch, add Q&amp;A, and run the GBP optimization that's already scheduled for Week 1.</div>
+    <ol class="access-steps">
+      <li>Sign in to <a href="https://business.google.com" style="color:var(--blue);">business.google.com</a> as the owner</li>
+      <li>Select the <strong>Edel Roofing</strong> profile</li>
+      <li>Click <strong>Menu (☰) → Business Profile settings → Managers</strong></li>
+      <li>Click <strong>Add</strong>, paste <strong>hturbano@gmail.com</strong>, set role to <strong>Manager</strong></li>
+      <li>Click <strong>Invite</strong></li>
+    </ol>
+    <div class="access-note">If you only see Owner/Manager roles in the dropdown, Manager is correct — that's the highest level we should ever need.</div>
+  </div>
+
+  <!-- 2. GA4 -->
+  <div class="access-card">
+    <div class="access-head">
+      <div class="access-num">2</div>
+      <div class="access-name">Google Analytics 4</div>
+      <div class="access-level">Editor</div>
+    </div>
+    <div class="access-need">For traffic baseline + monthly performance reporting. We need to see source/medium, landing pages, conversions, and quote-tool events.</div>
+    <ol class="access-steps">
+      <li>Open <a href="https://analytics.google.com" style="color:var(--blue);">analytics.google.com</a></li>
+      <li>Click <strong>Admin</strong> (gear icon, bottom left)</li>
+      <li>Under the <strong>Property</strong> column, click <strong>Property Access Management</strong></li>
+      <li>Click the <strong>+</strong> in the top right → <strong>Add users</strong></li>
+      <li>Paste <strong>hturbano@gmail.com</strong>, set role to <strong>Editor</strong>, click <strong>Add</strong></li>
+    </ol>
+    <div class="access-note">If you don't have GA4 set up at all, tell us — we'll install it Week 1 at no extra cost.</div>
+  </div>
+
+  <!-- 3. GSC -->
+  <div class="access-card">
+    <div class="access-head">
+      <div class="access-num">3</div>
+      <div class="access-name">Google Search Console</div>
+      <div class="access-level">Owner or Full User</div>
+    </div>
+    <div class="access-need">Indexation, ranking data, AI Overview appearances, sitemap submission, mobile usability monitoring.</div>
+    <ol class="access-steps">
+      <li>Open <a href="https://search.google.com/search-console" style="color:var(--blue);">search.google.com/search-console</a></li>
+      <li>Select the <strong>edelroofing.com</strong> property</li>
+      <li>Click <strong>Settings</strong> (gear icon, left sidebar) → <strong>Users and permissions</strong></li>
+      <li>Click <strong>Add user</strong></li>
+      <li>Paste <strong>hturbano@gmail.com</strong>, set permission to <strong>Owner</strong> (or <strong>Full</strong> if Owner is locked)</li>
+    </ol>
+    <div class="access-note">Owner preferred — lets us verify Bing/other tools using the same property without bothering you. If you'd rather keep Owner private, Full User works too.</div>
+  </div>
+
+  <!-- 4. Bing Webmaster -->
+  <div class="access-card">
+    <div class="access-head">
+      <div class="access-num">4</div>
+      <div class="access-name">Bing Webmaster Tools</div>
+      <div class="access-level">Administrator</div>
+    </div>
+    <div class="access-need">Bing powers <strong>~87% of ChatGPT's web answers</strong> — getting indexed on Bing is how we get cited by ChatGPT. This is part of AI Visibility work.</div>
+    <ol class="access-steps">
+      <li>If Bing isn't set up yet, tell us — we'll handle it Week 1 at no extra cost (we can verify using the GSC connection above)</li>
+      <li>If it's set up: go to <a href="https://www.bing.com/webmasters" style="color:var(--blue);">bing.com/webmasters</a></li>
+      <li>Click your profile (top right) → <strong>User Management</strong></li>
+      <li>Click <strong>Add user</strong>, paste <strong>hturbano@gmail.com</strong>, set role to <strong>Administrator</strong></li>
+    </ol>
+  </div>
+
+  <!-- 5. Duda -->
+  <div class="access-card">
+    <div class="access-head">
+      <div class="access-num">5</div>
+      <div class="access-name">Duda Website</div>
+      <div class="access-level">Site Manager / Editor</div>
+    </div>
+    <div class="access-need">To deploy schema, fix NAP, build city pages, overhaul commercial page, optimize page titles + meta descriptions.</div>
+    <ol class="access-steps">
+      <li>Sign in to your <a href="https://my.duda.co" style="color:var(--blue);">Duda dashboard</a></li>
+      <li>Open the <strong>Edel Roofing</strong> site</li>
+      <li>Click <strong>Team</strong> (left sidebar) or <strong>Site Settings → Team Members</strong></li>
+      <li>Click <strong>Add Team Member</strong></li>
+      <li>Paste <strong>hturbano@gmail.com</strong>, set permission to <strong>Site Manager</strong> (or Editor if that's the highest available)</li>
+    </ol>
+    <div class="access-note">If Duda asks you to upgrade plan for additional users — tell us first. We can usually work around it.</div>
+  </div>
+
+  <!-- 6. Meta -->
+  <div class="access-card">
+    <div class="access-head">
+      <div class="access-num">6</div>
+      <div class="access-name">Meta Business Suite (Facebook + Instagram)</div>
+      <div class="access-level">Admin</div>
+    </div>
+    <div class="access-need">Phase 1 doesn't run social posts (that's Phase 2), but we need Admin access now to fix profile completeness, links, contact info, and pixel installation so when Phase 3 ads turn on, the foundation is clean.</div>
+    <ol class="access-steps">
+      <li>Open <a href="https://business.facebook.com" style="color:var(--blue);">business.facebook.com</a></li>
+      <li>Click <strong>Settings</strong> (gear icon)</li>
+      <li>Click <strong>People</strong> in the left sidebar</li>
+      <li>Click <strong>Add</strong>, paste <strong>hturbano@gmail.com</strong></li>
+      <li>Under <strong>Assign business assets</strong>, select your Facebook Page + Instagram Account + Ad Account + Pixel, set role to <strong>Full control</strong> or <strong>Admin</strong></li>
+    </ol>
+  </div>
+
+  <!-- 7. Google Ads -->
+  <div class="access-card">
+    <div class="access-head">
+      <div class="access-num">7</div>
+      <div class="access-name">Google Ads</div>
+      <div class="access-level">Standard Access</div>
+    </div>
+    <div class="access-need">Phase 1 doesn't run ads (that's Phase 3), but we need access now to set up conversion tracking, call tracking, and audit the existing account so we have baseline data ready.</div>
+    <ol class="access-steps">
+      <li>Open <a href="https://ads.google.com" style="color:var(--blue);">ads.google.com</a></li>
+      <li>Click <strong>Tools (wrench icon) → Setup → Access and security</strong></li>
+      <li>Click the <strong>+</strong> button (top right)</li>
+      <li>Paste <strong>hturbano@gmail.com</strong>, select <strong>Standard</strong> access level</li>
+      <li>Click <strong>Send invitation</strong></li>
+    </ol>
+  </div>
+
+  <!-- 8. Proline -->
+  <div class="access-card">
+    <div class="access-head">
+      <div class="access-num">8</div>
+      <div class="access-name">Proline CRM</div>
+      <div class="access-level">Read access</div>
+    </div>
+    <div class="access-need">Read-only access to lead source data and existing automations so we can document baseline lead flow and tie it to GA4 for attribution reporting.</div>
+    <ol class="access-steps">
+      <li>Sign in to your Proline dashboard</li>
+      <li>Go to <strong>Settings → Users</strong></li>
+      <li>Click <strong>Add User</strong> or <strong>Invite</strong></li>
+      <li>Paste <strong>hturbano@gmail.com</strong>, set role to <strong>Read-only</strong> or the closest equivalent (View Only / Reporter)</li>
+    </ol>
+    <div class="access-note">If Proline doesn't have a read-only tier, just invite with the lowest write-capable role available — we won't touch automations without your sign-off.</div>
+  </div>
+
+  <div class="help-card">
+    <div class="help-card-title">Don't have one of these set up yet?</div>
+    <div class="help-card-body">No problem — we'll set it up or help you set it up at no extra cost. Just text Eddie at <strong>(956) 391-5991</strong> with which ones, and we'll handle it Week 1.</div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <div class="footer-brand">RankRGV — Local SEO &amp; AI Visibility, built in the Valley.</div>
+  <div>McAllen, TX · <a href="https://rankrgv.com">rankrgv.com</a> · <a href="mailto:hello@rankrgv.com">hello@rankrgv.com</a> · (956) 391-5991</div>
+</div>
+
+</body>
+</html>

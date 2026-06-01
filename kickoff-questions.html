@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Kickoff Questionnaire — Edel Roofing × RankRGV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blue: #1d4ed8; --purple: #7c3aed; --dark: #0f172a; --text: #0f172a;
+    --muted: #64748b; --border: #e2e8f0; --surface: #f8fafc; --white: #ffffff;
+    --success: #10b981;
+    --grad: linear-gradient(135deg, #1d4ed8, #7c3aed);
+  }
+  body { font-family: 'Inter', sans-serif; background: var(--surface); color: var(--text); line-height: 1.55; }
+
+  .hero {
+    background: var(--dark); background-image: radial-gradient(circle, rgba(124,58,237,0.20) 1px, transparent 1px);
+    background-size: 24px 24px; padding: 50px 24px 44px; text-align: center; color: white;
+  }
+  .hero-badge {
+    display: inline-block; background: rgba(124,58,237,0.3); border: 1px solid rgba(124,58,237,0.5);
+    border-radius: 20px; padding: 5px 14px; font-size: 12px; color: #c4b5fd;
+    letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 18px;
+  }
+  .hero h1 { font-size: 34px; font-weight: 800; margin-bottom: 12px; line-height: 1.15; }
+  .hero h1 span { background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero-sub { font-size: 16px; color: #94a3b8; max-width: 640px; margin: 0 auto; line-height: 1.6; }
+  .hero-meta { font-size: 13px; color: #475569; margin-top: 22px; }
+
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 24px; }
+
+  .callout { border-radius: 12px; padding: 18px 22px; margin-bottom: 32px; font-size: 14px; line-height: 1.6; background: #eff6ff; border: 1px solid #bfdbfe; color: #1e40af; }
+
+  form { background: white; border: 1px solid var(--border); border-radius: 16px; padding: 32px; box-shadow: 0 1px 4px rgba(0,0,0,0.04); }
+
+  .q-block { margin-bottom: 28px; padding-bottom: 28px; border-bottom: 1px solid var(--border); }
+  .q-block:last-of-type { border-bottom: none; margin-bottom: 16px; padding-bottom: 0; }
+
+  .q-num { display: inline-block; background: var(--grad); color: white; font-weight: 800; font-size: 12px;
+    width: 26px; height: 26px; border-radius: 6px; line-height: 26px; text-align: center; margin-right: 10px; vertical-align: top; }
+  .q-label { display: inline-block; font-size: 15.5px; font-weight: 700; color: var(--dark); margin-bottom: 4px; max-width: calc(100% - 40px); line-height: 1.4; }
+  .q-help { font-size: 13px; color: var(--muted); margin-bottom: 12px; margin-left: 36px; line-height: 1.5; }
+  .q-help.critical { color: #b45309; font-weight: 600; }
+
+  input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+    width: 100%; font-family: 'Inter', sans-serif; font-size: 14.5px; padding: 12px 14px;
+    border: 1px solid var(--border); border-radius: 8px; background: var(--surface); color: var(--text);
+    transition: border-color 0.15s, box-shadow 0.15s; margin-left: 0;
+  }
+  textarea { min-height: 90px; resize: vertical; }
+  input:focus, textarea:focus, select:focus {
+    outline: none; border-color: var(--purple); box-shadow: 0 0 0 3px rgba(124,58,237,0.12); background: white;
+  }
+
+  .radio-group { margin-left: 36px; }
+  .radio-option { display: flex; align-items: flex-start; padding: 10px 14px; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 8px; cursor: pointer; transition: background 0.15s; }
+  .radio-option:hover { background: var(--surface); }
+  .radio-option input[type="radio"] { margin-right: 10px; margin-top: 4px; flex-shrink: 0; }
+  .radio-option label { font-size: 14.5px; color: var(--text); cursor: pointer; line-height: 1.5; }
+
+  .field-wrap { margin-left: 36px; }
+
+  .submit-btn { display: block; width: 100%; background: var(--grad); color: white; font-weight: 800; font-size: 16px;
+    padding: 16px 32px; border-radius: 12px; border: none; cursor: pointer; margin-top: 32px;
+    box-shadow: 0 4px 14px rgba(124,58,237,0.3); transition: transform 0.15s; font-family: 'Inter', sans-serif; }
+  .submit-btn:hover { transform: translateY(-2px); }
+
+  .footer { text-align: center; padding: 36px 24px; font-size: 13px; color: #94a3b8;
+    border-top: 1px solid var(--border); background: white; }
+  .footer a { color: var(--blue); text-decoration: none; }
+  .footer-brand { font-weight: 700; color: var(--text); margin-bottom: 6px; font-size: 14px; }
+
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 26px; }
+    .wrap { padding: 24px 16px; }
+    form { padding: 22px; }
+    .q-help, .radio-group, .field-wrap { margin-left: 0; }
+    .q-label { display: block; max-width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-badge">Step 3 of Kickoff · 10-12 Questions</div>
+  <h1>So the kickoff call is <span>strategic, not basic</span>.</h1>
+  <p class="hero-sub">About 5–8 minutes. Send this back before our 30-min kickoff and we'll spend the call on decisions, not data collection.</p>
+  <div class="hero-meta">Edel Roofing × RankRGV · Phase 1 Kickoff</div>
+</div>
+
+<div class="wrap">
+
+  <div class="callout">
+    <strong>One critical question:</strong> Question 2 below (which phone number is canonical) blocks the NAP cleanup we're doing Week 1. If you can only answer one, answer that one.
+  </div>
+
+  <form action="https://submit-form.com/CTzJGJckq" method="POST">
+
+    <input type="hidden" name="_subject" value="Edel Roofing — Kickoff Questionnaire Response">
+    <input type="hidden" name="_redirect" value="https://edelroofing.rankrgv.com/kickoff-questions-thanks.html">
+
+    <!-- Q1 -->
+    <div class="q-block">
+      <span class="q-num">1</span><span class="q-label">Your name + role</span>
+      <div class="q-help">For our records — sometimes more than one person at Edel responds.</div>
+      <div class="field-wrap">
+        <input type="text" name="name_role" required placeholder="e.g. Eddel — Owner">
+      </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="q-block">
+      <span class="q-num">2</span><span class="q-label">Which phone number is the canonical one?</span>
+      <div class="q-help critical">⚠️ Critical — NAP cleanup blocks on this. Your website shows one number, your GBP shows another. Which is the right one to use everywhere?</div>
+      <div class="radio-group">
+        <div class="radio-option">
+          <input type="radio" name="canonical_phone" value="956-422-3335" id="phone1" required>
+          <label for="phone1"><strong>(956) 422-3335</strong> — currently on edelroofing.com</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio" name="canonical_phone" value="956-997-9474" id="phone2">
+          <label for="phone2"><strong>(956) 997-9474</strong> — currently on Google Business Profile</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio" name="canonical_phone" value="other" id="phone3">
+          <label for="phone3">Different number — I'll specify below</label>
+        </div>
+      </div>
+      <div class="field-wrap" style="margin-top:10px;">
+        <input type="text" name="canonical_phone_other" placeholder="If 'other' — paste the correct number here">
+      </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="q-block">
+      <span class="q-num">3</span><span class="q-label">Top 3 services that drive the most revenue</span>
+      <div class="q-help">In order. We'll build city pages around these first.</div>
+      <div class="field-wrap">
+        <textarea name="top_services" required placeholder="e.g. 1) Storm/hail repair  2) Roof replacement  3) Commercial roofing"></textarea>
+      </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="q-block">
+      <span class="q-num">4</span><span class="q-label">Service area priority order</span>
+      <div class="q-help">We've planned: Edinburg → McAllen → Pharr → Mission → Weslaco → Rio Grande City → Brownsville (month 4-5). Want us to flip any order, drop a city, or add one?</div>
+      <div class="field-wrap">
+        <textarea name="city_priority" placeholder="Default order looks fine, OR — change to: ___"></textarea>
+      </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="q-block">
+      <span class="q-num">5</span><span class="q-label">Spanish-speaking customers — what % of your leads?</span>
+      <div class="q-help">And who on your team handles Spanish-language calls/quotes? Affects how bilingual we build the city pages and content.</div>
+      <div class="field-wrap">
+        <textarea name="spanish_audience" placeholder="e.g. ~40% Spanish-speaking. Maria handles Spanish quotes."></textarea>
+      </div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="q-block">
+      <span class="q-num">6</span><span class="q-label">Olivia (after-hours) — what does she do and where does her call data live?</span>
+      <div class="q-help">We want to pull her call/lead data into the baseline so we can attribute future lift correctly.</div>
+      <div class="field-wrap">
+        <textarea name="olivia" placeholder="e.g. AI receptionist, qualifies leads, dumps into Proline as 'After Hours' tag"></textarea>
+      </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="q-block">
+      <span class="q-num">7</span><span class="q-label">The instant-quote tool — current conversion + where leads land</span>
+      <div class="q-help">If you know rough numbers (X% complete the form, leads go to Proline / email / both) — drop them here.</div>
+      <div class="field-wrap">
+        <textarea name="quote_tool" placeholder="e.g. ~25% completion rate, leads route to Proline + my email"></textarea>
+      </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="q-block">
+      <span class="q-num">8</span><span class="q-label">Competitor confirmation</span>
+      <div class="q-help">From our audit: Marva Roofing, McAllen Valley Roofing Co. (runs edinburg-roofing.com), Martinez Roofing. Agree? Anyone we're missing? Anyone you don't actually consider competition?</div>
+      <div class="field-wrap">
+        <textarea name="competitors" placeholder="Agree / add / remove"></textarea>
+      </div>
+    </div>
+
+    <!-- Q9 -->
+    <div class="q-block">
+      <span class="q-num">9</span><span class="q-label">Photos &amp; video — what's available?</span>
+      <div class="q-help">Before/after job photos, drone footage, team videos, branded graphics. We'd love a folder we can pull from (Google Drive / Dropbox link is fine).</div>
+      <div class="field-wrap">
+        <textarea name="assets" placeholder="e.g. Google Drive link, or 'I'll send a folder once I dig through it'"></textarea>
+      </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="q-block">
+      <span class="q-num">10</span><span class="q-label">Brand voice — what should people feel when they read your content?</span>
+      <div class="q-help">2–3 sentences max. Are you the trusted veteran? The straight-shooter local? The premium-quality option? Helps us write blogs + city pages that sound like you, not us.</div>
+      <div class="field-wrap">
+        <textarea name="brand_voice" placeholder="e.g. Honest, local, knowledgeable. Not pushy, not corporate. Family business, 15+ years."></textarea>
+      </div>
+    </div>
+
+    <!-- Q11 -->
+    <div class="q-block">
+      <span class="q-num">11</span><span class="q-label">Best day + time for the 30-min kickoff call</span>
+      <div class="q-help">Pick a 2-3 day range that works. We'll lock a specific slot. Loom updates run bi-weekly after the kickoff.</div>
+      <div class="field-wrap">
+        <textarea name="kickoff_time" required placeholder="e.g. Tues-Thurs next week, mornings before 11am CT preferred"></textarea>
+      </div>
+    </div>
+
+    <!-- Q12 -->
+    <div class="q-block">
+      <span class="q-num">12</span><span class="q-label">Anything in the proposal that feels unclear now that you're in?</span>
+      <div class="q-help">Last chance to surface anything before we get heads-down.</div>
+      <div class="field-wrap">
+        <textarea name="open_questions" placeholder="Or 'nothing — let's go'"></textarea>
+      </div>
+    </div>
+
+    <button type="submit" class="submit-btn">Send to RankRGV →</button>
+
+  </form>
+
+</div>
+
+<div class="footer">
+  <div class="footer-brand">RankRGV — Local SEO &amp; AI Visibility, built in the Valley.</div>
+  <div>McAllen, TX · <a href="https://rankrgv.com">rankrgv.com</a> · <a href="mailto:hello@rankrgv.com">hello@rankrgv.com</a> · (956) 391-5991</div>
+</div>
+
+</body>
+</html>

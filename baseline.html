@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 0 Baseline — Edel Roofing × RankRGV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blue: #1d4ed8; --purple: #7c3aed; --dark: #0f172a; --text: #0f172a;
+    --muted: #64748b; --border: #e2e8f0; --surface: #f8fafc; --white: #ffffff;
+    --success: #10b981; --warning: #f59e0b; --danger: #ef4444;
+    --grad: linear-gradient(135deg, #1d4ed8, #7c3aed);
+  }
+  body { font-family: 'Inter', sans-serif; background: var(--surface); color: var(--text); line-height: 1.55; }
+
+  .hero {
+    background: var(--dark); background-image: radial-gradient(circle, rgba(124,58,237,0.20) 1px, transparent 1px);
+    background-size: 24px 24px; padding: 50px 24px 44px; text-align: center; color: white;
+  }
+  .hero-badge {
+    display: inline-block; background: rgba(124,58,237,0.3); border: 1px solid rgba(124,58,237,0.5);
+    border-radius: 20px; padding: 5px 14px; font-size: 12px; color: #c4b5fd;
+    letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 18px;
+  }
+  .hero h1 { font-size: 36px; font-weight: 800; margin-bottom: 12px; line-height: 1.15; }
+  .hero h1 span { background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero-sub { font-size: 16px; color: #94a3b8; max-width: 720px; margin: 0 auto; line-height: 1.6; }
+  .hero-meta { font-size: 13px; color: #475569; margin-top: 22px; font-family: 'JetBrains Mono', monospace; }
+
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 48px 24px; }
+
+  .callout { border-radius: 12px; padding: 18px 24px; margin-bottom: 36px; font-size: 14.5px; line-height: 1.65; background: #eff6ff; border: 1px solid #bfdbfe; color: #1e40af; }
+
+  .section { margin-bottom: 48px; }
+  .section-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--purple); margin-bottom: 8px; }
+  .section-title { font-size: 24px; font-weight: 800; color: var(--dark); margin-bottom: 8px; line-height: 1.25; }
+  .section-sub { font-size: 14.5px; color: var(--muted); margin-bottom: 22px; line-height: 1.6; }
+
+  /* METRIC GRID */
+  .metric-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  @media (max-width: 900px) { .metric-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 500px) { .metric-grid { grid-template-columns: 1fr; } }
+  .metric-card { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+  .metric-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin-bottom: 6px; }
+  .metric-value { font-size: 28px; font-weight: 800; color: var(--dark); line-height: 1.1; margin-bottom: 4px; font-family: 'JetBrains Mono', monospace; }
+  .metric-value .small { font-size: 14px; color: var(--muted); font-weight: 500; }
+  .metric-context { font-size: 12px; color: var(--muted); line-height: 1.4; }
+  .metric-card.pending { background: #fffbeb; border-color: #fde68a; }
+  .metric-card.pending .metric-value { color: #92400e; font-size: 18px; }
+
+  /* TABLE */
+  .table-wrap { background: white; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  th { background: #f8fafc; text-align: left; padding: 12px 16px; font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); border-bottom: 1px solid var(--border); }
+  td { padding: 12px 16px; border-bottom: 1px solid var(--border); color: var(--text); }
+  tr:last-child td { border-bottom: none; }
+  .rank-badge { display: inline-block; padding: 3px 8px; border-radius: 6px; font-size: 11px; font-weight: 700; font-family: 'JetBrains Mono', monospace; }
+  .rank-top { background: #d1fae5; color: #065f46; }
+  .rank-mid { background: #fef3c7; color: #92400e; }
+  .rank-low { background: #fee2e2; color: #991b1b; }
+  .rank-none { background: #f1f5f9; color: #475569; }
+
+  /* COMPETITOR GRID */
+  .comp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  @media (max-width: 800px) { .comp-grid { grid-template-columns: 1fr; } }
+  .comp-card { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+  .comp-name { font-size: 15px; font-weight: 800; color: var(--dark); margin-bottom: 8px; }
+  .comp-stats { font-size: 13px; color: var(--text); line-height: 1.7; }
+  .comp-stats strong { color: var(--dark); }
+
+  /* PENDING NOTE */
+  .pending-row { background: #fffbeb; border: 1px solid #fde68a; padding: 10px 14px; border-radius: 8px; font-size: 13px; color: #92400e; margin-top: 12px; }
+
+  .footer { text-align: center; padding: 36px 24px; font-size: 13px; color: #94a3b8;
+    border-top: 1px solid var(--border); background: white; margin-top: 24px; }
+  .footer a { color: var(--blue); text-decoration: none; }
+  .footer-brand { font-weight: 700; color: var(--text); margin-bottom: 6px; font-size: 14px; }
+
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 26px; }
+    .section-title { font-size: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-badge">Day 0 Snapshot · Captured before any work</div>
+  <h1>The <span>Baseline</span>.</h1>
+  <p class="hero-sub">This is exactly where Edel Roofing stands at the start of Phase 1. We re-run this at month 3 and month 6 to show movement. Everything we change starts after this snapshot is locked.</p>
+  <div class="hero-meta">CAPTURED: June 1, 2026 · Phase 1 Day 0</div>
+</div>
+
+<div class="wrap">
+
+  <div class="callout">
+    <strong>How to read this doc:</strong> Solid metric cards = data captured from public sources + our May 26 audit. <strong style="color:#92400e;">Amber cards</strong> = pending until we have access to GA4, GSC, Bing, and Proline (granted Week 1). The day Week 1 access is granted, those amber cards get filled in — that completes the baseline lock.
+  </div>
+
+  <!-- HEADLINE METRICS -->
+  <div class="section">
+    <div class="section-label">Headline Metrics</div>
+    <div class="section-title">Where you stand at Day 0</div>
+
+    <div class="metric-grid">
+      <div class="metric-card">
+        <div class="metric-label">AEO Readiness</div>
+        <div class="metric-value">59<span class="small">/100</span></div>
+        <div class="metric-context">Emerging tier. Target month 3: 70+.</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Edinburg Map Pack</div>
+        <div class="metric-value">#3</div>
+        <div class="metric-context">4.8★ · 244 reviews · review leader of the pack</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Ranked Keywords</div>
+        <div class="metric-value">17</div>
+        <div class="metric-context">vs Marva 123 · McAllen Valley 300+ (their main domain)</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">GBP Reviews</div>
+        <div class="metric-value">244</div>
+        <div class="metric-context">Beats Edinburg pack #1 (64) + #2 (40) combined</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TECHNICAL BASELINE -->
+  <div class="section">
+    <div class="section-label">Technical Baseline</div>
+    <div class="section-title">The on-site state of edelroofing.com</div>
+    <p class="section-sub">From the May 26 audit. Most of these get fixed in Week 1.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Item</th><th>Day 0 State</th><th>Target by Day 30</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>NAP consistency</strong></td><td><span class="rank-badge rank-low">Mismatch</span> Site: 956-422-3335 · GBP: 956-997-9474</td><td>Fixed — single canonical number sitewide + on all citations</td></tr>
+          <tr><td><strong>Schema markup</strong></td><td><span class="rank-badge rank-mid">Partial</span> Present but no aggregateRating, 3 duplicate blocks, no sameAs</td><td>Clean LocalBusiness + Service + FAQ schema · 244 reviews in aggregateRating</td></tr>
+          <tr><td><strong>Bing Webmaster</strong></td><td><span class="rank-badge rank-none">Pending verification</span></td><td>Verified · sitemap submitted · indexation tracked (powers ~87% of ChatGPT answers)</td></tr>
+          <tr><td><strong>Phone tracking</strong></td><td><span class="rank-badge rank-none">None visible</span></td><td>Call tracking installed · lead source attribution wired into GA4 + Proline</td></tr>
+          <tr><td><strong>CMS</strong></td><td>Duda — structurally sound, no rebuild needed</td><td>Same · Editor access granted to RankRGV</td></tr>
+          <tr><td><strong>Backlinks</strong></td><td>Pending DataForSEO pull on Day 1</td><td>Baseline locked · monthly delta tracked</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- KEYWORD RANKINGS -->
+  <div class="section">
+    <div class="section-label">Keyword Rankings — Day 0</div>
+    <div class="section-title">Where edelroofing.com ranks today</div>
+    <p class="section-sub">From geo-grid coords near the Edinburg shop. Each keyword re-tested monthly going forward.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Keyword</th><th>Day 0 Position</th><th>Volume</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>roofing companies edinburg tx</td><td><span class="rank-badge rank-top">#2</span> organic</td><td>~50/mo</td><td>BBB holds #1 — passable target</td></tr>
+          <tr><td>roofer edinburg tx</td><td><span class="rank-badge rank-mid">#5</span></td><td>~30/mo</td><td>Map pack #3 alongside</td></tr>
+          <tr><td>roof replacement edinburg</td><td><span class="rank-badge rank-mid">#7</span></td><td>~25/mo</td><td>Service page needs depth</td></tr>
+          <tr><td>hail damage edinburg</td><td><span class="rank-badge rank-mid">#8</span></td><td>~20/mo</td><td>Seasonal demand spike Mar–Jul</td></tr>
+          <tr><td>commercial roofing edinburg</td><td><span class="rank-badge rank-low">#14</span></td><td>~15/mo</td><td>Page overhaul targets this</td></tr>
+          <tr><td>metal roofing edinburg</td><td><span class="rank-badge rank-mid">#9</span></td><td>~15/mo</td><td>Service-level page missing</td></tr>
+          <tr><td>roofer mcallen</td><td><span class="rank-badge rank-none">Not in top 20</span></td><td>~110/mo</td><td>City page builds month 3–4</td></tr>
+          <tr><td>roof replacement mcallen</td><td><span class="rank-badge rank-none">Not in top 20</span></td><td>~70/mo</td><td>City page builds month 3–4</td></tr>
+          <tr><td>roofer pharr tx</td><td><span class="rank-badge rank-none">Not in top 20</span></td><td>~40/mo</td><td>City page builds month 3–4</td></tr>
+          <tr><td>roofer mission tx</td><td><span class="rank-badge rank-none">Not in top 20</span></td><td>~35/mo</td><td>City page builds month 3–4</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="pending-row">
+      <strong>Full keyword set</strong> (target list of ~40 keywords across English + Spanish, 7 cities) gets locked at kickoff call. We re-test the full set monthly from Day 30 onward.
+    </div>
+  </div>
+
+  <!-- GBP BASELINE -->
+  <div class="section">
+    <div class="section-label">Google Business Profile</div>
+    <div class="section-title">GBP metrics — Day 0</div>
+    <p class="section-sub">Visible from public profile. Full insights (calls, direction requests, photo views) get captured Day 1 once Manager access is granted.</p>
+
+    <div class="metric-grid">
+      <div class="metric-card">
+        <div class="metric-label">Rating</div>
+        <div class="metric-value">4.8<span class="small">★</span></div>
+        <div class="metric-context">Top-tier rating for Edinburg pack</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Reviews</div>
+        <div class="metric-value">244</div>
+        <div class="metric-context">Leader of the Edinburg pack</div>
+      </div>
+      <div class="metric-card pending">
+        <div class="metric-label">Calls / mo (last 30d)</div>
+        <div class="metric-value">⏳ Pending</div>
+        <div class="metric-context">Captures from GBP Insights once Manager access is granted</div>
+      </div>
+      <div class="metric-card pending">
+        <div class="metric-label">Direction requests / mo</div>
+        <div class="metric-value">⏳ Pending</div>
+        <div class="metric-context">Same — captured Day 1 of access</div>
+      </div>
+      <div class="metric-card pending">
+        <div class="metric-label">Photo views / mo</div>
+        <div class="metric-value">⏳ Pending</div>
+        <div class="metric-context">Same — captured Day 1 of access</div>
+      </div>
+      <div class="metric-card pending">
+        <div class="metric-label">Search appearances / mo</div>
+        <div class="metric-value">⏳ Pending</div>
+        <div class="metric-context">Discovery vs branded breakdown</div>
+      </div>
+      <div class="metric-card pending">
+        <div class="metric-label">Profile interactions / mo</div>
+        <div class="metric-value">⏳ Pending</div>
+        <div class="metric-context">Website clicks, messages, bookings</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Categories</div>
+        <div class="metric-value" style="font-size:16px">Audit pending</div>
+        <div class="metric-context">Primary + secondary review part of Week 1 optimization</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ANALYTICS BASELINE -->
+  <div class="section">
+    <div class="section-label">GA4 + Search Console</div>
+    <div class="section-title">Traffic + search performance — Day 0</div>
+    <p class="section-sub">Locked once GA4 + GSC access is granted in Week 1. Numbers below are the cells we'll fill in.</p>
+
+    <div class="metric-grid">
+      <div class="metric-card pending">
+        <div class="metric-label">Organic sessions / mo</div>
+        <div class="metric-value">⏳ Pending</div>
+        <div class="metric-context">Last 30 days before Day 0</div>
+      </div>
+      <div class="metric-card pending">
+        <div class="metric-label">Organic clicks (GSC)</div>
+        <div class="metric-value">⏳ Pending</div>
+        <div class="metric-context">28-day baseline</div>
+      </div>
+      <div class="metric-card pending">
+        <div class="metric-label">Organic impressions (GSC)</div>
+        <div class="metric-value">⏳ Pending</div>
+        <div class="metric-context">28-day baseline</div>
+      </div>
+      <div class="metric-card pending">
+        <div class="metric-label">Average position (GSC)</div>
+        <div class="metric-value">⏳ Pending</div>
+        <div class="metric-context">All ranked queries</div>
+      </div>
+      <div class="metric-card pending">
+        <div class="metric-label">Conversions / mo</div>
+        <div class="metric-value">⏳ Pending</div>
+        <div class="metric-context">Form fills, calls, quote-tool completions</div>
+      </div>
+      <div class="metric-card pending">
+        <div class="metric-label">Top landing pages</div>
+        <div class="metric-value">⏳ Pending</div>
+        <div class="metric-context">Top 10 by organic sessions</div>
+      </div>
+      <div class="metric-card pending">
+        <div class="metric-label">Avg engagement time</div>
+        <div class="metric-value">⏳ Pending</div>
+        <div class="metric-context">Site-wide baseline</div>
+      </div>
+      <div class="metric-card pending">
+        <div class="metric-label">AI Overview appearances</div>
+        <div class="metric-value">⏳ Pending</div>
+        <div class="metric-context">Tracked via GSC AI Overviews filter</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI VISIBILITY -->
+  <div class="section">
+    <div class="section-label">AI Visibility</div>
+    <div class="section-title">Where you appear in AI answers — Day 0</div>
+    <p class="section-sub">Manual prompts run today against ChatGPT, Gemini, and Perplexity. Screenshots saved for the file. Re-run monthly.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Test Prompt</th><th>ChatGPT</th><th>Gemini</th><th>Perplexity</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>"best roofer in Edinburg TX"</td><td>⏳ Capture Day 1</td><td>⏳ Capture Day 1</td><td>⏳ Capture Day 1</td></tr>
+          <tr><td>"who should I hire for hail damage Edinburg"</td><td>⏳ Capture Day 1</td><td>⏳ Capture Day 1</td><td>⏳ Capture Day 1</td></tr>
+          <tr><td>"commercial roofing companies Rio Grande Valley"</td><td>⏳ Capture Day 1</td><td>⏳ Capture Day 1</td><td>⏳ Capture Day 1</td></tr>
+          <tr><td>"how much does a roof replacement cost in McAllen"</td><td>⏳ Capture Day 1</td><td>⏳ Capture Day 1</td><td>⏳ Capture Day 1</td></tr>
+          <tr><td>"roof repair after a storm Edinburg"</td><td>⏳ Capture Day 1</td><td>⏳ Capture Day 1</td><td>⏳ Capture Day 1</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- COMPETITORS -->
+  <div class="section">
+    <div class="section-label">Competitor Baseline</div>
+    <div class="section-title">The pack — Day 0 snapshot</div>
+    <p class="section-sub">Re-pulled monthly so we can show your delta vs theirs over the engagement.</p>
+
+    <div class="comp-grid">
+
+      <div class="comp-card">
+        <div class="comp-name">McAllen Valley Roofing Co.</div>
+        <div class="comp-stats">
+          <strong>Edinburg pack:</strong> #1<br>
+          <strong>Reviews:</strong> 64<br>
+          <strong>Main-site KW:</strong> ~300<br>
+          <strong>Strategy:</strong> Satellite-office EMD network (edinburg-roofing.com etc.)<br>
+          <strong>Weakness:</strong> Near-identical clone sites — fragile under Google's helpful-content updates
+        </div>
+      </div>
+
+      <div class="comp-card">
+        <div class="comp-name">Marva Roofing</div>
+        <div class="comp-stats">
+          <strong>Edinburg pack:</strong> #4<br>
+          <strong>Reviews:</strong> 174<br>
+          <strong>KW:</strong> 123<br>
+          <strong>Strategy:</strong> Content depth on single domain<br>
+          <strong>Threat:</strong> Real organic threat in next 12 months — content gap, not quality gap
+        </div>
+      </div>
+
+      <div class="comp-card">
+        <div class="comp-name">Martinez Roofing</div>
+        <div class="comp-stats">
+          <strong>Edinburg pack:</strong> #2<br>
+          <strong>Reviews:</strong> 40<br>
+          <strong>KW:</strong> 8<br>
+          <strong>Strategy:</strong> Pure proximity<br>
+          <strong>Threat:</strong> The one to flip first — thin everywhere except map pack
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- LEAD ATTRIBUTION BASELINE -->
+  <div class="section">
+    <div class="section-label">Lead Attribution</div>
+    <div class="section-title">Proline + Olivia baseline</div>
+    <p class="section-sub">Captured once Proline read access is granted. This is the most important baseline — without it we can't show "we brought you N leads."</p>
+
+    <div class="metric-grid">
+      <div class="metric-card pending">
+        <div class="metric-label">Total leads / mo</div>
+        <div class="metric-value">⏳ Pending</div>
+        <div class="metric-context">All sources, last 30 days pre-Day 0</div>
+      </div>
+      <div class="metric-card pending">
+        <div class="metric-label">Lead sources</div>
+        <div class="metric-value">⏳ Pending</div>
+        <div class="metric-context">Organic / GBP / Ads / Referral breakdown</div>
+      </div>
+      <div class="metric-card pending">
+        <div class="metric-label">Olivia after-hours leads</div>
+        <div class="metric-value">⏳ Pending</div>
+        <div class="metric-context">How many leads route through AI receptionist</div>
+      </div>
+      <div class="metric-card pending">
+        <div class="metric-label">Quote-tool conversion %</div>
+        <div class="metric-value">⏳ Pending</div>
+        <div class="metric-context">Form starts vs completes — drives Phase 1 CRO work</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout" style="background:#f0fdf4;border-color:#bbf7d0;color:#14532d;">
+    <strong>Baseline lock procedure:</strong> Once all access from the checklist is granted, RankRGV fills in every pending cell within 48 hours and re-publishes this page at the same URL. The locked version is the official Day 0 reference for the engagement — month 3 and month 6 reports compare against it line by line.
+  </div>
+
+</div>
+
+<div class="footer">
+  <div class="footer-brand">RankRGV — Local SEO &amp; AI Visibility, built in the Valley.</div>
+  <div>McAllen, TX · <a href="https://rankrgv.com">rankrgv.com</a> · <a href="mailto:hello@rankrgv.com">hello@rankrgv.com</a> · (956) 391-5991</div>
+  <div style="margin-top:12px;font-size:12px;color:#cbd5e1">Edel Roofing × RankRGV · Phase 1 Day 0 Baseline · Captured June 1, 2026</div>
+</div>
+
+</body>
+</html>
