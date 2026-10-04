@@ -1,0 +1,217 @@
+<!-- ============================================================
+  EDEL ROOFING — Ads-only tracked landing page
+  Built for: campaign id 24064711142, "Search - Roof Repair & Replacement
+  (Manual Test)" — the McAllen Search campaign, currently PAUSED, $25/day.
+  Ad groups it serves: Roof Repair, Roof Replacement & Installation,
+  Roofing Contractor - General, Commercial Roofing.
+
+  WHY THIS EXISTS: the live site's only form is a tools.gotavros.com iframe
+  (cross-origin, doesn't reliably fire page-level events, leads land in
+  Tavros's system, not ours). This page is self-hosted, standalone, and
+  gives us two first-party conversion paths for THIS campaign only:
+    1. Call button -> fires a Google Ads website-call conversion event
+       (tel:9564223335), same number already live in Ads as call assets
+       50919918387 / 50919918390 / 50919918393, pointed at the LIVE
+       conversion action 347986753 ("Calls from ads" family) confirmed
+       working in the 2026-08-27 diagnostic.
+    2. Fallback lead form -> posts to FormSpark, captures gclid + utm
+       params so a lead can be tied back to this campaign/ad group.
+
+  TO DEPLOY:
+  1. Swap FORM_ENDPOINT_HERE below for a FormSpark form id created for
+     Edel leads specifically (formspark.io, free tier, 2 min setup) —
+     do NOT reuse RankRGV's own CTzJGJckq id, that's a different inbox.
+  2. Swap GOOGLE_ADS_CONVERSION_ID / GOOGLE_ADS_CONVERSION_LABEL below
+     for the real values from conversion action 347986753 in Google Ads
+     (Tools > Conversions > that action > "Tag setup" > event snippet).
+  3. Host at a URL under our control (e.g. edelroofing.rankrgv.com/mcallen-quote)
+     and swap each of the 4 ad groups' final URL to it in Google Ads —
+     that's a live campaign edit, confirm with Eddie before changing.
+  4. Once campaign is unpaused, watch GA4 + Ads conversions for both
+     paths for a week before calling the call-tracking test valid.
+============================================================ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Roof Quote in McAllen, TX | Edel Roofing & Construction</title>
+<meta name="robots" content="noindex, nofollow">
+<style>
+  :root {
+    --navy: #0f2540;
+    --accent: #c8352e;
+    --bg: #f7f5f2;
+    --text: #1c1c1c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  header {
+    background: var(--navy);
+    color: #fff;
+    padding: 20px 16px;
+    text-align: center;
+  }
+  header .stars { color: #f5c518; font-size: 15px; }
+  main { max-width: 640px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 26px; line-height: 1.25; margin: 0 0 8px; }
+  .sub { color: #444; margin: 0 0 24px; font-size: 16px; }
+  .call-card {
+    background: var(--accent);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 28px;
+  }
+  .call-card a {
+    display: block;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .call-card p { color: #ffe1df; margin: 6px 0 0; font-size: 14px; }
+  form {
+    background: #fff;
+    border: 1px solid #e2ddd6;
+    border-radius: 12px;
+    padding: 20px;
+  }
+  form h2 { font-size: 18px; margin: 0 0 14px; }
+  label { display: block; font-size: 13px; font-weight: 600; margin: 12px 0 4px; }
+  input, select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+  }
+  button[type="submit"] {
+    width: 100%;
+    margin-top: 18px;
+    padding: 14px;
+    background: var(--navy);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .trust { display: flex; gap: 16px; justify-content: center; margin-top: 24px; flex-wrap: wrap; font-size: 13px; color: #555; }
+  .success { display: none; text-align: center; padding: 24px; font-size: 16px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="stars">★★★★★ 4.8 (252 Google reviews)</div>
+  <div>Edel Roofing &amp; Construction — Edinburg, TX since 2003</div>
+</header>
+
+<main>
+  <h1>Free Roof Quote in McAllen, TX</h1>
+  <p class="sub">Licensed, insured, and the only CertainTeed Select ShingleMaster in the Rio Grande Valley. Written estimate, no pressure.</p>
+
+  <div class="call-card">
+    <a href="tel:+19564223335" id="call-now-link">Call Now: (956) 422-3335</a>
+    <p>We answer 24/7 — talk to a real roofer, not a call center.</p>
+  </div>
+
+  <form id="lead-form" action="https://submit-form.com/FORM_ENDPOINT_HERE" method="POST">
+    <h2>Or request a written estimate</h2>
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="service">What do you need?</label>
+    <select id="service" name="service" required>
+      <option value="">Select one</option>
+      <option value="Roof Replacement">Roof Replacement</option>
+      <option value="Roof Repair">Roof Repair</option>
+      <option value="Commercial Roofing">Commercial Roofing</option>
+      <option value="Not Sure / Inspection">Not Sure — Need an Inspection</option>
+    </select>
+
+    <label for="address">City / Zip</label>
+    <input type="text" id="address" name="address" placeholder="McAllen, TX">
+
+    <!-- attribution fields, filled by JS on load -->
+    <input type="hidden" name="gclid" id="gclid-field">
+    <input type="hidden" name="utm_source" id="utm-source-field">
+    <input type="hidden" name="utm_medium" id="utm-medium-field">
+    <input type="hidden" name="utm_campaign" id="utm-campaign-field">
+    <input type="hidden" name="landing_page" value="mcallen-search-tracked-form">
+
+    <button type="submit">Request My Free Estimate</button>
+  </form>
+
+  <div id="success-msg" class="success">
+    <strong>Thanks — we got it.</strong><br>
+    Someone from Edel Roofing will call you back shortly. If it's urgent, call
+    <a href="tel:+19564223335">(956) 422-3335</a> now.
+  </div>
+
+  <div class="trust">
+    <span>✓ Licensed &amp; Insured</span>
+    <span>✓ CertainTeed Select ShingleMaster</span>
+    <span>✓ Serving the RGV since 2003</span>
+  </div>
+</main>
+
+<!-- Google tag (gtag.js) — Ads conversion tracking -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-GOOGLE_ADS_CONVERSION_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-GOOGLE_ADS_CONVERSION_ID');
+
+  // Capture gclid + utm params for attribution on the fallback form
+  var params = new URLSearchParams(window.location.search);
+  document.getElementById('gclid-field').value = params.get('gclid') || '';
+  document.getElementById('utm-source-field').value = params.get('utm_source') || '';
+  document.getElementById('utm-medium-field').value = params.get('utm_medium') || '';
+  document.getElementById('utm-campaign-field').value = params.get('utm_campaign') || '';
+
+  // Fire a Google Ads website-call conversion when the call button is tapped.
+  // Uses the same conversion action family (347986753) already live on the
+  // correct-number call assets in the account.
+  document.getElementById('call-now-link').addEventListener('click', function () {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-GOOGLE_ADS_CONVERSION_ID/GOOGLE_ADS_CONVERSION_LABEL',
+      'event_callback': function () {}
+    });
+  });
+
+  // Intercept the lead form so we can fire a form-submit conversion + show
+  // a same-page success state (avoids relying on a Tavros-style redirect).
+  document.getElementById('lead-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var form = e.target;
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(function () {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-GOOGLE_ADS_CONVERSION_ID/FORM_SUBMIT_CONVERSION_LABEL'
+      });
+      form.style.display = 'none';
+      document.getElementById('success-msg').style.display = 'block';
+    }).catch(function () {
+      alert('Something went wrong submitting the form. Please call (956) 422-3335 instead.');
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!-- ============================================================
+  EDEL ROOFING — Sección de Preguntas Frecuentes (widget HTML de Duda, ES)
+  Autónoma: CSS con alcance + acordeón nativo + schema FAQPage (es).
+  Colocar cerca del final de la página de INICIO en Español (/es-mx/), arriba del pie.
+  ARCHIVO FUENTE (versionado) — re-pegar en Duda tras editar.
+============================================================ -->
+<section class="edel-faq">
+  <div class="edel-faq__inner">
+    <p class="edel-faq__eyebrow">¿Tiene Preguntas?</p>
+    <h2 class="edel-faq__title">Preguntas Frecuentes</h2>
+
+    <div class="edel-faq__list">
+
+      <details class="edel-faq__item">
+        <summary class="edel-faq__q">¿Ofrecen inspecciones de techo gratuitas en Edinburg?</summary>
+        <div class="edel-faq__a">
+          Sí. Ofrecemos inspecciones y estimados de techo gratuitos en Edinburg y todo el Valle del Río Grande.
+          Llame al <a href="tel:+19564223335">(956)&nbsp;422-3335</a> o reserve una inspección en línea.
+        </div>
+      </details>
+
+      <details class="edel-faq__item">
+        <summary class="edel-faq__q">¿Cuánto tarda el reemplazo de un techo?</summary>
+        <div class="edel-faq__a">
+          La mayoría de los reemplazos de techo residencial toman de uno a dos días, según el tamaño del techo
+          y el material. Le damos un tiempo estimado claro antes de comenzar.
+        </div>
+      </details>
+
+      <details class="edel-faq__item">
+        <summary class="edel-faq__q">¿Qué marcas de techo instalan?</summary>
+        <div class="edel-faq__a">
+          Instalamos CertainTeed, Owens Corning y GAF, entre otras. Edel es el único
+          <strong>CertainTeed Select ShingleMaster</strong> del Valle del Río Grande.
+        </div>
+      </details>
+
+      <details class="edel-faq__item">
+        <summary class="edel-faq__q">¿Tienen licencia y seguro?</summary>
+        <div class="edel-faq__a">
+          Sí. Edel Roofing &amp; Construction tiene licencia (RCAT&nbsp;#03-0489), fianza y seguro.
+        </div>
+      </details>
+
+      <details class="edel-faq__item">
+        <summary class="edel-faq__q">¿Qué áreas atienden?</summary>
+        <div class="edel-faq__a">
+          Estamos en Edinburg y atendemos McAllen, Mission, Pharr, Weslaco, Harlingen, Brownsville y
+          Rio Grande City. <a href="/es-mx/service-areas">Vea todas las áreas que atendemos →</a>
+        </div>
+      </details>
+
+      <details class="edel-faq__item">
+        <summary class="edel-faq__q">¿Ofrecen financiamiento?</summary>
+        <div class="edel-faq__a">
+          Sí. Ofrecemos opciones de financiamiento para reemplazo y reparaciones de techo.
+          <a href="/es-mx/contact-us">Contáctenos →</a>
+        </div>
+      </details>
+
+    </div>
+  </div>
+
+  <!-- Schema FAQPage (es) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "es",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Ofrecen inspecciones de techo gratuitas en Edinburg?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí. Ofrecemos inspecciones y estimados de techo gratuitos en Edinburg y todo el Valle del Río Grande. Llame al (956) 422-3335 o reserve una inspección en línea." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto tarda el reemplazo de un techo?",
+        "acceptedAnswer": { "@type": "Answer", "text": "La mayoría de los reemplazos de techo residencial toman de uno a dos días, según el tamaño del techo y el material. Le damos un tiempo estimado claro antes de comenzar." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué marcas de techo instalan?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Instalamos CertainTeed, Owens Corning y GAF, entre otras. Edel es el único CertainTeed Select ShingleMaster del Valle del Río Grande." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Tienen licencia y seguro?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí. Edel Roofing & Construction tiene licencia (RCAT #03-0489), fianza y seguro." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué áreas atienden?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Estamos en Edinburg y atendemos McAllen, Mission, Pharr, Weslaco, Harlingen, Brownsville y Rio Grande City." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Ofrecen financiamiento?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí. Ofrecemos opciones de financiamiento para reemplazo y reparaciones de techo." }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    .edel-faq{background:#faf8f7;padding:64px 20px;font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:#1f2937;-webkit-font-smoothing:antialiased;}
+    .edel-faq *{box-sizing:border-box;}
+    .edel-faq__inner{max-width:820px;margin:0 auto;}
+    .edel-faq__eyebrow{text-align:center;text-transform:uppercase;letter-spacing:.12em;font-size:13px;font-weight:600;color:#6e1018;margin:0 0 8px;}
+    .edel-faq__title{text-align:center;font-size:clamp(28px,4vw,38px);line-height:1.15;font-weight:700;color:#1a1a1a;margin:0 0 36px;}
+    .edel-faq__list{display:flex;flex-direction:column;gap:14px;}
+    .edel-faq__item{background:#fff;border:1px solid #ececec;border-left:3px solid #6e1018;border-radius:10px;padding:0;overflow:hidden;transition:box-shadow .2s ease,border-color .2s ease;}
+    .edel-faq__item[open]{box-shadow:0 8px 24px rgba(110,16,24,.08);}
+    .edel-faq__q{list-style:none;cursor:pointer;padding:20px 56px 20px 22px;font-size:17px;font-weight:600;color:#1a1a1a;position:relative;user-select:none;}
+    .edel-faq__q::-webkit-details-marker{display:none;}
+    .edel-faq__q::after{content:"+";position:absolute;right:22px;top:50%;transform:translateY(-50%);font-size:24px;font-weight:400;line-height:1;color:#6e1018;transition:transform .2s ease;}
+    .edel-faq__item[open] .edel-faq__q::after{content:"\2212";}
+    .edel-faq__a{padding:0 22px 22px;font-size:16px;line-height:1.65;color:#4b5563;}
+    .edel-faq__a a{color:#6e1018;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(110,16,24,.3);}
+    .edel-faq__a a:hover{border-bottom-color:#6e1018;}
+    @media(max-width:600px){.edel-faq{padding:48px 16px;}.edel-faq__q{font-size:16px;padding:18px 48px 18px 18px;}}
+  </style>
+</section>

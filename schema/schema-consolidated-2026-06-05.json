@@ -1,0 +1,89 @@
+{
+  "@context": "https://schema.org",
+  "@type": "RoofingContractor",
+  "@id": "https://www.edelroofing.com",
+  "name": "Edel Roofing and Construction Inc",
+  "url": "https://www.edelroofing.com/",
+  "logo": "https://irp.cdn-website.com/3bc9621e/dms3rep/multi/edel-roofing-logo.png",
+  "image": [
+    "https://irp.cdn-website.com/3bc9621e/dms3rep/multi/Edel-Roofing+%282%29.jpg",
+    "https://irp.cdn-website.com/3bc9621e/dms3rep/multi/Edel-Roofing+%283%29.jpg",
+    "https://irp.cdn-website.com/3bc9621e/dms3rep/multi/black-roof-design.jpg"
+  ],
+  "description": "At Edel Roofing and Construction Inc., we specialize in residential and commercial roofing across Edinburg and the Rio Grande Valley. As an Owens Corning Preferred and CertainTeed SELECT ShingleMaster contractor, we use the highest quality materials and follow all industry standards to protect your home or business.",
+  "telephone": "+1-956-422-3335",
+  "email": "eddie@edelroofing.com",
+  "priceRange": "$$",
+  "foundingDate": "2003",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3321 W Alberta Rd Ste A",
+    "addressLocality": "Edinburg",
+    "addressRegion": "TX",
+    "postalCode": "78539",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 26.2596735,
+    "longitude": -98.2055292
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-956-422-3335",
+    "contactType": "customer service",
+    "areaServed": "US-TX",
+    "availableLanguage": ["English", "Spanish"]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "246",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "sameAs": [
+    "https://share.google/CU7NzPmlLBHSBf7VB",
+    "https://www.facebook.com/edelroofing",
+    "https://www.instagram.com/edel_roofing_construction/"
+  ],
+  "hasCredential": [
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "Licensed Roofing Contractor (Commercial & Residential)", "identifier": "03-0489", "recognizedBy": { "@type": "Organization", "name": "Roofing Contractors Association of Texas (RCAT)" } },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "CertainTeed SELECT ShingleMaster", "recognizedBy": { "@type": "Organization", "name": "CertainTeed" } },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Owens Corning Preferred Contractor", "recognizedBy": { "@type": "Organization", "name": "Owens Corning" } },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "GAF Certified Contractor", "recognizedBy": { "@type": "Organization", "name": "GAF" } },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Versico Authorized Contractor", "identifier": "295555", "recognizedBy": { "@type": "Organization", "name": "Versico Roofing Systems" } },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Duro-Last Authorized Contractor", "recognizedBy": { "@type": "Organization", "name": "Duro-Last" } },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Polyglass Registered Contractor", "identifier": "8514", "recognizedBy": { "@type": "Organization", "name": "Polyglass U.S.A. Inc." } },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "KARNAK Qualified Applicator", "recognizedBy": { "@type": "Organization", "name": "KARNAK" } },
+    { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Mule-Hide Warranty Eligible Contractor (TPO/PVC)", "identifier": "C111211200", "recognizedBy": { "@type": "Organization", "name": "Mule-Hide Products Co., Inc." } }
+  ],
+  "areaServed": [
+    { "@type": "City", "name": "Edinburg" },
+    { "@type": "City", "name": "McAllen" },
+    { "@type": "City", "name": "Mission" },
+    { "@type": "City", "name": "Pharr" },
+    { "@type": "City", "name": "Weslaco" },
+    { "@type": "City", "name": "Harlingen" },
+    { "@type": "City", "name": "Brownsville" },
+    { "@type": "City", "name": "Rio Grande City" }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Roofing Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Residential Roof Replacement", "description": "Full residential roof replacement in Edinburg and across the Rio Grande Valley, including asphalt shingle and metal roofing systems." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Roofing", "description": "Commercial roof installation and replacement for businesses across the Rio Grande Valley." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof Repairs", "description": "Residential and commercial roof repairs, including storm and hail damage repair." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof Inspections", "description": "Free roof inspections and written estimates for homeowners and businesses in the Rio Grande Valley." } }
+    ]
+  }
+}

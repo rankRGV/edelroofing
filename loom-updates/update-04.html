@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fourth Update — Edel Roofing × RankRGV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blue: #1d4ed8; --purple: #7c3aed; --dark: #0f172a; --text: #0f172a;
+    --muted: #64748b; --border: #e2e8f0; --surface: #f8fafc; --white: #ffffff;
+    --success: #10b981; --warning: #f59e0b; --danger: #ef4444;
+    --grad: linear-gradient(135deg, #1d4ed8, #7c3aed);
+  }
+  body { font-family: 'Inter', sans-serif; background: var(--surface); color: var(--text); line-height: 1.55; }
+
+  .hero {
+    background: var(--dark); background-image: radial-gradient(circle, rgba(124,58,237,0.20) 1px, transparent 1px);
+    background-size: 24px 24px; padding: 50px 24px 44px; text-align: center; color: white;
+  }
+  .hero-badge {
+    display: inline-block; background: rgba(124,58,237,0.3); border: 1px solid rgba(124,58,237,0.5);
+    border-radius: 20px; padding: 5px 14px; font-size: 12px; color: #c4b5fd;
+    letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 18px;
+  }
+  .hero h1 { font-size: 36px; font-weight: 800; margin-bottom: 12px; line-height: 1.15; }
+  .hero h1 span { background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero-sub { font-size: 16px; color: #94a3b8; max-width: 700px; margin: 0 auto; line-height: 1.6; }
+  .hero-meta { font-size: 13px; color: #475569; margin-top: 22px; font-family: 'JetBrains Mono', monospace; }
+
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 48px 24px; }
+
+  .callout { border-radius: 12px; padding: 18px 24px; margin-bottom: 36px; font-size: 14.5px; line-height: 1.65; }
+  .callout.blue { background: #eff6ff; border: 1px solid #bfdbfe; color: #1e40af; }
+  .callout.green { background: #f0fdf4; border: 1px solid #bbf7d0; color: #14532d; }
+  .callout.amber { background: #fffbeb; border: 1px solid #fde68a; color: #92400e; }
+  .callout.red { background: #fef2f2; border: 1px solid #fecaca; color: #991b1b; }
+
+  .section { margin-bottom: 48px; }
+  .section-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--purple); margin-bottom: 8px; }
+  .section-title { font-size: 24px; font-weight: 800; color: var(--dark); margin-bottom: 8px; line-height: 1.25; }
+  .section-sub { font-size: 14.5px; color: var(--muted); margin-bottom: 18px; line-height: 1.6; }
+  .section-body { font-size: 14.5px; color: var(--text); line-height: 1.75; }
+  .section-body p { margin-bottom: 12px; }
+  .section-body strong { color: var(--dark); }
+
+  .metric-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  @media (max-width: 900px) { .metric-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 500px) { .metric-grid { grid-template-columns: 1fr; } }
+  .metric-card { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+  .metric-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin-bottom: 6px; }
+  .metric-value { font-size: 22px; font-weight: 800; color: var(--dark); line-height: 1.2; margin-bottom: 4px; font-family: 'JetBrains Mono', monospace; }
+  .metric-value.green { color: #059669; }
+  .metric-value.red { color: #dc2626; }
+  .metric-context { font-size: 12px; color: var(--muted); line-height: 1.4; }
+
+  .ba-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 700px) { .ba-grid { grid-template-columns: 1fr; } }
+  .ba-card { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 22px; }
+  .ba-card.before { border-left: 4px solid #cbd5e1; }
+  .ba-card.after { border-left: 4px solid var(--success); }
+  .ba-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
+  .ba-card.before .ba-label { color: #94a3b8; }
+  .ba-card.after .ba-label { color: #059669; }
+  .ba-card ul { padding-left: 20px; font-size: 13.5px; line-height: 1.8; }
+  .ba-card.before ul { color: var(--muted); }
+  .ba-card.after ul { color: var(--text); }
+
+  .table-wrap { background: white; border: 1px solid var(--border); border-radius: 12px; overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  th { background: #f8fafc; text-align: left; padding: 12px 16px; font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); border-bottom: 1px solid var(--border); }
+  td { padding: 12px 16px; border-bottom: 1px solid var(--border); color: var(--text); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  td code { font-family: 'JetBrains Mono', monospace; font-size: 12.5px; color: var(--dark); }
+  .status-badge { display: inline-block; padding: 3px 10px; border-radius: 6px; font-size: 11px; font-weight: 700; white-space: nowrap; }
+  .status-done { background: #d1fae5; color: #065f46; }
+  .status-pending { background: #fef3c7; color: #92400e; }
+  .status-next { background: #eff6ff; color: #1e40af; }
+  .status-critical { background: #fee2e2; color: #991b1b; }
+
+  .blog-card { background: white; border: 1px solid var(--border); border-radius: 14px; padding: 26px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); margin-bottom: 14px; }
+  .blog-status { display: inline-block; background: #fffbeb; border: 1px solid #fde68a; color: #92400e; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 4px 10px; border-radius: 6px; margin-bottom: 14px; }
+  .blog-title { font-size: 18px; font-weight: 800; color: var(--dark); margin-bottom: 4px; }
+  .blog-subtitle { font-size: 14px; color: var(--muted); font-style: italic; margin-bottom: 16px; }
+  .blog-meta-row { display: flex; gap: 24px; flex-wrap: wrap; font-size: 13px; color: var(--text); margin-bottom: 4px; }
+  .blog-meta-row strong { color: var(--muted); font-weight: 600; }
+
+  .quote-box { background: white; border: 1px solid var(--border); border-left: 4px solid var(--purple); border-radius: 12px; padding: 22px 26px; margin-bottom: 14px; }
+  .quote-q { font-size: 13px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px; }
+  .quote-text { font-size: 14.5px; line-height: 1.7; color: var(--text); font-style: italic; }
+
+  .footer { text-align: center; padding: 36px 24px; font-size: 13px; color: #94a3b8;
+    border-top: 1px solid var(--border); background: white; margin-top: 24px; }
+  .footer a { color: var(--blue); text-decoration: none; }
+  .footer-brand { font-weight: 700; color: var(--text); margin-bottom: 6px; font-size: 14px; }
+
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 26px; }
+    .section-title { font-size: 20px; }
+    .blog-meta-row { flex-direction: column; gap: 4px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-badge">Fourth Update · July 29, 2026</div>
+  <h1>McAllen is <span>built and indexed</span>. Now it has to age.</h1>
+  <p class="hero-sub">This covers Cycle 4, July 14 through today. The McAllen build is finished, both languages, and Google has all of it. We also re-ran the AI test we promised you last cycle. It has not moved yet, and this update shows you exactly where it stands.</p>
+  <div class="hero-meta">EDEL ROOFING × RANKRGV · CYCLE 4</div>
+</div>
+
+<div class="wrap">
+
+  <div class="callout blue">
+    <strong>How to read this:</strong> Two cycles ago we found a specific problem, said we would fix it, and said we would measure whether the fix worked. This update is that measurement. The build is done. The result has not shown up yet. Both of those are worth telling you straight.
+  </div>
+
+  <!-- AT A GLANCE -->
+  <div class="section">
+    <div class="section-label">At a Glance</div>
+    <div class="section-title">The headline numbers this cycle</div>
+    <div class="metric-grid">
+      <div class="metric-card">
+        <div class="metric-label">McAllen Pages Indexed</div>
+        <div class="metric-value green">9 of 9</div>
+        <div class="metric-context">Full cluster, English and Spanish, all confirmed in Google</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">McAllen AI Test</div>
+        <div class="metric-value">Not yet</div>
+        <div class="metric-context">Re-tested 20 times across 4 platforms. No change so far.</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Google Reviews</div>
+        <div class="metric-value green">252</div>
+        <div class="metric-context">Up from 246 last cycle, still 4.8 stars</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Next City</div>
+        <div class="metric-value green">Mission</div>
+        <div class="metric-context">Built this cycle, English and Spanish, ready to publish</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MCALLEN CLUSTER -->
+  <div class="section">
+    <div class="section-label">Step 1 · Done</div>
+    <div class="section-title">The McAllen build is finished, and Google has all of it</div>
+    <p class="section-sub">In June, McAllen was one page. It is now a full set: a main city page, three service pages under it, and a blog post, every one of them in both English and Spanish. We confirmed this morning that Google has indexed all nine.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Page</th><th>English</th><th>Spanish</th><th>Indexed</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>McAllen roofing (main)</td><td><code>/roofing-mcallen-tx</code></td><td><code>/roofing-mcallen-tx-es</code></td><td><span class="status-badge status-done">Yes</span></td></tr>
+          <tr><td>Commercial roofing</td><td><code>/commercial-roofing-mcallen-tx</code></td><td><code>/techado-comercial-mcallen-tx</code></td><td><span class="status-badge status-done">Yes</span></td></tr>
+          <tr><td>Roof repair</td><td><code>/roof-repair-mcallen-tx</code></td><td><code>/reparacion-de-techo-mcallen-tx</code></td><td><span class="status-badge status-done">Yes</span></td></tr>
+          <tr><td>Roof replacement</td><td><code>/roof-replacement-mcallen-tx</code></td><td><code>/reemplazo-de-techo-mcallen-tx</code></td><td><span class="status-badge status-done">Yes</span></td></tr>
+          <tr><td>Blog: replacement timeline</td><td><code>/roof-replacement-in-mcallen...</code></td><td><code>/reemplazo-de-techo-en-mcallen...</code></td><td><span class="status-badge status-done">Yes</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout amber" style="margin-top:14px;margin-bottom:0">
+      <strong>Setting expectations honestly.</strong> Indexed means Google has the pages and knows what they say. It does not mean they rank yet. These went live two weeks ago, and new pages in a competitive market usually take a couple of months to settle into position. McAllen Valley Roofing currently holds the top spots on most McAllen roofing searches, and they have a large head start. We expect movement over the next two cycles, not this one.
+    </div>
+  </div>
+
+  <!-- THE AI TEST -->
+  <div class="section">
+    <div class="section-label">Step 2 · The Measurement We Promised</div>
+    <div class="section-title">We re-ran the AI test. It has not moved yet.</div>
+    <p class="section-sub">In June we asked ChatGPT, Claude, Gemini and Perplexity five real customer questions to see whether any of them would recommend Edel. Four of the five went well. One failed on every platform: "I have a flat roof leak on my business in McAllen TX, who can fix it?" Zero out of four. That is the question the McAllen commercial page was built to answer, and we told you we would re-test once the page was live.</p>
+
+    <div class="ba-grid">
+      <div class="ba-card before">
+        <div class="ba-label">June 24 · Before the page</div>
+        <ul>
+          <li><strong>0 of 4</strong> platforms mentioned Edel for this question</li>
+          <li>No McAllen commercial content existed</li>
+        </ul>
+      </div>
+      <div class="ba-card before">
+        <div class="ba-label">July 29 · After the page</div>
+        <ul>
+          <li><strong>0 of 20.</strong> We asked each platform five separate times to be sure.</li>
+          <li>ChatGPT 0/5 · Claude 0/5 · Gemini 0/5 · Perplexity 0/5</li>
+          <li>The page is live and indexed. The AI answers have not caught up.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout amber" style="margin-top:14px;margin-bottom:0">
+      <strong>What we make of it.</strong> These tools build their answers largely from what already ranks well and what gets talked about across the web. The McAllen pages are two weeks old and do not rank yet, so it follows that the AI answers do not know about them yet either. The honest read is that it is too early, not that the approach is wrong. The same thing happened in Edinburg first, where you now get recommended on most questions. What we will not do is tell you this moved when it has not.
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="section">
+    <div class="section-label">Step 3 · Done</div>
+    <div class="section-title">Fourth bilingual blog, plus two more profile posts</div>
+    <p class="section-sub">Same cadence as every cycle so far. This one was written off real search data rather than guesswork, which changed what we wrote about.</p>
+
+    <div class="blog-card">
+      <div class="blog-status" style="background:#d1fae5;border-color:#86efac;color:#065f46">Live · English &amp; Spanish</div>
+      <div class="blog-title">Roof Replacement in McAllen: Timeline and Insurance</div>
+      <div class="blog-subtitle">Fourth blog post, both languages, live July 24</div>
+      <div class="blog-meta-row"><span><strong>Why this angle:</strong> We checked what McAllen homeowners actually type into Google. "Roof replacement mcallen tx" gets almost no searches. Questions about how long it takes and how insurance handles it get real volume. So we wrote to the questions people are asking instead of the phrase we assumed they used.</span></div>
+      <div class="blog-meta-row" style="margin-top:10px"><span><strong>Profile Post #7 (English):</strong> live &nbsp;·&nbsp; <strong>Profile Post #8 (Spanish):</strong> live</span></div>
+    </div>
+  </div>
+
+  <!-- PROFILE -->
+  <div class="section">
+    <div class="section-label">Step 4 · Ongoing</div>
+    <div class="section-title">Your Google profile keeps getting stronger</div>
+    <p class="section-sub">This is the quiet compounding part of the work. None of it is dramatic in any single cycle, and all of it matters.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Item</th><th>Start of engagement</th><th>Today</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Google reviews</td><td>246</td><td><strong>252</strong>, holding 4.8 stars</td></tr>
+          <tr><td>Review responses</td><td>Inconsistent</td><td><strong>Every review since January has a reply</strong></td></tr>
+          <tr><td>Profile posts</td><td>None</td><td><strong>8 posts</strong>, bilingual, steady cadence</td></tr>
+          <tr><td>Business details</td><td>Conflicting across the web</td><td><strong>One consistent listing</strong>, 24/7 hours, 9 credentials</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- CITATIONS -->
+  <div class="section">
+    <div class="section-label">Step 5 · What We Found</div>
+    <div class="section-title">Your phone number is wrong in a lot of places online</div>
+    <p class="section-sub">We re-checked where your business information shows up across the web. There is more cleanup here than we expected, and it is worth showing you because it works directly against the local visibility we are building.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>What's wrong</th><th>Where</th><th>Why it matters</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Old number 956-997-9474</strong><br><span style="color:#64748b">still published</span></td>
+            <td>Mission Chamber, RGV Hispanic Chamber, Weslaco Chamber, your own Flowpage, a Facebook post, and several business directories</td>
+            <td>Chambers are listings Google trusts. When they disagree with your Google profile, it weakens confidence in all of it.</td>
+          </tr>
+          <tr>
+            <td><strong>A second old number 956-867-0667</strong><br><span style="color:#64748b">on a directory network</span></td>
+            <td>Eight bid-directory sites carrying the same listing, plus Facebook</td>
+            <td>All eight come from one source listing, so one correction should fix all of them.</td>
+          </tr>
+          <tr>
+            <td><strong>Business name shortened</strong><br><span style="color:#64748b">"Edel Construction"</span></td>
+            <td>That same directory network</td>
+            <td>Drops "Roofing" from the name entirely, which works against everything else we are doing to tie you to roofing.</td>
+          </tr>
+          <tr>
+            <td><strong>That number points at other businesses too</strong></td>
+            <td>Yelp and Manta list it under two other Edinburg companies and one McAllen company</td>
+            <td>Conflicting information across directories is one of the things that holds local rankings back.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout amber" style="margin-top:14px;margin-bottom:0">
+      <strong>This is Cycle 5 work, and we want to be straight about the timeline.</strong> We can submit the corrections quickly. Getting them confirmed is slower, because chambers and directories each have their own review process and they move at their own pace. Expect this to land over a few weeks rather than a few days. Two of them, your Flowpage and the Facebook post, are fully in your control and can be fixed today if you want to knock them out yourself.
+    </div>
+  </div>
+
+  <!-- WHAT'S NEXT -->
+  <div class="section" style="margin-bottom:0">
+    <div class="section-label">Coming Up</div>
+    <div class="section-title">What's next, Cycle 5</div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>What</th><th>Why</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Publish the Mission city page</td><td>Next city in the order we set at kickoff. Both languages are already built.</td><td><span class="status-badge status-done">Built, publishing now</span></td></tr>
+          <tr><td>Correct your listings across the web</td><td>Chambers, directories, Flowpage and Facebook, per the section above.</td><td><span class="status-badge status-pending">Cycle 5</span></td></tr>
+          <tr><td>Keep watching the McAllen pages</td><td>They are indexed. Now we track where they land as they age.</td><td><span class="status-badge status-next">Ongoing</span></td></tr>
+          <tr><td>Re-run the AI test again</td><td>Check the McAllen question once the pages have had another month to age and rank.</td><td><span class="status-badge status-next">Next cycle</span></td></tr>
+          <tr><td>Fifth blog and profile posts</td><td>Cadence continues, both languages.</td><td><span class="status-badge status-next">Next cycle</span></td></tr>
+          <tr><td>Mission service pages</td><td>Same pattern as McAllen: replacement, repair, and commercial pages under the city page.</td><td><span class="status-badge status-next">Next cycle</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <div class="footer-brand">RankRGV — Local SEO &amp; AI Visibility, built in the Valley.</div>
+  <div>McAllen, TX · <a href="https://rankrgv.com">rankrgv.com</a> · <a href="mailto:hello@rankrgv.com">hello@rankrgv.com</a> · (956) 391-5991</div>
+  <div style="margin-top:12px;font-size:12px;color:#cbd5e1">Edel Roofing × RankRGV · Cycle 4 Update · July 29, 2026</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Third Update — Edel Roofing × RankRGV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blue: #1d4ed8; --purple: #7c3aed; --dark: #0f172a; --text: #0f172a;
+    --muted: #64748b; --border: #e2e8f0; --surface: #f8fafc; --white: #ffffff;
+    --success: #10b981; --warning: #f59e0b; --danger: #ef4444;
+    --grad: linear-gradient(135deg, #1d4ed8, #7c3aed);
+  }
+  body { font-family: 'Inter', sans-serif; background: var(--surface); color: var(--text); line-height: 1.55; }
+
+  .hero {
+    background: var(--dark); background-image: radial-gradient(circle, rgba(124,58,237,0.20) 1px, transparent 1px);
+    background-size: 24px 24px; padding: 50px 24px 44px; text-align: center; color: white;
+  }
+  .hero-badge {
+    display: inline-block; background: rgba(124,58,237,0.3); border: 1px solid rgba(124,58,237,0.5);
+    border-radius: 20px; padding: 5px 14px; font-size: 12px; color: #c4b5fd;
+    letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 18px;
+  }
+  .hero h1 { font-size: 36px; font-weight: 800; margin-bottom: 12px; line-height: 1.15; }
+  .hero h1 span { background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero-sub { font-size: 16px; color: #94a3b8; max-width: 700px; margin: 0 auto; line-height: 1.6; }
+  .hero-meta { font-size: 13px; color: #475569; margin-top: 22px; font-family: 'JetBrains Mono', monospace; }
+
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 48px 24px; }
+
+  .callout { border-radius: 12px; padding: 18px 24px; margin-bottom: 36px; font-size: 14.5px; line-height: 1.65; }
+  .callout.blue { background: #eff6ff; border: 1px solid #bfdbfe; color: #1e40af; }
+  .callout.green { background: #f0fdf4; border: 1px solid #bbf7d0; color: #14532d; }
+  .callout.amber { background: #fffbeb; border: 1px solid #fde68a; color: #92400e; }
+  .callout.red { background: #fef2f2; border: 1px solid #fecaca; color: #991b1b; }
+
+  .section { margin-bottom: 48px; }
+  .section-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--purple); margin-bottom: 8px; }
+  .section-title { font-size: 24px; font-weight: 800; color: var(--dark); margin-bottom: 8px; line-height: 1.25; }
+  .section-sub { font-size: 14.5px; color: var(--muted); margin-bottom: 18px; line-height: 1.6; }
+  .section-body { font-size: 14.5px; color: var(--text); line-height: 1.75; }
+  .section-body p { margin-bottom: 12px; }
+  .section-body strong { color: var(--dark); }
+
+  .metric-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  @media (max-width: 900px) { .metric-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 500px) { .metric-grid { grid-template-columns: 1fr; } }
+  .metric-card { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+  .metric-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin-bottom: 6px; }
+  .metric-value { font-size: 22px; font-weight: 800; color: var(--dark); line-height: 1.2; margin-bottom: 4px; font-family: 'JetBrains Mono', monospace; }
+  .metric-value.green { color: #059669; }
+  .metric-value.red { color: #dc2626; }
+  .metric-context { font-size: 12px; color: var(--muted); line-height: 1.4; }
+
+  .ba-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 700px) { .ba-grid { grid-template-columns: 1fr; } }
+  .ba-card { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 22px; }
+  .ba-card.before { border-left: 4px solid #cbd5e1; }
+  .ba-card.after { border-left: 4px solid var(--success); }
+  .ba-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
+  .ba-card.before .ba-label { color: #94a3b8; }
+  .ba-card.after .ba-label { color: #059669; }
+  .ba-card ul { padding-left: 20px; font-size: 13.5px; line-height: 1.8; }
+  .ba-card.before ul { color: var(--muted); }
+  .ba-card.after ul { color: var(--text); }
+
+  .table-wrap { background: white; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  th { background: #f8fafc; text-align: left; padding: 12px 16px; font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); border-bottom: 1px solid var(--border); }
+  td { padding: 12px 16px; border-bottom: 1px solid var(--border); color: var(--text); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  .status-badge { display: inline-block; padding: 3px 10px; border-radius: 6px; font-size: 11px; font-weight: 700; white-space: nowrap; }
+  .status-done { background: #d1fae5; color: #065f46; }
+  .status-pending { background: #fef3c7; color: #92400e; }
+  .status-next { background: #eff6ff; color: #1e40af; }
+  .status-critical { background: #fee2e2; color: #991b1b; }
+
+  .blog-card { background: white; border: 1px solid var(--border); border-radius: 14px; padding: 26px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); margin-bottom: 14px; }
+  .blog-status { display: inline-block; background: #fffbeb; border: 1px solid #fde68a; color: #92400e; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 4px 10px; border-radius: 6px; margin-bottom: 14px; }
+  .blog-title { font-size: 18px; font-weight: 800; color: var(--dark); margin-bottom: 4px; }
+  .blog-subtitle { font-size: 14px; color: var(--muted); font-style: italic; margin-bottom: 16px; }
+  .blog-meta-row { display: flex; gap: 24px; flex-wrap: wrap; font-size: 13px; color: var(--text); margin-bottom: 4px; }
+  .blog-meta-row strong { color: var(--muted); font-weight: 600; }
+
+  .footer { text-align: center; padding: 36px 24px; font-size: 13px; color: #94a3b8;
+    border-top: 1px solid var(--border); background: white; margin-top: 24px; }
+  .footer a { color: var(--blue); text-decoration: none; }
+  .footer-brand { font-weight: 700; color: var(--text); margin-bottom: 6px; font-size: 14px; }
+
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 26px; }
+    .section-title { font-size: 20px; }
+    .blog-meta-row { flex-direction: column; gap: 4px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-badge">Third Update · July 11, 2026</div>
+  <h1>McAllen is <span>live</span>, and we finally looked at the ad spend.</h1>
+  <p class="hero-sub">This covers Cycle 3 — June 28 through today. The headline: the McAllen commercial roofing page is live, closing the exact gap Cycle 2 found in two separate tests. We also finished a third bilingual blog and, with your go-ahead, ran the first real look at your Google Ads account.</p>
+  <div class="hero-meta">EDEL ROOFING × RANKRGV · CYCLE 3</div>
+</div>
+
+<div class="wrap">
+
+  <div class="callout blue">
+    <strong>How to read this:</strong> Cycle 2 found the same gap two different ways — no map-pack presence in McAllen, and every AI tool failing the McAllen commercial question. This cycle closes it. We also opened up the ads side of the account for the first time, now that you've given the go-ahead.
+  </div>
+
+  <!-- AT A GLANCE -->
+  <div class="section">
+    <div class="section-label">At a Glance</div>
+    <div class="section-title">The headline numbers this cycle</div>
+    <div class="metric-grid">
+      <div class="metric-card">
+        <div class="metric-label">McAllen Commercial Page</div>
+        <div class="metric-value green">Live, EN + ES</div>
+        <div class="metric-context">Closes the gap Cycle 2 found twice — map pack and AI citation</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Content Published</div>
+        <div class="metric-value green">Blog #3 EN + ES</div>
+        <div class="metric-context">Roof repair, Edinburg &amp; the RGV — third bilingual blog</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">GBP Posts</div>
+        <div class="metric-value green">#5 + #6 live</div>
+        <div class="metric-context">Cadence holding, five and six months in a row</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Google Ads Reviewed</div>
+        <div class="metric-value red">1 fix needed</div>
+        <div class="metric-context">No conversion tracking set up — full audit below</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MCALLEN -->
+  <div class="section">
+    <div class="section-label">Step 1 · The Win</div>
+    <div class="section-title">McAllen commercial roofing page — live</div>
+    <p class="section-sub">Two independent tests last cycle pointed at the same weak spot: 0 of 8 cities showed Edel in McAllen map results, and every single AI tool (ChatGPT, Claude, Gemini, Perplexity) failed the same prompt — "flat roof leak on my business in McAllen TX, who can fix it?" This page is built to close that gap.</p>
+
+    <div class="ba-grid">
+      <div class="ba-card before">
+        <div class="ba-label">Cycle 2 Finding</div>
+        <ul>
+          <li>0 of 4 AI tools mentioned Edel for the McAllen commercial question</li>
+          <li>McAllen absent from map-pack results</li>
+          <li>No commercial-specific McAllen content existed</li>
+        </ul>
+      </div>
+      <div class="ba-card after">
+        <div class="ba-label">Live Now (July 9)</div>
+        <ul>
+          <li><strong>edelroofing.com/commercial-roofing-mcallen-tx</strong> — English</li>
+          <li><strong>edelroofing.com/techado-comercial-mcallen-tx</strong> — Spanish</li>
+          <li>Local context: Nolana Ave strip centers, South Texas Health System, north McAllen industrial</li>
+          <li>TPO / EPDM / modified bitumen coverage, FAQ with schema, linked from the McAllen city page</li>
+          <li>Both submitted directly to Google for indexing</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout amber" style="margin-top:14px;margin-bottom:0">
+      <strong>Next check:</strong> Re-running the same AI citation test now that this page is live and indexed — that's the real proof this worked. Result goes in the next update.
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="section">
+    <div class="section-label">Step 2 · Done</div>
+    <div class="section-title">Third bilingual blog post, plus two more GBP posts</div>
+    <p class="section-sub">Same cadence as the last two cycles — content piece, then Google Business Profile posts tied to it, staggered across the two languages.</p>
+
+    <div class="blog-card" style="margin-bottom:0">
+      <div class="blog-status" style="background:#d1fae5;border-color:#86efac;color:#065f46">Live · English &amp; Spanish</div>
+      <div class="blog-title">Roof Repair in Edinburg and the Rio Grande Valley</div>
+      <div class="blog-subtitle">Third blog post, both languages</div>
+      <div class="blog-meta-row"><span><strong>Covers:</strong> Residential repair queries, FAQ structure built for AI-answer citation, links into the commercial Edinburg page</span></div>
+      <div class="blog-meta-row" style="margin-top:10px"><span><strong>GBP Post #5 (English):</strong> live, roof repair angle &nbsp;·&nbsp; <strong>GBP Post #6 (Spanish):</strong> live, mirrors the ES blog</span></div>
+    </div>
+  </div>
+
+  <!-- ADS AUDIT SUMMARY -->
+  <div class="section">
+    <div class="section-label">Step 3 · New This Cycle</div>
+    <div class="section-title">We looked at the Google Ads account for the first time</div>
+    <p class="section-sub">You gave the go-ahead last update. This is not full ads management — just a read on where the money's going and a short list of fixes. One finding matters more than the rest.</p>
+
+    <div class="callout red">
+      <strong>No conversion tracking is set up.</strong> $1,410 spent over 28 days, 2,098 clicks, and zero of them tracked as a conversion. The campaign is currently set to "Maximize clicks" — it's optimizing for clicks, not leads. This is fix #1, before anything else.
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Finding</th><th>Detail</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Budget delivery</td><td>$50/day cap being used fully — 2,098 clicks delivered vs. Google's own 140-360/mo estimate, at a cheap $0.67 avg. cost per click</td></tr>
+          <tr><td>Competitor brand spend</td><td>~$73 went to searches for other roofing companies by name — fixable once we're on a campaign type that supports real negative keywords</td></tr>
+          <tr><td>Own brand spend</td><td>$68.87 — the single highest-spend search term was "edel roofing," a term you already rank #1 for organically</td></tr>
+          <tr><td>Missing ad assets</td><td>No call asset, no lead form asset, no sitelinks, no images — all free, all a good fit for a business already getting calls off this ad</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="section-sub" style="margin-top:14px;margin-bottom:0">Full breakdown with the complete search term list and the recommended fix order: see the standalone audit doc.</p>
+  </div>
+
+  <!-- WHAT'S NEXT -->
+  <div class="section">
+    <div class="section-label">Coming Up</div>
+    <div class="section-title">What's next — Cycle 4</div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>What</th><th>Why</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Re-test AI citation for McAllen commercial</td><td>Confirm the new page closed the 0-of-4 gap from Cycle 2</td><td><span class="status-badge status-next">Next cycle</span></td></tr>
+          <tr><td>Set up Google Ads conversion tracking</td><td>Unblocks everything else on the ads side — the #1 fix from this audit</td><td><span class="status-badge status-pending">Awaiting your go-ahead on scope</span></td></tr>
+          <tr><td>Add missing ad assets (call, lead form, sitelinks)</td><td>Free, fast, direct fit for a business already getting calls off the ad</td><td><span class="status-badge status-next">Next cycle</span></td></tr>
+          <tr><td>Continue city cadence</td><td>McAllen structure now matches Edinburg — next city page after this</td><td><span class="status-badge status-next">Next cycle</span></td></tr>
+          <tr><td>Next update like this one</td><td>Bi-weekly, plain-language progress — same format</td><td><span class="status-badge status-next">~2 weeks</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ASK -->
+  <div class="section" style="margin-bottom:0">
+    <div class="section-label">One Thing We Need From You</div>
+    <div class="section-title">Quick yes/no, whenever you get a chance</div>
+    <div class="callout amber" style="margin-bottom:0">
+      <strong>Okay to set up conversion tracking on the Ads account?</strong> This means connecting call tracking and/or form submissions so the account can actually tell which clicks turn into leads. No cost, no change to your current spend — just visibility we don't have today. Say the word and we'll get it wired up before the next update.
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <div class="footer-brand">RankRGV — Local SEO &amp; AI Visibility, built in the Valley.</div>
+  <div>McAllen, TX · <a href="https://rankrgv.com">rankrgv.com</a> · <a href="mailto:hello@rankrgv.com">hello@rankrgv.com</a> · (956) 391-5991</div>
+  <div style="margin-top:12px;font-size:12px;color:#cbd5e1">Edel Roofing × RankRGV · Cycle 3 Update · July 11, 2026</div>
+</div>
+
+</body>
+</html>

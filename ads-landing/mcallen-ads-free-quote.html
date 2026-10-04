@@ -1,0 +1,173 @@
+<!-- ============================================================
+  EDEL ROOFING — McAllen Ads landing page (ad traffic only)
+  Paste into ONE custom HTML widget on a NEW blank Duda page.
+
+  Built for: campaign id 24064711142, "Search - Roof Repair & Replacement
+  (Manual Test)" — the paused $25/day McAllen Search campaign, all 4 ad
+  groups (Roof Repair, Roof Replacement & Installation, Roofing Contractor
+  - General, Commercial Roofing).
+
+  WHY A NEW PAGE INSTEAD OF THE EXISTING "GET INSTANT QUOTE":
+  the header's Get Instant Quote button on /contact-us is the Roofle
+  widget — a third-party embed (app.roofle.com). Same problem as the
+  Tavros iframe: leads land in Roofle's system, event firing across
+  origins is unreliable, and it isn't tailored to this campaign's ad
+  copy. This page is self-hosted on Duda (first-party) with its own
+  call button + native Duda form, so both paths fire our own Google
+  Ads conversions cleanly.
+
+  WHY ONE PAGE FOR ALL 4 AD GROUPS (not one page each, not editing the
+  4 live SEO pages the ads point to today): this is a low-budget manual
+  test. The 4 SEO pages (/roofing-mcallen-tx, /roof-replacement-mcallen-tx,
+  /roof-repair-mcallen-tx, /commercial-roofing-mcallen-tx) stay untouched
+  for organic + message-match. This page is ad-only; the service dropdown
+  lets the visitor self-identify which of the 4 ad groups' intents they
+  match.
+
+  SETUP STEPS (do these in order):
+  1. Create a new blank Duda page. Slug suggestion: mcallen-free-quote
+  2. Paste this whole block into a Custom HTML widget on that page.
+  3. Below that widget, drag in Duda's native FORM element. Fields:
+       - Name (text, required)
+       - Phone (phone, required)
+       - Service Needed (dropdown: Roof Replacement / Roof Repair /
+         Commercial Roofing / Not Sure - Need an Inspection)
+       - City / Zip (text, optional)
+     Set the form's "On Submit" action to redirect to:
+       /mcallen-free-quote-thank-you  (create that page next, step 4)
+     Set form notification email to eddie@edelroofing.com (or wherever
+     leads should land — same inbox as other Duda form leads).
+  4. Create a second new blank Duda page: mcallen-free-quote-thank-you
+     Paste the THANK-YOU PAGE SNIPPET (bottom of this file) into a
+     Custom HTML widget there. That's what fires the "form submitted"
+     Google Ads conversion — it fires on page load of the thank-you
+     page, not on the submit click, so it only counts real completed
+     submissions (per conversion-tracking best practice: fire on the
+     confirmed action, not the click).
+  5. Swap GOOGLE_ADS_CONVERSION_ID / *_LABEL placeholders below for the
+     real values from Google Ads > Goals > Conversions > the "Calls from
+     ads" action and a new "Form submission" conversion action (create
+     that action first if it doesn't exist — Website, category Lead).
+  6. Once tested end-to-end (submit the form yourself, confirm the lead
+     email arrives AND the thank-you page fires in Google Ads' conversion
+     diagnostics), update all 4 ad groups' final URLs to point here.
+     That's a live campaign edit — confirm with Eddie before changing it.
+
+  Per the 2026-08-27 decision: CALLS are the PRIMARY bidding conversion
+  goal for this campaign; the form conversion below should be added as
+  SECONDARY (observation only, not fed into Smart Bidding) until it has
+  a few weeks of real volume. Set that in Google Ads > Goals > Conversions
+  > this new action > Settings > "Include in Conversions" = Secondary.
+============================================================ -->
+<div class="edel-pg">
+
+  <!-- ===== Hero ===== -->
+  <header class="edel-pg__hero">
+    <div class="edel-pg__wrap">
+      <p class="edel-pg__eyebrow">Rio Grande Valley</p>
+      <h1 class="edel-pg__h1">Free Roof Quote in the RGV</h1>
+      <p class="edel-pg__lede">
+        Licensed, insured, and the only CertainTeed Select ShingleMaster in the
+        Rio Grande Valley. Written estimate, no pressure. 252 Google reviews at 4.8 stars.
+      </p>
+    </div>
+  </header>
+
+  <!-- ===== Call-first conversion card ===== -->
+  <section class="edel-pg__section">
+    <div class="edel-pg__wrap edel-pg__wrap--narrow">
+      <div class="edel-ads__call-card">
+        <a href="tel:+19564223335" id="edel-ads-call-link" class="edel-ads__call-link">Call Now: (956) 422-3335</a>
+        <p class="edel-ads__call-sub">We answer 24/7 — talk to a real roofer, not a call center.</p>
+      </div>
+
+      <p class="edel-ads__or">Or request a written estimate below — a real person will call you back.</p>
+
+      <!-- ===== DUDA NATIVE FORM GOES HERE ===== -->
+      <!-- Drag Duda's Form widget into this spot in the page editor.    -->
+      <!-- Fields: Name, Phone, Service Needed (dropdown), City/Zip.     -->
+      <!-- On Submit -> redirect to /mcallen-free-quote-thank-you        -->
+
+    </div>
+  </section>
+
+  <!-- ===== Trust strip ===== -->
+  <section class="edel-pg__section edel-pg__section--alt">
+    <div class="edel-pg__wrap">
+      <div class="edel-pg__proof">
+        <div class="edel-pg__proof-item">
+          <div class="edel-pg__proof-big">4.8★</div>
+          <div class="edel-pg__proof-label">252 Google reviews</div>
+        </div>
+        <div class="edel-pg__proof-item">
+          <div class="edel-pg__proof-big">Since 2003</div>
+          <div class="edel-pg__proof-label">Serving the RGV</div>
+        </div>
+        <div class="edel-pg__proof-item">
+          <div class="edel-pg__proof-big">Licensed &amp; Insured</div>
+          <div class="edel-pg__proof-label">Roofing Contractor</div>
+        </div>
+        <div class="edel-pg__proof-item">
+          <div class="edel-pg__proof-big">CertainTeed</div>
+          <div class="edel-pg__proof-label">Select ShingleMaster — only one in the RGV</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<style>
+  /* shared edel-pg system — matches the other McAllen pages */
+  .edel-pg{font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:#1f2937;-webkit-font-smoothing:antialiased;line-height:1.6;}
+  .edel-pg *{box-sizing:border-box;}
+  .edel-pg__wrap{max-width:1040px;margin:0 auto;padding:0 20px;}
+  .edel-pg__wrap--narrow{max-width:720px;margin:0 auto;padding:0 20px;}
+
+  .edel-pg__hero{background:#6e1018;color:#fff;padding:64px 0;text-align:center;}
+  .edel-pg__eyebrow{font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.7);margin:0 0 12px;}
+  .edel-pg__h1{font-size:clamp(28px,4.5vw,44px);line-height:1.12;font-weight:700;margin:0 0 16px;color:#fff;}
+  .edel-pg__lede{max-width:680px;margin:0 auto;font-size:17px;line-height:1.6;color:rgba(255,255,255,.9);}
+
+  .edel-pg__section{padding:60px 0;background:#fff;}
+  .edel-pg__section--alt{background:#faf8f7;}
+
+  .edel-pg__proof{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center;}
+  .edel-pg__proof-item{padding:24px 16px;border:1px solid #ececec;border-radius:12px;background:#fff;display:flex;flex-direction:column;gap:10px;}
+  .edel-pg__proof-big{font-size:20px;font-weight:700;color:#6e1018;}
+  .edel-pg__proof-label{font-size:14px;line-height:1.5;color:#4b5563;}
+
+  /* ads-specific call card */
+  .edel-ads__call-card{background:#6e1018;border-radius:12px;padding:28px;text-align:center;margin-bottom:20px;}
+  .edel-ads__call-card a.edel-ads__call-link,
+  a#edel-ads-call-link.edel-ads__call-link{display:block;color:#ffffff !important;font-size:26px;font-weight:700;text-decoration:none !important;}
+  .edel-ads__call-sub{color:rgba(255,255,255,.8);margin:8px 0 0;font-size:14px;}
+  .edel-ads__or{text-align:center;color:#4b5563;font-size:15px;margin:0 0 20px;}
+
+  @media(max-width:860px){.edel-pg__proof{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:580px){.edel-pg__proof{grid-template-columns:1fr;}.edel-pg__hero{padding:48px 0;}.edel-pg__section{padding:44px 0;}}
+</style>
+
+<!-- Google Ads call-conversion tag — fires when the call button is tapped.
+     gtag() already exists site-wide from Duda's Head HTML (AW-877706315),
+     no need to reload the script tag or re-run config here. -->
+<script>
+  document.getElementById('edel-ads-call-link').addEventListener('click', function () {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-877706315/zhquCLeHh-kcEMv4wqID'
+    });
+  });
+</script>
+
+<!-- ============================================================
+  FORM CONVERSION — no thank-you page needed. Duda's native Form widget
+  has a "Tracking" tab under Submission settings with a "Form conversion
+  code" box that fires on confirmed successful submission. Paste this
+  there (already using real values, both conversion actions created
+  2026-08-27, both set Secondary per the calls-primary decision):
+
+    gtag('event', 'conversion', {
+      'send_to': 'AW-877706315/_Nf5CI65kOkcEMv4wqID'
+    });
+
+============================================================ -->

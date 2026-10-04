@@ -1,0 +1,1047 @@
+{
+  "clientSlug": "edel",
+  "locationId": "3072064674300751676",
+  "capturedAt": "2026-08-16T22:14:48.918Z",
+  "performanceWindow": {
+    "start": "2026-05-15",
+    "end": "2026-08-13"
+  },
+  "location": {
+    "name": "locations/3072064674300751676",
+    "title": "EDEL Roofing and Construction Inc.",
+    "phoneNumbers": {
+      "primaryPhone": "(956) 422-3335"
+    },
+    "categories": {
+      "primaryCategory": {
+        "name": "categories/gcid:roofing_contractor",
+        "displayName": "Roofing contractor",
+        "serviceTypes": [
+          {
+            "serviceTypeId": "job_type_id:attic_venting",
+            "displayName": "Attic venting"
+          },
+          {
+            "serviceTypeId": "job_type_id:attic_venting_installation",
+            "displayName": "Attic venting installation"
+          },
+          {
+            "serviceTypeId": "job_type_id:attic_venting_repairs",
+            "displayName": "Attic venting repairs"
+          },
+          {
+            "serviceTypeId": "job_type_id:clean_gutters",
+            "displayName": "Gutter cleaning"
+          },
+          {
+            "serviceTypeId": "job_type_id:gutter_installation",
+            "displayName": "Gutter installation"
+          },
+          {
+            "serviceTypeId": "job_type_id:gutter_repair",
+            "displayName": "Gutter repairs"
+          },
+          {
+            "serviceTypeId": "job_type_id:roof_damage_repair",
+            "displayName": "Roof damage repair"
+          },
+          {
+            "serviceTypeId": "job_type_id:roof_inspection",
+            "displayName": "Roof inspection"
+          },
+          {
+            "serviceTypeId": "job_type_id:roof_installation",
+            "displayName": "Roof installation"
+          },
+          {
+            "serviceTypeId": "job_type_id:roof_repair",
+            "displayName": "Roof repair"
+          },
+          {
+            "serviceTypeId": "job_type_id:skylight_installation",
+            "displayName": "Skylight installation"
+          },
+          {
+            "serviceTypeId": "job_type_id:skylight_repair",
+            "displayName": "Skylight repair"
+          },
+          {
+            "serviceTypeId": "job_type_id:storm_wind_damage_roof_repair",
+            "displayName": "Roof repair for storm & wind damage"
+          }
+        ],
+        "moreHoursTypes": [
+          {
+            "hoursTypeId": "ACCESS",
+            "displayName": "Access",
+            "localizedDisplayName": "Access"
+          },
+          {
+            "hoursTypeId": "BREAKFAST",
+            "displayName": "Breakfast",
+            "localizedDisplayName": "Breakfast"
+          },
+          {
+            "hoursTypeId": "BRUNCH",
+            "displayName": "Brunch",
+            "localizedDisplayName": "Brunch"
+          },
+          {
+            "hoursTypeId": "DELIVERY",
+            "displayName": "Delivery",
+            "localizedDisplayName": "Delivery"
+          },
+          {
+            "hoursTypeId": "DINNER",
+            "displayName": "Dinner",
+            "localizedDisplayName": "Dinner"
+          },
+          {
+            "hoursTypeId": "DRIVE_THROUGH",
+            "displayName": "Drive through",
+            "localizedDisplayName": "Drive through"
+          },
+          {
+            "hoursTypeId": "HAPPY_HOUR",
+            "displayName": "Happy hours",
+            "localizedDisplayName": "Happy hours"
+          },
+          {
+            "hoursTypeId": "KITCHEN",
+            "displayName": "Kitchen",
+            "localizedDisplayName": "Kitchen"
+          },
+          {
+            "hoursTypeId": "LUNCH",
+            "displayName": "Lunch",
+            "localizedDisplayName": "Lunch"
+          },
+          {
+            "hoursTypeId": "ONLINE_SERVICE_HOURS",
+            "displayName": "Online service hours",
+            "localizedDisplayName": "Online service hours"
+          },
+          {
+            "hoursTypeId": "PICKUP",
+            "displayName": "Pickup",
+            "localizedDisplayName": "Pickup"
+          },
+          {
+            "hoursTypeId": "TAKEOUT",
+            "displayName": "Takeout",
+            "localizedDisplayName": "Takeout"
+          },
+          {
+            "hoursTypeId": "SENIOR_HOURS",
+            "displayName": "Senior hours",
+            "localizedDisplayName": "Senior hours"
+          }
+        ]
+      },
+      "additionalCategories": [
+        {
+          "name": "categories/gcid:general_contractor",
+          "displayName": "General contractor",
+          "serviceTypes": [
+            {
+              "serviceTypeId": "job_type_id:accessory_building_construction",
+              "displayName": "Accessory building construction"
+            },
+            {
+              "serviceTypeId": "job_type_id:assemble_furniture",
+              "displayName": "Furniture assembly"
+            },
+            {
+              "serviceTypeId": "job_type_id:basement_remodeling",
+              "displayName": "Basement remodeling"
+            },
+            {
+              "serviceTypeId": "job_type_id:bathroom_remodeling",
+              "displayName": "Bathroom remodeling"
+            },
+            {
+              "serviceTypeId": "job_type_id:building_design",
+              "displayName": "Building design"
+            },
+            {
+              "serviceTypeId": "job_type_id:clean_gutters",
+              "displayName": "Gutter cleaning"
+            },
+            {
+              "serviceTypeId": "job_type_id:commercial_projects",
+              "displayName": "Commercial projects"
+            },
+            {
+              "serviceTypeId": "job_type_id:concrete_pouring",
+              "displayName": "Concrete pouring"
+            },
+            {
+              "serviceTypeId": "job_type_id:construction",
+              "displayName": "General construction"
+            },
+            {
+              "serviceTypeId": "job_type_id:custom_home_building",
+              "displayName": "Custom home building"
+            },
+            {
+              "serviceTypeId": "job_type_id:deck_construction",
+              "displayName": "Deck construction"
+            },
+            {
+              "serviceTypeId": "job_type_id:erosion_control_construction",
+              "displayName": "Erosion control construction"
+            },
+            {
+              "serviceTypeId": "job_type_id:exterior_finishing",
+              "displayName": "Exterior finishing"
+            },
+            {
+              "serviceTypeId": "job_type_id:exterior_structural_repairs",
+              "displayName": "Exterior structural repairs"
+            },
+            {
+              "serviceTypeId": "job_type_id:flooring",
+              "displayName": "Flooring"
+            },
+            {
+              "serviceTypeId": "job_type_id:foundation_pouring",
+              "displayName": "Foundation pouring"
+            },
+            {
+              "serviceTypeId": "job_type_id:general_building_construction",
+              "displayName": "General building construction"
+            },
+            {
+              "serviceTypeId": "job_type_id:handyman_remodeling",
+              "displayName": "Remodeling"
+            },
+            {
+              "serviceTypeId": "job_type_id:home_addition_construction",
+              "displayName": "Home addition construction"
+            },
+            {
+              "serviceTypeId": "job_type_id:home_building",
+              "displayName": "Home building"
+            },
+            {
+              "serviceTypeId": "job_type_id:home_construction",
+              "displayName": "Home construction"
+            },
+            {
+              "serviceTypeId": "job_type_id:home_renovation",
+              "displayName": "Home renovations"
+            },
+            {
+              "serviceTypeId": "job_type_id:home_repairs",
+              "displayName": "Home repairs"
+            },
+            {
+              "serviceTypeId": "job_type_id:install_drywall",
+              "displayName": "Drywall installation"
+            },
+            {
+              "serviceTypeId": "job_type_id:install_fan",
+              "displayName": "Fan installation"
+            },
+            {
+              "serviceTypeId": "job_type_id:install_flooring",
+              "displayName": "Install flooring"
+            },
+            {
+              "serviceTypeId": "job_type_id:install_tile_work",
+              "displayName": "Tile work installation"
+            },
+            {
+              "serviceTypeId": "job_type_id:install_water_fixtures",
+              "displayName": "Plumbing fixture installation"
+            },
+            {
+              "serviceTypeId": "job_type_id:interior_finishing",
+              "displayName": "Interior finishing"
+            },
+            {
+              "serviceTypeId": "job_type_id:interior_structural_repairs",
+              "displayName": "Interior structural repairs"
+            },
+            {
+              "serviceTypeId": "job_type_id:kitchen_remodeling",
+              "displayName": "Kitchen remodeling"
+            },
+            {
+              "serviceTypeId": "job_type_id:masonry_installation",
+              "displayName": "Masonry installation"
+            },
+            {
+              "serviceTypeId": "job_type_id:metal_building_construction",
+              "displayName": "Metal building construction"
+            },
+            {
+              "serviceTypeId": "job_type_id:mount_tv",
+              "displayName": "TV mounting"
+            },
+            {
+              "serviceTypeId": "job_type_id:new_home_construction",
+              "displayName": "New home construction"
+            },
+            {
+              "serviceTypeId": "job_type_id:paint_indoors",
+              "displayName": "Paint indoors"
+            },
+            {
+              "serviceTypeId": "job_type_id:paint_outdoors",
+              "displayName": "Exterior painting"
+            },
+            {
+              "serviceTypeId": "job_type_id:painting",
+              "displayName": "Painting"
+            },
+            {
+              "serviceTypeId": "job_type_id:patio_construction",
+              "displayName": "Patio construction"
+            },
+            {
+              "serviceTypeId": "job_type_id:pole_building_construction",
+              "displayName": "Pole building construction"
+            },
+            {
+              "serviceTypeId": "job_type_id:porch_construction",
+              "displayName": "Porch construction"
+            },
+            {
+              "serviceTypeId": "job_type_id:refurbishment",
+              "displayName": "Refurbishment"
+            },
+            {
+              "serviceTypeId": "job_type_id:repair_drywall",
+              "displayName": "Drywall repair"
+            },
+            {
+              "serviceTypeId": "job_type_id:repair_fan",
+              "displayName": "Fan repair"
+            },
+            {
+              "serviceTypeId": "job_type_id:repair_flooring",
+              "displayName": "Repair flooring"
+            },
+            {
+              "serviceTypeId": "job_type_id:repair_water_fixtures",
+              "displayName": "Repair water fixtures"
+            },
+            {
+              "serviceTypeId": "job_type_id:replace_tile_work",
+              "displayName": "Tile work replacement"
+            },
+            {
+              "serviceTypeId": "job_type_id:roof_installation",
+              "displayName": "Roof installation"
+            },
+            {
+              "serviceTypeId": "job_type_id:roof_repair",
+              "displayName": "Roof repair"
+            },
+            {
+              "serviceTypeId": "job_type_id:steel_building_construction",
+              "displayName": "Steel building construction"
+            },
+            {
+              "serviceTypeId": "job_type_id:waterproofing",
+              "displayName": "Waterproofing"
+            }
+          ],
+          "moreHoursTypes": [
+            {
+              "hoursTypeId": "ACCESS",
+              "displayName": "Access",
+              "localizedDisplayName": "Access"
+            },
+            {
+              "hoursTypeId": "BREAKFAST",
+              "displayName": "Breakfast",
+              "localizedDisplayName": "Breakfast"
+            },
+            {
+              "hoursTypeId": "BRUNCH",
+              "displayName": "Brunch",
+              "localizedDisplayName": "Brunch"
+            },
+            {
+              "hoursTypeId": "DELIVERY",
+              "displayName": "Delivery",
+              "localizedDisplayName": "Delivery"
+            },
+            {
+              "hoursTypeId": "DINNER",
+              "displayName": "Dinner",
+              "localizedDisplayName": "Dinner"
+            },
+            {
+              "hoursTypeId": "DRIVE_THROUGH",
+              "displayName": "Drive through",
+              "localizedDisplayName": "Drive through"
+            },
+            {
+              "hoursTypeId": "HAPPY_HOUR",
+              "displayName": "Happy hours",
+              "localizedDisplayName": "Happy hours"
+            },
+            {
+              "hoursTypeId": "KITCHEN",
+              "displayName": "Kitchen",
+              "localizedDisplayName": "Kitchen"
+            },
+            {
+              "hoursTypeId": "LUNCH",
+              "displayName": "Lunch",
+              "localizedDisplayName": "Lunch"
+            },
+            {
+              "hoursTypeId": "ONLINE_SERVICE_HOURS",
+              "displayName": "Online service hours",
+              "localizedDisplayName": "Online service hours"
+            },
+            {
+              "hoursTypeId": "PICKUP",
+              "displayName": "Pickup",
+              "localizedDisplayName": "Pickup"
+            },
+            {
+              "hoursTypeId": "TAKEOUT",
+              "displayName": "Takeout",
+              "localizedDisplayName": "Takeout"
+            },
+            {
+              "hoursTypeId": "SENIOR_HOURS",
+              "displayName": "Senior hours",
+              "localizedDisplayName": "Senior hours"
+            }
+          ]
+        },
+        {
+          "name": "categories/gcid:construction_company",
+          "displayName": "Construction company",
+          "serviceTypes": [
+            {
+              "serviceTypeId": "job_type_id:accessory_building_construction",
+              "displayName": "Accessory building construction"
+            },
+            {
+              "serviceTypeId": "job_type_id:assemble_furniture",
+              "displayName": "Furniture assembly"
+            },
+            {
+              "serviceTypeId": "job_type_id:basement_waterproofing",
+              "displayName": "Basement waterproofing"
+            },
+            {
+              "serviceTypeId": "job_type_id:bathroom_remodeling",
+              "displayName": "Bathroom remodeling"
+            },
+            {
+              "serviceTypeId": "job_type_id:building_construction",
+              "displayName": "Building construction"
+            },
+            {
+              "serviceTypeId": "job_type_id:civil_engineering",
+              "displayName": "Civil engineering consulting"
+            },
+            {
+              "serviceTypeId": "job_type_id:clean_gutters",
+              "displayName": "Gutter cleaning"
+            },
+            {
+              "serviceTypeId": "job_type_id:concrete_construction",
+              "displayName": "Concrete construction"
+            },
+            {
+              "serviceTypeId": "job_type_id:concrete_pouring",
+              "displayName": "Concrete pouring"
+            },
+            {
+              "serviceTypeId": "job_type_id:concrete_work",
+              "displayName": "Concrete work"
+            },
+            {
+              "serviceTypeId": "job_type_id:construction_management",
+              "displayName": "Construction management"
+            },
+            {
+              "serviceTypeId": "job_type_id:crawlspace_foundation_construction",
+              "displayName": "Crawl space foundation construction"
+            },
+            {
+              "serviceTypeId": "job_type_id:custom_home_building",
+              "displayName": "Custom home building"
+            },
+            {
+              "serviceTypeId": "job_type_id:deck_construction",
+              "displayName": "Deck construction"
+            },
+            {
+              "serviceTypeId": "job_type_id:demolition",
+              "displayName": "Demolition"
+            },
+            {
+              "serviceTypeId": "job_type_id:excavations",
+              "displayName": "Construction site excavation"
+            },
+            {
+              "serviceTypeId": "job_type_id:exterior_structural_repairs",
+              "displayName": "Exterior structural repairs"
+            },
+            {
+              "serviceTypeId": "job_type_id:foundation_drainage",
+              "displayName": "Foundation drainage"
+            },
+            {
+              "serviceTypeId": "job_type_id:foundation_installation",
+              "displayName": "Foundation installation"
+            },
+            {
+              "serviceTypeId": "job_type_id:foundation_pouring",
+              "displayName": "Foundation pouring"
+            },
+            {
+              "serviceTypeId": "job_type_id:foundation_raising",
+              "displayName": "Foundation raising"
+            },
+            {
+              "serviceTypeId": "job_type_id:general_repair_and_maintenance",
+              "displayName": "Repairs & maintenance"
+            },
+            {
+              "serviceTypeId": "job_type_id:handyman_remodeling",
+              "displayName": "Remodeling"
+            },
+            {
+              "serviceTypeId": "job_type_id:home_addition_construction",
+              "displayName": "Home addition construction"
+            },
+            {
+              "serviceTypeId": "job_type_id:home_building",
+              "displayName": "Home building"
+            },
+            {
+              "serviceTypeId": "job_type_id:home_renovation",
+              "displayName": "Home renovations"
+            },
+            {
+              "serviceTypeId": "job_type_id:install_drywall",
+              "displayName": "Drywall installation"
+            },
+            {
+              "serviceTypeId": "job_type_id:install_fan",
+              "displayName": "Fan installation"
+            },
+            {
+              "serviceTypeId": "job_type_id:install_flooring",
+              "displayName": "Install flooring"
+            },
+            {
+              "serviceTypeId": "job_type_id:install_tile_work",
+              "displayName": "Tile work installation"
+            },
+            {
+              "serviceTypeId": "job_type_id:install_water_fixtures",
+              "displayName": "Plumbing fixture installation"
+            },
+            {
+              "serviceTypeId": "job_type_id:interior_structural_repairs",
+              "displayName": "Interior structural repairs"
+            },
+            {
+              "serviceTypeId": "job_type_id:kitchen_remodeling",
+              "displayName": "Kitchen remodeling"
+            },
+            {
+              "serviceTypeId": "job_type_id:machinery_rental",
+              "displayName": "Commercial machinery rental"
+            },
+            {
+              "serviceTypeId": "job_type_id:metal_building_construction",
+              "displayName": "Metal building construction"
+            },
+            {
+              "serviceTypeId": "job_type_id:mount_tv",
+              "displayName": "TV mounting"
+            },
+            {
+              "serviceTypeId": "job_type_id:new_building_construction",
+              "displayName": "New building construction"
+            },
+            {
+              "serviceTypeId": "job_type_id:paint_indoors",
+              "displayName": "Paint indoors"
+            },
+            {
+              "serviceTypeId": "job_type_id:paint_outdoors",
+              "displayName": "Exterior painting"
+            },
+            {
+              "serviceTypeId": "job_type_id:patio_construction",
+              "displayName": "Patio construction"
+            },
+            {
+              "serviceTypeId": "job_type_id:pole_building_construction",
+              "displayName": "Pole building construction"
+            },
+            {
+              "serviceTypeId": "job_type_id:refurbishment",
+              "displayName": "Refurbishment"
+            },
+            {
+              "serviceTypeId": "job_type_id:repair_drywall",
+              "displayName": "Drywall repair"
+            },
+            {
+              "serviceTypeId": "job_type_id:repair_fan",
+              "displayName": "Fan repair"
+            },
+            {
+              "serviceTypeId": "job_type_id:repair_flooring",
+              "displayName": "Repair flooring"
+            },
+            {
+              "serviceTypeId": "job_type_id:repair_water_fixtures",
+              "displayName": "Repair water fixtures"
+            },
+            {
+              "serviceTypeId": "job_type_id:replace_tile_work",
+              "displayName": "Tile work replacement"
+            },
+            {
+              "serviceTypeId": "job_type_id:road_construction",
+              "displayName": "Road construction"
+            },
+            {
+              "serviceTypeId": "job_type_id:roof_installation",
+              "displayName": "Roof installation"
+            },
+            {
+              "serviceTypeId": "job_type_id:roof_repair",
+              "displayName": "Roof repair"
+            },
+            {
+              "serviceTypeId": "job_type_id:slab_foundation_construction",
+              "displayName": "Slab foundation construction"
+            },
+            {
+              "serviceTypeId": "job_type_id:steel_building_construction",
+              "displayName": "Steel building construction"
+            },
+            {
+              "serviceTypeId": "job_type_id:steel_pier_piling_construction",
+              "displayName": "Steel pier piling construction"
+            },
+            {
+              "serviceTypeId": "job_type_id:water_and_moisture_control_services",
+              "displayName": "Water & moisture control services"
+            }
+          ],
+          "moreHoursTypes": [
+            {
+              "hoursTypeId": "ACCESS",
+              "displayName": "Access",
+              "localizedDisplayName": "Access"
+            },
+            {
+              "hoursTypeId": "BREAKFAST",
+              "displayName": "Breakfast",
+              "localizedDisplayName": "Breakfast"
+            },
+            {
+              "hoursTypeId": "BRUNCH",
+              "displayName": "Brunch",
+              "localizedDisplayName": "Brunch"
+            },
+            {
+              "hoursTypeId": "DELIVERY",
+              "displayName": "Delivery",
+              "localizedDisplayName": "Delivery"
+            },
+            {
+              "hoursTypeId": "DINNER",
+              "displayName": "Dinner",
+              "localizedDisplayName": "Dinner"
+            },
+            {
+              "hoursTypeId": "DRIVE_THROUGH",
+              "displayName": "Drive through",
+              "localizedDisplayName": "Drive through"
+            },
+            {
+              "hoursTypeId": "HAPPY_HOUR",
+              "displayName": "Happy hours",
+              "localizedDisplayName": "Happy hours"
+            },
+            {
+              "hoursTypeId": "KITCHEN",
+              "displayName": "Kitchen",
+              "localizedDisplayName": "Kitchen"
+            },
+            {
+              "hoursTypeId": "LUNCH",
+              "displayName": "Lunch",
+              "localizedDisplayName": "Lunch"
+            },
+            {
+              "hoursTypeId": "ONLINE_SERVICE_HOURS",
+              "displayName": "Online service hours",
+              "localizedDisplayName": "Online service hours"
+            },
+            {
+              "hoursTypeId": "PICKUP",
+              "displayName": "Pickup",
+              "localizedDisplayName": "Pickup"
+            },
+            {
+              "hoursTypeId": "TAKEOUT",
+              "displayName": "Takeout",
+              "localizedDisplayName": "Takeout"
+            },
+            {
+              "hoursTypeId": "SENIOR_HOURS",
+              "displayName": "Senior hours",
+              "localizedDisplayName": "Senior hours"
+            }
+          ]
+        }
+      ]
+    },
+    "storefrontAddress": {
+      "regionCode": "US",
+      "languageCode": "en",
+      "postalCode": "78539",
+      "administrativeArea": "TX",
+      "locality": "Edinburg",
+      "addressLines": [
+        "3321 W. Alberta Rd.",
+        "Suite A"
+      ]
+    },
+    "websiteUri": "http://www.edelroofing.com/",
+    "regularHours": {
+      "periods": [
+        {
+          "openDay": "SUNDAY",
+          "openTime": {},
+          "closeDay": "SUNDAY",
+          "closeTime": {
+            "hours": 24
+          }
+        },
+        {
+          "openDay": "MONDAY",
+          "openTime": {},
+          "closeDay": "MONDAY",
+          "closeTime": {
+            "hours": 24
+          }
+        },
+        {
+          "openDay": "TUESDAY",
+          "openTime": {},
+          "closeDay": "TUESDAY",
+          "closeTime": {
+            "hours": 24
+          }
+        },
+        {
+          "openDay": "WEDNESDAY",
+          "openTime": {},
+          "closeDay": "WEDNESDAY",
+          "closeTime": {
+            "hours": 24
+          }
+        },
+        {
+          "openDay": "THURSDAY",
+          "openTime": {},
+          "closeDay": "THURSDAY",
+          "closeTime": {
+            "hours": 24
+          }
+        },
+        {
+          "openDay": "FRIDAY",
+          "openTime": {},
+          "closeDay": "FRIDAY",
+          "closeTime": {
+            "hours": 24
+          }
+        },
+        {
+          "openDay": "SATURDAY",
+          "openTime": {},
+          "closeDay": "SATURDAY",
+          "closeTime": {
+            "hours": 24
+          }
+        }
+      ]
+    },
+    "serviceArea": {
+      "businessType": "CUSTOMER_AND_BUSINESS_LOCATION",
+      "places": {
+        "placeInfos": [
+          {
+            "placeName": "McAllen, TX, USA",
+            "placeId": "ChIJ3zeWTTJ2ZYYRuA4stak5HS8"
+          },
+          {
+            "placeName": "Mission, TX, USA",
+            "placeId": "ChIJKxImLz-oZYYRAKqruKOwEIU"
+          },
+          {
+            "placeName": "Weslaco, TX, USA",
+            "placeId": "ChIJj9QyE3V3ZYYRKB3fjNsTb1o"
+          },
+          {
+            "placeName": "Edinburg, TX, USA",
+            "placeId": "ChIJwzWGPiKiZYYRRMHaUBEY74k"
+          },
+          {
+            "placeName": "Harlingen, TX, USA",
+            "placeId": "ChIJTysvehCCb4YR0_F0J6HFZnY"
+          },
+          {
+            "placeName": "Brownsville, TX, USA",
+            "placeId": "ChIJGWX8w2t_b4YRLFJWSGka37E"
+          },
+          {
+            "placeName": "Pharr, TX 78577, USA",
+            "placeId": "ChIJDznZBbgJZYYRkPx9ni2Dj5w"
+          },
+          {
+            "placeName": "Rio Grande City, TX 78582, USA",
+            "placeId": "ChIJHxQgaoxCZIYRNxd0_drcDpA"
+          }
+        ]
+      },
+      "regionCode": "US"
+    },
+    "labels": [
+      "EDEL Roofing and Construction Inc. - Edinburg,TX"
+    ],
+    "openInfo": {
+      "status": "OPEN",
+      "canReopen": true,
+      "openingDate": {
+        "year": 2003,
+        "month": 1
+      }
+    },
+    "metadata": {
+      "canDelete": true,
+      "canModifyServiceList": true,
+      "placeId": "ChIJl22yxEahZYYRjB9NS-oIa2c",
+      "mapsUri": "https://maps.google.com/maps?cid=7452059810793332620",
+      "newReviewUri": "https://search.google.com/local/writereview?placeid=ChIJl22yxEahZYYRjB9NS-oIa2c",
+      "canHaveBusinessCalls": true,
+      "hasVoiceOfMerchant": true
+    },
+    "profile": {
+      "description": "Edel Roofing and Construction Inc. has served Edinburg and the Rio Grande Valley since 2003. We install, replace, and repair residential and commercial roofs built for the Valley's heat, high winds, and storms — asphalt shingle, metal, TPO, and EPDM systems. We're the only CertainTeed Select ShingleMaster contractor in the RGV. We also handle storm and hail damage and insurance claims. Licensed and insured, with free estimates. Serving McAllen, Mission, Pharr, Weslaco, Harlingen, Brownsville, and Rio Grande City. Se habla español."
+    },
+    "serviceItems": [
+      {
+        "structuredServiceItem": {
+          "serviceTypeId": "job_type_id:roof_inspection",
+          "description": "Thorough roof inspections for buying, selling, insurance, or peace of mind. We check the roof, flashing, and ventilation, then give you a clear, honest report on its condition."
+        }
+      },
+      {
+        "structuredServiceItem": {
+          "serviceTypeId": "job_type_id:roof_installation"
+        }
+      },
+      {
+        "structuredServiceItem": {
+          "serviceTypeId": "job_type_id:roof_repair",
+          "description": "Lasting repairs for leaks, damaged or missing shingles, and worn flashing. We find the source of the problem, fix it correctly, and document the work. Residential and commercial roofs across the Rio Grande Valley."
+        }
+      },
+      {
+        "structuredServiceItem": {
+          "serviceTypeId": "job_type_id:attic_venting",
+          "description": "Proper attic ventilation protects your roof and lowers cooling costs in the Valley heat. We assess airflow and install or correct ventilation to extend the life of your roof."
+        }
+      },
+      {
+        "structuredServiceItem": {
+          "serviceTypeId": "job_type_id:gutter_installation",
+          "description": "Seamless gutter installation that moves water away from your roof and foundation. Sized and pitched correctly for Valley rain."
+        }
+      },
+      {
+        "structuredServiceItem": {
+          "serviceTypeId": "job_type_id:gutter_repair",
+          "description": "Repair and re-secure sagging, leaking, or damaged gutters to protect your roofline and foundation."
+        }
+      },
+      {
+        "structuredServiceItem": {
+          "serviceTypeId": "job_type_id:skylight_repair"
+        }
+      },
+      {
+        "freeFormServiceItem": {
+          "category": "categories/gcid:roofing_contractor",
+          "label": {
+            "displayName": "Custom Homes"
+          }
+        }
+      },
+      {
+        "freeFormServiceItem": {
+          "category": "categories/gcid:roofing_contractor",
+          "label": {
+            "displayName": "Full Roof Replacement",
+            "description": "Complete tear-off and new roof installation for homes across the Rio Grande Valley. We remove the old roof, inspect the decking, correct ventilation, and install a new system built for Valley heat, wind, and storms. Asphalt shingle, metal, and tile options."
+          }
+        }
+      },
+      {
+        "freeFormServiceItem": {
+          "category": "categories/gcid:roofing_contractor",
+          "label": {
+            "displayName": "Custom Home Construction",
+            "description": "Ground-up custom home building in the Rio Grande Valley. From plans to finished home, built to last."
+          }
+        }
+      },
+      {
+        "freeFormServiceItem": {
+          "category": "categories/gcid:roofing_contractor",
+          "label": {
+            "displayName": "Home Remodeling",
+            "description": "Home remodeling and renovations, including kitchen and bathroom remodels, interior work, and additions."
+          }
+        }
+      },
+      {
+        "freeFormServiceItem": {
+          "category": "categories/gcid:roofing_contractor",
+          "label": {
+            "displayName": "Insurance Claim Process",
+            "description": "We help homeowners document roof damage and work through the insurance claim process, from the first inspection to the final repair."
+          }
+        }
+      },
+      {
+        "freeFormServiceItem": {
+          "category": "categories/gcid:roofing_contractor",
+          "label": {
+            "displayName": "Metal Roof"
+          }
+        }
+      },
+      {
+        "freeFormServiceItem": {
+          "category": "categories/gcid:roofing_contractor",
+          "label": {
+            "displayName": "Remodeling & Construction"
+          }
+        }
+      },
+      {
+        "freeFormServiceItem": {
+          "category": "categories/gcid:roofing_contractor",
+          "label": {
+            "displayName": "Asphalt Shingle Roofing",
+            "description": "Quality shingle roof installation and replacement. As the only CertainTeed Select ShingleMaster contractor in the RGV, we install premium shingle systems with workmanship warranties most contractors can't offer."
+          }
+        }
+      },
+      {
+        "freeFormServiceItem": {
+          "category": "categories/gcid:roofing_contractor",
+          "label": {
+            "displayName": "Emergency Repairs"
+          }
+        }
+      },
+      {
+        "freeFormServiceItem": {
+          "category": "categories/gcid:roofing_contractor",
+          "label": {
+            "displayName": "EPDM Roofing",
+            "description": "Long-lasting EPDM rubber membrane roofing for commercial flat roofs. Reliable waterproofing and low maintenance. Installation and repair across the RGV."
+          }
+        }
+      },
+      {
+        "freeFormServiceItem": {
+          "category": "categories/gcid:roofing_contractor",
+          "label": {
+            "displayName": "Metal Roofing",
+            "description": "Durable standing-seam and metal roof systems built for the Valley's sun and wind. Long lifespan, energy efficiency, and low maintenance for residential and commercial properties."
+          }
+        }
+      },
+      {
+        "freeFormServiceItem": {
+          "category": "categories/gcid:roofing_contractor",
+          "label": {
+            "displayName": "Roof Replacement"
+          }
+        }
+      },
+      {
+        "freeFormServiceItem": {
+          "category": "categories/gcid:roofing_contractor",
+          "label": {
+            "displayName": "TPO Roofing",
+            "description": "Energy-efficient TPO membrane roofing for flat and low-slope commercial buildings. Reflective, durable, and built to handle Valley heat. Installation, replacement, and repair."
+          }
+        }
+      },
+      {
+        "freeFormServiceItem": {
+          "category": "categories/gcid:roofing_contractor",
+          "label": {
+            "displayName": "Roof Leak Repair",
+            "description": "Stop leaks before they cause interior or structural damage. We trace the leak to its source, repair the roof and flashing, and check the surrounding area to confirm the problem is fully solved."
+          }
+        }
+      },
+      {
+        "freeFormServiceItem": {
+          "category": "categories/gcid:roofing_contractor",
+          "label": {
+            "displayName": "Emergency Roof Repair",
+            "description": "Storm just hit? We respond to urgent roof damage to protect your home or building from water intrusion. Temporary and permanent repairs available across the Rio Grande Valley."
+          }
+        }
+      },
+      {
+        "freeFormServiceItem": {
+          "category": "categories/gcid:roofing_contractor",
+          "label": {
+            "displayName": "Commercial Roofing",
+            "description": "lat and low-slope roofing for businesses in Edinburg, McAllen, and across the RGV. We install and replace TPO, EPDM, and metal commercial roof systems and handle leaks, repairs, and full re-roofs with minimal disruption to your operation."
+          }
+        }
+      },
+      {
+        "freeFormServiceItem": {
+          "category": "categories/gcid:roofing_contractor",
+          "label": {
+            "displayName": "Storm & Hail Damage Repair",
+            "description": "Roof damage from Valley storms, high winds, and hail. We inspect, document the damage, and make repairs that hold up. We also guide homeowners through the insurance claim process from start to finish."
+          }
+        }
+      }
+    ]
+  },
+  "performance90d": {
+    "BUSINESS_BOOKINGS": 0,
+    "BUSINESS_IMPRESSIONS_DESKTOP_MAPS": 422,
+    "WEBSITE_CLICKS": 79,
+    "BUSINESS_DIRECTION_REQUESTS": 133,
+    "BUSINESS_IMPRESSIONS_DESKTOP_SEARCH": 448,
+    "CALL_CLICKS": 67,
+    "BUSINESS_IMPRESSIONS_MOBILE_MAPS": 394,
+    "BUSINESS_CONVERSATIONS": 0,
+    "BUSINESS_IMPRESSIONS_MOBILE_SEARCH": 684
+  }
+}

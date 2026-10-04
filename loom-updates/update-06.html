@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sixth Update | Edel Roofing x RankRGV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blue: #1d4ed8; --purple: #7c3aed; --dark: #0f172a; --text: #0f172a;
+    --muted: #64748b; --border: #e2e8f0; --surface: #f8fafc; --white: #ffffff;
+    --success: #10b981; --warning: #f59e0b; --danger: #ef4444;
+    --grad: linear-gradient(135deg, #1d4ed8, #7c3aed);
+  }
+  body { font-family: 'Inter', sans-serif; background: var(--surface); color: var(--text); line-height: 1.55; }
+
+  .hero {
+    background: var(--dark); background-image: radial-gradient(circle, rgba(124,58,237,0.20) 1px, transparent 1px);
+    background-size: 24px 24px; padding: 50px 24px 44px; text-align: center; color: white;
+  }
+  .hero-badge {
+    display: inline-block; background: rgba(124,58,237,0.3); border: 1px solid rgba(124,58,237,0.5);
+    border-radius: 20px; padding: 5px 14px; font-size: 12px; color: #c4b5fd;
+    letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 18px;
+  }
+  .hero h1 { font-size: 36px; font-weight: 800; margin-bottom: 12px; line-height: 1.15; }
+  .hero h1 span { background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero-sub { font-size: 16px; color: #94a3b8; max-width: 700px; margin: 0 auto; line-height: 1.6; }
+  .hero-meta { font-size: 13px; color: #475569; margin-top: 22px; font-family: 'JetBrains Mono', monospace; }
+
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 48px 24px; }
+
+  .callout { border-radius: 12px; padding: 18px 24px; margin-bottom: 36px; font-size: 14.5px; line-height: 1.65; }
+  .callout.blue { background: #eff6ff; border: 1px solid #bfdbfe; color: #1e40af; }
+  .callout.green { background: #f0fdf4; border: 1px solid #bbf7d0; color: #14532d; }
+  .callout.amber { background: #fffbeb; border: 1px solid #fde68a; color: #92400e; }
+
+  .section { margin-bottom: 48px; }
+  .section-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--purple); margin-bottom: 8px; }
+  .section-title { font-size: 24px; font-weight: 800; color: var(--dark); margin-bottom: 8px; line-height: 1.25; }
+  .section-sub { font-size: 14.5px; color: var(--muted); margin-bottom: 18px; line-height: 1.6; }
+
+  .metric-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  @media (max-width: 900px) { .metric-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 500px) { .metric-grid { grid-template-columns: 1fr; } }
+  .metric-card { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+  .metric-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin-bottom: 6px; }
+  .metric-value { font-size: 22px; font-weight: 800; color: var(--dark); line-height: 1.2; margin-bottom: 4px; font-family: 'JetBrains Mono', monospace; }
+  .metric-value.green { color: #059669; }
+  .metric-context { font-size: 12px; color: var(--muted); line-height: 1.4; }
+
+  .table-wrap { background: white; border: 1px solid var(--border); border-radius: 12px; overflow-x: auto; margin-bottom: 18px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  th { background: #f8fafc; text-align: left; padding: 12px 16px; font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); border-bottom: 1px solid var(--border); }
+  td { padding: 12px 16px; border-bottom: 1px solid var(--border); color: var(--text); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  .status-badge { display: inline-block; padding: 3px 10px; border-radius: 6px; font-size: 11px; font-weight: 700; white-space: nowrap; }
+  .status-done { background: #d1fae5; color: #065f46; }
+  .status-pending { background: #fef3c7; color: #92400e; }
+  .status-next { background: #eff6ff; color: #1e40af; }
+
+  .footer { text-align: center; padding: 36px 24px; font-size: 13px; color: #94a3b8;
+    border-top: 1px solid var(--border); background: white; margin-top: 24px; }
+  .footer a { color: var(--blue); text-decoration: none; }
+  .footer-brand { font-weight: 700; color: var(--text); margin-bottom: 6px; font-size: 14px; }
+
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 26px; }
+    .section-title { font-size: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-badge">Sixth update &middot; September 18, 2026</div>
+  <h1>Your new address is <span>verified</span> and the citation cleanup is underway</h1>
+  <p class="hero-sub">This cycle we finished the address change, shipped five new pages, fixed the site menu, started the citation rebuild, and adjusted the ad campaign.</p>
+  <div class="hero-meta">EDEL ROOFING &times; RANKRGV &middot; CYCLE 6</div>
+</div>
+
+<div class="wrap">
+
+  <!-- AT A GLANCE -->
+  <div class="section">
+    <div class="section-label">At a glance</div>
+    <div class="section-title">Where things stand</div>
+    <div class="metric-grid">
+      <div class="metric-card">
+        <div class="metric-label">Google address</div>
+        <div class="metric-value green">Verified</div>
+        <div class="metric-context">Confirmed by Google on September 11. Site and profile match.</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">New pages live</div>
+        <div class="metric-value">5</div>
+        <div class="metric-context">Gutters in English and Spanish, plus 3 McAllen service pages</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Citations</div>
+        <div class="metric-value">Underway</div>
+        <div class="metric-context">Apple Maps, Bing, data aggregators, about 50 new listings queued</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Ads</div>
+        <div class="metric-value">Mission added</div>
+        <div class="metric-context">New search campaign now covers McAllen and Mission</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ADDRESS -->
+  <div class="section">
+    <div class="section-label">Step 1 &middot; Done</div>
+    <div class="section-title">Google verified your new address</div>
+    <p class="section-sub">Google confirmed 1815 N Jackson Rd, Edinburg, TX 78541 as the verified address on your Business Profile on September 11. Your website header and footer already showed it. While closing this out we found two technical listings on your site (the structured data Google reads to confirm who you are), and one of them still had the old Alberta Rd address. We fixed it and checked it live the same day. Your site and your Google profile now show the same address everywhere Google looks.</p>
+    <div class="callout green" style="margin-bottom:0">
+      Two different addresses on one site can confuse Google while it is trying to confirm a business. That is no longer a risk.
+    </div>
+  </div>
+
+  <!-- CITATIONS -->
+  <div class="section">
+    <div class="section-label">Step 2 &middot; In progress</div>
+    <div class="section-title">Citation cleanup is underway</div>
+    <p class="section-sub">A citation is any listing of your business name, address, and phone number on another website. Many of yours still show the old phone number or the old address. We are starting with the sources that matter most: Apple Maps, Bing, and the large data aggregators that feed information to dozens of smaller directories. About 50 new citations are also lined up to go out soon.</p>
+    <div class="callout amber" style="margin-bottom:0">
+      This is in progress, not finished. Each directory has its own review process, so corrections take days to weeks to show up. We will report how many are confirmed live at the next update.
+    </div>
+  </div>
+
+  <!-- PAGES -->
+  <div class="section">
+    <div class="section-label">Step 3 &middot; Shipped</div>
+    <div class="section-title">Gutters and the McAllen service pages are live</div>
+    <p class="section-sub">Gutters is now a real service on your site for Edinburg, in English and Spanish, and it is listed on the Service Areas page. On the McAllen page, six services were listed but only three had a page behind them. Storm and hail damage, roof inspections, and roof coatings were only text. We built all three, so every service listed for McAllen now opens to its own page. Mission has the same gap and is next.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Page</th><th>Language</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Gutters, Edinburg</td><td>English and Spanish</td><td><span class="status-badge status-done">Live</span></td></tr>
+          <tr><td>Storm and hail damage, McAllen</td><td>English</td><td><span class="status-badge status-done">Live</span></td></tr>
+          <tr><td>Roof inspections, McAllen</td><td>English</td><td><span class="status-badge status-done">Live</span></td></tr>
+          <tr><td>Roof coatings, McAllen</td><td>English</td><td><span class="status-badge status-done">Live</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <div class="section">
+    <div class="section-label">Step 4 &middot; Fixed</div>
+    <div class="section-title">The site menu is cleaned up</div>
+    <p class="section-sub">While adding Gutters we found that the website software had been adding every new page to the menu on its own. Some of your city pages showed up as raw page names like GUTTERS-EDINBURG-TX. That had been happening since McAllen and Mission were built. Now the Services menu lists your services, the Service Areas menu lists your cities, and the individual city and service pages stay reachable through links on those pages.</p>
+  </div>
+
+  <!-- ADS -->
+  <div class="section">
+    <div class="section-label">Step 5 &middot; Changed</div>
+    <div class="section-title">Ad campaign changes</div>
+    <p class="section-sub" style="margin-bottom:0">We added Mission as a second target city on the new search campaign, and changed the ad text from McAllen to Rio Grande Valley so it fits both cities. The campaign is still early. We will report results once there is enough data to read.</p>
+  </div>
+
+  <!-- COMING UP -->
+  <div class="section" style="margin-bottom:0">
+    <div class="section-label">Coming up</div>
+    <div class="section-title">What is next</div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>What</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Edinburg dedicated repair and replacement pages, English and Spanish</td><td><span class="status-badge status-pending">High priority</span></td></tr>
+          <tr><td>Citation rebuild: Apple Maps, Bing, data aggregators, about 50 new listings</td><td><span class="status-badge status-pending">In progress</span></td></tr>
+          <tr><td>Mission service pages (storm and hail damage, inspections, coatings)</td><td><span class="status-badge status-next">Next</span></td></tr>
+          <tr><td>Ads: see whether adding Mission brings more calls and leads</td><td><span class="status-badge status-next">Next update</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <div class="footer-brand">RankRGV: Local SEO &amp; AI Visibility, built in the Valley.</div>
+  <div>McAllen, TX &middot; <a href="https://rankrgv.com">rankrgv.com</a> &middot; <a href="mailto:hello@rankrgv.com">hello@rankrgv.com</a> &middot; (956) 391-5991</div>
+  <div style="margin-top:12px;font-size:12px;color:#cbd5e1">Edel Roofing &times; RankRGV &middot; Cycle 6 Update &middot; September 18, 2026</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>First Update — Edel Roofing × RankRGV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blue: #1d4ed8; --purple: #7c3aed; --dark: #0f172a; --text: #0f172a;
+    --muted: #64748b; --border: #e2e8f0; --surface: #f8fafc; --white: #ffffff;
+    --success: #10b981; --warning: #f59e0b; --danger: #ef4444;
+    --grad: linear-gradient(135deg, #1d4ed8, #7c3aed);
+  }
+  body { font-family: 'Inter', sans-serif; background: var(--surface); color: var(--text); line-height: 1.55; }
+
+  .hero {
+    background: var(--dark); background-image: radial-gradient(circle, rgba(124,58,237,0.20) 1px, transparent 1px);
+    background-size: 24px 24px; padding: 50px 24px 44px; text-align: center; color: white;
+  }
+  .hero-badge {
+    display: inline-block; background: rgba(124,58,237,0.3); border: 1px solid rgba(124,58,237,0.5);
+    border-radius: 20px; padding: 5px 14px; font-size: 12px; color: #c4b5fd;
+    letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 18px;
+  }
+  .hero h1 { font-size: 36px; font-weight: 800; margin-bottom: 12px; line-height: 1.15; }
+  .hero h1 span { background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero-sub { font-size: 16px; color: #94a3b8; max-width: 700px; margin: 0 auto; line-height: 1.6; }
+  .hero-meta { font-size: 13px; color: #475569; margin-top: 22px; font-family: 'JetBrains Mono', monospace; }
+
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 48px 24px; }
+
+  .callout { border-radius: 12px; padding: 18px 24px; margin-bottom: 36px; font-size: 14.5px; line-height: 1.65; }
+  .callout.blue { background: #eff6ff; border: 1px solid #bfdbfe; color: #1e40af; }
+  .callout.green { background: #f0fdf4; border: 1px solid #bbf7d0; color: #14532d; }
+  .callout.amber { background: #fffbeb; border: 1px solid #fde68a; color: #92400e; }
+
+  .section { margin-bottom: 48px; }
+  .section-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--purple); margin-bottom: 8px; }
+  .section-title { font-size: 24px; font-weight: 800; color: var(--dark); margin-bottom: 8px; line-height: 1.25; }
+  .section-sub { font-size: 14.5px; color: var(--muted); margin-bottom: 18px; line-height: 1.6; }
+  .section-body { font-size: 14.5px; color: var(--text); line-height: 1.75; }
+  .section-body p { margin-bottom: 12px; }
+  .section-body strong { color: var(--dark); }
+
+  /* METRIC GRID */
+  .metric-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  @media (max-width: 900px) { .metric-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 500px) { .metric-grid { grid-template-columns: 1fr; } }
+  .metric-card { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+  .metric-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin-bottom: 6px; }
+  .metric-value { font-size: 22px; font-weight: 800; color: var(--dark); line-height: 1.2; margin-bottom: 4px; font-family: 'JetBrains Mono', monospace; }
+  .metric-value.green { color: #059669; }
+  .metric-context { font-size: 12px; color: var(--muted); line-height: 1.4; }
+
+  /* BEFORE / AFTER */
+  .ba-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 700px) { .ba-grid { grid-template-columns: 1fr; } }
+  .ba-card { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 22px; }
+  .ba-card.before { border-left: 4px solid #cbd5e1; }
+  .ba-card.after { border-left: 4px solid var(--success); }
+  .ba-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
+  .ba-card.before .ba-label { color: #94a3b8; }
+  .ba-card.after .ba-label { color: #059669; }
+  .ba-card ul { padding-left: 20px; font-size: 13.5px; line-height: 1.8; }
+  .ba-card.before ul { color: var(--muted); }
+  .ba-card.after ul { color: var(--text); }
+
+  /* TABLE */
+  .table-wrap { background: white; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  th { background: #f8fafc; text-align: left; padding: 12px 16px; font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); border-bottom: 1px solid var(--border); }
+  td { padding: 12px 16px; border-bottom: 1px solid var(--border); color: var(--text); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  .status-badge { display: inline-block; padding: 3px 10px; border-radius: 6px; font-size: 11px; font-weight: 700; }
+  .status-done { background: #d1fae5; color: #065f46; }
+  .status-pending { background: #fef3c7; color: #92400e; }
+  .status-next { background: #eff6ff; color: #1e40af; }
+
+  /* BLOG CARD */
+  .blog-card { background: white; border: 1px solid var(--border); border-radius: 14px; padding: 26px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+  .blog-status { display: inline-block; background: #fffbeb; border: 1px solid #fde68a; color: #92400e; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 4px 10px; border-radius: 6px; margin-bottom: 14px; }
+  .blog-title { font-size: 18px; font-weight: 800; color: var(--dark); margin-bottom: 4px; }
+  .blog-subtitle { font-size: 14px; color: var(--muted); font-style: italic; margin-bottom: 16px; }
+  .blog-meta-row { display: flex; gap: 24px; flex-wrap: wrap; font-size: 13px; color: var(--text); margin-bottom: 4px; }
+  .blog-meta-row strong { color: var(--muted); font-weight: 600; }
+
+  .footer { text-align: center; padding: 36px 24px; font-size: 13px; color: #94a3b8;
+    border-top: 1px solid var(--border); background: white; margin-top: 24px; }
+  .footer a { color: var(--blue); text-decoration: none; }
+  .footer-brand { font-weight: 700; color: var(--text); margin-bottom: 6px; font-size: 14px; }
+
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 26px; }
+    .section-title { font-size: 20px; }
+    .blog-meta-row { flex-direction: column; gap: 4px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-badge">First Update · June 13, 2026</div>
+  <h1>Two weeks in — here's <span>what's done</span>.</h1>
+  <p class="hero-sub">Plain language, no jargon. This covers everything since kickoff on June 2 — the foundation work that makes every page, post, and report that follows work better, plus your first published blog post and your first Google Business Profile post.</p>
+  <div class="hero-meta">EDEL ROOFING × RANKRGV · CYCLE 1, WEEKS 1-2</div>
+</div>
+
+<div class="wrap">
+
+  <div class="callout blue">
+    <strong>How to read this:</strong> Most of the last two weeks was "behind the scenes" work — fixing the signals Google and Bing use to understand your business. That's now in place, and on top of it we published your first blog post and your first Google Business Profile post — the first pieces of content that are live and visible.
+  </div>
+
+  <!-- AT A GLANCE -->
+  <div class="section">
+    <div class="section-label">At a Glance</div>
+    <div class="section-title">The four things we locked down</div>
+    <div class="metric-grid">
+      <div class="metric-card">
+        <div class="metric-label">Google Listing</div>
+        <div class="metric-value green">1 accurate profile</div>
+        <div class="metric-context">Was sending Google 5 conflicting versions of your business</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Tracking Connected</div>
+        <div class="metric-value green">3 for 3</div>
+        <div class="metric-context">Google Analytics, Search Console &amp; Bing Webmaster all verified</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Sitemap Crawled</div>
+        <div class="metric-value green">27 pages</div>
+        <div class="metric-context">Found and crawled successfully on both Google and Bing</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Content Published</div>
+        <div class="metric-value green">2 live</div>
+        <div class="metric-context">First blog post + first Google Business Profile post</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GOOGLE LISTING -->
+  <div class="section">
+    <div class="section-label">Step 1 · Done</div>
+    <div class="section-title">Your Google listing now shows one accurate business</div>
+    <p class="section-sub">Your website was accidentally sending Google five different versions of your business info at once — with different hours and different review counts. That confuses Google and can hold back your rankings. We cleaned it up.</p>
+
+    <div class="ba-grid">
+      <div class="ba-card before">
+        <div class="ba-label">Before</div>
+        <ul>
+          <li>5 different versions of your business info live on the site</li>
+          <li>Conflicting hours between versions</li>
+          <li>Outdated review count</li>
+          <li>Phone number didn't match your Google listing</li>
+        </ul>
+      </div>
+      <div class="ba-card after">
+        <div class="ba-label">After</div>
+        <ul>
+          <li><strong>One</strong> clean business listing</li>
+          <li><strong>246 reviews, 4.8 stars</strong> — correct and current</li>
+          <li><strong>Open 24/7</strong> on both site and Google profile, matching your AI answering service</li>
+          <li>CertainTeed SELECT ShingleMaster added — you're the only one in the Valley</li>
+          <li>All certifications listed: Texas license, Owens Corning, GAF, Versico, Duro-Last, Polyglass, KARNAK, Mule-Hide</li>
+          <li>Correct address (Ste A), phone, and all 8 service cities</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRACKING -->
+  <div class="section">
+    <div class="section-label">Step 2 · Done</div>
+    <div class="section-title">We can now track real progress</div>
+    <p class="section-sub">Three tools are connected and verified. From here on, every update we send you is based on real numbers — not estimates.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Tool</th><th>What it does</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Google Analytics 4</strong></td><td>Tracks visitors to your site — where they come from, what they look at</td><td><span class="status-badge status-done">Connected &amp; verified</span></td></tr>
+          <tr><td><strong>Google Search Console</strong></td><td>Shows how your site appears in Google search results and rankings</td><td><span class="status-badge status-done">Connected &amp; verified</span></td></tr>
+          <tr><td><strong>Bing Webmaster Tools</strong></td><td>Same as above, for Bing — which powers most of ChatGPT's answers</td><td><span class="status-badge status-done">Connected &amp; verified</span></td></tr>
+          <tr><td><strong>Sitemap</strong></td><td>A map of all 27 pages on edelroofing.com</td><td><span class="status-badge status-done">Submitted &amp; crawled on both</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- PHONE NUMBER -->
+  <div class="section">
+    <div class="section-label">Step 3 · Done</div>
+    <div class="section-title">Your phone number now matches everywhere</div>
+    <p class="section-sub">We confirmed <strong>(956) 422-3335</strong> as your number — it now matches on your website and your Google listing.</p>
+    <div class="callout green" style="margin-bottom:0">
+      <strong>Why it matters:</strong> Google checks that your business info is consistent everywhere before it fully trusts it. A mismatched phone number was one of the things quietly holding back your local rankings. That's fixed now.
+    </div>
+  </div>
+
+  <!-- BLOG -->
+  <div class="section">
+    <div class="section-label">Step 4 · Done</div>
+    <div class="section-title">Your first blog post is live</div>
+    <p class="section-sub">This is your first piece of educational content — the kind of post that ranks in Google and gets pulled into AI answers like ChatGPT.</p>
+
+    <div class="blog-card">
+      <div class="blog-status" style="background:#d1fae5;border-color:#86efac;color:#065f46">Published · Live on edelroofing.com</div>
+      <div class="blog-title">Roof Replacement in Edinburg, TX | What to Expect</div>
+      <div class="blog-subtitle">A simple guide for homeowners in Edinburg and the Rio Grande Valley</div>
+      <div class="blog-meta-row"><span><strong>Covers:</strong> Signs you need a replacement, how long roofs last in the RGV, repair vs. replace, cost factors, materials, the step-by-step process, and an FAQ section</span></div>
+      <div class="blog-meta-row" style="margin-top:10px"><span><strong>Take a look:</strong> If anything about the tone or wording doesn't sound like Edel, let us know — that feedback shapes the Spanish version and Blog #2.</span></div>
+    </div>
+  </div>
+
+  <!-- GBP POST -->
+  <div class="section">
+    <div class="section-label">Step 5 · Done</div>
+    <div class="section-title">Your first Google Business Profile post is live</div>
+    <p class="section-sub">Posted to your Google Business Profile — the listing that shows up when people search for Edel on Google and Maps.</p>
+    <div class="callout green" style="margin-bottom:0">
+      <strong>Why it matters:</strong> Google rewards profiles that stay active with better visibility in local search and the map pack. Regular posts are part of that — this is the first of an ongoing cadence.
+    </div>
+  </div>
+
+  <!-- WHAT'S NEXT -->
+  <div class="section">
+    <div class="section-label">Coming Up</div>
+    <div class="section-title">What's next — Weeks 3 &amp; 4</div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>What</th><th>Why</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Spanish version of Blog #1</td><td>Bilingual from day one, as agreed at kickoff</td><td><span class="status-badge status-next">Up next</span></td></tr>
+          <tr><td>Blog #2 + first Edinburg service page</td><td>Starts closing the content gap vs. Marva Roofing's 123 keywords</td><td><span class="status-badge status-next">Up next</span></td></tr>
+          <tr><td>Ongoing Google Business Profile posts</td><td>Keeps your profile active — helps local visibility over time</td><td><span class="status-badge status-next">Ongoing</span></td></tr>
+          <tr><td>Next update like this one</td><td>Bi-weekly, plain-language progress — same format</td><td><span class="status-badge status-next">~2 weeks</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="callout amber" style="margin-bottom:0">
+    <strong>One thing we need from you:</strong> Take a look at the live blog post and your Google Business Profile, and let us know if anything doesn't sound like Edel. That feedback shapes the Spanish version and everything we build next.
+  </div>
+
+</div>
+
+<div class="footer">
+  <div class="footer-brand">RankRGV — Local SEO &amp; AI Visibility, built in the Valley.</div>
+  <div>McAllen, TX · <a href="https://rankrgv.com">rankrgv.com</a> · <a href="mailto:hello@rankrgv.com">hello@rankrgv.com</a> · (956) 391-5991</div>
+  <div style="margin-top:12px;font-size:12px;color:#cbd5e1">Edel Roofing × RankRGV · Cycle 1, Weeks 1-2 Update · June 13, 2026</div>
+</div>
+
+</body>
+</html>

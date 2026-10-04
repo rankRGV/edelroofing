@@ -2,7 +2,7 @@
 
 **Date:** _[fill in]_
 **Time:** _[fill in]_ · 30 minutes
-**Attendees:** Edel (Owner), Eddie Hernandez (RankRGV)
+**Attendees:** Edel (Owner), Eddie Urbano (RankRGV)
 **Format:** Google Meet · [meeting link]
 
 ---

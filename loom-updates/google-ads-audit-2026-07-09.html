@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Ads Quick-Look Audit — Edel Roofing × RankRGV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blue: #1d4ed8; --purple: #7c3aed; --dark: #0f172a; --text: #0f172a;
+    --muted: #64748b; --border: #e2e8f0; --surface: #f8fafc; --white: #ffffff;
+    --success: #10b981; --warning: #f59e0b; --danger: #ef4444;
+    --grad: linear-gradient(135deg, #1d4ed8, #7c3aed);
+  }
+  body { font-family: 'Inter', sans-serif; background: var(--surface); color: var(--text); line-height: 1.55; }
+
+  .hero {
+    background: var(--dark); background-image: radial-gradient(circle, rgba(124,58,237,0.20) 1px, transparent 1px);
+    background-size: 24px 24px; padding: 50px 24px 44px; text-align: center; color: white;
+  }
+  .hero-badge {
+    display: inline-block; background: rgba(124,58,237,0.3); border: 1px solid rgba(124,58,237,0.5);
+    border-radius: 20px; padding: 5px 14px; font-size: 12px; color: #c4b5fd;
+    letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 18px;
+  }
+  .hero h1 { font-size: 34px; font-weight: 800; margin-bottom: 12px; line-height: 1.15; }
+  .hero h1 span { background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero-sub { font-size: 16px; color: #94a3b8; max-width: 700px; margin: 0 auto; line-height: 1.6; }
+  .hero-meta { font-size: 13px; color: #475569; margin-top: 22px; font-family: 'JetBrains Mono', monospace; }
+
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 48px 24px; }
+
+  .callout { border-radius: 12px; padding: 18px 24px; margin-bottom: 36px; font-size: 14.5px; line-height: 1.65; }
+  .callout.blue { background: #eff6ff; border: 1px solid #bfdbfe; color: #1e40af; }
+  .callout.green { background: #f0fdf4; border: 1px solid #bbf7d0; color: #14532d; }
+  .callout.amber { background: #fffbeb; border: 1px solid #fde68a; color: #92400e; }
+  .callout.red { background: #fef2f2; border: 1px solid #fecaca; color: #991b1b; }
+
+  .section { margin-bottom: 48px; }
+  .section-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--purple); margin-bottom: 8px; }
+  .section-title { font-size: 24px; font-weight: 800; color: var(--dark); margin-bottom: 8px; line-height: 1.25; }
+  .section-sub { font-size: 14.5px; color: var(--muted); margin-bottom: 18px; line-height: 1.6; }
+  .section-body { font-size: 14.5px; color: var(--text); line-height: 1.75; }
+  .section-body p { margin-bottom: 12px; }
+  .section-body strong { color: var(--dark); }
+
+  .metric-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  @media (max-width: 900px) { .metric-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 500px) { .metric-grid { grid-template-columns: 1fr; } }
+  .metric-card { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+  .metric-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin-bottom: 6px; }
+  .metric-value { font-size: 22px; font-weight: 800; color: var(--dark); line-height: 1.2; margin-bottom: 4px; font-family: 'JetBrains Mono', monospace; }
+  .metric-value.green { color: #059669; }
+  .metric-value.red { color: #dc2626; }
+  .metric-context { font-size: 12px; color: var(--muted); line-height: 1.4; }
+
+  .table-wrap { background: white; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  th { background: #f8fafc; text-align: left; padding: 12px 16px; font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); border-bottom: 1px solid var(--border); }
+  td { padding: 12px 16px; border-bottom: 1px solid var(--border); color: var(--text); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  .status-badge { display: inline-block; padding: 3px 10px; border-radius: 6px; font-size: 11px; font-weight: 700; white-space: nowrap; }
+  .status-done { background: #d1fae5; color: #065f46; }
+  .status-pending { background: #fef3c7; color: #92400e; }
+  .status-next { background: #eff6ff; color: #1e40af; }
+  .status-critical { background: #fee2e2; color: #991b1b; }
+
+  .priority-card { background: white; border: 1px solid var(--border); border-radius: 14px; padding: 22px 26px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); margin-bottom: 14px; display: flex; gap: 18px; align-items: flex-start; }
+  .priority-num { flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%; background: var(--grad); color: white; font-weight: 800; font-size: 15px; display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; }
+  .priority-body h3 { font-size: 16px; font-weight: 800; color: var(--dark); margin-bottom: 6px; }
+  .priority-body p { font-size: 14px; color: var(--muted); line-height: 1.65; }
+  .priority-body p strong { color: var(--text); }
+
+  .footer { text-align: center; padding: 36px 24px; font-size: 13px; color: #94a3b8;
+    border-top: 1px solid var(--border); background: white; margin-top: 24px; }
+  .footer a { color: var(--blue); text-decoration: none; }
+  .footer-brand { font-weight: 700; color: var(--text); margin-bottom: 6px; font-size: 14px; }
+
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 24px; }
+    .section-title { font-size: 20px; }
+    .priority-card { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-badge">Google Ads Quick-Look · July 9, 2026</div>
+  <h1>You're spending well. <span>You just can't see it working.</span></h1>
+  <p class="hero-sub">This is the read you okayed — not full ads management, just a look at where the $1,520/mo budget is going and a short list of what to fix. Reviewed the live account directly. One finding matters more than the rest: nothing is currently being tracked as a conversion.</p>
+  <div class="hero-meta">EDEL ROOFING × RANKRGV · ACCOUNT 355-085-4464 · WINDOW: JUN 12 – JUL 9, 2026</div>
+</div>
+
+<div class="wrap">
+
+  <div class="callout blue">
+    <strong>How to read this:</strong> One active campaign, running as a Smart campaign (Google's automated format — less manual control than a Standard Search campaign, more later). Numbers below are pulled straight from the account for the last 28 days.
+  </div>
+
+  <!-- AT A GLANCE -->
+  <div class="section">
+    <div class="section-label">At a Glance</div>
+    <div class="section-title">Where the budget went</div>
+    <div class="metric-grid">
+      <div class="metric-card">
+        <div class="metric-label">Spend (28 days)</div>
+        <div class="metric-value">$1,410.46</div>
+        <div class="metric-context">Of $1,520/mo max — budget is being used</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Clicks</div>
+        <div class="metric-value green">2,098</div>
+        <div class="metric-context">Google's own estimate for this budget was 140-360/mo — actual delivery is well above that</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Avg. Cost Per Click</div>
+        <div class="metric-value green">$0.67</div>
+        <div class="metric-context">Cheap by roofing-industry standards</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Conversions Tracked</div>
+        <div class="metric-value red">0</div>
+        <div class="metric-context">Despite $1,410 spent and 4 phone calls logged</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- THE HEADLINE FINDING -->
+  <div class="section">
+    <div class="section-label">Finding #1 · Fix This First</div>
+    <div class="section-title">No conversion tracking is set up</div>
+    <p class="section-sub">The campaign is running on a "Maximize clicks" bid strategy — meaning Google is optimizing purely for getting people to click, not for getting you leads. There's no way, right now, to tell which of the 2,098 clicks turned into an actual customer.</p>
+    <div class="callout red" style="margin-bottom:0">
+      <strong>Why this matters more than anything else on this page:</strong> Every other recommendation below is a guess until this is fixed. Once conversion tracking is live (calls, form fills, or both), the bid strategy can switch to actually optimizing for leads instead of clicks — same budget, better targeting.
+    </div>
+  </div>
+
+  <!-- COMPETITOR WASTE -->
+  <div class="section">
+    <div class="section-label">Finding #2</div>
+    <div class="section-title">About $73 went to competitor brand searches</div>
+    <p class="section-sub">Smart campaigns match broadly. The search terms report shows clicks from people searching for other roofing companies by name — not generic "roofer near me" terms, but specific competitor business names.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Search Term</th><th>Clicks</th><th>Spend</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>fresh start roofing &amp; construction</td><td>3</td><td>$24.10</td></tr>
+          <tr><td>reliable roofing &amp; sheet metal llc</td><td>1</td><td>$10.80</td></tr>
+          <tr><td>erie home roofing</td><td>1</td><td>$7.76</td></tr>
+          <tr><td>ers roofing</td><td>3</td><td>$6.73</td></tr>
+          <tr><td>above quality roofing</td><td>1</td><td>$5.84</td></tr>
+          <tr><td>southern roofing</td><td>1</td><td>$4.79</td></tr>
+          <tr><td>mid valley roofing</td><td>1</td><td>$4.33</td></tr>
+          <tr><td>vega roofing</td><td>1</td><td>$3.39</td></tr>
+          <tr><td>marva roofing</td><td>1</td><td>$3.16</td></tr>
+          <tr><td>adele roofing</td><td>1</td><td>$1.55</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout amber" style="margin-top:14px;margin-bottom:0">
+      <strong>Recommendation:</strong> Add these as negative keywords once we're in a Standard Search campaign (Smart campaigns only support soft "negative keyword themes," not hard exclusions). Small dollar amount on its own, but it compounds every month it's left alone.
+    </div>
+  </div>
+
+  <!-- BRAND SPEND -->
+  <div class="section">
+    <div class="section-label">Finding #3 · Worth a Conversation</div>
+    <div class="section-title">$68.87 went to your own business name</div>
+    <p class="section-sub">"Edel roofing" was the single highest-spend search term in the account — 13 clicks, $68.87. Edel Roofing already ranks #1 organically for this exact term (confirmed live in the SEO side of this engagement), which means people searching your name would likely find you for free anyway.</p>
+    <div class="callout blue" style="margin-bottom:0">
+      Some agencies keep branded spend running deliberately — it protects the top spot from a competitor bidding on your name. Worth a quick decision either way, not a clear-cut fix.
+    </div>
+  </div>
+
+  <!-- MISSING ASSETS -->
+  <div class="section">
+    <div class="section-label">Finding #4</div>
+    <div class="section-title">Missing ad assets that fit this business well</div>
+    <p class="section-sub">The account currently has 3 callout assets and 1 unused structured snippet. It's missing several free assets that tend to perform well for local service businesses — especially one built around calls and quotes, like this one.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Asset Type</th><th>Status</th><th>Why It's Worth Adding</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Call asset</td><td><span class="status-badge status-critical">Missing</span></td><td>Puts a click-to-call button directly on the ad — the account already logged 4 calls without one</td></tr>
+          <tr><td>Lead form asset</td><td><span class="status-badge status-critical">Missing</span></td><td>Captures a quote request without leaving the search results page — direct fit for the ad's own headline ("Get an instant, no pressure roof quote")</td></tr>
+          <tr><td>Sitelinks</td><td><span class="status-badge status-critical">Missing</span></td><td>Extra links under the ad (e.g. Commercial Roofing, Reviews, Financing) — free, increases ad real estate</td></tr>
+          <tr><td>Images</td><td><span class="status-badge status-critical">Missing</span></td><td>Photo assets improve ad visibility, especially on mobile — 92.8K of the 99.7K impressions were mobile</td></tr>
+          <tr><td>Business logo</td><td><span class="status-badge status-critical">Missing</span></td><td>Small trust signal, no cost to add</td></tr>
+          <tr><td>Callouts (3 live)</td><td><span class="status-badge status-done">Active</span></td><td>Browse Gallery, Get A Quote, Chat Support Available — already driving clicks ($231 combined)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SCHEDULE -->
+  <div class="section">
+    <div class="section-label">Finding #5 · Minor</div>
+    <div class="section-title">One inconsistency in the ad schedule</div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Day</th><th>Hours</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Monday</td><td>8:00 AM – 11:00 PM</td></tr>
+          <tr><td>Tuesday – Friday</td><td>7:00 AM – 11:00 PM</td></tr>
+          <tr><td>Saturday – Sunday</td><td>12:00 PM – 5:00 PM</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="section-sub" style="margin-top:14px;margin-bottom:0">Monday starts an hour later than the rest of the weekdays — probably not intentional, worth a quick confirm. Separately: the site's schema currently represents Edel as open 24/7 (the voice-AI line answers around the clock) — weekend ad hours are far more limited than that. Not necessarily wrong, but worth knowing the ad hours and the "open" hours don't match.</p>
+  </div>
+
+  <!-- WHAT WE'D DO NEXT -->
+  <div class="section" style="margin-bottom:0">
+    <div class="section-label">Recommended Order</div>
+    <div class="section-title">What we'd fix first, in order</div>
+
+    <div class="priority-card">
+      <div class="priority-num">1</div>
+      <div class="priority-body">
+        <h3>Set up conversion tracking</h3>
+        <p>Call tracking + form-fill tracking, tied into the account. Nothing else on this list matters until this is live — it's the difference between guessing and knowing.</p>
+      </div>
+    </div>
+    <div class="priority-card">
+      <div class="priority-num">2</div>
+      <div class="priority-body">
+        <p><strong>Switch the bid strategy</strong> from "Maximize clicks" to a conversion-based strategy once tracking has enough data (usually a couple weeks of real conversions first).</p>
+      </div>
+    </div>
+    <div class="priority-card">
+      <div class="priority-num">3</div>
+      <div class="priority-body">
+        <p><strong>Add the missing assets</strong> — call asset and lead form first, sitelinks and images next. Free, fast, no risk.</p>
+      </div>
+    </div>
+    <div class="priority-card">
+      <div class="priority-num">4</div>
+      <div class="priority-body">
+        <p><strong>Migrate to a Standard Search campaign</strong> once the above is in place — unlocks real negative keywords (not just soft "themes"), and full visibility into search terms instead of a partial list.</p>
+      </div>
+    </div>
+    <div class="priority-card" style="margin-bottom:0">
+      <div class="priority-num">5</div>
+      <div class="priority-body">
+        <p><strong>Exclude the competitor brand-name searches</strong> and make a call on branded spend. Smallest dollar impact of the five, but easy once Standard Search is live.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <div class="footer-brand">RankRGV — Local SEO &amp; AI Visibility, built in the Valley.</div>
+  <div>McAllen, TX · <a href="https://rankrgv.com">rankrgv.com</a> · <a href="mailto:hello@rankrgv.com">hello@rankrgv.com</a> · (956) 391-5991</div>
+  <div style="margin-top:12px;font-size:12px;color:#cbd5e1">Edel Roofing × RankRGV · Google Ads Quick-Look Audit · July 9, 2026</div>
+</div>
+
+</body>
+</html>
