@@ -1,0 +1,25 @@
+<!-- ============================================================
+  EDEL ROOFING - site-wide fix: keep text white on dark sections
+  Paste ONCE into Duda: Settings > Head HTML (site-wide), at the end.
+
+  Why (found 2026-10-08): Duda's theme sets h1 color with a higher
+  priority than our widget CSS, so every custom page's hero H1
+  rendered dark red (rgb 45,0,1) on the dark red hero. Invisible on
+  /roofing-mcallen-tx, /roof-repair-edinburg-tx,
+  /commercial-roofing-edinburg, the ES pages and the new
+  /frankenstein-roof-quote page.
+
+  What it covers:
+  - anything inside a custom section whose class contains "__hero"
+    (edel-pg__hero, edel-hub__hero, edel-fq__hero)
+  - anything inside a "call-card" box
+  - any element you give the class "on-dark" in the future
+  Links/buttons inside heroes are left alone, so white buttons with
+  maroon text keep their colors. Light sections are not touched.
+============================================================ -->
+<style>
+.dmCustomHtml [class*="__hero"] :is(h1,h2,h3,h4,p,li,span,strong,em),
+.dmCustomHtml [class*="call-card"] :is(h1,h2,h3,h4,p,li,span,strong,em,a),
+.dmCustomHtml .on-dark,
+.dmCustomHtml .on-dark :is(h1,h2,h3,h4,p,li,span,strong,em,a){color:#fff !important;}
+</style>
