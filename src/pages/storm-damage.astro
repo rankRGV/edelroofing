@@ -1,0 +1,59 @@
+---
+// /storm-damage, rebuilt from the live Duda page (2026-10-18).
+// Copy changes vs live:
+// - "is crucial for effective repair" -> "is key to an effective repair"
+//   (banned word).
+// - Headings written in normal case (CSS uppercases them, same look).
+// - Added: links to the McAllen and Mission storm damage pages and Edinburg
+//   roof repair, breadcrumb, trust strip, quote/call buttons.
+import InnerPage from '../layouts/InnerPage.astro';
+import hero from '../assets/storm-damage/edel-roofing-storm-damage-2.jpg';
+import storm5 from '../assets/storm-damage/edel-roofing-storm-damage-5.jpg';
+import gray from '../assets/storm-damage/gray-roof-design.jpeg';
+---
+<InnerPage
+  title="Storm Damage Roof Repair | EDEL Roofing & Construction Inc."
+  description="Is your roof damaged by a storm? Trust EDEL Roofing & Construction Inc. for swift and reliable storm damage roof repair in Rio Grande Valley. Call us today!"
+  alternates={{ en: '/storm-damage', es: '/es-mx/storm-damage' }}
+  crumbs={[
+    { label: 'Home', href: '/' },
+    { label: 'Storm Damage', href: '/storm-damage' },
+  ]}
+  hero={{ eyebrow: 'Our Roofing Services', title: 'Storm Damage Roof Repair', bg: hero }}
+  intro={{
+    eyebrow: 'Storm Damage Roofing Repair',
+    title: 'Storm-Ready Roof Repair',
+    body: "EDEL Roofing &amp; Construction is your reliable <a href=\"/\">Edinburg roofing contractor</a> for quick and effective storm-related roof repairs. Our team acts swiftly to ensure your home's safety and your peace of mind.",
+    cta: { label: 'Contact Us', href: '/contact-us' },
+    images: [{ src: storm5, alt: 'Storm Damage Roofers' }],
+  }}
+  band={{
+    eyebrow: 'Our Approach',
+    title: 'Texas-Ready Storm Damage Solutions',
+    body: "We go beyond quick fixes. Our comprehensive approach includes a detailed damage assessment, customized repair plans, and preventative measures to fortify your roof against future storms. We're not just restoring your roof; we're enhancing its resilience.",
+    cta: { label: 'Get Instant Quote', href: '/contact-us', roofle: true },
+    images: [{ src: gray, alt: 'Roof Storm Damage Repair' }],
+  }}
+  benefits={{
+    title: 'Key Benefits of Our Storm Damage Services',
+    items: [
+      { title: 'Fast, Localized Response in Rio Grande Valley', body: "When storms hit the Rio Grande Valley, time is of the essence. Our local team is trained to respond quickly, ensuring minimal damage and faster recovery. Don't wait for help; we're already in your community." },
+      { title: 'Comprehensive Storm Damage Assessments', body: 'Understanding the full extent of storm damage is key to an effective repair. Our experts conduct thorough inspections, providing you with a detailed report that helps you make informed decisions.' },
+      { title: 'Long-Term Roof Resilience', body: "In a region known for its challenging weather, we don't just repair; we fortify. Our <a href=\"/contact-us\">storm damage services in the Rio Grande Valley</a> include preventative measures that enhance your roof's resilience against future storms." },
+    ],
+  }}
+  spokes={{
+    title: 'Storm Damage by City',
+    intro: 'Each of these pages covers storm and hail damage or roof repair for one city.',
+    links: [
+      { href: '/storm-damage-mcallen-tx', label: 'Storm & Hail Damage Roof Repair in McAllen, TX' },
+      { href: '/storm-damage-mission-tx', label: 'Storm & Hail Damage Roof Repair in Mission, TX' },
+      { href: '/roof-repair-edinburg-tx', label: 'Roof Repair in Edinburg, TX' },
+    ],
+  }}
+  closing={{
+    title: 'Secure Your Property From Storm Damage',
+    body: 'Don\'t let storm damage put your home at risk. Choose EDEL Roofing &amp; Construction for rapid, effective, and long-lasting roof <a href="/roof-repairs">repairs in Edinburg</a>. Contact us today to fortify your property against the elements and restore your peace of mind.',
+    cta: { label: 'Contact Us', href: '/contact-us' },
+  }}
+/>

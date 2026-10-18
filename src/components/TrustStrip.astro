@@ -1,0 +1,54 @@
+---
+// Proof row under inner-page heroes. Every line is already on the live site
+// (homepage / service areas): license, ShingleMaster, free inspection, rating.
+import Icon from './Icon.astro';
+import { site } from '../data/site';
+
+interface Props { lang?: 'en' | 'es' }
+const { lang = 'en' } = Astro.props;
+const items =
+  lang === 'es'
+    ? [
+        { icon: 'star', big: '4.8', text: 'Más de 250 reseñas de Google' },
+        { icon: 'shield', big: 'Con licencia', text: `${site.license}, con fianza y asegurados` },
+        { icon: 'badge', big: 'Certificados', text: 'Único CertainTeed Select ShingleMaster en el RGV' },
+        { icon: 'clipboard', big: 'Gratis', text: 'Inspección y presupuesto por escrito' },
+      ]
+    : [
+        { icon: 'star', big: '4.8', text: '250+ Google reviews' },
+        { icon: 'shield', big: 'Licensed', text: `${site.license}, bonded & insured` },
+        { icon: 'badge', big: 'Certified', text: 'Only CertainTeed Select ShingleMaster in the RGV' },
+        { icon: 'clipboard', big: 'Free', text: 'Inspection & written estimate' },
+      ];
+---
+<section class="trust" aria-label={lang === 'es' ? 'Por qué Edel' : 'Why Edel'}>
+  <ul class="wrap">
+    {items.map((i) => (
+      <li>
+        <Icon name={i.icon as 'star'} />
+        <span><strong>{i.big}</strong>{i.text}</span>
+      </li>
+    ))}
+  </ul>
+</section>
+
+<style>
+  .trust { background: var(--white); border-bottom: 1px solid var(--line); }
+  ul {
+    list-style: none;
+    margin-block: 0;
+    padding-block: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px 28px;
+  }
+  li { display: flex; align-items: center; gap: 12px; font-size: 13px; line-height: 1.4; color: var(--muted); }
+  li :global(svg) { width: 28px; height: 28px; flex: none; color: var(--maroon); }
+  strong { display: block; font-family: var(--font-head); font-size: 22px; font-weight: 600; color: var(--maroon); line-height: 1.1; }
+  @media (max-width: 900px) { ul { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 420px) {
+    li { font-size: 12px; gap: 8px; }
+    li :global(svg) { width: 22px; height: 22px; }
+    strong { font-size: 18px; }
+  }
+</style>

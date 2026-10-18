@@ -1,0 +1,100 @@
+---
+// Inner-page hero: breadcrumb, eyebrow, H1, quote + call buttons, Google
+// rating. Same photo-under-maroon look as the homepage hero, shorter.
+import { getImage } from 'astro:assets';
+import Icon from './Icon.astro';
+import { site } from '../data/site';
+import type { Crumb } from '../data/schema';
+
+interface Props {
+  crumbs: Crumb[];
+  eyebrow?: string;
+  title: string;
+  lead?: string;
+  bg: ImageMetadata;
+  lang?: 'en' | 'es';
+}
+const { crumbs, eyebrow, title, lead, bg, lang = 'en' } = Astro.props;
+const bgSrc = (await getImage({ src: bg, width: 1920, format: 'webp', quality: 70 })).src;
+const t =
+  lang === 'es'
+    ? { crumbs: 'Ruta de navegación', quote: 'Cotización Instantánea', call: 'Llamar', rated: 'Calificación', reviews: 'en más de 250 reseñas de Google' }
+    : { crumbs: 'Breadcrumb', quote: 'Get Instant Quote', call: 'Call', rated: 'Rated', reviews: 'by 250+ Google reviews' };
+---
+<section class="page-hero" style={`--bg: url(${bgSrc})`}>
+  <div class="wrap">
+    <nav class="crumbs" aria-label={t.crumbs}>
+      <ol>
+        {crumbs.map((c, i) => (
+          <li>{i < crumbs.length - 1 ? <a href={c.href}>{c.label}</a> : <span aria-current="page">{c.label}</span>}</li>
+        ))}
+      </ol>
+    </nav>
+    {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+    <h1>{title}</h1>
+    {lead && <p class="lead">{lead}</p>}
+    <div class="actions">
+      <a class="btn" href="/contact-us" data-roofle-open>{t.quote}</a>
+      <a class="btn btn--light" href={site.phoneHref}><Icon name="phone" />{t.call} {site.phone}</a>
+    </div>
+    <a class="rating" href={site.googleMaps} rel="noopener" target="_blank">
+      <span class="stars" aria-hidden="true">{[1, 2, 3, 4, 5].map(() => <Icon name="star" />)}</span>
+      <span>{t.rated} <strong>4.8</strong> {t.reviews}</span>
+    </a>
+  </div>
+</section>
+
+<style>
+  .page-hero {
+    position: relative;
+    isolation: isolate;
+    color: var(--white);
+    background: var(--maroon-dark) var(--bg) center / cover no-repeat;
+    padding-block: 40px 56px;
+  }
+  .page-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(100deg, rgba(45, 0, 1, 0.92) 0%, rgba(45, 0, 1, 0.8) 55%, rgba(45, 0, 1, 0.55) 100%);
+  }
+  .crumbs ol { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 28px; padding: 0; font-size: 13px; }
+  .crumbs li { color: rgba(255, 255, 255, 0.75); }
+  .crumbs li + li::before { content: '/'; margin-right: 6px; color: rgba(255, 255, 255, 0.45); }
+  .crumbs a { text-decoration: none; }
+  .crumbs a:hover { text-decoration: underline; color: var(--white); }
+  .eyebrow { color: #f2c4c8; }
+  .eyebrow::before { background: #f2c4c8; }
+  h1 {
+    color: var(--white);
+    font-size: clamp(36px, 4.6vw, 58px);
+    font-weight: 600;
+    line-height: 1.08;
+    text-transform: uppercase;
+    max-width: 20ch;
+    margin-bottom: 16px;
+  }
+  .lead { font-size: 17px; max-width: 60ch; color: rgba(255, 255, 255, 0.9); }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0 18px; }
+  .actions .btn { gap: 8px; min-height: 52px; }
+  .actions .btn:first-child { background: var(--white); border-color: var(--white); color: var(--maroon); }
+  .actions .btn:first-child:hover { background: #f6eaeb; border-color: #f6eaeb; }
+  .actions :global(svg) { width: 18px; height: 18px; }
+  .rating { display: inline-flex; align-items: center; gap: 10px; font-size: 14px; color: var(--white); text-decoration: none; }
+  .rating:hover span:last-child { text-decoration: underline; }
+  .stars { display: inline-flex; gap: 2px; color: #f5b301; }
+  .stars :global(svg) { width: 18px; height: 18px; }
+
+  @media (max-width: 600px) {
+    .page-hero { padding-block: 20px 32px; }
+    .page-hero::before { background: rgba(45, 0, 1, 0.86); }
+    .crumbs ol { margin-bottom: 16px; }
+    h1 { font-size: 32px; }
+    .lead { font-size: 15px; }
+    .actions { margin: 18px 0 14px; }
+    .actions .btn { flex: 1 1 100%; }
+    .stars :global(svg) { width: 15px; height: 15px; }
+    .rating { font-size: 13px; gap: 8px; }
+  }
+</style>

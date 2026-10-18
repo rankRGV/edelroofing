@@ -1,0 +1,58 @@
+---
+// Links to the city x service pages. Those pages had ~2 inlinks each on the
+// live site (only from their city hub), so service pages link them here.
+import Icon from './Icon.astro';
+
+interface Props {
+  title: string;
+  intro?: string;
+  links: { href: string; label: string }[];
+  soft?: boolean;
+}
+const { title, intro, links, soft = false } = Astro.props;
+---
+<section class:list={['spokes', { soft }]}>
+  <div class="wrap">
+    <h2>{title}</h2>
+    {intro && <p class="intro">{intro}</p>}
+    <ul>
+      {links.map((l) => (
+        <li><a href={l.href}><span>{l.label}</span><Icon name="arrow" /></a></li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .spokes { padding-block: 64px; }
+  .soft { background: var(--bg-soft); }
+  h2 { font-size: clamp(28px, 3.4vw, 40px); text-transform: uppercase; }
+  .intro { max-width: 70ch; }
+  ul {
+    list-style: none;
+    margin: 24px 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 12px;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-height: 64px;
+    padding: 14px 18px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--maroon);
+    border-radius: var(--radius);
+    font-weight: 600;
+    color: var(--ink-strong);
+    text-decoration: none;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+  a:hover { border-color: var(--maroon); color: var(--maroon); }
+  a :global(svg) { width: 18px; height: 18px; flex: none; color: var(--maroon); }
+  @media (max-width: 600px) { .spokes { padding-block: 48px; } }
+</style>

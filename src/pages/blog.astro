@@ -1,0 +1,221 @@
+---
+// /blog, rebuilt from the live Duda blog index (2026-10-18).
+// Same 10 posts, order, dates, bylines and excerpts as live.
+// Copy changes vs live:
+// - Em dashes in 5 excerpts swapped for colons/commas.
+// - Dropped the Duda blog search box (no search on the static site).
+// - Live hreflang pointed /blog's Spanish alternate at the /es-mx homepage;
+//   there is no Spanish blog index, so no alternate here. Each post gets its
+//   own EN/ES pair when the posts are rebuilt (batch 5).
+// - Spanish posts carry lang="es" and an "Español" tag.
+// - Added: Blog JSON-LD listing the posts, breadcrumb, closing call band.
+// The post pages themselves are batch 5; until then these links 404 on the
+// preview (they work on the live site).
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Icon from '../components/Icon.astro';
+import { breadcrumbSchema } from '../data/schema';
+import hero from '../assets/blog/edel-roofing-3.webp';
+import costoMission from '../assets/blog/reparaciontecho.webp';
+import costMission from '../assets/blog/missioninsurancezreplacement.webp';
+import reemplazoMcallen from '../assets/blog/reemplazo-de-techo-en-mcallen--tiempo-y-seguro.webp';
+import replacementMcallen from '../assets/blog/roof-replacement-in-mcallen---timeline---insurance.webp';
+import reparacionEdinburg from '../assets/blog/edinburgroofrepair.webp';
+import repairEdinburg from '../assets/blog/edinburgroofdamage.webp';
+import techosComerciales from '../assets/blog/commercial-roofing-en-la-ciudad-de-edinburg.webp';
+import commercialGuide from '../assets/blog/commercial-roofing-in-edinburg.webp';
+import reemplazoEdinburg from '../assets/blog/edel-roofing-2.jpeg';
+import replacementEdinburg from '../assets/blog/residential-roof-replacemnt-in-edinburg-texas.jpg';
+
+type Post = { href: string; title: string; date: string; author?: string; excerpt: string; img: ImageMetadata; alt: string; es?: boolean };
+const posts: Post[] = [
+  {
+    href: '/costo-de-reparacion-de-techo-en-mission-tx-que-es-justo-y-que-cubre-el-seguro',
+    title: 'Costo de Reparación de Techo en Mission, TX: Qué es Justo y Qué Cubre el Seguro',
+    date: 'August 27, 2026',
+    author: 'Eddie Elizondo',
+    excerpt: 'Qué es un precio justo por una reparación de techo en Mission, TX, la regla del 25%, y si el seguro cubre un techo más viejo.',
+    img: costoMission,
+    alt: '',
+    es: true,
+  },
+  {
+    href: '/roof-repair-cost-in-mission-tx-what-s-fair-and-what-insurance-covers',
+    title: "Roof Repair Cost in Mission, TX: What's Fair and What Insurance Covers",
+    date: 'August 17, 2026',
+    author: 'Eddie Elizondo',
+    excerpt: 'What a fair roof repair price looks like in Mission, TX, the 25% roofing rule, and whether insurance covers an older roof.',
+    img: costMission,
+    alt: '',
+  },
+  {
+    href: '/reemplazo-de-techo-en-mcallen-tiempo-y-seguro',
+    title: 'Reemplazo de Techo en McAllen: Tiempo y Seguro',
+    date: 'July 24, 2026',
+    author: 'Eddie Elizondo',
+    excerpt: 'Cuánto tarda un reemplazo de techo, si el seguro lo cubre y qué pueden esperar los dueños de casa en McAllen de principio a fin.',
+    img: reemplazoMcallen,
+    alt: '',
+    es: true,
+  },
+  {
+    href: '/roof-replacement-in-mcallen-timeline-and-insurance',
+    title: 'Roof Replacement in McAllen: Timeline and Insurance',
+    date: 'July 24, 2026',
+    author: 'Eddie Elizondo',
+    excerpt: 'How long a roof replacement takes, whether insurance covers it, and what McAllen homeowners can expect from start to finish.',
+    img: replacementMcallen,
+    alt: '',
+  },
+  {
+    href: '/reparacion-de-techo-en-edinburg-y-el-valle',
+    title: 'Reparación de Techo en Edinburg y el Valle',
+    date: 'July 9, 2026',
+    author: 'Eddie Elizondo',
+    excerpt: 'Cómo saber si su techo necesita reparación o reemplazo completo: señales, costos y qué esperar de un contratista de techos con licencia en Edinburg y el Valle del Río Grande.',
+    img: reparacionEdinburg,
+    alt: '',
+    es: true,
+  },
+  {
+    href: '/roof-repair-edinburg-rgv-guide',
+    title: 'Roof Repair in Edinburg & the RGV',
+    date: 'July 6, 2026',
+    author: 'Eddie Elizondo',
+    excerpt: 'How to tell if your roof needs a repair or a full replacement: signs, costs, and what to expect from a licensed roofing contractor in Edinburg and the Rio Grande Valley.',
+    img: repairEdinburg,
+    alt: '',
+  },
+  {
+    href: '/techos-comerciales-edinburg-valle-del-rio-grande',
+    title: 'Techos Comerciales en Edinburg y el RGV',
+    date: 'June 24, 2026',
+    author: 'Eddie Elizondo',
+    excerpt: 'Una guía clara sobre techos comerciales en Edinburg y el RGV: las señales de que tu techo necesita atención, el costo y cómo funciona el proceso.',
+    img: techosComerciales,
+    alt: 'Techos comerciales en edinburg',
+    es: true,
+  },
+  {
+    href: '/commercial-roofing-edinburg-rgv-guide',
+    title: 'Commercial Roofing in Edinburg and the Rio Grande Valley: Signs You Need Work, What It Costs, and What to Expect',
+    date: 'June 24, 2026',
+    author: 'Eddie Elizondo',
+    excerpt: 'A clear guide to commercial roofing in Edinburg and the RGV: the signs your roof needs attention, what it costs, and how the process works.',
+    img: commercialGuide,
+    alt: 'Commercial Roofing Edinburg Texas',
+  },
+  {
+    href: '/reemplazo-de-techo-edinburg-valle-del-rio-grande',
+    title: 'Una guía sencilla para propietarios de vivienda en Edinburg y el Valle del Río Grande',
+    date: 'June 17, 2026',
+    author: 'Eddie Elizondo',
+    excerpt: 'Una guía clara sobre el reemplazo de techo en Edinburg y el Valle: las señales de que necesitas uno, cuánto cuesta, qué materiales aguantan el calor, y el proceso paso a paso.',
+    img: reemplazoEdinburg,
+    alt: 'reemplazo de techo en edinburg',
+    es: true,
+  },
+  {
+    href: '/roof-replacement-edinburg-rio-grande-valley',
+    title: 'Roof Replacement in Edinburg and the Rio Grande Valley: When You Need One, What It Costs, and What to Expect',
+    date: 'June 13, 2026',
+    excerpt: 'A clear guide to roof replacement in Edinburg and the RGV: the signs you need one, what it costs, materials that handle the heat, and the process step by step.',
+    img: replacementEdinburg,
+    alt: '',
+  },
+];
+
+const crumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Blog', href: '/blog' },
+];
+const schema = [
+  breadcrumbSchema(crumbs),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    name: 'Edel Roofing Blog',
+    url: 'https://www.edelroofing.com/blog',
+    blogPost: posts.map((p) => ({
+      '@type': 'BlogPosting',
+      headline: p.title,
+      url: new URL(p.href, 'https://www.edelroofing.com').href,
+      datePublished: new Date(`${p.date} 12:00 UTC`).toISOString().slice(0, 10),
+      inLanguage: p.es ? 'es' : 'en',
+      ...(p.author && { author: { '@type': 'Person', name: p.author } }),
+    })),
+  },
+];
+---
+<Base
+  title="Roofing Tips & Guides for the RGV | Edel Roofing"
+  description="Roofing guides for RGV homeowners and businesses. Edel Roofing & Construction, Edinburg, TX. Covering roof replacement, commercial roofing, and repairs."
+  schema={schema}
+>
+  <PageHero crumbs={crumbs} title="Blog" bg={hero} />
+
+  <section class="section">
+    <ul class="wrap posts">
+      {posts.map((p, i) => (
+        <li lang={p.es ? 'es' : undefined}>
+          <a href={p.href} class="card">
+            <Image src={p.img} alt={p.alt} widths={[400, 640, 800]} sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 380px" loading={i < 3 ? 'eager' : 'lazy'} />
+            <div class="body">
+              <p class="meta">
+                {p.es && <span class="tag">Español</span>}
+                {p.author ? `By ${p.author} • ${p.date}` : p.date}
+              </p>
+              <h2>{p.title}</h2>
+              <p>{p.excerpt}</p>
+              <span class="more">{p.es ? 'Leer más' : 'Read more'}<Icon name="arrow" /></span>
+            </div>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <CtaBand
+    title="We've Got You Covered"
+    body="Ready to start your roofing, remodeling, or construction journey? Contact Eddie Elizondo and the EDEL team today. Let's turn your dreams into reality."
+    cta={{ label: 'Contact Us', href: '/contact-us' }}
+  />
+</Base>
+
+<style>
+  .section { padding-block: 64px 88px; background: var(--bg-soft); }
+  .posts {
+    list-style: none;
+    margin-block: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+    text-decoration: none;
+    transition: box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+  .card:hover { border-color: var(--maroon); box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08); }
+  .card :global(img) { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+  .body { display: flex; flex-direction: column; flex: 1; padding: 20px 22px 22px; }
+  .meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); margin-bottom: 10px; }
+  .tag { padding: 2px 8px; border-radius: 999px; background: #f6eaeb; color: var(--maroon); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; font-size: 11px; }
+  h2 { font-size: 24px; line-height: 1.2; }
+  .body p:not(.meta) { font-size: 14px; }
+  .more { margin-top: auto; display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700; color: var(--maroon); text-transform: uppercase; letter-spacing: 0.06em; }
+  .more :global(svg) { width: 16px; height: 16px; }
+  @media (max-width: 1100px) { .posts { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 700px) {
+    .section { padding-block: 40px 56px; }
+    .posts { grid-template-columns: 1fr; gap: 16px; }
+  }
+</style>

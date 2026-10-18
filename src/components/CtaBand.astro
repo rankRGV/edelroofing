@@ -1,0 +1,68 @@
+---
+// Closing call to action: the page's own last heading + paragraph, then the
+// "(956) 422-EDEL / Call us today" row every live inner page ends with.
+import { getImage } from 'astro:assets';
+import Icon from './Icon.astro';
+import { site } from '../data/site';
+import houseRoof from '../assets/inner/house-roof.webp';
+
+interface Props {
+  title: string;
+  body?: string;
+  cta?: { label: string; href: string; roofle?: boolean };
+  lang?: 'en' | 'es';
+}
+const { title, body, cta, lang = 'en' } = Astro.props;
+const bgSrc = (await getImage({ src: houseRoof, width: 1920, format: 'webp', quality: 65 })).src;
+const callToday = lang === 'es' ? 'Llámenos hoy' : 'Call us today';
+const quote = lang === 'es' ? 'Cotización Instantánea' : 'Get Instant Quote';
+---
+<section class="cta-band" style={`--bg: url(${bgSrc})`}>
+  <div class="wrap inner">
+    <div class="text">
+      <h2>{title}</h2>
+      {body && <p set:html={body} />}
+      {cta && (
+        <a class="btn btn--light" href={cta.href} data-roofle-open={cta.roofle ? '' : undefined}>{cta.label}</a>
+      )}
+    </div>
+    <div class="call">
+      <p class="vanity">(956) 422-EDEL</p>
+      <a class="btn btn--white" href={site.phoneHref}><Icon name="phone" />{callToday}</a>
+      <a class="btn btn--light" href="/contact-us" data-roofle-open>{quote}</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta-band {
+    position: relative;
+    isolation: isolate;
+    color: var(--white);
+    background: var(--maroon) var(--bg) center / cover no-repeat;
+    padding-block: 72px;
+  }
+  .cta-band::before { content: ''; position: absolute; inset: 0; z-index: -1; background: rgba(79, 0, 0, 0.84); }
+  .inner { display: grid; grid-template-columns: 1.5fr 1fr; gap: 48px; align-items: center; }
+  h2 { color: var(--white); font-size: clamp(30px, 3.6vw, 44px); text-transform: uppercase; }
+  .text p { max-width: 62ch; color: rgba(255, 255, 255, 0.9); margin-bottom: 1.4rem; }
+  .text p :global(a) { color: var(--white); font-weight: 600; }
+  .call {
+    display: grid;
+    gap: 12px;
+    padding: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    background: rgba(45, 0, 1, 0.45);
+    text-align: center;
+  }
+  .vanity { margin: 0; font-family: var(--font-head); font-size: 36px; font-weight: 600; line-height: 1.1; }
+  .call .btn { gap: 8px; min-height: 52px; }
+  .call :global(svg) { width: 18px; height: 18px; }
+  .btn--white { background: var(--white); border-color: var(--white); color: var(--maroon); }
+  .btn--white:hover { background: #f6eaeb; border-color: #f6eaeb; color: var(--maroon); }
+  @media (max-width: 900px) {
+    .cta-band { padding-block: 56px; }
+    .inner { grid-template-columns: 1fr; gap: 28px; }
+  }
+</style>

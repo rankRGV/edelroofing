@@ -1,0 +1,62 @@
+---
+// /roof-repairs, rebuilt from the live Duda page (2026-10-18).
+// Copy changes vs live: none to the wording. Live page carried the sitewide
+// RoofingContractor block twice; it appears once here.
+// Added: links to the city roof repair and inspection pages, breadcrumb,
+// trust strip, quote/call buttons.
+// Note: overlaps /roof-repair-edinburg-tx (inventory problem 4). Left as is
+// in this batch; decide when the city pages are rebuilt (batch 4).
+import InnerPage from '../layouts/InnerPage.astro';
+import hero from '../assets/roof-repairs/modern-house.jpeg';
+import restoration from '../assets/roof-repairs/roof-restoration.jpeg';
+import repair from '../assets/roof-repairs/roof-repair.jpeg';
+---
+<InnerPage
+  title="Roof Repair Services in Edinburg"
+  description="Trust EDEL Roofing Construction Inc. for Roof Repair in Edinburg, TX. From quick leak detection to shingle replacement and emergency repairs, we provide swift, reliable solutions that keep your home safe and secure."
+  alternates={{ en: '/roof-repairs', es: '/es-mx/roof-repairs' }}
+  crumbs={[
+    { label: 'Home', href: '/' },
+    { label: 'Roof Repairs', href: '/roof-repairs' },
+  ]}
+  hero={{ eyebrow: 'Our Roofing Services', title: 'Expert Roof Repairs in Edinburg, TX', bg: hero }}
+  intro={{
+    eyebrow: 'Roofing Repairs',
+    title: "Edinburg's Premier Roofing Contractors",
+    body: "<a href=\"/\">EDEL Roofing &amp; Construction</a> understands the urgency of a leaky roof, damaged shingles, or any unforeseen roofing issue. Our Roof Repairs service is designed to swiftly address these concerns, providing timely solutions that not only restore your roof's integrity but also your peace of mind.",
+    cta: { label: 'Contact Us', href: '/contact-us' },
+    images: [{ src: restoration, alt: 'Roof Repairs' }],
+  }}
+  band={{
+    eyebrow: 'Our Approach',
+    title: 'Comprehensive Roof Repairs in Edinburg, TX',
+    body: 'With a team of experienced professionals and a commitment to excellence, we approach roof repairs with a comprehensive perspective. We not only fix the visible issues but also diagnose the underlying causes, ensuring a lasting solution that prevents future problems.',
+    cta: { label: 'Get Instant Quote', href: '/contact-us', roofle: true },
+    images: [{ src: repair, alt: 'Roof Repair' }],
+  }}
+  benefits={{
+    title: 'Key Benefits of Our Repair Services',
+    items: [
+      { title: 'Leak Detection and Repair', body: "Our experts employ advanced techniques to identify and fix leaks, preventing water damage and preserving your property's structural integrity." },
+      { title: 'Shingle Replacement', body: "Damaged or missing shingles compromise your roof's defense. Our shingle replacement services restore the look and protection of your roof." },
+      { title: 'Emergency Repairs', body: 'Storm damage or unexpected leaks? Our rapid response team is equipped to handle <a href="/contact-us">emergency repairs</a>, minimizing further damage to your property.' },
+    ],
+  }}
+  spokes={{
+    title: 'Roof Repair by City',
+    intro: 'Each of these pages covers roof repair or roof inspections for one city.',
+    links: [
+      { href: '/roof-repair-edinburg-tx', label: 'Roof Repair in Edinburg, TX' },
+      { href: '/roof-repair-mcallen-tx', label: 'Roof Repair in McAllen, TX' },
+      { href: '/roof-repair-mission-tx', label: 'Roof Repair in Mission, TX' },
+      { href: '/roof-inspections-mcallen-tx', label: 'Roof Inspections in McAllen, TX' },
+      { href: '/roof-inspections-mission-tx', label: 'Roof Inspections in Mission, TX' },
+      { href: '/storm-damage', label: 'Storm Damage Roof Repair' },
+    ],
+  }}
+  closing={{
+    title: 'Secure Your Property',
+    body: "Don't let roofing issues compromise your safety and comfort. Choose EDEL Roofing &amp; Construction for expert roof repairs that stand the test of time. Contact us today to schedule a consultation and take the first step towards restoring the strength and protection of your roof.",
+    cta: { label: 'Contact Us', href: '/contact-us' },
+  }}
+/>

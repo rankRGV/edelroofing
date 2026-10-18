@@ -111,58 +111,7 @@ const faqs = [
 const strip = (html: string) => html.replace(/<[^>]+>/g, '');
 const schema = [
   { '@context': 'https://schema.org', '@type': 'WebSite', name: site.legalName, url: 'https://www.edelroofing.com/' },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'RoofingContractor',
-    '@id': 'https://www.edelroofing.com',
-    name: 'Edel Roofing and Construction Inc',
-    url: 'https://www.edelroofing.com/',
-    description:
-      'Edel Roofing and Construction Inc. specializes in residential and commercial roofing across Edinburg and the Rio Grande Valley. Owens Corning Preferred and CertainTeed SELECT ShingleMaster contractor.',
-    telephone: '+1-956-422-3335',
-    email: site.email,
-    priceRange: '$$',
-    foundingDate: '2003',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: '1815 North Jackson Road',
-      addressLocality: 'Edinburg',
-      addressRegion: 'TX',
-      postalCode: '78541',
-      addressCountry: 'US',
-    },
-    geo: { '@type': 'GeoCoordinates', latitude: 26.323534, longitude: -98.184065 },
-    contactPoint: {
-      '@type': 'ContactPoint',
-      telephone: '+1-956-422-3335',
-      contactType: 'customer service',
-      areaServed: 'US-TX',
-      availableLanguage: ['English', 'Spanish'],
-    },
-    sameAs: [site.facebook, site.instagram],
-    hasCredential: [
-      {
-        '@type': 'EducationalOccupationalCredential',
-        credentialCategory: 'license',
-        name: 'Licensed Roofing Contractor (Commercial & Residential)',
-        identifier: '03-0489',
-        recognizedBy: { '@type': 'Organization', name: 'Roofing Contractors Association of Texas (RCAT)' },
-      },
-      {
-        '@type': 'EducationalOccupationalCredential',
-        credentialCategory: 'certification',
-        name: 'CertainTeed SELECT ShingleMaster',
-        recognizedBy: { '@type': 'Organization', name: 'CertainTeed' },
-      },
-      {
-        '@type': 'EducationalOccupationalCredential',
-        credentialCategory: 'certification',
-        name: 'Owens Corning Preferred Contractor',
-        recognizedBy: { '@type': 'Organization', name: 'Owens Corning' },
-      },
-    ],
-    areaServed: areas.map((a) => ({ '@type': 'City', name: a.name })),
-  },
+  // RoofingContractor block comes from Base (src/data/schema.ts).
   {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -178,6 +127,7 @@ const schema = [
   title="Edinburg Roofing Contractor | Edel Roofing & Construction"
   description="Licensed roof replacement, repairs, and commercial roofing in Edinburg, McAllen, and the Rio Grande Valley. Free estimates. Call (956) 422-3335."
   schema={schema}
+  alternates={{ en: '/', es: '/es-mx' }}
 >
   <!-- Hero: rating, H1, two reassurances, two sentences, quote box. -->
   <section class="hero" style={`--bg: url(${heroBg})`}>

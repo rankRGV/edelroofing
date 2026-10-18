@@ -1,0 +1,247 @@
+---
+// /service-areas, rebuilt from the live Duda page (source of truth:
+// duda-pages/service-areas.html, 2026-10-18).
+// Copy changes vs live:
+// - Em dash in the lead swapped for a colon.
+// - "252 Google reviews" -> "250+ Google reviews" (match the homepage).
+// - WebPage schema "about" pointed at #roofingcontractor, which no block
+//   uses; it now points at the RoofingContractor @id.
+// - Added: McAllen and Mission page lists (their city x service pages had
+//   ~2 inlinks each), breadcrumb, quote/call buttons in the hero.
+// "Seamless gutter" is the product name (one-piece gutters), kept on purpose.
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import SpokeLinks from '../components/SpokeLinks.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Icon from '../components/Icon.astro';
+import { site } from '../data/site';
+import { breadcrumbSchema, SITE_URL } from '../data/schema';
+import hero from '../assets/home/truck-house.jpeg';
+
+const crumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Service Areas', href: '/service-areas' },
+];
+
+const cities: { name: string; line: string; href?: string; home?: boolean }[] = [
+  { name: 'Edinburg', line: 'Roof replacement, repairs & commercial roofing in Edinburg.', href: '/', home: true },
+  { name: 'McAllen', line: 'Roofing for McAllen, the largest city in the Valley.', href: '/roofing-mcallen-tx' },
+  { name: 'Mission', line: 'Roofing for Mission and the Sharyland area.', href: '/roofing-mission-tx' },
+  { name: 'Pharr', line: 'Roofing for Pharr and the central Valley.' },
+  { name: 'Weslaco', line: 'Roofing for Weslaco and the mid-Valley.' },
+  { name: 'Harlingen', line: 'Roofing for Harlingen and Cameron County.' },
+  { name: 'Brownsville', line: 'Roofing for Brownsville and the southern Valley.' },
+  { name: 'Rio Grande City', line: 'Roofing for Rio Grande City and Starr County.' },
+];
+
+const services = [
+  { href: '/residential-roofing', title: 'Residential Roof Replacement', line: 'New roofs and full replacements for homes across the RGV.' },
+  { href: '/commercial-roofing', title: 'Commercial Roofing', line: 'Flat and low-slope systems for businesses and properties.' },
+  { href: '/roof-repairs', title: 'Roof Repairs', line: 'Leak repairs, storm damage, and inspections.' },
+  { href: '/gutters-edinburg-tx', title: 'Gutters', line: 'Seamless gutter installation, repair, and gutter guards.' },
+];
+
+const proof = [
+  { big: '4.8★', label: '250+ Google reviews' },
+  { big: 'Licensed', label: `${site.license}, bonded & insured` },
+  { big: 'Certified', label: 'Only CertainTeed Select ShingleMaster in the RGV' },
+  { big: 'Financing', label: 'Options for replacement & repairs', href: '/financing' },
+];
+
+const schema = [
+  breadcrumbSchema(crumbs),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: 'Roofing Service Areas Across the Rio Grande Valley',
+    url: `${SITE_URL}/service-areas`,
+    description:
+      'Edel Roofing & Construction serves Edinburg, McAllen, Mission, Pharr, Weslaco, Harlingen, Brownsville and Rio Grande City with roof replacement, repairs and commercial roofing.',
+    about: { '@id': SITE_URL },
+  },
+];
+---
+<Base
+  title="RGV Roofing Service Areas | Edel Roofing & Construction"
+  description="Licensed roofing contractor serving McAllen, Edinburg, Mission, Pharr, Weslaco, Harlingen, Brownsville, and Rio Grande City. Free estimates: (956) 422-3335."
+  alternates={{ en: '/service-areas', es: '/es-mx/service-areas' }}
+  schema={schema}
+>
+  <PageHero
+    crumbs={crumbs}
+    eyebrow="Areas We Serve"
+    title="Roofing Service Areas in the Rio Grande Valley"
+    lead="Edel Roofing & Construction is based in Edinburg and serves the entire Rio Grande Valley: residential roof replacement, commercial roofing, and roof repairs for homeowners and businesses. Choose your city below."
+    bg={hero}
+  />
+
+  <section class="section">
+    <ul class="wrap cities">
+      {cities.map((c) => (
+        <li>
+          {c.href ? (
+            <a class:list={['city', { home: c.home }]} href={c.href}>
+              <span class="name">{c.name}{c.home && <small>Home base</small>}</span>
+              <span class="line">{c.line}</span>
+              <Icon name="arrow" />
+            </a>
+          ) : (
+            <div class="city">
+              <span class="name">{c.name}</span>
+              <span class="line">{c.line}</span>
+            </div>
+          )}
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <SpokeLinks
+    title="Edinburg roofing pages"
+    soft
+    links={[
+      { href: '/roof-repair-edinburg-tx', label: 'Roof Repair in Edinburg' },
+      { href: '/roof-replacement-edinburg-tx', label: 'Roof Replacement in Edinburg' },
+      { href: '/commercial-roofing-edinburg', label: 'Commercial Roofing in Edinburg' },
+      { href: '/gutters-edinburg-tx', label: 'Gutters in Edinburg' },
+    ]}
+  />
+  <SpokeLinks
+    title="McAllen roofing pages"
+    links={[
+      { href: '/roofing-mcallen-tx', label: 'Roofing Contractor in McAllen' },
+      { href: '/roof-repair-mcallen-tx', label: 'Roof Repair in McAllen' },
+      { href: '/roof-replacement-mcallen-tx', label: 'Roof Replacement in McAllen' },
+      { href: '/commercial-roofing-mcallen-tx', label: 'Commercial Roofing in McAllen' },
+      { href: '/storm-damage-mcallen-tx', label: 'Storm & Hail Damage in McAllen' },
+      { href: '/roof-coatings-mcallen-tx', label: 'Roof Coatings in McAllen' },
+      { href: '/roof-inspections-mcallen-tx', label: 'Roof Inspections in McAllen' },
+    ]}
+  />
+  <SpokeLinks
+    title="Mission roofing pages"
+    soft
+    links={[
+      { href: '/roofing-mission-tx', label: 'Roofing Contractor in Mission' },
+      { href: '/roof-repair-mission-tx', label: 'Roof Repair in Mission' },
+      { href: '/roof-replacement-mission-tx', label: 'Roof Replacement in Mission' },
+      { href: '/commercial-roofing-mission-tx', label: 'Commercial Roofing in Mission' },
+      { href: '/storm-damage-mission-tx', label: 'Storm & Hail Damage in Mission' },
+      { href: '/roof-coating-mission-tx', label: 'Roof Coatings in Mission' },
+      { href: '/roof-inspections-mission-tx', label: 'Roof Inspections in Mission' },
+    ]}
+  />
+
+  <section class="section">
+    <div class="wrap">
+      <h2>What We Do in Every City</h2>
+      <ul class="services">
+        {services.map((s) => (
+          <li>
+            <a href={s.href}>
+              <span class="title">{s.title}</span>
+              <span class="line">{s.line}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="wrap">
+      <h2>Why Homeowners Across the RGV Choose Edel</h2>
+      <ul class="proof">
+        {proof.map((p) => (
+          <li>
+            <span class="big">{p.big}</span>
+            {p.href ? <a href={p.href}>{p.label}</a> : <span>{p.label}</span>}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <CtaBand
+    title="Not sure if we cover your area?"
+    body="If you're in the Rio Grande Valley, we can help. Call for a free estimate."
+    cta={{ label: 'Get a Free Estimate', href: '/book-an-inspection' }}
+  />
+</Base>
+
+<style>
+  .section { padding-block: 72px; }
+  .soft { background: var(--bg-soft); }
+  h2 { font-size: clamp(28px, 3.4vw, 40px); text-transform: uppercase; }
+
+  .cities {
+    list-style: none;
+    margin-block: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+  }
+  .city {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: 100%;
+    padding: 20px 20px 22px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--white);
+    text-decoration: none;
+  }
+  .name { display: flex; align-items: center; gap: 10px; font-family: var(--font-head); font-size: 26px; color: var(--ink-strong); line-height: 1.1; }
+  .name small { font-family: var(--font-body); font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
+  .line { font-size: 14px; color: var(--muted); padding-right: 24px; }
+  a.city :global(svg) { position: absolute; right: 16px; bottom: 18px; width: 18px; height: 18px; color: var(--maroon); }
+  a.city:hover { border-color: var(--maroon); }
+  a.city:hover .name { color: var(--maroon); }
+  .city.home { background: var(--maroon-mid); border-color: var(--maroon-mid); }
+  .city.home .name, .city.home .line, .city.home :global(svg) { color: var(--white); }
+
+  .services {
+    list-style: none;
+    margin: 24px 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+  }
+  .services a {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: 100%;
+    padding: 22px;
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--maroon);
+    border-radius: var(--radius);
+    text-decoration: none;
+  }
+  .services a:hover { border-color: var(--maroon); }
+  .services .title { font-weight: 700; color: var(--maroon); }
+  .services .line { padding: 0; }
+
+  .proof {
+    list-style: none;
+    margin: 24px 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+  }
+  .proof li { padding: 22px; background: var(--white); border-radius: var(--radius); border: 1px solid var(--line); text-align: center; }
+  .proof .big { display: block; font-family: var(--font-head); font-size: 32px; font-weight: 600; color: var(--maroon); line-height: 1.1; margin-bottom: 6px; }
+  .proof a { color: var(--maroon); font-weight: 600; }
+
+  @media (max-width: 900px) {
+    .section { padding-block: 56px; }
+    .cities, .services, .proof { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 480px) {
+    .cities, .services { grid-template-columns: 1fr; }
+  }
+</style>

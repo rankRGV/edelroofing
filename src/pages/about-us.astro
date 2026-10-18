@@ -1,0 +1,55 @@
+---
+// /about-us, rebuilt from the live Duda page (2026-10-18).
+// Copy changes vs live:
+// - "underscores our dedication" -> "shows our dedication" (banned word).
+// - "to embark on your journey of turning possibilities into reality" ->
+//   "to start turning possibilities into reality" (banned phrase).
+// - The live "(956) 422-EDEL / Call us today" link dialed (956) 867-0667;
+//   it now dials the real number from site.ts.
+// - "Get Instant Quote" pointed at /#estimate (no such anchor); it now opens
+//   the Roofle quote.
+// - "25-year legacy" kept as live (open question: vs "since 2003").
+// - Added: breadcrumb, trust strip, quote/call buttons.
+import InnerPage from '../layouts/InnerPage.astro';
+import hero from '../assets/inner/edel-roofing-banner.webp';
+import truck from '../assets/about-us/edel-truck.webp';
+import building from '../assets/about-us/commercial-building.jpg';
+import install from '../assets/about-us/roofing-install.jpeg';
+import kitchen from '../assets/about-us/new-modern-kitchen.jpg';
+import house from '../assets/about-us/modern-house.jpg';
+---
+<InnerPage
+  title="About EDEL Roofing & Construction | Roofing Solutions"
+  description="EDEL Roofing & Construction Inc. is your trusted source for remodeling, construction & roofing solutions in Rio Grande Valley communities. Visit to know more!"
+  alternates={{ en: '/about-us', es: '/es-mx/about-us' }}
+  crumbs={[
+    { label: 'Home', href: '/' },
+    { label: 'About Us', href: '/about-us' },
+  ]}
+  hero={{ eyebrow: 'About Our Company', title: 'About Edel Roofing & Construction Inc', bg: hero }}
+  intro={{
+    eyebrow: 'Our Vision and Expertise',
+    title: 'Building on Vision & Passion',
+    body: "EDEL Roofing &amp; Construction Inc. is proud to have a 25-year legacy rooted in the vision of founder Eddie Elizondo. With an enduring commitment to quality construction and exceptional customer service, we've become a trusted name in the Rio Grande Valley communities. Eddie's lifelong dedication to construction has been our cornerstone, and we continue to deliver top-notch <a href=\"/roof-repairs\">roofing solutions</a> to our valued customers.",
+    cta: { label: 'Help Me Protect My Home', href: '/contact-us' },
+    images: [
+      { src: truck, alt: "Edel Roofing & Construction Inc's Truck" },
+      { src: building, alt: 'Commercial Building' },
+      { src: install, alt: 'Roofing Install' },
+      { src: kitchen, alt: 'New Modern Kitchen' },
+      { src: house, alt: 'Home Remodeling' },
+    ],
+  }}
+  band={{
+    title: "EDEL Roofing & Construction Inc's Story",
+    body: [
+      "EDEL Roofing &amp; Construction Inc. stands as a tribute to the vision and passion of our founder, Eddie Elizondo. With a lifelong connection to construction, Eddie's journey from working alongside family members to his educational pursuits culminated in the creation of EDEL Roofing &amp; Construction Inc. His determination to provide homes that resonate with his clients' dreams is the heartbeat of our company, guiding us as we craft enduring roofs, remodel interiors, and build homes from the ground up.",
+      "EDEL Roofing &amp; Construction Inc. has become a trusted name in the Rio Grande Valley communities. Our reputation has been earned through a steadfast commitment to putting customers first, being transparent and honest, and ensuring that every project runs smoothly. The recognition we have received, including The Monitor's Reader's Choice Awards and the Valley Morning Star Readers' Choice Awards, shows our dedication to excellence.",
+    ],
+  }}
+  closing={{
+    title: 'Your Partner in Transformation',
+    body: "At EDEL Roofing &amp; Construction Inc., we understand that your home is a reflection of your aspirations. Whether it's a sturdy roof over your head, a newly remodeled space, or a dream home realized, we are here to make it happen. Contact Eddie Elizondo and the EDEL team today to start turning possibilities into reality.",
+    cta: { label: 'Get Instant Quote', href: '/contact-us', roofle: true },
+  }}
+/>

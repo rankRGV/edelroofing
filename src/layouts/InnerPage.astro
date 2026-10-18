@@ -1,0 +1,192 @@
+---
+// Shared layout for the live site's service-style pages (residential,
+// commercial, repairs, storm damage, construction, remodeling, about).
+// The live Duda pages all follow one pattern: hero, intro split with photos,
+// maroon photo band, extra splits, three benefit cards, closing CTA. Each page
+// file passes its own copy; nothing here adds copy beyond button labels.
+import { Image, getImage } from 'astro:assets';
+import Base from './Base.astro';
+import PageHero from '../components/PageHero.astro';
+import TrustStrip from '../components/TrustStrip.astro';
+import CtaBand from '../components/CtaBand.astro';
+import SpokeLinks from '../components/SpokeLinks.astro';
+import Icon from '../components/Icon.astro';
+import { breadcrumbSchema, type Crumb } from '../data/schema';
+import bandBg from '../assets/inner/house-roofing.webp';
+
+type Cta = { label: string; href: string; roofle?: boolean };
+type Pic = { src: ImageMetadata; alt: string };
+export type Block = { eyebrow?: string; title: string; body: string | string[]; cta?: Cta; images?: Pic[] };
+
+interface Props {
+  title: string;
+  description?: string;
+  lang?: 'en' | 'es';
+  alternates?: { en: string; es: string };
+  schema?: object[];
+  crumbs: Crumb[];
+  hero: { eyebrow?: string; title: string; lead?: string; bg: ImageMetadata };
+  intro: Block;
+  band?: Block;
+  extra?: Block[];
+  benefits?: { title: string; items: { title: string; body: string }[] };
+  spokes?: { title: string; intro?: string; links: { href: string; label: string }[] };
+  closing: { title: string; body?: string; cta?: Cta };
+}
+const { title, description, lang = 'en', alternates, schema = [], crumbs, hero, intro, band, extra = [], benefits, spokes, closing } =
+  Astro.props;
+const bandSrc = (await getImage({ src: bandBg, width: 1920, format: 'webp', quality: 65 })).src;
+const paras = (b: Block) => (Array.isArray(b.body) ? b.body : [b.body]);
+const benefitIcons = ['roof', 'shield', 'badge'] as const;
+---
+<Base title={title} description={description} lang={lang} alternates={alternates} schema={[breadcrumbSchema(crumbs), ...schema]}>
+  <PageHero crumbs={crumbs} eyebrow={hero.eyebrow} title={hero.title} lead={hero.lead} bg={hero.bg} lang={lang} />
+  <TrustStrip lang={lang} />
+
+  <section class="section">
+    <div class="wrap split">
+      <div>
+        {intro.eyebrow && <p class="eyebrow">{intro.eyebrow}</p>}
+        <h2>{intro.title}</h2>
+        {paras(intro).map((p) => <p set:html={p} />)}
+        {intro.cta && <a class="btn" href={intro.cta.href} data-roofle-open={intro.cta.roofle ? '' : undefined}>{intro.cta.label}</a>}
+      </div>
+      {intro.images && intro.images.length > 0 && (
+        <div class="gallery">
+          {intro.images.map((img, i) => (
+            <Image
+              src={img.src}
+              alt={img.alt}
+              widths={i === 0 ? [480, 760, 1100] : [240, 400]}
+              sizes={i === 0 ? '(max-width: 900px) 100vw, 560px' : '(max-width: 900px) 33vw, 180px'}
+              class:list={['rounded', { main: i === 0 }]}
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  </section>
+
+  {band && (
+    <section class="section band" style={`--bg: url(${bandSrc})`}>
+      <div class:list={['wrap', { split: band.images?.length }]}>
+        {band.images && band.images.length > 0 && (
+          <div class="gallery">
+            {band.images.map((img, i) => (
+              <Image
+                src={img.src}
+                alt={img.alt}
+                widths={i === 0 ? [480, 760, 1100] : [240, 400]}
+                sizes={i === 0 ? '(max-width: 900px) 100vw, 560px' : '(max-width: 900px) 33vw, 180px'}
+                class:list={['rounded', { main: i === 0 }]}
+              />
+            ))}
+          </div>
+        )}
+        <div class:list={{ narrow: !band.images?.length }}>
+          {band.eyebrow && <p class="eyebrow">{band.eyebrow}</p>}
+          <h2>{band.title}</h2>
+          {paras(band).map((p) => <p set:html={p} />)}
+          {band.cta && <a class="btn btn--light" href={band.cta.href} data-roofle-open={band.cta.roofle ? '' : undefined}>{band.cta.label}</a>}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {extra.map((b, i) => (
+    <section class:list={['section', { soft: i % 2 === 0 }]}>
+      <div class:list={['wrap split', { flip: i % 2 === 0 }]}>
+        <div>
+          {b.eyebrow && <p class="eyebrow">{b.eyebrow}</p>}
+          <h2>{b.title}</h2>
+          {paras(b).map((p) => <p set:html={p} />)}
+          {b.cta && <a class="btn" href={b.cta.href} data-roofle-open={b.cta.roofle ? '' : undefined}>{b.cta.label}</a>}
+        </div>
+        {b.images?.[0] && (
+          <Image src={b.images[0].src} alt={b.images[0].alt} widths={[480, 760, 1100]} sizes="(max-width: 900px) 100vw, 560px" class="rounded" />
+        )}
+      </div>
+    </section>
+  ))}
+
+  {benefits && (
+    <section class="section">
+      <div class="wrap">
+        <h2 class="center">{benefits.title}</h2>
+        <ul class="benefits">
+          {benefits.items.map((b, i) => (
+            <li>
+              <Icon name={benefitIcons[i % 3]} />
+              <h3>{b.title}</h3>
+              <p set:html={b.body} />
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  {spokes && <SpokeLinks title={spokes.title} intro={spokes.intro} links={spokes.links} soft />}
+
+  <slot />
+
+  <CtaBand title={closing.title} body={closing.body} cta={closing.cta} lang={lang} />
+</Base>
+
+<style>
+  .section { padding-block: 88px; }
+  .soft { background: var(--bg-soft); }
+  .center { text-align: center; }
+  h2 { font-size: clamp(30px, 4vw, 48px); text-transform: uppercase; }
+  .section p :global(a) { color: var(--maroon); font-weight: 600; }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+  .split .btn { margin-top: 0.5rem; }
+  .flip > :global(img) { order: -1; }
+  .rounded { border-radius: var(--radius); width: 100%; object-fit: cover; }
+  .split > :global(img.rounded) { aspect-ratio: 4 / 3; }
+
+  .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); gap: 10px; }
+  .gallery :global(img) { aspect-ratio: 1; }
+  .gallery :global(img.main) { grid-column: 1 / -1; aspect-ratio: 4 / 3; }
+
+  .band {
+    position: relative;
+    isolation: isolate;
+    color: var(--white);
+    background: var(--maroon-dark) var(--bg) center / cover no-repeat;
+  }
+  .band::before { content: ''; position: absolute; inset: 0; z-index: -1; background: rgba(79, 0, 0, 0.86); }
+  .band h2 { color: var(--white); }
+  .band .eyebrow { color: #f2c4c8; }
+  .band .eyebrow::before { background: #f2c4c8; }
+  .band p { color: rgba(255, 255, 255, 0.92); }
+  .band p :global(a) { color: var(--white); }
+  .narrow { max-width: 820px; margin-inline: auto; }
+
+  .benefits {
+    list-style: none;
+    margin: 40px 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .benefits li {
+    padding: 32px 28px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--maroon);
+    border-radius: var(--radius);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  }
+  .benefits :global(svg) { width: 34px; height: 34px; color: var(--maroon); }
+  .benefits h3 { font-size: 26px; margin: 14px 0 8px; }
+  .benefits p { margin: 0; }
+
+  @media (max-width: 900px) {
+    .section { padding-block: 60px; }
+    .split { grid-template-columns: 1fr; gap: 32px; }
+    .flip > :global(img) { order: 0; }
+    .benefits { grid-template-columns: 1fr; }
+  }
+</style>

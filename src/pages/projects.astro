@@ -1,0 +1,203 @@
+---
+// /projects, rebuilt from the live Duda page (2026-10-18).
+// Same 58 photos in the same order with the live alt text (several live alts
+// are keyword stuffing or don't match the photo, e.g. "Truck" on a house;
+// flagged for a later pass, not changed here). Live page had no body copy
+// besides the H1.
+// Added: breadcrumb, trust strip, tap-to-enlarge viewer, closing call band
+// (heading + line reused from the homepage CTA).
+import { Image, getImage } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import TrustStrip from '../components/TrustStrip.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { breadcrumbSchema } from '../data/schema';
+import hero from '../assets/inner/edel-roofing-banner.webp';
+
+const files = import.meta.glob<{ default: ImageMetadata }>('../assets/projects/*', { eager: true });
+const order: [string, string][] = [
+  ['texas_regional_6.webp', 'Texas Regional bank roofing'],
+  ['texas_regional_4.webp', 'texas regional bank roofing aerial'],
+  ['texas_regional_5.webp', 'finished texas regional bank'],
+  ['texas_regional_3.webp', 'Texas Regional Bank 3'],
+  ['texas_regional_2.webp', 'Texas Regional Bank 4'],
+  ['texas_regional_1.webp', 'Texas Regional Bank 5'],
+  ['housing.webp', 'Roof Repairs'],
+  ['commercial-building.webp', 'Commercial Building'],
+  ['new-bathroom.webp', 'New Bathroom'],
+  ['renovated-bathroom.webp', 'Kitchen Remodeling Service'],
+  ['backyard.jpeg', 'Backyard'],
+  ['modern-kitchen.webp', 'Modern Kitchen'],
+  ['edel-roofing-project.jpg', 'Residential Roofing'],
+  ['edel-roofing-project-2.jpg', 'Commercial Roofing'],
+  ['edel-roofing-project-3.jpg', 'Home Roofing Solutions'],
+  ['edel-truck.webp', 'Edel Roofing Truck'],
+  ['roofing-construction.jpeg', 'Commercial Roofing Contractors'],
+  ['modern-house.jpeg', 'Home'],
+  ['roof-repair.jpeg', 'Roof Repairs'],
+  ['new-roof.webp', 'Commercial Roof Repairs'],
+  ['roofing-installation.webp', 'Roof Repairs'],
+  ['roofing-service.webp', 'Emergency Roofing'],
+  ['house-roof.webp', 'Roof Installation Companies'],
+  ['modern-home.webp', 'Home Remodeling'],
+  ['roof-repair.webp', 'Home Construction'],
+  ['new-remodeled-home.webp', 'House'],
+  ['house-with-two-cars.jpg', 'Roof Repairs Contractors'],
+  ['blue-roof-house.jpg', 'Home Remodeling Professionals'],
+  ['huge-brick-house.jpg', 'Huge Brick House'],
+  ['huge-white-house-with-blue-roof-950c6530.jpg', 'Huge White House With Blue Roof'],
+  ['brick-house-with-blue-roof.jpg', 'Home Remodeling'],
+  ['brown-house.jpg', 'Home Remodeling Mcallen tx'],
+  ['big-brick-house.webp', 'Expert Roof Repairs'],
+  ['yellow-mansion-blue-roof.jpg', 'Roof Installation Companies'],
+  ['blue-roof-brick-house.jpg', 'Roof Repairs Service'],
+  ['white-house.jpg', 'Home Remodeling Contractors'],
+  ['wing-daddy-sauce-house.jpg', 'Newly Constructed Home'],
+  ['brown-roof-house.jpg', 'New Home'],
+  ['mansion-roof-design.jpg', 'Roof Repair Solutions'],
+  ['brown-roof-big-house.jpg', 'Home'],
+  ['kitchen-with-island-design.jpg', 'Kitchen'],
+  ['huge-house-roof-design.jpeg', 'Grey Roof'],
+  ['interior-design.jpg', 'Home Design'],
+  ['black-roof-design.jpg', 'Home Construction Services'],
+  ['interior-house-design-4e3e3198.jpg', 'Newly Constructed Kitchen'],
+  ['living-room-design.jpg', 'House Remodelling'],
+  ['house-interior-design.jpg', 'Remodelling'],
+  ['indoor-design.jpg', 'Kitchen'],
+  ['kitchen-island-interior-design-888efe9d.jpg', 'New Kitchen'],
+  ['blue-roof-house-design.jpeg', 'Truck'],
+  ['edel-roofing-pick-up-truck.jpeg', 'Truck'],
+  ['sample-roof-design.jpeg', 'Grey Roof'],
+  ['bathroom-design.jpg', 'Bathroom'],
+  ['shower-area-bathroom.jpg', 'New Bathroom'],
+  ['roof-design-brown.jpeg', 'Roofing Company'],
+  ['work-in-progress-roof-repair.jpeg', 'Residential Construction Company Near Me'],
+  ['house-with-swimming-pool.jpg', 'Home With Swimming Pool'],
+  ['huge-white-house-with-blue-roof-e7aae6e5.jpg', 'New House'],
+];
+const photos = await Promise.all(
+  order.map(async ([file, alt]) => {
+    const src = files[`../assets/projects/${file}`]?.default;
+    if (!src) throw new Error(`missing project photo ${file}`);
+    const big = await getImage({ src, width: 1600, format: 'webp', quality: 75 });
+    return { src, alt, big: big.src };
+  }),
+);
+const crumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Projects', href: '/projects' },
+];
+---
+<Base
+  title="Our Projects | Home Construction and Roofing Company"
+  description="Check Out our exceptional construction and roofing company projects showcasing quality craftsmanship and innovative solutions. Elevate your space with us now!"
+  alternates={{ en: '/projects', es: '/es-mx/projects' }}
+  schema={[breadcrumbSchema(crumbs)]}
+>
+  <PageHero crumbs={crumbs} eyebrow="Gallery" title="Our Roofing Projects" bg={hero} />
+  <TrustStrip />
+
+  <section class="section">
+    <ul class="wrap grid">
+      {photos.map((p, i) => (
+        <li>
+          <a href={p.big} data-viewer={i}>
+            <Image src={p.src} alt={p.alt} widths={[320, 480, 640]} sizes="(max-width: 600px) 50vw, (max-width: 1100px) 33vw, 300px" />
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <dialog class="viewer" aria-label="Project photo">
+    <img alt="" />
+    <button class="close" type="button" aria-label="Close">&times;</button>
+    <button class="prev" type="button" aria-label="Previous photo">&lsaquo;</button>
+    <button class="next" type="button" aria-label="Next photo">&rsaquo;</button>
+  </dialog>
+
+  <CtaBand
+    title="We've Got You Covered"
+    body="Ready to start your roofing, remodeling, or construction journey? Contact Eddie Elizondo and the EDEL team today. Let's turn your dreams into reality."
+    cta={{ label: 'Contact Us', href: '/contact-us' }}
+  />
+</Base>
+
+<script>
+  // Tap a photo to see it large; arrows/keys move through the gallery.
+  // Without JS the link opens the large image.
+  const dialog = document.querySelector<HTMLDialogElement>('.viewer')!;
+  const img = dialog.querySelector('img')!;
+  const links = [...document.querySelectorAll<HTMLAnchorElement>('[data-viewer]')];
+  let current = 0;
+  const show = (i: number) => {
+    current = (i + links.length) % links.length;
+    img.src = links[current].href;
+    img.alt = links[current].querySelector('img')?.alt ?? '';
+  };
+  links.forEach((a, i) =>
+    a.addEventListener('click', (e) => {
+      e.preventDefault();
+      show(i);
+      dialog.showModal();
+    }),
+  );
+  dialog.querySelector('.close')!.addEventListener('click', () => dialog.close());
+  dialog.querySelector('.prev')!.addEventListener('click', () => show(current - 1));
+  dialog.querySelector('.next')!.addEventListener('click', () => show(current + 1));
+  dialog.addEventListener('click', (e) => { if (e.target === dialog) dialog.close(); });
+  dialog.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') show(current - 1);
+    if (e.key === 'ArrowRight') show(current + 1);
+  });
+</script>
+
+<style>
+  .section { padding-block: 64px 88px; }
+  .grid {
+    list-style: none;
+    margin-block: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  .grid a { display: block; overflow: hidden; border-radius: var(--radius); }
+  .grid :global(img) { width: 100%; aspect-ratio: 1; object-fit: cover; transition: transform 0.25s ease; }
+  .grid a:hover :global(img) { transform: scale(1.04); }
+  .viewer {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    max-width: min(1200px, 94vw);
+    max-height: 92vh;
+    overflow: visible;
+  }
+  .viewer::backdrop { background: rgba(20, 0, 0, 0.88); }
+  .viewer img { max-width: 100%; max-height: 88vh; border-radius: var(--radius); margin: 0 auto; }
+  .viewer button {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border: 0;
+    border-radius: 50%;
+    background: var(--white);
+    color: var(--maroon);
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .close { top: -18px; right: -18px; }
+  .prev, .next { top: 50%; transform: translateY(-50%); }
+  .prev { left: -24px; }
+  .next { right: -24px; }
+  @media (max-width: 1100px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 600px) {
+    .section { padding-block: 40px 56px; }
+    .grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+    .close { top: 8px; right: 8px; }
+    .prev { left: 8px; }
+    .next { right: 8px; }
+  }
+</style>
