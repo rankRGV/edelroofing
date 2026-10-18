@@ -1,0 +1,24 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  lang?: 'en' | 'es';
+}
+const { title, description, lang = 'en' } = Astro.props;
+// Preview on edelroofing.rankrgv.com stays out of Google until Edel approves
+// and the site moves to edelroofing.com. Flip at launch.
+const PREVIEW = true;
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    {PREVIEW && <meta name="robots" content="noindex, nofollow" />}
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
