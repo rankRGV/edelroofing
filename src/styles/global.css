@@ -1,0 +1,107 @@
+/* Edel brand tokens, taken from the live Duda site (computed styles, 2026-10-18). */
+:root {
+  --maroon: #4f0000;
+  --maroon-mid: #6e1018;
+  --maroon-dark: #2d0001;
+  --ink: #383838;
+  --ink-strong: #1a1a1a;
+  --muted: #6b6b6b;
+  --bg: #ffffff;
+  --bg-soft: #f9f9f9;
+  --bg-warm: #faf8f7;
+  --line: #ececec;
+  --white: #ffffff;
+
+  --font-head: 'Crimson Text', Georgia, 'Times New Roman', serif;
+  --font-body: 'Montserrat Variable', Montserrat, system-ui, sans-serif;
+
+  --wrap: 1200px;
+  --gutter: 20px;
+  --radius: 6px;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+a { color: inherit; }
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-head);
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 0 0 0.5em;
+  color: var(--maroon);
+}
+
+p { margin: 0 0 1em; }
+
+.wrap {
+  width: 100%;
+  max-width: var(--wrap);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--maroon);
+  margin-bottom: 0.75rem;
+}
+.eyebrow::before {
+  content: '';
+  width: 40px;
+  height: 2px;
+  background: var(--maroon);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 28px;
+  border-radius: var(--radius);
+  background: var(--maroon);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid var(--maroon);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.btn:hover { background: var(--maroon-dark); border-color: var(--maroon-dark); }
+.btn--ghost { background: transparent; color: var(--maroon); }
+.btn--ghost:hover { background: var(--maroon); color: var(--white); }
+.btn--light { background: transparent; border-color: var(--white); color: var(--white); }
+.btn--light:hover { background: var(--white); color: var(--maroon); }
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+
+:focus-visible { outline: 3px solid var(--maroon-mid); outline-offset: 2px; }
+
+a[href^="tel:"] { white-space: nowrap; }

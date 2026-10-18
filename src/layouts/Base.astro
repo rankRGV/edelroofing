@@ -1,13 +1,23 @@
 ---
+import '@fontsource/crimson-text/400.css';
+import '@fontsource/crimson-text/600.css';
+import '@fontsource-variable/montserrat';
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
 interface Props {
   title: string;
   description?: string;
   lang?: 'en' | 'es';
+  schema?: object[];
 }
-const { title, description, lang = 'en' } = Astro.props;
+const { title, description, lang = 'en', schema = [] } = Astro.props;
 // Preview on edelroofing.rankrgv.com stays out of Google until Edel approves
-// and the site moves to edelroofing.com. Flip at launch.
+// and the site moves to edelroofing.com. Flip at launch, and add GTM / Ads /
+// Meta Pixel then (left off the preview so test visits don't hit his data).
 const PREVIEW = true;
+const canonical = new URL(Astro.url.pathname.replace(/\.html$/, '').replace(/\/index$/, '/'), Astro.site);
 ---
 <!doctype html>
 <html lang={lang}>
@@ -16,9 +26,18 @@ const PREVIEW = true;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
+    <link rel="canonical" href={canonical.href} />
     {PREVIEW && <meta name="robots" content="noindex, nofollow" />}
+    <meta name="theme-color" content="#4f0000" />
+    {schema.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
   </head>
   <body>
-    <slot />
+    <Header />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+    <!-- Roofle instant quote slide-out (same widget id as the live site) -->
+    <script is:inline async src="https://app.roofle.com/roof-quote-pro-widget.js?id=EDm90hQNG9UzNzk4GqU84"></script>
   </body>
 </html>

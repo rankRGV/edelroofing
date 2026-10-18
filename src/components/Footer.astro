@@ -1,0 +1,121 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/edel-logo-white.png';
+import { site, addressLine } from '../data/site';
+import Icon from './Icon.astro';
+
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="wrap grid">
+    <div class="brand">
+      <a href="/" aria-label="Edel Roofing & Construction home">
+        <Image src={logo} alt="Edel Roofing & Construction Inc" width={180} />
+      </a>
+      <p>Your entire home can benefit from the expertise of EDEL Roofing &amp; Construction from top to bottom.</p>
+      <div class="social">
+        <a href={site.facebook} aria-label="Facebook" rel="noopener" target="_blank"><Icon name="facebook" /></a>
+        <a href={site.googleMaps} aria-label="Google" rel="noopener" target="_blank"><Icon name="google" /></a>
+      </div>
+    </div>
+
+    <div>
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about-us">About Us</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/contact-us">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Our Services</h2>
+      <ul>
+        <li><a href="/commercial-roofing">Commercial Roofing</a></li>
+        <li><a href="/residential-roofing">Residential Roofing</a></li>
+        <li><a href="/roof-repairs">Roof Repairs</a></li>
+        <li><a href="/storm-damage">Storm Damage</a></li>
+      </ul>
+    </div>
+
+    <div class="contact">
+      <h2>Contact Information</h2>
+      <p class="label">Address</p>
+      <p>{addressLine}</p>
+      <p class="label">Phone</p>
+      <p><a href={site.phoneHref}>{site.phone}</a></p>
+      <p class="label">Email</p>
+      <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
+    </div>
+  </div>
+
+  <div class="wrap bottom">
+    <p>&copy; {year} All Rights Reserved | EDEL ROOFING &amp; CONSTRUCTION INC</p>
+    <a href="/privacy">Privacy Policy</a>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: var(--maroon);
+    color: rgba(255, 255, 255, 0.88);
+    padding-top: 56px;
+    font-size: 14px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1.4fr;
+    gap: 32px;
+  }
+  h2 {
+    font-size: 20px;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 14px;
+  }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li { margin-bottom: 10px; }
+  a { text-decoration: none; }
+  a:hover { color: var(--white); text-decoration: underline; }
+  .brand p { margin-top: 16px; max-width: 30ch; }
+  .social { display: flex; gap: 10px; }
+  .social a {
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--white);
+    color: var(--maroon);
+  }
+  .social :global(svg) { width: 16px; height: 16px; }
+  .contact p { margin: 0 0 4px; }
+  .contact .label {
+    margin-top: 12px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--white);
+  }
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding-block: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    font-size: 13px;
+  }
+  .bottom p { margin: 0; }
+  .bottom a { text-transform: uppercase; }
+
+  @media (max-width: 900px) {
+    .grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 560px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>

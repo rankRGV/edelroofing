@@ -1,0 +1,208 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/edel-logo-white.png';
+import { site, addressLine, mainNav } from '../data/site';
+import Icon from './Icon.astro';
+
+const path = Astro.url.pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
+const isActive = (href: string) => (href === '/' ? path === '/' : path === href);
+---
+<header class="site-header">
+  <a class="logo" href="/" aria-label="Edel Roofing & Construction home">
+    <Image src={logo} alt="Edel Roofing & Construction Inc" width={190} loading="eager" />
+  </a>
+
+  <div class="bars">
+    <div class="topbar">
+      <div class="follow">
+        <span>Follow us on</span>
+        <a class="round" href={site.facebook} aria-label="Edel Roofing on Facebook" rel="noopener" target="_blank"><Icon name="facebook" /></a>
+        <a class="round" href={site.googleMaps} aria-label="Edel Roofing on Google" rel="noopener" target="_blank"><Icon name="google" /></a>
+      </div>
+      <p class="meta"><Icon name="pin" /> {addressLine}</p>
+      <a class="meta" href={`mailto:${site.email}`}><Icon name="mail" /> {site.email}</a>
+    </div>
+
+    <div class="navbar">
+      <nav aria-label="Main">
+        <ul class="menu">
+          {mainNav.map((item) => (
+            <li class={item.children ? 'has-sub' : undefined}>
+              <a href={item.href} class:list={[{ active: isActive(item.href) }]}>
+                {item.label}{item.children && <Icon name="chevron" />}
+              </a>
+              {item.children && (
+                <ul class="sub">
+                  {item.children.map((c) => <li><a href={c.href}>{c.label}</a></li>)}
+                </ul>
+              )}
+            </li>
+          ))}
+        </ul>
+      </nav>
+      <a class="btn quote" href="/contact-us">Get Instant Quote</a>
+    </div>
+  </div>
+
+  <!-- Mobile -->
+  <div class="mobile-actions">
+    <a class="btn call" href={site.phoneHref}><Icon name="phone" /> Call</a>
+    <details class="mobile-menu">
+      <summary aria-label="Open menu"><Icon name="menu" /></summary>
+      <div class="drawer">
+        <ul>
+          {mainNav.map((item) => (
+            <li>
+              <a href={item.href}>{item.label}</a>
+              {item.children && (
+                <ul>{item.children.map((c) => <li><a href={c.href}>{c.label}</a></li>)}</ul>
+              )}
+            </li>
+          ))}
+        </ul>
+        <a class="btn" href="/contact-us">Get Instant Quote</a>
+      </div>
+    </details>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background: var(--white);
+    border-bottom: 1px solid var(--line);
+    position: relative;
+    z-index: 50;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--maroon);
+    padding: 18px 34px;
+  }
+  .bars { display: flex; flex-direction: column; }
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 10px 32px;
+    border-bottom: 1px solid var(--line);
+    font-size: 13px;
+  }
+  .follow { display: flex; align-items: center; gap: 8px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .round {
+    display: inline-grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--maroon);
+    color: var(--white);
+  }
+  .round :global(svg) { width: 15px; height: 15px; }
+  .meta { display: inline-flex; align-items: center; gap: 8px; margin: 0; text-decoration: none; }
+  .meta :global(svg) { width: 16px; height: 16px; color: var(--maroon); flex: none; }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 10px 32px;
+    flex: 1;
+  }
+  .menu { list-style: none; display: flex; flex-wrap: wrap; gap: 4px 26px; margin: 0; padding: 0; }
+  .menu > li { position: relative; }
+  .menu > li > a {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 0;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--ink-strong);
+  }
+  .menu > li > a:hover,
+  .menu > li > a.active { color: var(--maroon-mid); }
+  .menu :global(svg) { width: 12px; height: 12px; }
+  .sub {
+    list-style: none;
+    margin: 0;
+    padding: 8px 0;
+    position: absolute;
+    top: 100%;
+    left: -16px;
+    min-width: 220px;
+    background: var(--white);
+    border-top: 3px solid var(--maroon);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(6px);
+    transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s;
+  }
+  .has-sub:hover .sub,
+  .has-sub:focus-within .sub { opacity: 1; visibility: visible; transform: none; }
+  .sub a { display: block; padding: 9px 18px; font-size: 14px; text-decoration: none; }
+  .sub a:hover { background: var(--bg-soft); color: var(--maroon); }
+  .quote { flex: none; }
+
+  .mobile-actions { display: none; }
+
+  @media (max-width: 1240px) {
+    .topbar .meta:first-of-type { display: none; }
+    .menu { gap: 4px 18px; }
+  }
+
+  @media (max-width: 1080px) {
+    .site-header { grid-template-columns: auto 1fr; align-items: center; }
+    .logo { padding: 10px 16px; }
+    .logo :global(img) { width: 120px; }
+    .bars { display: none; }
+    .mobile-actions {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 10px;
+      padding-right: 16px;
+    }
+    .call { min-height: 42px; padding: 0 16px; gap: 6px; }
+    .call :global(svg) { width: 16px; height: 16px; }
+    .mobile-menu summary {
+      list-style: none;
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--white);
+      cursor: pointer;
+      color: var(--maroon);
+    }
+    .mobile-menu summary::-webkit-details-marker { display: none; }
+    .mobile-menu summary :global(svg) { width: 22px; height: 22px; }
+    .drawer {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      background: var(--white);
+      border-top: 3px solid var(--maroon);
+      box-shadow: 0 16px 30px rgba(0, 0, 0, 0.15);
+      padding: 8px 16px 20px;
+      max-height: calc(100vh - 80px);
+      overflow-y: auto;
+    }
+    .drawer ul { list-style: none; margin: 0; padding: 0; }
+    .drawer > ul > li { border-bottom: 1px solid var(--line); }
+    .drawer a { display: block; padding: 12px 4px; text-decoration: none; font-weight: 500; }
+    .drawer ul ul a { padding: 8px 4px 8px 20px; font-weight: 400; font-size: 14px; color: var(--muted); }
+    .drawer .btn { display: flex; margin-top: 16px; color: var(--white); }
+  }
+</style>
