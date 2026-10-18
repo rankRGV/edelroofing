@@ -39,5 +39,19 @@ const canonical = new URL(Astro.url.pathname.replace(/\.html$/, '').replace(/\/i
     <Footer />
     <!-- Roofle instant quote slide-out (same widget id as the live site) -->
     <script is:inline async src="https://app.roofle.com/roof-quote-pro-widget.js?id=EDm90hQNG9UzNzk4GqU84"></script>
+    <script is:inline>
+      // "Get Instant Quote" buttons open the Roofle slide-out when it has
+      // loaded; otherwise the link goes to /contact-us (embedded Roofle).
+      document.addEventListener('click', function (e) {
+        var link = e.target.closest && e.target.closest('[data-roofle-open]');
+        if (!link) return;
+        var handle = document.querySelector('.quick-quote-button');
+        if (!handle) return;
+        e.preventDefault();
+        var menu = link.closest('details');
+        if (menu) menu.open = false;
+        handle.click();
+      });
+    </script>
   </body>
 </html>
