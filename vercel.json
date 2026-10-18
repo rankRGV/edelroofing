@@ -8,18 +8,82 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, nofollow" },
-        { "key": "X-Content-Type-Options", "value": "nosniff" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
       ]
     }
   ],
   "redirects": [
-    { "source": "/proposal.html", "destination": "/proposals/proposal", "permanent": true },
-    { "source": "/baseline.html", "destination": "/onboarding/baseline", "permanent": true },
-    { "source": "/access-checklist.html", "destination": "/onboarding/access-checklist", "permanent": true },
-    { "source": "/kickoff-questions.html", "destination": "/onboarding/kickoff-questions", "permanent": true },
-    { "source": "/kickoff-questions-thanks.html", "destination": "/onboarding/kickoff-questions-thanks", "permanent": true },
-    { "source": "/kickoff-agenda.md", "destination": "/onboarding/kickoff-agenda.md", "permanent": true },
-    { "source": "/edelroofing-intelligence.html", "destination": "/intelligence/edelroofing-intelligence", "permanent": true }
+    {
+      "source": "/proposal.html",
+      "destination": "/proposals/proposal",
+      "permanent": true
+    },
+    {
+      "source": "/baseline.html",
+      "destination": "/onboarding/baseline",
+      "permanent": true
+    },
+    {
+      "source": "/access-checklist.html",
+      "destination": "/onboarding/access-checklist",
+      "permanent": true
+    },
+    {
+      "source": "/kickoff-questions.html",
+      "destination": "/onboarding/kickoff-questions",
+      "permanent": true
+    },
+    {
+      "source": "/kickoff-questions-thanks.html",
+      "destination": "/onboarding/kickoff-questions-thanks",
+      "permanent": true
+    },
+    {
+      "source": "/kickoff-agenda.md",
+      "destination": "/onboarding/kickoff-agenda.md",
+      "permanent": true
+    },
+    {
+      "source": "/edelroofing-intelligence.html",
+      "destination": "/intelligence/edelroofing-intelligence",
+      "permanent": true
+    },
+    {
+      "source": "/proposal",
+      "destination": "/proposals/proposal",
+      "permanent": true
+    },
+    {
+      "source": "/baseline",
+      "destination": "/onboarding/baseline",
+      "permanent": true
+    },
+    {
+      "source": "/access-checklist",
+      "destination": "/onboarding/access-checklist",
+      "permanent": true
+    },
+    {
+      "source": "/kickoff-questions",
+      "destination": "/onboarding/kickoff-questions",
+      "permanent": true
+    },
+    {
+      "source": "/kickoff-questions-thanks",
+      "destination": "/onboarding/kickoff-questions-thanks",
+      "permanent": true
+    },
+    {
+      "source": "/edelroofing-intelligence",
+      "destination": "/intelligence/edelroofing-intelligence",
+      "permanent": true
+    }
   ]
 }
