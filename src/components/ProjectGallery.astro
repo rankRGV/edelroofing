@@ -13,7 +13,7 @@ const photos = await Promise.all(
   order.map(async ([file, alt]) => {
     const src = files[`../assets/projects/${file}`]?.default;
     if (!src) throw new Error(`missing project photo ${file}`);
-    const big = await getImage({ src, width: 1600, format: 'webp', quality: 75 });
+    const big = await getImage({ src, width: 1280, format: 'webp', quality: 70 });
     return { src, alt, big: big.src };
   }),
 );

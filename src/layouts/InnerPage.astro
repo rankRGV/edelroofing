@@ -36,7 +36,7 @@ interface Props {
 }
 const { title, description, lang = 'en', alternates, schema = [], crumbs, hero, intro, band, extra = [], benefits, spokes, closing } =
   Astro.props;
-const bandCss = await bgStyle(bandBg, 65);
+const bandCss = await bgStyle(bandBg, 'band');
 const paras = (b: Block) => (Array.isArray(b.body) ? b.body : [b.body]);
 const benefitIcons = ['roof', 'shield', 'badge'] as const;
 ---

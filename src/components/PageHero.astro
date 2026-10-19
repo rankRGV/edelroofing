@@ -15,7 +15,7 @@ interface Props {
   lang?: 'en' | 'es';
 }
 const { crumbs, eyebrow, title, lead, bg, lang = 'en' } = Astro.props;
-const bgCss = await bgStyle(bg, 70);
+const bgCss = await bgStyle(bg, 'hero');
 const t =
   lang === 'es'
     ? { crumbs: 'Ruta de navegación', quote: 'Cotización Instantánea', call: 'Llamar', rated: 'Calificación', reviews: 'en más de 250 reseñas de Google' }

@@ -32,9 +32,9 @@ interface Props { copy: HomeCopy }
 const { copy: c } = Astro.props;
 const contact = c.lang === 'es' ? '/es-mx/contact-us' : '/contact-us';
 
-const heroBg = await bgStyle(heroRoof, 72);
-const truckBg = await bgStyle(truckHouse, 72);
-const ctaBgSrc = await bgStyle(ctaBg, 72);
+const heroBg = await bgStyle(heroRoof, 'hero');
+const truckBg = await bgStyle(truckHouse, 'band');
+const ctaBgSrc = await bgStyle(ctaBg, 'band');
 
 const serviceImgs = [residential, commercial, repairs];
 const whyIcons = ['badge', 'star', 'clipboard'] as const;
