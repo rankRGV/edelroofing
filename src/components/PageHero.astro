@@ -1,9 +1,9 @@
 ---
 // Inner-page hero: breadcrumb, eyebrow, H1, quote + call buttons, Google
 // rating. Same photo-under-maroon look as the homepage hero, shorter.
-import { getImage } from 'astro:assets';
 import Icon from './Icon.astro';
 import { site } from '../data/site';
+import { bgStyle } from '../data/bg';
 import type { Crumb } from '../data/schema';
 
 interface Props {
@@ -15,13 +15,13 @@ interface Props {
   lang?: 'en' | 'es';
 }
 const { crumbs, eyebrow, title, lead, bg, lang = 'en' } = Astro.props;
-const bgSrc = (await getImage({ src: bg, width: 1920, format: 'webp', quality: 70 })).src;
+const bgCss = await bgStyle(bg, 70);
 const t =
   lang === 'es'
     ? { crumbs: 'Ruta de navegación', quote: 'Cotización Instantánea', call: 'Llamar', rated: 'Calificación', reviews: 'en más de 250 reseñas de Google' }
     : { crumbs: 'Breadcrumb', quote: 'Get Instant Quote', call: 'Call', rated: 'Rated', reviews: 'by 250+ Google reviews' };
 ---
-<section class="page-hero" style={`--bg: url(${bgSrc})`}>
+<section class="page-hero" style={bgCss}>
   <div class="wrap">
     <nav class="crumbs" aria-label={t.crumbs}>
       <ol>

@@ -57,7 +57,7 @@ const ctaButton = page.cta.buttons[0];
 const cityName = { mcallen: 'McAllen', mission: 'Mission', edinburg: 'Edinburg' }[page.city] ?? '';
 const moreTitle = es ? `Más páginas de techos en ${cityName}` : `More Roofing Pages for ${cityName}`;
 ---
-<Base title={page.title} description={page.description} lang={page.lang} alternates={page.alternates ?? undefined} schema={page.schema}>
+<Base title={page.title} description={page.description} lang={page.lang} alternates={page.alternates ?? undefined} schema={page.schema} image={bgs[page.service] ?? hubBg}>
   <PageHero crumbs={crumbs} title={page.h1} lead={plain(page.lede)} bg={bgs[page.service] ?? hubBg} lang={page.lang} />
 
   {page.sections.map((s) => (

@@ -52,7 +52,7 @@ const t = es
   : { twin: 'Leer en español', box: 'Free roof inspection', boxBody: 'Written estimate before any work starts. Licensed and insured.', quote: 'Get Instant Quote', call: 'Call', related: 'More Articles', more: 'Read more', ctaTitle: 'Questions About Your Roof?', ctaBody: 'Call us or request a quote. Free inspection and a written estimate.', ctaBtn: 'Contact Us', ctaHref: '/contact-us' };
 const { Content } = await render(post);
 ---
-<Base title={d.seoTitle} description={d.description} lang={d.lang} alternates={alternates} schema={schema}>
+<Base title={d.seoTitle} description={d.description} lang={d.lang} alternates={alternates} schema={schema} image={d.image}>
   <article>
     <header class="post-head">
       <div class="wrap narrow">

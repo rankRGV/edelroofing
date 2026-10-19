@@ -2,7 +2,8 @@
 // Homepage body, shared by / (EN) and /es-mx (ES). Layout and styles moved
 // here unchanged from src/pages/index.astro (2026-10-18); copy comes from
 // src/data/home.ts.
-import { Image, getImage } from 'astro:assets';
+import { Image } from 'astro:assets';
+import { bgStyle } from '../data/bg';
 import LeadForm from './LeadForm.astro';
 import type { HomeCopy } from '../data/home';
 import Icon from './Icon.astro';
@@ -31,11 +32,9 @@ interface Props { copy: HomeCopy }
 const { copy: c } = Astro.props;
 const contact = c.lang === 'es' ? '/es-mx/contact-us' : '/contact-us';
 
-const bg = async (src: ImageMetadata, width = 1920) =>
-  (await getImage({ src, width, format: 'webp', quality: 72 })).src;
-const heroBg = await bg(heroRoof);
-const truckBg = await bg(truckHouse);
-const ctaBgSrc = await bg(ctaBg);
+const heroBg = await bgStyle(heroRoof, 72);
+const truckBg = await bgStyle(truckHouse, 72);
+const ctaBgSrc = await bgStyle(ctaBg, 72);
 
 const serviceImgs = [residential, commercial, repairs];
 const whyIcons = ['badge', 'star', 'clipboard'] as const;
@@ -63,7 +62,7 @@ const badges = [
 
 ---
   {/* Hero: rating, H1, two reassurances, two sentences, quote box. */}
-  <section class="hero" style={`--bg: url(${heroBg})`}>
+  <section class="hero" style={heroBg}>
     <div class="wrap hero-grid">
       <div class="hero-copy">
         <a class="rating" href={site.googleMaps} rel="noopener" target="_blank">
@@ -151,7 +150,7 @@ const badges = [
   )}
 
   {/* Why choose */}
-  <section class="section photo-band" style={`--bg: url(${truckBg})`}>
+  <section class="section photo-band" style={truckBg}>
     <div class="wrap center">
       <h2>{c.why.title}</h2>
       <p class="sub">{c.why.sub}</p>
@@ -214,7 +213,7 @@ const badges = [
   </section>
 
   {/* Why trust */}
-  <section class="section photo-band short" style={`--bg: url(${truckBg})`}>
+  <section class="section photo-band short" style={truckBg}>
     <div class="wrap center narrow">
       <h2>{c.trust.title}</h2>
       <p set:html={c.trust.body} />
@@ -258,7 +257,7 @@ const badges = [
   </section>
 
   {/* CTA */}
-  <section class="cta" style={`--bg: url(${ctaBgSrc})`}>
+  <section class="cta" style={ctaBgSrc}>
     <div class="wrap cta-row">
       <div>
         <h2>{c.cta.title}</h2>

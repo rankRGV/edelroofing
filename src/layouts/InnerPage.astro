@@ -4,7 +4,8 @@
 // The live Duda pages all follow one pattern: hero, intro split with photos,
 // maroon photo band, extra splits, three benefit cards, closing CTA. Each page
 // file passes its own copy; nothing here adds copy beyond button labels.
-import { Image, getImage } from 'astro:assets';
+import { Image } from 'astro:assets';
+import { bgStyle } from '../data/bg';
 import Base from './Base.astro';
 import PageHero from '../components/PageHero.astro';
 import TrustStrip from '../components/TrustStrip.astro';
@@ -35,11 +36,11 @@ interface Props {
 }
 const { title, description, lang = 'en', alternates, schema = [], crumbs, hero, intro, band, extra = [], benefits, spokes, closing } =
   Astro.props;
-const bandSrc = (await getImage({ src: bandBg, width: 1920, format: 'webp', quality: 65 })).src;
+const bandCss = await bgStyle(bandBg, 65);
 const paras = (b: Block) => (Array.isArray(b.body) ? b.body : [b.body]);
 const benefitIcons = ['roof', 'shield', 'badge'] as const;
 ---
-<Base title={title} description={description} lang={lang} alternates={alternates} schema={[breadcrumbSchema(crumbs), ...schema]}>
+<Base title={title} description={description} lang={lang} alternates={alternates} schema={[breadcrumbSchema(crumbs), ...schema]} image={hero.bg}>
   <PageHero crumbs={crumbs} eyebrow={hero.eyebrow} title={hero.title} lead={hero.lead} bg={hero.bg} lang={lang} />
   <TrustStrip lang={lang} />
 
@@ -68,7 +69,7 @@ const benefitIcons = ['roof', 'shield', 'badge'] as const;
   </section>
 
   {band && (
-    <section class="section band" style={`--bg: url(${bandSrc})`}>
+    <section class="section band" style={bandCss}>
       <div class:list={['wrap', { split: band.images?.length }]}>
         {band.images && band.images.length > 0 && (
           <div class="gallery">

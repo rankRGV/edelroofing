@@ -1,9 +1,9 @@
 ---
 // Closing call to action: the page's own last heading + paragraph, then the
 // "(956) 422-EDEL / Call us today" row every live inner page ends with.
-import { getImage } from 'astro:assets';
 import Icon from './Icon.astro';
 import { site } from '../data/site';
+import { bgStyle } from '../data/bg';
 import houseRoof from '../assets/inner/house-roof.webp';
 
 interface Props {
@@ -14,11 +14,11 @@ interface Props {
   note?: string;
 }
 const { title, body, cta, lang = 'en', note } = Astro.props;
-const bgSrc = (await getImage({ src: houseRoof, width: 1920, format: 'webp', quality: 65 })).src;
+const bg = await bgStyle(houseRoof, 65);
 const callToday = lang === 'es' ? 'Llámenos hoy' : 'Call us today';
 const quote = lang === 'es' ? 'Cotización Instantánea' : 'Get Instant Quote';
 ---
-<section class="cta-band" style={`--bg: url(${bgSrc})`}>
+<section class="cta-band" style={bg}>
   <div class="wrap inner">
     <div class="text">
       <h2>{title}</h2>
