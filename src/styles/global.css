@@ -68,9 +68,14 @@ p { margin: 0 0 1em; }
 }
 .eyebrow::before {
   content: '';
+  flex: none;
   width: 40px;
   height: 2px;
   background: var(--maroon);
+}
+@media (max-width: 600px) {
+  .eyebrow::before { width: 24px; }
+  .center .eyebrow::before { display: none; }
 }
 
 .btn {
@@ -91,6 +96,9 @@ p { margin: 0 0 1em; }
   border: 2px solid var(--maroon);
   transition: background-color 0.15s ease, color 0.15s ease;
 }
+/* Icons keep their size when a long label fills the button (the phone icon
+   shrank to 4px on the ads page call button at 375px). */
+.btn svg { flex: none; }
 .btn:hover { background: var(--maroon-dark); border-color: var(--maroon-dark); }
 .btn--ghost { background: transparent; color: var(--maroon); }
 .btn--ghost:hover { background: var(--maroon); color: var(--white); }
@@ -102,6 +110,16 @@ p { margin: 0 0 1em; }
   overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
 }
 
+/* Clear the sticky header when jumping to an in-page anchor. */
+:target { scroll-margin-top: 96px; }
+
 :focus-visible { outline: 3px solid var(--maroon-mid); outline-offset: 2px; }
 
 a[href^="tel:"] { white-space: nowrap; }
+
+/* Roofle's fixed "Instant Roof Quote" side tab covers body text on phones.
+   Hide only the tab: our own [data-roofle-open] buttons still open the
+   slide-out (the tab stays on tablets and desktops). */
+@media (max-width: 600px) {
+  #quick-quote-button-wrapper { display: none !important; }
+}

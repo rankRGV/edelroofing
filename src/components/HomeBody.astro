@@ -199,7 +199,8 @@ const badges = [
           <li>
             {a.href ? (
               <a class:list={['area', { home: a.home }]} href={a.href}>
-                {a.name}{a.home && <small>{c.areas.homeLabel}</small>}
+                <span class="area-name">{a.name}{!a.home && <Icon name="arrow" />}</span>
+                {a.home && <small>{c.areas.homeLabel}</small>}
               </a>
             ) : (
               <span class="area">{a.name}</span>
@@ -481,7 +482,13 @@ const badges = [
     color: var(--ink-strong);
     text-decoration: none;
   }
-  a.area:hover { border-color: var(--maroon); color: var(--maroon); }
+  /* Only Edinburg, McAllen and Mission have pages: those cards get the
+     maroon edge and an arrow so the plain ones don't read as broken links. */
+  a.area { border-left: 3px solid var(--maroon); color: var(--maroon); }
+  a.area:hover { border-color: var(--maroon); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); }
+  span.area { background: transparent; font-weight: 500; color: var(--muted); }
+  .area-name { display: inline-flex; align-items: center; justify-content: center; gap: 6px; }
+  .area-name :global(svg) { width: 16px; height: 16px; flex: none; }
   .area.home { background: var(--maroon-mid); border-color: var(--maroon-mid); color: var(--white); }
   .area small { font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 4px; }
 
@@ -575,6 +582,8 @@ const badges = [
     .why-grid { grid-template-columns: 1fr; }
     .areas { grid-template-columns: repeat(2, 1fr); }
     .cta-row { flex-direction: column; align-items: flex-start; }
+    /* The phone number made this button wider than a 320px screen. */
+    .cta .btn { width: 100%; white-space: normal; text-align: center; padding-inline: 16px; }
   }
   @media (max-width: 560px) {
     .features { grid-template-columns: 1fr; }

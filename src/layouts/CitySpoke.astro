@@ -47,6 +47,12 @@ const crumbs = [
   ...page.crumbs,
   { label: page.h1, href: page.path },
 ];
+// Proof numbers wrap between words only ("RCAT #03-0489" broke at the hyphen).
+const nowrapWords = (text: string) =>
+  text
+    .split(' ')
+    .map((w) => `<span class="nw">${w.replace(/&/g, '&amp;').replace(/</g, '&lt;')}</span>`)
+    .join(' ');
 const ctaButton = page.cta.buttons[0];
 const cityName = { mcallen: 'McAllen', mission: 'Mission', edinburg: 'Edinburg' }[page.city] ?? '';
 const moreTitle = es ? `Más páginas de techos en ${cityName}` : `More Roofing Pages for ${cityName}`;
@@ -84,7 +90,7 @@ const moreTitle = es ? `Más páginas de techos en ${cityName}` : `More Roofing 
         {s.kind === 'proof' && (
           <ul class="proof">
             {s.proof!.map((p) => (
-              <li><strong>{p.big}</strong><span>{p.label}</span></li>
+              <li><strong set:html={nowrapWords(p.big)} /><span>{p.label}</span></li>
             ))}
           </ul>
         )}
@@ -156,9 +162,10 @@ const moreTitle = es ? `Más páginas de techos en ${cityName}` : `More Roofing 
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 14px;
   }
-  .proof li { padding: 22px 18px; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); text-align: center; overflow-wrap: anywhere; }
+  .proof li { padding: 22px 18px; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); text-align: center; overflow-wrap: break-word; }
   .proof strong { display: block; font-family: var(--font-head); font-size: 30px; font-weight: 600; color: var(--maroon); line-height: 1.1; margin-bottom: 6px; }
-  .proof span { font-size: 14px; }
+  .proof li > span { font-size: 14px; }
+  .proof :global(.nw) { white-space: nowrap; }
 
   .faqs { display: grid; gap: 12px; margin-top: 24px; }
   details { background: var(--white); border: 1px solid var(--line); border-left: 3px solid var(--maroon); border-radius: var(--radius); }

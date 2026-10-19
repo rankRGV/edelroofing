@@ -32,6 +32,7 @@ const proof = [
   description="Free written roof estimate from a licensed, insured Edinburg roofer. Call (956) 422-3335 or request a quote."
   noindex
   roofle={false}
+  quoteHref="#free-quote"
 >
   <section class="lp">
     <div class="wrap grid">
@@ -44,9 +45,6 @@ const proof = [
         </p>
         <a class="btn call" href={site.phoneHref}><Icon name="phone" />Call Now: {site.phone}</a>
         <p class="note">We answer 24/7. Talk to a real roofer, not a call center.</p>
-        <ul class="proof">
-          {proof.map((p) => <li><strong>{p.big}</strong><span>{p.label}</span></li>)}
-        </ul>
       </div>
       <div class="card">
         <h2>Free Quote</h2>
@@ -63,13 +61,27 @@ const proof = [
           ]}
         />
       </div>
+      {/* After the form in the markup so phones reach the form first (it sat
+          below the fold at 375px); desktop puts it back under the call button. */}
+      <ul class="proof">
+        {proof.map((p) => <li><strong>{p.big}</strong><span>{p.label}</span></li>)}
+      </ul>
     </div>
   </section>
 </Base>
 
 <style>
   .lp { background: var(--maroon); color: var(--white); padding-block: 56px 72px; }
-  .grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; }
+  .grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-areas: 'copy card' 'proof card';
+    gap: 0 48px;
+    align-items: center;
+  }
+  .copy { grid-area: copy; }
+  .card { grid-area: card; }
+  .proof { grid-area: proof; align-self: start; }
   .grid > * { min-width: 0; }
   .eyebrow { color: #f2c4c8; }
   .eyebrow::before { background: #f2c4c8; }
@@ -86,7 +98,8 @@ const proof = [
   .card h2 { font-size: 32px; text-transform: uppercase; margin-bottom: 4px; }
   @media (max-width: 900px) {
     .lp { padding-block: 28px 44px; }
-    .grid { grid-template-columns: 1fr; gap: 28px; }
+    .grid { grid-template-columns: 1fr; grid-template-areas: 'copy' 'card' 'proof'; gap: 28px; }
+    .proof { margin-top: 0; }
   }
   @media (max-width: 600px) {
     h1 { font-size: 32px; }

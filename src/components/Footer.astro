@@ -78,7 +78,8 @@ const t = es
 
 <style>
   .site-footer {
-    background: var(--maroon);
+    /* Darker than the maroon closing bands so the page end is visible. */
+    background: var(--maroon-dark);
     color: rgba(255, 255, 255, 0.88);
     padding-top: 56px;
     font-size: 14px;
@@ -138,5 +139,9 @@ const t = es
   }
   @media (max-width: 560px) {
     .grid { grid-template-columns: 1fr; }
+    /* Links were 18px tall; give thumbs a 40px row. */
+    li { margin-bottom: 0; }
+    ul a, .bottom-links a, .contact a { display: inline-block; padding-block: 10px; }
+    .bottom-links { gap: 28px; }
   }
 </style>

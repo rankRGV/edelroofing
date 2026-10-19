@@ -18,8 +18,10 @@ interface Props {
   noindex?: boolean;
   // false on the ads landing page: Roofle leads can't be tracked (Eddie, 2026-10-17).
   roofle?: boolean;
+  // Header quote button target when it shouldn't open Roofle.
+  quoteHref?: string;
 }
-const { title, description, lang = 'en', schema = [], alternates, noindex = false, roofle = true } = Astro.props;
+const { title, description, lang = 'en', schema = [], alternates, noindex = false, roofle = true, quoteHref } = Astro.props;
 // Preview on edelroofing.rankrgv.com stays out of Google until Edel approves
 // and the site moves to edelroofing.com. Flip at launch, and add GTM / Ads /
 // Meta Pixel then (left off the preview so test visits don't hit his data).
@@ -46,7 +48,7 @@ const switchHref = alternates && (lang === 'es' ? alternates.en : alternates.es)
     {jsonLd.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
   </head>
   <body>
-    <Header lang={lang} switchHref={switchHref} />
+    <Header lang={lang} switchHref={switchHref} quoteHref={quoteHref} />
     <main id="main">
       <slot />
     </main>

@@ -10,14 +10,20 @@ interface Props {
   lang?: 'en' | 'es';
   // The other-language twin of this page; falls back to that language's home.
   switchHref?: string;
+  // Where the quote button goes on pages without Roofle (the ads page points
+  // it at its own form so ad clicks don't leave for /contact-us).
+  quoteHref?: string;
 }
-const { lang = 'en', switchHref } = Astro.props;
+const { lang = 'en', switchHref, quoteHref } = Astro.props;
+const quote = quoteHref ? { href: quoteHref } : { href: '/contact-us', 'data-roofle-open': '' };
 const es = lang === 'es';
 const nav = es ? mainNavEs : mainNav;
 const home = es ? '/es-mx' : '/';
 const t = es
   ? { quote: 'Cotización Instantánea', call: 'Llamar', menu: 'Menú', main: 'Principal', switchLabel: 'English', switchLang: 'en', homeLabel: 'Edel Roofing & Construction, inicio' }
   : { quote: 'Get Instant Quote', call: 'Call', menu: 'Menu', main: 'Main', switchLabel: 'Español', switchLang: 'es', homeLabel: 'Edel Roofing & Construction home' };
+// "Instant" only fits Roofle; the ads page form is a callback request.
+const quoteLabel = quoteHref ? (es ? 'Cotización Gratis' : 'Get Free Quote') : t.quote;
 const langHref = switchHref ?? (es ? '/' : '/es-mx');
 const path = Astro.url.pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
 const isActive = (href: string) => (href === home ? path === home : path === href);
@@ -51,7 +57,7 @@ const isActive = (href: string) => (href === home ? path === home : path === hre
         <Icon name="phone" />
         <span>{site.phone}</span>
       </a>
-      <a class="btn quote" href="/contact-us" data-roofle-open>{t.quote}</a>
+      <a class="btn quote" {...quote}>{quoteLabel}</a>
 
       <a class="call-round" href={site.phoneHref} aria-label={`${t.call} Edel Roofing ${site.phone}`}>
         <Icon name="phone" />
@@ -69,7 +75,7 @@ const isActive = (href: string) => (href === home ? path === home : path === hre
               </li>
             ))}
           </ul>
-          <a class="btn" href="/contact-us" data-roofle-open>{t.quote}</a>
+          <a class="btn" {...quote}>{quoteLabel}</a>
           <a class="btn btn--ghost" href={site.phoneHref}>{t.call} {site.phone}</a>
           <a class="drawer-lang" href={langHref} hreflang={t.switchLang} lang={t.switchLang}>{t.switchLabel}</a>
         </div>
@@ -77,6 +83,13 @@ const isActive = (href: string) => (href === home ? path === home : path === hre
     </div>
   </div>
 </header>
+
+<script>
+  // Same-page links in the phone menu (the ads page quote button) close it.
+  document.querySelectorAll<HTMLAnchorElement>('.mobile-menu .drawer a[href^="#"]').forEach((a) =>
+    a.addEventListener('click', () => a.closest('details')?.removeAttribute('open')),
+  );
+</script>
 
 <style>
   .site-header {
