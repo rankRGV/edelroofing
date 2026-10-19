@@ -1,0 +1,222 @@
+{
+  "path": "/roof-coating-mission-tx",
+  "lang": "en",
+  "city": "mission",
+  "service": "coatings",
+  "title": "Roof Coating Services in Mission, TX | Edel Roofing & Construction",
+  "description": "Reflective roof coatings for commercial and flat roofs in Mission, TX. Extend roof life, reduce heat. 250+ Google reviews. Free estimate: (956) 422-3335.",
+  "alternates": null,
+  "crumbs": [
+    {
+      "label": "Mission",
+      "href": "/roofing-mission-tx"
+    }
+  ],
+  "h1": "Roof Coating Services in Mission, TX",
+  "lede": "Edel Roofing &amp; Construction applies reflective roof coatings to extend the life of commercial and flat roofs in Mission and cut down on heat buildup. Free estimates with no obligation.",
+  "heroCtas": [
+    {
+      "label": "Get a Free Estimate",
+      "href": "/book-an-inspection"
+    },
+    {
+      "label": "Call (956) 422-3335",
+      "href": "tel:+19564223335"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Roof coatings for Mission businesses",
+      "alt": false,
+      "kind": "text",
+      "paras": [
+        "A roof coating is a reflective layer applied over an existing flat or low-slope roof. It's not a replacement, it's a way to extend the life of a roof that's still structurally sound but starting to show wear, while cutting down on the heat the building absorbs through the roof.",
+        "Coatings make the most sense on commercial buildings with TPO, EPDM, or modified bitumen roofs that have some life left but are aging. If the underlying roof is already failing, a coating won't fix that, we'll tell you honestly if replacement is the better call instead."
+      ]
+    },
+    {
+      "title": "What a roof coating does",
+      "alt": true,
+      "kind": "cards",
+      "cards": [
+        {
+          "title": "Extends Roof Life",
+          "body": "A properly applied coating adds years of service life to a roof that's aging but still sound, delaying the cost of a full replacement."
+        },
+        {
+          "title": "Reduces Heat Load",
+          "body": "Reflective coatings bounce back sunlight instead of absorbing it, which can lower interior temperatures and cooling costs during Mission summers."
+        },
+        {
+          "title": "Seals Minor Wear",
+          "body": "The coating process seals small cracks and seams in the existing membrane, adding a layer of protection against water intrusion."
+        },
+        {
+          "title": "Lower Cost Than Replacement",
+          "body": "When the roof qualifies, a coating costs a fraction of a full tear-off and replacement, worth evaluating before committing to a bigger job."
+        }
+      ]
+    },
+    {
+      "title": "Where coatings make sense in Mission",
+      "alt": false,
+      "kind": "text",
+      "paras": [
+        "Mission has a lot of flat and low slope commercial roofing: the retail along Expressway 83 and the offices near Mission Regional Medical Center. Many of these buildings have TPO, EPDM, or modified bitumen roofs installed years ago that are aging but not failing.",
+        "Heat is the biggest factor working against any roof in Mission. Summer temperatures and constant UV break down roofing membranes faster than in cooler climates. A reflective coating cuts the heat the roof surface absorbs, which is why it's worth a look here and not just a generic maintenance option."
+      ]
+    },
+    {
+      "title": "Why Mission businesses choose Edel for roof coatings",
+      "alt": true,
+      "kind": "proof",
+      "proof": [
+        {
+          "big": "Licensed",
+          "label": "RCAT #03-0489, Texas licensed roofing contractor, bonded & insured"
+        },
+        {
+          "big": "4.8★",
+          "label": "250+ Google reviews from residential and commercial customers across the RGV"
+        },
+        {
+          "big": "Honest",
+          "label": "We only recommend a coating when the roof actually qualifies, not as a default upsell"
+        },
+        {
+          "big": "Since 2003",
+          "label": "Over 20 years working on commercial roofing across the Rio Grande Valley"
+        }
+      ]
+    },
+    {
+      "title": "Roof coating questions, Mission",
+      "alt": false,
+      "kind": "faq",
+      "faqs": [
+        {
+          "q": "What is a roof coating?",
+          "a": "It's a reflective liquid-applied layer put over an existing flat or low-slope roof. It seals minor wear, reduces heat absorption, and extends the roof's usable life without a full tear-off."
+        },
+        {
+          "q": "Is a coating right for my roof?",
+          "a": "It depends on the roof's current condition. If the underlying membrane is still structurally sound but showing age, a coating usually makes sense. If the roof is already failing or leaking extensively, replacement is the better long-term answer. We'll give you a straight assessment during the inspection."
+        },
+        {
+          "q": "How long does a roof coating last?",
+          "a": "Depending on the product and the condition of the roof underneath, a coating can add several years of service life. We'll give you a realistic estimate specific to your roof, not a generic number."
+        },
+        {
+          "q": "Is a coating cheaper than a full roof replacement?",
+          "a": "Yes, when the roof qualifies. A coating costs a fraction of a tear-off and replacement, which is why it's worth evaluating first on a roof that's aging but not failed."
+        },
+        {
+          "q": "Do you apply coatings to residential roofs too?",
+          "a": "Coatings are most common on flat and low-slope commercial roofs. Most residential roofs in Mission are pitched shingle roofs, where a coating isn't the right fit, call us and we can tell you what does apply to your specific roof."
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Get a free roof coating estimate in Mission",
+    "line": "We inspect the roof, tell you honestly if a coating makes sense, and give you a written estimate. No pressure, no obligation.",
+    "buttons": [
+      {
+        "label": "Book a Free Inspection",
+        "href": "/book-an-inspection"
+      },
+      {
+        "label": "Call (956) 422-3335",
+        "href": "tel:+19564223335"
+      }
+    ],
+    "sub": "EDEL Roofing and Construction, Edinburg, TX. Serving Mission and the entire Rio Grande Valley"
+  },
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.edelroofing.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Mission",
+              "item": "https://www.edelroofing.com/roofing-mission-tx"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Roof Coatings Mission",
+              "item": "https://www.edelroofing.com/roof-coatings-mission-tx"
+            }
+          ]
+        },
+        {
+          "@type": "WebPage",
+          "name": "Roof Coating Services in Mission, TX",
+          "url": "https://www.edelroofing.com/roof-coatings-mission-tx",
+          "description": "Reflective roof coatings for commercial and flat roofs in Mission, TX. Extend roof life, reduce heat. Free estimate: (956) 422-3335.",
+          "about": {
+            "@id": "https://www.edelroofing.com/#roofingcontractor"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is a roof coating?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reflective liquid-applied layer put over an existing flat or low-slope roof that seals minor wear, reduces heat absorption, and extends usable life without a full tear-off."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is a coating right for my roof?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "If the underlying membrane is still structurally sound but showing age, a coating usually makes sense. If the roof is already failing, replacement is the better answer."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does a roof coating last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depending on the product and the roof's condition, a coating can add several years of service life."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is a coating cheaper than a full roof replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, when the roof qualifies. A coating costs a fraction of a full tear-off and replacement."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you apply coatings to residential roofs too?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Coatings are most common on flat and low-slope commercial roofs. Most residential roofs in Mission are pitched shingle roofs, where a coating isn't the right fit."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "changes": [
+    "review counts (246/252) -> 250+ (match the homepage)"
+  ]
+}

@@ -1,0 +1,179 @@
+---
+// Shared layout for the 30 city x service pages (McAllen, Mission, Edinburg;
+// EN + ES). One layout, one data file per page in src/data/city/*.json,
+// same pattern as CoolAid/redesign LocalSpoke.astro.
+// The data files are the live Duda copy (parsed 2026-10-18) with only the
+// allowed rebuild edits; each file lists them in `changes`.
+// Known issue (Eddie, 2026-10-18: rebuild as-is first): McAllen/Mission
+// sibling pages overlap 50-87%. Fix plan + sourced facts:
+// site-rebuild/city-pages-overlap-research.md.
+import Base from './Base.astro';
+import PageHero from '../components/PageHero.astro';
+import CtaBand from '../components/CtaBand.astro';
+import SpokeLinks from '../components/SpokeLinks.astro';
+import Icon from '../components/Icon.astro';
+import type { CityPage } from '../data/city';
+
+import repairBg from '../assets/roof-repairs/roof-repair.jpeg';
+import replacementBg from '../assets/residential-roofing/house-with-swimming-pool.jpg';
+import commercialBg from '../assets/commercial-roofing/roofing-construction.jpeg';
+import stormBg from '../assets/storm-damage/edel-roofing-storm-damage-2.jpg';
+import inspectionBg from '../assets/roof-repairs/roof-restoration.jpeg';
+import hubBg from '../assets/home/truck-house.jpeg';
+import guttersBg from '../assets/home/residential.jpg';
+
+interface Props { page: CityPage; siblings: { href: string; label: string }[] }
+const { page, siblings } = Astro.props;
+const es = page.lang === 'es';
+const bgs: Record<string, ImageMetadata> = {
+  repair: repairBg,
+  replacement: replacementBg,
+  commercial: commercialBg,
+  coatings: commercialBg,
+  storm: stormBg,
+  inspections: inspectionBg,
+  gutters: guttersBg,
+  hub: hubBg,
+};
+const plain = (html: string) =>
+  html
+    .replace(/<[^>]+>/g, '')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>');
+const crumbs = [
+  { label: es ? 'Inicio' : 'Home', href: es ? '/es-mx' : '/' },
+  ...page.crumbs,
+  { label: page.h1, href: page.path },
+];
+const ctaButton = page.cta.buttons[0];
+const cityName = { mcallen: 'McAllen', mission: 'Mission', edinburg: 'Edinburg' }[page.city] ?? '';
+const moreTitle = es ? `Más páginas de techos en ${cityName}` : `More Roofing Pages for ${cityName}`;
+---
+<Base title={page.title} description={page.description} lang={page.lang} alternates={page.alternates ?? undefined} schema={page.schema}>
+  <PageHero crumbs={crumbs} title={page.h1} lead={plain(page.lede)} bg={bgs[page.service] ?? hubBg} lang={page.lang} />
+
+  {page.sections.map((s) => (
+    <section class:list={['section', { soft: s.alt }]}>
+      <div class:list={['wrap', { narrow: s.kind === 'text' || s.kind === 'faq' }]}>
+        {s.title && <h2>{s.title}</h2>}
+        {s.paras?.map((p) => <p set:html={p} />)}
+
+        {s.kind === 'cards' && (
+          <ul class="cards">
+            {s.cards!.map((c) => (
+              <li>
+                {c.href ? (
+                  <a class="card link" href={c.href}>
+                    <h3>{c.title}</h3>
+                    <p set:html={c.body} />
+                    <span class="more">{es ? 'Ver más' : 'Learn more'}<Icon name="arrow" /></span>
+                  </a>
+                ) : (
+                  <div class="card">
+                    <h3>{c.title}</h3>
+                    <p set:html={c.body} />
+                  </div>
+                )}
+              </li>
+            ))}
+          </ul>
+        )}
+
+        {s.kind === 'proof' && (
+          <ul class="proof">
+            {s.proof!.map((p) => (
+              <li><strong>{p.big}</strong><span>{p.label}</span></li>
+            ))}
+          </ul>
+        )}
+
+        {s.kind === 'faq' && (
+          <div class="faqs">
+            {s.faqs!.map((f) => (
+              <details>
+                <summary>{f.q}<Icon name="plus" /></summary>
+                <p set:html={f.a} />
+              </details>
+            ))}
+          </div>
+        )}
+      </div>
+    </section>
+  ))}
+
+  {siblings.length > 0 && <SpokeLinks title={moreTitle} links={siblings} soft />}
+
+  <CtaBand
+    title={page.cta.title}
+    body={page.cta.line}
+    cta={ctaButton && !ctaButton.href.startsWith('tel:') ? { label: ctaButton.label, href: ctaButton.href } : undefined}
+    note={page.cta.sub}
+    lang={page.lang}
+  />
+</Base>
+
+<style>
+  .section { padding-block: 72px; }
+  .soft { background: var(--bg-soft); }
+  .narrow { max-width: 860px; }
+  h2 { font-size: clamp(28px, 3.6vw, 42px); text-transform: uppercase; }
+  .section p :global(a) { color: var(--maroon); font-weight: 600; }
+
+  .cards {
+    list-style: none;
+    margin: 28px 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 26px 24px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--maroon);
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: inherit;
+  }
+  .card h3 { font-size: 24px; margin-bottom: 8px; }
+  .card p { margin: 0; }
+  .card.link { transition: border-color 0.15s ease, box-shadow 0.15s ease; }
+  .card.link:hover { border-color: var(--maroon); box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08); }
+  .more { margin-top: auto; padding-top: 14px; display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700; color: var(--maroon); text-transform: uppercase; letter-spacing: 0.06em; }
+  .more :global(svg) { width: 16px; height: 16px; }
+
+  .proof {
+    list-style: none;
+    margin: 28px 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+  }
+  .proof li { padding: 22px 18px; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); text-align: center; overflow-wrap: anywhere; }
+  .proof strong { display: block; font-family: var(--font-head); font-size: 30px; font-weight: 600; color: var(--maroon); line-height: 1.1; margin-bottom: 6px; }
+  .proof span { font-size: 14px; }
+
+  .faqs { display: grid; gap: 12px; margin-top: 24px; }
+  details { background: var(--white); border: 1px solid var(--line); border-left: 3px solid var(--maroon); border-radius: var(--radius); }
+  summary { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 20px; cursor: pointer; font-weight: 600; color: var(--ink-strong); list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary :global(svg) { width: 18px; height: 18px; color: var(--maroon); flex: none; transition: transform 0.15s ease; }
+  details[open] summary :global(svg) { transform: rotate(45deg); }
+  details p { padding: 0 20px 18px; margin: 0; }
+
+  @media (max-width: 900px) {
+    .section { padding-block: 56px; }
+    .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .proof { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 600px) {
+    .cards { grid-template-columns: minmax(0, 1fr); }
+    .proof strong { font-size: 24px; }
+  }
+</style>

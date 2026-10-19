@@ -1,0 +1,242 @@
+{
+  "path": "/roofing-mission-tx",
+  "lang": "en",
+  "city": "mission",
+  "service": "hub",
+  "title": "Roofing Contractor in Mission, TX | Edel Roofing & Construction",
+  "description": "Licensed roofing contractor serving Mission, TX. Residential roof replacement, commercial roofing, and repairs. 4.8★, 250+ reviews. Free estimate: (956) 422-3335.",
+  "alternates": {
+    "en": "/roofing-mission-tx",
+    "es": "/roofing-mission-tx-es"
+  },
+  "crumbs": [
+    {
+      "label": "Service Areas",
+      "href": "/service-areas"
+    }
+  ],
+  "h1": "Roofing Contractor in Mission, TX",
+  "lede": "Edel Roofing &amp; Construction handles roof replacements, repairs, and commercial roofing for homes and businesses in Mission. Licensed, bonded, and insured. Free estimates with no obligation.",
+  "heroCtas": [
+    {
+      "label": "Get a Free Estimate",
+      "href": "/book-an-inspection"
+    },
+    {
+      "label": "Call (956) 422-3335",
+      "href": "tel:+19564223335"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Roofing services in Mission",
+      "alt": false,
+      "kind": "text",
+      "paras": [
+        "Edel Roofing &amp; Construction is based in Edinburg and has worked on roofing projects across Hidalgo County since 2003. Mission is about 25 minutes from our shop and we work there regularly: replacements in the older neighborhoods near downtown, newer homes out in the Sharyland area, and commercial roofs along the Expressway 83 corridor.",
+        "Mission has grown west and north quickly over the last two decades, so the housing stock splits into two groups. There are homes built in the 1970s and 80s that are now on their second or third roof, and there are much newer subdivisions where the original roof is just starting to show its age. The right answer is different for each, and we will tell you which one you are dealing with."
+      ]
+    },
+    {
+      "title": "Roofing services we offer in Mission",
+      "alt": true,
+      "kind": "cards",
+      "cards": [
+        {
+          "title": "Residential Roof Replacement",
+          "body": "Full tear-off and replacement for homes in Mission. We install shingle systems from CertainTeed, Owens Corning, and GAF. Every replacement includes a written estimate, a full decking inspection, and a clean site when we finish.",
+          "href": "/roof-replacement-mission-tx"
+        },
+        {
+          "title": "Roof Repairs",
+          "body": "Leaks, blown-off shingles, damaged flashing, and skylight issues. We find the actual source of the problem, not just the visible damage. Most repairs are completed in a single visit.",
+          "href": "/roof-repair-mission-tx"
+        },
+        {
+          "title": "Commercial Roofing",
+          "body": "Flat and low-slope systems for Mission businesses, strip centers, and commercial properties. We install TPO, EPDM, and modified bitumen membranes and repair leaks on existing flat roofs.",
+          "href": "/commercial-roofing-mission-tx"
+        },
+        {
+          "title": "Storm & Hail Damage",
+          "body": "We inspect for hail impact, wind uplift, and granule loss, then give you written documentation of what we find. That report is useful when you contact your insurance company.",
+          "href": "/storm-damage-mission-tx"
+        },
+        {
+          "title": "Roof Inspections",
+          "body": "A detailed look at your roof's current condition. Useful before buying a home, after a storm, or when you have noticed something and want a professional opinion. We walk the roof, document what we find, and give you a straight answer.",
+          "href": "/roof-inspections-mission-tx"
+        },
+        {
+          "title": "Roof Coatings",
+          "body": "Reflective coatings applied over existing commercial and flat roofs to extend service life and cut heat load. A cost-effective option when the system underneath is still sound but showing wear.",
+          "href": "/roof-coating-mission-tx"
+        }
+      ]
+    },
+    {
+      "title": "What roofing problems are most common in Mission?",
+      "alt": false,
+      "kind": "text",
+      "paras": [
+        "The older parts of Mission, around Conway Avenue and the streets running off it toward downtown, have a lot of homes with shingle roofs that have been through more than one Valley summer than they were rated for. On those we are usually looking at full replacement rather than repair, because patching a roof that is already past its service life tends to buy you one season and not much more.",
+        "Out in the Sharyland area and the newer subdivisions west and north of town, the roofs are younger and the work is different. There we see more storm damage, more flashing and vent issues, and more homes where a targeted repair is genuinely the right call. We would rather do the repair than sell you a replacement you do not need yet.",
+        "On the commercial side, the retail along Expressway 83 and the businesses near Mission Regional Medical Center mostly have flat or low-slope roofs. Flat roofs fail differently than pitched roofs. Water sits instead of running off, so a small problem stays wet and spreads, and by the time it shows up on a ceiling tile the actual breach can be a good distance away. Finding the real source is most of the job.",
+        "One thing that applies to every roof in Mission: the heat here is the main enemy. UV exposure and sustained high temperatures break shingles down faster in the Valley than almost anywhere else in the country. A roof that would last 25 years somewhere cooler will not last that long here. Add hail a few times a decade and the case for an inspection after any real storm is easy to make."
+      ]
+    },
+    {
+      "title": "Why do Mission homeowners and businesses choose Edel Roofing?",
+      "alt": true,
+      "kind": "proof",
+      "proof": [
+        {
+          "big": "Licensed",
+          "label": "RCAT #03-0489, Texas licensed roofing contractor, bonded & insured"
+        },
+        {
+          "big": "4.8★",
+          "label": "250+ Google reviews from residential and commercial customers across the RGV"
+        },
+        {
+          "big": "Certified",
+          "label": "CertainTeed SELECT ShingleMaster, the only one in the Rio Grande Valley"
+        },
+        {
+          "big": "Since 2003",
+          "label": "Over 20 years serving Mission, Edinburg, and the entire Rio Grande Valley"
+        }
+      ]
+    },
+    {
+      "title": "Mission roofing questions",
+      "alt": false,
+      "kind": "faq",
+      "faqs": [
+        {
+          "q": "Does Edel Roofing serve Mission, TX?",
+          "a": "Yes. We work in Mission regularly for residential replacements, repairs, and commercial roofing. Our shop is in Edinburg, about 25 minutes away. Call or book online and we will set up a free inspection."
+        },
+        {
+          "q": "How much does a roof replacement cost in Mission?",
+          "a": "For a typical Mission home, a full shingle replacement generally runs between $8,000 and $18,000. What moves the number is roof size, pitch, the material coming off, and the shingle grade you pick. We give written estimates before any work begins and there is no obligation. Call or book an inspection to get a real number for your roof."
+        },
+        {
+          "q": "Do I need a full replacement or can my roof be repaired?",
+          "a": "It depends on the age of the roof and how widespread the damage is. If the shingles are near the end of their service life, a repair usually buys you a season and you end up replacing it anyway. If the roof is younger and the damage is in one area, a repair is the right call. We will inspect it and tell you which situation you are in, including when the answer is that you do not need us yet."
+        },
+        {
+          "q": "Do you handle insurance claims for storm or hail damage in Mission?",
+          "a": "We can inspect the damage and give you written documentation of what we find, which is useful when you file a claim. We are not a public adjuster, but we can walk you through what we observed so you understand what you are presenting to your insurance company."
+        },
+        {
+          "q": "How do I get a roofing estimate in Mission?",
+          "a": "Call (956) 422-3335 or book online at the link above. We will schedule a time to inspect the roof, take measurements, and give you a written estimate. All estimates are free with no obligation."
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Get a free roofing estimate in Mission",
+    "line": "We inspect the roof, give you a written estimate, and explain your options. No pressure, no obligation.",
+    "buttons": [
+      {
+        "label": "Book a Free Inspection",
+        "href": "/book-an-inspection"
+      },
+      {
+        "label": "Call (956) 422-3335",
+        "href": "tel:+19564223335"
+      }
+    ],
+    "sub": "EDEL Roofing and Construction, Edinburg, TX, serving Mission and the entire Rio Grande Valley"
+  },
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.edelroofing.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Service Areas",
+              "item": "https://www.edelroofing.com/service-areas"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Roofing Contractor Mission TX",
+              "item": "https://www.edelroofing.com/roofing-mission-tx"
+            }
+          ]
+        },
+        {
+          "@type": "WebPage",
+          "name": "Roofing Contractor in Mission, TX",
+          "url": "https://www.edelroofing.com/roofing-mission-tx",
+          "description": "Licensed roofing contractor serving Mission, TX. Residential roof replacement, commercial roofing, and repairs. 4.8★, 250+ reviews. Free estimate: (956) 422-3335.",
+          "about": {
+            "@id": "https://www.edelroofing.com/#roofingcontractor"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Does Edel Roofing serve Mission, TX?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We work in Mission regularly for residential replacements, repairs, and commercial roofing. Our shop is in Edinburg, about 25 minutes away. Call or book online and we will set up a free inspection."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How much does a roof replacement cost in Mission?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For a typical Mission home, a full shingle replacement generally runs between $8,000 and $18,000, depending on roof size, pitch, the material coming off, and shingle grade. We give written estimates before any work begins, with no obligation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need a full replacement or can my roof be repaired?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends on the age of the roof and how widespread the damage is. If the shingles are near the end of their service life, a repair usually buys one season. If the roof is younger and the damage is localized, a repair is the right call. We inspect it and tell you which situation you are in."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you handle insurance claims for storm or hail damage in Mission?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We can inspect the damage and provide written documentation of what we find, which is useful when filing a claim. We are not a public adjuster, but we can walk you through our findings so you understand what to present to your insurance company."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I get a roofing estimate in Mission?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Call (956) 422-3335 or book online. We will schedule a time to inspect the roof, take measurements, and give you a written estimate. All estimates are free with no obligation."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "changes": [
+    "em/en dashes swapped for commas, colons, or hyphens",
+    "review counts (246/252) -> 250+ (match the homepage)"
+  ]
+}

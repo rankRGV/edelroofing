@@ -1,0 +1,223 @@
+{
+  "path": "/storm-damage-mcallen-tx",
+  "lang": "en",
+  "city": "mcallen",
+  "service": "storm",
+  "title": "Storm & Hail Damage Roof Repair in McAllen, TX | Edel Roofing & Construction",
+  "description": "Storm and hail damage roof inspection and repair in McAllen, TX. Written insurance documentation provided. 250+ Google reviews. Free estimate: (956) 422-3335.",
+  "alternates": null,
+  "crumbs": [
+    {
+      "label": "McAllen",
+      "href": "/roofing-mcallen-tx"
+    }
+  ],
+  "h1": "Storm & Hail Damage Roof Repair in McAllen, TX",
+  "lede": "Edel Roofing &amp; Construction inspects and repairs hail, wind, and storm damage for homes and businesses in McAllen. Written documentation for your insurance claim. Free inspections with no obligation.",
+  "heroCtas": [
+    {
+      "label": "Get a Free Inspection",
+      "href": "/book-an-inspection"
+    },
+    {
+      "label": "Call (956) 422-3335",
+      "href": "tel:+19564223335"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Storm damage inspection and repair in McAllen",
+      "alt": false,
+      "kind": "text",
+      "paras": [
+        "After a hailstorm or high wind event, roof damage isn't always obvious from the ground. Missing granules, bruised shingles, and lifted flashing can go unnoticed for months until they turn into a leak. We inspect the whole roof, not just the parts you can see from your driveway, and tell you honestly what we find.",
+        "If the damage is real, we document it in writing with enough detail to support an insurance claim. If it's cosmetic and doesn't affect the roof's performance, we tell you that too. We're not paid more for finding damage that isn't there."
+      ]
+    },
+    {
+      "title": "What a storm damage inspection covers",
+      "alt": true,
+      "kind": "cards",
+      "cards": [
+        {
+          "title": "Hail Impact",
+          "body": "Bruising, granule loss, and cracked shingles from hail impact. We check the whole roof, not just the sides that face the street."
+        },
+        {
+          "title": "Wind Uplift & Missing Shingles",
+          "body": "High wind can lift or tear shingles even when nothing looks obviously wrong from below. We check every edge, ridge, and valley."
+        },
+        {
+          "title": "Flashing & Vent Damage",
+          "body": "Storms move flashing and knock loose the seals around vents and skylights, a common source of leaks that shows up weeks later."
+        },
+        {
+          "title": "Written Insurance Documentation",
+          "body": "Photos and a written report of exactly what we found, useful when you file a claim. We're not a public adjuster, but we'll walk you through what we observed."
+        }
+      ]
+    },
+    {
+      "title": "Storm damage we see in McAllen",
+      "alt": false,
+      "kind": "text",
+      "paras": [
+        "McAllen's older neighborhoods around 2nd Street and 10th Street have shingle roofs from the 1980s and 90s, roofs already near the end of their service life take storm damage harder, and a hailstorm that's cosmetic on a newer roof can be the tipping point on an older one. We're upfront about that difference during the inspection.",
+        "On the commercial side, the flat and low-slope roofs along the Nolana Ave corridor and the warehouse properties in north McAllen are more vulnerable to wind uplift at the membrane edges and ponding after a storm dumps a lot of rain fast. Those need a different kind of inspection than a pitched residential roof."
+      ]
+    },
+    {
+      "title": "Why McAllen homeowners choose Edel after a storm",
+      "alt": true,
+      "kind": "proof",
+      "proof": [
+        {
+          "big": "Licensed",
+          "label": "RCAT #03-0489, Texas licensed roofing contractor, bonded & insured"
+        },
+        {
+          "big": "4.8★",
+          "label": "250+ Google reviews from residential and commercial customers across the RGV"
+        },
+        {
+          "big": "Honest",
+          "label": "We tell you when damage is cosmetic, not just when it supports a bigger job"
+        },
+        {
+          "big": "Since 2003",
+          "label": "Over 20 years inspecting storm and hail damage across the Rio Grande Valley"
+        }
+      ]
+    },
+    {
+      "title": "Storm damage questions: McAllen",
+      "alt": false,
+      "kind": "faq",
+      "faqs": [
+        {
+          "q": "How do I know if I have hail damage on my roof?",
+          "a": "Hail damage often isn't visible from the ground, bruised shingles and granule loss show up close-up, not from your driveway. If there was a hailstorm in your area, it's worth getting a free inspection even if nothing looks wrong yet."
+        },
+        {
+          "q": "Do you help with insurance claims for storm damage?",
+          "a": "We inspect the roof and give you a written report with photos documenting what we find. That documentation is useful when you file a claim. We're not a public adjuster, but we'll walk you through what we observed so you know what to present to your insurer."
+        },
+        {
+          "q": "How soon should I get an inspection after a storm?",
+          "a": "Sooner is better. Some insurance policies have a filing window after a storm event, and damage that isn't causing a leak yet can worsen with the next rain. A free inspection costs you nothing either way."
+        },
+        {
+          "q": "Does storm damage always mean I need a full roof replacement?",
+          "a": "No. Sometimes it's a targeted repair, a few shingles, some flashing, a resealed vent. We recommend replacement only when the damage or the roof's age actually calls for it, not by default."
+        },
+        {
+          "q": "How do I get a storm damage inspection in McAllen?",
+          "a": "Call us at (956) 422-3335 or book online. We'll inspect the roof, document what we find, and give you a written estimate if repair or replacement is needed. Inspections are free with no obligation."
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Get a free storm damage inspection in McAllen",
+    "line": "We inspect the roof, document what we find, and give you a written estimate. No pressure, no obligation.",
+    "buttons": [
+      {
+        "label": "Book a Free Inspection",
+        "href": "/book-an-inspection"
+      },
+      {
+        "label": "Call (956) 422-3335",
+        "href": "tel:+19564223335"
+      }
+    ],
+    "sub": "EDEL Roofing and Construction, Edinburg, TX, serving McAllen and the entire Rio Grande Valley"
+  },
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.edelroofing.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "McAllen",
+              "item": "https://www.edelroofing.com/roofing-mcallen-tx"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Storm & Hail Damage McAllen",
+              "item": "https://www.edelroofing.com/storm-damage-mcallen-tx"
+            }
+          ]
+        },
+        {
+          "@type": "WebPage",
+          "name": "Storm & Hail Damage Roof Repair in McAllen, TX",
+          "url": "https://www.edelroofing.com/storm-damage-mcallen-tx",
+          "description": "Storm and hail damage roof inspection and repair in McAllen, TX. Written insurance documentation provided. Free estimate: (956) 422-3335.",
+          "about": {
+            "@id": "https://www.edelroofing.com/#roofingcontractor"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How do I know if I have hail damage on my roof?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Hail damage often isn't visible from the ground. If there was a hailstorm in your area, it's worth getting a free inspection even if nothing looks wrong yet."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you help with insurance claims for storm damage?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We inspect the roof and give you a written report with photos. We're not a public adjuster, but we'll walk you through what we observed so you know what to present to your insurer."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How soon should I get an inspection after a storm?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sooner is better, some insurance policies have a filing window and damage can worsen with the next rain. A free inspection costs nothing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does storm damage always mean I need a full roof replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Sometimes it's a targeted repair. We recommend replacement only when the damage or the roof's age actually calls for it."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I get a storm damage inspection in McAllen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Call (956) 422-3335 or book online. Inspections are free with no obligation."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "changes": [
+    "em/en dashes swapped for commas, colons, or hyphens",
+    "review counts (246/252) -> 250+ (match the homepage)"
+  ]
+}

@@ -11,8 +11,9 @@ interface Props {
   body?: string;
   cta?: { label: string; href: string; roofle?: boolean };
   lang?: 'en' | 'es';
+  note?: string;
 }
-const { title, body, cta, lang = 'en' } = Astro.props;
+const { title, body, cta, lang = 'en', note } = Astro.props;
 const bgSrc = (await getImage({ src: houseRoof, width: 1920, format: 'webp', quality: 65 })).src;
 const callToday = lang === 'es' ? 'Llámenos hoy' : 'Call us today';
 const quote = lang === 'es' ? 'Cotización Instantánea' : 'Get Instant Quote';
@@ -25,6 +26,7 @@ const quote = lang === 'es' ? 'Cotización Instantánea' : 'Get Instant Quote';
       {cta && (
         <a class="btn btn--light" href={cta.href} data-roofle-open={cta.roofle ? '' : undefined}>{cta.label}</a>
       )}
+      {note && <p class="note">{note}</p>}
     </div>
     <div class="call">
       <p class="vanity">(956) 422-EDEL</p>
@@ -47,6 +49,7 @@ const quote = lang === 'es' ? 'Cotización Instantánea' : 'Get Instant Quote';
   h2 { color: var(--white); font-size: clamp(30px, 3.6vw, 44px); text-transform: uppercase; }
   .text p { max-width: 62ch; color: rgba(255, 255, 255, 0.9); margin-bottom: 1.4rem; }
   .text p :global(a) { color: var(--white); font-weight: 600; }
+  .text .note { margin: 1.4rem 0 0; font-size: 13px; color: rgba(255, 255, 255, 0.75); }
   .call {
     display: grid;
     gap: 12px;

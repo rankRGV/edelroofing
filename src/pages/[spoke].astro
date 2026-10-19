@@ -1,0 +1,23 @@
+---
+// The 30 city x service pages at their live root paths
+// (/roof-repair-mcallen-tx, /reparacion-de-techo-mission-tx, ...).
+// Content: src/data/city/<slug>.json. Layout: src/layouts/CitySpoke.astro.
+import CitySpoke from '../layouts/CitySpoke.astro';
+import { cityPages, type CityPage } from '../data/city';
+
+export function getStaticPaths() {
+  // Hubs sort first so "more pages" lists start with the city hub.
+  const order = (p: CityPage) => (p.service === 'hub' ? 0 : 1);
+  return cityPages.map((page) => {
+    // Hubs already link their spokes through the service cards.
+    const siblings = page.service === 'hub' ? [] : cityPages
+      .filter((o) => o.city === page.city && o.lang === page.lang && o.path !== page.path)
+      .sort((a, b) => order(a) - order(b) || a.h1.localeCompare(b.h1))
+      .map((o) => ({ href: o.path, label: o.h1 }));
+    return { params: { spoke: page.path.slice(1) }, props: { page, siblings } };
+  });
+}
+
+const { page, siblings } = Astro.props;
+---
+<CitySpoke page={page} siblings={siblings} />

@@ -1,0 +1,241 @@
+{
+  "path": "/roofing-mcallen-tx",
+  "lang": "en",
+  "city": "mcallen",
+  "service": "hub",
+  "title": "Roofing Contractor in McAllen, TX | Edel Roofing & Construction",
+  "description": "Licensed roofing contractor serving McAllen, TX. Residential roof replacement, commercial roofing, and repairs. 4.8★, 250+ reviews. Free estimate: (956) 422-3335.",
+  "alternates": {
+    "en": "/roofing-mcallen-tx",
+    "es": "/roofing-mcallen-tx-es"
+  },
+  "crumbs": [
+    {
+      "label": "Service Areas",
+      "href": "/service-areas"
+    }
+  ],
+  "h1": "Roofing Contractor in McAllen, TX",
+  "lede": "Edel Roofing &amp; Construction handles roof replacements, repairs, and commercial roofing for homes and businesses in McAllen. Licensed, bonded, and insured. Free estimates with no obligation.",
+  "heroCtas": [
+    {
+      "label": "Get a Free Estimate",
+      "href": "/book-an-inspection"
+    },
+    {
+      "label": "Call (956) 422-3335",
+      "href": "tel:+19564223335"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Roofing services in McAllen",
+      "alt": false,
+      "kind": "text",
+      "paras": [
+        "Edel Roofing &amp; Construction is based in Edinburg and has been working on roofing projects across Hidalgo County since 2003. We serve McAllen regularly: residential replacements in north McAllen neighborhoods, commercial flat roofs along the Nolana and 10th Street corridors, and repairs throughout the city.",
+        "McAllen is one of the fastest-growing cities in Texas. That means a lot of roofs are approaching the end of their first service life, and a lot of new construction happening at the same time. We handle both. If you need a free inspection to understand where your roof stands, we can be on-site fast."
+      ]
+    },
+    {
+      "title": "Roofing services we offer in McAllen",
+      "alt": true,
+      "kind": "cards",
+      "cards": [
+        {
+          "title": "Residential Roof Replacement",
+          "body": "Full tear-off and replacement for homes in McAllen. We install shingle systems from CertainTeed, Owens Corning, and GAF. Every replacement includes a written estimate, a thorough decking inspection, and a clean site at the end of the job.",
+          "href": "/roof-replacement-mcallen-tx"
+        },
+        {
+          "title": "Roof Repairs",
+          "body": "Leaks, blown-off shingles, damaged flashing, and skylight issues. We find the actual source of the problem, not just the visible damage. Most repairs are completed in a single visit.",
+          "href": "/roof-repair-mcallen-tx"
+        },
+        {
+          "title": "Commercial Roofing",
+          "body": "Flat and low-slope roofing systems for McAllen businesses, strip centers, and commercial properties. We install TPO, EPDM, and modified bitumen membranes and handle leak repairs on existing flat roofs.",
+          "href": "/commercial-roofing-mcallen-tx"
+        },
+        {
+          "title": "Storm & Hail Damage",
+          "body": "Hidalgo County storms can cause significant damage. We inspect for hail impact, wind uplift, and granule loss, and provide written documentation of what we find. That report is useful when you contact your insurance company.",
+          "href": "/storm-damage-mcallen-tx"
+        },
+        {
+          "title": "Roof Inspections",
+          "body": "A detailed inspection of your roof's current condition. Useful before buying a home, after a storm, or when you notice something you want a professional opinion on. We walk the roof, document the findings, and give you a straight answer.",
+          "href": "/roof-inspections-mcallen-tx"
+        },
+        {
+          "title": "Roof Coatings",
+          "body": "Reflective coatings applied over existing commercial and flat roofs to extend service life and reduce heat load. A cost-effective option when the underlying system is still in good shape but showing wear.",
+          "href": "/roof-coatings-mcallen-tx"
+        }
+      ]
+    },
+    {
+      "title": "What roofing problems are most common in McAllen?",
+      "alt": false,
+      "kind": "text",
+      "paras": [
+        "McAllen has a mix of roof types that comes with being a large, fast-growing city. Older neighborhoods around 2nd Street and 10th Street have homes with shingle roofs from the 1980s and 90s that are due for replacement. North McAllen, around the Sharyland and Las Cumbres areas, has newer homes where storm damage and repairs are more common than full replacements.",
+        "On the commercial side, the strip centers along Nolana Ave, the medical buildings near South Texas Health System, and the warehouse and industrial properties in north McAllen all have flat or low-slope roofs. A flat roof leak during business hours is a real problem. We can usually get an inspection on the calendar quickly.",
+        "The RGV climate is hard on roofs. Extreme heat accelerates shingle degradation and membrane wear. UV exposure breaks down materials faster here than in cooler regions. When a McAllen hailstorm comes through, the damage can range from cosmetic to structural. An inspection after any significant storm is worth doing."
+      ]
+    },
+    {
+      "title": "Why do McAllen homeowners and businesses choose Edel Roofing?",
+      "alt": true,
+      "kind": "proof",
+      "proof": [
+        {
+          "big": "Licensed",
+          "label": "RCAT #03-0489, Texas licensed roofing contractor, bonded & insured"
+        },
+        {
+          "big": "4.8★",
+          "label": "250+ Google reviews from residential and commercial customers across the RGV"
+        },
+        {
+          "big": "Certified",
+          "label": "CertainTeed SELECT ShingleMaster, the only one in the Rio Grande Valley"
+        },
+        {
+          "big": "Since 2003",
+          "label": "Over 20 years serving McAllen, Edinburg, and the entire Rio Grande Valley"
+        }
+      ]
+    },
+    {
+      "title": "McAllen roofing questions",
+      "alt": false,
+      "kind": "faq",
+      "faqs": [
+        {
+          "q": "Does Edel Roofing serve McAllen, TX?",
+          "a": "Yes. We serve McAllen regularly for residential replacements, repairs, and commercial roofing. Our shop is in Edinburg, about 15 minutes from central McAllen. Call or book online and we will set up a free inspection."
+        },
+        {
+          "q": "My business in McAllen has a flat roof leak. Can you fix it?",
+          "a": "Yes. We repair flat and low-slope commercial roofs in McAllen. Flat roof leaks are often harder to trace than residential leaks because water travels before it shows up inside. We do a proper inspection to find the actual source, not just the obvious damage. Call (956) 422-3335 to schedule an inspection."
+        },
+        {
+          "q": "How much does a roof replacement cost in McAllen?",
+          "a": "For a typical McAllen home, a full shingle replacement generally runs between $8,000 and $18,000, depending on roof size, pitch, current material, and the shingle grade you choose. We give written estimates before any work begins, there is no obligation. Call us or book an inspection online to get a real number for your specific roof."
+        },
+        {
+          "q": "Do you handle insurance claims for storm or hail damage in McAllen?",
+          "a": "We can inspect the damage and provide written documentation of what we find. That report is useful when you file a claim with your insurance company. We are not a public adjuster, but we can walk you through what we observed so you understand what to present. We have worked with homeowners and property managers across McAllen after major hail events."
+        },
+        {
+          "q": "How do I get a roofing estimate in McAllen?",
+          "a": "Call (956) 422-3335 or book online at the link above. We will schedule a time to inspect your roof, take measurements, and give you a written estimate. All estimates are free and there is no obligation to move forward."
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Get a free roofing estimate in McAllen",
+    "line": "We inspect the roof, give you a written estimate, and explain your options. No pressure, no obligation.",
+    "buttons": [
+      {
+        "label": "Book a Free Inspection",
+        "href": "/book-an-inspection"
+      },
+      {
+        "label": "Call (956) 422-3335",
+        "href": "tel:+19564223335"
+      }
+    ],
+    "sub": "EDEL Roofing and Construction, Edinburg, TX, serving McAllen and the entire Rio Grande Valley"
+  },
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.edelroofing.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Service Areas",
+              "item": "https://www.edelroofing.com/service-areas"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Roofing Contractor McAllen TX",
+              "item": "https://www.edelroofing.com/roofing-mcallen-tx"
+            }
+          ]
+        },
+        {
+          "@type": "WebPage",
+          "name": "Roofing Contractor in McAllen, TX",
+          "url": "https://www.edelroofing.com/roofing-mcallen-tx",
+          "description": "Licensed roofing contractor serving McAllen, TX. Residential roof replacement, commercial roofing, and repairs. 4.8★, 250+ reviews. Free estimate: (956) 422-3335.",
+          "about": {
+            "@id": "https://www.edelroofing.com/#roofingcontractor"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Does Edel Roofing serve McAllen, TX?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We serve McAllen regularly for residential replacements, repairs, and commercial roofing. Our shop is in Edinburg, about 15 minutes from central McAllen. Call or book online and we will set up a free inspection."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "My business in McAllen has a flat roof leak. Can you fix it?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We repair flat and low-slope commercial roofs in McAllen. Flat roof leaks are often harder to trace than residential leaks because water travels before it shows up inside. We do a proper inspection to find the actual source. Call (956) 422-3335 to schedule."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How much does a roof replacement cost in McAllen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For a typical McAllen home, a full shingle replacement generally runs between $8,000 and $18,000, depending on roof size, pitch, current material, and shingle grade. We give written estimates before any work begins. Call us or book an inspection online for a real number."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you handle insurance claims for storm or hail damage in McAllen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We can inspect the damage and provide written documentation of what we find. That report is useful when filing a claim. We are not a public adjuster, but we can walk you through our findings so you understand what to present to your insurance company."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I get a roofing estimate in McAllen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Call (956) 422-3335 or book online. We will schedule a time to inspect your roof, take measurements, and give you a written estimate. All estimates are free with no obligation."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "changes": [
+    "em/en dashes swapped for commas, colons, or hyphens",
+    "review counts (246/252) -> 250+ (match the homepage)"
+  ]
+}

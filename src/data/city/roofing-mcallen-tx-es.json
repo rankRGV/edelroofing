@@ -1,0 +1,241 @@
+{
+  "path": "/roofing-mcallen-tx-es",
+  "lang": "es",
+  "city": "mcallen",
+  "service": "hub",
+  "title": "Contratista de Techos en McAllen, TX | Edel Roofing & Construction",
+  "description": "Contratista de techos con licencia en McAllen, TX. Reemplazo\n             residencial, techos comerciales y reparaciones. 4.8★, más de 250 reseñas.\n             Estimado gratis: (956) 422-3335.",
+  "alternates": {
+    "en": "/roofing-mcallen-tx",
+    "es": "/roofing-mcallen-tx-es"
+  },
+  "crumbs": [
+    {
+      "label": "Áreas de Servicio",
+      "href": "/es-mx/service-areas"
+    }
+  ],
+  "h1": "Contratista de Techos en McAllen, TX",
+  "lede": "Edel Roofing &amp; Construction hace reemplazos de techo, reparaciones y techos comerciales para casas y negocios en McAllen. Con licencia, fianza y seguro. Estimados gratis sin compromiso.",
+  "heroCtas": [
+    {
+      "label": "Obtener Estimado Gratis",
+      "href": "/book-an-inspection"
+    },
+    {
+      "label": "Llamar (956) 422-3335",
+      "href": "tel:+19564223335"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Servicios de techos en McAllen",
+      "alt": false,
+      "kind": "text",
+      "paras": [
+        "Edel Roofing &amp; Construction tiene su oficina en Edinburg y lleva desde 2003 trabajando en proyectos de techos en todo el Condado Hidalgo. Atendemos McAllen con frecuencia: reemplazos en las colonias del norte de la ciudad, techos planos comerciales en los corredores de Nolana y la 10th Street, y reparaciones en toda el área.",
+        "McAllen es una de las ciudades de más rápido crecimiento en Texas. Hay muchos techos que están llegando al fin de su vida útil, y al mismo tiempo mucha construcción nueva. Nosotros trabajamos los dos escenarios. Si necesita una inspección gratuita para saber en qué estado está su techo, podemos llegar rápido."
+      ]
+    },
+    {
+      "title": "Servicios de techos que ofrecemos en McAllen",
+      "alt": true,
+      "kind": "cards",
+      "cards": [
+        {
+          "title": "Reemplazo Residencial de Techo",
+          "body": "Remoción completa e instalación de techo nuevo para casas en McAllen. Instalamos tejas de CertainTeed, Owens Corning y GAF. Cada reemplazo incluye un estimado por escrito, inspección del tablero de techo y limpieza total al final del trabajo.",
+          "href": "/reemplazo-de-techo-mcallen-tx"
+        },
+        {
+          "title": "Reparaciones de Techo",
+          "body": "Goteras, tejas desprendidas, flashing dañado y problemas en tragaluces. Encontramos el origen real del problema, no solo el daño visible. La mayoría de las reparaciones se terminan en una sola visita.",
+          "href": "/reparacion-de-techo-mcallen-tx"
+        },
+        {
+          "title": "Techos Comerciales",
+          "body": "Sistemas de techo plano y de baja inclinación para negocios, locales comerciales y propiedades en McAllen. Instalamos membranas TPO, EPDM y betún modificado, y reparamos goteras en techos planos existentes.",
+          "href": "/techado-comercial-mcallen-tx"
+        },
+        {
+          "title": "Daños por Tormenta y Granizo",
+          "body": "Las tormentas en el Condado Hidalgo pueden causar daños serios. Inspeccionamos impactos de granizo, levantamiento por viento y pérdida de granulado, y le damos un reporte escrito de lo que encontramos. Ese documento le sirve al momento de contactar a su aseguradora."
+        },
+        {
+          "title": "Inspecciones de Techo",
+          "body": "Una inspección detallada de las condiciones actuales de su techo. Útil antes de comprar una casa, después de una tormenta o cuando note algo que quiera que un profesional revise. Subimos al techo, documentamos los hallazgos y le damos una respuesta directa."
+        },
+        {
+          "title": "Recubrimientos de Techo",
+          "body": "Recubrimientos reflectivos aplicados sobre techos comerciales y planos existentes para extender su vida útil y reducir el calor. Una opción rentable cuando el sistema base todavía está en buenas condiciones pero empieza a mostrar desgaste."
+        }
+      ]
+    },
+    {
+      "title": "¿Cuáles son los problemas de techo más comunes en McAllen?",
+      "alt": false,
+      "kind": "text",
+      "paras": [
+        "McAllen tiene una mezcla de tipos de techo que va con ser una ciudad grande y en constante crecimiento. Las colonias más antiguas alrededor de la 2nd Street y la 10th Street tienen casas con techos de tejas de los años 80 y 90 que ya están en fecha de reemplazo. El norte de McAllen, en zonas como Sharyland y Las Cumbres, tiene casas más nuevas donde los daños por tormenta y las reparaciones son más comunes que los reemplazos completos.",
+        "En el sector comercial, los locales a lo largo de Nolana Ave, los edificios médicos cerca de South Texas Health System y las bodegas e industrias del norte de McAllen tienen techos planos o de baja inclinación. Una gotera en un techo plano durante horario de negocio es un problema real. Generalmente podemos agendar la inspección rápido.",
+        "El clima del Valle es difícil para los techos. El calor extremo acelera el desgaste de las tejas y las membranas. La exposición a los rayos UV deteriora los materiales más rápido que en regiones más frescas. Cuando llega un granizo fuerte a McAllen, los daños pueden ir desde lo cosmético hasta lo estructural. Vale la pena hacer una inspección después de cualquier tormenta significativa."
+      ]
+    },
+    {
+      "title": "¿Por qué los clientes de McAllen eligen Edel Roofing?",
+      "alt": true,
+      "kind": "proof",
+      "proof": [
+        {
+          "big": "Con Licencia",
+          "label": "RCAT #03-0489, contratista de techos con licencia en Texas, fianza y seguro"
+        },
+        {
+          "big": "4.8★",
+          "label": "más de 250 reseñas en Google de clientes residenciales y comerciales en todo el Valle"
+        },
+        {
+          "big": "Certificado",
+          "label": "CertainTeed SELECT ShingleMaster, el único en el Rio Grande Valley"
+        },
+        {
+          "big": "Desde 2003",
+          "label": "Más de 20 años atendiendo McAllen, Edinburg y todo el Rio Grande Valley"
+        }
+      ]
+    },
+    {
+      "title": "Preguntas sobre techos en McAllen",
+      "alt": false,
+      "kind": "faq",
+      "faqs": [
+        {
+          "q": "¿Edel Roofing atiende McAllen, TX?",
+          "a": "Sí. Atendemos McAllen regularmente para reemplazos residenciales, reparaciones y techos comerciales. Nuestra oficina está en Edinburg, a unos 15 minutos del centro de McAllen. Llame o agéndese en línea y coordinamos una inspección gratuita."
+        },
+        {
+          "q": "Mi negocio en McAllen tiene una gotera en el techo plano. ¿Lo pueden reparar?",
+          "a": "Sí. Reparamos techos planos y de baja inclinación en McAllen. Las goteras en techos planos son más difíciles de rastrear que las residenciales porque el agua se mueve antes de aparecer por dentro. Hacemos una inspección para encontrar el origen real del problema. Llame al (956) 422-3335 para agendar."
+        },
+        {
+          "q": "¿Cuánto cuesta un reemplazo de techo en McAllen?",
+          "a": "Para una casa típica en McAllen, un reemplazo completo de tejas generalmente está entre $8,000 y $18,000, dependiendo del tamaño del techo, la inclinación, el material actual y el tipo de teja que elija. Damos estimados por escrito antes de comenzar cualquier trabajo, sin compromiso. Llame o agéndese en línea para recibir un número real para su techo específico."
+        },
+        {
+          "q": "¿Ayudan con reclamaciones de seguro por daños de granizo o tormenta en McAllen?",
+          "a": "Podemos inspeccionar el daño y entregarle un reporte escrito de lo que encontramos. Ese documento le sirve al momento de presentar una reclamación con su aseguradora. No somos ajustadores públicos, pero le explicamos lo que observamos para que sepa qué presentarle a su compañía de seguros. Hemos trabajado con propietarios en McAllen después de varios eventos de granizo."
+        },
+        {
+          "q": "¿Cómo consigo un estimado de techos en McAllen?",
+          "a": "Llame al (956) 422-3335 o agéndese en línea arriba. Coordinamos una visita para inspeccionar su techo, tomar medidas y darle un estimado por escrito. Todos los estimados son gratuitos y sin compromiso."
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Obtenga un estimado de techos gratis en McAllen",
+    "line": "Inspeccionamos el techo, le damos un estimado por escrito y le explicamos sus opciones. Sin presión, sin compromiso.",
+    "buttons": [
+      {
+        "label": "Agendar Inspección Gratis",
+        "href": "/book-an-inspection"
+      },
+      {
+        "label": "Llamar (956) 422-3335",
+        "href": "tel:+19564223335"
+      }
+    ],
+    "sub": "EDEL Roofing and Construction, Edinburg, TX, atendiendo McAllen y todo el Rio Grande Valley"
+  },
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Inicio",
+              "item": "https://www.edelroofing.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Áreas de Servicio",
+              "item": "https://www.edelroofing.com/es-mx/service-areas"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Contratista de Techos McAllen TX",
+              "item": "https://www.edelroofing.com/roofing-mcallen-tx-es"
+            }
+          ]
+        },
+        {
+          "@type": "WebPage",
+          "name": "Contratista de Techos en McAllen, TX",
+          "url": "https://www.edelroofing.com/roofing-mcallen-tx-es",
+          "description": "Contratista de techos con licencia en McAllen, TX. Reemplazo residencial, techos comerciales y reparaciones. 4.8★, más de 250 reseñas. Estimado gratis: (956) 422-3335.",
+          "about": {
+            "@id": "https://www.edelroofing.com/#roofingcontractor"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Edel Roofing atiende McAllen, TX?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. Atendemos McAllen regularmente para reemplazos residenciales, reparaciones y techos comerciales. Nuestra oficina está en Edinburg, a unos 15 minutos del centro de McAllen. Llame o agéndese en línea para una inspección gratuita."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Mi negocio en McAllen tiene una gotera en el techo plano. ¿Lo pueden reparar?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. Reparamos techos planos y de baja inclinación en McAllen. Las goteras en techos planos son más difíciles de rastrear porque el agua se mueve antes de aparecer por dentro. Hacemos una inspección para encontrar el origen real. Llame al (956) 422-3335."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cuánto cuesta un reemplazo de techo en McAllen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Para una casa típica en McAllen, un reemplazo completo de tejas generalmente está entre $8,000 y $18,000, dependiendo del tamaño, la inclinación, el material actual y el tipo de teja. Damos estimados por escrito antes de comenzar cualquier trabajo, sin compromiso."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Ayudan con reclamaciones de seguro por daños de granizo o tormenta en McAllen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Podemos inspeccionar el daño y entregar un reporte escrito de lo que encontramos. No somos ajustadores públicos, pero le explicamos lo que observamos para que sepa qué presentarle a su aseguradora."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cómo consigo un estimado de techos en McAllen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Llame al (956) 422-3335 o agéndese en línea. Coordinamos una visita para inspeccionar su techo, tomar medidas y darle un estimado por escrito. Todos los estimados son gratuitos y sin compromiso."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "changes": [
+    "Spanish breadcrumb \"Áreas de Servicio\" linked the English /service-areas; now /es-mx/service-areas",
+    "card \"Reemplazo Residencial de Techo\" now links /reemplazo-de-techo-mcallen-tx (city pages had ~2 inlinks)",
+    "card \"Reparaciones de Techo\" now links /reparacion-de-techo-mcallen-tx (city pages had ~2 inlinks)",
+    "em/en dashes swapped for commas, colons, or hyphens",
+    "review counts (246/252) -> 250+ (match the homepage)"
+  ]
+}
