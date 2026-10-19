@@ -1,0 +1,62 @@
+---
+// /es-mx/about-us, rebuilt from the live Duda page (2026-10-18).
+// Copy changes vs live (same fixes as the EN twin):
+// - <title> and meta description were English (meta had the old
+//   (956) 867-0667 number); now Spanish with (956) 422-3335.
+// - "subraya nuestra dedicación" -> "muestra nuestra dedicación"
+//   (underscores, banned).
+// - "para embarcarse en su viaje para convertir las posibilidades en
+//   realidad" -> "para empezar a convertir las posibilidades en realidad"
+//   (embark, banned).
+// - "y nos guía. mientras creamos" (stray period) -> "y nos guía mientras
+//   creamos".
+// - Button "Ayudame a proteger mi hogar" -> "Ayúdeme a proteger mi hogar"
+//   (accent; usted). "Consigue una cotización" pointed at /es-mx#estimate (no
+//   such anchor); now "Pida una Cotización" opening the Roofle quote.
+// - "Legado de 25 años" kept as live (open question: vs "desde 2003").
+// - Added: breadcrumb, trust strip, quote/call buttons, hreflang.
+// - Image alt text in Spanish (live used English alts).
+import InnerPage from '../../layouts/InnerPage.astro';
+import hero from '../../assets/inner/edel-roofing-banner.webp';
+import truck from '../../assets/about-us/edel-truck.webp';
+import building from '../../assets/about-us/commercial-building.jpg';
+import install from '../../assets/about-us/roofing-install.jpeg';
+import kitchen from '../../assets/about-us/new-modern-kitchen.jpg';
+import house from '../../assets/about-us/modern-house.jpg';
+---
+<InnerPage
+  lang="es"
+  title="Acerca de EDEL Roofing & Construction | Techos, Remodelación y Construcción"
+  description="Conozca a EDEL Roofing & Construction Inc. en el Valle del Río Grande: su fuente de confianza para techos, remodelación y construcción. Llame al (956) 422-3335."
+  alternates={{ en: '/about-us', es: '/es-mx/about-us' }}
+  crumbs={[
+    { label: 'Inicio', href: '/es-mx' },
+    { label: 'Sobre Nosotros', href: '/es-mx/about-us' },
+  ]}
+  hero={{ eyebrow: 'Sobre Nuestra Compañía', title: 'Acerca de Edel Roofing & Construction Inc', bg: hero }}
+  intro={{
+    eyebrow: 'Nuestra Visión y Experiencia',
+    title: 'Construyendo sobre la visión y la pasión',
+    body: 'EDEL Roofing &amp; Construction Inc. se enorgullece de tener un legado de 25 años arraigado en la visión del fundador Eddie Elizondo. Con un compromiso duradero con la construcción de calidad y un servicio al cliente excepcional, nos hemos convertido en un nombre confiable en las comunidades del Valle del Río Grande. La dedicación de toda la vida de Eddie a la construcción ha sido nuestra piedra angular y continuamos brindando <a href="/es-mx/roof-repairs">soluciones de primer nivel</a> a nuestros valiosos clientes.',
+    cta: { label: 'Ayúdeme a Proteger mi Hogar', href: '/es-mx/contact-us' },
+    images: [
+      { src: truck, alt: 'Camioneta de Edel Roofing & Construction Inc' },
+      { src: building, alt: 'Edificio comercial' },
+      { src: install, alt: 'Instalación de techo' },
+      { src: kitchen, alt: 'Cocina moderna nueva' },
+      { src: house, alt: 'Casa moderna' },
+    ],
+  }}
+  band={{
+    title: 'Historia de EDEL Roofing & Construction Inc',
+    body: [
+      'EDEL Roofing &amp; Construction Inc. es un tributo a la visión y pasión de nuestro fundador, Eddie Elizondo. Con una conexión de toda la vida con la construcción, el viaje de Eddie desde trabajar junto a miembros de la familia hasta sus actividades educativas culminó en la creación de EDEL Roofing &amp; Construction Inc. Su determinación de proporcionar viviendas que resuenen con los sueños de sus clientes es el corazón de nuestra empresa y nos guía mientras creamos techos duraderos, remodelamos interiores y construimos casas desde cero.',
+      "EDEL Roofing &amp; Construction Inc. se ha convertido en un nombre confiable en las comunidades del Valle del Río Grande. Nuestra reputación se ha ganado a través de un firme compromiso de poner a los clientes en primer lugar, ser transparentes y honestos y garantizar que cada proyecto se desarrolle sin problemas. El reconocimiento que hemos recibido, incluidos los premios Reader's Choice de The Monitor y los premios Valley Morning Star Readers' Choice, muestra nuestra dedicación a la excelencia.",
+    ],
+  }}
+  closing={{
+    title: 'Su socio en la transformación',
+    body: 'En EDEL Roofing &amp; Construction Inc., entendemos que su hogar es un reflejo de sus aspiraciones. Ya sea que se trate de un techo resistente sobre su cabeza, un espacio recientemente remodelado o la casa de sus sueños realizada, estamos aquí para hacerlo realidad. Póngase en contacto con Eddie Elizondo y el equipo de EDEL hoy para empezar a convertir las posibilidades en realidad.',
+    cta: { label: 'Pida una Cotización', href: '/contact-us', roofle: true },
+  }}
+/>

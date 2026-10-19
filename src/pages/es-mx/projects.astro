@@ -1,0 +1,97 @@
+---
+// /es-mx/projects, rebuilt from the live Duda page (2026-10-18).
+// Same 52 photos in the same order as the live Spanish page (it has no Texas
+// Regional photos, unlike /projects), with the live alt text, which is in
+// English on live (flagged for the alt-text pass with /projects).
+// Copy changes vs live:
+// - <title> and meta description were English (meta had the old
+//   (956) 867-0667 number); now Spanish with (956) 422-3335.
+// - H1 "NUESTROS PROYECTOS" written in normal case (CSS uppercases it).
+// - Added: breadcrumb, trust strip, tap-to-enlarge viewer, closing call band
+//   (heading + line from the /es-mx homepage CTA), hreflang to /projects.
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import TrustStrip from '../../components/TrustStrip.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import ProjectGallery from '../../components/ProjectGallery.astro';
+import { breadcrumbSchema } from '../../data/schema';
+import hero from '../../assets/inner/edel-roofing-banner.webp';
+
+const order: [string, string][] = [
+  ['housing.webp', 'Housing'],
+  ['commercial-building.webp', 'Commercial Building'],
+  ['new-bathroom.webp', 'New Bathroom'],
+  ['renovated-bathroom.webp', 'Renovated Bathroom'],
+  ['backyard.jpeg', 'Backyard'],
+  ['modern-kitchen.webp', 'Modern Kitchen'],
+  ['edel-roofing-project.jpg', ''],
+  ['edel-roofing-project-2.jpg', ''],
+  ['edel-roofing-project-3.jpg', ''],
+  ['edel-truck.webp', ''],
+  ['roofing-construction.jpeg', ''],
+  ['modern-house.jpeg', ''],
+  ['roof-repair.jpeg', ''],
+  ['new-roof.webp', ''],
+  ['roofing-installation.webp', ''],
+  ['roofing-service.webp', ''],
+  ['house-roof.webp', ''],
+  ['modern-home.webp', ''],
+  ['roof-repair.webp', ''],
+  ['new-remodeled-home.webp', ''],
+  ['house-with-two-cars.jpg', ''],
+  ['blue-roof-house.jpg', ''],
+  ['huge-brick-house.jpg', 'Huge Brick House'],
+  ['huge-white-house-with-blue-roof-950c6530.jpg', 'Hugw White House With Blue Roof'],
+  ['brick-house-with-blue-roof.jpg', ''],
+  ['brown-house.jpg', ''],
+  ['big-brick-house.webp', ''],
+  ['yellow-mansion-blue-roof.jpg', ''],
+  ['blue-roof-brick-house.jpg', ''],
+  ['white-house.jpg', ''],
+  ['wing-daddy-sauce-house.jpg', ''],
+  ['brown-roof-house.jpg', ''],
+  ['mansion-roof-design.jpg', ''],
+  ['brown-roof-big-house.jpg', ''],
+  ['kitchen-with-island-design.jpg', ''],
+  ['huge-house-roof-design.jpeg', ''],
+  ['interior-design.jpg', ''],
+  ['black-roof-design.jpg', ''],
+  ['interior-house-design-4e3e3198.jpg', ''],
+  ['living-room-design.jpg', ''],
+  ['house-interior-design.jpg', ''],
+  ['indoor-design.jpg', ''],
+  ['kitchen-island-interior-design-888efe9d.jpg', ''],
+  ['blue-roof-house-design.jpeg', ''],
+  ['edel-roofing-pick-up-truck.jpeg', ''],
+  ['sample-roof-design.jpeg', ''],
+  ['bathroom-design.jpg', ''],
+  ['shower-area-bathroom.jpg', ''],
+  ['roof-design-brown.jpeg', ''],
+  ['work-in-progress-roof-repair.jpeg', ''],
+  ['house-with-swimming-pool.jpg', ''],
+  ['huge-white-house-with-blue-roof-e7aae6e5.jpg', ''],
+];
+const crumbs = [
+  { label: 'Inicio', href: '/es-mx' },
+  { label: 'Proyectos', href: '/es-mx/projects' },
+];
+---
+<Base
+  title="Nuestros Proyectos | EDEL Roofing & Construction Inc."
+  description="EDEL Roofing & Construction Inc. en el Valle del Río Grande: vea nuestros proyectos de techos, remodelación y construcción. ¡Llame hoy al (956) 422-3335!"
+  lang="es"
+  alternates={{ en: '/projects', es: '/es-mx/projects' }}
+  schema={[breadcrumbSchema(crumbs)]}
+>
+  <PageHero crumbs={crumbs} eyebrow="Galería" title="Nuestros Proyectos" bg={hero} lang="es" />
+  <TrustStrip lang="es" />
+
+  <ProjectGallery photos={order} lang="es" />
+
+  <CtaBand
+    lang="es"
+    title="Lo Tenemos Cubierto"
+    body="¿Listo para comenzar su proyecto de techado, remodelación o construcción? Comuníquese con Eddie Elizondo y el equipo de EDEL hoy. Hagamos realidad sus sueños."
+    cta={{ label: 'Contáctenos', href: '/es-mx/contact-us' }}
+  />
+</Base>

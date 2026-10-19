@@ -1,0 +1,57 @@
+---
+// /es-mx/home-construction, rebuilt from the live Duda page (2026-10-18).
+// Open question (same as EN): does Edel still sell home construction?
+// Copy changes vs live:
+// - <title> and meta description were English (meta had the old
+//   (956) 867-0667 number); now Spanish with (956) 422-3335.
+// - "Su opinión es crucial" -> "Su opinión importa" (banned word, as EN).
+// - tú -> usted where the page mixed them: "Elaborando tu visión" ->
+//   "Elaborando su visión", "Creando la casa de tus sueños" -> "sus sueños",
+//   button "Consigue una cotización" -> "Pida una Cotización".
+// - Headings written in normal case (CSS uppercases them, same look).
+// - "Más de 25 años" kept as live (open question).
+// - Added: breadcrumb, trust strip, quote/call buttons, hreflang.
+// - Image alt text in Spanish (live used English alts).
+import InnerPage from '../../layouts/InnerPage.astro';
+import hero from '../../assets/home-construction/modern-home.webp';
+import pool from '../../assets/home-construction/house-with-swimming-pool.jpg';
+import kitchen from '../../assets/home-construction/kitchen-construction.webp';
+---
+<InnerPage
+  lang="es"
+  title="Construcción de Casas | EDEL Roofing & Construction Inc."
+  description="EDEL Roofing & Construction Inc. en el Valle del Río Grande: construimos sueños con construcción de casas experta. ¡Llame hoy al (956) 422-3335!"
+  alternates={{ en: '/home-construction', es: '/es-mx/home-construction' }}
+  crumbs={[
+    { label: 'Inicio', href: '/es-mx' },
+    { label: 'Construcción de Casas', href: '/es-mx/home-construction' },
+  ]}
+  hero={{ eyebrow: 'Nuestros Servicios de Construcción', title: 'Construcción de Casas', bg: hero }}
+  intro={{
+    eyebrow: 'Construcción de Viviendas',
+    title: 'Construyendo sueños',
+    body: 'EDEL Roofing &amp; Construction es su socio para convertir la casa de sus sueños en realidad. Nuestros servicios de construcción de viviendas combinan diseño innovador, artesanía de calidad y atención al detalle para crear un espacio que encarna su visión, estilo de vida y aspiraciones.',
+    cta: { label: 'Contáctenos', href: '/es-mx/contact-us' },
+    images: [{ src: pool, alt: 'Casa con alberca' }],
+  }}
+  band={{
+    eyebrow: 'Construcción de Casas',
+    title: 'Elaborando su visión',
+    body: 'Desde la conceptualización inicial hasta el ladrillo final, nuestro equipo de expertos colabora estrechamente con usted para hacer realidad la casa de sus sueños. Entendemos que cada detalle importa, desde el diseño y los materiales hasta los toques finales. Ya sea una obra maestra moderna o un clásico atemporal, tenemos la experiencia para transformar sus ideas en una estructura tangible.',
+    cta: { label: 'Pida una Cotización', href: '/contact-us', roofle: true },
+    images: [{ src: kitchen, alt: 'Construcción de cocina' }],
+  }}
+  benefits={{
+    title: 'Beneficios clave de nuestros servicios de construcción',
+    items: [
+      { title: 'Experiencia y conocimientos', body: 'Con más de 25 años en la industria, nuestra experiencia se refleja en cada proyecto que emprendemos.' },
+      { title: 'Enfoque colaborativo', body: 'Creemos en el poder del trabajo en equipo. Su opinión importa y trabajamos estrechamente con usted durante todo el proceso de construcción.' },
+      { title: 'Artesanía e integridad', body: 'Nuestro compromiso con la excelencia y la transparencia garantiza que su hogar se construya con el máximo cuidado y precisión.' },
+    ],
+  }}
+  closing={{
+    title: 'Creando la casa de sus sueños',
+    body: 'La casa de sus sueños está a su alcance con EDEL Roofing &amp; Construction. Deje que nuestros servicios de construcción de viviendas sean la base de sus aspiraciones. Contáctenos hoy para discutir su proyecto y dar el primer paso hacia una casa que refleje su historia única.',
+    cta: { label: 'Contáctenos', href: '/es-mx/contact-us' },
+  }}
+/>

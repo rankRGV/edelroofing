@@ -1,0 +1,71 @@
+---
+// /es-mx/commercial-roofing, rebuilt from the live Duda page (2026-10-18).
+// Copy changes vs live:
+// - <title> and meta description were English (meta had the old
+//   (956) 867-0667 number); now Spanish with (956) 422-3335.
+// - H1 "TECHOS Comerciales" written in normal case (CSS uppercases it).
+// - "Servicios comprensivos" (means understanding) -> "Servicios completos".
+// - Button "Consigue una cotización" (tú) -> "Pida una Cotización".
+// - Dropped the Duda slider placeholders.
+// - "más de dos décadas" and "25 años" kept as live (open question).
+// - Added: links to the Spanish city commercial pages, breadcrumb, trust
+//   strip, quote/call buttons, hreflang to /commercial-roofing.
+// - Image alt text in Spanish (live used English alts).
+import InnerPage from '../../layouts/InnerPage.astro';
+import hero from '../../assets/commercial-roofing/roofing-construction.jpeg';
+import building from '../../assets/commercial-roofing/commercial-building.jpg';
+import commercial from '../../assets/commercial-roofing/commercial-roofing.jpeg';
+import repair from '../../assets/commercial-roofing/commercial-roofing-repair.jpeg';
+import repairing from '../../assets/commercial-roofing/repairing-commercial-roof.jpeg';
+---
+<InnerPage
+  lang="es"
+  title="Techos Comerciales | EDEL Roofing & Construction Inc."
+  description="EDEL Roofing & Construction Inc. en el Valle del Río Grande: su socio de confianza para techos comerciales. ¡Llame hoy al (956) 422-3335!"
+  alternates={{ en: '/commercial-roofing', es: '/es-mx/commercial-roofing' }}
+  crumbs={[
+    { label: 'Inicio', href: '/es-mx' },
+    { label: 'Techos Comerciales', href: '/es-mx/commercial-roofing' },
+  ]}
+  hero={{ eyebrow: 'Nuestros Servicios de Techado', title: 'Techos Comerciales', bg: hero }}
+  intro={{
+    eyebrow: 'Transformando Techos',
+    title: 'Sus expertos en techos comerciales de confianza',
+    body: 'En EDEL Roofing &amp; Construction Inc., aportamos más de dos décadas de dedicación y experiencia inquebrantables a la industria de techados comerciales. Entendemos que su propiedad comercial es una inversión importante y un techo en buen estado es esencial para proteger esa inversión. Ya sea que necesite una nueva instalación, reparación, mantenimiento o reemplazo de un techo comercial, somos su socio de confianza en las comunidades del Valle del Río Grande.',
+    cta: { label: 'Contáctenos', href: '/es-mx/contact-us' },
+    images: [{ src: building, alt: 'Edificio comercial' }],
+  }}
+  band={{
+    eyebrow: 'Instalación de Techo Comercial',
+    title: 'Nuestro Compromiso con la Calidad',
+    body: 'Con un legado de 25 años arraigado en la visión de nuestro fundador, Eddie Elizondo, estamos orgullosos de nuestro compromiso inquebrantable con la construcción de calidad y un servicio al cliente excepcional. Nuestro equipo de profesionales experimentados está dedicado a brindar el más alto nivel de mano de obra, utilizando materiales de primera calidad para garantizar la longevidad y confiabilidad de su sistema de techado comercial.',
+    cta: { label: 'Pida una Cotización', href: '/contact-us', roofle: true },
+    images: [
+      { src: commercial, alt: 'Techo comercial' },
+      { src: repair, alt: 'Reparación de techo comercial' },
+      { src: repairing, alt: 'Reparando un techo comercial' },
+    ],
+  }}
+  benefits={{
+    title: '¿Por qué elegir EDEL Roofing & Construction Inc. para sus necesidades de techado comercial?',
+    items: [
+      { title: 'Servicios completos', body: 'Ya sea que necesite una nueva instalación de techo plano, techo de TPO, techo de EPDM, <a href="/es-mx/roof-repairs">reparación</a>, mantenimiento o reemplazo de techo, brindamos una gama completa de servicios de techado comercial adaptados a sus necesidades específicas.' },
+      { title: 'Pericia', body: 'Nuestro equipo está formado por profesionales capacitados en techado que se especializan en proyectos de techado comercial de todos los tamaños y complejidades. Tenemos el conocimiento y la experiencia para afrontar cualquier desafío de techado comercial.' },
+      { title: 'Materiales de calidad', body: 'Nos asociamos con proveedores confiables para obtener materiales para techos de la más alta calidad, garantizando durabilidad y longevidad para su techo comercial.' },
+    ],
+  }}
+  spokes={{
+    title: 'Techado Comercial por Ciudad',
+    intro: 'Cada una de estas páginas cubre el techado comercial en una ciudad.',
+    links: [
+      { href: '/commercial-roofing-edinburg-tx-es', label: 'Techado Comercial en Edinburg, TX' },
+      { href: '/techado-comercial-mcallen-tx', label: 'Techado Comercial en McAllen, TX' },
+      { href: '/techado-comercial-mission-tx', label: 'Techado Comercial en Mission, TX' },
+    ],
+  }}
+  closing={{
+    title: 'Proteja su propiedad comercial',
+    body: 'Proteja su propiedad comercial con una solución para techos confiable y duradera. Comuníquese con EDEL Roofing &amp; Construction Inc. hoy para analizar sus necesidades de techado comercial. Nuestro equipo está listo para brindarle una consulta y un presupuesto gratuitos. Confíe en nosotros para brindarle soluciones de techos de primer nivel para su propiedad comercial en las comunidades del Valle del Río Grande.',
+    cta: { label: 'Contáctenos', href: '/es-mx/contact-us' },
+  }}
+/>

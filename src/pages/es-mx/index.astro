@@ -1,0 +1,30 @@
+---
+// /es-mx, the Spanish homepage, rebuilt from the live Duda page (2026-10-18).
+// Same layout as / (HomeBody.astro). Copy and every change vs live are listed
+// at the top of src/data/home.ts (homeEs). <title> was English on live; now
+// Spanish. Meta description was English with the old (956) 867-0667 number.
+// The live page's Duda contact form is kept but NOT connected (recipient
+// encrypted in Duda) until Eddie confirms where it should send.
+import Base from '../../layouts/Base.astro';
+import HomeBody from '../../components/HomeBody.astro';
+import { site } from '../../data/site';
+import { homeEs as copy } from '../../data/home';
+
+const strip = (html: string) => html.replace(/<[^>]+>/g, '');
+const schema = [
+  { '@context': 'https://schema.org', '@type': 'WebSite', name: site.legalName, url: 'https://www.edelroofing.com/es-mx', inLanguage: 'es' },
+  // RoofingContractor block comes from Base (src/data/schema.ts).
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: copy.faq.items.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: strip(f.a) },
+    })),
+  },
+];
+---
+<Base title={copy.title} description={copy.description} lang="es" schema={schema} alternates={{ en: '/', es: '/es-mx' }}>
+  <HomeBody copy={copy} />
+</Base>

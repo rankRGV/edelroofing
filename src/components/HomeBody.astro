@@ -1,0 +1,583 @@
+---
+// Homepage body, shared by / (EN) and /es-mx (ES). Layout and styles moved
+// here unchanged from src/pages/index.astro (2026-10-18); copy comes from
+// src/data/home.ts.
+import { Image, getImage } from 'astro:assets';
+import LeadForm from './LeadForm.astro';
+import type { HomeCopy } from '../data/home';
+import Icon from './Icon.astro';
+import { site, addressLine } from '../data/site';
+
+
+import heroRoof from '../assets/home/hero-roof.jpeg';
+import heroProjects from '../assets/home/hero-projects.png';
+import texasRegional from '../assets/home/texas-regional.webp';
+import truckHouse from '../assets/home/truck-house.jpeg';
+import residential from '../assets/home/residential.jpg';
+import commercial from '../assets/home/commercial.jpeg';
+import repairs from '../assets/home/repairs.jpg';
+import ctaBg from '../assets/home/cta-background.webp';
+import certainteed from '../assets/badges/certainteed-select-shinglemaster.png';
+import owensCorning from '../assets/badges/owens-corning-preferred.webp';
+import rcat from '../assets/badges/rcat.webp';
+import nrca from '../assets/badges/nrca.webp';
+import bbb from '../assets/badges/bbb.webp';
+import google5 from '../assets/badges/google-5-star.png';
+import readers2019 from '../assets/badges/readers-choice-2019.jpg';
+import readers2018 from '../assets/badges/readers-choice-2018.jpg';
+
+interface Props { copy: HomeCopy }
+const { copy: c } = Astro.props;
+const contact = c.lang === 'es' ? '/es-mx/contact-us' : '/contact-us';
+
+const bg = async (src: ImageMetadata, width = 1920) =>
+  (await getImage({ src, width, format: 'webp', quality: 72 })).src;
+const heroBg = await bg(heroRoof);
+const truckBg = await bg(truckHouse);
+const ctaBgSrc = await bg(ctaBg);
+
+const serviceImgs = [residential, commercial, repairs];
+const whyIcons = ['badge', 'star', 'clipboard'] as const;
+
+const areas: { name: string; href?: string; home?: boolean }[] = [
+  { name: 'Edinburg', href: c.areas.links.Edinburg, home: true },
+  { name: 'McAllen', href: c.areas.links.McAllen },
+  { name: 'Mission', href: c.areas.links.Mission },
+  { name: 'Pharr' },
+  { name: 'Weslaco' },
+  { name: 'Harlingen' },
+  { name: 'Brownsville' },
+  { name: 'Rio Grande City' },
+];
+
+const badges = [
+  { src: owensCorning, alt: 'Owens Corning Preferred Contractor', href: 'https://www.owenscorning.com/en-us' },
+  { src: rcat, alt: 'Roofing Contractors Association of Texas' },
+  { src: nrca, alt: 'National Roofing Contractors Association' },
+  { src: bbb, alt: 'BBB' },
+  { src: google5, alt: 'Google 5 Star' },
+  { src: readers2019, alt: "Readers' Choice Award 2019" },
+  { src: readers2018, alt: "Readers' Choice Award 2018" },
+];
+
+---
+  {/* Hero: rating, H1, two reassurances, two sentences, quote box. */}
+  <section class="hero" style={`--bg: url(${heroBg})`}>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <a class="rating" href={site.googleMaps} rel="noopener" target="_blank">
+          <span class="stars" aria-hidden="true">{[1, 2, 3, 4, 5].map(() => <Icon name="star" />)}</span>
+          <span set:html={c.rating} />
+        </a>
+        <h1>{c.h1}</h1>
+        <ul class="assure">
+          <li><Icon name="clipboard" /><Fragment set:html={c.assure[0]} /></li>
+          <li><Icon name="badge" />{c.assure[1]}</li>
+        </ul>
+        <p class="hero-text" set:html={c.heroText} />
+      </div>
+
+      <div class="hero-side">
+        <Image
+          class="hero-art"
+          src={heroProjects}
+          alt={c.heroArtAlt}
+          widths={[320, 480, 640]}
+          sizes="420px"
+          loading="eager"
+        />
+        <div class="quote-card">
+          <p class="pill"><span class="dot"></span>{c.quote.pill}</p>
+          <h2>{c.quote.title}</h2>
+          <p>{c.quote.body}</p>
+          <a class="btn btn--big" href="/contact-us" data-roofle-open>{c.quote.button}</a>
+          <a class="btn btn--ghost btn--big" href={site.phoneHref}><Icon name="phone" />{c.quote.call} {site.phone}</a>
+          <p class="hablamos">{c.quote.note}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Protecting your roof + reviews */}
+  <section class="section intro">
+    <div class="wrap center">
+      <p class="eyebrow">{c.intro.eyebrow}</p>
+      <h2 set:html={c.intro.title} />
+      <p class="lead">{c.intro.lead}</p>
+      <a class="btn" href={contact}>{c.intro.button}</a>
+    </div>
+    <div class="wrap reviews">
+      <div class="embedsocial-widget" data-ref="3334f1835841370bbe53f44efa6b8f74"></div>
+    </div>
+    {c.intro.copy && (
+      <div class="wrap">
+        <p class="intro-copy" set:html={c.intro.copy} />
+      </div>
+    )}
+  </section>
+
+  {/* Specialist */}
+  <section class="section soft">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow" set:html={c.specialist.eyebrow} />
+        <h2>{c.specialist.title}</h2>
+        <p set:html={c.specialist.body} />
+        <ul class="features">
+          <li><Icon name="roof" /><span>{c.specialist.features[0]}</span></li>
+          <li><Icon name="users" /><span>{c.specialist.features[1]}</span></li>
+          <li><Icon name="shield" /><span set:html={c.specialist.features[2]} /></li>
+        </ul>
+        <a class="btn" href={c.lang === 'es' ? '/es-mx/about-us' : '/about-us'}>{c.specialist.button}</a>
+      </div>
+      <Image
+        class="rounded"
+        src={texasRegional}
+        alt={c.specialist.imgAlt}
+        widths={[480, 760, 1000]}
+        sizes="(max-width: 900px) 100vw, 560px"
+      />
+    </div>
+  </section>
+
+  {c.form && (
+    <section class="section">
+      <div class="wrap form-wrap">
+        <h2>{c.form.title}</h2>
+        <LeadForm id="home-contact" lang={c.lang} submit={c.form.submit} fields={c.form.fields} />
+      </div>
+    </section>
+  )}
+
+  {/* Why choose */}
+  <section class="section photo-band" style={`--bg: url(${truckBg})`}>
+    <div class="wrap center">
+      <h2>{c.why.title}</h2>
+      <p class="sub">{c.why.sub}</p>
+      <div class="why-grid">
+        {c.why.cards.map((card, i) => (
+          <div>
+            <Icon name={whyIcons[i]} />
+            <h3 set:html={card.title} />
+            <p set:html={card.body} />
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* Services */}
+  <section class="section">
+    <div class="wrap center">
+      <h2>{c.services.title}</h2>
+      <p class="lead" set:html={c.services.lead} />
+    </div>
+    <div class="wrap services">
+      {c.services.items.map((s, i) => (
+        <article class:list={['service', { flip: i % 2 === 1 }]}>
+          <Image src={serviceImgs[i]} alt={s.alt} widths={[400, 640, 900]} sizes="(max-width: 900px) 100vw, 520px" class="rounded" />
+          <div>
+            <p class="eyebrow">{s.eyebrow}</p>
+            <h3>{s.title}</h3>
+            <p>{s.body}</p>
+            <a class="btn" href={s.href}>{c.services.button}</a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  {/* Areas */}
+  <section class="section warm">
+    <div class="wrap center">
+      <p class="eyebrow">{c.areas.eyebrow}</p>
+      <h2>{c.areas.title}</h2>
+      <p class="lead">{c.areas.lead}</p>
+      <ul class="areas">
+        {areas.map((a) => (
+          <li>
+            {a.href ? (
+              <a class:list={['area', { home: a.home }]} href={a.href}>
+                {a.name}{a.home && <small>{c.areas.homeLabel}</small>}
+              </a>
+            ) : (
+              <span class="area">{a.name}</span>
+            )}
+          </li>
+        ))}
+      </ul>
+      <a class="btn" href={c.areas.buttonHref}>{c.areas.button}</a>
+      <p class="small" set:html={c.areas.small} />
+    </div>
+  </section>
+
+  {/* Why trust */}
+  <section class="section photo-band short" style={`--bg: url(${truckBg})`}>
+    <div class="wrap center narrow">
+      <h2>{c.trust.title}</h2>
+      <p set:html={c.trust.body} />
+    </div>
+  </section>
+  <section class="badges-band">
+    <ul class="wrap badges">
+      {badges.map((b, i) => (
+        <li>
+          {b.href ? (
+            <a href={b.href} rel="noopener" target="_blank"><Image src={b.src} alt={c.badgeAlts[i]} height={90} /></a>
+          ) : (
+            <Image src={b.src} alt={c.badgeAlts[i]} height={90} />
+          )}
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  {/* Certified + map */}
+  <section class="section soft">
+    <div class="wrap split">
+      <div>
+        <h2>{c.certified.title}</h2>
+        <p set:html={c.certified.body} />
+        <Image src={certainteed} alt="CertainTeed Select ShingleMaster" width={160} />
+      </div>
+      <div>
+        <div class="map">
+          <iframe
+            title="Map to Edel Roofing & Construction in Edinburg, TX"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d23667.384708486312!2d-98.2055292!3d26.2596735!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8665a146c4b26d97%3A0x676b08ea4b4d1f8c!2sEDEL%20Roofing%20and%20Construction%20Inc.!5e1!3m2!1sen!2sus!4v1747828235672!5m2!1sen!2sus"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+        <p class="small">{addressLine}</p>
+        <p class="small" set:html={c.certified.more} />
+      </div>
+    </div>
+  </section>
+
+  {/* CTA */}
+  <section class="cta" style={`--bg: url(${ctaBgSrc})`}>
+    <div class="wrap cta-row">
+      <div>
+        <h2>{c.cta.title}</h2>
+        <p set:html={c.cta.body} />
+      </div>
+      <a class="btn btn--light" href={site.phoneHref}>{c.cta.button} {site.phone}</a>
+    </div>
+  </section>
+
+  {/* FAQ */}
+  <section class="section warm">
+    <div class="wrap faq-wrap">
+      <div class="center">
+        <p class="eyebrow">{c.faq.eyebrow}</p>
+        <h2>{c.faq.title}</h2>
+      </div>
+      <div class="faqs">
+        {c.faq.items.map((f) => (
+          <details>
+            <summary>{f.q}<Icon name="plus" /></summary>
+            <p set:html={f.a} />
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+
+<script is:inline>
+  (function (d, s, id) {
+    if (d.getElementById(id)) return;
+    var js = d.createElement(s);
+    js.id = id;
+    js.src = 'https://embedsocial.com/cdn/aht.js';
+    d.getElementsByTagName('head')[0].appendChild(js);
+  })(document, 'script', 'EmbedSocialWidgetScript');
+</script>
+
+<style>
+  .section { padding-block: 88px; }
+  .soft { background: var(--bg-soft); }
+  .warm { background: var(--bg-warm); }
+  .center { text-align: center; }
+  .center .eyebrow { justify-content: center; }
+  .narrow { max-width: 860px; }
+  .lead { max-width: 62ch; margin: 0 auto 1.6rem; }
+  .small { font-size: 14px; margin-top: 1rem; }
+  .rounded { border-radius: var(--radius); width: 100%; object-fit: cover; }
+  h2 {
+    font-size: clamp(32px, 4.4vw, 52px);
+    text-transform: uppercase;
+  }
+
+  /* Hero */
+  .hero {
+    position: relative;
+    isolation: isolate;
+    color: var(--white);
+    background: var(--maroon-dark) var(--bg) center / cover no-repeat;
+    padding-block: 56px 72px;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(100deg, rgba(45, 0, 1, 0.92) 0%, rgba(45, 0, 1, 0.82) 50%, rgba(45, 0, 1, 0.45) 100%);
+  }
+  /* Grid children may shrink, so the longer Spanish rating line wraps. */
+  .hero-copy, .hero-side { min-width: 0; }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 48px;
+    align-items: center;
+  }
+  .rating {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 16px;
+    color: var(--white);
+    text-decoration: none;
+    margin-bottom: 18px;
+  }
+  .rating:hover span:last-child { text-decoration: underline; }
+  .stars { display: inline-flex; gap: 2px; color: #f5b301; }
+  .stars :global(svg) { width: 22px; height: 22px; }
+  .hero h1 {
+    font-size: clamp(38px, 4.8vw, 60px);
+    font-weight: 600;
+    line-height: 1.08;
+    color: var(--white);
+    margin-bottom: 22px;
+    max-width: 16ch;
+  }
+  .assure { list-style: none; margin: 0 0 20px; padding: 0; display: grid; gap: 10px; }
+  .assure li { display: flex; align-items: center; gap: 10px; font-size: 16px; font-weight: 600; }
+  .assure :global(svg) { width: 22px; height: 22px; flex: none; color: #f2c4c8; }
+  .hero-text { font-size: 17px; max-width: 46ch; color: rgba(255, 255, 255, 0.9); margin: 0; }
+
+  .hero-side { position: relative; display: grid; justify-items: center; }
+  .hero-art { width: 100%; max-width: 380px; margin-bottom: -110px; }
+  .quote-card {
+    position: relative;
+    width: 100%;
+    max-width: 440px;
+    background: var(--white);
+    color: var(--ink);
+    border-radius: 14px;
+    padding: 26px 26px 20px;
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.28);
+  }
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 12px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: #f6eaeb;
+    color: var(--maroon);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--maroon-mid); }
+  .quote-card h2 {
+    font-size: 30px;
+    text-transform: none;
+    color: var(--maroon);
+    margin-bottom: 8px;
+  }
+  .quote-card p { font-size: 15px; }
+  .btn--big { display: flex; width: 100%; min-height: 56px; font-size: 16px; gap: 8px; margin-top: 10px; }
+  .btn--big :global(svg) { width: 18px; height: 18px; }
+  .hablamos { margin: 12px 0 0; text-align: center; font-size: 14px; font-weight: 600; color: var(--muted); }
+
+  /* Intro + reviews */
+  .reviews { margin-top: 48px; min-height: 240px; }
+  .intro-copy { max-width: 900px; margin: 40px auto 0; text-align: center; font-size: 16px; }
+
+  /* Split */
+  .split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: center;
+  }
+  .features {
+    list-style: none;
+    padding: 0;
+    margin: 28px 0 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .features li { display: flex; flex-direction: column; gap: 10px; font-family: var(--font-head); font-size: 20px; line-height: 1.2; color: var(--ink); }
+  .features :global(svg) { width: 34px; height: 34px; color: var(--maroon); }
+
+  /* Photo band */
+  .photo-band {
+    position: relative;
+    color: var(--white);
+    background: var(--maroon-dark) var(--bg) center / cover no-repeat;
+    isolation: isolate;
+  }
+  .photo-band::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(79, 0, 0, 0.78);
+    z-index: -1;
+  }
+  .photo-band h2, .photo-band h3 { color: var(--white); }
+  .photo-band .sub { letter-spacing: 0.15em; text-transform: uppercase; font-size: 14px; margin-bottom: 48px; }
+  .photo-band.short { padding-block: 72px; }
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+  }
+  .why-grid h3 { font-size: 30px; text-transform: uppercase; margin-top: 14px; }
+  .why-grid :global(svg) { width: 40px; height: 40px; }
+  .why-grid p { max-width: 34ch; margin-inline: auto; }
+
+  /* Services */
+  .services { display: grid; gap: 64px; margin-top: 40px; }
+  .service {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: center;
+  }
+  .service :global(img) { aspect-ratio: 465 / 400; }
+  .service.flip > :global(img) { order: 2; }
+  .service h3 { font-size: clamp(30px, 3.6vw, 44px); text-transform: uppercase; }
+
+  /* Areas */
+  .areas {
+    list-style: none;
+    padding: 0;
+    margin: 32px auto 32px;
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+  }
+  .area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 78px;
+    padding: 12px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--white);
+    font-weight: 600;
+    color: var(--ink-strong);
+    text-decoration: none;
+  }
+  a.area:hover { border-color: var(--maroon); color: var(--maroon); }
+  .area.home { background: var(--maroon-mid); border-color: var(--maroon-mid); color: var(--white); }
+  .area small { font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 4px; }
+
+  /* Badges */
+  .badges-band { background: var(--white); padding-block: 36px; border-bottom: 1px solid var(--line); }
+  .badges {
+    list-style: none;
+    margin-block: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 28px 44px;
+  }
+  .badges :global(img) { height: 72px; width: auto; }
+
+  /* Map */
+  .map { aspect-ratio: 4 / 3; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); }
+  .map iframe { width: 100%; height: 100%; border: 0; }
+
+  /* CTA */
+  .cta {
+    position: relative;
+    isolation: isolate;
+    color: var(--white);
+    background: var(--maroon) var(--bg) center / cover no-repeat;
+    padding-block: 64px;
+  }
+  .cta::before { content: ''; position: absolute; inset: 0; background: rgba(79, 0, 0, 0.8); z-index: -1; }
+  .cta-row { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+  .cta h2 { color: var(--white); font-size: clamp(30px, 3.6vw, 44px); }
+  .cta p { max-width: 60ch; margin: 0; }
+  .cta .btn { flex: none; }
+
+  /* FAQ */
+  .faq-wrap { max-width: 900px; }
+  .form-wrap { max-width: 760px; }
+  .form-wrap h2 { text-align: center; margin-bottom: 24px; }
+  .faqs { display: grid; gap: 12px; margin-top: 28px; }
+  details {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--maroon);
+    border-radius: var(--radius);
+  }
+  summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--ink-strong);
+    list-style: none;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary :global(svg) { width: 18px; height: 18px; color: var(--maroon); flex: none; transition: transform 0.15s ease; }
+  details[open] summary :global(svg) { transform: rotate(45deg); }
+  details p { padding: 0 20px 18px; margin: 0; }
+  details p :global(a) { color: var(--maroon); font-weight: 600; }
+
+  @media (max-width: 900px) {
+    .section { padding-block: 60px; }
+    .hero { padding-block: 28px 40px; }
+    .hero::before { background: rgba(45, 0, 1, 0.85); }
+    .hero-grid, .split, .service { grid-template-columns: 1fr; gap: 32px; }
+    .hero-grid { gap: 24px; }
+    .hero-art { display: none; }
+    .quote-card { max-width: none; }
+  }
+  @media (max-width: 600px) {
+    /* Keep the quote button on the first phone screen. */
+    .hero { padding-block: 18px 32px; }
+    .hero-grid { gap: 18px; }
+    .rating { gap: 8px; font-size: 14px; margin-bottom: 12px; flex-wrap: nowrap; }
+    .stars :global(svg) { width: 16px; height: 16px; }
+    .hero h1 { font-size: 32px; margin-bottom: 14px; max-width: none; }
+    .hero h1:lang(es) { font-size: 28px; }
+    .assure { gap: 6px; margin-bottom: 12px; }
+    .assure li { font-size: 14px; }
+    .assure :global(svg) { width: 18px; height: 18px; }
+    .hero-text { font-size: 14px; line-height: 1.6; }
+    .quote-card { padding: 18px 18px 14px; }
+    .pill { font-size: 11px; padding: 5px 12px; margin-bottom: 8px; }
+    .quote-card h2 { font-size: 24px; margin-bottom: 4px; }
+    .quote-card p { font-size: 14px; margin-bottom: 0.5em; }
+    .btn--big { min-height: 52px; padding-inline: 14px; }
+    .quote-card a[href^='tel:'] { white-space: normal; }
+    .service.flip > :global(img) { order: 0; }
+    .why-grid { grid-template-columns: 1fr; }
+    .areas { grid-template-columns: repeat(2, 1fr); }
+    .cta-row { flex-direction: column; align-items: flex-start; }
+  }
+  @media (max-width: 560px) {
+    .features { grid-template-columns: 1fr; }
+    .features li { flex-direction: row; align-items: center; }
+    .badges :global(img) { height: 56px; }
+  }
+</style>

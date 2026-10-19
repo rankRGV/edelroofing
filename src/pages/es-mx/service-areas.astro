@@ -1,0 +1,247 @@
+---
+// /es-mx/service-areas, rebuilt from the live Duda page (source of truth:
+// duda-pages/service-areas-es.html, 2026-10-18).
+// Copy changes vs live:
+// - <title> was "Áreas de servicio"; no meta description on live. Both added.
+// - "252 reseñas en Google" -> "Más de 250 reseñas en Google" (match EN).
+// - Edinburg card linked "/es-mx/" (trailing slash); now /es-mx.
+// - CTA "Reciba un Estimado Gratis" went to /es-mx/contact-us (live); kept.
+// - Added: McAllen and Mission Spanish page lists (their city pages had ~2
+//   inlinks each), breadcrumb, quote/call buttons in the hero, hreflang to
+//   /service-areas, WebPage + BreadcrumbList schema like EN.
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import SpokeLinks from '../../components/SpokeLinks.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import Icon from '../../components/Icon.astro';
+import { site } from '../../data/site';
+import { breadcrumbSchema, SITE_URL } from '../../data/schema';
+import hero from '../../assets/home/truck-house.jpeg';
+
+const crumbs = [
+  { label: 'Inicio', href: '/es-mx' },
+  { label: 'Áreas de Servicio', href: '/es-mx/service-areas' },
+];
+
+const cities: { name: string; line: string; href?: string; home?: boolean }[] = [
+  { name: 'Edinburg', line: 'Reemplazo de techo, reparaciones y techado comercial en Edinburg.', href: '/es-mx', home: true },
+  { name: 'McAllen', line: 'Techado en McAllen, la ciudad más grande del Valle.', href: '/roofing-mcallen-tx-es' },
+  { name: 'Mission', line: 'Techado en Mission y el área de Sharyland.', href: '/roofing-mission-tx-es' },
+  { name: 'Pharr', line: 'Techado en Pharr y el centro del Valle.' },
+  { name: 'Weslaco', line: 'Techado en Weslaco y el Valle medio.' },
+  { name: 'Harlingen', line: 'Techado en Harlingen y el condado de Cameron.' },
+  { name: 'Brownsville', line: 'Techado en Brownsville y el sur del Valle.' },
+  { name: 'Rio Grande City', line: 'Techado en Rio Grande City y el condado de Starr.' },
+];
+
+const services = [
+  { href: '/es-mx/residential-roofing', title: 'Reemplazo de Techo Residencial', line: 'Techos nuevos y reemplazos completos para hogares en todo el Valle.' },
+  { href: '/es-mx/commercial-roofing', title: 'Techado Comercial', line: 'Sistemas de techo plano y de baja pendiente para negocios y propiedades.' },
+  { href: '/es-mx/roof-repairs', title: 'Reparación de Techos', line: 'Reparación de goteras, daños por tormenta e inspecciones.' },
+  { href: '/gutters-edinburg-tx-es', title: 'Canalones', line: 'Instalación de canalones sin costuras, reparación y protectores.' },
+];
+
+const proof = [
+  { big: '4.8★', label: 'Más de 250 reseñas en Google' },
+  { big: 'Con Licencia', label: `${site.license}, con fianza y seguro` },
+  { big: 'Certificado', label: 'El único CertainTeed Select ShingleMaster del Valle' },
+  { big: 'Financiamiento', label: 'Opciones para reemplazo y reparaciones' },
+];
+
+const schema = [
+  breadcrumbSchema(crumbs),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: 'Áreas de Servicio de Techado en el Valle del Río Grande',
+    url: `${SITE_URL}/es-mx/service-areas`,
+    inLanguage: 'es',
+    description:
+      'Edel Roofing & Construction da servicio en Edinburg, McAllen, Mission, Pharr, Weslaco, Harlingen, Brownsville y Rio Grande City con reemplazo de techo, reparaciones y techado comercial.',
+    about: { '@id': SITE_URL },
+  },
+];
+---
+<Base
+  title="Áreas de Servicio en el Valle del Río Grande | Edel Roofing & Construction"
+  description="Contratista de techos con licencia en Edinburg, McAllen, Mission, Pharr, Weslaco, Harlingen, Brownsville y Rio Grande City. Estimados gratis: (956) 422-3335."
+  lang="es"
+  alternates={{ en: '/service-areas', es: '/es-mx/service-areas' }}
+  schema={schema}
+>
+  <PageHero
+    crumbs={crumbs}
+    eyebrow="Áreas que Atendemos"
+    title="Áreas de Servicio de Techado en el Valle del Río Grande"
+    lead="Edel Roofing & Construction está en Edinburg y da servicio en todo el Valle del Río Grande: reemplazo de techo residencial, techado comercial y reparaciones para hogares y negocios. Elija su ciudad."
+    bg={hero}
+    lang="es"
+  />
+
+  <section class="section">
+    <ul class="wrap cities">
+      {cities.map((c) => (
+        <li>
+          {c.href ? (
+            <a class:list={['city', { home: c.home }]} href={c.href}>
+              <span class="name">{c.name}{c.home && <small>Sede principal</small>}</span>
+              <span class="line">{c.line}</span>
+              <Icon name="arrow" />
+            </a>
+          ) : (
+            <div class="city">
+              <span class="name">{c.name}</span>
+              <span class="line">{c.line}</span>
+            </div>
+          )}
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <SpokeLinks
+    title="Páginas de techos en Edinburg"
+    soft
+    links={[
+      { href: '/reparacion-de-techo-edinburg-tx', label: 'Reparación de Techo en Edinburg' },
+      { href: '/reemplazo-de-techo-en-edinburg-tx', label: 'Reemplazo de Techo en Edinburg' },
+      { href: '/commercial-roofing-edinburg-tx-es', label: 'Techado Comercial en Edinburg' },
+      { href: '/gutters-edinburg-tx-es', label: 'Canalones en Edinburg' },
+    ]}
+  />
+  <SpokeLinks
+    title="Páginas de techos en McAllen"
+    links={[
+      { href: '/roofing-mcallen-tx-es', label: 'Contratista de Techos en McAllen' },
+      { href: '/reparacion-de-techo-mcallen-tx', label: 'Reparación de Techo en McAllen' },
+      { href: '/reemplazo-de-techo-mcallen-tx', label: 'Reemplazo de Techo en McAllen' },
+      { href: '/techado-comercial-mcallen-tx', label: 'Techado Comercial en McAllen' },
+    ]}
+  />
+  <SpokeLinks
+    title="Páginas de techos en Mission"
+    soft
+    links={[
+      { href: '/roofing-mission-tx-es', label: 'Contratista de Techos en Mission' },
+      { href: '/reparacion-de-techo-mission-tx', label: 'Reparación de Techo en Mission' },
+      { href: '/reemplazo-de-techo-mission-tx', label: 'Reemplazo de Techo en Mission' },
+      { href: '/techado-comercial-mission-tx', label: 'Techado Comercial en Mission' },
+    ]}
+  />
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Lo Que Hacemos en Cada Ciudad</h2>
+      <ul class="services">
+        {services.map((s) => (
+          <li>
+            <a href={s.href}>
+              <span class="title">{s.title}</span>
+              <span class="line">{s.line}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="wrap">
+      <h2>Por Qué Eligen a Edel en Todo el Valle</h2>
+      <ul class="proof">
+        {proof.map((p) => (
+          <li>
+            <span class="big">{p.big}</span>
+            {p.href ? <a href={p.href}>{p.label}</a> : <span>{p.label}</span>}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <CtaBand
+    lang="es"
+    title="¿No está seguro si cubrimos su área?"
+    body="Si está en el Valle del Río Grande, podemos ayudar. Llame para un estimado gratis."
+    cta={{ label: 'Reciba un Estimado Gratis', href: '/es-mx/contact-us' }}
+  />
+</Base>
+
+<style>
+  .section { padding-block: 72px; }
+  .soft { background: var(--bg-soft); }
+  h2 { font-size: clamp(28px, 3.4vw, 40px); text-transform: uppercase; }
+
+  .cities {
+    list-style: none;
+    margin-block: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+  }
+  .city {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: 100%;
+    padding: 20px 20px 22px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--white);
+    text-decoration: none;
+  }
+  .name { display: flex; align-items: center; gap: 10px; font-family: var(--font-head); font-size: 26px; color: var(--ink-strong); line-height: 1.1; }
+  .name small { font-family: var(--font-body); font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
+  .line { font-size: 14px; color: var(--muted); padding-right: 24px; }
+  a.city :global(svg) { position: absolute; right: 16px; bottom: 18px; width: 18px; height: 18px; color: var(--maroon); }
+  a.city:hover { border-color: var(--maroon); }
+  a.city:hover .name { color: var(--maroon); }
+  .city.home { background: var(--maroon-mid); border-color: var(--maroon-mid); }
+  .city.home .name, .city.home .line, .city.home :global(svg) { color: var(--white); }
+
+  .services {
+    list-style: none;
+    margin: 24px 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+  }
+  .services a {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: 100%;
+    padding: 22px;
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--maroon);
+    border-radius: var(--radius);
+    text-decoration: none;
+  }
+  .services a:hover { border-color: var(--maroon); }
+  .services .title { font-weight: 700; color: var(--maroon); }
+  .services .line { padding: 0; }
+
+  .proof {
+    list-style: none;
+    margin: 24px 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+  }
+  .proof li { min-width: 0; overflow-wrap: anywhere; padding: 22px; background: var(--white); border-radius: var(--radius); border: 1px solid var(--line); text-align: center; }
+  .proof .big { display: block; font-family: var(--font-head); font-size: 32px; font-weight: 600; color: var(--maroon); line-height: 1.1; margin-bottom: 6px; }
+  .proof a { color: var(--maroon); font-weight: 600; }
+
+  @media (max-width: 900px) {
+    .section { padding-block: 56px; }
+    .cities, .services, .proof { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 480px) {
+    .cities, .services { grid-template-columns: 1fr; }
+    .proof li { padding: 16px 12px; }
+    .proof .big { font-size: 22px; }
+  }
+</style>

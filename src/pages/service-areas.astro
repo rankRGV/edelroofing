@@ -233,7 +233,7 @@ const schema = [
     grid-template-columns: repeat(4, 1fr);
     gap: 14px;
   }
-  .proof li { padding: 22px; background: var(--white); border-radius: var(--radius); border: 1px solid var(--line); text-align: center; }
+  .proof li { min-width: 0; overflow-wrap: anywhere; padding: 22px; background: var(--white); border-radius: var(--radius); border: 1px solid var(--line); text-align: center; }
   .proof .big { display: block; font-family: var(--font-head); font-size: 32px; font-weight: 600; color: var(--maroon); line-height: 1.1; margin-bottom: 6px; }
   .proof a { color: var(--maroon); font-weight: 600; }
 
@@ -243,5 +243,7 @@ const schema = [
   }
   @media (max-width: 480px) {
     .cities, .services { grid-template-columns: 1fr; }
+    .proof li { padding: 16px 12px; }
+    .proof .big { font-size: 22px; }
   }
 </style>
