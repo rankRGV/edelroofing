@@ -1,7 +1,7 @@
 // Sitewide JSON-LD. The live Duda site puts this RoofingContractor block on
 // every page (header widget); Base.astro does the same here. No
-// aggregateRating (removed on purpose, commit a77cbde) and no opening hours
-// until Edel settles 24/7 vs Mon-Fri.
+// aggregateRating (removed on purpose, commit a77cbde). Hours: 24/7, matching
+// the GBP (Eddie confirmed 2026-10-18).
 import { site } from './site';
 
 export const SITE_URL = 'https://www.edelroofing.com';
@@ -38,6 +38,12 @@ export const orgSchema = {
     addressCountry: 'US',
   },
   geo: { '@type': 'GeoCoordinates', latitude: 26.323534, longitude: -98.184065 },
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+    opens: '00:00',
+    closes: '23:59',
+  },
   contactPoint: {
     '@type': 'ContactPoint',
     telephone: '+1-956-422-3335',

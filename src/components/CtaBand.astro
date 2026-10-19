@@ -2,7 +2,7 @@
 // Closing call to action: the page's own last heading + paragraph, then the
 // "(956) 422-EDEL / Call us today" row every live inner page ends with.
 import Icon from './Icon.astro';
-import { site } from '../data/site';
+import { site, quoteFallback } from '../data/site';
 import { bgStyle } from '../data/bg';
 import houseRoof from '../assets/inner/house-roof.webp';
 
@@ -31,7 +31,7 @@ const quote = lang === 'es' ? 'Cotización Instantánea' : 'Get Instant Quote';
     <div class="call">
       <p class="vanity">(956) 422-EDEL</p>
       <a class="btn btn--white" href={site.phoneHref}><Icon name="phone" />{callToday}</a>
-      <a class="btn btn--light" href="/contact-us" data-roofle-open>{quote}</a>
+      <a class="btn btn--light" href={quoteFallback(lang)} data-roofle-open>{quote}</a>
     </div>
   </div>
 </section>

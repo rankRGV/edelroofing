@@ -7,7 +7,7 @@ import { bgStyle } from '../data/bg';
 import LeadForm from './LeadForm.astro';
 import type { HomeCopy } from '../data/home';
 import Icon from './Icon.astro';
-import { site, addressLine } from '../data/site';
+import { site, addressLine, quoteFallback } from '../data/site';
 import { forms } from '../data/forms';
 
 
@@ -90,7 +90,7 @@ const badges = [
           <p class="pill"><span class="dot"></span>{c.quote.pill}</p>
           <h2>{c.quote.title}</h2>
           <p>{c.quote.body}</p>
-          <a class="btn btn--big" href="/contact-us" data-roofle-open>{c.quote.button}</a>
+          <a class="btn btn--big" href={quoteFallback(c.lang)} data-roofle-open>{c.quote.button}</a>
           <a class="btn btn--ghost btn--big" href={site.phoneHref}><Icon name="phone" />{c.quote.call} {site.phone}</a>
           <p class="hablamos">{c.quote.note}</p>
         </div>

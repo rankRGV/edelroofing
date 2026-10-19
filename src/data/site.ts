@@ -22,6 +22,10 @@ export const site = {
 
 export const addressLine = `${site.address.street}, ${site.address.city}, ${site.address.region} ${site.address.zip}`;
 
+// Where "Get Instant Quote" goes when the Roofle slide-out hasn't loaded:
+// the contact page in the visitor's language.
+export const quoteFallback = (lang: 'en' | 'es' = 'en') => (lang === 'es' ? '/es-mx/contact-us' : '/contact-us');
+
 export type NavItem = { label: string; href: string; children?: NavItem[] };
 
 // Same menu as the live Duda header.

@@ -2,7 +2,7 @@
 // Inner-page hero: breadcrumb, eyebrow, H1, quote + call buttons, Google
 // rating. Same photo-under-maroon look as the homepage hero, shorter.
 import Icon from './Icon.astro';
-import { site } from '../data/site';
+import { site, quoteFallback } from '../data/site';
 import { bgStyle } from '../data/bg';
 import type { Crumb } from '../data/schema';
 
@@ -34,7 +34,7 @@ const t =
     <h1>{title}</h1>
     {lead && <p class="lead">{lead}</p>}
     <div class="actions">
-      <a class="btn" href="/contact-us" data-roofle-open>{t.quote}</a>
+      <a class="btn" href={quoteFallback(lang)} data-roofle-open>{t.quote}</a>
       <a class="btn btn--light" href={site.phoneHref}><Icon name="phone" />{t.call} {site.phone}</a>
     </div>
     <a class="rating" href={site.googleMaps} rel="noopener" target="_blank">

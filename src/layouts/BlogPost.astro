@@ -9,7 +9,7 @@ import { render, type CollectionEntry } from 'astro:content';
 import Base from './Base.astro';
 import CtaBand from '../components/CtaBand.astro';
 import Icon from '../components/Icon.astro';
-import { site } from '../data/site';
+import { site, quoteFallback } from '../data/site';
 import { breadcrumbSchema, SITE_URL } from '../data/schema';
 
 interface Props {
@@ -80,7 +80,7 @@ const { Content } = await render(post);
         <div class="box">
           <p class="box-title">{t.box}</p>
           <p>{t.boxBody}</p>
-          <a class="btn" href="/contact-us" data-roofle-open>{t.quote}</a>
+          <a class="btn" href={quoteFallback(d.lang)} data-roofle-open>{t.quote}</a>
           <a class="btn btn--ghost" href={site.phoneHref}><Icon name="phone" />{t.call} {site.phone}</a>
         </div>
       </aside>

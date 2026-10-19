@@ -3,7 +3,7 @@
 // social links live in the footer. Mobile: logo, round call button, menu.
 import { Image } from 'astro:assets';
 import logo from '../assets/edel-logo.png';
-import { site, mainNav, mainNavEs } from '../data/site';
+import { site, mainNav, mainNavEs, quoteFallback } from '../data/site';
 import Icon from './Icon.astro';
 
 interface Props {
@@ -15,7 +15,7 @@ interface Props {
   quoteHref?: string;
 }
 const { lang = 'en', switchHref, quoteHref } = Astro.props;
-const quote = quoteHref ? { href: quoteHref } : { href: '/contact-us', 'data-roofle-open': '' };
+const quote = quoteHref ? { href: quoteHref } : { href: quoteFallback(lang), 'data-roofle-open': '' };
 const es = lang === 'es';
 const nav = es ? mainNavEs : mainNav;
 const home = es ? '/es-mx' : '/';
