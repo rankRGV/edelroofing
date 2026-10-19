@@ -3,21 +3,34 @@
 // social links live in the footer. Mobile: logo, round call button, menu.
 import { Image } from 'astro:assets';
 import logo from '../assets/edel-logo.png';
-import { site, mainNav } from '../data/site';
+import { site, mainNav, mainNavEs } from '../data/site';
 import Icon from './Icon.astro';
 
+interface Props {
+  lang?: 'en' | 'es';
+  // The other-language twin of this page; falls back to that language's home.
+  switchHref?: string;
+}
+const { lang = 'en', switchHref } = Astro.props;
+const es = lang === 'es';
+const nav = es ? mainNavEs : mainNav;
+const home = es ? '/es-mx' : '/';
+const t = es
+  ? { quote: 'Cotización Instantánea', call: 'Llamar', menu: 'Menú', main: 'Principal', switchLabel: 'English', switchLang: 'en', homeLabel: 'Edel Roofing & Construction, inicio' }
+  : { quote: 'Get Instant Quote', call: 'Call', menu: 'Menu', main: 'Main', switchLabel: 'Español', switchLang: 'es', homeLabel: 'Edel Roofing & Construction home' };
+const langHref = switchHref ?? (es ? '/' : '/es-mx');
 const path = Astro.url.pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
-const isActive = (href: string) => (href === '/' ? path === '/' : path === href);
+const isActive = (href: string) => (href === home ? path === home : path === href);
 ---
 <header class="site-header">
   <div class="bar">
-    <a class="logo" href="/" aria-label="Edel Roofing & Construction home">
+    <a class="logo" href={home} aria-label={t.homeLabel}>
       <Image src={logo} alt="Edel Roofing & Construction Inc" width={150} densities={[1, 2]} loading="eager" />
     </a>
 
-    <nav class="desktop-nav" aria-label="Main">
+    <nav class="desktop-nav" aria-label={t.main}>
       <ul class="menu">
-        {mainNav.map((item) => (
+        {nav.map((item) => (
           <li class={item.children ? 'has-sub' : undefined}>
             <a href={item.href} class:list={[{ active: isActive(item.href) }]}>
               {item.label}{item.children && <Icon name="chevron" />}
@@ -33,20 +46,21 @@ const isActive = (href: string) => (href === '/' ? path === '/' : path === href)
     </nav>
 
     <div class="actions">
+      <a class="lang" href={langHref} hreflang={t.switchLang} lang={t.switchLang}>{t.switchLabel}</a>
       <a class="phone" href={site.phoneHref}>
         <Icon name="phone" />
         <span>{site.phone}</span>
       </a>
-      <a class="btn quote" href="/contact-us" data-roofle-open>Get Instant Quote</a>
+      <a class="btn quote" href="/contact-us" data-roofle-open>{t.quote}</a>
 
-      <a class="call-round" href={site.phoneHref} aria-label={`Call Edel Roofing at ${site.phone}`}>
+      <a class="call-round" href={site.phoneHref} aria-label={`${t.call} Edel Roofing ${site.phone}`}>
         <Icon name="phone" />
       </a>
       <details class="mobile-menu">
-        <summary aria-label="Menu"><Icon name="menu" /></summary>
+        <summary aria-label={t.menu}><Icon name="menu" /></summary>
         <div class="drawer">
           <ul>
-            {mainNav.map((item) => (
+            {nav.map((item) => (
               <li>
                 <a href={item.href}>{item.label}</a>
                 {item.children && (
@@ -55,8 +69,9 @@ const isActive = (href: string) => (href === '/' ? path === '/' : path === href)
               </li>
             ))}
           </ul>
-          <a class="btn" href="/contact-us" data-roofle-open>Get Instant Quote</a>
-          <a class="btn btn--ghost" href={site.phoneHref}>Call {site.phone}</a>
+          <a class="btn" href="/contact-us" data-roofle-open>{t.quote}</a>
+          <a class="btn btn--ghost" href={site.phoneHref}>{t.call} {site.phone}</a>
+          <a class="drawer-lang" href={langHref} hreflang={t.switchLang} lang={t.switchLang}>{t.switchLabel}</a>
         </div>
       </details>
     </div>
@@ -93,6 +108,7 @@ const isActive = (href: string) => (href === '/' ? path === '/' : path === href)
     padding: 14px 0;
     font-size: 14px;
     font-weight: 500;
+    white-space: nowrap;
     text-decoration: none;
     color: var(--ink-strong);
   }
@@ -135,9 +151,16 @@ const isActive = (href: string) => (href === '/' ? path === '/' : path === href)
   .phone :global(svg) { width: 18px; height: 18px; }
   .phone:hover span { text-decoration: underline; }
   .quote { min-height: 44px; }
+  .lang { font-size: 13px; font-weight: 600; color: var(--muted); text-decoration: none; white-space: nowrap; }
+  .lang:hover { color: var(--maroon); text-decoration: underline; }
+  .drawer-lang { text-align: center; margin-top: 8px; color: var(--maroon); font-weight: 600; text-decoration: underline; }
 
   .call-round,
   .mobile-menu { display: none; }
+
+  /* No room for the language link next to the phone below 1367px; it is in
+     the footer and (under 1025px) the menu drawer. */
+  @media (max-width: 1366px) { .lang { display: none; } }
 
   @media (max-width: 1200px) {
     .menu { gap: 4px 16px; }
@@ -150,6 +173,7 @@ const isActive = (href: string) => (href === '/' ? path === '/' : path === href)
     .logo :global(img) { width: 116px; }
     .desktop-nav,
     .phone,
+    .lang,
     .quote { display: none; }
     .actions { gap: 12px; }
     .call-round {

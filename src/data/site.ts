@@ -53,3 +53,23 @@ export const mainNav: NavItem[] = [
   { label: 'Contact Us', href: '/contact-us' },
   { label: 'Financing', href: '/financing' },
 ];
+
+// Spanish menu: the live /es-mx header items, plus Áreas de Servicio (the
+// EN menu has Service Areas; the live ES menu left it out). "Hogar"
+// (household) on the live menu is now "Inicio" (home page).
+export const mainNavEs: NavItem[] = [
+  { label: 'Inicio', href: '/es-mx' },
+  {
+    label: 'Servicios',
+    href: '/es-mx/residential-roofing',
+    children: [
+      { label: 'Techos Residenciales', href: '/es-mx/residential-roofing' },
+      { label: 'Techos Comerciales', href: '/es-mx/commercial-roofing' },
+      { label: 'Daño de la Tormenta', href: '/es-mx/storm-damage' },
+      { label: 'Reparaciones de Techos', href: '/es-mx/roof-repairs' },
+    ],
+  },
+  { label: 'Áreas de Servicio', href: '/es-mx/service-areas' },
+  { label: 'Sobre Nosotros', href: '/es-mx/about-us', children: [{ label: 'Proyectos', href: '/es-mx/projects' }] },
+  { label: 'Contáctenos', href: '/es-mx/contact-us' },
+];

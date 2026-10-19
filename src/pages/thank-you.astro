@@ -1,0 +1,42 @@
+---
+// /thank-you, rebuilt from the live Duda page (2026-10-18).
+// Copy changes vs live:
+// - No H1 on live (two H4s); the first line is now the H1.
+// - <title> said "Contact Us | EDEL..."; now "Thank You | EDEL...".
+// - Meta description had the old (956) 867-0667 number; now (956) 422-3335.
+// - Address showed the old 3321 W Alberta Rd office; now 1815 N Jackson Rd.
+// - Stray zero-width character before "Your message" removed.
+// - Added: breadcrumb, quote/call buttons.
+// Open: should this page be noindex? Not changed (79 impressions on live).
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import ContactCards from '../components/ContactCards.astro';
+import { breadcrumbSchema } from '../data/schema';
+import hero from '../assets/home/hero-roof.jpeg';
+
+const crumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Thank You', href: '/thank-you' },
+];
+---
+<Base
+  title="Thank You | EDEL Roofing & Construction Inc."
+  description="Contact EDEL Roofing & Construction Inc. in Rio Grande Valley for top-notch roofing, remodeling, and construction services. Call (956) 422-3335 today!"
+  schema={[breadcrumbSchema(crumbs)]}
+>
+  <PageHero
+    crumbs={crumbs}
+    title="Thank you for getting in touch with us."
+    lead="Your message has been received, and we'll be in touch shortly to assist you with your roofing needs."
+    bg={hero}
+  />
+  <section class="section">
+    <div class="wrap">
+      <ContactCards />
+    </div>
+  </section>
+</Base>
+
+<style>
+  .section { padding-block: 64px; }
+</style>

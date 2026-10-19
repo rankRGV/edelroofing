@@ -1,0 +1,77 @@
+---
+// Form shell for the pages whose live Duda forms we can't carry over
+// (Duda posts to its own endpoint, recipient encrypted in the page).
+// Leave `endpoint` unset until Eddie confirms the recipient and the form
+// service: the form then stops the submit and asks people to call, so a
+// preview test can't send a lead into a dead end.
+import { site } from '../data/site';
+
+type Field = { name: string; label: string; type?: 'text' | 'email' | 'tel' | 'textarea' | 'select'; options?: string[]; required?: boolean; autocomplete?: string };
+interface Props {
+  id: string;
+  fields: Field[];
+  submit: string;
+  endpoint?: string;
+  redirect?: string;
+  lang?: 'en' | 'es';
+}
+const { id, fields, submit, endpoint, redirect, lang = 'en' } = Astro.props;
+const pending =
+  lang === 'es'
+    ? `Este formulario todavía no está conectado. Llámenos al ${site.phone}.`
+    : `This form isn't connected yet. Please call ${site.phone}.`;
+---
+<form id={id} class="lead-form" method="post" action={endpoint} data-pending={endpoint ? undefined : pending} data-redirect={redirect}>
+  {fields.map((f) => (
+    <label class:list={{ full: f.type === 'textarea' }}>
+      <span>{f.label}{f.required && <b aria-hidden="true"> *</b>}</span>
+      {f.type === 'textarea' ? (
+        <textarea name={f.name} rows="4" required={f.required} />
+      ) : f.type === 'select' ? (
+        <select name={f.name} required={f.required}>
+          <option value="">{lang === 'es' ? 'Elija una opción' : 'Choose one'}</option>
+          {f.options?.map((o) => <option>{o}</option>)}
+        </select>
+      ) : (
+        <input name={f.name} type={f.type ?? 'text'} required={f.required} autocomplete={f.autocomplete} />
+      )}
+    </label>
+  ))}
+  <button class="btn" type="submit">{submit}</button>
+  <p class="status" role="status" hidden></p>
+</form>
+
+<script>
+  document.querySelectorAll<HTMLFormElement>('form.lead-form[data-pending]').forEach((form) => {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const status = form.querySelector<HTMLElement>('.status')!;
+      status.textContent = form.dataset.pending!;
+      status.hidden = false;
+    });
+  });
+</script>
+
+<style>
+  .lead-form { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 16px; }
+  label { display: grid; gap: 6px; font-size: 13px; font-weight: 600; color: var(--ink-strong); }
+  label b { color: var(--maroon-mid); }
+  .full, .lead-form > .btn, .status { grid-column: 1 / -1; }
+  input, select, textarea {
+    width: 100%;
+    min-height: 48px;
+    padding: 10px 12px;
+    font: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--ink-strong);
+    background: var(--white);
+    border: 1px solid #cfcfcf;
+    border-radius: var(--radius);
+  }
+  textarea { resize: vertical; }
+  input:focus, select:focus, textarea:focus { outline: 2px solid var(--maroon-mid); outline-offset: 1px; border-color: var(--maroon-mid); }
+  .lead-form > .btn { min-height: 54px; font-size: 16px; cursor: pointer; }
+  .status { margin: 0; padding: 12px 14px; border-radius: var(--radius); background: #f6eaeb; color: var(--maroon); font-weight: 600; }
+  @media (max-width: 600px) { .lead-form { grid-template-columns: 1fr; } }
+</style>

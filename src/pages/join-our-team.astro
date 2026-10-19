@@ -1,0 +1,170 @@
+---
+// /join-our-team, rebuilt from the live Duda page (2026-10-18).
+// Open (Eddie/Edel): still hiring? And where should applications go? The
+// live Duda form's recipient is encrypted in the page, so the form below is
+// NOT connected (LeadForm with no endpoint) until Eddie confirms it.
+// Copy changes vs live:
+// - No H1 on live; "Join Our Team" is now the H1.
+// - Em dash in "isn't just recognized, it's celebrated" swapped for a comma.
+// - Heading "Elevate Your Sales Career" -> "Grow Your Sales Career"
+//   (elevate as a headline verb is banned).
+// - "Embark on a journey steeped in legacy" -> "Start a career steeped in
+//   legacy" (banned word).
+// - "underscores our dedication" -> "shows our dedication" (banned word).
+// - "Become part of a vibrant team where your dedication to excellence is not
+//   just valued, but essential" -> "Become part of a team where your
+//   dedication to excellence is valued and essential" (banned word/pattern).
+// - The "(956) 422-EDEL / Call us today" link dialed (956) 867-0667; now the
+//   real number.
+// - Earnings ($80K to $120K), "25+ Years", "BBB approved" and "Travel
+//   Opportunities" kept as live (Edel's own claims; confirm before launch).
+// - The story section repeats /about-us word for word, as on live.
+// - Added: breadcrumb, quote/call buttons.
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+import LeadForm from '../components/LeadForm.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Icon from '../components/Icon.astro';
+import { breadcrumbSchema } from '../data/schema';
+import hero from '../assets/join-our-team/edel-roofing-5.jpg';
+import truck from '../assets/about-us/edel-truck.webp';
+import building from '../assets/about-us/commercial-building.jpg';
+import install from '../assets/about-us/roofing-install.jpeg';
+import kitchen from '../assets/about-us/new-modern-kitchen.jpg';
+import house from '../assets/about-us/modern-house.jpg';
+
+const crumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Join Our Team', href: '/join-our-team' },
+];
+const perks = [
+  ['High Earnings', '$80K to $120K annually.'],
+  ['Top Reviews', 'Exceptional customer feedback.'],
+  ['Earn Commissions', 'Instant rewards for contracts.'],
+  ['Simple Sales', 'We handle the logistics.'],
+  ['Career Growth', 'Resources for advancement.'],
+  ['Accredited', 'BBB approved.'],
+  ['Travel Opportunities', 'Explore and expand.'],
+];
+const photos = [
+  { src: truck, alt: "Edel Roofing & Construction Inc's Truck" },
+  { src: building, alt: 'Commercial Building' },
+  { src: install, alt: 'Roofing Install' },
+  { src: kitchen, alt: 'New Modern Kitchen' },
+  { src: house, alt: 'Home Remodeling' },
+];
+---
+<Base
+  title="Join Our Team"
+  description="Join EDEL Roofing & Construction for rewarding sales roles in McAllen, TX. Enjoy high earnings, career growth, and a focus on customer service."
+  schema={[breadcrumbSchema(crumbs)]}
+>
+  <PageHero
+    crumbs={crumbs}
+    eyebrow="Expert Roofing Services for McAllen Texas & the Rio Grande Valley"
+    title="Join Our Team"
+    lead="Hey McAllen and the Rio Grande Valley! EDEL Roofing is in search of new talent to energize our sales team as we elevate our standards. Envision yourself in a role where your determination to exceed, outshine, and climb the professional ladder isn't just recognized, it's celebrated. Here, work means reaching your highest potential, thriving in your career, and genuinely relishing every step of the journey."
+    bg={hero}
+  />
+
+  <section class="section">
+    <div class="wrap split">
+      <div>
+        <p class="stat"><strong>25+ Years</strong>Roofing Experience</p>
+        <h2>Grow Your Sales Career</h2>
+        <ul class="perks">
+          {perks.map(([title, body]) => (
+            <li><Icon name="badge" /><span><strong>{title}:</strong> {body}</span></li>
+          ))}
+        </ul>
+      </div>
+      <div class="apply" id="ApplyNow">
+        <h3>Contact Us</h3>
+        <LeadForm
+          id="apply"
+          submit="Submit"
+          fields={[
+            { name: 'first_name', label: 'First Name', required: true, autocomplete: 'given-name' },
+            { name: 'last_name', label: 'Last Name', required: true, autocomplete: 'family-name' },
+            { name: 'email', label: 'Email', type: 'email', required: true, autocomplete: 'email' },
+            { name: 'phone', label: 'Phone', type: 'tel', required: true, autocomplete: 'tel' },
+            { name: 'address', label: 'Address', autocomplete: 'street-address' },
+            { name: 'city', label: 'City', autocomplete: 'address-level2' },
+            { name: 'zip', label: 'Zip Code', autocomplete: 'postal-code' },
+          ]}
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Our Vision and Expertise</p>
+        <h2>Building on Vision &amp; Passion</h2>
+        <p>
+          Start a career steeped in legacy and promise with EDEL Roofing &amp; Construction. For over 25 years, our
+          founder, Eddie Elizondo, has instilled a passion for quality construction and exceptional customer service,
+          establishing us as a trusted name in the Rio Grande Valley communities. Experience the rewards of our
+          heritage, from potential earnings of $80K to $120K annually to opportunities for career advancement and
+          travel. Join our team and become part of a legacy built on dedication, integrity, and excellence.
+        </p>
+      </div>
+      <div class="gallery">
+        {photos.map((p, i) => (
+          <Image src={p.src} alt={p.alt} widths={i === 0 ? [480, 760, 1100] : [240, 400]} sizes={i === 0 ? '(max-width: 900px) 100vw, 560px' : '(max-width: 900px) 25vw, 140px'} class:list={['rounded', { main: i === 0 }]} />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap narrow">
+      <h2>EDEL Roofing &amp; Construction Inc's Story</h2>
+      <p>
+        EDEL Roofing &amp; Construction Inc. stands as a tribute to the vision and passion of our founder, Eddie
+        Elizondo. With a lifelong connection to construction, Eddie's journey from working alongside family members to
+        his educational pursuits culminated in the creation of EDEL Roofing &amp; Construction Inc. His determination to
+        provide homes that resonate with his clients' dreams is the heartbeat of our company, guiding us as we craft
+        enduring roofs, remodel interiors, and build homes from the ground up.
+      </p>
+      <p>
+        EDEL Roofing &amp; Construction Inc. has become a trusted name in the Rio Grande Valley communities. Our
+        reputation has been earned through a steadfast commitment to putting customers first, being transparent and
+        honest, and ensuring that every project runs smoothly. The recognition we have received, including The
+        Monitor's Reader's Choice Awards and the Valley Morning Star Readers' Choice Awards, shows our dedication to
+        excellence.
+      </p>
+    </div>
+  </section>
+
+  <CtaBand
+    title="Join Our Team"
+    body="Become part of a team where your dedication to excellence is valued and essential to our culture. Join EDEL Roofing and Construction in McAllen and the Rio Grande Valley, where opportunities for growth and success await."
+    cta={{ label: 'Apply Now', href: '#ApplyNow' }}
+  />
+</Base>
+
+<style>
+  .section { padding-block: 80px; }
+  .soft { background: var(--bg-soft); }
+  .narrow { max-width: 860px; }
+  h2 { font-size: clamp(30px, 4vw, 46px); text-transform: uppercase; }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+  .stat { display: inline-flex; flex-direction: column; padding: 14px 20px; margin-bottom: 20px; border-left: 3px solid var(--maroon); background: var(--bg-soft); font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; }
+  .stat strong { font-family: var(--font-head); font-size: 34px; letter-spacing: 0; text-transform: none; color: var(--maroon); line-height: 1.1; }
+  .perks { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  .perks li { display: flex; gap: 12px; align-items: flex-start; }
+  .perks :global(svg) { width: 22px; height: 22px; flex: none; color: var(--maroon); margin-top: 2px; }
+  .apply { padding: 28px; background: var(--white); border: 1px solid var(--line); border-top: 3px solid var(--maroon); border-radius: 12px; box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08); scroll-margin-top: 90px; }
+  .apply h3 { font-size: 30px; }
+  .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .gallery :global(img) { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: var(--radius); }
+  .gallery :global(img.main) { grid-column: 1 / -1; aspect-ratio: 4 / 3; }
+  @media (max-width: 900px) {
+    .section { padding-block: 56px; }
+    .split { grid-template-columns: 1fr; gap: 32px; }
+  }
+  @media (max-width: 600px) { .apply { padding: 20px; } }
+</style>

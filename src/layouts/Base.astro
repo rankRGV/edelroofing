@@ -14,8 +14,12 @@ interface Props {
   schema?: object[];
   // Paths of this page's EN and ES twins, e.g. { en: '/about-us', es: '/es-mx/about-us' }.
   alternates?: { en: string; es: string };
+  // Pages that stay out of Google even after launch (ads landing, thank-you).
+  noindex?: boolean;
+  // false on the ads landing page: Roofle leads can't be tracked (Eddie, 2026-10-17).
+  roofle?: boolean;
 }
-const { title, description, lang = 'en', schema = [], alternates } = Astro.props;
+const { title, description, lang = 'en', schema = [], alternates, noindex = false, roofle = true } = Astro.props;
 // Preview on edelroofing.rankrgv.com stays out of Google until Edel approves
 // and the site moves to edelroofing.com. Flip at launch, and add GTM / Ads /
 // Meta Pixel then (left off the preview so test visits don't hit his data).
@@ -24,6 +28,7 @@ const canonical = new URL(Astro.url.pathname.replace(/\.html$/, '').replace(/\/i
 const alt = alternates && { en: new URL(alternates.en, Astro.site).href, es: new URL(alternates.es, Astro.site).href };
 // The sitewide RoofingContractor block goes on every page, like the live site.
 const jsonLd = [orgSchema, ...schema];
+const switchHref = alternates && (lang === 'es' ? alternates.en : alternates.es);
 ---
 <!doctype html>
 <html lang={lang}>
@@ -36,17 +41,19 @@ const jsonLd = [orgSchema, ...schema];
     {alt && <link rel="alternate" hreflang="en" href={alt.en} />}
     {alt && <link rel="alternate" hreflang="es" href={alt.es} />}
     {alt && <link rel="alternate" hreflang="x-default" href={alt.en} />}
-    {PREVIEW && <meta name="robots" content="noindex, nofollow" />}
+    {PREVIEW ? <meta name="robots" content="noindex, nofollow" /> : noindex && <meta name="robots" content="noindex" />}
     <meta name="theme-color" content="#4f0000" />
     {jsonLd.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
   </head>
   <body>
-    <Header />
+    <Header lang={lang} switchHref={switchHref} />
     <main id="main">
       <slot />
     </main>
-    <Footer />
-    <!-- Roofle instant quote slide-out (same widget id as the live site) -->
+    <Footer lang={lang} switchHref={switchHref} />
+    {/* Roofle instant quote slide-out (same widget id as the live site) */}
+    {roofle && (
+      <Fragment>
     <script is:inline async src="https://app.roofle.com/roof-quote-pro-widget.js?id=EDm90hQNG9UzNzk4GqU84"></script>
     <script is:inline>
       // "Get Instant Quote" buttons open the Roofle slide-out when it has
@@ -62,5 +69,7 @@ const jsonLd = [orgSchema, ...schema];
         handle.click();
       });
     </script>
+      </Fragment>
+    )}
   </body>
 </html>

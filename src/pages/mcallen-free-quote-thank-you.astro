@@ -1,0 +1,31 @@
+---
+// /mcallen-free-quote-thank-you, rebuilt from the live Duda page
+// (2026-10-18). Not in the 10/18 inventory (Eddie built it 2026-10-17); it is
+// where the ads form lands. noindex, as live.
+// At launch this page must fire the Google Ads form conversion and the Meta
+// Lead event (live Duda page does both); tracking stays off on the preview.
+// Copy changes vs live: <title> was the slug; now a real title.
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { site } from '../data/site';
+---
+<Base title="Thanks, We Got Your Request | Edel Roofing" noindex roofle={false}>
+  <section class="ty">
+    <div class="wrap">
+      <h1>Thanks. We got your request.</h1>
+      <p>Edel Roofing will call you soon from {site.phone} to set up your free roof inspection.</p>
+      <p class="now">Want to talk now?</p>
+      <a class="btn" href={site.phoneHref}><Icon name="phone" />Call {site.phone}</a>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .ty { background: var(--maroon); color: var(--white); padding-block: 96px; text-align: center; }
+  h1 { color: var(--white); font-size: clamp(36px, 4.6vw, 56px); font-weight: 600; text-transform: uppercase; }
+  p { font-size: 18px; max-width: 46ch; margin-inline: auto; }
+  .now { margin-top: 24px; font-weight: 600; }
+  .btn { gap: 10px; min-height: 60px; font-size: 18px; background: var(--white); border-color: var(--white); color: var(--maroon); }
+  .btn :global(svg) { width: 20px; height: 20px; }
+  @media (max-width: 600px) { .ty { padding-block: 56px; } h1 { font-size: 32px; } p { font-size: 16px; } .btn { width: 100%; } }
+</style>

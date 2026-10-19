@@ -1,0 +1,95 @@
+---
+// /mcallen-free-quote, rebuilt from the live Duda page (2026-10-18).
+// This is the Google Search ad landing page (Eddie built it 2026-10-17).
+// It stays noindex after launch (inventory: ads only).
+// The live Duda form emails eddie@ + kassie@edelroofing.com and redirects to
+// /mcallen-free-quote-thank-you, which fires the Google form conversion and
+// Meta Lead. Our form is NOT connected yet (LeadForm with no endpoint): it
+// needs a form service Eddie picks. MUST be wired before launch or the ads
+// lose their form leads.
+// No Roofle widget on this page (Eddie, 2026-10-17: Roofle leads can't be
+// tracked); header "Get Instant Quote" falls back to /contact-us here.
+// Copy changes vs live:
+// - <title> was the slug "mcallen-free-quote"; now a real title.
+// - "257 Google reviews" -> "250+ Google reviews" (match the homepage).
+// - "We answer 24/7" kept as live (hours still open: GBP 24/7 vs Mon-Fri).
+// - Added a meta description (live had none); submit button reads "Get My
+//   Free Quote".
+import Base from '../layouts/Base.astro';
+import LeadForm from '../components/LeadForm.astro';
+import Icon from '../components/Icon.astro';
+import { site } from '../data/site';
+
+const proof = [
+  { big: '4.8★', label: '250+ Google reviews' },
+  { big: 'Since 2003', label: 'Serving the RGV' },
+  { big: 'Licensed & Insured', label: 'Roofing Contractor' },
+  { big: 'CertainTeed', label: 'Select ShingleMaster, the only one in the RGV' },
+];
+---
+<Base
+  title="Free Roof Quote in the Rio Grande Valley | Edel Roofing"
+  description="Free written roof estimate from a licensed, insured Edinburg roofer. Call (956) 422-3335 or request a quote."
+  noindex
+  roofle={false}
+>
+  <section class="lp">
+    <div class="wrap grid">
+      <div class="copy">
+        <p class="eyebrow">Rio Grande Valley</p>
+        <h1>Free Roof Quote in the Rio Grande Valley</h1>
+        <p class="lead">
+          Licensed, insured, and the only CertainTeed Select ShingleMaster in the Rio Grande Valley. Written estimate, no
+          pressure. 250+ Google reviews at 4.8 stars.
+        </p>
+        <a class="btn call" href={site.phoneHref}><Icon name="phone" />Call Now: {site.phone}</a>
+        <p class="note">We answer 24/7. Talk to a real roofer, not a call center.</p>
+        <ul class="proof">
+          {proof.map((p) => <li><strong>{p.big}</strong><span>{p.label}</span></li>)}
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Free Quote</h2>
+        <p>Or request a written estimate below. A real person will call you back.</p>
+        <LeadForm
+          id="free-quote"
+          submit="Get My Free Quote"
+          redirect="/mcallen-free-quote-thank-you"
+          fields={[
+            { name: 'name', label: 'Name', required: true, autocomplete: 'name' },
+            { name: 'phone', label: 'Phone', type: 'tel', required: true, autocomplete: 'tel' },
+            { name: 'service', label: 'Service', type: 'select', options: ['Roof Replacement', 'Roof Repair', 'Commercial Roofing', 'Not Sure'] },
+          ]}
+        />
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .lp { background: var(--maroon); color: var(--white); padding-block: 56px 72px; }
+  .grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; }
+  .eyebrow { color: #f2c4c8; }
+  .eyebrow::before { background: #f2c4c8; }
+  h1 { color: var(--white); font-size: clamp(36px, 4.6vw, 56px); font-weight: 600; text-transform: uppercase; line-height: 1.08; }
+  .lead { font-size: 17px; color: rgba(255, 255, 255, 0.92); max-width: 52ch; }
+  .call { gap: 10px; min-height: 60px; font-size: 18px; background: var(--white); border-color: var(--white); color: var(--maroon); margin-top: 8px; }
+  .call:hover { background: #f6eaeb; border-color: #f6eaeb; }
+  .call :global(svg) { width: 20px; height: 20px; }
+  .note { font-size: 14px; margin-top: 10px; color: rgba(255, 255, 255, 0.85); }
+  .proof { list-style: none; margin: 28px 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .proof li { padding: 14px 16px; border: 1px solid rgba(255, 255, 255, 0.22); border-radius: var(--radius); font-size: 13px; line-height: 1.4; }
+  .proof strong { display: block; font-family: var(--font-head); font-size: 22px; font-weight: 600; }
+  .card { background: var(--white); color: var(--ink); border-radius: 14px; padding: 28px; box-shadow: 0 24px 48px rgba(0, 0, 0, 0.3); }
+  .card h2 { font-size: 32px; text-transform: uppercase; margin-bottom: 4px; }
+  @media (max-width: 900px) {
+    .lp { padding-block: 28px 44px; }
+    .grid { grid-template-columns: 1fr; gap: 28px; }
+  }
+  @media (max-width: 600px) {
+    h1 { font-size: 32px; }
+    .lead { font-size: 15px; }
+    .call { width: 100%; }
+    .card { padding: 20px; }
+  }
+</style>

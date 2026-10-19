@@ -4,15 +4,42 @@ import logo from '../assets/edel-logo-white.png';
 import { site, addressLine } from '../data/site';
 import Icon from './Icon.astro';
 
+interface Props { lang?: 'en' | 'es'; switchHref?: string }
+const { lang = 'en', switchHref } = Astro.props;
+const es = lang === 'es';
 const year = new Date().getFullYear();
+// Spanish wording follows the live /es-mx footer.
+const t = es
+  ? {
+      home: '/es-mx',
+      tagline: 'Toda su casa puede beneficiarse de la experiencia de EDEL Roofing &amp; Construction de arriba a abajo.',
+      quick: 'Enlaces Rápidos',
+      quickLinks: [['/es-mx', 'Inicio'], ['/es-mx/about-us', 'Sobre Nosotros'], ['/es-mx/projects', 'Proyectos'], ['/es-mx/contact-us', 'Contáctenos']],
+      services: 'Nuestros Servicios',
+      serviceLinks: [['/es-mx/commercial-roofing', 'Techos Comerciales'], ['/es-mx/residential-roofing', 'Techos Residenciales'], ['/es-mx/roof-repairs', 'Reparaciones de Techos'], ['/es-mx/storm-damage', 'Daño de la Tormenta'], ['/es-mx/home-remodeling', 'Remodelación del Hogar'], ['/es-mx/home-construction', 'Construcción de Viviendas']],
+      contact: 'Información del Contacto',
+      address: 'Dirección', phone: 'Teléfono', email: 'Correo Electrónico',
+      rights: 'Todos los derechos reservados', privacy: 'Política de Privacidad',
+    }
+  : {
+      home: '/',
+      tagline: 'Your entire home can benefit from the expertise of EDEL Roofing &amp; Construction from top to bottom.',
+      quick: 'Quick Links',
+      quickLinks: [['/', 'Home'], ['/about-us', 'About Us'], ['/projects', 'Projects'], ['/contact-us', 'Contact Us']],
+      services: 'Our Services',
+      serviceLinks: [['/commercial-roofing', 'Commercial Roofing'], ['/residential-roofing', 'Residential Roofing'], ['/roof-repairs', 'Roof Repairs'], ['/storm-damage', 'Storm Damage']],
+      contact: 'Contact Information',
+      address: 'Address', phone: 'Phone', email: 'Email',
+      rights: 'All Rights Reserved', privacy: 'Privacy Policy',
+    };
 ---
 <footer class="site-footer">
   <div class="wrap grid">
     <div class="brand">
-      <a href="/" aria-label="Edel Roofing & Construction home">
+      <a href={t.home} aria-label="Edel Roofing & Construction">
         <Image src={logo} alt="Edel Roofing & Construction Inc" width={180} />
       </a>
-      <p>Your entire home can benefit from the expertise of EDEL Roofing &amp; Construction from top to bottom.</p>
+      <p set:html={t.tagline} />
       <div class="social">
         <a href={site.facebook} aria-label="Facebook" rel="noopener" target="_blank"><Icon name="facebook" /></a>
         <a href={site.googleMaps} aria-label="Google" rel="noopener" target="_blank"><Icon name="google" /></a>
@@ -20,39 +47,32 @@ const year = new Date().getFullYear();
     </div>
 
     <div>
-      <h2>Quick Links</h2>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about-us">About Us</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/contact-us">Contact Us</a></li>
-      </ul>
+      <h2>{t.quick}</h2>
+      <ul>{t.quickLinks.map(([href, label]) => <li><a href={href}>{label}</a></li>)}</ul>
     </div>
 
     <div>
-      <h2>Our Services</h2>
-      <ul>
-        <li><a href="/commercial-roofing">Commercial Roofing</a></li>
-        <li><a href="/residential-roofing">Residential Roofing</a></li>
-        <li><a href="/roof-repairs">Roof Repairs</a></li>
-        <li><a href="/storm-damage">Storm Damage</a></li>
-      </ul>
+      <h2>{t.services}</h2>
+      <ul>{t.serviceLinks.map(([href, label]) => <li><a href={href}>{label}</a></li>)}</ul>
     </div>
 
     <div class="contact">
-      <h2>Contact Information</h2>
-      <p class="label">Address</p>
+      <h2>{t.contact}</h2>
+      <p class="label">{t.address}</p>
       <p>{addressLine}</p>
-      <p class="label">Phone</p>
+      <p class="label">{t.phone}</p>
       <p><a href={site.phoneHref}>{site.phone}</a></p>
-      <p class="label">Email</p>
+      <p class="label">{t.email}</p>
       <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
     </div>
   </div>
 
   <div class="wrap bottom">
-    <p>&copy; {year} All Rights Reserved | EDEL ROOFING &amp; CONSTRUCTION INC</p>
-    <a href="/privacy">Privacy Policy</a>
+    <p>&copy; {year} {t.rights} | EDEL ROOFING &amp; CONSTRUCTION INC</p>
+    <div class="bottom-links">
+      <a href={switchHref ?? (es ? '/' : '/es-mx')} hreflang={es ? 'en' : 'es'} lang={es ? 'en' : 'es'}>{es ? 'English' : 'Español'}</a>
+      <a href="/privacy">{t.privacy}</a>
+    </div>
   </div>
 </footer>
 
@@ -111,6 +131,7 @@ const year = new Date().getFullYear();
   }
   .bottom p { margin: 0; }
   .bottom a { text-transform: uppercase; }
+  .bottom-links { display: flex; gap: 20px; }
 
   @media (max-width: 900px) {
     .grid { grid-template-columns: 1fr 1fr; }

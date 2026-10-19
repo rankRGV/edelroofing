@@ -1,0 +1,72 @@
+---
+// /es-mx/contact-us, rebuilt from the live Duda page (2026-10-18).
+// Copy changes vs live:
+// - <title> was English ("Contact Us | EDEL..."); now Spanish.
+// - Meta description was English with the old (956) 867-0667 number; now
+//   Spanish with (956) 422-3335.
+// - Phone card read "(956) 422-3335-EDEL"; now (956) 422-3335.
+// - Address card (and footer) showed the old 3321 W Alberta Rd office; now
+//   1815 N Jackson Rd from site.ts.
+// - "Mandanos un mensaje" -> "Mándenos un mensaje" (accent, and usted like
+//   the rest of the page).
+// - H1 "CONTÁCTENOS" written in normal case (CSS uppercases it).
+// - Added: breadcrumb, trust strip, quote/call buttons, hreflang to
+//   /contact-us, lang="es".
+// The live Duda form's recipient is encrypted in the page. The form below is
+// NOT connected (LeadForm with no endpoint) until Eddie confirms where it
+// should send.
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import TrustStrip from '../../components/TrustStrip.astro';
+import ContactCards from '../../components/ContactCards.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { breadcrumbSchema } from '../../data/schema';
+import hero from '../../assets/home/hero-roof.jpeg';
+
+const crumbs = [
+  { label: 'Inicio', href: '/es-mx' },
+  { label: 'Contáctenos', href: '/es-mx/contact-us' },
+];
+---
+<Base
+  title="Contáctenos | EDEL Roofing & Construction Inc."
+  description="Comuníquese con EDEL Roofing & Construction Inc. en el Valle del Río Grande para techos, remodelación y construcción. ¡Llame hoy al (956) 422-3335!"
+  lang="es"
+  alternates={{ en: '/contact-us', es: '/es-mx/contact-us' }}
+  schema={[breadcrumbSchema(crumbs)]}
+>
+  <PageHero crumbs={crumbs} eyebrow="Ponerse en Contacto" title="Contáctenos" bg={hero} lang="es" />
+  <TrustStrip lang="es" />
+
+  <section class="section">
+    <div class="wrap">
+      <ContactCards lang="es" />
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="wrap narrow">
+      <h2>Mándenos un Mensaje</h2>
+      <LeadForm
+        id="contacto"
+        lang="es"
+        submit="Enviar"
+        fields={[
+          { name: 'nombre', label: 'Nombre', required: true, autocomplete: 'name' },
+          { name: 'direccion', label: 'Dirección', autocomplete: 'street-address' },
+          { name: 'correo', label: 'Correo Electrónico', type: 'email', required: true, autocomplete: 'email' },
+          { name: 'telefono', label: 'Teléfono', type: 'tel', required: true, autocomplete: 'tel' },
+          { name: 'mensaje', label: 'Mensaje', type: 'textarea' },
+        ]}
+      />
+    </div>
+  </section>
+</Base>
+
+<style>
+  .section { padding-block: 64px; }
+  .soft { background: var(--bg-soft); }
+  .narrow { max-width: 760px; }
+  h2 { font-size: clamp(28px, 3.4vw, 40px); text-transform: uppercase; margin-bottom: 24px; }
+  @media (max-width: 600px) { .section { padding-block: 44px; } }
+</style>

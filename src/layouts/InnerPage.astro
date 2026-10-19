@@ -44,7 +44,7 @@ const benefitIcons = ['roof', 'shield', 'badge'] as const;
   <TrustStrip lang={lang} />
 
   <section class="section">
-    <div class="wrap split">
+    <div class:list={['wrap', intro.images?.length ? 'split' : 'narrow']}>
       <div>
         {intro.eyebrow && <p class="eyebrow">{intro.eyebrow}</p>}
         <h2>{intro.title}</h2>

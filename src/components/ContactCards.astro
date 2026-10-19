@@ -1,0 +1,51 @@
+---
+// Phone / address / email cards (live /contact-us, /thank-you,
+// /es-mx/contact-us). The live cards linked the map to the old 3321 W
+// Alberta Rd address; these use site.ts (1815 N Jackson Rd) and the GBP map.
+import Icon from './Icon.astro';
+import { site, addressLine } from '../data/site';
+
+interface Props { lang?: 'en' | 'es' }
+const { lang = 'en' } = Astro.props;
+const t = lang === 'es' ? { phone: 'Teléfono', address: 'Dirección', email: 'Correo Electrónico' } : { phone: 'Phone', address: 'Address', email: 'Email' };
+const cards = [
+  { icon: 'phone', label: t.phone, value: site.phone, href: site.phoneHref },
+  { icon: 'pin', label: t.address, value: addressLine, href: site.googleMaps, external: true },
+  { icon: 'mail', label: t.email, value: site.email, href: `mailto:${site.email}` },
+] as const;
+---
+<ul class="cards">
+  {cards.map((c) => (
+    <li>
+      <a href={c.href} rel={'external' in c ? 'noopener' : undefined} target={'external' in c ? '_blank' : undefined}>
+        <Icon name={c.icon} />
+        <span class="label">{c.label}</span>
+        <span class="value">{c.value}</span>
+      </a>
+    </li>
+  ))}
+</ul>
+
+<style>
+  .cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    height: 100%;
+    padding: 28px 20px;
+    text-align: center;
+    text-decoration: none;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--maroon);
+    border-radius: var(--radius);
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  a:hover { border-color: var(--maroon); box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06); }
+  a :global(svg) { width: 30px; height: 30px; color: var(--maroon); margin-bottom: 4px; }
+  .label { font-size: 12px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); }
+  .value { font-weight: 600; color: var(--ink-strong); overflow-wrap: anywhere; }
+  @media (max-width: 760px) { .cards { grid-template-columns: 1fr; } a { flex-direction: row; flex-wrap: wrap; text-align: left; padding: 16px 18px; } .value { flex-basis: 100%; } }
+</style>
