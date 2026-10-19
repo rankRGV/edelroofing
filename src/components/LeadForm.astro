@@ -1,9 +1,11 @@
 ---
-// Form shell for the pages whose live Duda forms we can't carry over
-// (Duda posts to its own endpoint, recipient encrypted in the page).
-// Leave `endpoint` unset until Eddie confirms the recipient and the form
-// service: the form then stops the submit and asks people to call, so a
-// preview test can't send a lead into a dead end.
+// Lead form. `endpoint` is a FormSpark URL from data/forms.ts. With it, the
+// submit goes by fetch: on success it follows `redirect` (the ads thank-you
+// page, which fires the conversions at launch) or shows a thank-you line; on
+// a network or server error it asks people to call. `_honeypot` is
+// FormSpark's spam trap: bots tick the hidden box, FormSpark drops the entry,
+// and the script skips the send. With no endpoint the form stops the submit
+// and asks people to call, so a lead never goes into a dead end.
 import { site } from '../data/site';
 
 type Field = { name: string; label: string; type?: 'text' | 'email' | 'tel' | 'textarea' | 'select'; options?: string[]; required?: boolean; autocomplete?: string };
@@ -16,12 +18,28 @@ interface Props {
   lang?: 'en' | 'es';
 }
 const { id, fields, submit, endpoint, redirect, lang = 'en' } = Astro.props;
-const pending =
-  lang === 'es'
-    ? `Este formulario todavía no está conectado. Llámenos al ${site.phone}.`
-    : `This form isn't connected yet. Please call ${site.phone}.`;
+const es = lang === 'es';
+const pending = es
+  ? `Este formulario todavía no está conectado. Llámenos al ${site.phone}.`
+  : `This form isn't connected yet. Please call ${site.phone}.`;
+const sent = es
+  ? 'Gracias, recibimos su mensaje. Le llamaremos pronto.'
+  : 'Thanks, we got your message. We will call you soon.';
+const failed = es
+  ? `No se pudo enviar. Llámenos al ${site.phone}.`
+  : `That didn't go through. Please call ${site.phone}.`;
 ---
-<form id={id} class="lead-form" method="post" action={endpoint} data-pending={endpoint ? undefined : pending} data-redirect={redirect}>
+<form
+  id={id}
+  class="lead-form"
+  method="post"
+  action={endpoint}
+  data-pending={endpoint ? undefined : pending}
+  data-sent={sent}
+  data-failed={failed}
+  data-redirect={redirect}
+>
+  <input class="hp" type="checkbox" name="_honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
   {fields.map((f) => (
     <label class:list={{ full: f.type === 'textarea' }}>
       <span>{f.label}{f.required && <b aria-hidden="true"> *</b>}</span>
@@ -42,12 +60,38 @@ const pending =
 </form>
 
 <script>
-  document.querySelectorAll<HTMLFormElement>('form.lead-form[data-pending]').forEach((form) => {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const status = form.querySelector<HTMLElement>('.status')!;
-      status.textContent = form.dataset.pending!;
+  document.querySelectorAll<HTMLFormElement>('form.lead-form').forEach((form) => {
+    const status = form.querySelector<HTMLElement>('.status')!;
+    const button = form.querySelector<HTMLButtonElement>('button[type="submit"]')!;
+    const show = (text: string) => {
+      status.textContent = text;
       status.hidden = false;
+    };
+    const done = () => {
+      if (form.dataset.redirect) return window.location.assign(form.dataset.redirect);
+      form.reset();
+      show(form.dataset.sent!);
+    };
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (form.dataset.pending) return show(form.dataset.pending);
+      if (form.querySelector<HTMLInputElement>('input[name="_honeypot"]')?.checked) return done();
+      button.disabled = true;
+      status.hidden = true;
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          // `page` tells Kassie which form it came from (the /es-mx home and
+          // contact forms share one FormSpark form).
+          body: JSON.stringify({ ...Object.fromEntries(new FormData(form)), page: location.pathname }),
+        });
+        if (!res.ok) throw new Error(String(res.status));
+        done();
+      } catch {
+        show(form.dataset.failed!);
+        button.disabled = false;
+      }
     });
   });
 </script>
@@ -73,6 +117,8 @@ const pending =
   textarea { resize: vertical; }
   input:focus, select:focus, textarea:focus { outline: 2px solid var(--maroon-mid); outline-offset: 1px; border-color: var(--maroon-mid); }
   .lead-form > .btn { min-height: 54px; font-size: 16px; cursor: pointer; }
+  .lead-form > .btn:disabled { opacity: 0.6; cursor: wait; }
+  .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
   .status { margin: 0; padding: 12px 14px; border-radius: var(--radius); background: #f6eaeb; color: var(--maroon); font-weight: 600; }
   @media (max-width: 600px) { .lead-form { grid-template-columns: minmax(0, 1fr); } }
 </style>

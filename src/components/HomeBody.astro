@@ -7,6 +7,7 @@ import LeadForm from './LeadForm.astro';
 import type { HomeCopy } from '../data/home';
 import Icon from './Icon.astro';
 import { site, addressLine } from '../data/site';
+import { forms } from '../data/forms';
 
 
 import heroRoof from '../assets/home/hero-roof.jpeg';
@@ -144,7 +145,7 @@ const badges = [
     <section class="section">
       <div class="wrap form-wrap">
         <h2>{c.form.title}</h2>
-        <LeadForm id="home-contact" lang={c.lang} submit={c.form.submit} fields={c.form.fields} />
+        <LeadForm id="home-contact" lang={c.lang} submit={c.form.submit} fields={c.form.fields} endpoint={c.lang === 'es' ? forms.contactEs : undefined} />
       </div>
     </section>
   )}

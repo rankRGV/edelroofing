@@ -4,9 +4,8 @@
 // It stays noindex after launch (inventory: ads only).
 // The live Duda form emails eddie@ + kassie@edelroofing.com and redirects to
 // /mcallen-free-quote-thank-you, which fires the Google form conversion and
-// Meta Lead. Our form is NOT connected yet (LeadForm with no endpoint): it
-// needs a form service Eddie picks. MUST be wired before launch or the ads
-// lose their form leads.
+// Meta Lead. Ours posts to FormSpark (data/forms.ts, same two recipients) and
+// redirects to the same thank-you page.
 // No Roofle widget on this page (Eddie, 2026-10-17: Roofle leads can't be
 // tracked); header "Get Instant Quote" falls back to /contact-us here.
 // Copy changes vs live:
@@ -19,6 +18,7 @@ import Base from '../layouts/Base.astro';
 import LeadForm from '../components/LeadForm.astro';
 import Icon from '../components/Icon.astro';
 import { site } from '../data/site';
+import { forms } from '../data/forms';
 
 const proof = [
   { big: '4.8★', label: '250+ Google reviews' },
@@ -54,6 +54,7 @@ const proof = [
         <LeadForm
           id="free-quote"
           submit="Get My Free Quote"
+          endpoint={forms.freeQuote}
           redirect="/mcallen-free-quote-thank-you"
           fields={[
             { name: 'name', label: 'Name', required: true, autocomplete: 'name' },

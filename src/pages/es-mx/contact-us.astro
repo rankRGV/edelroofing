@@ -12,15 +12,16 @@
 // - H1 "CONTÁCTENOS" written in normal case (CSS uppercases it).
 // - Added: breadcrumb, trust strip, quote/call buttons, hreflang to
 //   /contact-us, lang="es".
-// The live Duda form's recipient is encrypted in the page. The form below is
-// NOT connected (LeadForm with no endpoint) until Eddie confirms where it
-// should send.
+// The live Duda form's recipient is encrypted in the page. Ours posts to
+// FormSpark (data/forms.ts), to eddie@ + kassie@edelroofing.com (Eddie,
+// 2026-10-18).
 import Base from '../../layouts/Base.astro';
 import PageHero from '../../components/PageHero.astro';
 import TrustStrip from '../../components/TrustStrip.astro';
 import ContactCards from '../../components/ContactCards.astro';
 import LeadForm from '../../components/LeadForm.astro';
 import { breadcrumbSchema } from '../../data/schema';
+import { forms } from '../../data/forms';
 import hero from '../../assets/home/hero-roof.jpeg';
 
 const crumbs = [
@@ -51,6 +52,7 @@ const crumbs = [
         id="contacto"
         lang="es"
         submit="Enviar"
+        endpoint={forms.contactEs}
         fields={[
           { name: 'nombre', label: 'Nombre', required: true, autocomplete: 'name' },
           { name: 'direccion', label: 'Dirección', autocomplete: 'street-address' },

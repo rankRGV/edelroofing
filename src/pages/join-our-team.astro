@@ -1,8 +1,8 @@
 ---
 // /join-our-team, rebuilt from the live Duda page (2026-10-18).
-// Open (Eddie/Edel): still hiring? And where should applications go? The
-// live Duda form's recipient is encrypted in the page, so the form below is
-// NOT connected (LeadForm with no endpoint) until Eddie confirms it.
+// Open (Edel): still hiring? Applications post to FormSpark (data/forms.ts),
+// to eddie@ + kassie@edelroofing.com for now (Eddie, 2026-10-18); the live
+// Duda recipient is encrypted in the page.
 // Copy changes vs live:
 // - No H1 on live; "Join Our Team" is now the H1.
 // - Em dash in "isn't just recognized, it's celebrated" swapped for a comma.
@@ -27,6 +27,7 @@ import LeadForm from '../components/LeadForm.astro';
 import CtaBand from '../components/CtaBand.astro';
 import Icon from '../components/Icon.astro';
 import { breadcrumbSchema } from '../data/schema';
+import { forms } from '../data/forms';
 import hero from '../assets/join-our-team/edel-roofing-5.jpg';
 import truck from '../assets/about-us/edel-truck.webp';
 import building from '../assets/about-us/commercial-building.jpg';
@@ -84,6 +85,7 @@ const photos = [
         <LeadForm
           id="apply"
           submit="Submit"
+          endpoint={forms.join}
           fields={[
             { name: 'first_name', label: 'First Name', required: true, autocomplete: 'given-name' },
             { name: 'last_name', label: 'Last Name', required: true, autocomplete: 'family-name' },
