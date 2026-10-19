@@ -1,0 +1,20 @@
+---
+// The 10 blog posts at their live root paths (/roof-repair-edinburg-rgv-guide,
+// /reemplazo-de-techo-en-mcallen-tiempo-y-seguro, ...). Content: the `blog`
+// collection (src/content/blog). Layout: src/layouts/BlogPost.astro.
+import { getCollection } from 'astro:content';
+import BlogPost from '../layouts/BlogPost.astro';
+
+export async function getStaticPaths() {
+  const posts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  return posts.map((post) => {
+    const twin = posts.find((p) => p.id === post.data.twin);
+    // Newest other posts in the same language.
+    const related = posts.filter((p) => p.id !== post.id && p.data.lang === post.data.lang).slice(0, 3);
+    return { params: { post: post.id }, props: { post, twin, related } };
+  });
+}
+
+const { post, twin, related } = Astro.props;
+---
+<BlogPost post={post} twin={twin} related={related} />

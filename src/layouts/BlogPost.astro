@@ -1,0 +1,171 @@
+---
+// Blog post layout (batch 5). Body = the live Duda post body, kept as is
+// apart from the edits listed in each post's `changes` frontmatter.
+// Added around it: breadcrumb, quote/call box, link to the other-language
+// version, three related posts, closing call band. Byline wording is
+// translated on Spanish posts (live showed "By ... • August 27, 2026").
+import { Image, getImage } from 'astro:assets';
+import { render, type CollectionEntry } from 'astro:content';
+import Base from './Base.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Icon from '../components/Icon.astro';
+import { site } from '../data/site';
+import { breadcrumbSchema, SITE_URL } from '../data/schema';
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+  twin?: CollectionEntry<'blog'>;
+  related: CollectionEntry<'blog'>[];
+}
+const { post, twin, related } = Astro.props;
+const d = post.data;
+const es = d.lang === 'es';
+const path = `/${post.id}`;
+const fmt = (date: Date) =>
+  date.toLocaleDateString(es ? 'es-MX' : 'en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+const byline = [d.author && `${es ? 'Por' : 'By'} ${d.author}`, fmt(d.pubDate)].filter(Boolean).join(' • ');
+const crumbs = [
+  { label: es ? 'Inicio' : 'Home', href: es ? '/es-mx' : '/' },
+  { label: 'Blog', href: '/blog' },
+  { label: d.title, href: path },
+];
+const ogImage = await getImage({ src: d.image, width: 1200, format: 'jpg', quality: 80 });
+const schema = [
+  breadcrumbSchema(crumbs),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: d.schemaHeadline,
+    description: d.description,
+    datePublished: d.pubDate.toISOString().slice(0, 10),
+    dateModified: (d.updatedDate ?? d.modDate).toISOString().slice(0, 10),
+    inLanguage: d.lang,
+    image: new URL(ogImage.src, SITE_URL).href,
+    mainEntityOfPage: new URL(path, SITE_URL).href,
+    ...(d.author && { author: { '@type': 'Person', name: d.author } }),
+    publisher: { '@id': SITE_URL },
+  },
+];
+const alternates = twin ? (es ? { en: `/${twin.id}`, es: path } : { en: path, es: `/${twin.id}` }) : undefined;
+const t = es
+  ? { twin: 'Read this in English', box: 'Inspección de techo gratis', boxBody: 'Presupuesto por escrito antes de empezar cualquier trabajo. Con licencia y seguro.', quote: 'Cotización Instantánea', call: 'Llamar', related: 'Más artículos', more: 'Leer más', ctaTitle: '¿Tiene preguntas sobre su techo?', ctaBody: 'Llámenos o pida una cotización. Inspección gratis y presupuesto por escrito.', ctaBtn: 'Contáctenos', ctaHref: '/es-mx/contact-us' }
+  : { twin: 'Leer en español', box: 'Free roof inspection', boxBody: 'Written estimate before any work starts. Licensed and insured.', quote: 'Get Instant Quote', call: 'Call', related: 'More Articles', more: 'Read more', ctaTitle: 'Questions About Your Roof?', ctaBody: 'Call us or request a quote. Free inspection and a written estimate.', ctaBtn: 'Contact Us', ctaHref: '/contact-us' };
+const { Content } = await render(post);
+---
+<Base title={d.seoTitle} description={d.description} lang={d.lang} alternates={alternates} schema={schema}>
+  <article>
+    <header class="post-head">
+      <div class="wrap narrow">
+        <nav class="crumbs" aria-label={es ? 'Ruta de navegación' : 'Breadcrumb'}>
+          <ol>
+            {crumbs.slice(0, -1).map((c) => <li><a href={c.href}>{c.label}</a></li>)}
+          </ol>
+        </nav>
+        <h1>{d.title}</h1>
+        <p class="byline">{byline}</p>
+        {twin && (
+          <a class="twin" href={`/${twin.id}`} hreflang={twin.data.lang} lang={twin.data.lang}>{t.twin}<Icon name="arrow" /></a>
+        )}
+      </div>
+    </header>
+
+    <div class="wrap layout">
+      <div class="main">
+        <Image src={d.image} alt={d.imageAlt} widths={[480, 800, 1100]} sizes="(max-width: 1000px) 100vw, 760px" class="feature" loading="eager" />
+        <div class="prose">
+          <Content />
+        </div>
+      </div>
+      <aside class="side">
+        <div class="box">
+          <p class="box-title">{t.box}</p>
+          <p>{t.boxBody}</p>
+          <a class="btn" href="/contact-us" data-roofle-open>{t.quote}</a>
+          <a class="btn btn--ghost" href={site.phoneHref}><Icon name="phone" />{t.call} {site.phone}</a>
+        </div>
+      </aside>
+    </div>
+  </article>
+
+  {related.length > 0 && (
+    <section class="related">
+      <div class="wrap">
+        <h2>{t.related}</h2>
+        <ul>
+          {related.map((r) => (
+            <li>
+              <a href={`/${r.id}`}>
+                <Image src={r.data.image} alt="" widths={[360, 560]} sizes="(max-width: 800px) 100vw, 360px" />
+                <span class="r-title">{r.data.title}</span>
+                <span class="r-more">{t.more}<Icon name="arrow" /></span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <CtaBand title={t.ctaTitle} body={t.ctaBody} cta={{ label: t.ctaBtn, href: t.ctaHref }} lang={d.lang} />
+</Base>
+
+<style>
+  .post-head { background: var(--maroon-dark); color: var(--white); padding-block: 36px 44px; }
+  .narrow { max-width: 900px; }
+  .crumbs ol { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 20px; padding: 0; font-size: 13px; }
+  .crumbs li { color: rgba(255, 255, 255, 0.75); }
+  .crumbs li + li::before { content: '/'; margin-right: 6px; color: rgba(255, 255, 255, 0.45); }
+  .crumbs a { text-decoration: none; }
+  .crumbs a:hover { text-decoration: underline; color: var(--white); }
+  h1 { color: var(--white); font-size: clamp(32px, 4.4vw, 52px); font-weight: 600; line-height: 1.1; margin-bottom: 14px; }
+  .byline { margin: 0; font-size: 14px; color: rgba(255, 255, 255, 0.8); }
+  .twin { display: inline-flex; align-items: center; gap: 6px; margin-top: 16px; font-size: 14px; font-weight: 600; color: #f2c4c8; }
+  .twin :global(svg) { width: 16px; height: 16px; }
+
+  .layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 48px; padding-block: 48px 72px; align-items: start; }
+  .main { min-width: 0; }
+  .feature { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius); margin-bottom: 32px; }
+
+  .prose { font-size: 16px; line-height: 1.75; }
+  .prose :global(h2) { font-size: clamp(26px, 3vw, 34px); margin: 1.8em 0 0.5em; }
+  .prose :global(h3) { font-size: 24px; margin: 1.5em 0 0.4em; }
+  .prose :global(h2:first-child) { margin-top: 0; }
+  .prose :global(ul), .prose :global(ol) { padding-left: 1.3em; margin: 0 0 1.2em; }
+  .prose :global(li) { margin-bottom: 0.6em; }
+  .prose :global(a) { color: var(--maroon); font-weight: 600; }
+  .prose :global(strong) { color: var(--ink-strong); }
+  .prose :global(details) { background: var(--white); border: 1px solid var(--line); border-left: 3px solid var(--maroon); border-radius: var(--radius); margin-bottom: 12px; }
+  .prose :global(summary) { padding: 16px 18px; cursor: pointer; font-weight: 600; color: var(--ink-strong); }
+  .prose :global(details p) { padding: 0 18px 16px; margin: 0; }
+
+  .side { position: sticky; top: 100px; }
+  .box { padding: 24px; background: var(--bg-soft); border: 1px solid var(--line); border-top: 3px solid var(--maroon); border-radius: var(--radius); }
+  .box-title { font-family: var(--font-head); font-size: 26px; color: var(--maroon); line-height: 1.15; margin-bottom: 8px; }
+  .box p { font-size: 14px; }
+  .box .btn { display: flex; width: 100%; gap: 8px; margin-top: 10px; padding-inline: 12px; }
+  .box .btn :global(svg) { width: 16px; height: 16px; }
+
+  .related { background: var(--bg-soft); padding-block: 64px; }
+  .related h2 { font-size: clamp(28px, 3.4vw, 40px); text-transform: uppercase; }
+  .related ul { list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+  .related a { display: flex; flex-direction: column; height: 100%; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; text-decoration: none; }
+  .related a:hover { border-color: var(--maroon); }
+  .related :global(img) { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+  .r-title { padding: 16px 18px 6px; font-family: var(--font-head); font-size: 21px; line-height: 1.2; color: var(--maroon); }
+  .r-more { margin-top: auto; padding: 8px 18px 18px; display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--maroon); }
+  .r-more :global(svg) { width: 14px; height: 14px; }
+
+  @media (max-width: 1000px) {
+    .layout { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+    .side { position: static; }
+  }
+  @media (max-width: 800px) {
+    .related ul { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .post-head { padding-block: 20px 28px; }
+    h1 { font-size: 30px; }
+    .layout { padding-block: 24px 48px; }
+    .feature { margin-bottom: 24px; }
+  }
+</style>
