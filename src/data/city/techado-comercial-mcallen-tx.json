@@ -4,7 +4,7 @@
   "city": "mcallen",
   "service": "commercial",
   "title": "Techado Comercial en McAllen, TX | EDEL Roofing & Construction",
-  "description": "Contratista de techado comercial con licencia en McAllen, TX. Techos planos, TPO, EPDM, bitumen modificado y reparaciones comerciales. más de 250 reseñas en Google. Estimado gratis: (956) 422-3335.",
+  "description": "Reparación, reemplazo y recubrimiento de techos planos comerciales en McAllen, TX. TPO, EPDM, bitumen modificado. Alcance por escrito. Llame al (956) 422-3335.",
   "alternates": {
     "en": "/commercial-roofing-mcallen-tx",
     "es": "/techado-comercial-mcallen-tx"
@@ -20,7 +20,7 @@
     }
   ],
   "h1": "Techado Comercial en McAllen, TX",
-  "lede": "Edel Roofing &amp; Construction instala y repara sistemas de techado comercial para negocios, administradores de propiedades y dueños de edificios en McAllen. Con licencia, fianza y seguro. Estimados comerciales gratis sin compromiso.",
+  "lede": "Edel Roofing &amp; Construction repara, reemplaza y recubre techos planos y de poca pendiente en locales comerciales, oficinas, edificios médicos y bodegas de McAllen. Con licencia, fianza y seguro, y con estimados gratis por escrito.",
   "heroCtas": [
     {
       "label": "Obtener Estimado Gratis",
@@ -33,110 +33,141 @@
   ],
   "sections": [
     {
-      "title": "Contratista de techado comercial en McAllen",
+      "title": "Techos planos en la ciudad donde compra el Valle",
       "alt": false,
       "kind": "text",
       "paras": [
-        "Edel Roofing está en Edinburg, a unos 15 minutos del centro de McAllen, y lleva desde 2003 trabajando en propiedades comerciales en todo el condado de Hidalgo. Instalamos y reparamos sistemas de techo plano y de poca pendiente en centros comerciales, oficinas, instalaciones médicas, bodegas y propiedades de uso mixto en McAllen.",
-        "McAllen es la ciudad más grande del Valle del Río Grande y tiene la mayor cantidad de inmuebles comerciales en la región. El corredor de Nolana Ave, la zona de locales en 10th Street, los edificios médicos cerca de South Texas Health System y los parques industriales y de bodegas en el norte de McAllen son en su mayoría edificios con techo plano. Cuando uno de ellos tiene una gotera o necesita reemplazo de membrana, podemos llegar rápido y hacer el trabajo bien.",
-        "El techado comercial requiere un nivel de planificación diferente al residencial. Hay inquilinos afectados, los horarios de negocio importan y una falla en el techo no es solo un problema de propiedad, es un problema de operaciones. Inspeccionamos antes de dar un estimado, ponemos todo por escrito y programamos el trabajo según las necesidades de su edificio."
+        "McAllen es donde compra el Valle del Río Grande. La ciudad reportó $99.9 millones en ingresos por impuesto sobre las ventas en 2025, la cifra más alta de cualquier ciudad del Valle. Ese comercio pasa bajo techos planos. La Plaza Mall, en S 10th St, tiene unos 1.32 millones de pies cuadrados, y las plazas comerciales, restaurantes, clínicas y bodegas a su alrededor suman mucho más. McAllen Medical Center está en W Expressway 83, y hay consultorios médicos por toda la ciudad.",
+        "En un edificio así, una gotera es un problema de operaciones. Los inquilinos pierden ventas, la mercancía se moja, y los pacientes y el personal tienen que seguir llegando. Por eso el primer paso en cualquier trabajo comercial en McAllen es inspeccionar todo el techo, y luego entregarle un alcance por escrito que dice qué vamos a hacer, cuánto cuesta y cuándo lo podemos hacer según su horario.",
+        "Nuestra oficina está en 1815 N Jackson Rd en Edinburg, a unos 11 minutos de la alcaldía de McAllen. Trabajamos en techos comerciales en todo el condado de Hidalgo desde 2003."
       ]
     },
     {
-      "title": "Servicios de techado comercial en McAllen",
+      "title": "Servicios de techado comercial para edificios en McAllen",
       "alt": true,
       "kind": "cards",
       "cards": [
         {
-          "title": "Instalación de Techo Plano",
-          "body": "Sistemas de techo plano y de poca pendiente nuevos para edificios comerciales en McAllen. Instalamos membranas de TPO, EPDM y bitumen modificado, los tres sistemas más usados en propiedades comerciales del sur de Texas."
+          "title": "Instalación de techo plano",
+          "body": "Sistemas nuevos de TPO, EPDM o bitumen modificado, las membranas más usadas en edificios comerciales del sur de Texas."
         },
         {
-          "title": "Reemplazo de Techo Comercial",
-          "body": "Demolición y reemplazo completo cuando un techo comercial ha llegado al final de su vida útil. Retiramos el sistema anterior, inspeccionamos la madera de apoyo para detectar daño por humedad e instalamos un techo comercial nuevo con alcance y tiempos documentados."
+          "title": "Reemplazo de techo comercial",
+          "body": "Retiro del sistema desgastado, revisión de la base del techo por daño de agua e instalación de una membrana nueva con un calendario por escrito."
         },
         {
-          "title": "Reparaciones de Techo Comercial",
-          "body": "Reparaciones de goteras, parches de membrana, reparaciones de tapajuntas y problemas de drenaje en techos comerciales existentes. Localizamos el origen real del problema, no solo el lugar donde el agua aparece adentro, y lo resolvemos."
+          "title": "Reparación de goteras y membrana",
+          "body": "Reparamos costuras, perforaciones, tapajuntas y desagües en el origen real de la gotera, que en un techo plano puede estar lejos de donde gotea adentro."
         },
         {
-          "title": "Recubrimientos de Techo",
-          "body": "Recubrimientos reflectivos aplicados sobre membranas comerciales existentes para extender su vida útil y reducir la absorción de calor. En el clima de McAllen, un buen recubrimiento puede reducir los costos de aire acondicionado y agregar años de vida a un techo que todavía está en buen estado estructural."
+          "title": "Recubrimientos de techo",
+          "body": "Recubrimientos reflectivos sobre una membrana en buen estado pero envejecida. Vea <a href=\"/roof-coatings-mcallen-tx\">recubrimientos de techo en McAllen</a> para saber cuándo conviene."
         },
         {
-          "title": "Daño por Tormenta y Granizo",
-          "body": "Las tormentas de granizo en el condado de Hidalgo afectan fuertemente los techos comerciales. Inspeccionamos el impacto, rupturas de membrana y fallas de tapajuntas, y entregamos documentación escrita que es útil cuando contacta a su compañía de seguros."
+          "title": "Daño por tormenta y granizo",
+          "body": "Perforaciones en la membrana, bordes rotos y tapajuntas sueltos después de una tormenta, documentados por escrito para su compañía de seguros."
         },
         {
-          "title": "Inspecciones de Techo Comercial",
-          "body": "Inspecciones de rutina para administradores de propiedades y dueños de edificios que quieren detectar problemas antes de que se vuelvan costosos. Caminamos el techo, documentamos las condiciones y le entregamos un informe claro sobre lo que necesita atención y lo que puede esperar."
+          "title": "Inspecciones y mantenimiento",
+          "body": "Inspecciones programadas para dueños y administradores de propiedades, con un informe escrito de lo que necesita trabajo ahora y lo que puede esperar."
         }
       ]
     },
     {
-      "title": "Cómo es el techado comercial en McAllen",
+      "title": "Cómo el clima de McAllen desgasta un techo comercial",
       "alt": false,
       "kind": "text",
       "paras": [
-        "McAllen tiene una concentración de inmuebles comerciales que no tiene comparación en el Valle. El corredor de Nolana Ave y 10th Street está lleno de centros comerciales, muchos de construcción original de los años 80 y 90 con techos planos que ya están llegando o pasando su vida útil esperada. El norte de McAllen tiene un sector industrial y de bodegas en crecimiento donde los techos de membrana de gran formato son el estándar.",
-        "Las propiedades médicas son otra categoría importante. Las instalaciones cerca de South Texas Health System, junto con las clínicas, consultorios médicos y edificios de especialidades distribuidos en McAllen, tienen techos planos o de poca pendiente. Una falla en el techo de un edificio médico es un problema diferente: no puede esperar y el trabajo muchas veces tiene que hacerse sin afectar a los pacientes ni al personal.",
-        "Trabajamos con dueños de edificios, administradores de propiedades y dueños de negocios en todos estos tipos de propiedad. Si administra varios edificios en McAllen y quiere un contratista que pueda manejar el lado comercial de manera consistente, llámenos para hablar sobre cómo sería una relación de inspección y mantenimiento regular."
+        "Un techo plano recibe el sol directo todo el día. Los promedios normales de NOAA para el aeropuerto de McAllen muestran 177 días al año a 90°F o más y una temperatura máxima promedio en agosto de 99.6°F. El calor y los rayos UV resecan las membranas, abren las costuras y agrietan el sellador en las bases de los equipos y en las penetraciones. Una superficie de techo oscura bajo ese sol se calienta mucho más que el aire.",
+        "El viento es el otro problema. El 28 de abril de 2023 se midió una ráfaga de 74 mph en McAllen, y el estudio de daños del NWS encontró un edificio en S 29th St que había perdido más de la mitad de sus tejas. El 8 de mayo de 2025, <a href=\"https://www.weather.gov/media/bro/wxevents/2025/pdf/PNS_McAllenSurvey_May8Microburst.pdf\">una microrráfaga estimada de 80 a 85 mph</a> pegó en la zona entre Taylor Rd y Ware Rd, y observadores reportaron granizo de 2 pulgadas en el norte de McAllen. En un techo plano, el viento se mete debajo de la membrana por los bordes y por los tapajuntas sueltos, y el granizo perfora los puntos débiles.",
+        "La lluvia hace el resto. Septiembre es el mes más lluvioso en el aeropuerto, con unas 4.6 pulgadas en promedio. Los desagües y los desagües laterales tapados dejan que el agua se estanque, y el agua estancada encuentra cada costura abierta."
       ]
     },
     {
-      "title": "Por qué los negocios de McAllen eligen Edel Roofing",
+      "title": "Cómo es un trabajo comercial en McAllen",
       "alt": true,
+      "kind": "cards",
+      "cards": [
+        {
+          "title": "1. Caminamos el techo",
+          "body": "Inspeccionamos todo el techo, los desagües, los bordes, las bases de los equipos y los equipos del techo, y tomamos fotos."
+        },
+        {
+          "title": "2. Alcance por escrito",
+          "body": "Reparación, recubrimiento o reemplazo, con el precio y el calendario por escrito. Si una reparación es suficiente, el alcance dice reparación."
+        },
+        {
+          "title": "3. Planeamos según su horario",
+          "body": "Trabajamos según los horarios de los inquilinos y del negocio para que la tienda o la clínica pueda seguir abierta."
+        },
+        {
+          "title": "4. Registros para sus archivos",
+          "body": "Al terminar el trabajo, le entregamos documentación para sus registros de seguro y mantenimiento."
+        }
+      ]
+    },
+    {
+      "title": "Por qué los dueños de propiedades en McAllen llaman a Edel",
+      "alt": false,
       "kind": "proof",
       "proof": [
         {
-          "big": "Con Licencia",
-          "label": "RCAT #03-0489, contratista de techos con licencia en Texas, con fianza y seguro"
+          "big": "Certificado",
+          "label": "Sistemas comerciales de Versico, Duro-Last, Polyglass, KARNAK y Mule-Hide"
+        },
+        {
+          "big": "RCAT #03-0489",
+          "label": "Contratista de techos con licencia en Texas, con fianza y seguro"
         },
         {
           "big": "4.8★",
-          "label": "más de 250 reseñas en Google, clientes residenciales y comerciales en todo el Valle"
-        },
-        {
-          "big": "Certificado",
-          "label": "Versico, Duro-Last, Polyglass, KARNAK, Mule-Hide, fabricantes líderes de membranas comerciales"
+          "label": "250+ reseñas en Google de clientes residenciales y comerciales"
         },
         {
           "big": "Desde 2003",
-          "label": "Más de 20 años en techos comerciales y residenciales en McAllen y el Valle del Río Grande"
+          "label": "Techos comerciales y residenciales en todo el Valle del Río Grande"
         }
       ]
     },
     {
       "title": "Preguntas sobre techado comercial en McAllen",
-      "alt": false,
+      "alt": true,
       "kind": "faq",
       "faqs": [
         {
-          "q": "Mi negocio en McAllen tiene una gotera en el techo plano. ¿Pueden repararla?",
-          "a": "Sí. Reparamos techos planos y de poca pendiente en toda McAllen. Las goteras en techos planos son más difíciles de rastrear que en techos residenciales porque el agua viaja por la membrana antes de aparecer adentro. Inspeccionamos el techo completo para encontrar el punto de entrada real. Llame al (956) 422-3335 para programar una inspección."
+          "q": "Nuestra tienda tiene una gotera y no podemos cerrar. ¿Pueden trabajar sin que cerremos?",
+          "a": "Sí. Díganos su horario y sus días de más movimiento, y programamos el trabajo según sus inquilinos y su horario de negocio."
         },
         {
-          "q": "¿Qué tipos de techado comercial instalan en McAllen?",
-          "a": "Instalamos sistemas de membrana de TPO, EPDM y bitumen modificado, los tres sistemas de techo plano más comunes en el sur de Texas. También aplicamos recubrimientos para edificios que necesitan extender su vida útil sin un reemplazo completo. Recomendamos el sistema adecuado según el tipo de edificio, el área del techo y el presupuesto."
+          "q": "¿Qué sistema de techo plano es mejor para un edificio en McAllen?",
+          "a": "Depende del edificio, el área del techo, la base del techo y su presupuesto. TPO, EPDM y bitumen modificado son comunes en el sur de Texas. En el alcance por escrito le explicamos las ventajas y desventajas para su techo."
         },
         {
-          "q": "¿Cuánto dura un techo comercial en el clima de McAllen?",
-          "a": "Un sistema de membrana comercial bien instalado en el Valle dura entre 15 y 25 años dependiendo del material y el mantenimiento. El calor y la exposición UV de McAllen aceleran el desgaste en comparación con climas más fríos. Las inspecciones regulares detectan problemas pequeños antes de que acorten ese tiempo."
+          "q": "¿Cuánto debe durar un techo comercial aquí?",
+          "a": "Una membrana bien instalada en el Valle normalmente dura de 15 a 25 años, según el material y qué tan bien se mantenga. El calor acorta ese tiempo, y las inspecciones regulares le ayudan a llegar al máximo."
         },
         {
-          "q": "¿Trabajan con administradores de propiedades que manejan varios edificios en McAllen?",
-          "a": "Sí. Una parte importante de nuestro trabajo comercial es con administradores de propiedades y dueños de edificios con múltiples inmuebles. Podemos programar en torno a los horarios de los inquilinos, proveer documentación para seguros y registros de mantenimiento, y establecer acuerdos de inspección periódica para que los problemas se detecten a tiempo en todos sus edificios."
+          "q": "Administramos varias propiedades en McAllen. ¿Pueden encargarse de todas?",
+          "a": "Sí. Trabajamos con dueños y administradores de propiedades que tienen más de un edificio, y podemos programar inspecciones periódicas para detectar problemas a tiempo en cada propiedad."
         },
         {
-          "q": "¿Cómo obtengo un estimado de techado comercial en McAllen?",
-          "a": "Llame al (956) 422-3335 o <a href=\"/book-an-inspection\">programe una inspección en línea</a>. Agendaremos una visita para caminar el techo, tomar medidas y darle un estimado escrito. Los estimados comerciales son gratis y sin compromiso."
+          "q": "¿Qué causa la mayoría de las goteras en techos planos?",
+          "a": "Las costuras abiertas, los tapajuntas desgastados en las paredes y en las bases de los equipos del techo, y los desagües tapados causan la mayoría. Después siguen las perforaciones por granizo o por gente caminando en el techo. Muchas veces el goteo adentro está lejos del origen, porque el agua corre por la base del techo antes de pasar por el plafón."
+        },
+        {
+          "q": "¿Documentan el daño por tormenta en techos comerciales?",
+          "a": "Sí. Inspeccionamos después de una tormenta y le damos un informe escrito con fotos para su aseguradora. No somos ajustadores públicos, así que el reclamo es entre usted y su compañía de seguros."
+        },
+        {
+          "q": "¿Cómo obtengo un estimado comercial en McAllen?",
+          "a": "Llame al (956) 422-3335 o <a href=\"/book-an-inspection\">programe una inspección en línea</a>. Caminamos el techo, tomamos medidas y le damos un estimado por escrito. Los estimados comerciales son gratis."
         }
       ]
     }
   ],
   "cta": {
-    "title": "Estimado gratis de techado comercial en McAllen",
-    "line": "Inspeccionamos el techo, le damos un estimado escrito y explicamos sus opciones. Sin presión ni compromiso.",
+    "title": "Obtenga un estimado gratis de techo comercial en McAllen",
+    "line": "Caminamos todo el techo y luego le damos un alcance por escrito con el precio y un calendario que se ajusta a su negocio.",
     "buttons": [
       {
         "label": "Programar Inspección Gratis",
@@ -178,15 +209,15 @@
               "@type": "ListItem",
               "position": 4,
               "name": "Techado Comercial McAllen",
-              "item": "https://www.edelroofing.com/commercial-roofing-mcallen-tx-es"
+              "item": "https://www.edelroofing.com/techado-comercial-mcallen-tx"
             }
           ]
         },
         {
           "@type": "WebPage",
           "name": "Techado Comercial en McAllen, TX",
-          "url": "https://www.edelroofing.com/commercial-roofing-mcallen-tx-es",
-          "description": "Contratista de techado comercial con licencia en McAllen, TX. Techos planos, TPO, EPDM, bitumen modificado y reparaciones comerciales. Estimado gratis: (956) 422-3335.",
+          "url": "https://www.edelroofing.com/techado-comercial-mcallen-tx",
+          "description": "Reparación, reemplazo y recubrimiento de techos planos comerciales en McAllen, TX. TPO, EPDM, bitumen modificado. Alcance por escrito. Llame al (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -196,42 +227,58 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "Mi negocio en McAllen tiene una gotera en el techo plano. ¿Pueden repararla?",
+              "name": "Nuestra tienda tiene una gotera y no podemos cerrar. ¿Pueden trabajar sin que cerremos?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Sí. Reparamos techos planos y de poca pendiente en toda McAllen. Las goteras en techos planos son más difíciles de rastrear porque el agua viaja por la membrana antes de aparecer adentro. Inspeccionamos el techo completo para encontrar el punto de entrada real. Llame al (956) 422-3335."
+                "text": "Sí. Díganos su horario y sus días de más movimiento, y programamos el trabajo según sus inquilinos y su horario de negocio."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Qué tipos de techado comercial instalan en McAllen?",
+              "name": "¿Qué sistema de techo plano es mejor para un edificio en McAllen?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Instalamos sistemas de membrana de TPO, EPDM y bitumen modificado. También aplicamos recubrimientos para edificios que necesitan extender su vida útil sin reemplazo completo. Recomendamos el sistema adecuado según el tipo de edificio, área del techo y presupuesto."
+                "text": "Depende del edificio, el área del techo, la base del techo y su presupuesto. TPO, EPDM y bitumen modificado son comunes en el sur de Texas. En el alcance por escrito le explicamos las ventajas y desventajas para su techo."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Cuánto dura un techo comercial en el clima de McAllen?",
+              "name": "¿Cuánto debe durar un techo comercial aquí?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Un sistema de membrana comercial bien instalado en el Valle dura entre 15 y 25 años dependiendo del material y el mantenimiento. El calor y la exposición UV aceleran el desgaste. Las inspecciones regulares detectan problemas pequeños a tiempo."
+                "text": "Una membrana bien instalada en el Valle normalmente dura de 15 a 25 años, según el material y qué tan bien se mantenga. El calor acorta ese tiempo, y las inspecciones regulares le ayudan a llegar al máximo."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Trabajan con administradores de propiedades con varios edificios en McAllen?",
+              "name": "Administramos varias propiedades en McAllen. ¿Pueden encargarse de todas?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Sí. Trabajamos con administradores de propiedades y dueños de edificios con múltiples inmuebles. Podemos programar en torno a los horarios de inquilinos y establecer acuerdos de inspección periódica."
+                "text": "Sí. Trabajamos con dueños y administradores de propiedades que tienen más de un edificio, y podemos programar inspecciones periódicas para detectar problemas a tiempo en cada propiedad."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Cómo obtengo un estimado de techado comercial en McAllen?",
+              "name": "¿Qué causa la mayoría de las goteras en techos planos?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Llame al (956) 422-3335 o programe una inspección en línea. Agendaremos una visita para caminar el techo, tomar medidas y darle un estimado escrito. Los estimados son gratis y sin compromiso."
+                "text": "Las costuras abiertas, los tapajuntas desgastados en las paredes y en las bases de los equipos del techo, y los desagües tapados causan la mayoría. Después siguen las perforaciones por granizo o por gente caminando en el techo. Muchas veces el goteo adentro está lejos del origen, porque el agua corre por la base del techo antes de pasar por el plafón."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Documentan el daño por tormenta en techos comerciales?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. Inspeccionamos después de una tormenta y le damos un informe escrito con fotos para su aseguradora. No somos ajustadores públicos, así que el reclamo es entre usted y su compañía de seguros."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cómo obtengo un estimado comercial en McAllen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Llame al (956) 422-3335 o programe una inspección en línea. Caminamos el techo, tomamos medidas y le damos un estimado por escrito. Los estimados comerciales son gratis."
               }
             }
           ]
@@ -242,6 +289,7 @@
   "changes": [
     "Spanish breadcrumb \"Áreas de Servicio\" linked the English /service-areas; now /es-mx/service-areas",
     "em/en dashes swapped for commas, colons, or hyphens",
-    "review counts (246/252) -> 250+ (match the homepage)"
+    "review counts (246/252) -> 250+ (match the homepage)",
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
   ]
 }

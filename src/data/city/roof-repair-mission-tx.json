@@ -4,7 +4,7 @@
   "city": "mission",
   "service": "repair",
   "title": "Roof Repair in Mission, TX | Edel Roofing & Construction",
-  "description": "Fast, licensed roof repair in Mission, TX. Leaks, storm damage, flashing, and insurance documentation. 250+ Google reviews. Free estimate: (956) 422-3335.",
+  "description": "Roof repair in Mission, TX for hail damage, leaks, and aging 2000s shingle roofs. Free inspection, written price first. Licensed RCAT #03-0489. Call (956) 422-3335.",
   "alternates": {
     "en": "/roof-repair-mission-tx",
     "es": "/reparacion-de-techo-mission-tx"
@@ -20,7 +20,7 @@
     }
   ],
   "h1": "Roof Repair in Mission, TX",
-  "lede": "Edel Roofing &amp; Construction repairs leaks, storm damage, and worn roofing for homes across Mission. Licensed, bonded, and insured. Most repairs are completed in a single visit.",
+  "lede": "Edel Roofing &amp; Construction repairs leaks, hail damage, and worn flashing on homes in Mission. The inspection is free, and you get a written price before any work starts.",
   "heroCtas": [
     {
       "label": "Get a Free Estimate",
@@ -33,110 +33,122 @@
   ],
   "sections": [
     {
-      "title": "Roof repair contractor serving Mission",
+      "title": "Roof repair for Mission homes",
       "alt": false,
       "kind": "text",
       "paras": [
-        "Edel Roofing is based in Edinburg, about 25 minutes from Mission, and has been repairing roofs across Hidalgo County since 2003. A leak or a damaged section usually does not mean a full replacement. Most of the time it is a specific, findable problem, a cracked flashing, a section of missing shingles, a failed vent boot, and it can be fixed in a single visit.",
-        "We get repair calls from the older homes near Conway Avenue and downtown Mission, where roofs from the 1970s and 80s are on their second or third repair, and from the newer subdivisions out toward Sharyland, where storm damage is the more common cause. Either way, we inspect first and tell you honestly whether it is a repair or something bigger.",
-        "A repair call is not an excuse to upsell a replacement. If a repair is the right fix, that is what we recommend and what we do."
+        "Mission is a younger city than most people think. About half of its homes were built in 2000 or later, and the median home was built in 2000, according to Census Bureau survey data (ACS 2020 to 2024). Around 68% are single family houses. So a lot of Mission roofs are still the original roof, put on when the house was built, and many of those are now 20 years old or more.",
+        "A shingle roof that age in the Valley is near the end of its life. Shingles turn brittle, the granules wash into the gutters, and the sealant around vents and flashing dries out. That is when the small leaks start. A small leak on an older roof is still usually a repair, as long as the rest of the roof is sound.",
+        "We come to Mission from our office at 1815 N Jackson Rd in Edinburg. It is about 17 miles, roughly 26 minutes to Mission City Hall."
       ]
     },
     {
-      "title": "Roof repair services in Mission",
+      "title": "Hail and heavy rain in Mission",
       "alt": true,
+      "kind": "text",
+      "paras": [
+        "Mission sits in the path of the spring storms that cross the Valley. On April 21, 2023, spotters reported hail up to 2.5 inches in Mission and 2.75 inches in Peñitas, according to National Weather Service storm reports. On May 29, 2023, hail near 0.88 inches fell about a mile east of town. Hail that size cracks shingles and knocks off the granules that protect them from the sun.",
+        "Rain is the other test. <a href=\"https://www.weather.gov/bro/2020event_hanna\">Hurricane Hanna</a> dropped 14.40 inches of rain on Mission in July 2020, and the NWS reported hundreds of poorly built homes and other buildings damaged, mostly roofs. At the McAllen airport, the closest official weather station, September is the wettest month at about 4.6 inches (NOAA 1991 to 2020 normals). A roof that starts leaking slowly in spring often shows up as a ceiling stain by fall."
+      ]
+    },
+    {
+      "title": "What we repair in Mission",
+      "alt": false,
       "kind": "cards",
       "cards": [
         {
-          "title": "Leak Repair",
-          "body": "Interior water stains, active drips, or damp insulation. We trace the leak to its actual entry point, which is often several feet from where the water shows up inside, and repair it there."
+          "title": "Hail damaged shingles",
+          "body": "Cracked or bruised shingles are replaced in the area that was hit and matched to the existing roof as close as possible. The damage goes in writing for your insurance company."
         },
         {
-          "title": "Storm & Hail Damage Repair",
-          "body": "Missing or lifted shingles, granule loss, and impact damage from Hidalgo County storms. We document what we find in writing, which is useful if you are filing an insurance claim."
+          "title": "Aging flashing",
+          "body": "On a 20 year old roof, the sealant at walls and valleys has dried out. We reseal or replace the flashing so water runs off again."
         },
         {
-          "title": "Flashing Repair",
-          "body": "Flashing around chimneys, vents, and roof valleys is one of the most common leak sources on Mission homes. We reseal or replace failed flashing so water sheds the way it is supposed to."
+          "title": "Vent and pipe boots",
+          "body": "Rubber boots around plumbing vents crack in the sun. Replacing one is quick and stops a leak that is easy to miss."
         },
         {
-          "title": "Shingle Replacement (Sections)",
-          "body": "Cracked, curling, or wind-torn shingles replaced in the affected area, matched as closely as possible to your existing roof."
+          "title": "Leaks after heavy rain",
+          "body": "We trace the water back to where it enters the roof, which is often a few feet from where it drips inside."
         },
         {
-          "title": "Skylight & Vent Repair",
-          "body": "Failed skylight seals and roof vent boots are a common, specific leak source. We repair or reseal them without disturbing the rest of the roof."
+          "title": "Missing shingles",
+          "body": "Shingles torn off by wind get replaced, and we check the ones around them for broken seals."
         },
         {
-          "title": "Post-Storm Inspections",
-          "body": "A full walk of the roof after a hailstorm or high-wind event, with a written report on what needs repair now and what to keep an eye on."
+          "title": "Soft decking",
+          "body": "If a slow leak has softened the wood under the shingles, that section of decking is replaced before the roof is closed back up."
         }
       ]
     },
     {
-      "title": "What causes most roof repairs in Mission",
-      "alt": false,
+      "title": "Repair or replace a 20 year old Mission roof?",
+      "alt": true,
       "kind": "text",
       "paras": [
-        "Mission's heat and UV exposure wear down shingles faster than in cooler climates, shingles that look fine from the ground can already be brittle underneath. That is why a lot of our repair calls near Conway Avenue and downtown start with a homeowner noticing a small ceiling stain that turns out to be a flashing or vent issue that has been dripping slowly for a while.",
-        "Out in Sharyland and the newer subdivisions west and north of town, storm damage is the more common trigger, a hail event knocks loose a section of shingles or dents the roof enough to compromise the surface, and the homeowner needs both a repair and documentation for their insurance company.",
-        "Either way, the fix starts with an honest inspection. We tell you what we actually see, not what generates the biggest invoice."
+        "If the leak is in one place and the shingles around it still bend without cracking, a repair makes sense. If the roof leaks in several places, has bare patches where the granules are gone, or has soft decking in more than one area, the money is better spent on a new roof. We tell you which one we see, and we show you the photos so you can judge for yourself.",
+        "If you are leaning toward a new roof, read about <a href=\"/roof-replacement-mission-tx\">roof replacement in Mission</a>. For claims after a storm, see <a href=\"/storm-damage-mission-tx\">storm and hail damage in Mission</a>. Our post on <a href=\"/roof-repair-cost-in-mission-tx-what-s-fair-and-what-insurance-covers\">roof repair cost in Mission</a> goes deeper on pricing and insurance."
       ]
     },
     {
-      "title": "Why Mission homeowners call Edel Roofing for repairs",
-      "alt": true,
+      "title": "Why Mission homeowners call Edel",
+      "alt": false,
       "kind": "proof",
       "proof": [
         {
           "big": "Licensed",
-          "label": "RCAT #03-0489, Texas licensed roofing contractor, bonded & insured"
+          "label": "RCAT #03-0489, bonded and insured in Texas"
         },
         {
-          "big": "4.8★",
-          "label": "250+ Google reviews from homeowners across the RGV"
+          "big": "250+",
+          "label": "Google reviews with a 4.8 star average"
         },
         {
-          "big": "Single Visit",
-          "label": "Most repairs diagnosed and completed the same day"
+          "big": "Free",
+          "label": "Inspection and written estimate, no obligation"
         },
         {
           "big": "Since 2003",
-          "label": "Over 20 years repairing roofs across Mission and the Rio Grande Valley"
+          "label": "Fixing roofs in Mission and the rest of the Valley"
         }
       ]
     },
     {
-      "title": "Roof repair questions: Mission",
-      "alt": false,
+      "title": "Roof repair questions from Mission homeowners",
+      "alt": true,
       "kind": "faq",
       "faqs": [
         {
           "q": "What is a fair price for a roof repair in Mission?",
-          "a": "Most repairs run a few hundred dollars up to around $1,500, depending on what is wrong and how much of the roof is affected. A fair price is one backed by a written estimate after an actual inspection, not a phone-quote guess. We give you that estimate before any work starts."
+          "a": "Most repairs fall between a few hundred dollars and about $1,500. Where yours lands depends on what failed and how big the area is. A fair price comes from an inspection, not a phone guess, so we write the estimate after we see the roof and before we start."
         },
         {
-          "q": "What is the average cost to repair a roof in Texas?",
-          "a": "Statewide, small repairs like flashing or a section of shingles typically fall between $300 and $1,500. Larger repairs involving decking or a bigger damaged area can run higher. The Valley's heat adds a variable other parts of the state do not deal with as much, UV exposure ages shingles faster, so a repair that looks minor can be sitting on brittle material underneath."
+          "q": "My roof is over 20 years old. Will my insurance still cover it?",
+          "a": "The <a href=\"https://www.tdi.texas.gov/news/2026/tdi09292026.html\">Texas Department of Insurance</a> says insurers cannot refuse or drop a policy because of roof age alone, but they can look at the roof's condition. Some policies switch older roofs to actual cash value, which pays less after depreciation. Read your policy, and call your agent if you are not sure. A written inspection report helps either way."
         },
         {
-          "q": "What is the 25% rule for roofing?",
-          "a": "It is a code-driven guideline some jurisdictions and insurers apply: if more than 25% of a roof section needs replacing, the whole section (sometimes the whole roof) has to be brought up to current code rather than patched. It matters most on older Mission homes where a \"small\" repair area can trip that threshold once we actually get up there and measure it."
+          "q": "Do I need a windstorm inspection for my Mission roof?",
+          "a": "Not for TWIA. Hidalgo County is not one of the 14 coastal counties in the Texas Windstorm Insurance Association area, so a TDI windstorm certificate is not needed for TWIA eligibility. The city does require an engineered, sealed windstorm plan when you permit a new house."
         },
         {
-          "q": "Will insurance cover a 20-year-old roof in Texas?",
-          "a": "It depends on the policy and the cause of damage. Wear-and-tear from age is usually not covered, but a specific event, hail, wind, a storm, often is, even on an older roof. We inspect and document what we find so you have something concrete to bring to your insurance company; we are not a public adjuster, but we can tell you honestly whether what we see looks like an insurable event or ordinary aging."
+          "q": "Does a roof repair need a permit in Mission?",
+          "a": "Mission's residential permit application does not spell out roof repairs. Call the city's Inspections Division at (956) 580-8691 to check your job. Under the city's rules, work done without a required permit pays a double fee, so the call is worth it."
         },
         {
-          "q": "How do I get a roof repair estimate in Mission?",
-          "a": "Call (956) 422-3335 or <a href=\"/book-an-inspection\">book an inspection online</a>. We will schedule a time to look at the roof and give you a written estimate. Estimates are free with no obligation."
+          "q": "How soon can you get to Mission?",
+          "a": "We are about 26 minutes away. After a big storm a lot of people call at once, so call early and we will give you a time."
+        },
+        {
+          "q": "How do I get a repair estimate in Mission?",
+          "a": "Call (956) 422-3335 or <a href=\"/book-an-inspection\">book an inspection online</a>. It is free, and there is no obligation."
         }
       ]
     }
   ],
   "cta": {
     "title": "Get a free roof repair estimate in Mission",
-    "line": "We inspect the roof, give you a written estimate, and explain your options. No pressure, no obligation.",
+    "line": "We find the leak, show you the photos, and put the price in writing before any work starts.",
     "buttons": [
       {
         "label": "Book a Free Inspection",
@@ -186,7 +198,7 @@
           "@type": "WebPage",
           "name": "Roof Repair in Mission, TX",
           "url": "https://www.edelroofing.com/roof-repair-mission-tx",
-          "description": "Fast, licensed roof repair in Mission, TX. Leaks, storm damage, flashing, and insurance documentation. Free estimate: (956) 422-3335.",
+          "description": "Roof repair in Mission, TX for hail damage, leaks, and aging 2000s shingle roofs. Free inspection, written price first. Licensed RCAT #03-0489. Call (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -199,39 +211,47 @@
               "name": "What is a fair price for a roof repair in Mission?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Most repairs run a few hundred dollars up to around $1,500, depending on what is wrong and how much of the roof is affected. A fair price is backed by a written estimate after an inspection, not a phone-quote guess."
+                "text": "Most repairs fall between a few hundred dollars and about $1,500. Where yours lands depends on what failed and how big the area is. A fair price comes from an inspection, not a phone guess, so we write the estimate after we see the roof and before we start."
               }
             },
             {
               "@type": "Question",
-              "name": "What is the average cost to repair a roof in Texas?",
+              "name": "My roof is over 20 years old. Will my insurance still cover it?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Statewide, small repairs like flashing or a section of shingles typically fall between $300 and $1,500. Larger repairs involving decking or a bigger damaged area can run higher."
+                "text": "The Texas Department of Insurance says insurers cannot refuse or drop a policy because of roof age alone, but they can look at the roof's condition. Some policies switch older roofs to actual cash value, which pays less after depreciation. Read your policy, and call your agent if you are not sure. A written inspection report helps either way."
               }
             },
             {
               "@type": "Question",
-              "name": "What is the 25% rule for roofing?",
+              "name": "Do I need a windstorm inspection for my Mission roof?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "It is a code-driven guideline some jurisdictions and insurers apply: if more than 25% of a roof section needs replacing, that section has to be brought up to current code rather than patched."
+                "text": "Not for TWIA. Hidalgo County is not one of the 14 coastal counties in the Texas Windstorm Insurance Association area, so a TDI windstorm certificate is not needed for TWIA eligibility. The city does require an engineered, sealed windstorm plan when you permit a new house."
               }
             },
             {
               "@type": "Question",
-              "name": "Will insurance cover a 20-year-old roof in Texas?",
+              "name": "Does a roof repair need a permit in Mission?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "It depends on the policy and cause of damage. Wear-and-tear from age is usually not covered, but a specific event such as hail or wind often is, even on an older roof. We inspect and document what we find to support a claim."
+                "text": "Mission's residential permit application does not spell out roof repairs. Call the city's Inspections Division at (956) 580-8691 to check your job. Under the city's rules, work done without a required permit pays a double fee, so the call is worth it."
               }
             },
             {
               "@type": "Question",
-              "name": "How do I get a roof repair estimate in Mission?",
+              "name": "How soon can you get to Mission?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Call (956) 422-3335 or book an inspection online. We will schedule a time to look at the roof and give you a written estimate. Estimates are free with no obligation."
+                "text": "We are about 26 minutes away. After a big storm a lot of people call at once, so call early and we will give you a time."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I get a repair estimate in Mission?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Call (956) 422-3335 or book an inspection online. It is free, and there is no obligation."
               }
             }
           ]
@@ -241,6 +261,7 @@
   ],
   "changes": [
     "em/en dashes swapped for commas, colons, or hyphens",
-    "review counts (246/252) -> 250+ (match the homepage)"
+    "review counts (246/252) -> 250+ (match the homepage)",
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
   ]
 }

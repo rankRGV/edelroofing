@@ -4,7 +4,7 @@
   "city": "mcallen",
   "service": "repair",
   "title": "Reparación de Techo en McAllen, TX | EDEL Roofing & Construction",
-  "description": "Reparación de techo rápida y con licencia en McAllen, TX. Goteras, daño por tormenta, tapajuntas y tejas. más de 250 reseñas en Google.Estimado gratis: (956) 422-3335.",
+  "description": "Reparación de goteras y daño por viento en McAllen, TX. Estimado escrito antes de empezar, casi siempre en una visita. RCAT #03-0489. Llame al (956) 422-3335.",
   "alternates": {
     "en": "/roof-repair-mcallen-tx",
     "es": "/reparacion-de-techo-mcallen-tx"
@@ -20,7 +20,7 @@
     }
   ],
   "h1": "Reparación de Techo en McAllen, TX",
-  "lede": "Edel Roofing &amp; Construction repara goteras, daño por tormenta y desgaste en techos residenciales en todo McAllen. Con licencia, fianza y seguro. La mayoría de las reparaciones se completan en una sola visita.",
+  "lede": "Edel Roofing &amp; Construction repara goteras, tejas levantadas por el viento y tapajuntas desgastado en casas de McAllen. Nuestra oficina está a unas 6 millas de la alcaldía de McAllen, y la mayoría de las reparaciones se terminan en una sola visita.",
   "heroCtas": [
     {
       "label": "Obtener Estimado Gratis",
@@ -33,110 +33,137 @@
   ],
   "sections": [
     {
-      "title": "Contratista de reparación de techos en McAllen",
+      "title": "Reparación de techo para casas en McAllen",
       "alt": false,
       "kind": "text",
       "paras": [
-        "Edel Roofing está en Edinburg, a unos 15 minutos del centro de McAllen, y lleva desde 2003 reparando techos en todo el condado de Hidalgo. Una gotera o una sección dañada no siempre significa un reemplazo completo. La mayoría de las veces es un problema específico y localizable, un tapajuntas agrietado, una sección de tejas faltantes, un sello de tubería fallado, y se puede resolver en una sola visita.",
-        "Recibimos llamadas de reparación de dueños de casa en vecindarios más antiguos cerca de 2nd Street y 10th Street con techos de los años 80 y 90, y de casas más nuevas en el norte de McAllen cerca de Sharyland y Las Cumbres donde el daño por tormenta es la causa más común. En cualquier caso, inspeccionamos primero y le decimos con honestidad si es una reparación o algo más grande.",
-        "Una llamada de reparación no es una excusa para venderle un reemplazo. Si la reparación es la solución correcta, eso es lo que recomendamos y lo que hacemos."
+        "McAllen tiene muchos techos con edad suficiente para necesitar trabajo. Según datos de encuesta del Censo (ACS 2024), el año mediano de construcción de las casas de McAllen es 1997, y cerca de 4 de cada 10 casas son de antes de 1990. En un techo que ya ha pasado 20 o 30 veranos del Valle, las goteras suelen empezar en las aberturas y las orillas: el tapajuntas junto a una pared, una bota de ventila agrietada por el sol, tejas que se sueltan a lo largo de la cumbrera o de la orilla lateral del techo.",
+        "Una gotera no significa que necesite un techo nuevo. La mayoría de las goteras vienen de un solo punto, y un solo punto se puede reparar. Si una reparación es suficiente, eso es lo que cotizamos. Si el techo ya no tiene reparación, le mostramos las fotos y le explicamos por qué antes de siquiera hablar de un reemplazo.",
+        "Nuestra oficina está en 1815 N Jackson Rd en Edinburg, a unos 11 minutos en carro de la alcaldía de McAllen. Por ese viaje corto normalmente podemos llegar rápido a una gotera en McAllen."
       ]
     },
     {
-      "title": "Servicios de reparación de techo en McAllen",
+      "title": "Lo que las tormentas recientes le hicieron a los techos de McAllen",
+      "alt": true,
+      "kind": "text",
+      "paras": [
+        "El Servicio Nacional de Meteorología (NWS) ha registrado varios eventos de viento dañino en McAllen en los últimos años. El 28 de abril de 2023 se midió una ráfaga de 74 mph en la ciudad, y una inspección de daños del NWS encontró un edificio en S 29th St que había perdido más de la mitad de sus tejas. El 8 de mayo de 2025, una microrráfaga con vientos estimados de 80 a 85 mph cayó entre Taylor Rd y Ware Rd. <a href=\"https://www.weather.gov/media/bro/wxevents/2025/pdf/PNS_McAllenSurvey_May8Microburst.pdf\">La inspección del NWS</a> contó varias docenas de casas dañadas, al menos tres con tejas parcialmente levantadas.",
+        "El granizo suma al desgaste. Observadores reportaron granizo de hasta 1.25 pulgadas en McAllen el 21 de abril de 2023, y de hasta 2 pulgadas en el norte de McAllen durante la tormenta de mayo de 2025.",
+        "Las tejas parcialmente levantadas son fáciles de pasar por alto. La teja vuelve a bajar cuando pasa el viento, pero la tira de sellador que la sostenía ya está rota. El próximo viento fuerte la puede arrancar, y antes de eso la lluvia puede entrar por debajo. Si su calle fue afectada por una de estas tormentas y nadie se ha subido al techo desde entonces, vale la pena una inspección. Para reclamos más grandes por tormenta, vea <a href=\"/es-mx/storm-damage\">daño por tormenta y granizo en McAllen</a>."
+      ]
+    },
+    {
+      "title": "Reparaciones que hacemos en techos de McAllen",
+      "alt": false,
+      "kind": "cards",
+      "cards": [
+        {
+          "title": "Goteras",
+          "body": "Encontramos por dónde entra el agua, que muchas veces está varios pies más arriba en la pendiente que la mancha en su techo interior, y la reparamos en ese punto."
+        },
+        {
+          "title": "Tejas levantadas por el viento",
+          "body": "Las tejas que perdieron su sello en una tormenta se vuelven a sellar o se reemplazan, buscando el mejor emparejamiento posible con el resto del techo."
+        },
+        {
+          "title": "Tapajuntas",
+          "body": "El tapajuntas en paredes, chimeneas y valles es donde empiezan muchas goteras. Lo resellamos o reemplazamos la pieza que falló."
+        },
+        {
+          "title": "Botas de tubería y ventilas",
+          "body": "El collar de hule alrededor de una ventila de plomería se agrieta después de años de sol. Una bota nueva es un trabajo pequeño que detiene una gotera común."
+        },
+        {
+          "title": "Golpes de granizo",
+          "body": "Las tejas agrietadas o golpeadas se reemplazan en el área dañada, y anotamos lo que encontramos para sus registros."
+        },
+        {
+          "title": "Tragaluces",
+          "body": "Un sello de tragaluz que falló se resella o se le pone tapajuntas nuevo sin abrir el resto del techo."
+        }
+      ]
+    },
+    {
+      "title": "Cómo funciona una visita de reparación en McAllen",
       "alt": true,
       "kind": "cards",
       "cards": [
         {
-          "title": "Reparación de Goteras",
-          "body": "Manchas de agua en interiores, goteras activas o aislamiento húmedo. Rastreamos la gotera hasta su punto de entrada real, que muchas veces está a varios pies de donde aparece el agua adentro, y la reparamos ahí."
+          "title": "1. Llame o agende",
+          "body": "Llame al (956) 422-3335 o agende en línea. Díganos lo que está viendo: una mancha, una gotera, tejas en el patio."
         },
         {
-          "title": "Reparación por Tormenta y Granizo",
-          "body": "Tejas faltantes o levantadas, pérdida de gránulos y daño por impacto de tormentas en el condado de Hidalgo. Documentamos por escrito lo que encontramos, útil si va a presentar un reclamo de seguro."
+          "title": "2. Inspección",
+          "body": "Subimos al techo, encontramos el origen del problema y tomamos fotos que usted se puede quedar."
         },
         {
-          "title": "Reparación de Tapajuntas",
-          "body": "El tapajuntas alrededor de chimeneas, ventilas y valles del techo es una de las fuentes más comunes de goteras en casas de McAllen. Reparamos o reemplazamos el tapajuntas fallado para que el agua escurra como debe."
+          "title": "3. Precio por escrito",
+          "body": "Recibe el estimado por escrito antes de que empiece cualquier trabajo, así sabe la cantidad antes de aceptar nada."
         },
         {
-          "title": "Reemplazo de Tejas (por Sección)",
-          "body": "Tejas agrietadas, enroscadas o arrancadas por el viento se reemplazan en el área afectada, buscando el mejor emparejamiento posible con su techo actual."
-        },
-        {
-          "title": "Reparación de Tragaluz y Ventilas",
-          "body": "Los sellos fallados de tragaluces y las botas de ventilas del techo son una fuente de gotera común y específica. Las reparamos o resellamos sin afectar el resto del techo."
-        },
-        {
-          "title": "Inspecciones Post-Tormenta",
-          "body": "Una inspección completa del techo después de granizo o vientos fuertes, con un informe escrito de lo que necesita reparación ahora y lo que hay que vigilar."
+          "title": "4. Reparación",
+          "body": "La mayoría de las reparaciones se terminan en una sola visita una vez que sabemos qué falló."
         }
       ]
     },
     {
-      "title": "Qué causa la mayoría de las reparaciones en McAllen",
+      "title": "Por qué los dueños de casa en McAllen llaman a Edel para reparaciones",
       "alt": false,
-      "kind": "text",
-      "paras": [
-        "El calor y la exposición UV de McAllen desgastan las tejas más rápido que en climas más fríos: tejas que se ven bien desde el suelo ya pueden estar quebradizas por debajo. Por eso muchas de nuestras llamadas de reparación en vecindarios más antiguos cerca de 2nd Street y 10th Street comienzan con un dueño de casa que nota una mancha pequeña en el techo interior, que resulta ser un problema de tapajuntas o ventila que ha estado goteando lentamente por un tiempo.",
-        "En los desarrollos más nuevos cerca de Sharyland y Las Cumbres en el norte de McAllen, el daño por tormenta es el detonante más común: un evento de granizo desprende una sección de tejas o abolla el techo lo suficiente para comprometer la superficie, y el dueño necesita tanto la reparación como la documentación para su aseguranza.",
-        "En cualquier caso, la solución empieza con una inspección honesta. Le decimos lo que realmente vemos, no lo que genera la factura más grande."
-      ]
-    },
-    {
-      "title": "Por qué los dueños de casa en McAllen llaman a Edel Roofing para reparaciones",
-      "alt": true,
       "kind": "proof",
       "proof": [
         {
-          "big": "Con Licencia",
-          "label": "RCAT #03-0489, contratista de techos con licencia en Texas, con fianza y seguro"
+          "big": "RCAT #03-0489",
+          "label": "Contratista de techos con licencia en Texas, con fianza y seguro"
         },
         {
           "big": "4.8★",
-          "label": "más de 250 reseñas en Google de dueños de casa en todo el Valle"
+          "label": "Calificación promedio en más de 250 reseñas de Google"
         },
         {
-          "big": "Una Visita",
-          "label": "La mayoría de las reparaciones se diagnostican y completan el mismo día"
+          "big": "1 visita",
+          "label": "Lo que toma la mayoría de nuestras reparaciones, de principio a fin"
         },
         {
           "big": "Desde 2003",
-          "label": "Más de 20 años reparando techos en McAllen y el Valle del Río Grande"
+          "label": "Reparando techos en McAllen y en todo el condado de Hidalgo"
         }
       ]
     },
     {
-      "title": "Preguntas sobre reparación de techo: McAllen",
-      "alt": false,
+      "title": "Preguntas sobre reparación de techo en McAllen",
+      "alt": true,
       "kind": "faq",
       "faqs": [
         {
-          "q": "Tengo una gotera en mi casa en McAllen. ¿Necesito reemplazar todo el techo?",
-          "a": "Normalmente no. La mayoría de las goteras vienen de una fuente específica y reparable, tapajuntas, una bota de ventila, una sección de tejas dañadas, y se pueden reparar sin reemplazar todo el techo. Inspeccionamos primero y le decimos con honestidad lo que encontramos. Llame al (956) 422-3335 para programar una inspección."
+          "q": "El viento levantó algunas tejas pero no hay gotera. ¿Debo esperar?",
+          "a": "Nosotros no esperaríamos mucho. Una teja que perdió su sello se puede caer en la próxima tormenta, y el agua puede meterse debajo antes de que usted vea una mancha. Una inspección gratis le dice si son unas cuantas tejas o un área más grande."
         },
         {
           "q": "¿Cuánto cuesta reparar un techo en McAllen?",
-          "a": "La mayoría de las reparaciones cuestan entre unos cientos de dólares y alrededor de $1,500, dependiendo del problema y qué tanto del techo está afectado. Le damos un estimado escrito después de inspeccionar, antes de empezar cualquier trabajo."
+          "a": "La mayoría de las reparaciones cuestan desde unos cientos de dólares hasta alrededor de $1,500. El precio depende de lo que falló y de qué tanto del techo está afectado. Recibe un estimado escrito después de la inspección y antes de cualquier trabajo."
         },
         {
-          "q": "¿Qué tan rápido pueden reparar mi techo en McAllen?",
-          "a": "Estamos a unos 15 minutos del centro de McAllen y usualmente podemos programar una inspección rápido, especialmente después de una tormenta. La mayoría de las reparaciones se completan en una sola visita una vez que sabemos con qué estamos trabajando."
+          "q": "¿Necesito permiso para una reparación de techo en McAllen?",
+          "a": "McAllen construye bajo el Código Residencial Internacional de 2024, y la solicitud de permiso residencial de la ciudad incluye trabajos de techo. Para su trabajo en particular, el departamento de Permisos e Inspecciones de McAllen le puede contestar al (956) 681-1300."
         },
         {
-          "q": "¿Pueden documentar el daño por tormenta para mi reclamo de seguro?",
-          "a": "Sí. Inspeccionamos el techo y proveemos documentación escrita de lo que encontramos, útil cuando presenta su reclamo con la aseguranza. No somos ajustadores públicos, pero podemos explicarle exactamente lo que observamos."
+          "q": "¿Me pueden perdonar el deducible del seguro?",
+          "a": "No. El <a href=\"https://www.tdi.texas.gov/tips/replacing-your-roof.html\">Departamento de Seguros de Texas</a> dice que es ilegal que un contratista le perdone o le reembolse su deducible. Tenga cuidado con cualquiera que se lo ofrezca."
         },
         {
-          "q": "¿Cómo obtengo un estimado de reparación de techo en McAllen?",
-          "a": "Llame al (956) 422-3335 o <a href=\"/book-an-inspection\">programe una inspección en línea</a>. Agendaremos una visita para ver el techo y darle un estimado escrito. Los estimados son gratis y sin compromiso."
+          "q": "¿Mi seguro va a pagar la reparación?",
+          "a": "Depende de la causa. El daño de una tormenta específica muchas veces está cubierto, y el desgaste normal por la edad normalmente no. Ponemos por escrito lo que encontramos, con fotos, para que se lo pueda mostrar a su aseguradora. No somos ajustadores públicos, así que la decisión del reclamo es entre usted y su compañía de seguros."
+        },
+        {
+          "q": "¿Cómo agendo un estimado de reparación en McAllen?",
+          "a": "Llame al (956) 422-3335 o <a href=\"/book-an-inspection\">programe una inspección en línea</a>. La inspección y el estimado son gratis y sin compromiso."
         }
       ]
     }
   ],
   "cta": {
-    "title": "Estimado gratis de reparación de techo en McAllen",
-    "line": "Inspeccionamos el techo, le damos un estimado escrito y explicamos sus opciones. Sin presión ni compromiso.",
+    "title": "Obtenga un estimado gratis de reparación de techo en McAllen",
+    "line": "Díganos lo que está viendo. Revisamos el techo, le mostramos las fotos y le damos un precio por escrito.",
     "buttons": [
       {
         "label": "Programar Inspección Gratis",
@@ -186,7 +213,7 @@
           "@type": "WebPage",
           "name": "Reparación de Techo en McAllen, TX",
           "url": "https://www.edelroofing.com/reparacion-de-techo-mcallen-tx",
-          "description": "Reparación de techo rápida y con licencia en McAllen, TX. Goteras, daño por tormenta, tapajuntas y tejas. Estimado gratis: (956) 422-3335.",
+          "description": "Reparación de goteras y daño por viento en McAllen, TX. Estimado escrito antes de empezar, casi siempre en una visita. RCAT #03-0489. Llame al (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -196,10 +223,10 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "Tengo una gotera en mi casa en McAllen. ¿Necesito reemplazar todo el techo?",
+              "name": "El viento levantó algunas tejas pero no hay gotera. ¿Debo esperar?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Normalmente no. La mayoría de las goteras vienen de una fuente específica y reparable, como tapajuntas, una bota de ventila o una sección de tejas dañadas, y se pueden reparar sin reemplazar todo el techo. Inspeccionamos primero."
+                "text": "Nosotros no esperaríamos mucho. Una teja que perdió su sello se puede caer en la próxima tormenta, y el agua puede meterse debajo antes de que usted vea una mancha. Una inspección gratis le dice si son unas cuantas tejas o un área más grande."
               }
             },
             {
@@ -207,31 +234,39 @@
               "name": "¿Cuánto cuesta reparar un techo en McAllen?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "La mayoría de las reparaciones cuestan entre unos cientos de dólares y alrededor de $1,500, dependiendo del problema y qué tanto del techo está afectado. Damos un estimado escrito después de inspeccionar."
+                "text": "La mayoría de las reparaciones cuestan desde unos cientos de dólares hasta alrededor de $1,500. El precio depende de lo que falló y de qué tanto del techo está afectado. Recibe un estimado escrito después de la inspección y antes de cualquier trabajo."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Qué tan rápido pueden reparar mi techo en McAllen?",
+              "name": "¿Necesito permiso para una reparación de techo en McAllen?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Estamos a unos 15 minutos del centro de McAllen y usualmente podemos programar una inspección rápido, especialmente después de una tormenta. La mayoría de las reparaciones se completan en una sola visita."
+                "text": "McAllen construye bajo el Código Residencial Internacional de 2024, y la solicitud de permiso residencial de la ciudad incluye trabajos de techo. Para su trabajo en particular, el departamento de Permisos e Inspecciones de McAllen le puede contestar al (956) 681-1300."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Pueden documentar el daño por tormenta para mi reclamo de seguro?",
+              "name": "¿Me pueden perdonar el deducible del seguro?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Sí. Inspeccionamos el techo y proveemos documentación escrita de lo que encontramos, útil para su reclamo. No somos ajustadores públicos, pero le explicamos exactamente lo que observamos."
+                "text": "No. El Departamento de Seguros de Texas dice que es ilegal que un contratista le perdone o le reembolse su deducible. Tenga cuidado con cualquiera que se lo ofrezca."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Cómo obtengo un estimado de reparación de techo en McAllen?",
+              "name": "¿Mi seguro va a pagar la reparación?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Llame al (956) 422-3335 o programe una inspección en línea. Agendaremos una visita para ver el techo y darle un estimado escrito. Los estimados son gratis y sin compromiso."
+                "text": "Depende de la causa. El daño de una tormenta específica muchas veces está cubierto, y el desgaste normal por la edad normalmente no. Ponemos por escrito lo que encontramos, con fotos, para que se lo pueda mostrar a su aseguradora. No somos ajustadores públicos, así que la decisión del reclamo es entre usted y su compañía de seguros."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cómo agendo un estimado de reparación en McAllen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Llame al (956) 422-3335 o programe una inspección en línea. La inspección y el estimado son gratis y sin compromiso."
               }
             }
           ]
@@ -242,6 +277,7 @@
   "changes": [
     "Spanish breadcrumb \"Áreas de Servicio\" linked the English /service-areas; now /es-mx/service-areas",
     "em/en dashes swapped for commas, colons, or hyphens",
-    "review counts (246/252) -> 250+ (match the homepage)"
+    "review counts (246/252) -> 250+ (match the homepage)",
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
   ]
 }

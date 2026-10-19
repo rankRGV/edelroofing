@@ -4,7 +4,7 @@
   "city": "mission",
   "service": "replacement",
   "title": "Reemplazo de Techo en Mission, TX | EDEL Roofing & Construction",
-  "description": "Reemplazo de techo residencial con licencia en Mission, TX. Sistemas de tejas CertainTeed, Owens Corning y GAF. más de 250 reseñas en Google. Estimado gratis: (956) 422-3335.",
+  "description": "Reemplazo de techo en Mission, TX para techos originales de los 2000 y daño por tormenta. Retiro completo, alcance escrito. Llame al (956) 422-3335.",
   "alternates": {
     "en": "/roof-replacement-mission-tx",
     "es": "/reemplazo-de-techo-mission-tx"
@@ -20,7 +20,7 @@
     }
   ],
   "h1": "Reemplazo de Techo en Mission, TX",
-  "lede": "Edel Roofing &amp; Construction instala reemplazos completos de techo de tejas para casas en Mission. Con licencia, fianza y seguro. Estimados escritos, sin presión, sin compromiso.",
+  "lede": "Edel Roofing &amp; Construction reemplaza techos de tejas en casas de Mission. Retiro completo, madera de apoyo revisada y un alcance por escrito antes de empezar. Estimados gratis.",
   "heroCtas": [
     {
       "label": "Obtener Estimado Gratis",
@@ -33,110 +33,117 @@
   ],
   "sections": [
     {
-      "title": "Contratista de reemplazo de techo en Mission",
+      "title": "Por qué a tantos techos de Mission ya les toca",
       "alt": false,
       "kind": "text",
       "paras": [
-        "Edel Roofing está en Edinburg, a unos 25 minutos de Mission, y lleva desde 2003 reemplazando techos en todo el condado de Hidalgo. El parque de casas en Mission se divide en dos grupos: casas más antiguas de los años 70 y 80 cerca del centro y Conway Avenue que van en su segundo o tercer techo, y desarrollos más nuevos hacia Sharyland donde el techo original apenas empieza a mostrar su edad.",
-        "Un reemplazo completo es la decisión correcta cuando un techo ya pasó el punto de ser parchado, pérdida extendida de gránulos, múltiples puntos de reparación, daño por tormenta en un área grande, o simplemente la edad una vez que un sistema de tejas pasa los 20-25 años en este clima. Inspeccionamos todo el techo y la duela antes de recomendar un reemplazo en lugar de una reparación, no al revés.",
-        "Cada reemplazo incluye una remoción completa, una inspección de la duela por daño de agua, y un alcance de trabajo por escrito antes de empezar."
+        "Mission creció rápido en los 2000. Los datos de encuesta del Censo (ACS 2020 a 2024) muestran que cerca de la mitad de las 33,400 casas de la ciudad se construyeron en el 2000 o después, y el año mediano de construcción es 2000. La mayoría de esas casas todavía tienen el techo con el que se construyeron. Un techo de tejas en el Valle dura más o menos de 20 a 25 años, así que un grupo grande de casas en Mission, incluyendo buena parte de Sharyland, está llegando a ese punto al mismo tiempo.",
+        "Un techo original que ya llegó a 20 años no está acabado automáticamente. Algunos todavía tienen vida y solo necesitan reparaciones. Otros se ven bien desde la calle pero de cerca tienen tejas quebradizas y tapajuntas reseco. Inspeccionamos todo el techo y la madera de apoyo antes de recomendar algo, y si una reparación aguantaría, le recomendamos ver <a href=\"/reparacion-de-techo-mission-tx\">reparación de techo en Mission</a>."
       ]
     },
     {
-      "title": "Servicios de reemplazo de techo en Mission",
+      "title": "Viento, granizo y lluvia en Mission",
       "alt": true,
+      "kind": "text",
+      "paras": [
+        "Mission ha tenido su parte de tormentas que acaban con los techos antes de tiempo. El 31 de mayo de 2016, una ráfaga descendente cerca de Palmview y Mission trajo vientos que el NWS estimó de 85 a 95 mph y dañó más de 150 casas y negocios. El 21 de abril de 2023, observadores reportaron granizo de hasta 2.5 pulgadas en Mission. En julio de 2020, el <a href=\"https://www.weather.gov/bro/2020event_hanna\">huracán Hanna</a> dejó caer 14.40 pulgadas de lluvia en la ciudad, y el NWS reportó daños en cientos de casas mal construidas y otros edificios, la mayoría en el techo.",
+        "Cuando una tormenta daña una gran parte de un techo de 20 años, parcharlo muchas veces cuesta más con el tiempo que reemplazarlo, y el reclamo del seguro puede cubrir gran parte del techo nuevo. Anotamos lo que encontramos con fotos para que tenga algo concreto que mostrarle a su aseguradora."
+      ]
+    },
+    {
+      "title": "Paso a paso: un reemplazo de techo en Mission",
+      "alt": false,
       "kind": "cards",
       "cards": [
         {
-          "title": "Remoción Completa y Reemplazo",
-          "body": "Remoción completa del sistema de techo viejo hasta la duela, inspección por daño de agua, e instalación de un nuevo sistema de tejas con alcance de trabajo y cronograma por escrito."
+          "title": "1. Inspección",
+          "body": "Subimos al techo y entramos al ático, revisamos la madera de apoyo y tomamos fotos. Gratis y sin compromiso."
         },
         {
-          "title": "Tejas CertainTeed, Owens Corning y GAF",
-          "body": "Instalamos sistemas de tejas de los tres fabricantes principales, y somos el único CertainTeed SELECT ShingleMaster en el Valle del Río Grande, una certificación ligada a la calidad de instalación y cobertura de garantía."
+          "title": "2. Alcance por escrito",
+          "body": "Línea de tejas, ventilación, membrana, precio y tiempos, todo por escrito."
         },
         {
-          "title": "Reparación y Reemplazo de Duela",
-          "body": "La duela dañada por agua o podrida que se encuentra durante la remoción se repara o reemplaza antes de instalar el nuevo techo. Esto se detecta y documenta, no se cubre."
+          "title": "3. Retiro",
+          "body": "El techo viejo se quita hasta la madera de apoyo. La madera mala se reemplaza y se anota, no se tapa."
         },
         {
-          "title": "Mejoras de Ventilación y Subcapa",
-          "body": "La ventilación adecuada del ático y una subcapa sintética moderna importan con el calor de Mission. Podemos mejorar ambas durante un reemplazo para extender la vida del nuevo techo."
+          "title": "4. Techo nuevo",
+          "body": "Membrana sintética, tapajuntas y ventilas nuevos, y luego tejas CertainTeed, Owens Corning o GAF."
         },
         {
-          "title": "Techado para Construcción Nueva y Remodelación",
-          "body": "Techado para construcciones nuevas y adiciones en los desarrollos crecientes hacia Sharyland, coordinado con constructores y contratistas generales."
-        },
-        {
-          "title": "Apoyo con Reemplazo por Seguro",
-          "body": "Cuando un reemplazo está cubierto por un reclamo de daño por tormenta, documentamos claramente nuestros hallazgos para que sepa qué presentar a su aseguranza."
+          "title": "5. Papeles",
+          "body": "Usted se queda con el alcance por escrito, las fotos de su madera de apoyo y la factura final para sus registros y su aseguradora."
         }
       ]
     },
     {
-      "title": "Por qué los techos en Mission necesitan reemplazo antes de lo que piensa",
-      "alt": false,
+      "title": "Datos de código y seguro para dueños de casa en Mission",
+      "alt": true,
       "kind": "text",
       "paras": [
-        "El calor extremo y la exposición UV constante envejecen un techo de tejas más rápido en el Valle que en la mayoría del país. Una teja de 20 años en Mission a menudo se comporta más como una de 15 años cuando realmente se inspecciona. Eso es lo que vemos más seguido en los vecindarios más antiguos cerca de Conway Avenue y el centro, casas con techos originales de construcción de los años 70 y 80, mucho más allá de su vida útil real aunque no se vean dramáticamente mal desde la calle.",
-        "En las áreas más nuevas hacia Sharyland y el oeste y norte de Mission, los reemplazos son más frecuentemente causados por tormentas, daño por granizo o viento en suficiente parte del techo que parcharlo deja de tener sentido financiero comparado con un reemplazo completo cubierto por el seguro.",
-        "En cualquier caso, caminamos todo el techo antes de recomendar un reemplazo, y le decimos claramente si una reparación realmente resolvería el problema."
+        "Mission construye bajo el Código Residencial Internacional de 2024, y su solicitud de permiso residencial exige un plano de windstorm hecho y sellado por un ingeniero para casas nuevas. La ciudad no ha publicado una regla aparte para cambiar el techo, así que si quiere confirmar para su dirección, la División de Inspecciones está al (956) 580-8691. Un trabajo hecho sin un permiso requerido paga el doble de la tarifa.",
+        "El condado de Hidalgo está fuera de los 14 condados costeros que atiende la Asociación de Seguros contra Tormentas de Viento de Texas (TWIA), así que un techo en Mission no necesita un certificado de windstorm del TDI para TWIA. Su póliza normal de casa sigue importando. El <a href=\"https://www.tdi.texas.gov/news/2026/tdi09292026.html\">Departamento de Seguros de Texas</a> dice que las aseguradoras no pueden negarle ni cancelarle la póliza solo por la edad del techo, pero algunas pólizas pagan los techos viejos a valor real en efectivo (actual cash value)."
       ]
     },
     {
-      "title": "Por qué los dueños de casa en Mission eligen a Edel Roofing para reemplazo",
-      "alt": true,
+      "title": "Lo que recibe con Edel en un techo de Mission",
+      "alt": false,
       "kind": "proof",
       "proof": [
         {
-          "big": "Con Licencia",
-          "label": "RCAT #03-0489, contratista de techos con licencia en Texas, con fianza y seguro"
-        },
-        {
-          "big": "4.8★",
-          "label": "más de 250 reseñas en Google de dueños de casa en todo el Valle"
-        },
-        {
           "big": "Certificado",
-          "label": "CertainTeed SELECT ShingleMaster, el único en el Valle del Río Grande"
+          "label": "El único CertainTeed SELECT ShingleMaster en el Valle del Río Grande"
+        },
+        {
+          "big": "RCAT #03-0489",
+          "label": "Contratista de techos con licencia, fianza y seguro"
+        },
+        {
+          "big": "250+",
+          "label": "Reseñas en Google, promedio de 4.8 estrellas"
         },
         {
           "big": "Desde 2003",
-          "label": "Más de 20 años de reemplazos de techo en Mission y el Valle del Río Grande"
+          "label": "Reemplazando techos en todo el condado de Hidalgo"
         }
       ]
     },
     {
-      "title": "Preguntas sobre reemplazo de techo: Mission",
-      "alt": false,
+      "title": "Preguntas sobre reemplazo de techo en Mission",
+      "alt": true,
       "kind": "faq",
       "faqs": [
         {
-          "q": "¿Cómo sé si mi techo en Mission necesita reemplazo en lugar de reparación?",
-          "a": "Pérdida extendida de gránulos, múltiples puntos de gotera, un techo de más de 20-25 años, o daño por tormenta en una sección grande del techo son las señales usuales. Inspeccionamos todo el techo y la duela y le damos una recomendación honesta, no una venta automática de reemplazo."
+          "q": "Mi casa se construyó como en 2002. ¿Necesito un techo nuevo?",
+          "a": "Tal vez todavía no. Un techo de esa edad está cerca del final de su vida esperada en este clima, pero la condición importa más que la fecha. Una inspección gratis le dice si le quedan unos años o si debe planear un reemplazo."
         },
         {
           "q": "¿Cuánto cuesta un reemplazo de techo en Mission?",
-          "a": "Para una casa típica en Mission, un reemplazo completo de tejas generalmente cuesta entre $8,000 y $18,000, dependiendo del tamaño del techo, la pendiente, el material actual y el grado de teja. Le damos un estimado escrito antes de empezar cualquier trabajo."
+          "a": "Un reemplazo completo de tejas en una casa típica de Mission generalmente cuesta de $8,000 a $18,000. El tamaño y la pendiente del techo y la teja que elija hacen la diferencia. El estimado por escrito llega antes de cualquier trabajo."
         },
         {
-          "q": "¿Cuánto tarda un reemplazo de techo?",
-          "a": "La mayoría de los reemplazos residenciales en Mission toman de uno a tres días dependiendo del tamaño y complejidad del techo, sujeto al clima. Le damos un cronograma específico como parte del alcance de trabajo por escrito antes de empezar."
+          "q": "¿Qué tejas instalan?",
+          "a": "CertainTeed, Owens Corning y GAF. Somos el único CertainTeed SELECT ShingleMaster en el Valle del Río Grande, lo que le da acceso a una cobertura de garantía más fuerte en techos CertainTeed."
         },
         {
-          "q": "¿Qué marcas de tejas instalan en Mission?",
-          "a": "CertainTeed, Owens Corning y GAF. Somos el único CertainTeed SELECT ShingleMaster en el Valle del Río Grande, lo cual refleja entrenamiento de instalación y desbloquea mejor cobertura de garantía en sistemas CertainTeed."
+          "q": "¿El reclamo por tormenta puede pagar mi techo nuevo?",
+          "a": "Si una tormenta cubierta dañó el techo, el reclamo puede pagar gran parte, menos su deducible. En Texas ningún contratista puede perdonarle el deducible legalmente. Nosotros documentamos el daño; la decisión del reclamo es entre usted y su aseguradora."
         },
         {
-          "q": "¿Cómo obtengo un estimado de reemplazo de techo en Mission?",
-          "a": "Llame al (956) 422-3335 o <a href=\"/es-mx/contact-us\">programe una inspección en línea</a>. Caminaremos el techo, tomaremos medidas y le daremos un estimado escrito. Los estimados son gratis y sin compromiso."
+          "q": "¿Cuánto tiempo toma?",
+          "a": "La mayoría de las casas en Mission quedan listas en uno a tres días, si el clima lo permite."
+        },
+        {
+          "q": "¿Cómo obtengo un estimado en Mission?",
+          "a": "Llame al (956) 422-3335 o <a href=\"/book-an-inspection\">programe una inspección en línea</a>. Estamos a unos 26 minutos de la alcaldía de Mission, y el estimado es gratis."
         }
       ]
     }
   ],
   "cta": {
-    "title": "Estimado gratis de reemplazo de techo en Mission",
-    "line": "Inspeccionamos el techo, le damos un estimado escrito y explicamos sus opciones. Sin presión ni compromiso.",
+    "title": "Obtenga un estimado gratis de reemplazo de techo en Mission",
+    "line": "Inspeccionamos el techo y la madera de apoyo, y luego le damos el precio y el alcance por escrito. Sin presión.",
     "buttons": [
       {
         "label": "Programar Inspección Gratis",
@@ -186,7 +193,7 @@
           "@type": "WebPage",
           "name": "Reemplazo de Techo en Mission, TX",
           "url": "https://www.edelroofing.com/reemplazo-de-techo-mission-tx",
-          "description": "Reemplazo de techo residencial con licencia en Mission, TX. Sistemas de tejas CertainTeed, Owens Corning y GAF. Estimado gratis: (956) 422-3335.",
+          "description": "Reemplazo de techo en Mission, TX para techos originales de los 2000 y daño por tormenta. Retiro completo, alcance escrito. Llame al (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -196,10 +203,10 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "¿Cómo sé si mi techo en Mission necesita reemplazo en lugar de reparación?",
+              "name": "Mi casa se construyó como en 2002. ¿Necesito un techo nuevo?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Pérdida extendida de gránulos, múltiples puntos de gotera, un techo de más de 20-25 años, o daño por tormenta en una sección grande son las señales usuales."
+                "text": "Tal vez todavía no. Un techo de esa edad está cerca del final de su vida esperada en este clima, pero la condición importa más que la fecha. Una inspección gratis le dice si le quedan unos años o si debe planear un reemplazo."
               }
             },
             {
@@ -207,31 +214,39 @@
               "name": "¿Cuánto cuesta un reemplazo de techo en Mission?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Para una casa típica en Mission, un reemplazo completo de tejas generalmente cuesta entre $8,000 y $18,000, dependiendo del tamaño del techo, la pendiente, el material actual y el grado de teja."
+                "text": "Un reemplazo completo de tejas en una casa típica de Mission generalmente cuesta de $8,000 a $18,000. El tamaño y la pendiente del techo y la teja que elija hacen la diferencia. El estimado por escrito llega antes de cualquier trabajo."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Cuánto tarda un reemplazo de techo?",
+              "name": "¿Qué tejas instalan?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "La mayoría de los reemplazos residenciales en Mission toman de uno a tres días dependiendo del tamaño y complejidad del techo, sujeto al clima."
+                "text": "CertainTeed, Owens Corning y GAF. Somos el único CertainTeed SELECT ShingleMaster en el Valle del Río Grande, lo que le da acceso a una cobertura de garantía más fuerte en techos CertainTeed."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Qué marcas de tejas instalan en Mission?",
+              "name": "¿El reclamo por tormenta puede pagar mi techo nuevo?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "CertainTeed, Owens Corning y GAF. Somos el único CertainTeed SELECT ShingleMaster en el Valle del Río Grande."
+                "text": "Si una tormenta cubierta dañó el techo, el reclamo puede pagar gran parte, menos su deducible. En Texas ningún contratista puede perdonarle el deducible legalmente. Nosotros documentamos el daño; la decisión del reclamo es entre usted y su aseguradora."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Cómo obtengo un estimado de reemplazo de techo en Mission?",
+              "name": "¿Cuánto tiempo toma?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Llame al (956) 422-3335 o programe una inspección en línea. Caminaremos el techo, tomaremos medidas y le daremos un estimado escrito. Los estimados son gratis y sin compromiso."
+                "text": "La mayoría de las casas en Mission quedan listas en uno a tres días, si el clima lo permite."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cómo obtengo un estimado en Mission?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Llame al (956) 422-3335 o programe una inspección en línea. Estamos a unos 26 minutos de la alcaldía de Mission, y el estimado es gratis."
               }
             }
           ]
@@ -242,6 +257,7 @@
   "changes": [
     "Spanish breadcrumb \"Áreas de Servicio\" linked the English /service-areas; now /es-mx/service-areas",
     "em/en dashes swapped for commas, colons, or hyphens",
-    "review counts (246/252) -> 250+ (match the homepage)"
+    "review counts (246/252) -> 250+ (match the homepage)",
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
   ]
 }

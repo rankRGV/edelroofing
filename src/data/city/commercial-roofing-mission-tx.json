@@ -4,7 +4,7 @@
   "city": "mission",
   "service": "commercial",
   "title": "Commercial Roofing in Mission, TX | Edel Roofing & Construction",
-  "description": "Licensed commercial roofing contractor serving Mission, TX. Flat roof installation, TPO, EPDM, modified bitumen, and commercial repairs. 250+ Google reviews. Free estimate: (956) 422-3335.",
+  "description": "Commercial roof repair and replacement in Mission, TX for retail, office, and industrial buildings. TPO, EPDM, modified bitumen, coatings. Call (956) 422-3335.",
   "alternates": {
     "en": "/commercial-roofing-mission-tx",
     "es": "/techado-comercial-mission-tx"
@@ -20,7 +20,7 @@
     }
   ],
   "h1": "Commercial Roofing in Mission, TX",
-  "lede": "Edel Roofing &amp; Construction installs and repairs commercial roofing systems for businesses, property managers, and building owners across Mission. Licensed, bonded, and insured. Free commercial estimates with no obligation.",
+  "lede": "Edel Roofing &amp; Construction installs, repairs, and replaces flat and low slope roofs for businesses and property owners in Mission. Free commercial estimates, written scope, licensed and insured.",
   "heroCtas": [
     {
       "label": "Get a Free Estimate",
@@ -33,110 +33,127 @@
   ],
   "sections": [
     {
-      "title": "Commercial roofing contractor serving Mission",
+      "title": "Commercial roofing for a growing Mission",
       "alt": false,
       "kind": "text",
       "paras": [
-        "Edel Roofing is based in Edinburg, about 25 minutes from Mission, and has been working on commercial properties across Hidalgo County since 2003. We handle flat and low-slope roofing for strip centers, medical buildings, offices, and warehouses throughout Mission.",
-        "Mission's commercial corridor runs along Expressway 83, with more retail and medical buildings clustered near Mission Regional Medical Center. Most of those are flat-roof buildings, and a good number are original construction from the 1980s and 90s now approaching or past their expected service life.",
-        "Commercial work requires a different level of planning than residential. Tenants are affected, business hours matter, and a roof failure is not just a property problem, it's an operations problem. We inspect before we estimate, put everything in writing, and schedule around your building's needs."
+        "Mission's commercial side is growing on both ends. Along Expressway 83 at Bryan Rd, the Mission Gateway development is part of what the Mission EDC calls the Bryan corridor. To the south, Sharyland Business Park has room for about 2.5 million square feet of industrial space near the Anzalduas International Bridge, and the bridge's $88 million expansion adds six commercial lanes. Older buildings along Business 83 and the expressway fill in the rest.",
+        "That mix means two kinds of commercial roof jobs. New warehouses and stores need a membrane system installed right the first time. Older buildings from earlier decades need repairs, coatings, or full replacement as their roofs age out.",
+        "We drive to Mission from our office at 1815 N Jackson Rd in Edinburg, about 26 minutes. We have worked on commercial roofs across Hidalgo County since 2003."
       ]
     },
     {
-      "title": "Commercial roofing services in Mission",
+      "title": "Wind and rain on Mission's flat roofs",
       "alt": true,
+      "kind": "text",
+      "paras": [
+        "Mission has had dangerous wind more than once. On May 31, 2016, <a href=\"https://www.weather.gov/bro/2016event_may31mission\">a downburst near Palmview and Mission</a> brought winds the NWS estimated at 85 to 95 mph and damaged more than 150 homes and businesses. On April 29, 2023, wind flipped food trucks near Bryan Rd and Business 83, close to City Hall, while the McAllen airport recorded a 74 mph gust.",
+        "Wind like that pulls at the edges of a flat roof. If the perimeter metal or the membrane seams are loose, the roof can peel back from the edge. Rooftop units and their curbs are another weak point.",
+        "Rain is the other test. <a href=\"https://www.weather.gov/bro/2020event_hanna\">Hurricane Hanna</a> dropped 14.40 inches on Mission in July 2020. A flat roof only handles that much water if the drains, scuppers, and gutters are open and the roof slopes to them. Ponding water left on a roof for days works into seams and ages the membrane early."
+      ]
+    },
+    {
+      "title": "Commercial services for Mission businesses",
+      "alt": false,
       "kind": "cards",
       "cards": [
         {
-          "title": "Flat Roof Installation",
-          "body": "New flat and low-slope roof systems for commercial buildings in Mission. We install TPO, EPDM, and modified bitumen membranes, the three systems most commonly used on commercial properties across South Texas."
+          "title": "New flat roof systems",
+          "body": "TPO, EPDM, and modified bitumen installed on new buildings and additions, coordinated with your builder or general contractor."
         },
         {
-          "title": "Commercial Roof Replacement",
-          "body": "Full tear-off and replacement when a commercial roof has run its course. We remove the old system, inspect the decking for water damage, and install a new commercial-grade roof with a written scope and timeline."
+          "title": "Roof replacement",
+          "body": "Old system torn off, decking checked and repaired, new membrane installed on a written timeline."
         },
         {
-          "title": "Commercial Roof Repairs",
-          "body": "Leak repairs, membrane patching, flashing repairs, and drain issues on existing commercial roofs. We locate the actual source of the problem, not just the spot where water shows up inside, and fix it."
+          "title": "Leak repair",
+          "body": "We trace leaks to the seam, flashing, or drain where water actually gets in and repair it there."
         },
         {
-          "title": "Roof Coatings",
-          "body": "Reflective coatings applied over existing commercial membranes to extend service life and reduce heat load. In Mission's climate, a good coating can meaningfully lower cooling costs and buy years of additional life from an otherwise sound roof."
+          "title": "Edge and flashing repair",
+          "body": "Loose perimeter metal and flashing secured after wind, before the next storm can lift the membrane."
         },
         {
-          "title": "Storm & Hail Damage",
-          "body": "Hidalgo County hailstorms hit commercial roofs hard. We inspect for impact damage, membrane ruptures, and flashing failures, and we provide written documentation that is useful when you contact your insurance company."
+          "title": "Roof coatings",
+          "body": "A reflective coating can add years to a sound, aging roof. See <a href=\"/roof-coating-mission-tx\">roof coatings in Mission</a>."
         },
         {
-          "title": "Commercial Roof Inspections",
-          "body": "Routine inspections for property managers and building owners who want to catch problems before they become expensive. We walk the roof, document conditions, and give you a clear report on what needs attention and what can wait."
+          "title": "Inspections",
+          "body": "Routine and after storm inspections with a written report and photos for owners and managers."
         }
       ]
     },
     {
-      "title": "What commercial roofing looks like in Mission",
-      "alt": false,
+      "title": "Code and planning for commercial work in Mission",
+      "alt": true,
       "kind": "text",
       "paras": [
-        "The Expressway 83 corridor is Mission's main commercial spine, strip centers, retail buildings, and office space, much of it flat-roofed and a meaningful share of it built decades ago. Those older roofs are now well into or past the back half of their service life, which is when a coating or a full replacement becomes the real conversation rather than another patch.",
-        "Near Mission Regional Medical Center, the mix shifts toward medical offices and specialty buildings. A roof failure there is a different kind of problem, it cannot wait, and the work often needs to happen without disrupting patients or staff.",
-        "We work with building owners, property managers, and business owners across all of these property types. If you manage multiple Mission buildings and want a contractor who can handle the commercial side consistently, call us and we can talk about what a regular inspection and maintenance relationship looks like."
+        "The City of Mission's permit paperwork lists the 2024 International Building Code and the matching 2024 codes for fire, plumbing, mechanical, and energy. For questions about a permit on your building, call the Inspections Division at (956) 580-8691.",
+        "Commercial work needs more planning than a house. Tenants are affected, deliveries still have to come in, and some jobs need to happen in stages. We inspect before we estimate, put everything in writing, and schedule around your building. If you manage several Mission properties, we can set up recurring inspections so small problems get fixed before they turn into a replacement."
       ]
     },
     {
-      "title": "Why Mission businesses choose Edel Roofing",
-      "alt": true,
+      "title": "Why Mission businesses work with Edel",
+      "alt": false,
       "kind": "proof",
       "proof": [
         {
           "big": "Licensed",
-          "label": "RCAT #03-0489, Texas licensed roofing contractor, bonded & insured"
-        },
-        {
-          "big": "4.8★",
-          "label": "250+ Google reviews, residential and commercial customers across the RGV"
+          "label": "RCAT #03-0489, bonded and insured"
         },
         {
           "big": "Certified",
-          "label": "Versico, Duro-Last, Polyglass, KARNAK, Mule-Hide, leading commercial membrane manufacturers"
+          "label": "Versico, Duro-Last, Polyglass, KARNAK, and Mule-Hide systems"
+        },
+        {
+          "big": "250+",
+          "label": "Google reviews at 4.8 stars from homes and businesses"
         },
         {
           "big": "Since 2003",
-          "label": "Over 20 years on commercial and residential roofs in Mission and across the Rio Grande Valley"
+          "label": "On commercial roofs across Hidalgo County"
         }
       ]
     },
     {
-      "title": "Commercial roofing questions: Mission",
-      "alt": false,
+      "title": "Commercial roofing questions in Mission",
+      "alt": true,
       "kind": "faq",
       "faqs": [
         {
-          "q": "My business in Mission has a flat roof leak. Can you fix it?",
-          "a": "Yes. We repair flat and low-slope commercial roofs throughout Mission. Flat roof leaks are harder to trace than residential leaks because water travels along the membrane before it shows up inside. We inspect the full roof to find the actual entry point, not just the visible damage. Call (956) 422-3335 to schedule an inspection."
+          "q": "We are building a new warehouse near the bridge. Can you roof it?",
+          "a": "Yes. We install TPO, EPDM, and modified bitumen systems on new commercial buildings and work with your builder or general contractor on the schedule."
         },
         {
-          "q": "What types of commercial roofing do you install in Mission?",
-          "a": "We install TPO, EPDM, and modified bitumen membrane systems, the three most common flat and low-slope commercial systems in South Texas. We also apply roof coatings for buildings that need extended service life without a full replacement. We can recommend the right system based on your building type, roof area, and budget."
+          "q": "The 2016 or 2023 wind loosened our roof edge. Is that a repair or a new roof?",
+          "a": "Often a repair, if the membrane and insulation underneath are still dry and sound. We check the edge, the seams, and the insulation, and the written scope tells you which one it is."
         },
         {
-          "q": "How long does a commercial roof last in Mission's climate?",
-          "a": "A well-installed commercial membrane system in the RGV typically lasts 15 to 25 years, depending on the material and how consistently it is maintained. Mission's heat and UV exposure accelerate wear compared to cooler climates. Regular inspections catch small problems before they shorten that timeline."
+          "q": "Water sits on our flat roof after it rains. Is that a problem?",
+          "a": "Water that is gone within a day or two is normal on many flat roofs. Water that stays longer points to a low spot or a blocked drain, and over time it ages the membrane and finds seams. We can find the cause and fix the drainage."
         },
         {
-          "q": "Do you work with property managers overseeing multiple Mission buildings?",
-          "a": "Yes. A significant portion of our commercial work is with property managers and building owners with multiple properties. We can work around tenant schedules, provide documentation for insurance and maintenance records, and set up recurring inspection agreements so problems get caught early across all your buildings."
+          "q": "How long does a commercial roof last in Mission?",
+          "a": "A well installed membrane in the RGV typically lasts 15 to 25 years, depending on the material and the upkeep. Heat and UV shorten it; regular inspections help it go longer."
         },
         {
-          "q": "How do I get a commercial roofing estimate in Mission?",
-          "a": "Call (956) 422-3335 or <a href=\"/book-an-inspection\">book an inspection online</a>. We will schedule a time to walk the roof, take measurements, and give you a written estimate. Commercial estimates are free with no obligation."
+          "q": "Do you inspect commercial roofs after a storm?",
+          "a": "Yes. After high wind or hail we walk the roof, check the edges, seams, flashing, and rooftop units, and give you a written report with photos for your insurer. We are not a public adjuster, so the claim is between you and your insurance company."
+        },
+        {
+          "q": "Can you work around our tenants?",
+          "a": "Yes. We schedule around tenant hours and give you documentation for insurance and maintenance records when the job is done."
+        },
+        {
+          "q": "How do I get a commercial estimate in Mission?",
+          "a": "Call (956) 422-3335 or <a href=\"/book-an-inspection\">book an inspection online</a>. We walk the roof, take measurements, and give you a free written estimate."
         }
       ]
     }
   ],
   "cta": {
     "title": "Get a free commercial roofing estimate in Mission",
-    "line": "We inspect the roof, give you a written estimate, and explain your options. No pressure, no obligation.",
+    "line": "New build, old roof, or a leak after the last storm: we inspect it and put the scope and price in writing.",
     "buttons": [
       {
         "label": "Book a Free Inspection",
@@ -186,7 +203,7 @@
           "@type": "WebPage",
           "name": "Commercial Roofing in Mission, TX",
           "url": "https://www.edelroofing.com/commercial-roofing-mission-tx",
-          "description": "Licensed commercial roofing contractor serving Mission, TX. Flat roof installation, TPO, EPDM, modified bitumen, and commercial repairs. Free estimate: (956) 422-3335.",
+          "description": "Commercial roof repair and replacement in Mission, TX for retail, office, and industrial buildings. TPO, EPDM, modified bitumen, coatings. Call (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -196,42 +213,58 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "My business in Mission has a flat roof leak. Can you fix it?",
+              "name": "We are building a new warehouse near the bridge. Can you roof it?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. We repair flat and low-slope commercial roofs throughout Mission. Flat roof leaks are harder to trace than residential leaks because water travels along the membrane before it shows up inside. We inspect the full roof to find the actual entry point."
+                "text": "Yes. We install TPO, EPDM, and modified bitumen systems on new commercial buildings and work with your builder or general contractor on the schedule."
               }
             },
             {
               "@type": "Question",
-              "name": "What types of commercial roofing do you install in Mission?",
+              "name": "The 2016 or 2023 wind loosened our roof edge. Is that a repair or a new roof?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "We install TPO, EPDM, and modified bitumen membrane systems. We also apply roof coatings for buildings that need extended service life without a full replacement."
+                "text": "Often a repair, if the membrane and insulation underneath are still dry and sound. We check the edge, the seams, and the insulation, and the written scope tells you which one it is."
               }
             },
             {
               "@type": "Question",
-              "name": "How long does a commercial roof last in Mission's climate?",
+              "name": "Water sits on our flat roof after it rains. Is that a problem?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A well-installed commercial membrane system in the RGV typically lasts 15 to 25 years depending on the material and maintenance. Mission's heat and UV exposure accelerate wear compared to cooler climates."
+                "text": "Water that is gone within a day or two is normal on many flat roofs. Water that stays longer points to a low spot or a blocked drain, and over time it ages the membrane and finds seams. We can find the cause and fix the drainage."
               }
             },
             {
               "@type": "Question",
-              "name": "Do you work with property managers overseeing multiple Mission buildings?",
+              "name": "How long does a commercial roof last in Mission?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. We work with property managers and building owners with multiple properties. We can work around tenant schedules, provide documentation for insurance and maintenance records, and set up recurring inspection agreements."
+                "text": "A well installed membrane in the RGV typically lasts 15 to 25 years, depending on the material and the upkeep. Heat and UV shorten it; regular inspections help it go longer."
               }
             },
             {
               "@type": "Question",
-              "name": "How do I get a commercial roofing estimate in Mission?",
+              "name": "Do you inspect commercial roofs after a storm?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Call (956) 422-3335 or book an inspection online. We will schedule a time to walk the roof, take measurements, and give you a written estimate. Commercial estimates are free with no obligation."
+                "text": "Yes. After high wind or hail we walk the roof, check the edges, seams, flashing, and rooftop units, and give you a written report with photos for your insurer. We are not a public adjuster, so the claim is between you and your insurance company."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can you work around our tenants?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We schedule around tenant hours and give you documentation for insurance and maintenance records when the job is done."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I get a commercial estimate in Mission?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Call (956) 422-3335 or book an inspection online. We walk the roof, take measurements, and give you a free written estimate."
               }
             }
           ]
@@ -241,6 +274,7 @@
   ],
   "changes": [
     "em/en dashes swapped for commas, colons, or hyphens",
-    "review counts (246/252) -> 250+ (match the homepage)"
+    "review counts (246/252) -> 250+ (match the homepage)",
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
   ]
 }

@@ -34,7 +34,7 @@
       "kind": "text",
       "paras": [
         "Edel Roofing &amp; Construction is based in Edinburg and has worked on roofing projects across Hidalgo County since 2003. Mission is about 25 minutes from our shop and we work there regularly: replacements in the older neighborhoods near downtown, newer homes out in the Sharyland area, and commercial roofs along the Expressway 83 corridor.",
-        "Mission has grown west and north quickly over the last two decades, so the housing stock splits into two groups. There are homes built in the 1970s and 80s that are now on their second or third roof, and there are much newer subdivisions where the original roof is just starting to show its age. The right answer is different for each, and we will tell you which one you are dealing with."
+        "Mission has grown west and north quickly over the last two decades, so the housing stock splits into two groups. About 15% of Mission homes were built before 1980 and are often on their second or third roof, while about half were built in 2000 or later and many still have their original roof, now around 20 years old (Census ACS 2020 to 2024). The right answer is different for each, and we will tell you which one you are dealing with."
       ]
     },
     {
@@ -237,6 +237,7 @@
   ],
   "changes": [
     "em/en dashes swapped for commas, colons, or hyphens",
-    "review counts (246/252) -> 250+ (match the homepage)"
+    "review counts (246/252) -> 250+ (match the homepage)",
+    "2026-10-18 overlap pass: '1970s and 80s' housing claim replaced with Census ACS figures (only ~15% of Mission homes predate 1980)"
   ]
 }

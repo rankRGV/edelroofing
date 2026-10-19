@@ -4,7 +4,7 @@
   "city": "mcallen",
   "service": "coatings",
   "title": "Roof Coating Services in McAllen, TX | Edel Roofing & Construction",
-  "description": "Reflective roof coatings for commercial and flat roofs in McAllen, TX. Extend roof life, reduce heat. 250+ Google reviews. Free estimate: (956) 422-3335.",
+  "description": "Reflective roof coatings for flat commercial roofs in McAllen, TX. We check the roof first and only recommend a coating when it qualifies. Call (956) 422-3335.",
   "alternates": null,
   "crumbs": [
     {
@@ -13,7 +13,7 @@
     }
   ],
   "h1": "Roof Coating Services in McAllen, TX",
-  "lede": "Edel Roofing &amp; Construction applies reflective roof coatings to extend the life of commercial and flat roofs in McAllen and cut down on heat buildup. Free estimates with no obligation.",
+  "lede": "Edel Roofing &amp; Construction applies reflective coatings to flat and low slope commercial roofs in McAllen. We inspect first and tell you plainly whether your roof is a good candidate.",
   "heroCtas": [
     {
       "label": "Get a Free Estimate",
@@ -26,100 +26,112 @@
   ],
   "sections": [
     {
-      "title": "Roof coatings for McAllen businesses",
+      "title": "What a coating does on a McAllen roof",
       "alt": false,
       "kind": "text",
       "paras": [
-        "A roof coating is a reflective layer applied over an existing flat or low-slope roof. It's not a replacement, it's a way to extend the life of a roof that's still structurally sound but starting to show wear, while cutting down on the heat the building absorbs through the roof.",
-        "Coatings make the most sense on commercial buildings with TPO, EPDM, or modified bitumen roofs that have some life left but are aging. If the underlying roof is already failing, a coating won't fix that, we'll tell you honestly if replacement is the better call instead."
+        "A roof coating is a liquid layer rolled or sprayed over an existing flat or low slope roof. It cures into one continuous reflective layer. On a roof that is aging but still sound, it seals small cracks and seams, reflects sunlight, and adds years before the roof needs a full replacement.",
+        "McAllen is a good place for that kind of product because of the heat. NOAA normals for the McAllen airport show about 40 days a year at 100°F or hotter, and the average high in August is 99.6°F. A dark membrane in that sun runs much hotter than the air, and that heat is what dries it out and opens seams. A reflective surface keeps the roof cooler, which slows that wear and can lower the heat load on the building below."
       ]
     },
     {
-      "title": "What a roof coating does",
+      "title": "When a coating is the wrong call",
       "alt": true,
+      "kind": "text",
+      "paras": [
+        "A coating is not a fix for a failed roof. If water has already soaked the insulation under the membrane, coating over it traps the moisture, and the roof keeps rotting underneath. If the membrane is split, blistered across large areas, or pulling loose from the deck, it needs repair or replacement first.",
+        "That is why we inspect before we quote. We walk the whole roof, check the seams and flashing, and look for wet areas. If the roof qualifies, we give you a written estimate for the coating. If it does not, we tell you and explain what it needs instead. See <a href=\"/commercial-roofing-mcallen-tx\">commercial roofing in McAllen</a> for repair and replacement."
+      ]
+    },
+    {
+      "title": "Signs your McAllen roof may be a coating candidate",
+      "alt": false,
       "kind": "cards",
       "cards": [
         {
-          "title": "Extends Roof Life",
-          "body": "A properly applied coating adds years of service life to a roof that's aging but still sound, delaying the cost of a full replacement."
+          "title": "Aging, not failing",
+          "body": "The membrane is chalky, faded, or has small surface cracks, but it is still attached and dry underneath."
         },
         {
-          "title": "Reduces Heat Load",
-          "body": "Reflective coatings bounce back sunlight instead of absorbing it, which can lower interior temperatures and cooling costs during McAllen summers."
+          "title": "Seams starting to open",
+          "body": "Seams and flashing show early wear that can be sealed and reinforced before the coat goes on."
         },
         {
-          "title": "Seals Minor Wear",
-          "body": "The coating process seals small cracks and seams in the existing membrane, adding a layer of protection against water intrusion."
+          "title": "Hot top floor",
+          "body": "The space under the roof runs hot in summer. A reflective surface reduces the heat coming through."
         },
         {
-          "title": "Lower Cost Than Replacement",
-          "body": "When the roof qualifies, a coating costs a fraction of a full tear-off and replacement, worth evaluating before committing to a bigger job."
+          "title": "Replacement is years away",
+          "body": "You want more service life from the roof you have before spending on a full tear off."
         }
       ]
     },
     {
-      "title": "Where coatings make sense in McAllen",
-      "alt": false,
+      "title": "After a McAllen hailstorm",
+      "alt": true,
       "kind": "text",
       "paras": [
-        "McAllen has a lot of flat and low-slope commercial roofing, the strip centers along Nolana Ave, medical office buildings near South Texas Health System, and warehouse and industrial properties in north McAllen. Many of these buildings have TPO, EPDM, or modified bitumen roofs installed years ago that are aging but not failing.",
-        "Heat is the biggest factor working against any roof in McAllen. Extreme summer temperatures and constant UV exposure break down roofing membranes faster than in cooler climates. A reflective coating directly addresses that by cutting the amount of heat the roof surface absorbs, which is part of why it's worth considering here specifically, not just a generic maintenance option."
+        "Hail is hard on any flat roof, coated or not. During the May 8, 2025 storm, spotters reported hail up to 2 inches in north McAllen. Hail that size can crack a coating and bruise the membrane under it. If your coated roof was in the path of that storm, have it checked. Small hail marks can be cleaned and recoated; punctures need a repair first."
       ]
     },
     {
-      "title": "Why McAllen businesses choose Edel for roof coatings",
-      "alt": true,
+      "title": "Why McAllen owners trust Edel with coatings",
+      "alt": false,
       "kind": "proof",
       "proof": [
         {
-          "big": "Licensed",
-          "label": "RCAT #03-0489, Texas licensed roofing contractor, bonded & insured"
+          "big": "Inspect first",
+          "label": "We only recommend a coating when the roof actually qualifies"
+        },
+        {
+          "big": "RCAT #03-0489",
+          "label": "Licensed, bonded, and insured in Texas"
         },
         {
           "big": "4.8★",
-          "label": "250+ Google reviews from residential and commercial customers across the RGV"
-        },
-        {
-          "big": "Honest",
-          "label": "We only recommend a coating when the roof actually qualifies, not as a default upsell"
+          "label": "Rated on 250+ Google reviews"
         },
         {
           "big": "Since 2003",
-          "label": "Over 20 years working on commercial roofing across the Rio Grande Valley"
+          "label": "Commercial roofing across the Rio Grande Valley"
         }
       ]
     },
     {
-      "title": "Roof coating questions: McAllen",
-      "alt": false,
+      "title": "McAllen roof coating questions",
+      "alt": true,
       "kind": "faq",
       "faqs": [
         {
-          "q": "What is a roof coating?",
-          "a": "It's a reflective liquid-applied layer put over an existing flat or low-slope roof. It seals minor wear, reduces heat absorption, and extends the roof's usable life without a full tear-off."
-        },
-        {
-          "q": "Is a coating right for my roof?",
-          "a": "It depends on the roof's current condition. If the underlying membrane is still structurally sound but showing age, a coating usually makes sense. If the roof is already failing or leaking extensively, replacement is the better long-term answer. We'll give you a straight assessment during the inspection."
+          "q": "Will a coating stop my roof from leaking?",
+          "a": "Only if the leak comes from small surface wear that the coating seals. Most active leaks need to be found and repaired first. We fix the leak, then coat if the roof qualifies."
         },
         {
           "q": "How long does a roof coating last?",
-          "a": "Depending on the product and the condition of the roof underneath, a coating can add several years of service life. We'll give you a realistic estimate specific to your roof, not a generic number."
+          "a": "It depends on the product, the thickness applied, and the roof underneath. A coating can add several years of service life. You get a realistic estimate for your roof, not a generic number."
         },
         {
-          "q": "Is a coating cheaper than a full roof replacement?",
-          "a": "Yes, when the roof qualifies. A coating costs a fraction of a tear-off and replacement, which is why it's worth evaluating first on a roof that's aging but not failed."
+          "q": "Is a coating cheaper than replacing the roof?",
+          "a": "Yes, when the roof qualifies. A coating costs a fraction of a tear off and new roof, so it is worth checking first on a roof that is old but still dry."
         },
         {
-          "q": "Do you apply coatings to residential roofs too?",
-          "a": "Coatings are most common on flat and low-slope commercial roofs. Most residential roofs in McAllen are pitched shingle roofs, where a coating isn't the right fit, call us and we can tell you what does apply to your specific roof."
+          "q": "Can you coat a shingle roof on my house?",
+          "a": "Coatings are for flat and low slope roofs. Most McAllen homes have pitched shingle roofs, where a coating is not the right fit. For a house, see <a href=\"/roof-repair-mcallen-tx\">roof repair</a> or <a href=\"/roof-replacement-mcallen-tx\">roof replacement in McAllen</a>."
+        },
+        {
+          "q": "Do you need to be on the roof before giving a price?",
+          "a": "Yes. A coating price depends on the roof's size, its condition, and how much prep it needs, and none of that shows from the parking lot."
+        },
+        {
+          "q": "How do I get a coating estimate in McAllen?",
+          "a": "Call (956) 422-3335 or <a href=\"/book-an-inspection\">book an inspection online</a>. The inspection and estimate are free."
         }
       ]
     }
   ],
   "cta": {
-    "title": "Get a free roof coating estimate in McAllen",
-    "line": "We inspect the roof, tell you honestly if a coating makes sense, and give you a written estimate. No pressure, no obligation.",
+    "title": "Find out if your McAllen roof can be coated",
+    "line": "We inspect the roof, tell you honestly whether a coating fits, and put the estimate in writing.",
     "buttons": [
       {
         "label": "Book a Free Inspection",
@@ -163,7 +175,7 @@
           "@type": "WebPage",
           "name": "Roof Coating Services in McAllen, TX",
           "url": "https://www.edelroofing.com/roof-coatings-mcallen-tx",
-          "description": "Reflective roof coatings for commercial and flat roofs in McAllen, TX. Extend roof life, reduce heat. Free estimate: (956) 422-3335.",
+          "description": "Reflective roof coatings for flat commercial roofs in McAllen, TX. We check the roof first and only recommend a coating when it qualifies. Call (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -173,18 +185,10 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "What is a roof coating?",
+              "name": "Will a coating stop my roof from leaking?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reflective liquid-applied layer put over an existing flat or low-slope roof that seals minor wear, reduces heat absorption, and extends usable life without a full tear-off."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is a coating right for my roof?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "If the underlying membrane is still structurally sound but showing age, a coating usually makes sense. If the roof is already failing, replacement is the better answer."
+                "text": "Only if the leak comes from small surface wear that the coating seals. Most active leaks need to be found and repaired first. We fix the leak, then coat if the roof qualifies."
               }
             },
             {
@@ -192,23 +196,39 @@
               "name": "How long does a roof coating last?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depending on the product and the roof's condition, a coating can add several years of service life."
+                "text": "It depends on the product, the thickness applied, and the roof underneath. A coating can add several years of service life. You get a realistic estimate for your roof, not a generic number."
               }
             },
             {
               "@type": "Question",
-              "name": "Is a coating cheaper than a full roof replacement?",
+              "name": "Is a coating cheaper than replacing the roof?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes, when the roof qualifies. A coating costs a fraction of a full tear-off and replacement."
+                "text": "Yes, when the roof qualifies. A coating costs a fraction of a tear off and new roof, so it is worth checking first on a roof that is old but still dry."
               }
             },
             {
               "@type": "Question",
-              "name": "Do you apply coatings to residential roofs too?",
+              "name": "Can you coat a shingle roof on my house?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Coatings are most common on flat and low-slope commercial roofs. Most residential roofs in McAllen are pitched shingle roofs, where a coating isn't the right fit."
+                "text": "Coatings are for flat and low slope roofs. Most McAllen homes have pitched shingle roofs, where a coating is not the right fit. For a house, see roof repair or roof replacement in McAllen."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you need to be on the roof before giving a price?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. A coating price depends on the roof's size, its condition, and how much prep it needs, and none of that shows from the parking lot."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I get a coating estimate in McAllen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Call (956) 422-3335 or book an inspection online. The inspection and estimate are free."
               }
             }
           ]
@@ -218,6 +238,7 @@
   ],
   "changes": [
     "em/en dashes swapped for commas, colons, or hyphens",
-    "review counts (246/252) -> 250+ (match the homepage)"
+    "review counts (246/252) -> 250+ (match the homepage)",
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
   ]
 }

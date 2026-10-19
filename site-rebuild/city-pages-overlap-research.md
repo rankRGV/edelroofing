@@ -65,3 +65,26 @@ Raw: `data/dataforseo/edel_2026-10-18_city_spokes_volume.json`
 ## Could not verify
 
 Reroof permit rules or fees in any of the three cities (call the numbers above); Hurricane Beryl damage in Mission; Conway Ave / Shary Rd / 10th St / Nolana as official corridors; specific new Edinburg subdivisions.
+
+## Fix pass done (2026-10-18, Eddie chose "rewrite all, keep all 30 URLs")
+
+No redirects. The 20 clone pages got new copy built only from the facts above: 13 EN (McAllen + Mission repair, replacement, commercial, coatings, inspections, storm; Edinburg replacement) and their 7 ES twins (reparacion/reemplazo McAllen + Mission, reemplazo Edinburg, techado comercial McAllen + Mission), translated from the new EN copy in usted voice. The other 10 pages (4 hubs, Edinburg repair/commercial/gutters EN + ES) were already under 41% and kept their live copy, except the Mission hub EN + ES, where the "1970s and 80s" housing claim was swapped for the Census figures. FAQPage schema rebuilt from each page's new FAQs; schema URLs now match the page path (coatings Mission had /roof-coatings-mission-tx). Each file's `changes` array logs the pass.
+
+Measured on the built `<main>` text (5-grams, all 219 same-language pairs):
+
+| | Before | After |
+|---|---|---|
+| Pairs over 50% | 11 | 0 |
+| Pairs over 40% | 12 | 0 |
+| Highest pair | 82% coatings McAllen vs Mission | 38% hubs McAllen vs Mission (untouched) |
+| Highest rewritten pair | | 17% |
+| Highest vs core pages | 10% | 10% |
+
+Body only (without sibling links and the call band): 0 pairs over 40%. Every page's word count is at or above its live baseline (e.g. repair McAllen 931 to 1072, reparacion Mission 1100 to 1238, storm McAllen 790 to 794).
+
+Removed as unverified: the "1970s and 80s near Conway Avenue" and "2nd Street and 10th Street homes from the 80s and 90s" housing claims, "that's what we see most often" experience lines, the "25% rule" FAQ (no source for Mission or McAllen), and "20 year shingle behaves like a 15 year shingle".
+
+### Still open (Edel must confirm)
+- Price ranges kept with live wording on the rewritten pages: replacement "$8,000 to $18,000", repair "a few hundred dollars to around $1,500".
+- Live claims reused as is: "only CertainTeed SELECT ShingleMaster in the RGV", "Certified" for Versico, Duro-Last, Polyglass, KARNAK, Mule-Hide, "most repairs done in one visit", "inspections take 30 to 45 minutes, written report same visit", "one to three days" per replacement.
+- Untouched pages still carry live copy with hyphens and the McAllen hub's "2nd Street and 10th Street ... 1980s and 90s" line (EN + ES); fix in a later copy pass if wanted.

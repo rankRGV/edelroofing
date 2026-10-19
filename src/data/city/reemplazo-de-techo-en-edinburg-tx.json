@@ -4,7 +4,7 @@
   "city": "edinburg",
   "service": "replacement",
   "title": "Reemplazo de Techo en Edinburg, TX | EDEL Roofing & Construction",
-  "description": "Reemplazo de techo residencial con licencia en Edinburg, TX. Sistemas de tejas CertainTeed, Owens Corning y GAF. más de 250 reseñas en Google. Estimado gratis: (956) 422-3335.",
+  "description": "Reemplazo de techo en Edinburg, TX con una compañía de Edinburg. Techos de tejas con granizo o viejos, retiro completo, alcance escrito. Llame al (956) 422-3335.",
   "alternates": {
     "en": "/roof-replacement-edinburg-tx",
     "es": "/reemplazo-de-techo-en-edinburg-tx"
@@ -20,7 +20,7 @@
     }
   ],
   "h1": "Reemplazo de Techo en Edinburg, TX",
-  "lede": "Edel Roofing &amp; Construction instala reemplazos completos de techo de tejas para casas en Edinburg. Con licencia, fianza y seguro. Estimados por escrito, sin presión y sin compromiso.",
+  "lede": "Edel Roofing &amp; Construction tiene su oficina en Edinburg, en N Jackson Rd. Reemplazamos techos de tejas dañados por granizo o desgastados en toda la ciudad, con retiro completo y un alcance por escrito.",
   "heroCtas": [
     {
       "label": "Obtener Estimado Gratis",
@@ -33,110 +33,122 @@
   ],
   "sections": [
     {
-      "title": "Contratista de reemplazo de techos en Edinburg",
+      "title": "Una compañía de techos con oficina en Edinburg",
       "alt": false,
       "kind": "text",
       "paras": [
-        "Edel Roofing está en Edinburg y desde 2003 reemplaza techos en todo el condado de Hidalgo. Muchas casas cerca del centro y a lo largo de Closner y McColl se construyeron hace décadas, y sus techos originales de tejas están llegando al final de su vida útil. En el lado norte, las casas más nuevas se reemplazan con más frecuencia por daño de tormenta.",
-        "Un reemplazo completo es lo correcto cuando el techo ya no admite parches: pérdida de gránulos en todo el techo, varios puntos de reparación, daño por tormenta en un área grande, o simplemente la edad, cuando un sistema de tejas pasa de 20 a 25 años en este clima. Inspeccionamos todo el techo y la base de madera antes de recomendar reemplazo en lugar de reparación, no al revés.",
-        "Todo reemplazo incluye retiro completo del techo viejo, una inspección de la base de madera por daño de agua y un alcance de trabajo por escrito antes de empezar. Si también está pensando en canalones, vea <a href=\"/gutters-edinburg-tx-es\">canalones en Edinburg</a>."
+        "Nuestra oficina está en 1815 N Jackson Rd, así que un techo en Edinburg nos queda cerca. Llevamos reemplazando techos en todo el condado de Hidalgo desde 2003.",
+        "Las casas de Edinburg se dividen en dos grupos. Cerca del 30% se construyeron antes de 1990, y más de la mitad se construyeron en el 2000 o después, según datos de encuesta del Censo (ACS 2024). El año mediano de construcción es 2002. Las casas más viejas muchas veces ya van en su segundo o tercer techo. Muchas de las más nuevas todavía tienen el techo que puso el constructor, y esos primeros techos ya tienen 20 años o están cerca. La ciudad también sigue creciendo: en 2025 se aprobaron 32 subdivisiones nuevas con 867 lotes, y 45 más estaban en revisión en 2026, según Valley Business Report.",
+        "Cerca de la mitad de las casas de Edinburg las ocupan inquilinos (ACS 2024). Si usted tiene una casa de renta, un alcance de techo y una factura por escrito le sirven para su aseguradora y sus registros."
       ]
     },
     {
-      "title": "Servicios de reemplazo de techo en Edinburg",
+      "title": "El granizo sigue cayendo en Edinburg",
       "alt": true,
+      "kind": "text",
+      "paras": [
+        "Los registros de tormentas de NOAA muestran qué tan seguido ha caído granizo en Edinburg últimamente. El 4 de junio de 2023 se reportó granizo de 1 pulgada de diámetro. El 13 de mayo de 2024 cayó granizo de hasta 1.75 pulgadas cerca de Faysville. El 8 de mayo de 2025, granizo de hasta 1.75 pulgadas cayó en el sur de Edinburg y se reportó granizo de 2 pulgadas cerca de Dove Ave y McColl Rd. Unas semanas antes en 2023, vientos de unas 65 mph el 28 de abril tumbaron el techo de una gasolinera en Lark Ave y N 23rd St.",
+        "Después de la tormenta de abril de 2023, y otra vez en abril de 2025, la ciudad no cobró las tarifas de permiso de techo para reparaciones por tormenta. Si su techo recibió granizo en una de estas tormentas y nunca se revisó, el daño puede ser peor de lo que se ve desde el suelo. Las tejas golpeadas por granizo pueden seguir soltando gránulos por meses antes de que aparezca una gotera. Una inspección gratis después de una tormenta le da un registro por escrito de la condición del techo en esa fecha, lo que ayuda si presenta un reclamo después."
+      ]
+    },
+    {
+      "title": "Lo que lleva un reemplazo de techo en Edinburg",
+      "alt": false,
       "kind": "cards",
       "cards": [
         {
-          "title": "Retiro completo y reemplazo",
-          "body": "Retiramos por completo el techo viejo hasta la base de madera, revisamos si hay daño por agua e instalamos un sistema nuevo de tejas con un alcance de trabajo y un calendario por escrito."
+          "title": "Retiro hasta la madera de apoyo",
+          "body": "Las tejas viejas y la membrana se quitan para que podamos ver la madera de apoyo. Nada se pone encima de un techo viejo."
         },
         {
-          "title": "Tejas CertainTeed, Owens Corning y GAF",
-          "body": "Instalamos sistemas de tejas de los tres fabricantes principales. Somos el único CertainTeed SELECT ShingleMaster del Valle del Río Grande, una certificación ligada a la calidad de instalación y a la cobertura de garantía."
+          "title": "Reparación de madera de apoyo",
+          "body": "Las tablas podridas o dañadas por agua se reemplazan y se anotan en su factura."
         },
         {
-          "title": "Reparación y reemplazo de la base de madera",
-          "body": "La madera dañada por agua o podrida que encontramos al retirar el techo se repara o se reemplaza antes de instalar el techo nuevo. Se documenta, no se tapa."
+          "title": "La teja que usted elija",
+          "body": "CertainTeed, Owens Corning o GAF. Somos el único CertainTeed SELECT ShingleMaster en el Valle."
         },
         {
-          "title": "Mejoras de ventilación y membrana base",
-          "body": "Una buena ventilación del ático y una membrana sintética moderna importan con el calor de Edinburg. Podemos mejorar ambas durante el reemplazo para alargar la vida del techo nuevo."
+          "title": "Ventilas y tapajuntas",
+          "body": "Tapajuntas nuevo en paredes y valles, y la ventilación del ático revisada para que el calor no se acumule debajo del techo nuevo."
         },
         {
-          "title": "Construcción nueva y remodelaciones",
-          "body": "Techos para casas nuevas y ampliaciones en el lado norte de Edinburg, coordinados con constructores y contratistas generales."
+          "title": "Papeles para el seguro",
+          "body": "Cuando un reclamo paga el techo, documentamos lo que encontramos con fotos para que sepa qué mostrarle a su aseguradora."
         },
         {
-          "title": "Apoyo con reemplazos por seguro",
-          "body": "Cuando el reemplazo se paga con un reclamo por daño de tormenta, documentamos con claridad lo que encontramos para que sepa qué presentar a su aseguranza."
+          "title": "Papeles por escrito",
+          "body": "Alcance, precio y tiempos antes del trabajo, y la factura final después."
         }
       ]
     },
     {
-      "title": "Por qué los techos de Edinburg se reemplazan antes de lo que uno espera",
-      "alt": false,
+      "title": "Permisos y seguro en Edinburg",
+      "alt": true,
       "kind": "text",
       "paras": [
-        "El calor y el sol constante envejecen un techo de tejas más rápido en el Valle del Río Grande que en casi todo el país. Una teja de 20 años aquí muchas veces se comporta como una de 15 cuando por fin se inspecciona. Es lo que más vemos en los vecindarios antiguos cerca del centro: techos originales que ya pasaron su vida útil real, aunque no se vean mal desde la calle.",
-        "En las zonas más nuevas del lado norte, los reemplazos suelen venir por tormenta. El daño de granizo o viento en buena parte del techo hace que remendar sea un mal gasto comparado con un reemplazo pagado por la aseguranza.",
-        "De cualquier forma recorremos todo el techo antes de recomendar un reemplazo, y le decimos con claridad si una reparación sería suficiente. Lea nuestra <a href=\"/reemplazo-de-techo-edinburg-valle-del-rio-grande\">guía de reemplazo de techo en Edinburg</a>, o vea <a href=\"/reparacion-de-techo-edinburg-tx\">reparación de techo en Edinburg</a> si una reparación alcanza."
+        "Edinburg adoptó el Código Residencial Internacional de 2018. La oficina de Building Safety está en 415 W University Dr, (956) 388-8203, si quiere preguntar por permisos para su dirección.",
+        "Si va a presentar un reclamo, el <a href=\"https://www.tdi.texas.gov/tips/replacing-your-roof.html\">Departamento de Seguros de Texas</a> sugiere pedir más de una cotización, y en Texas es ilegal que un contratista le perdone el deducible. Ponemos lo que encontramos por escrito con fotos para que se lo pueda mostrar a su aseguradora. Para todo el proceso, lea nuestra <a href=\"/reemplazo-de-techo-edinburg-valle-del-rio-grande\">guía de reemplazo de techo para Edinburg</a>, y si una reparación podría ser suficiente, vea <a href=\"/reparacion-de-techo-edinburg-tx\">reparación de techo en Edinburg</a>."
       ]
     },
     {
-      "title": "Por qué los dueños de casa en Edinburg eligen a Edel Roofing para reemplazos",
-      "alt": true,
+      "title": "Edel Roofing en Edinburg",
+      "alt": false,
       "kind": "proof",
       "proof": [
         {
-          "big": "Con licencia",
-          "label": "RCAT #03-0489, contratista de techos con licencia en Texas, con fianza y seguro"
+          "big": "Local",
+          "label": "Oficina en 1815 N Jackson Rd, Edinburg"
+        },
+        {
+          "big": "ShingleMaster",
+          "label": "El único CertainTeed SELECT ShingleMaster en el Valle del Río Grande"
         },
         {
           "big": "4.8★",
-          "label": "más de 250 reseñas en Google de dueños de casa en todo el Valle"
+          "label": "Más de 250 reseñas en Google"
         },
         {
-          "big": "Certificado",
-          "label": "CertainTeed SELECT ShingleMaster, el único en el Valle del Río Grande"
-        },
-        {
-          "big": "Desde 2003",
-          "label": "Más de 20 años reemplazando techos en Edinburg y el Valle del Río Grande"
+          "big": "RCAT #03-0489",
+          "label": "Con licencia, fianza y seguro desde 2003"
         }
       ]
     },
     {
       "title": "Preguntas sobre reemplazo de techo en Edinburg",
-      "alt": false,
+      "alt": true,
       "kind": "faq",
       "faqs": [
         {
-          "q": "¿Cómo sé si mi techo en Edinburg necesita reemplazo y no una reparación?",
-          "a": "La pérdida de gránulos en todo el techo, varios puntos de gotera, un techo de más de 20 a 25 años o daño por tormenta en una sección grande son las señales más comunes. Inspeccionamos todo el techo y la base de madera y le damos una recomendación honesta, no un empujón automático hacia el reemplazo."
+          "q": "A mi techo le cayó granizo en 2024 o 2025. ¿Ya es muy tarde para revisarlo?",
+          "a": "No. Mándelo inspeccionar ahora. El daño por granizo sigue empeorando después de la tormenta, y su póliza puede tener un plazo para presentar el reclamo, así que pregúntele a su aseguradora cuál es el suyo."
         },
         {
-          "q": "¿Cuánto cuesta reemplazar un techo en Edinburg?",
-          "a": "Para una casa típica en Edinburg, un reemplazo completo de tejas generalmente cuesta entre $8,000 y $18,000, según el tamaño del techo, la pendiente, el material actual y el grado de teja. Le damos un estimado escrito antes de empezar cualquier trabajo."
+          "q": "¿Cuánto cuesta un techo nuevo en Edinburg?",
+          "a": "Para una casa típica en Edinburg, un reemplazo completo de tejas generalmente cuesta de $8,000 a $18,000, según el tamaño, la pendiente y la teja que elija. Primero viene el estimado por escrito."
         },
         {
-          "q": "¿Cuánto tarda un reemplazo de techo?",
-          "a": "La mayoría de los reemplazos residenciales en Edinburg toman de uno a tres días, según el tamaño y la complejidad del techo y si el clima lo permite. Usted recibe un calendario específico en el alcance de trabajo por escrito antes de que empecemos."
+          "q": "¿Cuánto tiempo toma?",
+          "a": "La mayoría de las casas en Edinburg toman de uno a tres días, si el clima lo permite. Recibe los tiempos por escrito antes de empezar."
         },
         {
-          "q": "¿Qué marcas de tejas instalan en Edinburg?",
-          "a": "CertainTeed, Owens Corning y GAF. Somos el único CertainTeed SELECT ShingleMaster del Valle del Río Grande, lo que refleja capacitación en instalación y da acceso a una garantía más fuerte en los sistemas CertainTeed."
+          "q": "¿Pueden cambiar mis canalones al mismo tiempo?",
+          "a": "Sí. Hacer los canalones junto con el techo significa una sola cuadrilla y no tener que rehacer dos veces el trabajo de fascia o molduras. Vea <a href=\"/gutters-edinburg-tx-es\">canalones en Edinburg</a>."
         },
         {
-          "q": "¿Cómo obtengo un estimado de reemplazo de techo en Edinburg?",
-          "a": "Llame al (956) 422-3335 o <a href=\"/es-mx/contact-us\">programe una inspección en línea</a>. Recorremos el techo, medimos y le damos un estimado escrito. Los estimados son gratis y sin compromiso."
+          "q": "¿Instalan techos en construcción nueva?",
+          "a": "Sí, ponemos techos en casas nuevas y adiciones y coordinamos con el constructor o el contratista general."
+        },
+        {
+          "q": "¿Cómo obtengo un estimado?",
+          "a": "Llame al (956) 422-3335 o <a href=\"/book-an-inspection\">programe una inspección en línea</a>. Estamos en Edinburg, y los estimados son gratis."
         }
       ]
     }
   ],
   "cta": {
-    "title": "Estimado gratis de reemplazo de techo en Edinburg",
-    "line": "Inspeccionamos el techo, le damos un estimado escrito y le explicamos sus opciones. Sin presión ni compromiso.",
+    "title": "Obtenga un estimado gratis de reemplazo de techo en Edinburg",
+    "line": "Estamos aquí mismo en N Jackson Rd. Inspeccionamos el techo y le damos un alcance y un precio por escrito.",
     "buttons": [
       {
         "label": "Programar Inspección Gratis",
@@ -178,15 +190,15 @@
               "@type": "ListItem",
               "position": 4,
               "name": "Reemplazo de Techo Edinburg",
-              "item": "https://www.edelroofing.com/reemplazo-de-techo-edinburg-tx"
+              "item": "https://www.edelroofing.com/reemplazo-de-techo-en-edinburg-tx"
             }
           ]
         },
         {
           "@type": "WebPage",
           "name": "Reemplazo de Techo en Edinburg, TX",
-          "url": "https://www.edelroofing.com/reemplazo-de-techo-edinburg-tx",
-          "description": "Reemplazo de techo residencial con licencia en Edinburg, TX. Sistemas de tejas CertainTeed, Owens Corning y GAF. Estimado gratis: (956) 422-3335.",
+          "url": "https://www.edelroofing.com/reemplazo-de-techo-en-edinburg-tx",
+          "description": "Reemplazo de techo en Edinburg, TX con una compañía de Edinburg. Techos de tejas con granizo o viejos, retiro completo, alcance escrito. Llame al (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -196,42 +208,50 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "¿Cómo sé si mi techo en Edinburg necesita reemplazo y no una reparación?",
+              "name": "A mi techo le cayó granizo en 2024 o 2025. ¿Ya es muy tarde para revisarlo?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "La pérdida de gránulos en todo el techo, varios puntos de gotera, un techo de más de 20 a 25 años o daño por tormenta en una sección grande son las señales más comunes. Inspeccionamos todo el techo y la base de madera y le damos una recomendación honesta."
+                "text": "No. Mándelo inspeccionar ahora. El daño por granizo sigue empeorando después de la tormenta, y su póliza puede tener un plazo para presentar el reclamo, así que pregúntele a su aseguradora cuál es el suyo."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Cuánto cuesta reemplazar un techo en Edinburg?",
+              "name": "¿Cuánto cuesta un techo nuevo en Edinburg?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Para una casa típica en Edinburg, un reemplazo completo de tejas generalmente cuesta entre $8,000 y $18,000, según el tamaño del techo, la pendiente, el material actual y el grado de teja. Damos un estimado escrito antes de empezar cualquier trabajo."
+                "text": "Para una casa típica en Edinburg, un reemplazo completo de tejas generalmente cuesta de $8,000 a $18,000, según el tamaño, la pendiente y la teja que elija. Primero viene el estimado por escrito."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Cuánto tarda un reemplazo de techo?",
+              "name": "¿Cuánto tiempo toma?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "La mayoría de los reemplazos residenciales en Edinburg toman de uno a tres días, según el tamaño y la complejidad del techo y si el clima lo permite. Recibe un calendario específico en el alcance de trabajo por escrito antes de empezar."
+                "text": "La mayoría de las casas en Edinburg toman de uno a tres días, si el clima lo permite. Recibe los tiempos por escrito antes de empezar."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Qué marcas de tejas instalan en Edinburg?",
+              "name": "¿Pueden cambiar mis canalones al mismo tiempo?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "CertainTeed, Owens Corning y GAF. Somos el único CertainTeed SELECT ShingleMaster del Valle del Río Grande, lo que refleja capacitación en instalación y da acceso a una garantía más fuerte en los sistemas CertainTeed."
+                "text": "Sí. Hacer los canalones junto con el techo significa una sola cuadrilla y no tener que rehacer dos veces el trabajo de fascia o molduras. Vea canalones en Edinburg."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Cómo obtengo un estimado de reemplazo de techo en Edinburg?",
+              "name": "¿Instalan techos en construcción nueva?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Llame al (956) 422-3335 o programe una inspección en línea. Recorremos el techo, medimos y le damos un estimado escrito. Los estimados son gratis y sin compromiso."
+                "text": "Sí, ponemos techos en casas nuevas y adiciones y coordinamos con el constructor o el contratista general."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cómo obtengo un estimado?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Llame al (956) 422-3335 o programe una inspección en línea. Estamos en Edinburg, y los estimados son gratis."
               }
             }
           ]
@@ -241,6 +261,7 @@
   ],
   "changes": [
     "Spanish breadcrumb \"Áreas de Servicio\" linked the English /service-areas; now /es-mx/service-areas",
-    "review counts (246/252) -> 250+ (match the homepage)"
+    "review counts (246/252) -> 250+ (match the homepage)",
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
   ]
 }

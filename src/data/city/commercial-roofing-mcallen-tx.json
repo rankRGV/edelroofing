@@ -4,7 +4,7 @@
   "city": "mcallen",
   "service": "commercial",
   "title": "Commercial Roofing in McAllen, TX | Edel Roofing & Construction",
-  "description": "Licensed commercial roofing contractor serving McAllen, TX. Flat roof installation, TPO, EPDM, modified bitumen, and commercial repairs. 250+ Google reviews. Free estimate: (956) 422-3335.",
+  "description": "Commercial flat roof repair, replacement, and coatings in McAllen, TX. TPO, EPDM, modified bitumen. Written scope, work planned around your tenants. Call (956) 422-3335.",
   "alternates": {
     "en": "/commercial-roofing-mcallen-tx",
     "es": "/techado-comercial-mcallen-tx"
@@ -20,7 +20,7 @@
     }
   ],
   "h1": "Commercial Roofing in McAllen, TX",
-  "lede": "Edel Roofing &amp; Construction installs and repairs commercial roofing systems for businesses, property managers, and building owners across McAllen. Licensed, bonded, and insured. Free commercial estimates with no obligation.",
+  "lede": "Edel Roofing &amp; Construction repairs, replaces, and coats flat and low slope roofs on McAllen retail, office, medical, and warehouse buildings. Licensed, bonded, and insured, with free written estimates.",
   "heroCtas": [
     {
       "label": "Get a Free Estimate",
@@ -33,110 +33,141 @@
   ],
   "sections": [
     {
-      "title": "Commercial roofing contractor serving McAllen",
+      "title": "Flat roofs in the Valley's retail center",
       "alt": false,
       "kind": "text",
       "paras": [
-        "Edel Roofing is based in Edinburg, about 15 minutes from central McAllen, and has been working on commercial properties across Hidalgo County since 2003. We handle flat and low-slope roofing for strip centers, office buildings, medical facilities, warehouses, and retail properties throughout McAllen.",
-        "McAllen is the largest city in the Rio Grande Valley and has the most commercial inventory to match. The Nolana Ave corridor, the 10th Street retail strip, the medical buildings near South Texas Health System, and the growing warehouse and industrial parks in north McAllen are all flat-roof buildings. When one of them develops a leak or needs a full membrane replacement, we can get there fast and do the job right.",
-        "Commercial work requires a different level of planning than residential. Tenants are affected, business hours matter, and a roof failure is not just a property problem, it's an operations problem. We inspect before we estimate, put everything in writing, and schedule around your building's needs."
+        "McAllen is where the Rio Grande Valley shops. The city reported $99.9 million in sales tax revenue in 2025, the most of any city in the RGV. That business happens under flat roofs. La Plaza Mall on S 10th St covers about 1.32 million square feet, and the strip centers, restaurants, clinics, and warehouses around it add a lot more. McAllen Medical Center sits on W Expressway 83, with medical offices spread across the city.",
+        "On a building like that, a leak is an operations problem. Tenants lose sales, inventory gets wet, and patients and staff still have to come in. So the first step on any McAllen commercial job is an inspection of the whole roof, then a written scope that says what we will do, what it costs, and when we can do it around your hours.",
+        "Our office is at 1815 N Jackson Rd in Edinburg, about 11 minutes from McAllen City Hall. We have worked on commercial roofs across Hidalgo County since 2003."
       ]
     },
     {
-      "title": "Commercial roofing services in McAllen",
+      "title": "Commercial roofing services for McAllen buildings",
       "alt": true,
       "kind": "cards",
       "cards": [
         {
-          "title": "Flat Roof Installation",
-          "body": "New flat and low-slope roof systems for commercial buildings in McAllen. We install TPO, EPDM, and modified bitumen membranes, the three systems most commonly used on commercial properties across South Texas."
+          "title": "Flat roof installation",
+          "body": "New TPO, EPDM, or modified bitumen roof systems, the membranes most used on commercial buildings in South Texas."
         },
         {
-          "title": "Commercial Roof Replacement",
-          "body": "Full tear-off and replacement when a commercial roof has run its course. We remove the old system, inspect the decking for water damage, and install a new commercial-grade roof with a written scope and timeline."
+          "title": "Commercial roof replacement",
+          "body": "Tear off of a worn out system, decking checked for water damage, and a new membrane installed on a written timeline."
         },
         {
-          "title": "Commercial Roof Repairs",
-          "body": "Leak repairs, membrane patching, flashing repairs, and drain issues on existing commercial roofs. We locate the actual source of the problem, not just the spot where water shows up inside, and fix it."
+          "title": "Leak and membrane repair",
+          "body": "Seams, punctures, flashing, and drains repaired at the actual source of the leak, which on a flat roof can be far from the drip inside."
         },
         {
-          "title": "Roof Coatings",
-          "body": "Reflective coatings applied over existing commercial membranes to extend service life and reduce heat load. In McAllen's climate, a good coating can meaningfully lower cooling costs and buy years of additional life from an otherwise sound roof."
+          "title": "Roof coatings",
+          "body": "Reflective coatings over a sound but aging membrane. See <a href=\"/roof-coatings-mcallen-tx\">roof coatings in McAllen</a> for when that makes sense."
         },
         {
-          "title": "Storm & Hail Damage",
-          "body": "Hidalgo County hailstorms hit commercial roofs hard. We inspect for impact damage, membrane ruptures, and flashing failures, and we provide written documentation that is useful when you contact your insurance company."
+          "title": "Storm and hail damage",
+          "body": "Membrane punctures, torn edges, and loose flashing after a storm, documented in writing for your insurance company."
         },
         {
-          "title": "Commercial Roof Inspections",
-          "body": "Routine inspections for property managers and building owners who want to catch problems before they become expensive. We walk the roof, document conditions, and give you a clear report on what needs attention and what can wait."
+          "title": "Inspections and maintenance",
+          "body": "Scheduled inspections for owners and property managers, with a written report of what needs work now and what can wait."
         }
       ]
     },
     {
-      "title": "What commercial roofing looks like in McAllen",
+      "title": "How McAllen weather wears out a commercial roof",
       "alt": false,
       "kind": "text",
       "paras": [
-        "McAllen has a concentration of commercial buildings that is unlike anywhere else in the RGV. The Nolana Ave and 10th Street corridors are lined with strip centers, many of them original construction from the 1980s and 1990s with flat roofs that are now approaching or past their expected service life. North McAllen has a growing industrial and warehouse sector where large single-ply membrane roofs are the standard.",
-        "Medical properties are another significant category. The facilities near South Texas Health System, along with the clinics, medical offices, and specialty buildings spread across McAllen, all have flat or low-slope roofs. A roof failure in a medical building is a different kind of problem, it cannot wait, and the work often needs to happen without disrupting patients or staff.",
-        "We work with building owners, property managers, and business owners across all of these property types. If you manage multiple McAllen buildings and want a contractor who can handle the commercial side consistently, call us and we can talk about what a regular inspection and maintenance relationship looks like."
+        "A flat roof takes the full sun all day. NOAA normals for the McAllen airport show 177 days a year at 90°F or hotter and an August average high of 99.6°F. Heat and UV dry out membranes, open seams, and crack the sealant at curbs and penetrations. A dark roof surface in that sun gets far hotter than the air.",
+        "Wind is the other problem. On April 28, 2023, a 74 mph gust was measured in McAllen, and the NWS damage survey found a building on S 29th St with more than half of its shingles gone. On May 8, 2025, <a href=\"https://www.weather.gov/media/bro/wxevents/2025/pdf/PNS_McAllenSurvey_May8Microburst.pdf\">a microburst estimated at 80 to 85 mph</a> hit the area between Taylor Rd and Ware Rd, and spotters reported 2 inch hail in north McAllen. On a flat roof, wind gets under the membrane at the edges and at loose flashing, and hail punctures soft spots.",
+        "Rain finishes the job. September is the wettest month at the airport, about 4.6 inches on average. Clogged drains and scuppers let water pond, and ponding water finds every open seam."
       ]
     },
     {
-      "title": "Why McAllen businesses choose Edel Roofing",
+      "title": "What a McAllen commercial job looks like",
       "alt": true,
-      "kind": "proof",
-      "proof": [
+      "kind": "cards",
+      "cards": [
         {
-          "big": "Licensed",
-          "label": "RCAT #03-0489, Texas licensed roofing contractor, bonded & insured"
+          "title": "1. Walk the roof",
+          "body": "We inspect the full roof, drains, edges, curbs, and rooftop units, and take photos."
         },
         {
-          "big": "4.8★",
-          "label": "250+ Google reviews, residential and commercial customers across the RGV"
+          "title": "2. Written scope",
+          "body": "Repair, coating, or replacement, with the price and the schedule in writing. If a repair will do it, the scope says repair."
         },
         {
-          "big": "Certified",
-          "label": "Versico, Duro-Last, Polyglass, KARNAK, Mule-Hide, leading commercial membrane manufacturers"
+          "title": "3. Plan around your hours",
+          "body": "We work around tenant schedules and business hours so the store or clinic can stay open."
         },
         {
-          "big": "Since 2003",
-          "label": "Over 20 years on commercial and residential roofs in McAllen and across the Rio Grande Valley"
+          "title": "4. Records for your files",
+          "body": "You get documentation for your insurance and maintenance records when the job is done."
         }
       ]
     },
     {
-      "title": "Commercial roofing questions: McAllen",
+      "title": "Why McAllen property owners call Edel",
       "alt": false,
+      "kind": "proof",
+      "proof": [
+        {
+          "big": "Certified",
+          "label": "Versico, Duro-Last, Polyglass, KARNAK, and Mule-Hide commercial systems"
+        },
+        {
+          "big": "RCAT #03-0489",
+          "label": "Licensed Texas roofing contractor, bonded and insured"
+        },
+        {
+          "big": "4.8★",
+          "label": "250+ Google reviews from residential and commercial customers"
+        },
+        {
+          "big": "Since 2003",
+          "label": "Commercial and residential roofs across the Rio Grande Valley"
+        }
+      ]
+    },
+    {
+      "title": "McAllen commercial roofing questions",
+      "alt": true,
       "kind": "faq",
       "faqs": [
         {
-          "q": "My business in McAllen has a flat roof leak. Can you fix it?",
-          "a": "Yes. We repair flat and low-slope commercial roofs throughout McAllen. Flat roof leaks are harder to trace than residential leaks because water travels along the membrane before it shows up inside. We inspect the full roof to find the actual entry point, not just the visible damage. Call (956) 422-3335 to schedule an inspection."
+          "q": "Our store has a leak and we can't close. Can you work around that?",
+          "a": "Yes. Tell us your hours and your busiest days, and we schedule the work around your tenants and business hours."
         },
         {
-          "q": "What types of commercial roofing do you install in McAllen?",
-          "a": "We install TPO, EPDM, and modified bitumen membrane systems, the three most common flat and low-slope commercial systems in South Texas. We also apply roof coatings for buildings that need extended service life without a full replacement. We can recommend the right system based on your building type, roof area, and budget."
+          "q": "Which flat roof system is best for a McAllen building?",
+          "a": "It depends on the building, the roof area, the deck, and your budget. TPO, EPDM, and modified bitumen are all common in South Texas. We explain the trade offs for your roof in the written scope."
         },
         {
-          "q": "How long does a commercial roof last in McAllen's climate?",
-          "a": "A well-installed commercial membrane system in the RGV typically lasts 15 to 25 years, depending on the material and how consistently it is maintained. McAllen's heat and UV exposure accelerate wear compared to cooler climates. Regular inspections catch small problems before they shorten that timeline."
+          "q": "How long should a commercial roof last here?",
+          "a": "A well installed membrane in the RGV typically lasts 15 to 25 years, depending on the material and how well it is maintained. Heat shortens that, and regular inspections help you reach the long end."
         },
         {
-          "q": "Do you work with property managers overseeing multiple McAllen buildings?",
-          "a": "Yes. A significant portion of our commercial work is with property managers and building owners with multiple properties. We can work around tenant schedules, provide documentation for insurance and maintenance records, and set up recurring inspection agreements so problems get caught early across all your buildings."
+          "q": "We manage several McAllen properties. Can you handle all of them?",
+          "a": "Yes. We work with owners and property managers who have more than one building, and we can set up recurring inspections so problems get caught early at each property."
         },
         {
-          "q": "How do I get a commercial roofing estimate in McAllen?",
-          "a": "Call (956) 422-3335 or <a href=\"/book-an-inspection\">book an inspection online</a>. We will schedule a time to walk the roof, take measurements, and give you a written estimate. Commercial estimates are free with no obligation."
+          "q": "What causes most flat roof leaks?",
+          "a": "Open seams, worn flashing at walls and rooftop curbs, and clogged drains cause most of them. Punctures from hail or foot traffic come next. The drip inside is often far from the source, because water runs along the deck before it comes through the ceiling."
+        },
+        {
+          "q": "Do you document storm damage on commercial roofs?",
+          "a": "Yes. We inspect after a storm and give you a written report with photos for your insurer. We are not a public adjuster, so the claim itself is between you and your insurance company."
+        },
+        {
+          "q": "How do I get a commercial estimate in McAllen?",
+          "a": "Call (956) 422-3335 or <a href=\"/book-an-inspection\">book an inspection online</a>. We walk the roof, take measurements, and give you a written estimate. Commercial estimates are free."
         }
       ]
     }
   ],
   "cta": {
-    "title": "Get a free commercial roofing estimate in McAllen",
-    "line": "We inspect the roof, give you a written estimate, and explain your options. No pressure, no obligation.",
+    "title": "Get a free commercial roof estimate in McAllen",
+    "line": "We walk the whole roof, then give you a written scope with the price and a schedule that works around your business.",
     "buttons": [
       {
         "label": "Book a Free Inspection",
@@ -186,7 +217,7 @@
           "@type": "WebPage",
           "name": "Commercial Roofing in McAllen, TX",
           "url": "https://www.edelroofing.com/commercial-roofing-mcallen-tx",
-          "description": "Licensed commercial roofing contractor serving McAllen, TX. Flat roof installation, TPO, EPDM, modified bitumen, and commercial repairs. Free estimate: (956) 422-3335.",
+          "description": "Commercial flat roof repair, replacement, and coatings in McAllen, TX. TPO, EPDM, modified bitumen. Written scope, work planned around your tenants. Call (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -196,42 +227,58 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "My business in McAllen has a flat roof leak. Can you fix it?",
+              "name": "Our store has a leak and we can't close. Can you work around that?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. We repair flat and low-slope commercial roofs throughout McAllen. Flat roof leaks are harder to trace than residential leaks because water travels along the membrane before it shows up inside. We inspect the full roof to find the actual entry point. Call (956) 422-3335 to schedule."
+                "text": "Yes. Tell us your hours and your busiest days, and we schedule the work around your tenants and business hours."
               }
             },
             {
               "@type": "Question",
-              "name": "What types of commercial roofing do you install in McAllen?",
+              "name": "Which flat roof system is best for a McAllen building?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "We install TPO, EPDM, and modified bitumen membrane systems. We also apply roof coatings for buildings that need extended service life without a full replacement. We recommend the right system based on your building type, roof area, and budget."
+                "text": "It depends on the building, the roof area, the deck, and your budget. TPO, EPDM, and modified bitumen are all common in South Texas. We explain the trade offs for your roof in the written scope."
               }
             },
             {
               "@type": "Question",
-              "name": "How long does a commercial roof last in McAllen's climate?",
+              "name": "How long should a commercial roof last here?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A well-installed commercial membrane system in the RGV typically lasts 15 to 25 years depending on the material and maintenance. McAllen's heat and UV exposure accelerate wear compared to cooler climates. Regular inspections catch problems early."
+                "text": "A well installed membrane in the RGV typically lasts 15 to 25 years, depending on the material and how well it is maintained. Heat shortens that, and regular inspections help you reach the long end."
               }
             },
             {
               "@type": "Question",
-              "name": "Do you work with property managers overseeing multiple McAllen buildings?",
+              "name": "We manage several McAllen properties. Can you handle all of them?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. We work with property managers and building owners with multiple properties. We can work around tenant schedules, provide documentation for insurance and maintenance records, and set up recurring inspection agreements."
+                "text": "Yes. We work with owners and property managers who have more than one building, and we can set up recurring inspections so problems get caught early at each property."
               }
             },
             {
               "@type": "Question",
-              "name": "How do I get a commercial roofing estimate in McAllen?",
+              "name": "What causes most flat roof leaks?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Call (956) 422-3335 or book an inspection online. We will schedule a time to walk the roof, take measurements, and give you a written estimate. Commercial estimates are free with no obligation."
+                "text": "Open seams, worn flashing at walls and rooftop curbs, and clogged drains cause most of them. Punctures from hail or foot traffic come next. The drip inside is often far from the source, because water runs along the deck before it comes through the ceiling."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you document storm damage on commercial roofs?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We inspect after a storm and give you a written report with photos for your insurer. We are not a public adjuster, so the claim itself is between you and your insurance company."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I get a commercial estimate in McAllen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Call (956) 422-3335 or book an inspection online. We walk the roof, take measurements, and give you a written estimate. Commercial estimates are free."
               }
             }
           ]
@@ -241,6 +288,7 @@
   ],
   "changes": [
     "em/en dashes swapped for commas, colons, or hyphens",
-    "review counts (246/252) -> 250+ (match the homepage)"
+    "review counts (246/252) -> 250+ (match the homepage)",
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
   ]
 }

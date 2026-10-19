@@ -4,7 +4,7 @@
   "city": "mcallen",
   "service": "replacement",
   "title": "Roof Replacement in McAllen, TX | Edel Roofing & Construction",
-  "description": "Licensed residential roof replacement in McAllen, TX. CertainTeed, Owens Corning, GAF shingle systems. 250+ Google reviews. Free estimate: (956) 422-3335.",
+  "description": "New shingle roofs for McAllen, TX homes. CertainTeed SELECT ShingleMaster, full tear off, decking checked, written scope. Licensed RCAT #03-0489. Call (956) 422-3335.",
   "alternates": {
     "en": "/roof-replacement-mcallen-tx",
     "es": "/reemplazo-de-techo-mcallen-tx"
@@ -20,7 +20,7 @@
     }
   ],
   "h1": "Roof Replacement in McAllen, TX",
-  "lede": "Edel Roofing &amp; Construction installs full shingle roof replacements for McAllen homes. Licensed, bonded, and insured. Written estimates, no pressure, no obligation.",
+  "lede": "Edel Roofing &amp; Construction replaces shingle roofs on McAllen homes with a full tear off and a written scope before work starts. We are the only CertainTeed SELECT ShingleMaster in the Rio Grande Valley.",
   "heroCtas": [
     {
       "label": "Get a Free Estimate",
@@ -33,110 +33,121 @@
   ],
   "sections": [
     {
-      "title": "Roof replacement contractor serving McAllen",
+      "title": "New roofs for McAllen homes",
       "alt": false,
       "kind": "text",
       "paras": [
-        "Edel Roofing is based in Edinburg, about 15 minutes from central McAllen, and has replaced roofs across Hidalgo County since 2003. McAllen is one of the fastest-growing cities in Texas, which means two things at once: a lot of homes from the 80s and 90s around 2nd Street and 10th Street are reaching the end of their shingle life, and a lot of newer construction in north McAllen is going up around Sharyland and Las Cumbres.",
-        "A full replacement is the right call when a roof is past patching, widespread granule loss, multiple repair points, storm damage across a large area, or age alone once a shingle system passes 20-25 years in this climate. We inspect the whole roof and the decking underneath before recommending replacement over repair, not the other way around.",
-        "Every replacement includes a full tear-off, a decking inspection for water damage, and a written scope before we start."
+        "About 40% of McAllen homes were built before 1990, according to Census survey data (ACS 2024), and the median home dates to 1997. A shingle roof in this heat lasts roughly 20 to 25 years. Do the math and a large share of McAllen houses are on their second roof or due for one. Owners live in about 63% of those homes; the rest are rentals, where a roof also has to pass the next insurance renewal.",
+        "Age by itself is not a reason to replace. We look at the whole roof and the decking under it first. Widespread granule loss, leaks in more than one place, soft decking, or storm damage across a large part of the roof are what move a job from repair to replacement. If a repair would hold, we say so. See <a href=\"/roof-repair-mcallen-tx\">roof repair in McAllen</a> for that side."
       ]
     },
     {
-      "title": "Roof replacement services in McAllen",
+      "title": "Heat is what wears out a McAllen roof",
       "alt": true,
+      "kind": "text",
+      "paras": [
+        "NOAA climate normals for the McAllen airport (1991 to 2020) show about 40 days a year at 100°F or hotter and 177 days at 90°F or hotter. The average high in August is 99.6°F. A dark roof in that sun gets far hotter than the air, every day, for half the year. Shingles dry out, the asphalt loses its oils, and the granules come loose.",
+        "That is why ventilation matters as much as the shingle. When an attic cannot let hot air out, the heat builds up under the roof deck and ages the shingles from below. During a replacement we check the intake and exhaust vents and can upgrade them, along with synthetic underlayment, so the new roof lasts as long as it should."
+      ]
+    },
+    {
+      "title": "What a McAllen roof replacement includes",
+      "alt": false,
       "kind": "cards",
       "cards": [
         {
-          "title": "Full Tear-Off & Replacement",
-          "body": "Complete removal of the old roofing system down to the decking, inspection for water damage, and installation of a new shingle system with a written scope and timeline."
+          "title": "Full tear off",
+          "body": "The old roof comes off down to the decking. We do not lay new shingles over old ones."
         },
         {
-          "title": "CertainTeed, Owens Corning & GAF Shingles",
-          "body": "We install shingle systems from all three major manufacturers, and we're the only CertainTeed SELECT ShingleMaster in the Rio Grande Valley, a certification tied to installation quality and warranty coverage."
+          "title": "Decking check",
+          "body": "Rotted or water damaged decking found under the old roof is replaced and noted in your paperwork."
         },
         {
-          "title": "Decking Repair & Replacement",
-          "body": "Water-damaged or rotted decking found during tear-off is repaired or replaced before the new roof goes on. This gets caught and documented, not covered up."
+          "title": "Shingle choice",
+          "body": "CertainTeed, Owens Corning, or GAF. As a CertainTeed SELECT ShingleMaster we can offer stronger CertainTeed warranty coverage."
         },
         {
-          "title": "Ventilation & Underlayment Upgrades",
-          "body": "Proper attic ventilation and modern synthetic underlayment matter in McAllen's heat. We can upgrade both during a replacement to extend the life of the new roof."
+          "title": "Ventilation and underlayment",
+          "body": "Attic vents checked and upgraded where needed, with modern synthetic underlayment under the shingles."
         },
         {
-          "title": "New Construction & Remodel Roofing",
-          "body": "Roofing for new builds and additions in the growing north McAllen subdivisions, coordinated with builders and general contractors."
+          "title": "Written scope",
+          "body": "Materials, price, and timeline in writing before the first shingle comes off."
         },
         {
-          "title": "Insurance Replacement Support",
-          "body": "When a replacement is being covered through a storm damage claim, we document our findings clearly so you know what to present to your insurance company."
+          "title": "New builds and additions",
+          "body": "We also roof new homes and additions in McAllen and coordinate with the builder or general contractor."
         }
       ]
     },
     {
-      "title": "Why McAllen roofs need replacing sooner than you'd think",
-      "alt": false,
+      "title": "Insurance and an older McAllen roof",
+      "alt": true,
       "kind": "text",
       "paras": [
-        "Extreme heat and constant UV exposure age a shingle roof faster in the RGV than in most of the country. A 20-year shingle in McAllen often behaves more like a 15-year shingle by the time it's actually inspected. That's what we see most often in the older neighborhoods around 2nd Street and 10th Street, homes with roofs original to the 1980s and 90s construction, well past their realistic service life even if they don't look dramatically bad from the street.",
-        "In the newer areas around Sharyland and Las Cumbres in north McAllen, replacements are more often storm-driven, hail or wind damage across enough of the roof that patching stops making financial sense compared to a full replacement covered by insurance.",
-        "Either way, we walk the whole roof before recommending replacement, and we tell you plainly if a repair would actually do the job."
+        "If your roof is older, your insurance company may already be asking about it. The <a href=\"https://www.tdi.texas.gov/news/2026/tdi09292026.html\">Texas Department of Insurance</a> says an insurer cannot refuse or drop a policy because of roof age alone, but it can look at the roof's condition. Some policies pay older roofs at actual cash value, meaning depreciation comes out of the claim.",
+        "When a storm causes the damage, the claim may cover much of a replacement. In May 2025 spotters reported hail up to 2 inches in north McAllen. TDI's <a href=\"https://www.tdi.texas.gov/tips/replacing-your-roof.html\">roof replacement tips</a> say to get more than one bid and never let a contractor waive your deductible, which is illegal in Texas. We agree with both. You can read more in our post on <a href=\"/roof-replacement-in-mcallen-timeline-and-insurance\">McAllen roof replacement timeline and insurance</a>."
       ]
     },
     {
-      "title": "Why McAllen homeowners choose Edel Roofing for replacement",
-      "alt": true,
+      "title": "Why McAllen homeowners pick Edel for a new roof",
+      "alt": false,
       "kind": "proof",
       "proof": [
         {
-          "big": "Licensed",
-          "label": "RCAT #03-0489, Texas licensed roofing contractor, bonded & insured"
+          "big": "ShingleMaster",
+          "label": "The only CertainTeed SELECT ShingleMaster in the Rio Grande Valley"
         },
         {
           "big": "4.8★",
-          "label": "250+ Google reviews from homeowners across the RGV"
+          "label": "From 250+ Google reviews"
         },
         {
-          "big": "Certified",
-          "label": "CertainTeed SELECT ShingleMaster, the only one in the Rio Grande Valley"
+          "big": "RCAT #03-0489",
+          "label": "Licensed Texas roofing contractor, bonded and insured"
         },
         {
           "big": "Since 2003",
-          "label": "Over 20 years of roof replacements across McAllen and the Rio Grande Valley"
+          "label": "Over 20 years putting new roofs on Valley homes"
         }
       ]
     },
     {
-      "title": "Roof replacement questions: McAllen",
-      "alt": false,
+      "title": "McAllen roof replacement questions",
+      "alt": true,
       "kind": "faq",
       "faqs": [
         {
-          "q": "How do I know if my McAllen roof needs replacing instead of repairing?",
-          "a": "Widespread granule loss, multiple leak points, a roof over 20-25 years old, or storm damage across a large section of the roof are the usual signs. We inspect the whole roof and decking and give you an honest recommendation, not an automatic upsell to replacement."
+          "q": "How much does a new roof cost in McAllen?",
+          "a": "For a typical McAllen home, a full shingle replacement generally runs between $8,000 and $18,000. Roof size, pitch, the material coming off, and the shingle line you choose move the number. You get a written estimate before any work begins."
         },
         {
-          "q": "How much does a roof replacement cost in McAllen?",
-          "a": "For a typical McAllen home, a full shingle replacement generally runs between $8,000 and $18,000, depending on roof size, pitch, current material, and shingle grade. We give a written estimate before any work begins."
+          "q": "How long will the job take?",
+          "a": "Most McAllen homes take one to three days, weather permitting. The timeline is in the written scope before we start."
         },
         {
-          "q": "How long does a roof replacement take?",
-          "a": "Most residential replacements in McAllen take one to three days depending on roof size and complexity, weather permitting. We give you a specific timeline as part of the written scope before work starts."
+          "q": "My insurer wants a new roof before it renews. What do I do?",
+          "a": "Get an inspection first so you know the roof's real condition. If it only needs repairs, a written report may be enough for your agent. If it needs replacing, we give you the scope and price in writing."
         },
         {
-          "q": "What shingle brands do you install in McAllen?",
-          "a": "CertainTeed, Owens Corning, and GAF. We're the only CertainTeed SELECT ShingleMaster in the Rio Grande Valley, which reflects installation training and gives access to stronger warranty coverage on CertainTeed systems."
+          "q": "Can you put new shingles over my old roof?",
+          "a": "We do a full tear off on our replacements. Taking the old roof off is the only way to see and fix the decking underneath."
         },
         {
-          "q": "How do I get a roof replacement estimate in McAllen?",
-          "a": "Call (956) 422-3335 or <a href=\"/book-an-inspection\">book an inspection online</a>. We'll walk the roof, measure, and give you a written estimate. Estimates are free with no obligation."
+          "q": "Do I need a permit for a new roof in McAllen?",
+          "a": "McAllen uses the 2024 International Residential Code, and roofing is part of the city's residential permit application. McAllen Permits and Inspections is at (956) 681-1300 if you want to confirm for your address."
+        },
+        {
+          "q": "How do I get a replacement estimate in McAllen?",
+          "a": "Call (956) 422-3335 or <a href=\"/book-an-inspection\">book an inspection online</a>. We walk the roof, measure it, and give you a written estimate for free."
         }
       ]
     }
   ],
   "cta": {
     "title": "Get a free roof replacement estimate in McAllen",
-    "line": "We inspect the roof, give you a written estimate, and explain your options. No pressure, no obligation.",
+    "line": "We measure the roof, check the decking and attic, and give you a written scope with the price. No obligation.",
     "buttons": [
       {
         "label": "Book a Free Inspection",
@@ -186,7 +197,7 @@
           "@type": "WebPage",
           "name": "Roof Replacement in McAllen, TX",
           "url": "https://www.edelroofing.com/roof-replacement-mcallen-tx",
-          "description": "Licensed residential roof replacement in McAllen, TX. CertainTeed, Owens Corning, GAF shingle systems. Free estimate: (956) 422-3335.",
+          "description": "New shingle roofs for McAllen, TX homes. CertainTeed SELECT ShingleMaster, full tear off, decking checked, written scope. Licensed RCAT #03-0489. Call (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -196,42 +207,50 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "How do I know if my McAllen roof needs replacing instead of repairing?",
+              "name": "How much does a new roof cost in McAllen?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Widespread granule loss, multiple leak points, a roof over 20-25 years old, or storm damage across a large section of the roof are the usual signs. We inspect the whole roof and decking and give an honest recommendation."
+                "text": "For a typical McAllen home, a full shingle replacement generally runs between $8,000 and $18,000. Roof size, pitch, the material coming off, and the shingle line you choose move the number. You get a written estimate before any work begins."
               }
             },
             {
               "@type": "Question",
-              "name": "How much does a roof replacement cost in McAllen?",
+              "name": "How long will the job take?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "For a typical McAllen home, a full shingle replacement generally runs between $8,000 and $18,000, depending on roof size, pitch, current material, and shingle grade. We give a written estimate before any work begins."
+                "text": "Most McAllen homes take one to three days, weather permitting. The timeline is in the written scope before we start."
               }
             },
             {
               "@type": "Question",
-              "name": "How long does a roof replacement take?",
+              "name": "My insurer wants a new roof before it renews. What do I do?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Most residential replacements in McAllen take one to three days depending on roof size and complexity, weather permitting."
+                "text": "Get an inspection first so you know the roof's real condition. If it only needs repairs, a written report may be enough for your agent. If it needs replacing, we give you the scope and price in writing."
               }
             },
             {
               "@type": "Question",
-              "name": "What shingle brands do you install in McAllen?",
+              "name": "Can you put new shingles over my old roof?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "CertainTeed, Owens Corning, and GAF. We are the only CertainTeed SELECT ShingleMaster in the Rio Grande Valley, which gives access to stronger warranty coverage on CertainTeed systems."
+                "text": "We do a full tear off on our replacements. Taking the old roof off is the only way to see and fix the decking underneath."
               }
             },
             {
               "@type": "Question",
-              "name": "How do I get a roof replacement estimate in McAllen?",
+              "name": "Do I need a permit for a new roof in McAllen?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Call (956) 422-3335 or book an inspection online. We will walk the roof, measure, and give you a written estimate. Estimates are free with no obligation."
+                "text": "McAllen uses the 2024 International Residential Code, and roofing is part of the city's residential permit application. McAllen Permits and Inspections is at (956) 681-1300 if you want to confirm for your address."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I get a replacement estimate in McAllen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Call (956) 422-3335 or book an inspection online. We walk the roof, measure it, and give you a written estimate for free."
               }
             }
           ]
@@ -242,6 +261,7 @@
   "changes": [
     "\"unlocks stronger warranty coverage\" -> \"gives access to stronger warranty coverage\" (banned word)",
     "em/en dashes swapped for commas, colons, or hyphens",
-    "review counts (246/252) -> 250+ (match the homepage)"
+    "review counts (246/252) -> 250+ (match the homepage)",
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
   ]
 }

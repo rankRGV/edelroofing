@@ -4,7 +4,7 @@
   "city": "edinburg",
   "service": "replacement",
   "title": "Roof Replacement in Edinburg, TX | Edel Roofing & Construction",
-  "description": "Licensed residential roof replacement in Edinburg, TX. CertainTeed, Owens Corning, GAF shingle systems. 250+ Google reviews. Free estimate: (956) 422-3335.",
+  "description": "Roof replacement in Edinburg, TX from a roofer based in Edinburg. Hail damaged and aging shingle roofs, full tear off, written scope. Call (956) 422-3335.",
   "alternates": {
     "en": "/roof-replacement-edinburg-tx",
     "es": "/reemplazo-de-techo-en-edinburg-tx"
@@ -20,7 +20,7 @@
     }
   ],
   "h1": "Roof Replacement in Edinburg, TX",
-  "lede": "Edel Roofing &amp; Construction installs full shingle roof replacements for Edinburg homes. Licensed, bonded, and insured. Written estimates, no pressure, no obligation.",
+  "lede": "Edel Roofing &amp; Construction is based in Edinburg, on N Jackson Rd. We replace hail damaged and worn out shingle roofs across the city with a full tear off and a written scope.",
   "heroCtas": [
     {
       "label": "Get a Free Estimate",
@@ -33,110 +33,122 @@
   ],
   "sections": [
     {
-      "title": "Roof replacement contractor in Edinburg",
+      "title": "A roofer based in Edinburg",
       "alt": false,
       "kind": "text",
       "paras": [
-        "Edel Roofing is based in Edinburg and has replaced roofs across Hidalgo County since 2003. Many homes near downtown and along Closner Boulevard and McColl Road were built decades ago, and their original shingle roofs are reaching the end of their life. On the north side, newer homes are more often replaced after storm damage.",
-        "A full replacement is the right call when a roof is past patching: widespread granule loss, several repair points, storm damage across a large area, or simple age once a shingle system passes 20 to 25 years in this climate. We inspect the whole roof and the decking underneath before we recommend replacement over repair, not the other way around.",
-        "Every replacement includes a full tear off, a decking inspection for water damage, and a written scope before we start. If you are already thinking about gutters, see <a href=\"/gutters-edinburg-tx\">gutter installation and repair in Edinburg</a>."
+        "Our office is at 1815 N Jackson Rd, so an Edinburg roof is a short drive for us. We have been replacing roofs across Hidalgo County since 2003.",
+        "Edinburg's homes split into two groups. About 30% were built before 1990, and more than half went up in 2000 or later, according to Census survey data (ACS 2024). The median home dates to 2002. Older homes are often on their second or third roof. Many of the newer ones still have the roof the builder put on, and those first roofs are now 20 years old or close to it. The city keeps growing too: 32 new subdivisions with 867 lots were approved in 2025, and 45 more were under review in 2026, according to Valley Business Report.",
+        "About half of Edinburg homes are renter occupied (ACS 2024). If you own a rental, a written roof scope and invoice are useful for your insurer and your records."
       ]
     },
     {
-      "title": "Roof replacement services in Edinburg",
+      "title": "Hail keeps hitting Edinburg",
       "alt": true,
+      "kind": "text",
+      "paras": [
+        "NOAA storm records show how often hail has hit Edinburg lately. On June 4, 2023, hail 1 inch across was reported. On May 13, 2024, hail up to 1.75 inches fell near Faysville. On May 8, 2025, hail up to 1.75 inches hit south Edinburg and 2 inch hail was reported near Dove Ave and McColl Rd. A few weeks earlier in 2023, about 65 mph winds on April 28 brought down a gas station canopy at Lark Ave and N 23rd St.",
+        "After the April 2023 storm and again in April 2025, the city waived roofing permit fees for storm repairs. If your roof took hail in one of these storms and it was never checked, the damage may be worse than it looks from the ground. Hail bruises can lose granules for months before a leak shows up. A free inspection after a storm gives you a written record of the roof's condition on that date, which helps if you file a claim later."
+      ]
+    },
+    {
+      "title": "What goes into an Edinburg roof replacement",
+      "alt": false,
       "kind": "cards",
       "cards": [
         {
-          "title": "Full tear off and replacement",
-          "body": "Complete removal of the old roofing down to the decking, a check for water damage, and installation of a new shingle system with a written scope and timeline."
+          "title": "Tear off to the deck",
+          "body": "The old shingles and underlayment come off so we can see the decking. Nothing goes over an old roof."
         },
         {
-          "title": "CertainTeed, Owens Corning, and GAF shingles",
-          "body": "We install shingle systems from all three major manufacturers. We are the only CertainTeed SELECT ShingleMaster in the Rio Grande Valley, a certification tied to installation quality and warranty coverage."
+          "title": "Decking repairs",
+          "body": "Rotted or water damaged boards are replaced and listed on your invoice."
         },
         {
-          "title": "Decking repair and replacement",
-          "body": "Water damaged or rotted decking found during tear off is repaired or replaced before the new roof goes on. It gets documented, not covered up."
+          "title": "Your choice of shingle",
+          "body": "CertainTeed, Owens Corning, or GAF. We are the only CertainTeed SELECT ShingleMaster in the Valley."
         },
         {
-          "title": "Ventilation and underlayment upgrades",
-          "body": "Good attic ventilation and modern synthetic underlayment matter in Edinburg's heat. We can upgrade both during a replacement to extend the life of the new roof."
+          "title": "Vents and flashing",
+          "body": "New flashing at walls and valleys, and attic ventilation checked so heat does not build up under the new roof."
         },
         {
-          "title": "New construction and remodel roofing",
-          "body": "Roofing for new builds and additions on the north side of Edinburg, coordinated with builders and general contractors."
+          "title": "Insurance paperwork",
+          "body": "When a claim is paying for the roof, we document what we found with photos so you know what to show your insurer."
         },
         {
-          "title": "Insurance replacement support",
-          "body": "When a replacement is being paid through a storm damage claim, we document our findings clearly so you know what to present to your insurance company."
+          "title": "Written paperwork",
+          "body": "Scope, price, and timeline before work, and the finished invoice after."
         }
       ]
     },
     {
-      "title": "Why Edinburg roofs need replacing sooner than you might expect",
-      "alt": false,
+      "title": "Permits and insurance in Edinburg",
+      "alt": true,
       "kind": "text",
       "paras": [
-        "Heat and constant sun age a shingle roof faster in the Rio Grande Valley than in most of the country. A 20 year shingle here often behaves more like a 15 year shingle by the time it is inspected. That is what we see most in older neighborhoods near downtown: original roofs well past their realistic life, even when they do not look bad from the street.",
-        "In newer areas on the north side, replacements are more often storm driven. Hail or wind damage across enough of the roof makes patching a poor use of money compared with a full replacement covered by insurance.",
-        "Either way, we walk the whole roof before recommending replacement, and we tell you plainly if a repair would do the job. Our <a href=\"/roof-replacement-edinburg-rio-grande-valley\">roof replacement guide for Edinburg</a> explains the process and what to expect, and <a href=\"/roof-repair-edinburg-tx\">roof repair in Edinburg</a> covers the cases where a repair is enough."
+        "Edinburg has adopted the 2018 International Residential Code. Building Safety is at 415 W University Dr, (956) 388-8203, if you want to ask about permits for your address.",
+        "If you are filing a claim, the <a href=\"https://www.tdi.texas.gov/tips/replacing-your-roof.html\">Texas Department of Insurance</a> suggests getting more than one bid, and it is illegal in Texas for a contractor to waive your deductible. We put our findings in writing with photos so you can show your insurer. For the full process, read our <a href=\"/roof-replacement-edinburg-rio-grande-valley\">roof replacement guide for Edinburg</a>, and if a repair might be enough, see <a href=\"/roof-repair-edinburg-tx\">roof repair in Edinburg</a>."
       ]
     },
     {
-      "title": "Why Edinburg homeowners choose Edel Roofing for replacement",
-      "alt": true,
+      "title": "Edel Roofing in Edinburg",
+      "alt": false,
       "kind": "proof",
       "proof": [
         {
-          "big": "Licensed",
-          "label": "RCAT #03-0489, Texas licensed roofing contractor, bonded and insured"
+          "big": "Local",
+          "label": "Office at 1815 N Jackson Rd, Edinburg"
+        },
+        {
+          "big": "ShingleMaster",
+          "label": "Only CertainTeed SELECT ShingleMaster in the RGV"
         },
         {
           "big": "4.8★",
-          "label": "250+ Google reviews from homeowners across the RGV"
+          "label": "250+ Google reviews"
         },
         {
-          "big": "Certified",
-          "label": "CertainTeed SELECT ShingleMaster, the only one in the Rio Grande Valley"
-        },
-        {
-          "big": "Since 2003",
-          "label": "Over 20 years of roof replacements in Edinburg and the Rio Grande Valley"
+          "big": "RCAT #03-0489",
+          "label": "Licensed, bonded, and insured since 2003"
         }
       ]
     },
     {
-      "title": "Roof replacement questions in Edinburg",
-      "alt": false,
+      "title": "Edinburg roof replacement questions",
+      "alt": true,
       "kind": "faq",
       "faqs": [
         {
-          "q": "How do I know if my Edinburg roof needs replacing instead of repairing?",
-          "a": "Widespread granule loss, several leak points, a roof over 20 to 25 years old, or storm damage across a large section of the roof are the usual signs. We inspect the whole roof and the decking and give you an honest recommendation, not an automatic push toward replacement."
+          "q": "My roof took hail in 2024 or 2025. Is it too late to check it?",
+          "a": "No. Get it inspected now. Hail damage keeps getting worse after the storm, and your policy may have a time limit for filing, so check with your insurer about yours."
         },
         {
-          "q": "How much does a roof replacement cost in Edinburg?",
-          "a": "For a typical Edinburg home, a full shingle replacement generally runs between $8,000 and $18,000, depending on roof size, pitch, current material, and shingle grade. We give a written estimate before any work begins."
+          "q": "How much does a new roof cost in Edinburg?",
+          "a": "For a typical Edinburg home, a full shingle replacement generally runs between $8,000 and $18,000, depending on size, pitch, and the shingle you choose. The written estimate comes first."
         },
         {
-          "q": "How long does a roof replacement take?",
-          "a": "Most residential replacements in Edinburg take one to three days depending on roof size and complexity, weather permitting. You get a specific timeline in the written scope before work starts."
+          "q": "How long does it take?",
+          "a": "Most Edinburg homes take one to three days, weather permitting. You get the timeline in writing before we start."
         },
         {
-          "q": "What shingle brands do you install in Edinburg?",
-          "a": "CertainTeed, Owens Corning, and GAF. We are the only CertainTeed SELECT ShingleMaster in the Rio Grande Valley, which reflects installation training and gives access to stronger warranty coverage on CertainTeed systems."
+          "q": "Can you replace my gutters at the same time?",
+          "a": "Yes. Doing the gutters with the roof means one crew and no redoing fascia or trim work twice. See <a href=\"/gutters-edinburg-tx\">gutters in Edinburg</a>."
         },
         {
-          "q": "How do I get a roof replacement estimate in Edinburg?",
-          "a": "Call (956) 422-3335 or <a href=\"/book-an-inspection\">book an inspection online</a>. We walk the roof, measure, and give you a written estimate. Estimates are free with no obligation."
+          "q": "Do you install new roofs on new construction?",
+          "a": "Yes, we roof new builds and additions and coordinate with the builder or general contractor."
+        },
+        {
+          "q": "How do I get an estimate?",
+          "a": "Call (956) 422-3335 or <a href=\"/book-an-inspection\">book an inspection online</a>. We are in Edinburg, and estimates are free."
         }
       ]
     }
   ],
   "cta": {
     "title": "Get a free roof replacement estimate in Edinburg",
-    "line": "We inspect the roof, give you a written estimate, and explain your options. No pressure, no obligation.",
+    "line": "We are right here on N Jackson Rd. We inspect the roof and give you a written scope and price.",
     "buttons": [
       {
         "label": "Book a Free Inspection",
@@ -186,7 +198,7 @@
           "@type": "WebPage",
           "name": "Roof Replacement in Edinburg, TX",
           "url": "https://www.edelroofing.com/roof-replacement-edinburg-tx",
-          "description": "Licensed residential roof replacement in Edinburg, TX. CertainTeed, Owens Corning, GAF shingle systems. Free estimate: (956) 422-3335.",
+          "description": "Roof replacement in Edinburg, TX from a roofer based in Edinburg. Hail damaged and aging shingle roofs, full tear off, written scope. Call (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -196,42 +208,50 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "How do I know if my Edinburg roof needs replacing instead of repairing?",
+              "name": "My roof took hail in 2024 or 2025. Is it too late to check it?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Widespread granule loss, several leak points, a roof over 20 to 25 years old, or storm damage across a large section of the roof are the usual signs. We inspect the whole roof and the decking and give you an honest recommendation."
+                "text": "No. Get it inspected now. Hail damage keeps getting worse after the storm, and your policy may have a time limit for filing, so check with your insurer about yours."
               }
             },
             {
               "@type": "Question",
-              "name": "How much does a roof replacement cost in Edinburg?",
+              "name": "How much does a new roof cost in Edinburg?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "For a typical Edinburg home, a full shingle replacement generally runs between $8,000 and $18,000, depending on roof size, pitch, current material, and shingle grade. We give a written estimate before any work begins."
+                "text": "For a typical Edinburg home, a full shingle replacement generally runs between $8,000 and $18,000, depending on size, pitch, and the shingle you choose. The written estimate comes first."
               }
             },
             {
               "@type": "Question",
-              "name": "How long does a roof replacement take?",
+              "name": "How long does it take?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Most residential replacements in Edinburg take one to three days depending on roof size and complexity, weather permitting. You get a specific timeline in the written scope before work starts."
+                "text": "Most Edinburg homes take one to three days, weather permitting. You get the timeline in writing before we start."
               }
             },
             {
               "@type": "Question",
-              "name": "What shingle brands do you install in Edinburg?",
+              "name": "Can you replace my gutters at the same time?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "CertainTeed, Owens Corning, and GAF. We are the only CertainTeed SELECT ShingleMaster in the Rio Grande Valley, which reflects installation training and gives access to stronger warranty coverage on CertainTeed systems."
+                "text": "Yes. Doing the gutters with the roof means one crew and no redoing fascia or trim work twice. See gutters in Edinburg."
               }
             },
             {
               "@type": "Question",
-              "name": "How do I get a roof replacement estimate in Edinburg?",
+              "name": "Do you install new roofs on new construction?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Call (956) 422-3335 or book an inspection online. We walk the roof, measure, and give you a written estimate. Estimates are free with no obligation."
+                "text": "Yes, we roof new builds and additions and coordinate with the builder or general contractor."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I get an estimate?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Call (956) 422-3335 or book an inspection online. We are in Edinburg, and estimates are free."
               }
             }
           ]
@@ -241,6 +261,7 @@
   ],
   "changes": [
     "\"unlocks stronger warranty coverage\" -> \"gives access to stronger warranty coverage\" (banned word)",
-    "review counts (246/252) -> 250+ (match the homepage)"
+    "review counts (246/252) -> 250+ (match the homepage)",
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
   ]
 }

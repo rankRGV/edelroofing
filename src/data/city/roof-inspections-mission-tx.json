@@ -4,7 +4,7 @@
   "city": "mission",
   "service": "inspections",
   "title": "Roof Inspections in Mission, TX | Edel Roofing & Construction",
-  "description": "Free professional roof inspections in Mission, TX. Buying a home, after a storm, or a second opinion. 250+ Google reviews. Free estimate: (956) 422-3335.",
+  "description": "Free roof inspections in Mission, TX. Find out how much life is left on an original 2000s roof before you buy, sell, or renew insurance. Call (956) 422-3335.",
   "alternates": null,
   "crumbs": [
     {
@@ -13,7 +13,7 @@
     }
   ],
   "h1": "Roof Inspections in Mission, TX",
-  "lede": "Edel Roofing &amp; Construction inspects roofs for homeowners, buyers, and property managers in Mission. A straight answer about the roof's real condition, no pressure, no upsell. Inspections are free.",
+  "lede": "Edel Roofing &amp; Construction inspects roofs on Mission homes and buildings for free. You get a written report with photos and a straight answer about how much life the roof has left.",
   "heroCtas": [
     {
       "label": "Book a Free Inspection",
@@ -26,100 +26,116 @@
   ],
   "sections": [
     {
-      "title": "Roof inspections for Mission homeowners and buyers",
+      "title": "The question most Mission homeowners have",
       "alt": false,
       "kind": "text",
       "paras": [
-        "A roof inspection tells you what's actually going on up there, not what it looks like from the ground. We walk the roof, check the flashing, vents, and valleys, and look for anything that's wearing out or already failed. Then we give you a written report and a straight answer, not a sales pitch dressed up as an inspection.",
-        "Most people call us for one of three reasons: they're buying a house and want to know what they're getting, they just had a storm come through, or they've noticed something and want a professional opinion before it becomes a bigger problem."
+        "About half of Mission's homes were built in 2000 or later, and the median year built is 2000 (Census ACS 2020 to 2024). Most of those houses still have their first roof, and that roof is now around 20 years old. In Valley heat, that is about where a shingle roof starts to run out of life.",
+        "So the question we hear most is simple: how long do I have? Some original roofs still have several good years. Others need work now. You cannot tell from the driveway. An inspection on the roof itself answers it."
       ]
     },
     {
-      "title": "When Mission homeowners get a roof inspection",
+      "title": "What we look at on a Mission roof",
       "alt": true,
       "kind": "cards",
       "cards": [
         {
-          "title": "Buying a Home",
-          "body": "Know the real condition of the roof before you close. We tell you the age, remaining life, and anything that needs attention now versus later."
+          "title": "Shingles",
+          "body": "Granule loss, brittleness, cracks, curling, and hail bruises across every slope, not just the front."
         },
         {
-          "title": "After a Storm",
-          "body": "Hail and wind damage aren't always visible from the ground. A post-storm inspection catches problems before they turn into leaks."
+          "title": "Flashing",
+          "body": "The metal and sealant at walls, chimneys, and valleys, where 20 year old sealant tends to dry out first."
         },
         {
-          "title": "Something Looks Off",
-          "body": "A stain on the ceiling, a missing shingle you spotted from the yard, a roof that's getting up there in age. We check it and tell you what we find."
+          "title": "Vents and pipe boots",
+          "body": "Rubber boots crack in the sun and are one of the most common leak points on older roofs."
         },
         {
-          "title": "Selling a Home",
-          "body": "A written inspection report before you list can head off a buyer's inspection surprise, and gives you room to fix small issues on your own timeline."
+          "title": "Decking",
+          "body": "Soft spots under foot that point to a slow leak and rotting wood below the shingles."
+        },
+        {
+          "title": "Gutters and edges",
+          "body": "Where water leaves the roof, and whether it is backing up under the edge."
+        },
+        {
+          "title": "Attic, if needed",
+          "body": "Stains, damp insulation, or daylight that show where water is getting in."
         }
       ]
     },
     {
-      "title": "What we find most often in Mission",
+      "title": "Storms, rain, and roofs in Mission",
       "alt": false,
       "kind": "text",
       "paras": [
-        "Mission's housing is a mix. Around Conway Avenue and toward downtown, plenty of homes still have older shingle roofs that have outlasted what they were rated for. If you're buying there, an inspection tells you how much life is left before it turns into an $8,000 to $18,000 replacement.",
-        "Out in Sharyland and the newer subdivisions, the roofs are younger. What we find there is usually targeted: flashing around a vent, or a section of shingles lifted by wind. Small fixes, caught early."
+        "Mission roofs have been through a lot in the last decade. <a href=\"https://www.weather.gov/bro/2020event_hanna\">Hurricane Hanna</a> dropped 14.40 inches of rain on the city in July 2020. In April 2023, spotters reported hail up to 2.5 inches in Mission. A roof can come through storms like those with damage that does not leak right away. If yours has never been checked since, an inspection gives you a written record of its condition today."
       ]
     },
     {
-      "title": "Why Mission homeowners trust Edel's inspections",
+      "title": "Insurance facts for Mission homeowners",
       "alt": true,
+      "kind": "text",
+      "paras": [
+        "Hidalgo County is not in the <a href=\"https://www.twia.org/?p=40566\">Texas Windstorm Insurance Association</a> area, which covers 14 coastal counties. So a Mission roof does not need a TDI windstorm certificate for TWIA coverage. Your regular homeowners insurance still cares about the roof. The <a href=\"https://www.tdi.texas.gov/news/2026/tdi09292026.html\">Texas Department of Insurance</a> says insurers cannot refuse or drop a policy because of roof age alone, but they can look at condition, and some pay older roofs at actual cash value.",
+        "About 71% of Mission homes are lived in by their owners. If you are buying one built in the 2000s and the roof was never replaced, plan for a new roof in the next few years, and use a written report when you negotiate."
+      ]
+    },
+    {
+      "title": "Why Mission homeowners book Edel",
+      "alt": false,
       "kind": "proof",
       "proof": [
         {
+          "big": "Free",
+          "label": "Inspection with no obligation to hire us"
+        },
+        {
+          "big": "Photos",
+          "label": "A written report you can share with a buyer, seller, or insurer"
+        },
+        {
           "big": "Licensed",
-          "label": "RCAT #03-0489, Texas licensed roofing contractor, bonded & insured"
+          "label": "RCAT #03-0489, bonded and insured"
         },
         {
-          "big": "4.8★",
-          "label": "250+ Google reviews from residential and commercial customers across the RGV"
-        },
-        {
-          "big": "Written Report",
-          "label": "Every inspection comes with documentation you can keep, share, or use for insurance"
-        },
-        {
-          "big": "Since 2003",
-          "label": "Over 20 years inspecting roofs across Mission and the Rio Grande Valley"
+          "big": "250+",
+          "label": "Google reviews at 4.8 stars"
         }
       ]
     },
     {
-      "title": "Roof inspection questions, Mission",
-      "alt": false,
+      "title": "Roof inspection questions in Mission",
+      "alt": true,
       "kind": "faq",
       "faqs": [
         {
-          "q": "What does a roof inspection actually cover?",
-          "a": "We check the shingles or membrane, flashing, vents, valleys, and the general condition and remaining life of the roof. You get a written summary of what we found, not just a verbal opinion."
+          "q": "My house was built in the early 2000s. Is the roof original?",
+          "a": "If nobody has replaced it, probably. Roof work is not always in the listing or the seller's disclosure. An inspection shows the roof's condition either way."
         },
         {
-          "q": "How long does an inspection take?",
-          "a": "Most residential inspections take 30 to 45 minutes on-site. We'll walk you through what we found before we leave, and follow up with the written report."
+          "q": "How much life does a 20 year old roof have left?",
+          "a": "It depends on how it was installed, the ventilation, and the storms it has seen. Some have several good years, some need replacing now. That is what the inspection tells you."
         },
         {
-          "q": "Is the inspection really free, or is there a catch?",
-          "a": "It's free, no obligation. If we find something that needs repair or replacement, we'll give you a written estimate, but there's no pressure to move forward with it."
+          "q": "Do I need a windstorm certificate to sell my Mission house?",
+          "a": "Not for TWIA. Hidalgo County is outside the TWIA coastal area. Ask your agent or lender if your buyer's insurer has its own requirements."
         },
         {
-          "q": "Should I get a roof inspection before buying a house in Mission?",
-          "a": "Yes, especially for homes built before the 2000s. Roof age and condition are one of the biggest hidden costs in a home purchase, and a $8,000 to $18,000 replacement is worth knowing about before you close, not after."
+          "q": "How long does a roof inspection take?",
+          "a": "Most residential roofs take 30 to 45 minutes. You get the written report the same visit."
         },
         {
-          "q": "How do I schedule a roof inspection in Mission?",
-          "a": "Call us at (956) 422-3335 or book online. We'll schedule a time, walk the roof, and give you a written report the same visit."
+          "q": "How do I book an inspection in Mission?",
+          "a": "Call (956) 422-3335 or <a href=\"/book-an-inspection\">book an inspection online</a>. We come from Edinburg, about 26 minutes away."
         }
       ]
     }
   ],
   "cta": {
     "title": "Book a free roof inspection in Mission",
-    "line": "We check the roof, give you a written report, and explain what it means. No pressure, no obligation.",
+    "line": "Find out how much life your roof has left. Written report with photos, same visit, no obligation.",
     "buttons": [
       {
         "label": "Book a Free Inspection",
@@ -163,7 +179,7 @@
           "@type": "WebPage",
           "name": "Roof Inspections in Mission, TX",
           "url": "https://www.edelroofing.com/roof-inspections-mission-tx",
-          "description": "Free professional roof inspections in Mission, TX. Buying a home, after a storm, or a second opinion. Free estimate: (956) 422-3335.",
+          "description": "Free roof inspections in Mission, TX. Find out how much life is left on an original 2000s roof before you buy, sell, or renew insurance. Call (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -173,42 +189,42 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "What does a roof inspection actually cover?",
+              "name": "My house was built in the early 2000s. Is the roof original?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "We check the shingles or membrane, flashing, vents, valleys, and the general condition and remaining life of the roof, with a written summary of what we found."
+                "text": "If nobody has replaced it, probably. Roof work is not always in the listing or the seller's disclosure. An inspection shows the roof's condition either way."
               }
             },
             {
               "@type": "Question",
-              "name": "How long does an inspection take?",
+              "name": "How much life does a 20 year old roof have left?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Most residential inspections take 30 to 45 minutes on-site, followed by a written report."
+                "text": "It depends on how it was installed, the ventilation, and the storms it has seen. Some have several good years, some need replacing now. That is what the inspection tells you."
               }
             },
             {
               "@type": "Question",
-              "name": "Is the inspection really free, or is there a catch?",
+              "name": "Do I need a windstorm certificate to sell my Mission house?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "It's free with no obligation. If repair or replacement is needed, we give a written estimate with no pressure to proceed."
+                "text": "Not for TWIA. Hidalgo County is outside the TWIA coastal area. Ask your agent or lender if your buyer's insurer has its own requirements."
               }
             },
             {
               "@type": "Question",
-              "name": "Should I get a roof inspection before buying a house in Mission?",
+              "name": "How long does a roof inspection take?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes, especially for homes built before the 2000s, roof age and condition are one of the biggest hidden costs in a home purchase."
+                "text": "Most residential roofs take 30 to 45 minutes. You get the written report the same visit."
               }
             },
             {
               "@type": "Question",
-              "name": "How do I schedule a roof inspection in Mission?",
+              "name": "How do I book an inspection in Mission?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Call (956) 422-3335 or book online. We schedule a time, walk the roof, and give a written report the same visit."
+                "text": "Call (956) 422-3335 or book an inspection online. We come from Edinburg, about 26 minutes away."
               }
             }
           ]
@@ -217,6 +233,7 @@
     }
   ],
   "changes": [
-    "review counts (246/252) -> 250+ (match the homepage)"
+    "review counts (246/252) -> 250+ (match the homepage)",
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
   ]
 }

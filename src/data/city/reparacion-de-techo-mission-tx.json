@@ -4,7 +4,7 @@
   "city": "mission",
   "service": "repair",
   "title": "Reparación de Techo en Mission, TX | EDEL Roofing & Construction",
-  "description": "Reparación de techo rápida y con licencia en Mission, TX. Goteras, daño por tormenta, tapajuntas y documentación de seguro. más de 250 reseñas en Google. Estimado gratis: (956) 422-3335.",
+  "description": "Reparación de techo en Mission, TX: granizo, goteras y techos de tejas de los 2000. Inspección gratis, precio escrito primero. Llame al (956) 422-3335.",
   "alternates": {
     "en": "/roof-repair-mission-tx",
     "es": "/reparacion-de-techo-mission-tx"
@@ -20,7 +20,7 @@
     }
   ],
   "h1": "Reparación de Techo en Mission, TX",
-  "lede": "Edel Roofing &amp; Construction repara goteras, daño por tormenta y desgaste en techos residenciales en todo Mission. Con licencia, fianza y seguro. La mayoría de las reparaciones se completan en una sola visita.",
+  "lede": "Edel Roofing &amp; Construction repara goteras, daño por granizo y tapajuntas desgastado en casas de Mission. La inspección es gratis, y recibe un precio por escrito antes de que empiece cualquier trabajo.",
   "heroCtas": [
     {
       "label": "Obtener Estimado Gratis",
@@ -33,110 +33,122 @@
   ],
   "sections": [
     {
-      "title": "Contratista de reparación de techos en Mission",
+      "title": "Reparación de techo para casas en Mission",
       "alt": false,
       "kind": "text",
       "paras": [
-        "Edel Roofing está en Edinburg, a unos 25 minutos de Mission, y lleva desde 2003 reparando techos en todo el condado de Hidalgo. Una gotera o una sección dañada no siempre significa un reemplazo completo. La mayoría de las veces es un problema específico y localizable, un tapajuntas agrietado, una sección de tejas faltantes, una bota de ventila fallada, y se puede resolver en una sola visita.",
-        "Recibimos llamadas de reparación de casas más antiguas cerca de Conway Avenue y el centro de Mission, con techos de los años 70 y 80 en su segunda o tercera reparación, y de los desarrollos más nuevos hacia Sharyland, donde el daño por tormenta es la causa más común. En cualquier caso, inspeccionamos primero y le decimos con honestidad si es una reparación o algo más grande.",
-        "Una llamada de reparación no es una excusa para venderle un reemplazo. Si la reparación es la solución correcta, eso es lo que recomendamos y lo que hacemos."
+        "Mission es una ciudad más joven de lo que mucha gente piensa. Cerca de la mitad de sus casas se construyeron en el año 2000 o después, y el año mediano de construcción es 2000, según datos de encuesta de la Oficina del Censo (ACS 2020 a 2024). Alrededor del 68% son casas unifamiliares. Así que muchos techos de Mission todavía son el techo original, el que se puso cuando se construyó la casa, y muchos de esos ya tienen 20 años o más.",
+        "Un techo de tejas de esa edad en el Valle está cerca del final de su vida útil. Las tejas se ponen quebradizas, los gránulos se van a los canalones y el sellador alrededor de las ventilas y el tapajuntas se reseca. Ahí es cuando empiezan las goteras pequeñas. Una gotera pequeña en un techo viejo normalmente sigue siendo una reparación, siempre que el resto del techo esté en buen estado.",
+        "Llegamos a Mission desde nuestra oficina en 1815 N Jackson Rd en Edinburg. Son unas 17 millas, más o menos 26 minutos hasta la alcaldía de Mission."
       ]
     },
     {
-      "title": "Servicios de reparación de techo en Mission",
+      "title": "Granizo y lluvia fuerte en Mission",
       "alt": true,
+      "kind": "text",
+      "paras": [
+        "Mission está en el camino de las tormentas de primavera que cruzan el Valle. El 21 de abril de 2023, observadores reportaron granizo de hasta 2.5 pulgadas en Mission y de 2.75 pulgadas en Peñitas, según los reportes de tormenta del Servicio Nacional de Meteorología. El 29 de mayo de 2023 cayó granizo de cerca de 0.88 pulgadas a como una milla al este del pueblo. Granizo de ese tamaño agrieta las tejas y les tumba los gránulos que las protegen del sol.",
+        "La lluvia es la otra prueba. El <a href=\"https://www.weather.gov/bro/2020event_hanna\">huracán Hanna</a> dejó caer 14.40 pulgadas de lluvia en Mission en julio de 2020, y el NWS reportó cientos de casas mal construidas y otros edificios dañados, la mayoría en el techo. En el aeropuerto de McAllen, la estación meteorológica oficial más cercana, septiembre es el mes más lluvioso con unas 4.6 pulgadas (normales de NOAA de 1991 a 2020). Un techo que empieza a gotear despacio en primavera muchas veces aparece como una mancha en el techo interior para el otoño."
+      ]
+    },
+    {
+      "title": "Lo que reparamos en Mission",
+      "alt": false,
       "kind": "cards",
       "cards": [
         {
-          "title": "Reparación de Goteras",
-          "body": "Manchas de agua en interiores, goteras activas o aislamiento húmedo. Rastreamos la gotera hasta su punto de entrada real, que muchas veces está a varios pies de donde aparece el agua adentro, y la reparamos ahí."
+          "title": "Tejas dañadas por granizo",
+          "body": "Las tejas agrietadas o golpeadas se reemplazan en el área afectada, buscando el mejor emparejamiento posible con el techo actual. El daño queda por escrito para su compañía de seguros."
         },
         {
-          "title": "Reparación por Tormenta y Granizo",
-          "body": "Tejas faltantes o levantadas, pérdida de gránulos y daño por impacto de tormentas en el condado de Hidalgo. Documentamos por escrito lo que encontramos, útil si va a presentar un reclamo de seguro."
+          "title": "Tapajuntas desgastado",
+          "body": "En un techo de 20 años, el sellador en paredes y valles ya se resecó. Resellamos o reemplazamos el tapajuntas para que el agua vuelva a escurrir."
         },
         {
-          "title": "Reparación de Tapajuntas",
-          "body": "El tapajuntas alrededor de chimeneas, ventilas y valles del techo es una de las fuentes más comunes de goteras en casas de Mission. Reparamos o reemplazamos el tapajuntas fallado para que el agua escurra como debe."
+          "title": "Botas de ventila y tubería",
+          "body": "Las botas de hule alrededor de las ventilas de plomería se agrietan con el sol. Cambiar una es rápido y detiene una gotera fácil de pasar por alto."
         },
         {
-          "title": "Reemplazo de Tejas (por Sección)",
-          "body": "Tejas agrietadas, enroscadas o arrancadas por el viento se reemplazan en el área afectada, buscando el mejor emparejamiento posible con su techo actual."
+          "title": "Goteras después de lluvia fuerte",
+          "body": "Rastreamos el agua hasta donde entra al techo, que muchas veces está a unos pies de donde gotea adentro."
         },
         {
-          "title": "Reparación de Tragaluz y Ventilas",
-          "body": "Los sellos fallados de tragaluces y las botas de ventilas del techo son una fuente de gotera común y específica. Las reparamos o resellamos sin afectar el resto del techo."
+          "title": "Tejas faltantes",
+          "body": "Las tejas arrancadas por el viento se reemplazan, y revisamos las de alrededor por sellos rotos."
         },
         {
-          "title": "Inspecciones Post-Tormenta",
-          "body": "Una inspección completa del techo después de granizo o vientos fuertes, con un informe escrito de lo que necesita reparación ahora y lo que hay que vigilar."
+          "title": "Madera de apoyo blanda",
+          "body": "Si una gotera lenta ablandó la madera debajo de las tejas, esa sección de madera de apoyo se reemplaza antes de volver a cerrar el techo."
         }
       ]
     },
     {
-      "title": "Qué causa la mayoría de las reparaciones en Mission",
-      "alt": false,
+      "title": "¿Reparar o reemplazar un techo de 20 años en Mission?",
+      "alt": true,
       "kind": "text",
       "paras": [
-        "El calor y la exposición UV de Mission desgastan las tejas más rápido que en climas más fríos: tejas que se ven bien desde el suelo ya pueden estar quebradizas por debajo. Por eso muchas de nuestras llamadas de reparación cerca de Conway Avenue y el centro comienzan con un dueño de casa que nota una mancha pequeña en el techo interior, que resulta ser un problema de tapajuntas o ventila que ha estado goteando lentamente por un tiempo.",
-        "En Sharyland y los desarrollos más nuevos al oeste y norte de la ciudad, el daño por tormenta es el detonante más común: un evento de granizo desprende una sección de tejas o abolla el techo lo suficiente para comprometer la superficie, y el dueño necesita tanto la reparación como la documentación para su aseguranza.",
-        "En cualquier caso, la solución empieza con una inspección honesta. Le decimos lo que realmente vemos, no lo que genera la factura más grande."
+        "Si la gotera está en un solo lugar y las tejas de alrededor todavía se doblan sin agrietarse, una reparación tiene sentido. Si el techo gotea en varios lugares, tiene partes peladas donde ya no hay gránulos, o tiene madera de apoyo blanda en más de un área, el dinero rinde más en un techo nuevo. Le decimos cuál de las dos cosas vemos, y le mostramos las fotos para que usted mismo juzgue.",
+        "Si se está inclinando por un techo nuevo, lea sobre <a href=\"/reemplazo-de-techo-mission-tx\">reemplazo de techo en Mission</a>. Para reclamos después de una tormenta, vea <a href=\"/es-mx/storm-damage\">daño por tormenta y granizo en Mission</a>. Nuestro artículo sobre el <a href=\"/costo-de-reparacion-de-techo-en-mission-tx-que-es-justo-y-que-cubre-el-seguro\">costo de reparación de techo en Mission</a> explica más a fondo los precios y el seguro."
       ]
     },
     {
-      "title": "Por qué los dueños de casa en Mission llaman a Edel Roofing para reparaciones",
-      "alt": true,
+      "title": "Por qué los dueños de casa en Mission llaman a Edel",
+      "alt": false,
       "kind": "proof",
       "proof": [
         {
-          "big": "Con Licencia",
-          "label": "RCAT #03-0489, contratista de techos con licencia en Texas, con fianza y seguro"
+          "big": "Con licencia",
+          "label": "RCAT #03-0489, con fianza y seguro en Texas"
         },
         {
-          "big": "4.8★",
-          "label": "más de 250 reseñas en Google de dueños de casa en todo el Valle"
+          "big": "250+",
+          "label": "Reseñas en Google con un promedio de 4.8 estrellas"
         },
         {
-          "big": "Una Visita",
-          "label": "La mayoría de las reparaciones se diagnostican y completan el mismo día"
+          "big": "Gratis",
+          "label": "Inspección y estimado por escrito, sin compromiso"
         },
         {
           "big": "Desde 2003",
-          "label": "Más de 20 años reparando techos en Mission y el Valle del Río Grande"
+          "label": "Arreglando techos en Mission y el resto del Valle"
         }
       ]
     },
     {
-      "title": "Preguntas sobre reparación de techo: Mission",
-      "alt": false,
+      "title": "Preguntas de dueños de casa en Mission sobre reparación de techo",
+      "alt": true,
       "kind": "faq",
       "faqs": [
         {
-          "q": "¿Cuál es un precio justo por una reparación de techo en Mission?",
-          "a": "La mayoría de las reparaciones cuestan entre unos cientos de dólares y alrededor de $1,500, dependiendo del problema y qué tanto del techo está afectado. Un precio justo viene respaldado por un estimado escrito después de una inspección real, no por una cotización adivinada por teléfono."
+          "q": "¿Cuál es un precio justo para una reparación de techo en Mission?",
+          "a": "La mayoría de las reparaciones cuestan entre unos cientos de dólares y alrededor de $1,500. Dónde cae la suya depende de lo que falló y de qué tan grande es el área. Un precio justo sale de una inspección, no de un cálculo por teléfono, así que escribimos el estimado después de ver el techo y antes de empezar."
         },
         {
-          "q": "¿Cuánto cuesta reparar un techo en Texas en promedio?",
-          "a": "A nivel estatal, reparaciones pequeñas como tapajuntas o una sección de tejas suelen costar entre $300 y $1,500. Reparaciones más grandes que involucran la duela o un área dañada más extensa pueden costar más. El calor del Valle agrega un factor que otras partes del estado no enfrentan tanto: la exposición UV envejece las tejas más rápido, así que una reparación que se ve menor puede estar sobre material ya quebradizo."
+          "q": "Mi techo tiene más de 20 años. ¿Mi seguro todavía lo va a cubrir?",
+          "a": "El <a href=\"https://www.tdi.texas.gov/news/2026/tdi09292026.html\">Departamento de Seguros de Texas</a> dice que las aseguradoras no pueden negar ni cancelar una póliza solo por la edad del techo, pero sí pueden tomar en cuenta su condición. Algunas pólizas cambian los techos viejos a valor real en efectivo (actual cash value), que paga menos después de la depreciación. Lea su póliza, y llame a su agente si no está seguro. Un informe de inspección por escrito ayuda en cualquier caso."
         },
         {
-          "q": "¿Qué es la regla del 25% en techado?",
-          "a": "Es una guía basada en código que algunas jurisdicciones y aseguradoras aplican: si más del 25% de una sección del techo necesita reemplazo, toda esa sección (a veces todo el techo) debe actualizarse al código actual en lugar de solo parcharse. Importa más en casas antiguas de Mission, donde una reparación \"pequeña\" puede cruzar ese umbral una vez que subimos y medimos."
+          "q": "¿Necesito una inspección de windstorm para mi techo en Mission?",
+          "a": "Para TWIA, no. El condado de Hidalgo no es uno de los 14 condados costeros del área de la Asociación de Seguros contra Tormentas de Viento de Texas (TWIA), así que no se necesita un certificado de windstorm del TDI para ser elegible con TWIA. La ciudad sí exige un plano de windstorm hecho y sellado por un ingeniero cuando usted saca el permiso de una casa nueva."
         },
         {
-          "q": "¿La aseguranza cubre un techo de 20 años en Texas?",
-          "a": "Depende de la póliza y la causa del daño. El desgaste por edad usualmente no está cubierto, pero un evento específico, granizo, viento, una tormenta, a menudo sí lo está, incluso en un techo más viejo. Inspeccionamos y documentamos lo que encontramos para que tenga algo concreto que presentar a su aseguranza; no somos ajustadores públicos, pero podemos decirle con honestidad si lo que vemos parece un evento asegurable o desgaste normal."
+          "q": "¿Una reparación de techo necesita permiso en Mission?",
+          "a": "La solicitud de permiso residencial de Mission no menciona específicamente las reparaciones de techo. Llame a la División de Inspecciones de la ciudad al (956) 580-8691 para confirmar su trabajo. Según las reglas de la ciudad, un trabajo hecho sin un permiso requerido paga el doble de la tarifa, así que vale la pena llamar."
         },
         {
-          "q": "¿Cómo obtengo un estimado de reparación de techo en Mission?",
-          "a": "Llame al (956) 422-3335 o <a href=\"/es-mx/contact-us\">programe una inspección en línea</a>. Agendaremos una visita para ver el techo y darle un estimado escrito. Los estimados son gratis y sin compromiso."
+          "q": "¿Qué tan pronto pueden llegar a Mission?",
+          "a": "Estamos a unos 26 minutos. Después de una tormenta grande mucha gente llama al mismo tiempo, así que llame temprano y le damos una hora."
+        },
+        {
+          "q": "¿Cómo obtengo un estimado de reparación en Mission?",
+          "a": "Llame al (956) 422-3335 o <a href=\"/book-an-inspection\">programe una inspección en línea</a>. Es gratis y sin compromiso."
         }
       ]
     }
   ],
   "cta": {
-    "title": "Estimado gratis de reparación de techo en Mission",
-    "line": "Inspeccionamos el techo, le damos un estimado escrito y explicamos sus opciones. Sin presión ni compromiso.",
+    "title": "Obtenga un estimado gratis de reparación de techo en Mission",
+    "line": "Encontramos la gotera, le mostramos las fotos y ponemos el precio por escrito antes de empezar cualquier trabajo.",
     "buttons": [
       {
         "label": "Programar Inspección Gratis",
@@ -186,7 +198,7 @@
           "@type": "WebPage",
           "name": "Reparación de Techo en Mission, TX",
           "url": "https://www.edelroofing.com/reparacion-de-techo-mission-tx",
-          "description": "Reparación de techo rápida y con licencia en Mission, TX. Goteras, daño por tormenta, tapajuntas y documentación de seguro. Estimado gratis: (956) 422-3335.",
+          "description": "Reparación de techo en Mission, TX: granizo, goteras y techos de tejas de los 2000. Inspección gratis, precio escrito primero. Llame al (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -196,42 +208,50 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "¿Cuál es un precio justo por una reparación de techo en Mission?",
+              "name": "¿Cuál es un precio justo para una reparación de techo en Mission?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "La mayoría de las reparaciones cuestan entre unos cientos de dólares y alrededor de $1,500, dependiendo del problema y qué tanto del techo está afectado."
+                "text": "La mayoría de las reparaciones cuestan entre unos cientos de dólares y alrededor de $1,500. Dónde cae la suya depende de lo que falló y de qué tan grande es el área. Un precio justo sale de una inspección, no de un cálculo por teléfono, así que escribimos el estimado después de ver el techo y antes de empezar."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Cuánto cuesta reparar un techo en Texas en promedio?",
+              "name": "Mi techo tiene más de 20 años. ¿Mi seguro todavía lo va a cubrir?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A nivel estatal, reparaciones pequeñas como tapajuntas o una sección de tejas suelen costar entre $300 y $1,500. Reparaciones más grandes pueden costar más."
+                "text": "El Departamento de Seguros de Texas dice que las aseguradoras no pueden negar ni cancelar una póliza solo por la edad del techo, pero sí pueden tomar en cuenta su condición. Algunas pólizas cambian los techos viejos a valor real en efectivo (actual cash value), que paga menos después de la depreciación. Lea su póliza, y llame a su agente si no está seguro. Un informe de inspección por escrito ayuda en cualquier caso."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Qué es la regla del 25% en techado?",
+              "name": "¿Necesito una inspección de windstorm para mi techo en Mission?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Es una guía basada en código: si más del 25% de una sección del techo necesita reemplazo, esa sección debe actualizarse al código actual en lugar de solo parcharse."
+                "text": "Para TWIA, no. El condado de Hidalgo no es uno de los 14 condados costeros del área de la Asociación de Seguros contra Tormentas de Viento de Texas (TWIA), así que no se necesita un certificado de windstorm del TDI para ser elegible con TWIA. La ciudad sí exige un plano de windstorm hecho y sellado por un ingeniero cuando usted saca el permiso de una casa nueva."
               }
             },
             {
               "@type": "Question",
-              "name": "¿La aseguranza cubre un techo de 20 años en Texas?",
+              "name": "¿Una reparación de techo necesita permiso en Mission?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depende de la póliza y la causa del daño. El desgaste por edad usualmente no está cubierto, pero un evento específico como granizo o viento a menudo sí lo está."
+                "text": "La solicitud de permiso residencial de Mission no menciona específicamente las reparaciones de techo. Llame a la División de Inspecciones de la ciudad al (956) 580-8691 para confirmar su trabajo. Según las reglas de la ciudad, un trabajo hecho sin un permiso requerido paga el doble de la tarifa, así que vale la pena llamar."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Cómo obtengo un estimado de reparación de techo en Mission?",
+              "name": "¿Qué tan pronto pueden llegar a Mission?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Llame al (956) 422-3335 o programe una inspección en línea. Agendaremos una visita para ver el techo y darle un estimado escrito. Los estimados son gratis y sin compromiso."
+                "text": "Estamos a unos 26 minutos. Después de una tormenta grande mucha gente llama al mismo tiempo, así que llame temprano y le damos una hora."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cómo obtengo un estimado de reparación en Mission?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Llame al (956) 422-3335 o programe una inspección en línea. Es gratis y sin compromiso."
               }
             }
           ]
@@ -242,6 +262,7 @@
   "changes": [
     "Spanish breadcrumb \"Áreas de Servicio\" linked the English /service-areas; now /es-mx/service-areas",
     "em/en dashes swapped for commas, colons, or hyphens",
-    "review counts (246/252) -> 250+ (match the homepage)"
+    "review counts (246/252) -> 250+ (match the homepage)",
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
   ]
 }

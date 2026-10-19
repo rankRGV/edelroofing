@@ -4,7 +4,7 @@
   "city": "mission",
   "service": "commercial",
   "title": "Techado Comercial en Mission, TX | EDEL Roofing & Construction",
-  "description": "ontratista de techado comercial con licencia en Mission, TX. Techos  planos, TPO, EPDM, bitumen modificado y reparaciones comerciales. más de 250 reseñas en Google. Estimado gratis: (956) 422-3335.",
+  "description": "Reparación y reemplazo de techos comerciales en Mission, TX para locales, oficinas y edificios industriales. TPO, EPDM, recubrimientos. Llame al (956) 422-3335.",
   "alternates": {
     "en": "/commercial-roofing-mission-tx",
     "es": "/techado-comercial-mission-tx"
@@ -20,7 +20,7 @@
     }
   ],
   "h1": "Techado Comercial en Mission, TX",
-  "lede": "Edel Roofing &amp; Construction instala y repara sistemas de techado comercial para negocios, administradores de propiedades y dueños de edificios en Mission. Con licencia, fianza y seguro. Estimados comerciales gratis sin compromiso.",
+  "lede": "Edel Roofing &amp; Construction instala, repara y reemplaza techos planos y de poca pendiente para negocios y dueños de propiedades en Mission. Estimados comerciales gratis, alcance por escrito, con licencia y seguro.",
   "heroCtas": [
     {
       "label": "Obtener Estimado Gratis",
@@ -33,110 +33,127 @@
   ],
   "sections": [
     {
-      "title": "Contratista de techado comercial en Mission",
+      "title": "Techado comercial para Mission, una ciudad que crece",
       "alt": false,
       "kind": "text",
       "paras": [
-        "Edel Roofing está en Edinburg, a unos 25 minutos de Mission, y lleva desde 2003 trabajando en propiedades comerciales en todo el condado de Hidalgo. Instalamos y reparamos sistemas de techo plano y de poca pendiente en centros comerciales, edificios médicos, oficinas y bodegas en Mission.",
-        "El corredor comercial de Mission corre a lo largo de la Expressway 83, con más locales y edificios médicos concentrados cerca de Mission Regional Medical Center. La mayoría son edificios con techo plano, y una buena parte es de construcción original de los años 80 y 90, ahora llegando o pasando su vida útil esperada.",
-        "El techado comercial requiere un nivel de planificación diferente al residencial. Hay inquilinos afectados, los horarios de negocio importan y una falla en el techo no es solo un problema de propiedad, es un problema de operaciones. Inspeccionamos antes de dar un estimado, ponemos todo por escrito y programamos el trabajo según las necesidades de su edificio."
+        "El lado comercial de Mission está creciendo por los dos extremos. Sobre la Expressway 83 en Bryan Rd, el desarrollo Mission Gateway es parte de lo que la Corporación de Desarrollo Económico de Mission (Mission EDC) llama el corredor de Bryan. Al sur, Sharyland Business Park tiene lugar para unos 2.5 millones de pies cuadrados de construcción industrial cerca del Puente Internacional Anzalduas, y la ampliación de $88 millones del puente agrega seis carriles comerciales. Los edificios más antiguos a lo largo de Business 83 y de la autopista completan el resto.",
+        "Esa mezcla significa dos tipos de trabajos de techo comercial. Las bodegas y tiendas nuevas necesitan un sistema de membrana bien instalado desde la primera vez. Los edificios más antiguos de décadas pasadas necesitan reparaciones, recubrimientos o un reemplazo completo conforme sus techos llegan al final de su vida útil.",
+        "Manejamos a Mission desde nuestra oficina en 1815 N Jackson Rd en Edinburg, a unos 26 minutos. Trabajamos en techos comerciales en todo el condado de Hidalgo desde 2003."
       ]
     },
     {
-      "title": "Servicios de techado comercial en Mission",
+      "title": "Viento y lluvia en los techos planos de Mission",
       "alt": true,
+      "kind": "text",
+      "paras": [
+        "Mission ha tenido vientos peligrosos más de una vez. El 31 de mayo de 2016, <a href=\"https://www.weather.gov/bro/2016event_may31mission\">una ráfaga descendente cerca de Palmview y Mission</a> trajo vientos que el NWS estimó de 85 a 95 mph y dañó más de 150 casas y negocios. El 29 de abril de 2023, el viento volteó camiones de comida cerca de Bryan Rd y Business 83, cerca de la alcaldía, mientras el aeropuerto de McAllen registraba una ráfaga de 74 mph.",
+        "Un viento así jala los bordes de un techo plano. Si el metal del perímetro o las costuras de la membrana están sueltos, el techo se puede levantar y desprender desde el borde. Los equipos del techo y sus bases son otro punto débil.",
+        "La lluvia es la otra prueba. <a href=\"https://www.weather.gov/bro/2020event_hanna\">El huracán Hanna</a> dejó caer 14.40 pulgadas sobre Mission en julio de 2020. Un techo plano solo aguanta tanta agua si los desagües, los desagües laterales y las canaletas están abiertos y el techo tiene pendiente hacia ellos. El agua estancada que se queda en un techo por días se mete en las costuras y envejece la membrana antes de tiempo."
+      ]
+    },
+    {
+      "title": "Servicios comerciales para negocios en Mission",
+      "alt": false,
       "kind": "cards",
       "cards": [
         {
-          "title": "Instalación de Techo Plano",
-          "body": "Sistemas de techo plano y de poca pendiente nuevos para edificios comerciales en Mission. Instalamos membranas de TPO, EPDM y bitumen modificado, los tres sistemas más usados en propiedades comerciales del sur de Texas."
+          "title": "Sistemas nuevos de techo plano",
+          "body": "Instalamos TPO, EPDM y bitumen modificado en edificios nuevos y ampliaciones, en coordinación con su constructor o contratista general."
         },
         {
-          "title": "Reemplazo de Techo Comercial",
-          "body": "Demolición y reemplazo completo cuando un techo comercial ha llegado al final de su vida útil. Retiramos el sistema anterior, inspeccionamos la madera de apoyo para detectar daño por humedad e instalamos un techo comercial nuevo con alcance y tiempos documentados."
+          "title": "Reemplazo de techo",
+          "body": "Retiramos el sistema viejo, revisamos y reparamos la base del techo, e instalamos una membrana nueva con un calendario por escrito."
         },
         {
-          "title": "Reparaciones de Techo Comercial",
-          "body": "Reparaciones de goteras, parches de membrana, reparaciones de tapajuntas y problemas de drenaje en techos comerciales existentes. Localizamos el origen real del problema, no solo el lugar donde el agua aparece adentro, y lo resolvemos."
+          "title": "Reparación de goteras",
+          "body": "Rastreamos la gotera hasta la costura, el tapajuntas o el desagüe por donde realmente entra el agua, y la reparamos ahí."
         },
         {
-          "title": "Recubrimientos de Techo",
-          "body": "Recubrimientos reflectivos aplicados sobre membranas comerciales existentes para extender su vida útil y reducir la absorción de calor. En el clima de Mission, un buen recubrimiento puede reducir los costos de aire acondicionado y agregar años de vida a un techo que todavía está en buen estado estructural."
+          "title": "Reparación de bordes y tapajuntas",
+          "body": "Aseguramos el metal del perímetro y los tapajuntas sueltos después del viento, antes de que la próxima tormenta levante la membrana."
         },
         {
-          "title": "Daño por Tormenta y Granizo",
-          "body": "Las tormentas de granizo en el condado de Hidalgo afectan fuertemente los techos comerciales. Inspeccionamos el impacto, rupturas de membrana y fallas de tapajuntas, y entregamos documentación escrita que es útil cuando contacta a su compañía de seguros."
+          "title": "Recubrimientos de techo",
+          "body": "Un recubrimiento reflectivo puede agregar años a un techo envejecido que sigue en buen estado. Vea <a href=\"/roof-coating-mission-tx\">recubrimientos de techo en Mission</a>."
         },
         {
-          "title": "Inspecciones de Techo Comercial",
-          "body": "Inspecciones de rutina para administradores de propiedades y dueños de edificios que quieren detectar problemas antes de que se vuelvan costosos. Caminamos el techo, documentamos las condiciones y le entregamos un informe claro sobre lo que necesita atención y lo que puede esperar."
+          "title": "Inspecciones",
+          "body": "Inspecciones de rutina y después de tormentas, con un informe escrito y fotos para dueños y administradores."
         }
       ]
     },
     {
-      "title": "Cómo es el techado comercial en Mission",
-      "alt": false,
+      "title": "Códigos y planeación para trabajo comercial en Mission",
+      "alt": true,
       "kind": "text",
       "paras": [
-        "La Expressway 83 es la columna comercial principal de Mission: centros comerciales, locales y espacio de oficinas, en su mayoría con techo plano y una parte considerable construida hace décadas. Esos techos más antiguos están ahora bien entrados en la segunda mitad de su vida útil, que es cuando un recubrimiento o un reemplazo completo se vuelve la conversación real en lugar de otro parche.",
-        "Cerca de Mission Regional Medical Center, la mezcla se inclina hacia consultorios médicos y edificios de especialidades. Una falla en el techo ahí es un problema diferente: no puede esperar, y el trabajo muchas veces tiene que hacerse sin afectar a los pacientes ni al personal.",
-        "Trabajamos con dueños de edificios, administradores de propiedades y dueños de negocios en todos estos tipos de propiedad. Si administra varios edificios en Mission y quiere un contratista que pueda manejar el lado comercial de manera consistente, llámenos para hablar sobre cómo sería una relación de inspección y mantenimiento regular."
+        "Los documentos de permisos de la Ciudad de Mission indican el International Building Code de 2024 y los códigos de 2024 correspondientes para incendios, plomería, mecánica y energía. Si tiene preguntas sobre un permiso para su edificio, llame a la División de Inspecciones al (956) 580-8691.",
+        "El trabajo comercial requiere más planeación que una casa. Hay inquilinos afectados, las entregas tienen que seguir llegando y algunos trabajos se tienen que hacer por etapas. Inspeccionamos antes de dar un estimado, ponemos todo por escrito y programamos según su edificio. Si administra varias propiedades en Mission, podemos programar inspecciones periódicas para que los problemas pequeños se reparen antes de convertirse en un reemplazo."
       ]
     },
     {
-      "title": "Por qué los negocios de Mission eligen Edel Roofing",
-      "alt": true,
+      "title": "Por qué los negocios de Mission trabajan con Edel",
+      "alt": false,
       "kind": "proof",
       "proof": [
         {
-          "big": "Con Licencia",
-          "label": "RCAT #03-0489, contratista de techos con licencia en Texas, con fianza y seguro"
-        },
-        {
-          "big": "4.8★",
-          "label": "más de 250 reseñas en Google, clientes residenciales y comerciales en todo el Valle"
+          "big": "Con licencia",
+          "label": "RCAT #03-0489, con fianza y seguro"
         },
         {
           "big": "Certificado",
-          "label": "Versico, Duro-Last, Polyglass, KARNAK, Mule-Hide, fabricantes líderes de membranas comerciales"
+          "label": "Sistemas de Versico, Duro-Last, Polyglass, KARNAK y Mule-Hide"
+        },
+        {
+          "big": "250+",
+          "label": "Reseñas en Google con 4.8 estrellas, de hogares y negocios"
         },
         {
           "big": "Desde 2003",
-          "label": "Más de 20 años en techos comerciales y residenciales en Mission y el Valle del Río Grande"
+          "label": "En techos comerciales en todo el condado de Hidalgo"
         }
       ]
     },
     {
       "title": "Preguntas sobre techado comercial en Mission",
-      "alt": false,
+      "alt": true,
       "kind": "faq",
       "faqs": [
         {
-          "q": "Mi negocio en Mission tiene una gotera en el techo plano. ¿Pueden repararla?",
-          "a": "Sí. Reparamos techos planos y de poca pendiente en toda Mission. Las goteras en techos planos son más difíciles de rastrear que en techos residenciales porque el agua viaja por la membrana antes de aparecer adentro. Inspeccionamos el techo completo para encontrar el punto de entrada real. Llame al (956) 422-3335 para programar una inspección."
+          "q": "Estamos construyendo una bodega nueva cerca del puente. ¿Pueden ponerle el techo?",
+          "a": "Sí. Instalamos sistemas de TPO, EPDM y bitumen modificado en edificios comerciales nuevos y coordinamos el calendario con su constructor o contratista general."
         },
         {
-          "q": "¿Qué tipos de techado comercial instalan en Mission?",
-          "a": "Instalamos sistemas de membrana de TPO, EPDM y bitumen modificado, los tres sistemas de techo plano más comunes en el sur de Texas. También aplicamos recubrimientos para edificios que necesitan extender su vida útil sin un reemplazo completo. Recomendamos el sistema adecuado según el tipo de edificio, el área del techo y el presupuesto."
+          "q": "El viento de 2016 o de 2023 aflojó el borde de nuestro techo. ¿Es una reparación o un techo nuevo?",
+          "a": "Muchas veces es una reparación, si la membrana y el aislamiento de abajo siguen secos y en buen estado. Revisamos el borde, las costuras y el aislamiento, y el alcance por escrito le dice cuál de las dos es."
         },
         {
-          "q": "¿Cuánto dura un techo comercial en el clima de Mission?",
-          "a": "Un sistema de membrana comercial bien instalado en el Valle dura entre 15 y 25 años dependiendo del material y el mantenimiento. El calor y la exposición UV de Mission aceleran el desgaste en comparación con climas más fríos. Las inspecciones regulares detectan problemas pequeños antes de que acorten ese tiempo."
+          "q": "Después de llover se queda agua en nuestro techo plano. ¿Es un problema?",
+          "a": "El agua que se va en uno o dos días es normal en muchos techos planos. El agua que dura más indica un punto bajo o un desagüe tapado, y con el tiempo envejece la membrana y encuentra las costuras. Podemos encontrar la causa y arreglar el drenaje."
         },
         {
-          "q": "¿Trabajan con administradores de propiedades que manejan varios edificios en Mission?",
-          "a": "Sí. Una parte importante de nuestro trabajo comercial es con administradores de propiedades y dueños de edificios con múltiples inmuebles. Podemos programar en torno a los horarios de los inquilinos, proveer documentación para seguros y registros de mantenimiento, y establecer acuerdos de inspección periódica para que los problemas se detecten a tiempo en todos sus edificios."
+          "q": "¿Cuánto dura un techo comercial en Mission?",
+          "a": "Una membrana bien instalada en el Valle normalmente dura de 15 a 25 años, según el material y el mantenimiento. El calor y los rayos UV acortan ese tiempo; las inspecciones regulares le ayudan a durar más."
         },
         {
-          "q": "¿Cómo obtengo un estimado de techado comercial en Mission?",
-          "a": "Llame al (956) 422-3335 o <a href=\"/es-mx/contact-us\">programe una inspección en línea</a>. Agendaremos una visita para caminar el techo, tomar medidas y darle un estimado escrito. Los estimados comerciales son gratis y sin compromiso."
+          "q": "¿Inspeccionan techos comerciales después de una tormenta?",
+          "a": "Sí. Después de vientos fuertes o granizo caminamos el techo, revisamos los bordes, las costuras, los tapajuntas y los equipos del techo, y le damos un informe escrito con fotos para su aseguradora. No somos ajustadores públicos, así que el reclamo es entre usted y su compañía de seguros."
+        },
+        {
+          "q": "¿Pueden trabajar según el horario de nuestros inquilinos?",
+          "a": "Sí. Programamos según el horario de los inquilinos y, al terminar el trabajo, le damos documentación para sus registros de seguro y mantenimiento."
+        },
+        {
+          "q": "¿Cómo obtengo un estimado comercial en Mission?",
+          "a": "Llame al (956) 422-3335 o <a href=\"/book-an-inspection\">programe una inspección en línea</a>. Caminamos el techo, tomamos medidas y le damos un estimado gratis por escrito."
         }
       ]
     }
   ],
   "cta": {
-    "title": "Estimado gratis de techado comercial en Mission",
-    "line": "Inspeccionamos el techo, le damos un estimado escrito y explicamos sus opciones. Sin presión ni compromiso.",
+    "title": "Obtenga un estimado gratis de techado comercial en Mission",
+    "line": "Construcción nueva, techo viejo o una gotera después de la última tormenta: lo inspeccionamos y le ponemos el alcance y el precio por escrito.",
     "buttons": [
       {
         "label": "Programar Inspección Gratis",
@@ -186,7 +203,7 @@
           "@type": "WebPage",
           "name": "Techado Comercial en Mission, TX",
           "url": "https://www.edelroofing.com/techado-comercial-mission-tx",
-          "description": "Contratista de techado comercial con licencia en Mission, TX. Techos planos, TPO, EPDM, bitumen modificado y reparaciones comerciales. Estimado gratis: (956) 422-3335.",
+          "description": "Reparación y reemplazo de techos comerciales en Mission, TX para locales, oficinas y edificios industriales. TPO, EPDM, recubrimientos. Llame al (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -196,42 +213,58 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "Mi negocio en Mission tiene una gotera en el techo plano. ¿Pueden repararla?",
+              "name": "Estamos construyendo una bodega nueva cerca del puente. ¿Pueden ponerle el techo?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Sí. Reparamos techos planos y de poca pendiente en toda Mission. Inspeccionamos el techo completo para encontrar el punto de entrada real."
+                "text": "Sí. Instalamos sistemas de TPO, EPDM y bitumen modificado en edificios comerciales nuevos y coordinamos el calendario con su constructor o contratista general."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Qué tipos de techado comercial instalan en Mission?",
+              "name": "El viento de 2016 o de 2023 aflojó el borde de nuestro techo. ¿Es una reparación o un techo nuevo?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Instalamos sistemas de membrana de TPO, EPDM y bitumen modificado. También aplicamos recubrimientos para edificios que necesitan extender su vida útil sin reemplazo completo."
+                "text": "Muchas veces es una reparación, si la membrana y el aislamiento de abajo siguen secos y en buen estado. Revisamos el borde, las costuras y el aislamiento, y el alcance por escrito le dice cuál de las dos es."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Cuánto dura un techo comercial en el clima de Mission?",
+              "name": "Después de llover se queda agua en nuestro techo plano. ¿Es un problema?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Un sistema de membrana comercial bien instalado en el Valle dura entre 15 y 25 años dependiendo del material y el mantenimiento."
+                "text": "El agua que se va en uno o dos días es normal en muchos techos planos. El agua que dura más indica un punto bajo o un desagüe tapado, y con el tiempo envejece la membrana y encuentra las costuras. Podemos encontrar la causa y arreglar el drenaje."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Trabajan con administradores de propiedades con varios edificios en Mission?",
+              "name": "¿Cuánto dura un techo comercial en Mission?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Sí. Trabajamos con administradores de propiedades y dueños de edificios con múltiples inmuebles, y establecemos acuerdos de inspección periódica."
+                "text": "Una membrana bien instalada en el Valle normalmente dura de 15 a 25 años, según el material y el mantenimiento. El calor y los rayos UV acortan ese tiempo; las inspecciones regulares le ayudan a durar más."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Cómo obtengo un estimado de techado comercial en Mission?",
+              "name": "¿Inspeccionan techos comerciales después de una tormenta?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Llame al (956) 422-3335 o programe una inspección en línea. Agendaremos una visita para caminar el techo, tomar medidas y darle un estimado escrito. Los estimados son gratis y sin compromiso."
+                "text": "Sí. Después de vientos fuertes o granizo caminamos el techo, revisamos los bordes, las costuras, los tapajuntas y los equipos del techo, y le damos un informe escrito con fotos para su aseguradora. No somos ajustadores públicos, así que el reclamo es entre usted y su compañía de seguros."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Pueden trabajar según el horario de nuestros inquilinos?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. Programamos según el horario de los inquilinos y, al terminar el trabajo, le damos documentación para sus registros de seguro y mantenimiento."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cómo obtengo un estimado comercial en Mission?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Llame al (956) 422-3335 o programe una inspección en línea. Caminamos el techo, tomamos medidas y le damos un estimado gratis por escrito."
               }
             }
           ]
@@ -242,6 +275,7 @@
   "changes": [
     "Spanish breadcrumb \"Áreas de Servicio\" linked the English /service-areas; now /es-mx/service-areas",
     "em/en dashes swapped for commas, colons, or hyphens",
-    "review counts (246/252) -> 250+ (match the homepage)"
+    "review counts (246/252) -> 250+ (match the homepage)",
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
   ]
 }

@@ -34,7 +34,7 @@
       "kind": "text",
       "paras": [
         "Edel Roofing &amp; Construction está en Edinburg y ha trabajado en proyectos de techado por todo el condado de Hidalgo desde 2003. Mission queda como a 25 minutos de nuestro taller y trabajamos ahí seguido: reemplazos en las colonias más viejas cerca del centro, casas más nuevas por el área de Sharyland, y techos comerciales sobre la Expressway 83.",
-        "Mission ha crecido hacia el oeste y el norte bastante rápido en las últimas dos décadas, así que las casas se dividen en dos grupos. Hay casas de los años 70 y 80 que ya van en su segundo o tercer techo, y hay fraccionamientos mucho más nuevos donde el techo original apenas empieza a mostrar su edad. La respuesta correcta es distinta para cada caso, y le decimos cuál es el suyo."
+        "Mission ha crecido hacia el oeste y el norte bastante rápido en las últimas dos décadas, así que las casas se dividen en dos grupos. Cerca del 15% de las casas de Mission se construyeron antes de 1980 y muchas ya van en su segundo o tercer techo, mientras que cerca de la mitad se construyeron en el año 2000 o después y muchas todavía tienen su techo original, que ya tiene unos 20 años (Censo ACS 2020 a 2024). La respuesta correcta es distinta para cada caso, y le decimos cuál es el suyo."
       ]
     },
     {
@@ -236,6 +236,7 @@
   ],
   "changes": [
     "em/en dashes swapped for commas, colons, or hyphens",
-    "review counts (246/252) -> 250+ (match the homepage)"
+    "review counts (246/252) -> 250+ (match the homepage)",
+    "2026-10-18 overlap pass: claim de casas 'de los años 70 y 80' cambiado por cifras del Censo ACS (solo ~15% de las casas de Mission son de antes de 1980)"
   ]
 }
