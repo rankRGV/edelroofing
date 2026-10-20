@@ -48,8 +48,8 @@ const schema = [
 ];
 const alternates = twin ? (es ? { en: `/${twin.id}`, es: path } : { en: path, es: `/${twin.id}` }) : undefined;
 const t = es
-  ? { twin: 'Read this in English', box: 'Inspección de techo gratis', boxBody: 'Presupuesto por escrito antes de empezar cualquier trabajo. Con licencia y seguro.', quote: 'Cotización Instantánea', call: 'Llamar', related: 'Más artículos', more: 'Leer más', ctaTitle: '¿Tiene preguntas sobre su techo?', ctaBody: 'Llámenos o pida una cotización. Inspección gratis y presupuesto por escrito.', ctaBtn: 'Contáctenos', ctaHref: '/es-mx/contact-us' }
-  : { twin: 'Leer en español', box: 'Free roof inspection', boxBody: 'Written estimate before any work starts. Licensed and insured.', quote: 'Get Instant Quote', call: 'Call', related: 'More Articles', more: 'Read more', ctaTitle: 'Questions About Your Roof?', ctaBody: 'Call us or request a quote. Free inspection and a written estimate.', ctaBtn: 'Contact Us', ctaHref: '/contact-us' };
+  ? { twin: 'Read this in English', box: 'Inspección de techo gratis', boxBody: 'Presupuesto por escrito antes de empezar cualquier trabajo. Con licencia y seguro.', quote: 'Estimado al Instante', call: 'Llamar', related: 'Más artículos', more: 'Leer más', ctaTitle: '¿Tiene preguntas sobre su techo?', ctaBody: 'Llámenos o pida una cotización. Inspección gratis y presupuesto por escrito.', ctaBtn: 'Contáctenos', ctaHref: '/es-mx/contact-us' }
+  : { twin: 'Leer en español', box: 'Free roof inspection', boxBody: 'Written estimate before any work starts. Licensed and insured.', quote: 'Get Instant Estimate', call: 'Call', related: 'More Articles', more: 'Read more', ctaTitle: 'Questions About Your Roof?', ctaBody: 'Call us or request a quote. Free inspection and a written estimate.', ctaBtn: 'Contact Us', ctaHref: '/contact-us' };
 const { Content } = await render(post);
 ---
 <Base title={d.seoTitle} description={d.description} lang={d.lang} alternates={alternates} schema={schema} image={d.image}>

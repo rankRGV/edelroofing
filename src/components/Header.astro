@@ -20,8 +20,8 @@ const es = lang === 'es';
 const nav = es ? mainNavEs : mainNav;
 const home = es ? '/es-mx' : '/';
 const t = es
-  ? { quote: 'Cotización Instantánea', call: 'Llamar', menu: 'Menú', main: 'Principal', switchLabel: 'English', switchLang: 'en', homeLabel: 'Edel Roofing & Construction, inicio' }
-  : { quote: 'Get Instant Quote', call: 'Call', menu: 'Menu', main: 'Main', switchLabel: 'Español', switchLang: 'es', homeLabel: 'Edel Roofing & Construction home' };
+  ? { quote: 'Estimado al Instante', call: 'Llamar', menu: 'Menú', main: 'Principal', switchLabel: 'English', switchLang: 'en', homeLabel: 'Edel Roofing & Construction, inicio' }
+  : { quote: 'Get Instant Estimate', call: 'Call', menu: 'Menu', main: 'Main', switchLabel: 'Español', switchLang: 'es', homeLabel: 'Edel Roofing & Construction home' };
 // "Instant" only fits Roofle; the ads page form is a callback request.
 const quoteLabel = quoteHref ? (es ? 'Cotización Gratis' : 'Get Free Quote') : t.quote;
 const langHref = switchHref ?? (es ? '/' : '/es-mx');

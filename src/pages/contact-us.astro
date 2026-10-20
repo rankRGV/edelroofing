@@ -39,7 +39,8 @@ const crumbs = [
 
   <section class="section soft" id="estimate">
     <div class="wrap">
-      <h2 class="center">Instant Roof Quote</h2>
+      <h2 class="center">Instant Roof Estimate</h2>
+      <p class="center est-note">Enter your address, confirm your roof on the satellite map, and add your name, phone and email to see an estimated price. The final price comes in writing after a free inspection.</p>
       <div class="roofle">
         <script is:inline async src="https://app.roofle.com/roof-quote-pro-embedded-widget.js?id=EDm90hQNG9UzNzk4GqU84"></script>
         <div id="roof-quote-pro-embedded"></div>
@@ -67,6 +68,7 @@ const crumbs = [
   .section { padding-block: 64px; }
   .soft { background: var(--bg-soft); }
   .center { text-align: center; }
+  .est-note { max-width: 62ch; margin: 12px auto 0; }
   h2 { font-size: clamp(28px, 3.4vw, 40px); text-transform: uppercase; }
   .roofle { min-height: 645px; margin-top: 24px; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
   .roofle :global(iframe) { display: block; width: 100%; min-height: 645px; border: 0; }

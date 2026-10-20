@@ -16,7 +16,7 @@ interface Props {
 const { title, body, cta, lang = 'en', note } = Astro.props;
 const bg = await bgStyle(houseRoof, 'band');
 const callToday = lang === 'es' ? 'Llámenos hoy' : 'Call us today';
-const quote = lang === 'es' ? 'Cotización Instantánea' : 'Get Instant Quote';
+const quote = lang === 'es' ? 'Estimado al Instante' : 'Get Instant Estimate';
 ---
 <section class="cta-band" style={bg}>
   <div class="wrap inner">
