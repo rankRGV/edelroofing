@@ -1,0 +1,101 @@
+---
+// Edel's own Google reviews section (replaced the EmbedSocial widget
+// 2026-10-20, so no third-party script and no "Leave a review" button).
+// Data: src/data/reviews.json, made by scripts/update-reviews.py from a
+// DataForSEO pull; see that script for how to refresh and the honesty rules.
+// No Review or AggregateRating schema on purpose: Google does not show stars
+// for a business's reviews on its own site, and the sitewide schema dropped
+// aggregateRating in commit a77cbde.
+import Icon from './Icon.astro';
+import data from '../data/reviews.json';
+
+interface Props { lang?: 'en' | 'es' }
+const { lang = 'en' } = Astro.props;
+
+const t = {
+  en: {
+    summary: `${data.rating} out of 5 from ${data.count} Google reviews`,
+    stars: (n: number) => `${n} out of 5 stars`,
+    source: 'Google review',
+    read: 'Read on Google',
+    note: 'Recent reviews from Google, shown as our customers wrote them.',
+  },
+  es: {
+    summary: `${data.rating} de 5 en ${data.count} reseñas de Google`,
+    stars: (n: number) => `${n} de 5 estrellas`,
+    source: 'Reseña de Google',
+    read: 'Ver en Google',
+    note: 'Reseñas recientes de Google, tal como las escribieron nuestros clientes, en su idioma original.',
+  },
+}[lang];
+
+const month = new Intl.DateTimeFormat(lang === 'es' ? 'es-MX' : 'en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' });
+---
+
+<div class="g-reviews">
+  <p class="summary">
+    <span class="stars" aria-hidden="true">{[1, 2, 3, 4, 5].map(() => <Icon name="star" />)}</span>
+    <strong>{t.summary}</strong>
+  </p>
+  <ul class="cards">
+    {data.reviews.map((r) => (
+      <li class="card">
+        <span class="stars" role="img" aria-label={t.stars(r.rating)}>
+          {Array.from({ length: r.rating }).map(() => <Icon name="star" />)}
+        </span>
+        <blockquote>{r.text}</blockquote>
+        <p class="who">
+          <strong>{r.name}</strong>
+          <span>{t.source}, {month.format(new Date(r.date))}</span>
+        </p>
+        <a class="read" href={r.url} rel="noopener" target="_blank">{t.read}</a>
+      </li>
+    ))}
+  </ul>
+  <p class="note">{t.note}</p>
+</div>
+
+<style>
+  .g-reviews { margin-top: 36px; }
+  .summary { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px; margin: 0 0 24px; color: var(--ink-strong); }
+  .stars { display: inline-flex; gap: 2px; color: #f5a623; }
+  .stars :global(svg) { width: 18px; height: 18px; }
+  .card .stars :global(svg) { width: 16px; height: 16px; }
+  .cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 24px;
+    text-align: left;
+  }
+  /* Long reviews are cut at 7 lines so the cards line up; "Read on Google"
+     opens the full review. */
+  blockquote {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ink);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 7;
+    line-clamp: 7;
+    overflow: hidden;
+  }
+  .who { margin: auto 0 0; display: flex; flex-direction: column; gap: 2px; font-size: 14px; }
+  .who strong { color: var(--ink-strong); }
+  .who span { color: var(--muted); }
+  .read { font-size: 14px; font-weight: 600; color: var(--maroon); }
+  .note { margin: 18px 0 0; text-align: center; font-size: 13px; color: var(--muted); }
+  @media (max-width: 900px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .cards { grid-template-columns: 1fr; gap: 14px; }
+    .card:nth-child(n + 4) { display: none; }
+    .card { padding: 20px; }
+  }
+</style>

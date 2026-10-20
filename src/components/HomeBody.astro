@@ -1,12 +1,14 @@
 ---
 // Homepage body, shared by / (EN) and /es-mx (ES); copy comes from
 // src/data/home.ts. Section order reworked 2026-10-20 after the cold-visitor
-// review (see the note at the top of home.ts).
+// review (see the note at the top of home.ts). Reviews come from
+// GoogleReviews.astro (our own section, no EmbedSocial widget).
 import { Image } from 'astro:assets';
 import { bgStyle } from '../data/bg';
 import LeadForm from './LeadForm.astro';
 import type { HomeCopy } from '../data/home';
 import Icon from './Icon.astro';
+import GoogleReviews from './GoogleReviews.astro';
 import { site, addressLine, quoteFallback } from '../data/site';
 import { forms } from '../data/forms';
 
@@ -125,8 +127,8 @@ const badges = [
       <h2>{c.proof.title}</h2>
       <p class="lead">{c.proof.lead}</p>
     </div>
-    <div class="wrap reviews">
-      <div class="embedsocial-widget" data-ref="3334f1835841370bbe53f44efa6b8f74"></div>
+    <div class="wrap">
+      <GoogleReviews lang={c.lang} />
     </div>
     <div class="wrap center">
       <a class="text-link" href={site.googleMaps} rel="noopener" target="_blank">{c.proof.reviewsLink}<Icon name="arrow" /></a>
@@ -252,16 +254,6 @@ const badges = [
   </section>
 
 
-<script is:inline>
-  (function (d, s, id) {
-    if (d.getElementById(id)) return;
-    var js = d.createElement(s);
-    js.id = id;
-    js.src = 'https://embedsocial.com/cdn/aht.js';
-    d.getElementsByTagName('head')[0].appendChild(js);
-  })(document, 'script', 'EmbedSocialWidgetScript');
-</script>
-
 <style>
   .section { padding-block: 88px; }
   .soft { background: var(--bg-soft); }
@@ -379,7 +371,6 @@ const badges = [
   .service .btn { align-self: flex-start; margin-top: 8px; }
 
   /* Proof */
-  .reviews { margin-top: 36px; min-height: 240px; }
   .text-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 16px; font-weight: 600; color: var(--maroon); }
   .text-link :global(svg) { width: 16px; height: 16px; }
   .proof-grid {

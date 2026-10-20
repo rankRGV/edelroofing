@@ -8,6 +8,9 @@
 //   section, what happens next, areas + map, FAQ, closing call. The old
 //   intro, specialist, why, trust and "Certified Excellence" sections are
 //   folded into the proof section.
+// - Reviews are our own section (GoogleReviews.astro, real Google reviews
+//   from src/data/reviews.json), not the EmbedSocial widget. The proof lead
+//   no longer repeats the rating, since the section shows it.
 // - One name for the online tool: "instant estimate" / "estimado al
 //   instante". Roofle (checked on live edelroofing.com 2026-10-20) asks for
 //   name, phone and email before it shows a price, and says pricing is
@@ -110,7 +113,7 @@ export const homeEn: HomeCopy = {
   proof: {
     eyebrow: 'Why people call Edel',
     title: 'Roofing the Valley since 2003',
-    lead: 'More than 250 homeowners and businesses have reviewed us on Google, with a 4.8 average. Here is what they say.',
+    lead: 'Here is what homeowners and businesses in the Valley say about working with us.',
     reviewsLink: 'Read customer reviews on Google',
     cards: [
       {
@@ -242,7 +245,7 @@ export const homeEs: HomeCopy = {
   proof: {
     eyebrow: 'Por qué llaman a Edel',
     title: 'Techando el Valle desde 2003',
-    lead: 'Más de 250 hogares y negocios nos han dejado reseñas en Google, con un promedio de 4.8. Esto es lo que dicen.',
+    lead: 'Esto es lo que dicen las familias y los negocios del Valle que han trabajado con nosotros.',
     reviewsLink: 'Lea las reseñas en Google',
     cards: [
       {
