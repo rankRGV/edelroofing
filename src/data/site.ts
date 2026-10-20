@@ -28,9 +28,10 @@ export const quoteFallback = (lang: 'en' | 'es' = 'en') => (lang === 'es' ? '/es
 
 export type NavItem = { label: string; href: string; children?: NavItem[] };
 
-// Same menu as the live Duda header.
+// Four top links (the live Duda header had seven). The logo goes home and
+// the phone + quote button cover contact, so Home and Contact Us moved:
+// Contact, Blog and Financing sit under About.
 export const mainNav: NavItem[] = [
-  { label: 'Home', href: '/' },
   {
     label: 'Services',
     href: '/residential-roofing',
@@ -52,17 +53,23 @@ export const mainNav: NavItem[] = [
       { label: 'Mission', href: '/roofing-mission-tx' },
     ],
   },
-  { label: 'About Us', href: '/about-us', children: [{ label: 'Projects', href: '/projects' }] },
-  { label: 'Blog', href: '/blog' },
-  { label: 'Contact Us', href: '/contact-us' },
-  { label: 'Financing', href: '/financing' },
+  { label: 'Projects', href: '/projects' },
+  {
+    label: 'About Us',
+    href: '/about-us',
+    children: [
+      { label: 'About Edel', href: '/about-us' },
+      { label: 'Blog', href: '/blog' },
+      { label: 'Financing', href: '/financing' },
+      { label: 'Contact Us', href: '/contact-us' },
+    ],
+  },
 ];
 
-// Spanish menu: the live /es-mx header items, plus Áreas de Servicio (the
-// EN menu has Service Areas; the live ES menu left it out). "Hogar"
-// (household) on the live menu is now "Inicio" (home page).
+// Spanish menu: same four-link shape as English. Áreas de Servicio is added
+// (the live ES menu left it out); Inicio and Contáctenos moved like Home and
+// Contact Us. There is no Spanish blog index or financing page.
 export const mainNavEs: NavItem[] = [
-  { label: 'Inicio', href: '/es-mx' },
   {
     label: 'Servicios',
     href: '/es-mx/residential-roofing',
@@ -74,6 +81,13 @@ export const mainNavEs: NavItem[] = [
     ],
   },
   { label: 'Áreas de Servicio', href: '/es-mx/service-areas' },
-  { label: 'Sobre Nosotros', href: '/es-mx/about-us', children: [{ label: 'Proyectos', href: '/es-mx/projects' }] },
-  { label: 'Contáctenos', href: '/es-mx/contact-us' },
+  { label: 'Proyectos', href: '/es-mx/projects' },
+  {
+    label: 'Sobre Nosotros',
+    href: '/es-mx/about-us',
+    children: [
+      { label: 'Sobre Edel', href: '/es-mx/about-us' },
+      { label: 'Contáctenos', href: '/es-mx/contact-us' },
+    ],
+  },
 ];

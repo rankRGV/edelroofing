@@ -65,6 +65,9 @@ const isActive = (href: string) => (href === home ? path === home : path === hre
       <details class="mobile-menu">
         <summary aria-label={t.menu}><Icon name="menu" /></summary>
         <div class="drawer">
+          <!-- Quote and call first so they show without scrolling on phones. -->
+          <a class="btn" {...quote}>{quoteLabel}</a>
+          <a class="btn btn--ghost" href={site.phoneHref}>{t.call} {site.phone}</a>
           <ul>
             {nav.map((item) => (
               <li>
@@ -75,8 +78,6 @@ const isActive = (href: string) => (href === home ? path === home : path === hre
               </li>
             ))}
           </ul>
-          <a class="btn" {...quote}>{quoteLabel}</a>
-          <a class="btn btn--ghost" href={site.phoneHref}>{t.call} {site.phone}</a>
           <a class="drawer-lang" href={langHref} hreflang={t.switchLang} lang={t.switchLang}>{t.switchLabel}</a>
         </div>
       </details>
@@ -171,15 +172,15 @@ const isActive = (href: string) => (href === home ? path === home : path === hre
   .call-round,
   .mobile-menu { display: none; }
 
-  /* No room for the language link next to the phone below 1367px; it is in
+  /* No room for the language link next to the phone below 1201px; it is in
      the footer and (under 1025px) the menu drawer. */
-  @media (max-width: 1366px) { .lang { display: none; } }
-
   @media (max-width: 1200px) {
+    .lang { display: none; }
     .menu { gap: 4px 16px; }
     .menu > li > a { font-size: 13px; }
-    .phone span { display: none; }
   }
+  /* The Spanish quote button is wider; keep just the phone icon here. */
+  @media (max-width: 1150px) { .phone span { display: none; } }
 
   @media (max-width: 1024px) {
     .bar { justify-content: space-between; padding-block: 8px; }
@@ -224,10 +225,12 @@ const isActive = (href: string) => (href === home ? path === home : path === hre
       overflow-y: auto;
     }
     .drawer ul { list-style: none; margin: 0; padding: 0; }
+    .drawer > ul { margin-top: 12px; }
     .drawer > ul > li { border-bottom: 1px solid var(--line); }
     .drawer a { display: block; padding: 12px 4px; text-decoration: none; font-weight: 500; }
     .drawer ul ul a { padding: 8px 4px 8px 20px; font-weight: 400; font-size: 14px; color: var(--muted); }
     .drawer .btn { display: flex; margin-top: 12px; }
+    .drawer .btn + .btn { margin-top: 8px; }
     .drawer .btn:not(.btn--ghost) { color: var(--white); }
   }
 </style>
