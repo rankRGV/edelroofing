@@ -4,7 +4,7 @@
   "city": "mcallen",
   "service": "repair",
   "title": "Roof Repair in McAllen, TX | Edel Roofing & Construction",
-  "description": "Roof leak and wind damage repair in McAllen, TX. Written estimate before any work, most repairs done in one visit. Licensed RCAT #03-0489. Call (956) 422-3335.",
+  "description": "Roof leak and wind damage repair in McAllen, TX. Written estimate before any work, and most repairs take one visit. RCAT #03-0489. (956) 422-3335.",
   "alternates": {
     "en": "/roof-repair-mcallen-tx",
     "es": "/reparacion-de-techo-mcallen-tx"
@@ -38,7 +38,7 @@
       "kind": "text",
       "paras": [
         "McAllen has a lot of roofs that are old enough to need work. Census survey data (ACS 2024) puts the median McAllen home at 1997, and about 4 in 10 homes were built before 1990. On a roof that has been through 20 or 30 Valley summers, leaks tend to start at the openings and edges: flashing along a wall, a pipe boot cracked by the sun, shingles that let go along a ridge or a rake edge.",
-        "A leak does not mean you need a new roof. Most leaks come from one spot, and one spot can be fixed. If a repair is enough, that is what we quote. If the roof is past repairing, we show you the photos and explain why before replacement comes up at all.",
+        "A leak does not mean you need a new roof. Most leaks come from one spot, and one spot can be fixed. If a repair will do it, that's what we quote. If the roof is past repairing, we show you the photos and explain why before we ever bring up a new roof.",
         "Our office is at 1815 N Jackson Rd in Edinburg, about 11 minutes by car from McAllen City Hall. That short drive is why we can usually get to a McAllen leak quickly."
       ]
     },
@@ -98,7 +98,7 @@
         },
         {
           "title": "3. Written price",
-          "body": "You get the estimate in writing before any work starts, so you know the number before you agree to anything."
+          "body": "You get the estimate in writing before any work starts. You know the number before you agree to anything."
         },
         {
           "title": "4. Repair",
@@ -213,7 +213,7 @@
           "@type": "WebPage",
           "name": "Roof Repair in McAllen, TX",
           "url": "https://www.edelroofing.com/roof-repair-mcallen-tx",
-          "description": "Roof leak and wind damage repair in McAllen, TX. Written estimate before any work, most repairs done in one visit. Licensed RCAT #03-0489. Call (956) 422-3335.",
+          "description": "Roof leak and wind damage repair in McAllen, TX. Written estimate before any work, and most repairs take one visit. RCAT #03-0489. (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -277,6 +277,7 @@
   "changes": [
     "em/en dashes swapped for commas, colons, or hyphens",
     "review counts (246/252) -> 250+ (match the homepage)",
-    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs",
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
   ]
 }

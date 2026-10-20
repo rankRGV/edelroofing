@@ -1,8 +1,7 @@
 ---
 // /home-remodeling, rebuilt from the live Duda page (2026-10-18).
-// Open question: does Edel still sell remodeling? The page is off the live
-// nav (2 inlinks). Rebuilt as is so the URL keeps working; not linked from
-// the menu.
+// Remodeling is a real Edel service (2026-10-20 copy brief). The page is off
+// the live nav (2 inlinks); not linked from the menu.
 // Copy changes vs live:
 // - Em dashes around "from fixtures to tiles" swapped for commas.
 // - Headings "Elevate Your Bathroom" -> "Update Your Bathroom" and "Elevate
@@ -10,6 +9,10 @@
 //   headline verb is banned).
 // - Headings written in normal case (CSS uppercases them, same look).
 // - Added: breadcrumb, trust strip, quote/call buttons.
+// - 2026-10-20 copy pass: plain, warm rewrite; removed hype ("top-tier",
+//   "unmatched quality", "dreams", "Transform Your Space", "heart and soul",
+//   "where memories are made", "exceed expectations"); H1 and title now
+//   carry the Rio Grande Valley.
 import InnerPage from '../layouts/InnerPage.astro';
 import hero from '../assets/home-remodeling/home-interior.webp';
 import island from '../assets/home-remodeling/kitchen-island-interior-design.jpg';
@@ -17,48 +20,48 @@ import kitchen from '../assets/home-remodeling/newly-built-kitchen.jpg';
 import bathroom from '../assets/home-remodeling/bathroom-remodeling.webp';
 ---
 <InnerPage
-  title="Home Remodeling Services | Edel Roofing & Construction Inc."
-  description="Elevate your living spaces with our top-tier home remodeling services. We turn your dreams into reality, delivering unmatched quality from start to finish."
+  title="Home Remodeling in the RGV | Edel Roofing & Construction"
+  description="Kitchen and bathroom remodeling in the Rio Grande Valley from EDEL Roofing & Construction. Simple updates or full remodels. Call (956) 422-3335."
   alternates={{ en: '/home-remodeling', es: '/es-mx/home-remodeling' }}
   crumbs={[
     { label: 'Home', href: '/' },
     { label: 'Home Remodeling', href: '/home-remodeling' },
   ]}
-  hero={{ eyebrow: 'Our Remodeling Services', title: 'Home Remodeling', bg: hero }}
+  hero={{ eyebrow: 'Remodeling', title: 'Home Remodeling in the Rio Grande Valley', bg: hero }}
   intro={{
-    eyebrow: 'Bathroom and Kitchen Remodeling',
-    title: 'Transform Your Space',
-    body: "EDEL Roofing &amp; Construction invites you to reimagine your home's heart and soul with our <a href=\"/\">Bathroom and Kitchen Remodeling</a> services. Our expert team is dedicated to breathing new life into these essential spaces, creating functional yet stylish environments that reflect your unique taste and needs.",
+    eyebrow: 'Bathroom and kitchen remodeling',
+    title: 'Kitchens and bathrooms',
+    body: "Is your kitchen or bathroom worn out, or does it just not work for your family anymore? EDEL Roofing &amp; Construction does home remodeling in the Rio Grande Valley, including <a href=\"/\">bathroom and kitchen remodeling</a>. We make these rooms easier to use and better looking, based on what you like and what you need.",
     cta: { label: 'Contact Us', href: '/contact-us' },
     images: [{ src: island, alt: 'Kitchen Remodeling Service' }],
   }}
   band={{
-    eyebrow: 'Kitchen Remodeling',
-    title: 'Revitalize Your Kitchen',
-    body: "The kitchen is where memories are made, and our Kitchen Remodeling service aims to enhance both its aesthetics and functionality. From modernizing the layout for better workflow to selecting high-quality materials that stand up to daily use, we approach kitchen remodels with precision and creativity. Let us create a space that's as inviting as it is practical.",
-    cta: { label: 'Get Instant Estimate', href: '/contact-us#estimate', roofle: true },
+    eyebrow: 'Kitchen remodeling',
+    title: 'A kitchen that works for you',
+    body: "Your family is in the kitchen every day. We can change the layout so it's easier to cook and move around, and we help you pick materials that hold up to daily use. You end up with a kitchen that looks good and is easy to live with.",
+    cta: { label: 'Talk to Us About Your Project', href: '/contact-us' },
     images: [{ src: kitchen, alt: 'Newly Built Kitchen' }],
   }}
   extra={[
     {
-      eyebrow: 'Bathroom Remodeling',
-      title: 'Update Your Bathroom',
-      body: "Our Bathroom Remodeling service encompasses a wide range of possibilities. We collaborate closely with you to understand your preferences, ensuring that every detail, from fixtures to tiles, aligns with your vision. Whether it's a simple update or a complete transformation, we're here to turn your bathroom dreams into reality.",
-      cta: { label: 'Get Instant Estimate', href: '/contact-us#estimate', roofle: true },
+      eyebrow: 'Bathroom remodeling',
+      title: 'Update your bathroom',
+      body: "A bathroom remodel can be a simple update or a full redo. We sit down with you and go over what you want, down to the fixtures and the tile. Then we build it the way we agreed.",
+      cta: { label: 'Talk to Us About Your Project', href: '/contact-us' },
       images: [{ src: bathroom, alt: 'Bathroom Remodeling' }],
     },
   ]}
   benefits={{
-    title: 'Key Benefits of Our Remodeling Services',
+    title: 'Why remodel with Edel',
     items: [
-      { title: 'Design Expertise', body: 'Our team of experienced designers is well-versed in translating your ideas into reality, ensuring your newly remodeled spaces align with your vision.' },
-      { title: 'Quality Craftsmanship', body: 'Every aspect of our remodeling process is carried out with meticulous attention to detail, resulting in finished spaces that exceed expectations.' },
-      { title: 'Tailored Solutions', body: 'We understand that every home is unique. Our solutions are customized to fit your lifestyle, needs, and aesthetic preferences.' },
+      { title: 'Help with the design', body: 'Our experienced designers help turn your ideas into a plan, so the finished room matches what you pictured.' },
+      { title: 'Careful work', body: 'We pay close attention to the details at every step of the remodel.' },
+      { title: 'Planned for your home', body: 'No two homes are the same. We plan each remodel around how you live and the look you like.' },
     ],
   }}
   closing={{
-    title: 'Refresh Your Living Spaces',
-    body: 'Discover the power of change with EDEL Roofing &amp; Construction. Our Bathroom and Kitchen Remodeling services revitalize your spaces, enhancing their appeal and functionality. Reach out today to discuss your project and take the first step towards a home that embodies your style.',
+    title: 'Ready to talk about a remodel?',
+    body: 'Call us and tell us about the kitchen or bathroom you want to change. We will go over your ideas with you and explain what comes next.',
     cta: { label: 'Contact Us', href: '/contact-us' },
   }}
 />

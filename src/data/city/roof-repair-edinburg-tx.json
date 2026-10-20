@@ -4,7 +4,7 @@
   "city": "edinburg",
   "service": "repair",
   "title": "Roof Repair in Edinburg, TX | Edel Roofing & Construction",
-  "description": "Fast, licensed roof repair in Edinburg, TX. Leaks, storm damage, flashing, and shingle repairs. 250+ Google reviews. Free estimate: (956) 422-3335.",
+  "description": "Roof repair in Edinburg, TX for leaks, storm damage, flashing and shingles. Licensed and insured. 250+ Google reviews. Free estimate: (956) 422-3335.",
   "alternates": {
     "en": "/roof-repair-edinburg-tx",
     "es": "/reparacion-de-techo-edinburg-tx"
@@ -20,7 +20,7 @@
     }
   ],
   "h1": "Roof Repair in Edinburg, TX",
-  "lede": "Edel Roofing &amp; Construction repairs leaks, storm damage, and worn roofing for homes across Edinburg. Licensed, bonded, and insured. Most repairs are finished in a single visit.",
+  "lede": "Edel Roofing &amp; Construction repairs leaks, storm damage and worn roofs on homes across Edinburg. We're licensed, bonded and insured, and most repairs are done in one visit.",
   "heroCtas": [
     {
       "label": "Get a Free Estimate",
@@ -37,8 +37,8 @@
       "alt": false,
       "kind": "text",
       "paras": [
-        "Edel Roofing is based in Edinburg, so most of our repair calls here are a short drive. We have repaired roofs across Hidalgo County since 2003. A leak or a damaged section does not always mean a new roof. Most of the time it is one specific, findable problem: cracked flashing, a patch of missing shingles, a failed pipe boot. That can usually be fixed in a single visit.",
-        "Edinburg homes range from older houses near downtown and along Closner Boulevard and McColl Road to newer subdivisions on the north side toward Trenton Road and Sugar Road. Older roofs tend to fail from age and worn flashing. Newer roofs are more often hit by hail or wind. We inspect first and tell you plainly whether it is a repair or something bigger.",
+        "Our office is in Edinburg, so most repair calls here are a short drive for us. We've repaired roofs across Hidalgo County since 2003. A leak or a damaged section doesn't always mean a new roof. Most of the time it's one problem we can find: cracked flashing, a patch of missing shingles, a pipe boot that gave out. That can usually be fixed in one visit.",
+        "Edinburg homes range from older houses near downtown and along Closner Boulevard and McColl Road to newer subdivisions on the north side toward Trenton Road and Sugar Road. Older roofs tend to fail from age and worn flashing. Newer roofs are more often hit by hail or wind. We look first and tell you plainly if it's a repair or something bigger.",
         "A repair call is not a reason to sell you a new roof. If a repair is the right fix, that is what we recommend and what we do."
       ]
     },
@@ -49,11 +49,11 @@
       "cards": [
         {
           "title": "Leak repair",
-          "body": "Ceiling stains, active drips, or damp insulation. We trace the leak to where water actually enters, which is often several feet from where it shows up inside, and repair it there."
+          "body": "A stain on the ceiling, a drip, or wet insulation. We follow the leak back to where the water gets in, which is often several feet from where you see it inside, and fix it there."
         },
         {
           "title": "Storm and hail damage repair",
-          "body": "Missing or lifted shingles, granule loss, and impact damage from Hidalgo County storms. We document what we find in writing, which helps if you file an insurance claim."
+          "body": "Missing or lifted shingles, granule loss, and impact damage from Hidalgo County storms. We write down what we find, and that helps if you file an insurance claim."
         },
         {
           "title": "Flashing repair",
@@ -65,11 +65,11 @@
         },
         {
           "title": "Skylight and vent repair",
-          "body": "Failed skylight seals and vent boots are a common, specific leak source. We repair or reseal them without disturbing the rest of the roof."
+          "body": "Skylight seals and vent boots wear out often, and the leak stays in that one spot. We repair or reseal them and leave the rest of the roof alone."
         },
         {
           "title": "Inspections after storms",
-          "body": "A full walk of the roof after hail or high wind, with a written report on what needs repair now and what to keep an eye on."
+          "body": "We walk the whole roof after hail or high wind and give you a written report: what needs fixing now and what to keep an eye on."
         }
       ]
     },
@@ -102,7 +102,7 @@
         },
         {
           "big": "Since 2003",
-          "label": "More than 20 years repairing roofs in Edinburg and the Rio Grande Valley"
+          "label": "Repairing roofs in Edinburg and across the Rio Grande Valley"
         }
       ]
     },
@@ -113,7 +113,7 @@
       "faqs": [
         {
           "q": "I have a leak in my Edinburg home. Do I need a new roof?",
-          "a": "Usually not. Most leaks come from a specific, fixable source such as flashing, a vent boot, or a section of damaged shingles, and can be repaired without replacing the whole roof. We inspect first and tell you plainly what we find. Call (956) 422-3335 to schedule an inspection."
+          "a": "Usually not. Most leaks come from one thing we can fix, like flashing, a vent boot or a section of damaged shingles, and the rest of the roof can stay. We look first and tell you plainly what we find. Call (956) 422-3335 to schedule an inspection."
         },
         {
           "q": "How much does roof repair cost in Edinburg?",
@@ -125,18 +125,18 @@
         },
         {
           "q": "Can you document storm damage for my insurance claim?",
-          "a": "Yes. We inspect the roof and give you written documentation of what we find, which helps when you file with your insurance company. We are not a public adjuster, but we can walk you through exactly what we observed."
+          "a": "Yes. We inspect the roof and give you written documentation of what we find, which helps when you file with your insurance company. We are not a public adjuster. We can go over everything we saw on the roof with you."
         },
         {
           "q": "How do I get a roof repair estimate in Edinburg?",
-          "a": "Call (956) 422-3335 or <a href=\"/book-an-inspection\">book an inspection online</a>. We schedule a time to look at the roof and give you a written estimate. Estimates are free with no obligation."
+          "a": "Call (956) 422-3335 or <a href=\"/book-an-inspection\">book an inspection online</a>. We set a time to look at the roof, then give you a written estimate. It's free, with no obligation."
         }
       ]
     }
   ],
   "cta": {
     "title": "Get a free roof repair estimate in Edinburg",
-    "line": "We inspect the roof, give you a written estimate, and explain your options. No pressure, no obligation.",
+    "line": "We check the roof, tell you what we found, and give you the price in writing before any work.",
     "buttons": [
       {
         "label": "Book a Free Inspection",
@@ -186,7 +186,7 @@
           "@type": "WebPage",
           "name": "Roof Repair in Edinburg, TX",
           "url": "https://www.edelroofing.com/roof-repair-edinburg-tx",
-          "description": "Fast, licensed roof repair in Edinburg, TX. Leaks, storm damage, flashing, and shingle repairs. Free estimate: (956) 422-3335.",
+          "description": "Roof repair in Edinburg, TX for leaks, storm damage, flashing and shingles. Licensed and insured. 250+ Google reviews. Free estimate: (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -199,7 +199,7 @@
               "name": "I have a leak in my Edinburg home. Do I need a new roof?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Usually not. Most leaks come from a specific, fixable source such as flashing, a vent boot, or a section of damaged shingles, and can be repaired without replacing the whole roof. We inspect first and tell you plainly what we find."
+                "text": "Usually not. Most leaks come from one thing we can fix, like flashing, a vent boot or a section of damaged shingles, and the rest of the roof can stay. We look first and tell you plainly what we find. Call (956) 422-3335 to schedule an inspection."
               }
             },
             {
@@ -207,7 +207,7 @@
               "name": "How much does roof repair cost in Edinburg?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Most repairs run from a few hundred dollars to around $1,500, depending on what is wrong and how much of the roof is affected. We give a written estimate after inspecting and before any work starts."
+                "text": "Most repairs run from a few hundred dollars to around $1,500, depending on what is wrong and how much of the roof is affected. We give a written estimate after inspecting and before any work starts, so you know the number before you commit."
               }
             },
             {
@@ -223,7 +223,7 @@
               "name": "Can you document storm damage for my insurance claim?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. We inspect the roof and give you written documentation of what we find, which helps when you file an insurance claim. We are not a public adjuster, but we can walk you through what we observed."
+                "text": "Yes. We inspect the roof and give you written documentation of what we find, which helps when you file with your insurance company. We are not a public adjuster. We can go over everything we saw on the roof with you."
               }
             },
             {
@@ -231,7 +231,7 @@
               "name": "How do I get a roof repair estimate in Edinburg?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Call (956) 422-3335 or book an inspection online. We schedule a time to look at the roof and give you a written estimate. Estimates are free with no obligation."
+                "text": "Call (956) 422-3335 or book an inspection online. We set a time to look at the roof, then give you a written estimate. It's free, with no obligation."
               }
             }
           ]
@@ -240,6 +240,7 @@
     }
   ],
   "changes": [
-    "review counts (246/252) -> 250+ (match the homepage)"
+    "review counts (246/252) -> 250+ (match the homepage)",
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
   ]
 }

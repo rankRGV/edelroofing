@@ -9,6 +9,9 @@
 //   (956) 422-3335.
 // - Added: breadcrumb, trust strip, the homepage map embed, short section
 //   labels, hreflang to /es-mx/contact-us.
+// - 2026-10-20 copy pass: plain, warm rewrite; title/description drop
+//   "Premium", "top-notch" and "Our experts"; H1 gets its missing "&"; hero
+//   lead added (24/7, se habla español, from the fact sheet).
 import Base from '../layouts/Base.astro';
 import PageHero from '../components/PageHero.astro';
 import TrustStrip from '../components/TrustStrip.astro';
@@ -23,12 +26,18 @@ const crumbs = [
 ];
 ---
 <Base
-  title="Contact Us for Premium Roofing & Construction Services"
-  description="Reach out to us for top-notch roofing, remodeling, and construction services in Rio Grande Valley. Our experts are ready to assist you. Call now at (956) 422-3335!"
+  title="Contact Edel Roofing & Construction | Edinburg, TX Roofer"
+  description="Call (956) 422-3335 or visit 1815 N Jackson Rd in Edinburg. Roofing, remodeling and construction across the Rio Grande Valley. Se habla español."
   alternates={{ en: '/contact-us', es: '/es-mx/contact-us' }}
   schema={[breadcrumbSchema(crumbs)]}
 >
-  <PageHero crumbs={crumbs} eyebrow="Get in Touch" title="Contact Edel Roofing Construction Inc." bg={hero} />
+  <PageHero
+    crumbs={crumbs}
+    eyebrow="Contact us"
+    title="Contact Edel Roofing & Construction"
+    lead="Call, email, or stop by our office in Edinburg. We answer 24/7, and se habla español."
+    bg={hero}
+  />
   <TrustStrip />
 
   <section class="section">
@@ -39,8 +48,8 @@ const crumbs = [
 
   <section class="section soft" id="estimate">
     <div class="wrap">
-      <h2 class="center">Instant Roof Estimate</h2>
-      <p class="center est-note">Enter your address, confirm your roof on the satellite map, and add your name, phone and email to see an estimated price. The final price comes in writing after a free inspection.</p>
+      <h2 class="center">Instant roof estimate</h2>
+      <p class="center est-note">Enter your address and pick out your roof on the satellite map. Once you add your name, phone and email, you'll see an estimated price. Your final price comes in writing after we do a free inspection.</p>
       <div class="roofle">
         <script is:inline async src="https://app.roofle.com/roof-quote-pro-embedded-widget.js?id=EDm90hQNG9UzNzk4GqU84"></script>
         <div id="roof-quote-pro-embedded"></div>
@@ -50,7 +59,7 @@ const crumbs = [
 
   <section class="section">
     <div class="wrap">
-      <h2 class="center">Find Us in Edinburg</h2>
+      <h2 class="center">Our office in Edinburg</h2>
       <div class="map">
         <iframe
           title="Map to Edel Roofing & Construction in Edinburg, TX"

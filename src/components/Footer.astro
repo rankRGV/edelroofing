@@ -9,10 +9,12 @@ const { lang = 'en', switchHref } = Astro.props;
 const es = lang === 'es';
 const year = new Date().getFullYear();
 // Spanish wording follows the live /es-mx footer.
+// 2026-10-20 copy pass: the "from top to bottom" tagline (EN + ES) is now a
+// plain line with "since 2003" and the Edinburg office.
 const t = es
   ? {
       home: '/es-mx',
-      tagline: 'Toda su casa puede beneficiarse de la experiencia de EDEL Roofing &amp; Construction de arriba a abajo.',
+      tagline: 'Techos para casas y negocios del Valle desde 2003. También remodelamos y construimos casas. Nuestra oficina está en Edinburg, TX.',
       quick: 'Enlaces Rápidos',
       quickLinks: [['/es-mx', 'Inicio'], ['/es-mx/about-us', 'Sobre Nosotros'], ['/es-mx/projects', 'Proyectos'], ['/es-mx/contact-us', 'Contáctenos']],
       services: 'Nuestros Servicios',
@@ -23,7 +25,7 @@ const t = es
     }
   : {
       home: '/',
-      tagline: 'Your entire home can benefit from the expertise of EDEL Roofing &amp; Construction from top to bottom.',
+      tagline: 'Roofs for Valley homes and businesses since 2003. We also remodel and build homes. Our office is in Edinburg, TX.',
       quick: 'Quick Links',
       quickLinks: [['/', 'Home'], ['/about-us', 'About Us'], ['/projects', 'Projects'], ['/contact-us', 'Contact Us']],
       services: 'Our Services',

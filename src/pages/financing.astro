@@ -7,6 +7,9 @@
 // - Added one plain section using the homepage FAQ's own wording ("We offer
 //   financing options for roof replacement and repairs"), plus breadcrumb,
 //   trust strip, quote/call buttons, closing call band.
+// - 2026-10-20 copy pass: plain, warm rewrite; eyebrow "Flexible Financing
+//   Options" -> "Financing" ("flexible" is not confirmed); H1 and title now
+//   name roof financing and Edinburg.
 // Open (Edel): lender name, terms, and whether there is an application link.
 // Don't add rates, approvals, or "no credit" claims until Edel gives them.
 import InnerPage from '../layouts/InnerPage.astro';
@@ -14,24 +17,24 @@ import hero from '../assets/home/truck-house.jpeg';
 import { site } from '../data/site';
 ---
 <InnerPage
-  title="Financing | Home Construction and Roofing Company"
-  description="Don't let cost stop you from getting a new roof. Edel Roofing offers financing options for roof replacement and repairs. Call (956) 422-3335 to ask."
+  title="Roof Financing in Edinburg, TX | Edel Roofing & Construction"
+  description="Edel Roofing offers financing for roof replacement and repairs in Edinburg and the Rio Grande Valley. Call (956) 422-3335 to ask about your options."
   crumbs={[
     { label: 'Home', href: '/' },
     { label: 'Financing', href: '/financing' },
   ]}
-  hero={{ eyebrow: 'Flexible Financing Options', title: 'For Your Roofing Project', bg: hero }}
+  hero={{ eyebrow: 'Financing', title: 'Roof Financing in Edinburg', bg: hero }}
   intro={{
-    title: 'Ask About Financing',
+    title: 'Pay for your roof over time',
     body: [
-      'We offer financing options for roof replacement and repairs.',
-      `Call <a href="${site.phoneHref}">${site.phone}</a> and ask about financing when we set up your free inspection. You get a written estimate before any work starts, so you know the amount you are financing.`,
+      "A new roof or a big repair can come up when you weren't planning for it. We offer financing for roof replacement and repairs in Edinburg and the Valley.",
+      `When you call <a href="${site.phoneHref}">${site.phone}</a> to set up your free inspection, ask us about financing. You'll get a written estimate before any work starts, so you know exactly how much you'd be financing.`,
     ],
     cta: { label: 'Get Instant Estimate', href: '/contact-us#estimate', roofle: true },
   }}
   closing={{
-    title: 'Protect Your Home Today',
-    body: 'Start with a free inspection and a written estimate from a licensed Edinburg roofer.',
+    title: 'Start with a free inspection',
+    body: 'A licensed Edinburg roofer checks your roof and writes up the estimate. Then you decide how you want to pay for it.',
     cta: { label: 'Contact Us', href: '/contact-us' },
   }}
 />

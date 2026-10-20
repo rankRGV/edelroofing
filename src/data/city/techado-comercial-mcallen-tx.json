@@ -4,7 +4,7 @@
   "city": "mcallen",
   "service": "commercial",
   "title": "Techado Comercial en McAllen, TX | EDEL Roofing & Construction",
-  "description": "Reparación, reemplazo y recubrimiento de techos planos comerciales en McAllen, TX. TPO, EPDM, bitumen modificado. Alcance por escrito. Llame al (956) 422-3335.",
+  "description": "Reparación, reemplazo y recubrimiento de techos planos comerciales en McAllen, TX. TPO, EPDM y bitumen modificado. Llame al (956) 422-3335.",
   "alternates": {
     "en": "/commercial-roofing-mcallen-tx",
     "es": "/techado-comercial-mcallen-tx"
@@ -20,7 +20,7 @@
     }
   ],
   "h1": "Techado Comercial en McAllen, TX",
-  "lede": "Edel Roofing &amp; Construction repara, reemplaza y recubre techos planos y de poca pendiente en locales comerciales, oficinas, edificios médicos y bodegas de McAllen. Con licencia, fianza y seguro, y con estimados gratis por escrito.",
+  "lede": "Edel Roofing &amp; Construction repara, reemplaza y recubre techos planos y de poca pendiente en locales comerciales, oficinas, edificios médicos y bodegas de McAllen. Tenemos licencia, fianza y seguro, y el estimado por escrito es gratis.",
   "heroCtas": [
     {
       "label": "Obtener Estimado Gratis",
@@ -38,7 +38,7 @@
       "kind": "text",
       "paras": [
         "McAllen es donde compra el Valle del Río Grande. La ciudad reportó $99.9 millones en ingresos por impuesto sobre las ventas en 2025, la cifra más alta de cualquier ciudad del Valle. Ese comercio pasa bajo techos planos. La Plaza Mall, en S 10th St, tiene unos 1.32 millones de pies cuadrados, y las plazas comerciales, restaurantes, clínicas y bodegas a su alrededor suman mucho más. McAllen Medical Center está en W Expressway 83, y hay consultorios médicos por toda la ciudad.",
-        "En un edificio así, una gotera es un problema de operaciones. Los inquilinos pierden ventas, la mercancía se moja, y los pacientes y el personal tienen que seguir llegando. Por eso el primer paso en cualquier trabajo comercial en McAllen es inspeccionar todo el techo, y luego entregarle un alcance por escrito que dice qué vamos a hacer, cuánto cuesta y cuándo lo podemos hacer según su horario.",
+        "En un edificio así, una gotera es un problema de operaciones. Los inquilinos pierden ventas, la mercancía se moja, y los pacientes y el personal tienen que seguir llegando. Por eso todo trabajo comercial en McAllen empieza igual. Inspeccionamos todo el techo y luego le damos un alcance por escrito: qué vamos a hacer, cuánto cuesta y cuándo lo podemos hacer según su horario.",
         "Nuestra oficina está en 1815 N Jackson Rd en Edinburg, a unos 11 minutos de la alcaldía de McAllen. Trabajamos en techos comerciales en todo el condado de Hidalgo desde 2003."
       ]
     },
@@ -53,7 +53,7 @@
         },
         {
           "title": "Reemplazo de techo comercial",
-          "body": "Retiro del sistema desgastado, revisión de la base del techo por daño de agua e instalación de una membrana nueva con un calendario por escrito."
+          "body": "Quitamos el techo gastado, revisamos la base del techo por daño de agua e instalamos una membrana nueva con un calendario que le damos por escrito."
         },
         {
           "title": "Reparación de goteras y membrana",
@@ -65,7 +65,7 @@
         },
         {
           "title": "Daño por tormenta y granizo",
-          "body": "Perforaciones en la membrana, bordes rotos y tapajuntas sueltos después de una tormenta, documentados por escrito para su compañía de seguros."
+          "body": "Perforaciones, bordes rotos y tapajuntas sueltos después de una tormenta. Se lo dejamos todo por escrito para su compañía de seguros."
         },
         {
           "title": "Inspecciones y mantenimiento",
@@ -80,7 +80,7 @@
       "paras": [
         "Un techo plano recibe el sol directo todo el día. Los promedios normales de NOAA para el aeropuerto de McAllen muestran 177 días al año a 90°F o más y una temperatura máxima promedio en agosto de 99.6°F. El calor y los rayos UV resecan las membranas, abren las costuras y agrietan el sellador en las bases de los equipos y en las penetraciones. Una superficie de techo oscura bajo ese sol se calienta mucho más que el aire.",
         "El viento es el otro problema. El 28 de abril de 2023 se midió una ráfaga de 74 mph en McAllen, y el estudio de daños del NWS encontró un edificio en S 29th St que había perdido más de la mitad de sus tejas. El 8 de mayo de 2025, <a href=\"https://www.weather.gov/media/bro/wxevents/2025/pdf/PNS_McAllenSurvey_May8Microburst.pdf\">una microrráfaga estimada de 80 a 85 mph</a> pegó en la zona entre Taylor Rd y Ware Rd, y observadores reportaron granizo de 2 pulgadas en el norte de McAllen. En un techo plano, el viento se mete debajo de la membrana por los bordes y por los tapajuntas sueltos, y el granizo perfora los puntos débiles.",
-        "La lluvia hace el resto. Septiembre es el mes más lluvioso en el aeropuerto, con unas 4.6 pulgadas en promedio. Los desagües y los desagües laterales tapados dejan que el agua se estanque, y el agua estancada encuentra cada costura abierta."
+        "Y luego está la lluvia. Septiembre es el mes más lluvioso en el aeropuerto, con unas 4.6 pulgadas en promedio. Los desagües y los desagües laterales tapados dejan que el agua se estanque, y el agua estancada encuentra cada costura abierta."
       ]
     },
     {
@@ -136,7 +136,7 @@
       "faqs": [
         {
           "q": "Nuestra tienda tiene una gotera y no podemos cerrar. ¿Pueden trabajar sin que cerremos?",
-          "a": "Sí. Díganos su horario y sus días de más movimiento, y programamos el trabajo según sus inquilinos y su horario de negocio."
+          "a": "Sí. Díganos su horario y sus días de más movimiento. Planeamos el trabajo alrededor de eso y de sus inquilinos."
         },
         {
           "q": "¿Qué sistema de techo plano es mejor para un edificio en McAllen?",
@@ -144,7 +144,7 @@
         },
         {
           "q": "¿Cuánto debe durar un techo comercial aquí?",
-          "a": "Una membrana bien instalada en el Valle normalmente dura de 15 a 25 años, según el material y qué tan bien se mantenga. El calor acorta ese tiempo, y las inspecciones regulares le ayudan a llegar al máximo."
+          "a": "Una membrana que se instaló bien normalmente dura de 15 a 25 años en el Valle, según el material y qué tan bien se mantenga. El calor acorta ese tiempo. Con inspecciones regulares es más fácil llegar al máximo."
         },
         {
           "q": "Administramos varias propiedades en McAllen. ¿Pueden encargarse de todas?",
@@ -166,7 +166,7 @@
     }
   ],
   "cta": {
-    "title": "Obtenga un estimado gratis de techo comercial en McAllen",
+    "title": "Pida un estimado gratis de techo comercial en McAllen",
     "line": "Caminamos todo el techo y luego le damos un alcance por escrito con el precio y un calendario que se ajusta a su negocio.",
     "buttons": [
       {
@@ -217,7 +217,7 @@
           "@type": "WebPage",
           "name": "Techado Comercial en McAllen, TX",
           "url": "https://www.edelroofing.com/techado-comercial-mcallen-tx",
-          "description": "Reparación, reemplazo y recubrimiento de techos planos comerciales en McAllen, TX. TPO, EPDM, bitumen modificado. Alcance por escrito. Llame al (956) 422-3335.",
+          "description": "Reparación, reemplazo y recubrimiento de techos planos comerciales en McAllen, TX. TPO, EPDM y bitumen modificado. Llame al (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -230,7 +230,7 @@
               "name": "Nuestra tienda tiene una gotera y no podemos cerrar. ¿Pueden trabajar sin que cerremos?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Sí. Díganos su horario y sus días de más movimiento, y programamos el trabajo según sus inquilinos y su horario de negocio."
+                "text": "Sí. Díganos su horario y sus días de más movimiento. Planeamos el trabajo alrededor de eso y de sus inquilinos."
               }
             },
             {
@@ -246,7 +246,7 @@
               "name": "¿Cuánto debe durar un techo comercial aquí?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Una membrana bien instalada en el Valle normalmente dura de 15 a 25 años, según el material y qué tan bien se mantenga. El calor acorta ese tiempo, y las inspecciones regulares le ayudan a llegar al máximo."
+                "text": "Una membrana que se instaló bien normalmente dura de 15 a 25 años en el Valle, según el material y qué tan bien se mantenga. El calor acorta ese tiempo. Con inspecciones regulares es más fácil llegar al máximo."
               }
             },
             {
@@ -290,6 +290,7 @@
     "Spanish breadcrumb \"Áreas de Servicio\" linked the English /service-areas; now /es-mx/service-areas",
     "em/en dashes swapped for commas, colons, or hyphens",
     "review counts (246/252) -> 250+ (match the homepage)",
-    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs",
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
   ]
 }

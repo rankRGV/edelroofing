@@ -4,7 +4,7 @@
   "city": "mcallen",
   "service": "replacement",
   "title": "Roof Replacement in McAllen, TX | Edel Roofing & Construction",
-  "description": "New shingle roofs for McAllen, TX homes. CertainTeed SELECT ShingleMaster, full tear off, decking checked, written scope. Licensed RCAT #03-0489. Call (956) 422-3335.",
+  "description": "New shingle roofs for McAllen, TX homes. CertainTeed SELECT ShingleMaster, full tear off, decking checked, written scope. Call (956) 422-3335.",
   "alternates": {
     "en": "/roof-replacement-mcallen-tx",
     "es": "/reemplazo-de-techo-mcallen-tx"
@@ -37,7 +37,7 @@
       "alt": false,
       "kind": "text",
       "paras": [
-        "About 40% of McAllen homes were built before 1990, according to Census survey data (ACS 2024), and the median home dates to 1997. A shingle roof in this heat lasts roughly 20 to 25 years. Do the math and a large share of McAllen houses are on their second roof or due for one. Owners live in about 63% of those homes; the rest are rentals, where a roof also has to pass the next insurance renewal.",
+        "About 40% of McAllen homes were built before 1990, according to Census survey data (ACS 2024), and the median home dates to 1997. A shingle roof in this heat lasts roughly 20 to 25 years. Put those together and a lot of McAllen houses are on their second roof or due for one. Owners live in about 63% of those homes; the rest are rentals, where a roof also has to pass the next insurance renewal.",
         "Age by itself is not a reason to replace. We look at the whole roof and the decking under it first. Widespread granule loss, leaks in more than one place, soft decking, or storm damage across a large part of the roof are what move a job from repair to replacement. If a repair would hold, we say so. See <a href=\"/roof-repair-mcallen-tx\">roof repair in McAllen</a> for that side."
       ]
     },
@@ -69,7 +69,7 @@
         },
         {
           "title": "Ventilation and underlayment",
-          "body": "Attic vents checked and upgraded where needed, with modern synthetic underlayment under the shingles."
+          "body": "Attic vents checked and upgraded where needed, with synthetic underlayment under the shingles."
         },
         {
           "title": "Written scope",
@@ -109,7 +109,7 @@
         },
         {
           "big": "Since 2003",
-          "label": "Over 20 years putting new roofs on Valley homes"
+          "label": "Putting new roofs on Valley homes"
         }
       ]
     },
@@ -124,7 +124,7 @@
         },
         {
           "q": "How long will the job take?",
-          "a": "Most McAllen homes take one to three days, weather permitting. The timeline is in the written scope before we start."
+          "a": "Most McAllen homes take one to two days, depending on the roof's size and the material, plus any rain delays. The timeline is in the written scope before we start."
         },
         {
           "q": "My insurer wants a new roof before it renews. What do I do?",
@@ -197,7 +197,7 @@
           "@type": "WebPage",
           "name": "Roof Replacement in McAllen, TX",
           "url": "https://www.edelroofing.com/roof-replacement-mcallen-tx",
-          "description": "New shingle roofs for McAllen, TX homes. CertainTeed SELECT ShingleMaster, full tear off, decking checked, written scope. Licensed RCAT #03-0489. Call (956) 422-3335.",
+          "description": "New shingle roofs for McAllen, TX homes. CertainTeed SELECT ShingleMaster, full tear off, decking checked, written scope. Call (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -218,7 +218,7 @@
               "name": "How long will the job take?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Most McAllen homes take one to three days, weather permitting. The timeline is in the written scope before we start."
+                "text": "Most McAllen homes take one to two days, depending on the roof's size and the material, plus any rain delays. The timeline is in the written scope before we start."
               }
             },
             {
@@ -262,6 +262,7 @@
     "\"unlocks stronger warranty coverage\" -> \"gives access to stronger warranty coverage\" (banned word)",
     "em/en dashes swapped for commas, colons, or hyphens",
     "review counts (246/252) -> 250+ (match the homepage)",
-    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs",
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
   ]
 }

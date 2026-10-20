@@ -9,6 +9,11 @@
 // - Added: McAllen and Mission Spanish page lists (their city pages had ~2
 //   inlinks each), breadcrumb, quote/call buttons in the hero, hreflang to
 //   /service-areas, WebPage + BreadcrumbList schema like EN.
+// - 2026-10-20 copy pass: hero lead and closing band rewritten plainly in
+//   usted; McAllen line "la ciudad más grande del Valle" removed (Brownsville
+//   is larger by population); closing button "Reciba un Estimado Gratis" ->
+//   "Pida una Inspección Gratis" (it goes to the contact form, not the
+//   online estimate). Schema untouched.
 import Base from '../../layouts/Base.astro';
 import PageHero from '../../components/PageHero.astro';
 import SpokeLinks from '../../components/SpokeLinks.astro';
@@ -25,7 +30,7 @@ const crumbs = [
 
 const cities: { name: string; line: string; href?: string; home?: boolean }[] = [
   { name: 'Edinburg', line: 'Reemplazo de techo, reparaciones y techado comercial en Edinburg.', href: '/es-mx', home: true },
-  { name: 'McAllen', line: 'Techado en McAllen, la ciudad más grande del Valle.', href: '/roofing-mcallen-tx-es' },
+  { name: 'McAllen', line: 'Techado en McAllen y sus alrededores.', href: '/roofing-mcallen-tx-es' },
   { name: 'Mission', line: 'Techado en Mission y el área de Sharyland.', href: '/roofing-mission-tx-es' },
   { name: 'Pharr', line: 'Techado en Pharr y el centro del Valle.' },
   { name: 'Weslaco', line: 'Techado en Weslaco y el Valle medio.' },
@@ -64,7 +69,7 @@ const schema = [
 ---
 <Base
   title="Áreas de Servicio en el Valle del Río Grande | Edel Roofing & Construction"
-  description="Contratista de techos con licencia en Edinburg, McAllen, Mission, Pharr, Weslaco, Harlingen, Brownsville y Rio Grande City. Estimados gratis: (956) 422-3335."
+  description="Techadores con licencia en Edinburg, McAllen, Mission, Pharr, Weslaco, Harlingen, Brownsville y Rio Grande City. Inspección gratis: (956) 422-3335."
   lang="es"
   alternates={{ en: '/service-areas', es: '/es-mx/service-areas' }}
   schema={schema}
@@ -73,7 +78,7 @@ const schema = [
     crumbs={crumbs}
     eyebrow="Áreas que Atendemos"
     title="Áreas de Servicio de Techado en el Valle del Río Grande"
-    lead="Edel Roofing & Construction está en Edinburg y da servicio en todo el Valle del Río Grande: reemplazo de techo residencial, techado comercial y reparaciones para hogares y negocios. Elija su ciudad."
+    lead="Nuestra oficina está en Edinburg, y trabajamos en todo el Valle del Río Grande. Hacemos reemplazo de techo residencial, techado comercial y reparaciones para casas y negocios. Busque su ciudad abajo."
     bg={hero}
     lang="es"
   />
@@ -162,8 +167,8 @@ const schema = [
   <CtaBand
     lang="es"
     title="¿No está seguro si cubrimos su área?"
-    body="Si está en el Valle del Río Grande, podemos ayudar. Llame para un estimado gratis."
-    cta={{ label: 'Reciba un Estimado Gratis', href: '/es-mx/contact-us' }}
+    body="Si vive en el Valle del Río Grande, lo más seguro es que sí. Llámenos y se lo confirmamos. La inspección y el presupuesto por escrito son gratis."
+    cta={{ label: 'Pida una Inspección Gratis', href: '/es-mx/contact-us' }}
   />
 </Base>
 

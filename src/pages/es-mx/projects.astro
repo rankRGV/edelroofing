@@ -9,6 +9,10 @@
 // - H1 "NUESTROS PROYECTOS" written in normal case (CSS uppercases it).
 // - Added: breadcrumb, trust strip, tap-to-enlarge viewer, closing call band
 //   (heading + line from the /es-mx homepage CTA), hreflang to /projects.
+// - 2026-10-20 copy pass: closing band "Lo Tenemos Cubierto" (literal
+//   "We've got you covered") and "Hagamos realidad sus sueños" rewritten
+//   plainly in usted; H1/title now carry "Valle del Río Grande"; meta
+//   description rewritten.
 import Base from '../../layouts/Base.astro';
 import PageHero from '../../components/PageHero.astro';
 import TrustStrip from '../../components/TrustStrip.astro';
@@ -77,21 +81,21 @@ const crumbs = [
 ];
 ---
 <Base
-  title="Nuestros Proyectos | EDEL Roofing & Construction Inc."
-  description="EDEL Roofing & Construction Inc. en el Valle del Río Grande: vea nuestros proyectos de techos, remodelación y construcción. ¡Llame hoy al (956) 422-3335!"
+  title="Nuestros Proyectos en el Valle del Río Grande | EDEL Roofing & Construction"
+  description="Fotos de techos, remodelaciones y casas que EDEL Roofing & Construction ha hecho en Edinburg y el Valle del Río Grande. Llame al (956) 422-3335."
   lang="es"
   alternates={{ en: '/projects', es: '/es-mx/projects' }}
   schema={[breadcrumbSchema(crumbs)]}
 >
-  <PageHero crumbs={crumbs} eyebrow="Galería" title="Nuestros Proyectos" bg={hero} lang="es" />
+  <PageHero crumbs={crumbs} eyebrow="Galería" title="Nuestros Proyectos en el Valle del Río Grande" bg={hero} lang="es" />
   <TrustStrip lang="es" />
 
   <ProjectGallery photos={order} lang="es" />
 
   <CtaBand
     lang="es"
-    title="Lo Tenemos Cubierto"
-    body="¿Listo para comenzar su proyecto de techado, remodelación o construcción? Comuníquese con Eddie Elizondo y el equipo de EDEL hoy. Hagamos realidad sus sueños."
+    title="¿Tiene un proyecto en mente?"
+    body="Sea un techo, una remodelación o una casa nueva, llame a Eddie Elizondo y al equipo de EDEL. Le explicamos cómo empezar y, si es su techo, se lo revisamos gratis."
     cta={{ label: 'Contáctenos', href: '/es-mx/contact-us' }}
   />
 </Base>

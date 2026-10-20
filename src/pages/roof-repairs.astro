@@ -6,45 +6,49 @@
 // trust strip, quote/call buttons.
 // Note: overlaps /roof-repair-edinburg-tx (inventory problem 4). Left as is
 // in this batch; decide when the city pages are rebuilt (batch 4).
+// - 2026-10-20 copy pass: plain, warm rewrite; removed hype ("Premier",
+//   "Expert", "advanced techniques", "rapid response team", "peace of
+//   mind", "stand the test of time"); softened "ensuring a lasting solution
+//   that prevents future problems"; added "We answer 24/7" (sheet fact).
 import InnerPage from '../layouts/InnerPage.astro';
 import hero from '../assets/roof-repairs/modern-house.jpeg';
 import restoration from '../assets/roof-repairs/roof-restoration.jpeg';
 import repair from '../assets/roof-repairs/roof-repair.jpeg';
 ---
 <InnerPage
-  title="Roof Repair Services in Edinburg"
-  description="Trust EDEL Roofing Construction Inc. for Roof Repair in Edinburg, TX. From quick leak detection to shingle replacement and emergency repairs, we provide swift, reliable solutions that keep your home safe and secure."
+  title="Roof Repair in Edinburg, TX | Edel Roofing & Construction"
+  description="Leak repair, shingle replacement and emergency roof repair in Edinburg, TX. Free inspection and a written price before we start. Call (956) 422-3335."
   alternates={{ en: '/roof-repairs', es: '/es-mx/roof-repairs' }}
   crumbs={[
     { label: 'Home', href: '/' },
     { label: 'Roof Repairs', href: '/roof-repairs' },
   ]}
-  hero={{ eyebrow: 'Our Roofing Services', title: 'Expert Roof Repairs in Edinburg, TX', bg: hero }}
+  hero={{ eyebrow: 'Roof repairs', title: 'Roof Repairs in Edinburg, TX', bg: hero }}
   intro={{
-    eyebrow: 'Roofing Repairs',
-    title: "Edinburg's Premier Roofing Contractors",
-    body: "<a href=\"/\">EDEL Roofing &amp; Construction</a> understands the urgency of a leaky roof, damaged shingles, or any unforeseen roofing issue. Our Roof Repairs service is designed to swiftly address these concerns, providing timely solutions that not only restore your roof's integrity but also your peace of mind.",
+    eyebrow: 'Leaks and damage',
+    title: 'Got a leak? Call us.',
+    body: "A drip in the hallway, a few shingles in the yard, a stain on the ceiling that keeps getting bigger. You want it fixed before the next rain. <a href=\"/\">EDEL Roofing &amp; Construction</a> does roof repairs in Edinburg and across the Valley. We come out, find the problem, and give you a written price to fix it.",
     cta: { label: 'Contact Us', href: '/contact-us' },
     images: [{ src: restoration, alt: 'Roof Repairs' }],
   }}
   band={{
-    eyebrow: 'Our Approach',
-    title: 'Comprehensive Roof Repairs in Edinburg, TX',
-    body: 'With a team of experienced professionals and a commitment to excellence, we approach roof repairs with a comprehensive perspective. We not only fix the visible issues but also diagnose the underlying causes, ensuring a lasting solution that prevents future problems.',
+    eyebrow: 'Our approach',
+    title: 'We look for the cause',
+    body: "A patch over the wet spot won't help if the water is getting in somewhere else. Our crews fix the damage you can see, then track down what caused it. Fixing the cause is what keeps a repair from failing.",
     cta: { label: 'Get Instant Estimate', href: '/contact-us#estimate', roofle: true },
     images: [{ src: repair, alt: 'Roof Repair' }],
   }}
   benefits={{
-    title: 'Key Benefits of Our Repair Services',
+    title: 'What we repair',
     items: [
-      { title: 'Leak Detection and Repair', body: "Our experts employ advanced techniques to identify and fix leaks, preventing water damage and preserving your property's structural integrity." },
-      { title: 'Shingle Replacement', body: "Damaged or missing shingles compromise your roof's defense. Our shingle replacement services restore the look and protection of your roof." },
-      { title: 'Emergency Repairs', body: 'Storm damage or unexpected leaks? Our rapid response team is equipped to handle <a href="/contact-us">emergency repairs</a>, minimizing further damage to your property.' },
+      { title: 'Leak detection and repair', body: "We find where the water is getting in and fix it before it does more damage to your house." },
+      { title: 'Shingle replacement', body: "Damaged or missing shingles let wind and water get under your roof. We replace them so the roof looks right and keeps the weather out again." },
+      { title: 'Emergency repairs', body: 'Storm damage or a leak that showed up overnight? Call us. We answer 24/7 and handle <a href="/contact-us">emergency repairs</a> to keep more water from getting in.' },
     ],
   }}
   spokes={{
     title: 'Roof Repair by City',
-    intro: 'Each of these pages covers roof repair or roof inspections for one city.',
+    intro: 'Repair and inspection pages for Edinburg, McAllen and Mission, plus our page on storm damage.',
     links: [
       { href: '/roof-repair-edinburg-tx', label: 'Roof Repair in Edinburg, TX' },
       { href: '/roof-repair-mcallen-tx', label: 'Roof Repair in McAllen, TX' },
@@ -55,8 +59,8 @@ import repair from '../assets/roof-repairs/roof-repair.jpeg';
     ],
   }}
   closing={{
-    title: 'Secure Your Property',
-    body: "Don't let roofing issues compromise your safety and comfort. Choose EDEL Roofing &amp; Construction for expert roof repairs that stand the test of time. Contact us today to schedule a consultation and take the first step towards restoring the strength and protection of your roof.",
+    title: 'Get your roof looked at',
+    body: "Small leaks turn into big ones. Call us to set up a free inspection. We'll show you what we found and put the cost of the repair in writing.",
     cta: { label: 'Contact Us', href: '/contact-us' },
   }}
 />

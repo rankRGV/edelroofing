@@ -38,7 +38,7 @@
       "kind": "text",
       "paras": [
         "Mission es una ciudad más joven de lo que mucha gente piensa. Cerca de la mitad de sus casas se construyeron en el año 2000 o después, y el año mediano de construcción es 2000, según datos de encuesta de la Oficina del Censo (ACS 2020 a 2024). Alrededor del 68% son casas unifamiliares. Así que muchos techos de Mission todavía son el techo original, el que se puso cuando se construyó la casa, y muchos de esos ya tienen 20 años o más.",
-        "Un techo de tejas de esa edad en el Valle está cerca del final de su vida útil. Las tejas se ponen quebradizas, los gránulos se van a los canalones y el sellador alrededor de las ventilas y el tapajuntas se reseca. Ahí es cuando empiezan las goteras pequeñas. Una gotera pequeña en un techo viejo normalmente sigue siendo una reparación, siempre que el resto del techo esté en buen estado.",
+        "En el Valle, un techo de tejas de esa edad ya está casi gastado. Las tejas se ponen quebradizas, los gránulos se van a los canalones y el sellador alrededor de las ventilas y el tapajuntas se reseca. Ahí es cuando empiezan las goteras pequeñas. Una gotera pequeña en un techo viejo normalmente sigue siendo una reparación, siempre que el resto del techo esté en buen estado.",
         "Llegamos a Mission desde nuestra oficina en 1815 N Jackson Rd en Edinburg. Son unas 17 millas, más o menos 26 minutos hasta la alcaldía de Mission."
       ]
     },
@@ -58,7 +58,7 @@
       "cards": [
         {
           "title": "Tejas dañadas por granizo",
-          "body": "Las tejas agrietadas o golpeadas se reemplazan en el área afectada, buscando el mejor emparejamiento posible con el techo actual. El daño queda por escrito para su compañía de seguros."
+          "body": "Cambiamos las tejas agrietadas o golpeadas donde pegó el granizo, lo más parecidas posible a las de su techo. El daño le queda por escrito para su compañía de seguros."
         },
         {
           "title": "Tapajuntas desgastado",
@@ -87,7 +87,7 @@
       "alt": true,
       "kind": "text",
       "paras": [
-        "Si la gotera está en un solo lugar y las tejas de alrededor todavía se doblan sin agrietarse, una reparación tiene sentido. Si el techo gotea en varios lugares, tiene partes peladas donde ya no hay gránulos, o tiene madera de apoyo blanda en más de un área, el dinero rinde más en un techo nuevo. Le decimos cuál de las dos cosas vemos, y le mostramos las fotos para que usted mismo juzgue.",
+        "Si la gotera está en un solo lugar y las tejas de alrededor todavía se doblan sin agrietarse, una reparación tiene sentido. Si el techo gotea en varios lugares, tiene partes peladas donde ya no hay gránulos, o tiene madera de apoyo blanda en más de un área, el dinero rinde más en un techo nuevo. Le decimos cuál de las dos cosas vemos y le enseñamos las fotos, para que usted decida.",
         "Si se está inclinando por un techo nuevo, lea sobre <a href=\"/reemplazo-de-techo-mission-tx\">reemplazo de techo en Mission</a>. Para reclamos después de una tormenta, vea <a href=\"/es-mx/storm-damage\">daño por tormenta y granizo en Mission</a>. Nuestro artículo sobre el <a href=\"/costo-de-reparacion-de-techo-en-mission-tx-que-es-justo-y-que-cubre-el-seguro\">costo de reparación de techo en Mission</a> explica más a fondo los precios y el seguro."
       ]
     },
@@ -121,7 +121,7 @@
       "faqs": [
         {
           "q": "¿Cuál es un precio justo para una reparación de techo en Mission?",
-          "a": "La mayoría de las reparaciones cuestan entre unos cientos de dólares y alrededor de $1,500. Dónde cae la suya depende de lo que falló y de qué tan grande es el área. Un precio justo sale de una inspección, no de un cálculo por teléfono, así que escribimos el estimado después de ver el techo y antes de empezar."
+          "a": "La mayoría de las reparaciones cuestan entre unos cientos de dólares y alrededor de $1,500. Dónde cae la suya depende de lo que falló y de qué tan grande es el área. Por teléfono no le podemos dar un número justo. Escribimos el estimado después de ver el techo y antes de empezar."
         },
         {
           "q": "Mi techo tiene más de 20 años. ¿Mi seguro todavía lo va a cubrir?",
@@ -147,7 +147,7 @@
     }
   ],
   "cta": {
-    "title": "Obtenga un estimado gratis de reparación de techo en Mission",
+    "title": "Pida un estimado gratis de reparación de techo en Mission",
     "line": "Encontramos la gotera, le mostramos las fotos y ponemos el precio por escrito antes de empezar cualquier trabajo.",
     "buttons": [
       {
@@ -211,7 +211,7 @@
               "name": "¿Cuál es un precio justo para una reparación de techo en Mission?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "La mayoría de las reparaciones cuestan entre unos cientos de dólares y alrededor de $1,500. Dónde cae la suya depende de lo que falló y de qué tan grande es el área. Un precio justo sale de una inspección, no de un cálculo por teléfono, así que escribimos el estimado después de ver el techo y antes de empezar."
+                "text": "La mayoría de las reparaciones cuestan entre unos cientos de dólares y alrededor de $1,500. Dónde cae la suya depende de lo que falló y de qué tan grande es el área. Por teléfono no le podemos dar un número justo. Escribimos el estimado después de ver el techo y antes de empezar."
               }
             },
             {
@@ -263,6 +263,7 @@
     "Spanish breadcrumb \"Áreas de Servicio\" linked the English /service-areas; now /es-mx/service-areas",
     "em/en dashes swapped for commas, colons, or hyphens",
     "review counts (246/252) -> 250+ (match the homepage)",
-    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs",
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
   ]
 }

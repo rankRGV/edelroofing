@@ -4,7 +4,7 @@
   "city": "mission",
   "service": "replacement",
   "title": "Roof Replacement in Mission, TX | Edel Roofing & Construction",
-  "description": "Roof replacement in Mission, TX for original 2000s shingle roofs and storm damage. Full tear off, written scope, CertainTeed SELECT ShingleMaster. Call (956) 422-3335.",
+  "description": "Roof replacement in Mission, TX for original 2000s shingle roofs and storm damage. Full tear off and a written scope before work. Call (956) 422-3335.",
   "alternates": {
     "en": "/roof-replacement-mission-tx",
     "es": "/reemplazo-de-techo-mission-tx"
@@ -20,7 +20,7 @@
     }
   ],
   "h1": "Roof Replacement in Mission, TX",
-  "lede": "Edel Roofing &amp; Construction replaces shingle roofs on Mission homes. Full tear off, decking checked, and a written scope before work starts. Free estimates.",
+  "lede": "Edel Roofing &amp; Construction replaces shingle roofs on Mission homes. We tear off the old roof, check the decking, and give you a written scope before work starts. The estimate is free.",
   "heroCtas": [
     {
       "label": "Get a Free Estimate",
@@ -47,7 +47,7 @@
       "kind": "text",
       "paras": [
         "Mission has had its share of storms that end roofs early. On May 31, 2016, a downburst near Palmview and Mission brought winds the NWS estimated at 85 to 95 mph and damaged more than 150 homes and businesses. On April 21, 2023, spotters reported hail up to 2.5 inches in Mission. In July 2020, <a href=\"https://www.weather.gov/bro/2020event_hanna\">Hurricane Hanna</a> dropped 14.40 inches of rain on the city, and the NWS reported damage to hundreds of poorly built homes and other buildings, mostly to roofs.",
-        "When a storm damages a large part of a 20 year old roof, patching it often costs more over time than replacing it, and the insurance claim may cover much of the new roof. We write down what we find with photos so you have something concrete to show your insurer."
+        "When a storm damages a large part of a 20 year old roof, patching it often costs more over time than replacing it, and the insurance claim may cover much of the new roof. We write down what we find and take photos, so you have something solid to show your insurer."
       ]
     },
     {
@@ -132,7 +132,7 @@
         },
         {
           "q": "How long does it take?",
-          "a": "Most Mission homes are done in one to three days, weather permitting."
+          "a": "Most Mission homes are done in one to two days, depending on how big the roof is and the material. Bad weather can add time."
         },
         {
           "q": "How do I get an estimate in Mission?",
@@ -143,7 +143,7 @@
   ],
   "cta": {
     "title": "Get a free roof replacement estimate in Mission",
-    "line": "We inspect the roof and decking, then give you the price and scope in writing. No pressure.",
+    "line": "We check the roof and the decking, then hand you the price and scope in writing. No pressure.",
     "buttons": [
       {
         "label": "Book a Free Inspection",
@@ -193,7 +193,7 @@
           "@type": "WebPage",
           "name": "Roof Replacement in Mission, TX",
           "url": "https://www.edelroofing.com/roof-replacement-mission-tx",
-          "description": "Roof replacement in Mission, TX for original 2000s shingle roofs and storm damage. Full tear off, written scope, CertainTeed SELECT ShingleMaster. Call (956) 422-3335.",
+          "description": "Roof replacement in Mission, TX for original 2000s shingle roofs and storm damage. Full tear off and a written scope before work. Call (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -238,7 +238,7 @@
               "name": "How long does it take?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Most Mission homes are done in one to three days, weather permitting."
+                "text": "Most Mission homes are done in one to two days, depending on how big the roof is and the material. Bad weather can add time."
               }
             },
             {
@@ -258,6 +258,7 @@
     "\"unlocks stronger warranty coverage\" -> \"gives access to stronger warranty coverage\" (banned word)",
     "em/en dashes swapped for commas, colons, or hyphens",
     "review counts (246/252) -> 250+ (match the homepage)",
-    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs",
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
   ]
 }

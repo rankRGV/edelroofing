@@ -14,6 +14,15 @@
 // - Added: links to the Spanish city roof replacement pages, breadcrumb,
 //   trust strip, quote/call buttons, hreflang to /residential-roofing.
 // - Image alt text in Spanish (live used English alts).
+// - 2026-10-20 copy pass: plain, warm rewrite in usted; removed metaphors and
+//   hype ("escudo", "corone su propiedad con distinción", "obra maestra",
+//   "elegancia", "resisten el paso del tiempo", "de primera calidad",
+//   "excepcional", "Transformando", "eleve"); removed unprovable claims
+//   ("ahorrar significativamente en facturas", "mejore el valor", "agregando
+//   valor"); added sheet facts (one to two day replacements, brands,
+//   ShingleMaster / Owens Corning Preferred, free inspection, written
+//   estimate, financing via /es-mx/contact-us); H1 now carries Edinburg;
+//   Roofle button -> "Estimado al Instante".
 import InnerPage from '../../layouts/InnerPage.astro';
 import hero from '../../assets/residential-roofing/house-with-swimming-pool.jpg';
 import construction from '../../assets/residential-roofing/roofing-construction.jpeg';
@@ -24,25 +33,25 @@ import newRoof from '../../assets/residential-roofing/new-residential-roof.jpeg'
 <InnerPage
   lang="es"
   title="Techos Residenciales en Edinburg, TX | EDEL Roofing & Construction Inc."
-  description="EDEL Roofing & Construction Inc. en el Valle del Río Grande: su mejor opción para techos residenciales. ¡Llame hoy al (956) 422-3335!"
+  description="Techos nuevos y reemplazo de techos para casas en Edinburg y el Valle del Río Grande desde 2003. CertainTeed, Owens Corning y GAF. Llame al (956) 422-3335."
   alternates={{ en: '/residential-roofing', es: '/es-mx/residential-roofing' }}
   crumbs={[
     { label: 'Inicio', href: '/es-mx' },
     { label: 'Techos Residenciales', href: '/es-mx/residential-roofing' },
   ]}
-  hero={{ eyebrow: 'Nuestros Servicios de Techado', title: 'Techos Residenciales', bg: hero }}
+  hero={{ eyebrow: 'Nuestros Servicios de Techado', title: 'Techos Residenciales en Edinburg', bg: hero }}
   intro={{
-    eyebrow: 'Transformando Techos',
-    title: 'Donde la durabilidad se une a la elegancia',
-    body: 'EDEL Roofing &amp; Construction Inc. le ofrece un enfoque distintivo para techos residenciales que combina durabilidad con elegancia estética. Nuestros servicios de techado residencial están diseñados para ofrecer algo más que un techo funcional: nuestro objetivo es crear una característica destacada que mejore el valor y el atractivo general de su propiedad.',
+    eyebrow: 'Techos para su casa',
+    title: 'Un techo que dure y que se vea bien',
+    body: 'EDEL Roofing &amp; Construction Inc. pone techos nuevos y reemplaza techos de casas en Edinburg y todo el Valle del Río Grande. En cada trabajo buscamos dos cosas: que el techo aguante muchos años y que su casa se vea bien. Un reemplazo de techo en casa normalmente lo terminamos en uno o dos días; depende del tamaño y del material que usted escoja.',
     cta: { label: 'Contáctenos', href: '/es-mx/contact-us' },
     images: [{ src: construction, alt: 'Construcción de techo' }],
   }}
   band={{
     eyebrow: 'Instalación de Techo',
-    title: 'Fortalezca el escudo de su propiedad',
-    body: 'Nuestro servicio de Instalación de Techos va más allá de los conceptos básicos de la construcción; se trata de crear un escudo robusto que no sólo proteja su propiedad sino que también eleve su atractivo exterior. En EDEL Roofing &amp; Construction, fusionamos precisión, materiales de primera calidad y mano de obra experta para construir techos que resisten el paso del tiempo. Desde el concepto hasta la teja final, priorizamos la durabilidad, la estética y su visión única, asegurando que cada instalación se convierta en una obra maestra que corone su propiedad con distinción.',
-    cta: { label: 'Pida una Cotización', href: '/es-mx/contact-us#contacto', roofle: true },
+    title: 'Cómo instalamos su techo nuevo',
+    body: 'Un techo bien instalado depende del cuidado en cada paso. Medimos con precisión, usamos buenos materiales y nuestros techadores saben hacer su trabajo. Nos importa que el techo dure y que quede como usted lo quiere, hasta la última teja. EDEL tiene la certificación CertainTeed Select ShingleMaster (somos los únicos en el Valle) y es Contratista Preferido de Owens Corning.',
+    cta: { label: 'Estimado al Instante', href: '/es-mx/contact-us#contacto', roofle: true },
     images: [
       { src: install, alt: 'Instalación de techo residencial' },
       { src: residential, alt: 'Techo residencial' },
@@ -50,11 +59,11 @@ import newRoof from '../../assets/residential-roofing/new-residential-roof.jpeg'
     ],
   }}
   benefits={{
-    title: 'Beneficios clave de nuestros servicios de techado',
+    title: 'Lo que recibe con EDEL',
     items: [
-      { title: 'Soluciones de techado personalizadas', body: 'Ofrecemos una amplia gama de materiales y estilos, desde tejas de asfalto hasta techos de metal, para satisfacer las necesidades tanto residenciales como comerciales.' },
-      { title: 'Opciones energéticamente eficientes', body: 'Nuestras soluciones para techos no solo protegen su propiedad sino que también ofrecen una mayor eficiencia energética, lo que le ayuda a ahorrar significativamente en facturas de servicios públicos.' },
-      { title: 'Durabilidad a largo plazo', body: 'Utilizamos materiales de alta calidad y técnicas de instalación expertas para garantizar que su techo resista el paso del tiempo, agregando valor a su propiedad.' },
+      { title: 'Materiales y estilos para escoger', body: 'Trabajamos con muchos materiales y estilos, como tejas de asfalto y techos de metal, para casas y también para negocios. Instalamos CertainTeed, Owens Corning y GAF, entre otras marcas.' },
+      { title: 'Opciones de eficiencia energética', body: 'Tenemos opciones de techo con mejor eficiencia energética. Si le interesa, le explicamos cuáles hay para su casa y en qué se diferencian.' },
+      { title: 'Hecho para durar', body: 'Usamos buenos materiales y los instalamos con cuidado, para que su techo nuevo le dure por muchos años.' },
     ],
   }}
   spokes={{
@@ -68,8 +77,8 @@ import newRoof from '../../assets/residential-roofing/new-residential-roof.jpeg'
     ],
   }}
   closing={{
-    title: 'Proteja y mejore su propiedad',
-    body: 'Cuando opta por EDEL Roofing &amp; Construction para sus necesidades de techado residencial, está seleccionando un socio comprometido a mejorar tanto la solidez estructural como el atractivo visual de su propiedad. Eleve su hogar con un techo que no solo cumpla su propósito sino que también muestre una artesanía excepcional.',
+    title: '¿Necesita un techo nuevo?',
+    body: 'Llame a EDEL Roofing &amp; Construction o pida su estimado en línea. Después revisamos su techo gratis, y antes de empezar le damos un presupuesto por escrito con el trabajo y el precio. Si prefiere pagar a plazos, también hay financiamiento para reemplazo de techo. <a href="/es-mx/contact-us">Pregunte por las opciones</a>.',
     cta: { label: 'Contáctenos', href: '/es-mx/contact-us' },
   }}
 />

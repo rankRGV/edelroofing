@@ -8,8 +8,10 @@
 //   it now dials the real number from site.ts.
 // - "Get Instant Estimate" pointed at /#estimate (no such anchor); it now opens
 //   the Roofle quote.
-// - "25-year legacy" kept as live (open question: vs "since 2003").
 // - Added: breadcrumb, trust strip, quote/call buttons.
+// - 2026-10-20 copy pass: plain, warm rewrite; removed hype ("top-notch",
+//   "exceptional", "dreams", "Partner in Transformation"); "since 2003"
+//   replaces "25-year legacy"; "Reader's Choice" spelled "Readers' Choice".
 import InnerPage from '../layouts/InnerPage.astro';
 import hero from '../assets/inner/edel-roofing-banner.webp';
 import truck from '../assets/about-us/edel-truck.webp';
@@ -19,19 +21,19 @@ import kitchen from '../assets/about-us/new-modern-kitchen.jpg';
 import house from '../assets/about-us/modern-house.jpg';
 ---
 <InnerPage
-  title="About EDEL Roofing & Construction | Roofing Solutions"
-  description="EDEL Roofing & Construction Inc. is your trusted source for remodeling, construction & roofing solutions in Rio Grande Valley communities. Visit to know more!"
+  title="About EDEL Roofing & Construction | Edinburg, TX Since 2003"
+  description="EDEL Roofing & Construction Inc. has been roofing the Rio Grande Valley since 2003. We also remodel and build homes. Meet founder Eddie Elizondo."
   alternates={{ en: '/about-us', es: '/es-mx/about-us' }}
   crumbs={[
     { label: 'Home', href: '/' },
     { label: 'About Us', href: '/about-us' },
   ]}
-  hero={{ eyebrow: 'About Our Company', title: 'About Edel Roofing & Construction Inc', bg: hero }}
+  hero={{ eyebrow: 'About us', title: 'About Edel Roofing & Construction Inc', bg: hero }}
   intro={{
-    eyebrow: 'Our Vision and Expertise',
-    title: 'Building on Vision & Passion',
-    body: "EDEL Roofing &amp; Construction Inc. is proud to have a 25-year legacy rooted in the vision of founder Eddie Elizondo. With an enduring commitment to quality construction and exceptional customer service, we've become a trusted name in the Rio Grande Valley communities. Eddie's lifelong dedication to construction has been our cornerstone, and we continue to deliver top-notch <a href=\"/roof-repairs\">roofing solutions</a> to our valued customers.",
-    cta: { label: 'Help Me Protect My Home', href: '/contact-us' },
+    eyebrow: 'Who we are',
+    title: 'Started by Eddie Elizondo, based in Edinburg',
+    body: "EDEL Roofing &amp; Construction Inc. was founded by Eddie Elizondo, and we've been roofing homes and businesses in the Rio Grande Valley since 2003. We do <a href=\"/roof-repairs\">roofing repairs</a>, new roofs and full replacements. We also remodel kitchens and bathrooms and build new homes. Our office is at 1815 N Jackson Rd in Edinburg.",
+    cta: { label: 'Contact Us', href: '/contact-us' },
     images: [
       { src: truck, alt: "Edel Roofing & Construction Inc's Truck" },
       { src: building, alt: 'Commercial Building' },
@@ -41,15 +43,15 @@ import house from '../assets/about-us/modern-house.jpg';
     ],
   }}
   band={{
-    title: "EDEL Roofing & Construction Inc's Story",
+    title: 'How Edel got started',
     body: [
-      "EDEL Roofing &amp; Construction Inc. stands as a tribute to the vision and passion of our founder, Eddie Elizondo. With a lifelong connection to construction, Eddie's journey from working alongside family members to his educational pursuits culminated in the creation of EDEL Roofing &amp; Construction Inc. His determination to provide homes that resonate with his clients' dreams is the heartbeat of our company, guiding us as we craft enduring roofs, remodel interiors, and build homes from the ground up.",
-      "EDEL Roofing &amp; Construction Inc. has become a trusted name in the Rio Grande Valley communities. Our reputation has been earned through a steadfast commitment to putting customers first, being transparent and honest, and ensuring that every project runs smoothly. The recognition we have received, including The Monitor's Reader's Choice Awards and the Valley Morning Star Readers' Choice Awards, shows our dedication to excellence.",
+      "Eddie grew up around construction. He worked alongside family members, kept going with his education, and then opened EDEL Roofing &amp; Construction Inc. Today we put on roofs, remodel interiors and build homes from the ground up. The goal is the same one Eddie started with: give people the home they had in mind.",
+      "People in the Valley know us for putting customers first and being honest and open about every job. Readers of The Monitor and the Valley Morning Star have both named us in their Readers' Choice Awards.",
     ],
   }}
   closing={{
-    title: 'Your Partner in Transformation',
-    body: "At EDEL Roofing &amp; Construction Inc., we understand that your home is a reflection of your aspirations. Whether it's a sturdy roof over your head, a newly remodeled space, or a dream home realized, we are here to make it happen. Contact Eddie Elizondo and the EDEL team today to start turning possibilities into reality.",
+    title: 'Talk with Eddie and the team',
+    body: "Need a roof repair, a new roof, a remodel or a new home? Call Eddie Elizondo and the EDEL team and tell us what you need. For roofs, we start with a free inspection and give you a written estimate before any work begins.",
     cta: { label: 'Get Instant Estimate', href: '/contact-us#estimate', roofle: true },
   }}
 />

@@ -13,7 +13,7 @@
     }
   ],
   "h1": "Storm & Hail Damage Roof Repair in Mission, TX",
-  "lede": "Edel Roofing &amp; Construction inspects and repairs storm damaged roofs in Mission: hail, high wind, and heavy rain. Free inspection, photos, and a written report you can give your insurer.",
+  "lede": "Edel Roofing &amp; Construction inspects and repairs Mission roofs hurt by hail, high wind and heavy rain. The inspection is free, and you get photos and a written report to give your insurer.",
   "heroCtas": [
     {
       "label": "Get a Free Inspection",
@@ -32,7 +32,7 @@
       "paras": [
         "Mission has taken several damaging storms in the last ten years. National Weather Service reports include:",
         "May 31, 2016: <a href=\"https://www.weather.gov/bro/2016event_may31mission\">a downburst near Palmview and Mission</a> with winds estimated at 85 to 95 mph that damaged more than 150 homes and businesses. July 25, 2020: <a href=\"https://www.weather.gov/bro/2020event_hanna\">Hurricane Hanna</a> dropped 14.40 inches of rain on Mission, with 60 to 65 mph gusts along Interstate 2, and damaged hundreds of poorly built homes and other buildings, mostly their roofs. April 21, 2023: spotters reported hail up to 2.5 inches in Mission and 2.75 inches in Peñitas. April 29, 2023: wind flipped food trucks near Bryan Rd and Business 83. May 29, 2023: hail near 0.88 inches about a mile east of town.",
-        "Hail sizes are spotter reports, so they are estimates. Still, hail over 1 inch is big enough to crack shingles, and Mission has had it more than once."
+        "Hail sizes come from spotters, so they are estimates. Hail over 1 inch is big enough to crack shingles, and Mission has had it more than once."
       ]
     },
     {
@@ -243,6 +243,7 @@
   ],
   "changes": [
     "review counts (246/252) -> 250+ (match the homepage)",
-    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs",
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
   ]
 }

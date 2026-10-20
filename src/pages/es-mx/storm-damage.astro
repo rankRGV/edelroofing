@@ -12,6 +12,12 @@
 // - Added: links to the Spanish city roof repair pages, breadcrumb, trust
 //   strip, quote/call buttons, hreflang to /storm-damage.
 // - Image alt text in Spanish (live used English alts).
+// - 2026-10-20 copy pass: plain, warm rewrite in usted; H1 "Daño de la
+//   Tormenta" (awkward) -> "Reparación de Daños por Tormenta en el Valle del
+//   Río Grande", title to match; removed filler ("socio confiable",
+//   "soluciones expertas", "tranquilidad", "resiliencia", "no solo...
+//   estamos"); "respuesta rápida" tied to the real 24/7 line; Roofle button
+//   -> "Estimado al Instante".
 import InnerPage from '../../layouts/InnerPage.astro';
 import hero from '../../assets/storm-damage/edel-roofing-storm-damage-2.jpg';
 import storm5 from '../../assets/storm-damage/edel-roofing-storm-damage-5.jpg';
@@ -19,39 +25,39 @@ import gray from '../../assets/storm-damage/gray-roof-design.jpeg';
 ---
 <InnerPage
   lang="es"
-  title="Reparación de Daños por Tormenta | EDEL Roofing & Construction Inc."
-  description="EDEL Roofing & Construction Inc. en el Valle del Río Grande: soluciones expertas para daños por tormenta. Techos, remodelación y construcción. Llame al (956) 422-3335."
+  title="Reparación de Daños por Tormenta en el Valle del Río Grande | EDEL Roofing"
+  description="¿Una tormenta le dañó el techo? Lo revisamos gratis en Edinburg y todo el Valle del Río Grande. Contestamos 24/7. Llame al (956) 422-3335."
   alternates={{ en: '/storm-damage', es: '/es-mx/storm-damage' }}
   crumbs={[
     { label: 'Inicio', href: '/es-mx' },
     { label: 'Daño de la Tormenta', href: '/es-mx/storm-damage' },
   ]}
-  hero={{ eyebrow: 'Nuestros Servicios de Techado', title: 'Daño de la Tormenta', bg: hero }}
+  hero={{ eyebrow: 'Nuestros Servicios de Techado', title: 'Reparación de Daños por Tormenta en el Valle del Río Grande', bg: hero }}
   intro={{
     eyebrow: 'Reparación de Techo por Daño de Tormenta',
-    title: 'Reparación de techo listo para tormentas',
-    body: 'EDEL Roofing &amp; Construction es su socio confiable para reparaciones rápidas y efectivas de techos relacionadas con tormentas. Nuestro equipo actúa con rapidez para garantizar la seguridad de su hogar y su tranquilidad.',
+    title: 'Después de la tormenta, llámenos',
+    body: 'Si una tormenta le dañó el techo, EDEL Roofing &amp; Construction le ayuda a repararlo pronto y bien. Hacemos reparación de daños por tormenta en Edinburg y todo el Valle del Río Grande. Contestamos el teléfono 24/7, y nuestro equipo se mueve rápido para que su casa quede segura.',
     cta: { label: 'Contáctenos', href: '/es-mx/contact-us' },
     images: [{ src: storm5, alt: 'Techadores reparando daños por tormenta' }],
   }}
   band={{
     eyebrow: 'Nuestro Enfoque',
-    title: 'Soluciones para daños por tormentas preparadas en Texas',
-    body: 'Vamos más allá de las soluciones rápidas. Nuestro enfoque integral incluye una evaluación detallada de los daños, planes de reparación personalizados y medidas preventivas para fortalecer su techo contra futuras tormentas. No solo estamos restaurando su techo; estamos mejorando su resiliencia.',
-    cta: { label: 'Pida una Cotización', href: '/es-mx/contact-us#contacto', roofle: true },
+    title: 'Revisamos todo el daño',
+    body: 'Un parche rápido no siempre basta. Primero revisamos su techo con detalle para ver todo lo que dañó la tormenta. Luego le damos un plan de reparación hecho para su techo y le recomendamos qué hacer para que aguante mejor la próxima tormenta.',
+    cta: { label: 'Estimado al Instante', href: '/es-mx/contact-us#contacto', roofle: true },
     images: [{ src: gray, alt: 'Diseño de techo gris' }],
   }}
   benefits={{
-    title: 'Beneficios clave de nuestros servicios de daños por tormentas',
+    title: 'Por qué llamar a EDEL después de una tormenta',
     items: [
-      { title: 'Respuesta rápida y localizada en el Valle del Río Grande', body: 'Cuando las tormentas azotan el Valle del Río Grande, el tiempo es esencial. Nuestro equipo local está capacitado para responder rápidamente, asegurando daños mínimos y una recuperación más rápida. No espere ayuda; ya estamos en su comunidad.' },
-      { title: 'Evaluaciones integrales de daños por tormentas', body: 'Comprender el alcance total de los daños causados por las tormentas es clave para una reparación eficaz. Nuestros expertos realizan inspecciones exhaustivas y le brindan un informe detallado que lo ayuda a tomar decisiones informadas.' },
-      { title: 'Resiliencia del techo a largo plazo', body: 'En una región conocida por su clima desafiante, no solo reparamos; fortalecemos. Nuestros <a href="/es-mx/contact-us">servicios de daños por tormentas en el Valle del Río Grande</a> incluyen medidas preventivas que mejoran la resistencia de su techo contra futuras tormentas.' },
+      { title: 'Equipo local en el Valle del Río Grande', body: 'Cuando pega una tormenta en el Valle, conviene revisar el techo pronto. Nuestro equipo es de aquí y tiene su oficina en Edinburg, así que no tiene que esperar a que llegue alguien de fuera.' },
+      { title: 'Revisión completa del daño', body: 'Para reparar bien, primero hay que saber todo lo que dañó la tormenta. Revisamos su techo completo y le damos un informe detallado, para que usted decida con toda la información en la mano.' },
+      { title: 'Un techo más fuerte para la próxima', body: 'El clima del Valle es duro con los techos. Además de reparar, le recomendamos medidas para que su techo resista mejor. Pregunte por nuestros <a href="/es-mx/contact-us">servicios de daños por tormenta en el Valle del Río Grande</a>.' },
     ],
   }}
   spokes={{
     title: 'Reparación de Techo por Ciudad',
-    intro: 'Cada una de estas páginas cubre la reparación de techos en una ciudad.',
+    intro: '¿Está en Edinburg, McAllen o Mission? Vea la página de reparación de techos para su ciudad.',
     links: [
       { href: '/reparacion-de-techo-edinburg-tx', label: 'Reparación de Techo en Edinburg, TX' },
       { href: '/reparacion-de-techo-mcallen-tx', label: 'Reparación de Techo en McAllen, TX' },
@@ -59,8 +65,8 @@ import gray from '../../assets/storm-damage/gray-roof-design.jpeg';
     ],
   }}
   closing={{
-    title: 'Asegure su propiedad contra daños de tormentas',
-    body: 'No permita que los daños causados por la tormenta pongan en riesgo su hogar. Elija EDEL Roofing &amp; Construction para <a href="/es-mx/roof-repairs">reparaciones de techos</a> rápidas, efectivas y duraderas. Contáctenos hoy para fortalecer su propiedad contra los elementos y restaurar su tranquilidad.',
+    title: '¿La tormenta le dañó el techo?',
+    body: 'Llame a EDEL Roofing &amp; Construction. Revisamos el daño sin costo y le damos un presupuesto por escrito para las <a href="/es-mx/roof-repairs">reparaciones de techo</a> antes de empezar.',
     cta: { label: 'Contáctenos', href: '/es-mx/contact-us' },
   }}
 />

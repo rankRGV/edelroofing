@@ -4,7 +4,7 @@
   "city": "mission",
   "service": "repair",
   "title": "Roof Repair in Mission, TX | Edel Roofing & Construction",
-  "description": "Roof repair in Mission, TX for hail damage, leaks, and aging 2000s shingle roofs. Free inspection, written price first. Licensed RCAT #03-0489. Call (956) 422-3335.",
+  "description": "Roof repair in Mission, TX for hail damage, leaks and aging 2000s shingle roofs. Free inspection, written price first. Call (956) 422-3335.",
   "alternates": {
     "en": "/roof-repair-mission-tx",
     "es": "/reparacion-de-techo-mission-tx"
@@ -38,7 +38,7 @@
       "kind": "text",
       "paras": [
         "Mission is a younger city than most people think. About half of its homes were built in 2000 or later, and the median home was built in 2000, according to Census Bureau survey data (ACS 2020 to 2024). Around 68% are single family houses. So a lot of Mission roofs are still the original roof, put on when the house was built, and many of those are now 20 years old or more.",
-        "A shingle roof that age in the Valley is near the end of its life. Shingles turn brittle, the granules wash into the gutters, and the sealant around vents and flashing dries out. That is when the small leaks start. A small leak on an older roof is still usually a repair, as long as the rest of the roof is sound.",
+        "In the Valley, a shingle roof that age is close to worn out. The shingles get brittle, the granules wash into the gutters, and the sealant around vents and flashing dries out. That is when the small leaks start. A small leak on an older roof is still usually a repair, as long as the rest of the roof is sound.",
         "We come to Mission from our office at 1815 N Jackson Rd in Edinburg. It is about 17 miles, roughly 26 minutes to Mission City Hall."
       ]
     },
@@ -58,7 +58,7 @@
       "cards": [
         {
           "title": "Hail damaged shingles",
-          "body": "Cracked or bruised shingles are replaced in the area that was hit and matched to the existing roof as close as possible. The damage goes in writing for your insurance company."
+          "body": "We replace cracked or bruised shingles where the hail hit and match them to your roof as close as we can. You get the damage in writing for your insurance company."
         },
         {
           "title": "Aging flashing",
@@ -87,7 +87,7 @@
       "alt": true,
       "kind": "text",
       "paras": [
-        "If the leak is in one place and the shingles around it still bend without cracking, a repair makes sense. If the roof leaks in several places, has bare patches where the granules are gone, or has soft decking in more than one area, the money is better spent on a new roof. We tell you which one we see, and we show you the photos so you can judge for yourself.",
+        "If the leak is in one place and the shingles around it still bend without cracking, a repair makes sense. If the roof leaks in several places, has bare patches where the granules are gone, or has soft decking in more than one area, the money is better spent on a new roof. We tell you which one we see and show you the photos, so you can decide for yourself.",
         "If you are leaning toward a new roof, read about <a href=\"/roof-replacement-mission-tx\">roof replacement in Mission</a>. For claims after a storm, see <a href=\"/storm-damage-mission-tx\">storm and hail damage in Mission</a>. Our post on <a href=\"/roof-repair-cost-in-mission-tx-what-s-fair-and-what-insurance-covers\">roof repair cost in Mission</a> goes deeper on pricing and insurance."
       ]
     },
@@ -121,7 +121,7 @@
       "faqs": [
         {
           "q": "What is a fair price for a roof repair in Mission?",
-          "a": "Most repairs fall between a few hundred dollars and about $1,500. Where yours lands depends on what failed and how big the area is. A fair price comes from an inspection, not a phone guess, so we write the estimate after we see the roof and before we start."
+          "a": "Most repairs fall between a few hundred dollars and about $1,500. Where yours lands depends on what failed and how big the area is. We can't give you a fair number over the phone. We write the estimate after we see the roof and before we start."
         },
         {
           "q": "My roof is over 20 years old. Will my insurance still cover it?",
@@ -198,7 +198,7 @@
           "@type": "WebPage",
           "name": "Roof Repair in Mission, TX",
           "url": "https://www.edelroofing.com/roof-repair-mission-tx",
-          "description": "Roof repair in Mission, TX for hail damage, leaks, and aging 2000s shingle roofs. Free inspection, written price first. Licensed RCAT #03-0489. Call (956) 422-3335.",
+          "description": "Roof repair in Mission, TX for hail damage, leaks and aging 2000s shingle roofs. Free inspection, written price first. Call (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -211,7 +211,7 @@
               "name": "What is a fair price for a roof repair in Mission?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Most repairs fall between a few hundred dollars and about $1,500. Where yours lands depends on what failed and how big the area is. A fair price comes from an inspection, not a phone guess, so we write the estimate after we see the roof and before we start."
+                "text": "Most repairs fall between a few hundred dollars and about $1,500. Where yours lands depends on what failed and how big the area is. We can't give you a fair number over the phone. We write the estimate after we see the roof and before we start."
               }
             },
             {
@@ -262,6 +262,7 @@
   "changes": [
     "em/en dashes swapped for commas, colons, or hyphens",
     "review counts (246/252) -> 250+ (match the homepage)",
-    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs",
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
   ]
 }

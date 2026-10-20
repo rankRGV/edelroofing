@@ -4,7 +4,7 @@
   "city": "mcallen",
   "service": "coatings",
   "title": "Roof Coating Services in McAllen, TX | Edel Roofing & Construction",
-  "description": "Reflective roof coatings for flat commercial roofs in McAllen, TX. We check the roof first and only recommend a coating when it qualifies. Call (956) 422-3335.",
+  "description": "Reflective roof coatings for flat commercial roofs in McAllen, TX. We check the roof first and only quote a coating if it qualifies. Call (956) 422-3335.",
   "alternates": null,
   "crumbs": [
     {
@@ -30,8 +30,8 @@
       "alt": false,
       "kind": "text",
       "paras": [
-        "A roof coating is a liquid layer rolled or sprayed over an existing flat or low slope roof. It cures into one continuous reflective layer. On a roof that is aging but still sound, it seals small cracks and seams, reflects sunlight, and adds years before the roof needs a full replacement.",
-        "McAllen is a good place for that kind of product because of the heat. NOAA normals for the McAllen airport show about 40 days a year at 100°F or hotter, and the average high in August is 99.6°F. A dark membrane in that sun runs much hotter than the air, and that heat is what dries it out and opens seams. A reflective surface keeps the roof cooler, which slows that wear and can lower the heat load on the building below."
+        "A roof coating is a liquid layer rolled or sprayed over an existing flat or low slope roof. It dries into one reflective layer with no seams. On a roof that's getting old but is still sound, it seals small cracks and seams and reflects the sun, and the roof goes longer before it needs replacing.",
+        "The heat is why coatings make sense in McAllen. NOAA normals for the McAllen airport show about 40 days a year at 100°F or hotter, and the average high in August is 99.6°F. A dark membrane in that sun runs much hotter than the air, and that heat is what dries it out and opens seams. A reflective surface keeps the roof cooler, which slows that wear and can lower the heat load on the building below."
       ]
     },
     {
@@ -40,7 +40,7 @@
       "kind": "text",
       "paras": [
         "A coating is not a fix for a failed roof. If water has already soaked the insulation under the membrane, coating over it traps the moisture, and the roof keeps rotting underneath. If the membrane is split, blistered across large areas, or pulling loose from the deck, it needs repair or replacement first.",
-        "That is why we inspect before we quote. We walk the whole roof, check the seams and flashing, and look for wet areas. If the roof qualifies, we give you a written estimate for the coating. If it does not, we tell you and explain what it needs instead. See <a href=\"/commercial-roofing-mcallen-tx\">commercial roofing in McAllen</a> for repair and replacement."
+        "So we inspect before we give you a price. We walk the whole roof, check the seams and flashing, and look for wet areas. If the roof qualifies, we give you a written estimate for the coating. If it does not, we tell you and explain what it needs instead. See <a href=\"/commercial-roofing-mcallen-tx\">commercial roofing in McAllen</a> for repair and replacement."
       ]
     },
     {
@@ -75,7 +75,7 @@
       ]
     },
     {
-      "title": "Why McAllen owners trust Edel with coatings",
+      "title": "Why McAllen owners call Edel for coatings",
       "alt": false,
       "kind": "proof",
       "proof": [
@@ -108,7 +108,7 @@
         },
         {
           "q": "How long does a roof coating last?",
-          "a": "It depends on the product, the thickness applied, and the roof underneath. A coating can add several years of service life. You get a realistic estimate for your roof, not a generic number."
+          "a": "That depends on the product, how thick it goes on and the roof underneath. A coating can add several years. We give you a realistic number for your roof, not a stock answer."
         },
         {
           "q": "Is a coating cheaper than replacing the roof?",
@@ -131,7 +131,7 @@
   ],
   "cta": {
     "title": "Find out if your McAllen roof can be coated",
-    "line": "We inspect the roof, tell you honestly whether a coating fits, and put the estimate in writing.",
+    "line": "We go up, tell you straight if a coating will work on your roof, and put the estimate in writing.",
     "buttons": [
       {
         "label": "Book a Free Inspection",
@@ -175,7 +175,7 @@
           "@type": "WebPage",
           "name": "Roof Coating Services in McAllen, TX",
           "url": "https://www.edelroofing.com/roof-coatings-mcallen-tx",
-          "description": "Reflective roof coatings for flat commercial roofs in McAllen, TX. We check the roof first and only recommend a coating when it qualifies. Call (956) 422-3335.",
+          "description": "Reflective roof coatings for flat commercial roofs in McAllen, TX. We check the roof first and only quote a coating if it qualifies. Call (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -196,7 +196,7 @@
               "name": "How long does a roof coating last?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "It depends on the product, the thickness applied, and the roof underneath. A coating can add several years of service life. You get a realistic estimate for your roof, not a generic number."
+                "text": "That depends on the product, how thick it goes on and the roof underneath. A coating can add several years. We give you a realistic number for your roof, not a stock answer."
               }
             },
             {
@@ -239,6 +239,7 @@
   "changes": [
     "em/en dashes swapped for commas, colons, or hyphens",
     "review counts (246/252) -> 250+ (match the homepage)",
-    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs",
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
   ]
 }

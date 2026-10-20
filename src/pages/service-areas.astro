@@ -9,6 +9,11 @@
 // - Added: McAllen and Mission page lists (their city x service pages had
 //   ~2 inlinks each), breadcrumb, quote/call buttons in the hero.
 // "Seamless gutter" is the product name (one-piece gutters), kept on purpose.
+// - 2026-10-20 copy pass: plain, warm rewrite of the lead and closing band;
+//   dropped "the largest city in the Valley" from McAllen (Brownsville is
+//   larger per the 2020 Census); "mid-Valley" -> "Mid Valley", "low-slope"
+//   -> "low slope" (no hyphens); closing button now says what its link does
+//   ("Book a Free Inspection", href unchanged).
 import Base from '../layouts/Base.astro';
 import PageHero from '../components/PageHero.astro';
 import SpokeLinks from '../components/SpokeLinks.astro';
@@ -24,11 +29,11 @@ const crumbs = [
 ];
 
 const cities: { name: string; line: string; href?: string; home?: boolean }[] = [
-  { name: 'Edinburg', line: 'Roof replacement, repairs & commercial roofing in Edinburg.', href: '/', home: true },
-  { name: 'McAllen', line: 'Roofing for McAllen, the largest city in the Valley.', href: '/roofing-mcallen-tx' },
+  { name: 'Edinburg', line: 'Roof replacement, repairs and commercial roofing in Edinburg.', href: '/', home: true },
+  { name: 'McAllen', line: 'Roofing for McAllen homes and businesses.', href: '/roofing-mcallen-tx' },
   { name: 'Mission', line: 'Roofing for Mission and the Sharyland area.', href: '/roofing-mission-tx' },
   { name: 'Pharr', line: 'Roofing for Pharr and the central Valley.' },
-  { name: 'Weslaco', line: 'Roofing for Weslaco and the mid-Valley.' },
+  { name: 'Weslaco', line: 'Roofing for Weslaco and the Mid Valley.' },
   { name: 'Harlingen', line: 'Roofing for Harlingen and Cameron County.' },
   { name: 'Brownsville', line: 'Roofing for Brownsville and the southern Valley.' },
   { name: 'Rio Grande City', line: 'Roofing for Rio Grande City and Starr County.' },
@@ -36,8 +41,8 @@ const cities: { name: string; line: string; href?: string; home?: boolean }[] = 
 
 const services = [
   { href: '/residential-roofing', title: 'Residential Roof Replacement', line: 'New roofs and full replacements for homes across the RGV.' },
-  { href: '/commercial-roofing', title: 'Commercial Roofing', line: 'Flat and low-slope systems for businesses and properties.' },
-  { href: '/roof-repairs', title: 'Roof Repairs', line: 'Leak repairs, storm damage, and inspections.' },
+  { href: '/commercial-roofing', title: 'Commercial Roofing', line: 'Flat and low slope roofs for businesses and other properties.' },
+  { href: '/roof-repairs', title: 'Roof Repairs', line: 'Leak repairs, storm damage and inspections.' },
   { href: '/gutters-edinburg-tx', title: 'Gutters', line: 'Seamless gutter installation, repair, and gutter guards.' },
 ];
 
@@ -63,7 +68,7 @@ const schema = [
 ---
 <Base
   title="RGV Roofing Service Areas | Edel Roofing & Construction"
-  description="Licensed roofing contractor serving McAllen, Edinburg, Mission, Pharr, Weslaco, Harlingen, Brownsville, and Rio Grande City. Free estimates: (956) 422-3335."
+  description="Licensed roofer serving Edinburg, McAllen, Mission, Pharr, Weslaco, Harlingen, Brownsville and Rio Grande City. Free estimates: (956) 422-3335."
   alternates={{ en: '/service-areas', es: '/es-mx/service-areas' }}
   schema={schema}
 >
@@ -71,7 +76,7 @@ const schema = [
     crumbs={crumbs}
     eyebrow="Areas We Serve"
     title="Roofing Service Areas in the Rio Grande Valley"
-    lead="Edel Roofing & Construction is based in Edinburg and serves the entire Rio Grande Valley: residential roof replacement, commercial roofing, and roof repairs for homeowners and businesses. Choose your city below."
+    lead="Edel Roofing & Construction works out of Edinburg and does roof replacement, roof repairs and commercial roofing all over the Rio Grande Valley. Find your city below."
     bg={hero}
   />
 
@@ -150,7 +155,7 @@ const schema = [
 
   <section class="section soft">
     <div class="wrap">
-      <h2>Why Homeowners Across the RGV Choose Edel</h2>
+      <h2>Why RGV homeowners pick Edel</h2>
       <ul class="proof">
         {proof.map((p) => (
           <li>
@@ -164,8 +169,8 @@ const schema = [
 
   <CtaBand
     title="Not sure if we cover your area?"
-    body="If you're in the Rio Grande Valley, we can help. Call for a free estimate."
-    cta={{ label: 'Get a Free Estimate', href: '/book-an-inspection' }}
+    body="Give us a call and tell us where you are. We work across the Valley, and the inspection and estimate are free."
+    cta={{ label: 'Book a Free Inspection', href: '/book-an-inspection' }}
   />
 </Base>
 

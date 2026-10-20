@@ -7,6 +7,9 @@
 // - No H1 on live; "Book an Inspection" is now the H1.
 // - Added: call + quote options, worded like the homepage quote card,
 //   breadcrumb, trust strip, closing call band.
+// - 2026-10-20 copy pass: plain, warm rewrite; H1 and title now say "Free
+//   Roof Inspection"; meta description drops "expert team ensures quality
+//   work & customer satisfaction"; added "We answer 24/7" (sheet fact).
 import InnerPage from '../layouts/InnerPage.astro';
 import hero from '../assets/home/hero-roof.jpeg';
 import { site } from '../data/site';
@@ -14,24 +17,24 @@ import { site } from '../data/site';
 const TAVROS = false;
 ---
 <InnerPage
-  title="Book An Inspection"
-  description="Schedule an inspection for roofing & remodeling services. Our expert team ensures quality work & customer satisfaction. Contact us today!"
+  title="Book a Free Roof Inspection | Edel Roofing, Edinburg TX"
+  description="Book a free roof inspection with Edel Roofing & Construction in Edinburg and the Rio Grande Valley. Call (956) 422-3335 or start with an online estimate."
   crumbs={[
     { label: 'Home', href: '/' },
     { label: 'Book an Inspection', href: '/book-an-inspection' },
   ]}
-  hero={{ eyebrow: 'Free Roof Inspections', title: 'Book an Inspection', bg: hero }}
+  hero={{ eyebrow: 'Free roof inspections', title: 'Book a Free Roof Inspection', bg: hero }}
   intro={{
-    title: 'Two Ways to Book',
+    title: 'Two ways to get started',
     body: [
-      `<strong>Call us.</strong> Call <a href="${site.phoneHref}">${site.phone}</a> and we set up your free roof inspection.`,
-      '<strong>Want a price first?</strong> Enter your address in the online estimate and confirm your roof on the satellite map. It asks for your name, phone and email, then shows an estimated price. The final price comes in writing after the free inspection.',
+      `<strong>Call us.</strong> Call <a href="${site.phoneHref}">${site.phone}</a> and we'll set up a time for your free roof inspection. We answer 24/7.`,
+      '<strong>Want a price first?</strong> Put your address into the online estimate and find your roof on the satellite map. After you add your name, phone and email, it shows you an estimated price. We confirm the final price in writing after the free inspection.',
     ],
     cta: { label: 'Get Instant Estimate', href: '/contact-us#estimate', roofle: true },
   }}
   closing={{
-    title: 'Not Sure What Your Roof Needs?',
-    body: 'Start with a free inspection and a written estimate. You know the scope and the price before we begin.',
+    title: 'Not sure what your roof needs?',
+    body: "That's what the inspection is for. We look the roof over, tell you what we see, and give you the scope and the price in writing before we begin.",
     cta: { label: 'Contact Us', href: '/contact-us' },
   }}
 >

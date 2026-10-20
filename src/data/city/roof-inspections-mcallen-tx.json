@@ -31,7 +31,7 @@
       "kind": "text",
       "paras": [
         "We get on the roof and look at it up close. That means the shingles or membrane, the flashing at walls and chimneys, the vents and pipe boots, the valleys, and the edges. From that we can tell you how much life the roof has left and what needs work now versus later.",
-        "You get a written summary of what we found, with photos, not just a verbal opinion. Most residential inspections take 30 to 45 minutes on site, and we go over the results with you before we leave."
+        "You don't just get our word for it. You get a written summary of what we found, with photos. Most residential inspections take 30 to 45 minutes on site, and we go over the results with you before we leave."
       ]
     },
     {
@@ -58,7 +58,7 @@
         },
         {
           "title": "Insurance renewal",
-          "body": "If your insurer asks about the roof, a written report shows its actual condition, not just its age."
+          "body": "If your insurer asks about the roof, a written report shows the shape it's actually in. Age is only part of the story."
         },
         {
           "title": "After a storm",
@@ -101,7 +101,7 @@
         },
         {
           "big": "4.8★",
-          "label": "Rated by 250+ Google reviewers since 2003"
+          "label": "Average rating across 250+ Google reviews"
         }
       ]
     },
@@ -235,6 +235,7 @@
   "changes": [
     "em/en dashes swapped for commas, colons, or hyphens",
     "review counts (246/252) -> 250+ (match the homepage)",
-    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs",
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
   ]
 }

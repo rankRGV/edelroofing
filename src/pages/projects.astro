@@ -6,6 +6,9 @@
 // besides the H1.
 // Added: breadcrumb, trust strip, tap-to-enlarge viewer, closing call band
 // (heading + line reused from the homepage CTA).
+// - 2026-10-20 copy pass: meta description drops "exceptional",
+//   "innovative solutions" and "Elevate your space"; hero lead added;
+//   closing band rewritten (dropped "journey" and "dreams").
 import Base from '../layouts/Base.astro';
 import PageHero from '../components/PageHero.astro';
 import TrustStrip from '../components/TrustStrip.astro';
@@ -80,19 +83,25 @@ const crumbs = [
 ];
 ---
 <Base
-  title="Our Projects | Home Construction and Roofing Company"
-  description="Check Out our exceptional construction and roofing company projects showcasing quality craftsmanship and innovative solutions. Elevate your space with us now!"
+  title="Roofing & Construction Projects | Edel Roofing, Edinburg TX"
+  description="Photos of roofs, kitchens, bathrooms and homes from Edel Roofing & Construction, a roofing and construction company in Edinburg, TX."
   alternates={{ en: '/projects', es: '/es-mx/projects' }}
   schema={[breadcrumbSchema(crumbs)]}
 >
-  <PageHero crumbs={crumbs} eyebrow="Gallery" title="Our Roofing Projects" bg={hero} />
+  <PageHero
+    crumbs={crumbs}
+    eyebrow="Our work"
+    title="Our Roofing Projects"
+    lead="Roofs, kitchens, bathrooms and homes we've worked on. Tap any photo to see it bigger."
+    bg={hero}
+  />
   <TrustStrip />
 
   <ProjectGallery photos={order} />
 
   <CtaBand
-    title="We've Got You Covered"
-    body="Ready to start your roofing, remodeling, or construction journey? Contact Eddie Elizondo and the EDEL team today. Let's turn your dreams into reality."
+    title="Have a project in mind?"
+    body="Talk with Eddie Elizondo and the EDEL team about a roof, a remodel or a new home. Roof inspections and estimates are free."
     cta={{ label: 'Contact Us', href: '/contact-us' }}
   />
 </Base>

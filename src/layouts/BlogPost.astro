@@ -4,6 +4,8 @@
 // Added around it: breadcrumb, quote/call box, link to the other-language
 // version, three related posts, closing call band. Byline wording is
 // translated on Spanish posts (live showed "By ... • August 27, 2026").
+// 2026-10-20 copy pass: closing band reworded (EN + ES); Spanish "cotización"
+// -> "estimado en línea" to match the one name for the online tool.
 import { Image, getImage } from 'astro:assets';
 import { render, type CollectionEntry } from 'astro:content';
 import Base from './Base.astro';
@@ -48,8 +50,8 @@ const schema = [
 ];
 const alternates = twin ? (es ? { en: `/${twin.id}`, es: path } : { en: path, es: `/${twin.id}` }) : undefined;
 const t = es
-  ? { twin: 'Read this in English', box: 'Inspección de techo gratis', boxBody: 'Presupuesto por escrito antes de empezar cualquier trabajo. Con licencia y seguro.', quote: 'Estimado al Instante', call: 'Llamar', related: 'Más artículos', more: 'Leer más', ctaTitle: '¿Tiene preguntas sobre su techo?', ctaBody: 'Llámenos o pida una cotización. Inspección gratis y presupuesto por escrito.', ctaBtn: 'Contáctenos', ctaHref: '/es-mx/contact-us' }
-  : { twin: 'Leer en español', box: 'Free roof inspection', boxBody: 'Written estimate before any work starts. Licensed and insured.', quote: 'Get Instant Estimate', call: 'Call', related: 'More Articles', more: 'Read more', ctaTitle: 'Questions About Your Roof?', ctaBody: 'Call us or request a quote. Free inspection and a written estimate.', ctaBtn: 'Contact Us', ctaHref: '/contact-us' };
+  ? { twin: 'Read this in English', box: 'Inspección de techo gratis', boxBody: 'Presupuesto por escrito antes de empezar cualquier trabajo. Con licencia y seguro.', quote: 'Estimado al Instante', call: 'Llamar', related: 'Más artículos', more: 'Leer más', ctaTitle: '¿Quiere que revisemos su techo?', ctaBody: 'Llámenos o empiece con el estimado en línea. La inspección es gratis y el precio se lo damos por escrito antes de empezar.', ctaBtn: 'Contáctenos', ctaHref: '/es-mx/contact-us' }
+  : { twin: 'Leer en español', box: 'Free roof inspection', boxBody: 'Written estimate before any work starts. Licensed and insured.', quote: 'Get Instant Estimate', call: 'Call', related: 'More Articles', more: 'Read more', ctaTitle: 'Want Us to Look at Your Roof?', ctaBody: 'Call us or start with the online estimate. The inspection is free, and you get the price in writing before work starts.', ctaBtn: 'Contact Us', ctaHref: '/contact-us' };
 const { Content } = await render(post);
 ---
 <Base title={d.seoTitle} description={d.description} lang={d.lang} alternates={alternates} schema={schema} image={d.image}>

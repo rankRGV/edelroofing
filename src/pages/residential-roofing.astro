@@ -12,6 +12,11 @@
 //   here").
 // - Added: links to the city roof replacement pages, breadcrumb, trust strip,
 //   quote/call buttons.
+// - 2026-10-20 copy pass: plain, warm rewrite; removed hype ("The Best",
+//   "unmatched quality", "aesthetic elegance", "masterpiece", "shield",
+//   "crowns your property", "stands the test of time"); removed unproven
+//   claims ("significantly save on utility bills", "adding value"); added
+//   sheet facts (brands, ShingleMaster, one to two days, free inspection).
 import InnerPage from '../layouts/InnerPage.astro';
 import hero from '../assets/residential-roofing/house-with-swimming-pool.jpg';
 import construction from '../assets/residential-roofing/roofing-construction.jpeg';
@@ -20,25 +25,25 @@ import residential from '../assets/residential-roofing/residential-roofing.jpeg'
 import newRoof from '../assets/residential-roofing/new-residential-roof.jpeg';
 ---
 <InnerPage
-  title="Residential Roofing Services in Edinburg, TX"
-  description="Elevate the look of your home with EDEL Roofing Construction Inc., the experts in residential roofing solutions. Trust our skilled team to deliver unmatched quality and craftsmanship for your home."
+  title="Residential Roofing in Edinburg, TX | Edel Roofing & Construction"
+  description="New roofs and roof replacement for homes in Edinburg and the Rio Grande Valley. CertainTeed, Owens Corning and GAF. Free inspection and written estimate."
   alternates={{ en: '/residential-roofing', es: '/es-mx/residential-roofing' }}
   crumbs={[
     { label: 'Home', href: '/' },
     { label: 'Residential Roofing', href: '/residential-roofing' },
   ]}
-  hero={{ eyebrow: 'Our Roofing Services', title: 'Expert Residential Roofing in Edinburg', bg: hero }}
+  hero={{ eyebrow: 'Residential roofing', title: 'Residential Roofing in Edinburg, TX', bg: hero }}
   intro={{
-    eyebrow: 'Transforming Roofs',
-    title: "Edinburg's Residential Roofing Professionals",
-    body: "EDEL Roofing &amp; Construction Inc. brings you a distinctive approach to residential roofing that combines durability with aesthetic elegance. Our <a href=\"/\">Residential Roofing services in Edinburg</a> are designed to offer more than just a functional roof, we aim to create a standout feature that enhances your property's overall value and appeal.",
+    eyebrow: 'For homeowners',
+    title: 'A new roof for your Edinburg home',
+    body: "Maybe your roof is getting old, or the same spot keeps leaking after every storm. EDEL Roofing &amp; Construction Inc. puts new roofs on homes in Edinburg and across the Valley. Our <a href=\"/\">residential roofing services in Edinburg</a> start with a free inspection and a written price. We pick materials that hold up and look right on your house.",
     cta: { label: 'Contact Us', href: '/contact-us' },
     images: [{ src: construction, alt: 'Roofing Construction' }],
   }}
   band={{
-    eyebrow: 'Roofing Installation',
-    title: 'The Best Roofing Services in Edinburg',
-    body: "Our Roofing Installation service goes beyond the basics of construction; it's about crafting a robust shield that not only protects your property but also elevates its curb appeal. At EDEL Roofing &amp; Construction, we merge precision, premium materials, and expert craftsmanship to construct roofs that endure the test of time. From concept to the final shingle, we prioritize durability, aesthetics, and your unique vision, ensuring that each installation becomes a masterpiece that crowns your property with distinction.",
+    eyebrow: 'Roof installation',
+    title: 'How your new roof goes on',
+    body: "It starts with a free inspection and a written estimate, so you see the scope and the price before anything comes off. You choose the material and the color. We install CertainTeed, Owens Corning and GAF, among others, and we're the only CertainTeed Select ShingleMaster in the Rio Grande Valley. Most houses are done in one to two days. A bigger roof or a different material can take longer, and we'll tell you before we start.",
     cta: { label: 'Get Instant Estimate', href: '/contact-us#estimate', roofle: true },
     images: [
       { src: install, alt: 'Roof Installation Residential' },
@@ -47,16 +52,16 @@ import newRoof from '../assets/residential-roofing/new-residential-roof.jpeg';
     ],
   }}
   benefits={{
-    title: 'Key Benefits of Our Roofing Services',
+    title: 'What you get with Edel',
     items: [
-      { title: 'Custom Roofing Solutions', body: 'We offer a wide range of materials and styles, from asphalt shingles to metal roofing, to suit both residential and commercial needs.' },
-      { title: 'Energy-Efficient Options', body: 'Our roofing solutions not only protect your property but also offer enhanced energy efficiency, helping you significantly save on utility bills.' },
-      { title: 'Long-Term Durability', body: 'We use high-quality materials and expert installation techniques to ensure your roof stands the test of time, adding value to your property.' },
+      { title: 'Your choice of material', body: 'Asphalt shingles, metal roofing and other materials and styles. We work on homes and on commercial buildings.' },
+      { title: 'Energy efficient options', body: 'Ask us about roofing options made for better energy efficiency. We can go over them with you at the inspection.' },
+      { title: 'Good materials, careful work', body: 'We use quality materials and take care with the installation, so your new roof keeps working for years.' },
     ],
   }}
   spokes={{
     title: 'Roof Replacement by City',
-    intro: 'Looking for a new roof in a specific city? These pages cover roof replacement, inspections, and gutters city by city.',
+    intro: 'Pick your city to read about roof replacement, roof inspections and gutters there.',
     links: [
       { href: '/roof-replacement-edinburg-tx', label: 'Roof Replacement in Edinburg, TX' },
       { href: '/roof-replacement-mcallen-tx', label: 'Roof Replacement in McAllen, TX' },
@@ -67,8 +72,8 @@ import newRoof from '../assets/residential-roofing/new-residential-roof.jpeg';
     ],
   }}
   closing={{
-    title: 'Protect and Improve Your Property',
-    body: "When you opt for EDEL Roofing &amp; Construction for your Residential Roofing needs, you're selecting a partner committed to enhancing both the structural soundness and visual allure of your property. Elevate your home with a roof that not only serves its purpose but also shows real craftsmanship.",
+    title: 'Thinking about a new roof?',
+    body: "Call us and we'll set up a free inspection. We'll tell you whether your roof can be repaired or needs to be replaced, and you'll get a written estimate either way.",
     cta: { label: 'Contact Us', href: '/contact-us' },
   }}
 />

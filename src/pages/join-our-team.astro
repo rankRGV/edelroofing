@@ -16,10 +16,15 @@
 //   dedication to excellence is valued and essential" (banned word/pattern).
 // - The "(956) 422-EDEL / Call us today" link dialed (956) 867-0667; now the
 //   real number.
-// - Earnings ($80K to $120K), "25+ Years", "BBB approved" and "Travel
-//   Opportunities" kept as live (Edel's own claims; confirm before launch).
-// - The story section repeats /about-us word for word, as on live.
+// - Earnings ($80K to $120K), "BBB approved" and "Travel Opportunities"
+//   kept as live (Edel's own claims; confirm before launch).
 // - Added: breadcrumb, quote/call buttons.
+// - 2026-10-20 copy pass: plain, warm rewrite; removed hype ("energize",
+//   "elevate our standards", "outshine", "relishing every step of the
+//   journey", "Exceptional customer feedback", "Instant rewards");
+//   "25+ Years" stat -> "Since 2003"; "Top Reviews" now states the real
+//   4.8 / 250+ Google rating; the story section no longer repeats
+//   /about-us word for word; form heading "Contact Us" -> "Apply now".
 import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import PageHero from '../components/PageHero.astro';
@@ -40,13 +45,13 @@ const crumbs = [
   { label: 'Join Our Team', href: '/join-our-team' },
 ];
 const perks = [
-  ['High Earnings', '$80K to $120K annually.'],
-  ['Top Reviews', 'Exceptional customer feedback.'],
-  ['Earn Commissions', 'Instant rewards for contracts.'],
-  ['Simple Sales', 'We handle the logistics.'],
-  ['Career Growth', 'Resources for advancement.'],
+  ['Earnings', '$80K to $120K a year.'],
+  ['Reviews', 'Customers rate us 4.8 on Google, from 250+ reviews.'],
+  ['Commissions', 'You earn commission on the contracts you close.'],
+  ['Simple sales', 'You sell. We handle the logistics.'],
+  ['Room to grow', 'Resources to help you move up.'],
   ['Accredited', 'BBB approved.'],
-  ['Travel Opportunities', 'Explore and expand.'],
+  ['Travel', 'Chances to travel for work.'],
 ];
 const photos = [
   { src: truck, alt: "Edel Roofing & Construction Inc's Truck" },
@@ -57,23 +62,23 @@ const photos = [
 ];
 ---
 <Base
-  title="Join Our Team"
-  description="Join EDEL Roofing & Construction for rewarding sales roles in McAllen, TX. Enjoy high earnings, career growth, and a focus on customer service."
+  title="Roofing Sales Jobs in McAllen & the RGV | Join EDEL Roofing"
+  description="Sales jobs at EDEL Roofing & Construction in McAllen and the Rio Grande Valley. Earn $80K to $120K a year, with room to grow. Apply online."
   schema={[breadcrumbSchema(crumbs)]}
 >
   <PageHero
     crumbs={crumbs}
-    eyebrow="Expert Roofing Services for McAllen Texas & the Rio Grande Valley"
-    title="Join Our Team"
-    lead="Hey McAllen and the Rio Grande Valley! EDEL Roofing is in search of new talent to energize our sales team as we elevate our standards. Envision yourself in a role where your determination to exceed, outshine, and climb the professional ladder isn't just recognized, it's celebrated. Here, work means reaching your highest potential, thriving in your career, and genuinely relishing every step of the journey."
+    eyebrow="Careers at Edel"
+    title="Join Our Sales Team"
+    lead="We're hiring salespeople in McAllen and across the Rio Grande Valley. If you like talking with homeowners and want your pay to grow with your effort, we'd like to meet you."
     bg={hero}
   />
 
   <section class="section">
     <div class="wrap split">
       <div>
-        <p class="stat"><strong>25+ Years</strong>Roofing Experience</p>
-        <h2>Grow Your Sales Career</h2>
+        <p class="stat"><strong>Since 2003</strong>Roofing the Valley</p>
+        <h2>What you get</h2>
         <ul class="perks">
           {perks.map(([title, body]) => (
             <li><Icon name="badge" /><span><strong>{title}:</strong> {body}</span></li>
@@ -81,10 +86,10 @@ const photos = [
         </ul>
       </div>
       <div class="apply" id="ApplyNow">
-        <h3>Contact Us</h3>
+        <h3>Apply now</h3>
         <LeadForm
           id="apply"
-          submit="Submit"
+          submit="Send application"
           endpoint={forms.join}
           fields={[
             { name: 'first_name', label: 'First Name', required: true, autocomplete: 'given-name' },
@@ -103,14 +108,12 @@ const photos = [
   <section class="section soft">
     <div class="wrap split">
       <div>
-        <p class="eyebrow">Our Vision and Expertise</p>
-        <h2>Building on Vision &amp; Passion</h2>
+        <p class="eyebrow">Why work here</p>
+        <h2>Work for a Valley company</h2>
         <p>
-          Start a career steeped in legacy and promise with EDEL Roofing &amp; Construction. For over 25 years, our
-          founder, Eddie Elizondo, has instilled a passion for quality construction and exceptional customer service,
-          establishing us as a trusted name in the Rio Grande Valley communities. Experience the rewards of our
-          heritage, from potential earnings of $80K to $120K annually to opportunities for career advancement and
-          travel. Join our team and become part of a legacy built on dedication, integrity, and excellence.
+          EDEL Roofing &amp; Construction has been roofing the Rio Grande Valley since 2003. Founder Eddie Elizondo
+          built the company on quality work and good customer service, and people here know our name. Sales roles can
+          earn $80K to $120K a year, with chances to move up and to travel.
         </p>
       </div>
       <div class="gallery">
@@ -123,27 +126,23 @@ const photos = [
 
   <section class="section">
     <div class="wrap narrow">
-      <h2>EDEL Roofing &amp; Construction Inc's Story</h2>
+      <h2>About Eddie and the company</h2>
       <p>
-        EDEL Roofing &amp; Construction Inc. stands as a tribute to the vision and passion of our founder, Eddie
-        Elizondo. With a lifelong connection to construction, Eddie's journey from working alongside family members to
-        his educational pursuits culminated in the creation of EDEL Roofing &amp; Construction Inc. His determination to
-        provide homes that resonate with his clients' dreams is the heartbeat of our company, guiding us as we craft
-        enduring roofs, remodel interiors, and build homes from the ground up.
+        Eddie Elizondo has been around construction all his life. He worked with family first and continued his schooling
+        before he founded EDEL Roofing &amp; Construction Inc. The company puts on roofs, remodels interiors
+        and builds new homes.
       </p>
       <p>
-        EDEL Roofing &amp; Construction Inc. has become a trusted name in the Rio Grande Valley communities. Our
-        reputation has been earned through a steadfast commitment to putting customers first, being transparent and
-        honest, and ensuring that every project runs smoothly. The recognition we have received, including The
-        Monitor's Reader's Choice Awards and the Valley Morning Star Readers' Choice Awards, shows our dedication to
-        excellence.
+        We've been named in the Readers' Choice Awards from The Monitor and from the Valley Morning Star. That comes
+        from putting customers first and being honest with them about every project, and we expect the same from
+        everyone on our team.
       </p>
     </div>
   </section>
 
   <CtaBand
-    title="Join Our Team"
-    body="Become part of a team where your dedication to excellence is valued and essential to our culture. Join EDEL Roofing and Construction in McAllen and the Rio Grande Valley, where opportunities for growth and success await."
+    title="Ready to apply?"
+    body="Fill out the form above and we'll get back to you. You'd be selling roofs for a licensed company based right here in the Valley."
     cta={{ label: 'Apply Now', href: '#ApplyNow' }}
   />
 </Base>

@@ -71,7 +71,7 @@
       "alt": false,
       "kind": "text",
       "paras": [
-        "Call your insurance company soon after the storm and check your policy for any deadline on filing. The <a href=\"https://www.tdi.texas.gov/tips/after-hail-or-windstorms.html\">Texas Department of Insurance</a> adds a few rules worth following: get more than one bid, check references, and do not pay in full up front. TDI also says waiving a homeowners deductible is illegal under Texas law, so an offer to \"cover your deductible\" is a red flag.",
+        "Call your insurance company soon after the storm and check your policy for any deadline on filing. The <a href=\"https://www.tdi.texas.gov/tips/after-hail-or-windstorms.html\">Texas Department of Insurance</a> gives a few rules to follow: get more than one bid, check references, and do not pay in full up front. TDI also says waiving a homeowners deductible is illegal under Texas law, so an offer to \"cover your deductible\" is a red flag.",
         "We inspect, document, and give you a written estimate. We are not a public adjuster and we do not negotiate your claim. If the damage is cosmetic and does not affect how the roof works, we say so. We are not paid more for finding damage that is not there."
       ]
     },
@@ -81,8 +81,8 @@
       "kind": "proof",
       "proof": [
         {
-          "big": "Honest",
-          "label": "We tell you when damage is cosmetic, not only when it supports a bigger job"
+          "big": "Plain answers",
+          "label": "If the damage is only cosmetic, we tell you so"
         },
         {
           "big": "Close by",
@@ -228,6 +228,7 @@
   "changes": [
     "em/en dashes swapped for commas, colons, or hyphens",
     "review counts (246/252) -> 250+ (match the homepage)",
-    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs",
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
   ]
 }

@@ -14,6 +14,11 @@
 // - "remodelacion de baño" -> "Remodelación de baño" (accent).
 // - Added: breadcrumb, trust strip, quote/call buttons, hreflang.
 // - Image alt text in Spanish (live used English alts).
+// - 2026-10-20 copy pass: remodeling confirmed as a real Edel service
+//   (brief); plain, warm rewrite in usted; removed hype ("transforme",
+//   "revitalice", "el corazón y el alma", "elegantes", "sueños", "meticulosa",
+//   "superan las expectativas", "el poder del cambio"); H1/title now carry
+//   "Valle del Río Grande"; Roofle buttons -> "Estimado al Instante".
 import InnerPage from '../../layouts/InnerPage.astro';
 import hero from '../../assets/home-remodeling/home-interior.webp';
 import island from '../../assets/home-remodeling/kitchen-island-interior-design.jpg';
@@ -22,48 +27,48 @@ import bathroom from '../../assets/home-remodeling/bathroom-remodeling.webp';
 ---
 <InnerPage
   lang="es"
-  title="Remodelación del Hogar | EDEL Roofing & Construction Inc."
-  description="EDEL Roofing & Construction Inc. en el Valle del Río Grande: transforme su hogar con nuestra experiencia en remodelación. ¡Llame al (956) 422-3335!"
+  title="Remodelación del Hogar en el Valle del Río Grande | EDEL Roofing & Construction"
+  description="Remodelación de cocinas y baños en Edinburg y el Valle del Río Grande. EDEL Roofing & Construction cuida cada detalle con usted. Llame al (956) 422-3335."
   alternates={{ en: '/home-remodeling', es: '/es-mx/home-remodeling' }}
   crumbs={[
     { label: 'Inicio', href: '/es-mx' },
     { label: 'Remodelación del Hogar', href: '/es-mx/home-remodeling' },
   ]}
-  hero={{ eyebrow: 'Nuestros Servicios de Remodelación', title: 'Remodelación del Hogar', bg: hero }}
+  hero={{ eyebrow: 'Nuestros Servicios de Remodelación', title: 'Remodelación del Hogar en el Valle del Río Grande', bg: hero }}
   intro={{
     eyebrow: 'Remodelación de Baños y Cocinas',
-    title: 'Transforme su espacio',
-    body: 'EDEL Roofing &amp; Construction lo invita a reinventar el corazón y el alma de su hogar con nuestros servicios de remodelación de baños y cocinas. Nuestro equipo de expertos se dedica a dar nueva vida a estos espacios esenciales, creando ambientes funcionales pero elegantes que reflejen sus gustos y necesidades únicos.',
+    title: 'Cocinas y baños a su gusto',
+    body: 'En EDEL Roofing &amp; Construction remodelamos cocinas y baños en el Valle del Río Grande. Son los cuartos que su familia usa todos los días, y queremos que le funcionen bien y que se vean como a usted le gustan. Nuestro equipo le ayuda a decidir qué cambiar y se encarga del trabajo.',
     cta: { label: 'Contáctenos', href: '/es-mx/contact-us' },
     images: [{ src: island, alt: 'Diseño interior de cocina con isla' }],
   }}
   band={{
     eyebrow: 'Remodelación de Cocina',
-    title: 'Revitalice su cocina',
-    body: 'La cocina es donde se crean los recuerdos y nuestro servicio de Remodelación de Cocinas tiene como objetivo potenciar tanto su estética como su funcionalidad. Desde modernizar el diseño para un mejor flujo de trabajo hasta seleccionar materiales de alta calidad que resistan el uso diario, abordamos las remodelaciones de cocinas con precisión y creatividad. Creemos un espacio que sea tan acogedor como práctico.',
-    cta: { label: 'Pida una Cotización', href: '/es-mx/contact-us#contacto', roofle: true },
+    title: 'Una cocina cómoda y práctica',
+    body: 'En la cocina pasa buena parte de la vida en casa. Cuando la remodelamos, buscamos que se vea bien y que sea fácil de usar. Podemos cambiar la distribución para que se mueva mejor mientras cocina, y escogemos materiales que aguanten el uso de todos los días. Trabajamos con precisión y le proponemos ideas para su espacio.',
+    cta: { label: 'Cuéntenos de su Proyecto', href: '/es-mx/contact-us#contacto' },
     images: [{ src: kitchen, alt: 'Cocina recién construida' }],
   }}
   extra={[
     {
       eyebrow: 'Remodelación de Baño',
-      title: 'Renueve su baño',
-      body: 'Nuestro servicio de Remodelación de Baños abarca un amplio abanico de posibilidades. Colaboramos estrechamente con usted para comprender sus preferencias y garantizar que cada detalle, desde accesorios hasta azulejos, se alinee con su visión. Ya sea una simple actualización o una transformación completa, estamos aquí para convertir el baño de sus sueños en realidad.',
-      cta: { label: 'Pida una Cotización', href: '/es-mx/contact-us#contacto', roofle: true },
+      title: 'Un cambio sencillo o un baño nuevo',
+      body: 'Antes de remodelar su baño, platicamos con usted para saber qué le gusta y qué necesita. Cuidamos cada detalle, como los accesorios y los azulejos, para que el baño quede como usted lo pidió. Puede ser una mejora sencilla o un baño completamente nuevo.',
+      cta: { label: 'Cuéntenos de su Proyecto', href: '/es-mx/contact-us#contacto' },
       images: [{ src: bathroom, alt: 'Remodelación de baño' }],
     },
   ]}
   benefits={{
-    title: 'Beneficios clave de nuestros servicios de remodelación',
+    title: 'Por qué remodelar con EDEL',
     items: [
-      { title: 'Experiencia en diseño', body: 'Nuestro equipo de diseñadores experimentados está bien versado en convertir sus ideas en realidad, garantizando que sus espacios recién remodelados se alineen con su visión.' },
-      { title: 'Artesanía de calidad', body: 'Cada aspecto de nuestro proceso de remodelación se lleva a cabo con meticulosa atención al detalle, lo que da como resultado espacios terminados que superan las expectativas.' },
-      { title: 'Soluciones a medida', body: 'Entendemos que cada hogar es único. Nuestras soluciones están personalizadas para adaptarse a su estilo de vida, necesidades y preferencias estéticas.' },
+      { title: 'Ayuda con el diseño', body: 'Nuestros diseñadores tienen experiencia y le ayudan a convertir sus ideas en un plan claro. Al final, el espacio se ve como usted lo quería.' },
+      { title: 'Trabajo bien hecho', body: 'Cuidamos los detalles en cada paso de la remodelación, y eso se nota en el espacio terminado.' },
+      { title: 'A la medida', body: 'Cada casa es diferente. Ajustamos cada proyecto a su forma de vivir, a lo que necesita y al estilo que le gusta.' },
     ],
   }}
   closing={{
-    title: 'Renueve sus espacios de vida',
-    body: 'Descubra el poder del cambio con EDEL Roofing &amp; Construction. Nuestros servicios de Remodelación de Baños y Cocinas revitalizan sus espacios, potenciando su atractivo y funcionalidad. Comuníquese hoy para discutir su proyecto y dar el primer paso hacia una casa que encarne su estilo.',
+    title: '¿Quiere remodelar su cocina o su baño?',
+    body: 'Llame a EDEL Roofing &amp; Construction y cuéntenos qué quiere cambiar. Platicamos de su proyecto y le explicamos los pasos para empezar.',
     cta: { label: 'Contáctenos', href: '/es-mx/contact-us' },
   }}
 />

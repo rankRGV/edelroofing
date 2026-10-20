@@ -4,7 +4,7 @@
   "city": "mcallen",
   "service": "replacement",
   "title": "Reemplazo de Techo en McAllen, TX | EDEL Roofing & Construction",
-  "description": "Techos nuevos de tejas en McAllen, TX. CertainTeed SELECT ShingleMaster, retiro completo, madera revisada, alcance escrito. RCAT #03-0489. Llame al (956) 422-3335.",
+  "description": "Techos nuevos de tejas en McAllen, TX. CertainTeed SELECT ShingleMaster, retiro completo, madera revisada y alcance por escrito. (956) 422-3335.",
   "alternates": {
     "en": "/roof-replacement-mcallen-tx",
     "es": "/reemplazo-de-techo-mcallen-tx"
@@ -37,7 +37,7 @@
       "alt": false,
       "kind": "text",
       "paras": [
-        "Cerca del 40% de las casas de McAllen se construyeron antes de 1990, según datos de encuesta del Censo (ACS 2024), y el año mediano de construcción es 1997. Un techo de tejas en este calor dura más o menos de 20 a 25 años. Haga la cuenta y una gran parte de las casas de McAllen ya van en su segundo techo o les toca uno. Los dueños viven en cerca del 63% de esas casas; las demás son de renta, donde el techo también tiene que pasar la próxima renovación del seguro.",
+        "Cerca del 40% de las casas de McAllen se construyeron antes de 1990, según datos de encuesta del Censo (ACS 2024), y el año mediano de construcción es 1997. Un techo de tejas en este calor dura más o menos de 20 a 25 años. Junte las dos cosas y muchas casas de McAllen ya van en su segundo techo o ya les toca. Los dueños viven en cerca del 63% de esas casas; las demás son de renta, donde el techo también tiene que pasar la próxima renovación del seguro.",
         "La edad por sí sola no es razón para reemplazar. Primero revisamos todo el techo y la madera de apoyo de abajo. La pérdida de gránulos en todo el techo, goteras en más de un lugar, madera de apoyo blanda o daño por tormenta en una gran parte del techo son lo que convierte una reparación en un reemplazo. Si una reparación aguantaría, se lo decimos. Vea <a href=\"/reparacion-de-techo-mcallen-tx\">reparación de techo en McAllen</a> para esa parte."
       ]
     },
@@ -69,7 +69,7 @@
         },
         {
           "title": "Ventilación y membrana",
-          "body": "Revisamos las ventilas del ático y las mejoramos donde hace falta, con membrana sintética moderna debajo de las tejas."
+          "body": "Revisamos las ventilas del ático y las mejoramos donde hace falta, con membrana sintética debajo de las tejas."
         },
         {
           "title": "Alcance por escrito",
@@ -109,7 +109,7 @@
         },
         {
           "big": "Desde 2003",
-          "label": "Más de 20 años poniendo techos nuevos en casas del Valle"
+          "label": "Poniendo techos nuevos en casas del Valle"
         }
       ]
     },
@@ -124,7 +124,7 @@
         },
         {
           "q": "¿Cuánto tiempo toma el trabajo?",
-          "a": "La mayoría de las casas en McAllen toman de uno a tres días, si el clima lo permite. Los tiempos van en el alcance por escrito antes de empezar."
+          "a": "La mayoría de las casas en McAllen toman de uno a dos días, según el tamaño del techo y el material, más algún atraso por lluvia. Los tiempos van en el alcance por escrito antes de empezar."
         },
         {
           "q": "Mi aseguradora quiere un techo nuevo antes de renovar. ¿Qué hago?",
@@ -146,7 +146,7 @@
     }
   ],
   "cta": {
-    "title": "Obtenga un estimado gratis de reemplazo de techo en McAllen",
+    "title": "Pida un estimado gratis de reemplazo de techo en McAllen",
     "line": "Medimos el techo, revisamos la madera de apoyo y el ático, y le damos un alcance por escrito con el precio. Sin compromiso.",
     "buttons": [
       {
@@ -197,7 +197,7 @@
           "@type": "WebPage",
           "name": "Reemplazo de Techo en McAllen, TX",
           "url": "https://www.edelroofing.com/reemplazo-de-techo-mcallen-tx",
-          "description": "Techos nuevos de tejas en McAllen, TX. CertainTeed SELECT ShingleMaster, retiro completo, madera revisada, alcance escrito. RCAT #03-0489. Llame al (956) 422-3335.",
+          "description": "Techos nuevos de tejas en McAllen, TX. CertainTeed SELECT ShingleMaster, retiro completo, madera revisada y alcance por escrito. (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -218,7 +218,7 @@
               "name": "¿Cuánto tiempo toma el trabajo?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "La mayoría de las casas en McAllen toman de uno a tres días, si el clima lo permite. Los tiempos van en el alcance por escrito antes de empezar."
+                "text": "La mayoría de las casas en McAllen toman de uno a dos días, según el tamaño del techo y el material, más algún atraso por lluvia. Los tiempos van en el alcance por escrito antes de empezar."
               }
             },
             {
@@ -262,6 +262,7 @@
     "Spanish breadcrumb \"Áreas de Servicio\" linked the English /service-areas; now /es-mx/service-areas",
     "em/en dashes swapped for commas, colons, or hyphens",
     "review counts (246/252) -> 250+ (match the homepage)",
-    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs",
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
   ]
 }

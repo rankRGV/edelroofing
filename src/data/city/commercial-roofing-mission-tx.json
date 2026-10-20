@@ -4,7 +4,7 @@
   "city": "mission",
   "service": "commercial",
   "title": "Commercial Roofing in Mission, TX | Edel Roofing & Construction",
-  "description": "Commercial roof repair and replacement in Mission, TX for retail, office, and industrial buildings. TPO, EPDM, modified bitumen, coatings. Call (956) 422-3335.",
+  "description": "Commercial roof repair and replacement in Mission, TX for retail, office and industrial buildings. TPO, EPDM, modified bitumen. Call (956) 422-3335.",
   "alternates": {
     "en": "/commercial-roofing-mission-tx",
     "es": "/techado-comercial-mission-tx"
@@ -20,7 +20,7 @@
     }
   ],
   "h1": "Commercial Roofing in Mission, TX",
-  "lede": "Edel Roofing &amp; Construction installs, repairs, and replaces flat and low slope roofs for businesses and property owners in Mission. Free commercial estimates, written scope, licensed and insured.",
+  "lede": "Edel Roofing &amp; Construction installs, repairs, and replaces flat and low slope roofs for businesses and property owners in Mission. You get a free estimate and a written scope from a licensed, insured roofer.",
   "heroCtas": [
     {
       "label": "Get a Free Estimate",
@@ -38,8 +38,8 @@
       "kind": "text",
       "paras": [
         "Mission's commercial side is growing on both ends. Along Expressway 83 at Bryan Rd, the Mission Gateway development is part of what the Mission EDC calls the Bryan corridor. To the south, Sharyland Business Park has room for about 2.5 million square feet of industrial space near the Anzalduas International Bridge, and the bridge's $88 million expansion adds six commercial lanes. Older buildings along Business 83 and the expressway fill in the rest.",
-        "That mix means two kinds of commercial roof jobs. New warehouses and stores need a membrane system installed right the first time. Older buildings from earlier decades need repairs, coatings, or full replacement as their roofs age out.",
-        "We drive to Mission from our office at 1815 N Jackson Rd in Edinburg, about 26 minutes. We have worked on commercial roofs across Hidalgo County since 2003."
+        "So there are two kinds of commercial roof jobs here. New warehouses and stores need a membrane installed right the first time. Older buildings need repairs, a coating or a full replacement as their roofs wear out.",
+        "We drive to Mission from our office at 1815 N Jackson Rd in Edinburg, about 26 minutes. We've roofed commercial buildings across Hidalgo County since 2003."
       ]
     },
     {
@@ -63,7 +63,7 @@
         },
         {
           "title": "Roof replacement",
-          "body": "Old system torn off, decking checked and repaired, new membrane installed on a written timeline."
+          "body": "The old roof comes off, we check and repair the decking, and the new membrane goes on by a written timeline."
         },
         {
           "title": "Leak repair",
@@ -71,7 +71,7 @@
         },
         {
           "title": "Edge and flashing repair",
-          "body": "Loose perimeter metal and flashing secured after wind, before the next storm can lift the membrane."
+          "body": "After a wind, we fasten loose edge metal and flashing so the next storm can't lift the membrane."
         },
         {
           "title": "Roof coatings",
@@ -79,7 +79,7 @@
         },
         {
           "title": "Inspections",
-          "body": "Routine and after storm inspections with a written report and photos for owners and managers."
+          "body": "Regular inspections, and inspections after a storm, with a written report and photos for owners and managers."
         }
       ]
     },
@@ -89,7 +89,7 @@
       "kind": "text",
       "paras": [
         "The City of Mission's permit paperwork lists the 2024 International Building Code and the matching 2024 codes for fire, plumbing, mechanical, and energy. For questions about a permit on your building, call the Inspections Division at (956) 580-8691.",
-        "Commercial work needs more planning than a house. Tenants are affected, deliveries still have to come in, and some jobs need to happen in stages. We inspect before we estimate, put everything in writing, and schedule around your building. If you manage several Mission properties, we can set up recurring inspections so small problems get fixed before they turn into a replacement."
+        "A commercial roof takes more planning than a house. Your tenants feel it, deliveries still have to come in, and some jobs have to be done in stages. We inspect before we estimate, put everything in writing, and schedule around your building. If you manage several Mission properties, we can set up recurring inspections so small problems get fixed before they turn into a replacement."
       ]
     },
     {
@@ -134,7 +134,7 @@
         },
         {
           "q": "How long does a commercial roof last in Mission?",
-          "a": "A well installed membrane in the RGV typically lasts 15 to 25 years, depending on the material and the upkeep. Heat and UV shorten it; regular inspections help it go longer."
+          "a": "A well installed membrane in the RGV typically lasts 15 to 25 years, depending on the material and the upkeep. Heat and sun shorten that. Regular inspections help it last longer."
         },
         {
           "q": "Do you inspect commercial roofs after a storm?",
@@ -153,7 +153,7 @@
   ],
   "cta": {
     "title": "Get a free commercial roofing estimate in Mission",
-    "line": "New build, old roof, or a leak after the last storm: we inspect it and put the scope and price in writing.",
+    "line": "Whether you're building new or have a leak from the last storm, we look first and put the scope and price in writing.",
     "buttons": [
       {
         "label": "Book a Free Inspection",
@@ -203,7 +203,7 @@
           "@type": "WebPage",
           "name": "Commercial Roofing in Mission, TX",
           "url": "https://www.edelroofing.com/commercial-roofing-mission-tx",
-          "description": "Commercial roof repair and replacement in Mission, TX for retail, office, and industrial buildings. TPO, EPDM, modified bitumen, coatings. Call (956) 422-3335.",
+          "description": "Commercial roof repair and replacement in Mission, TX for retail, office and industrial buildings. TPO, EPDM, modified bitumen. Call (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -240,7 +240,7 @@
               "name": "How long does a commercial roof last in Mission?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A well installed membrane in the RGV typically lasts 15 to 25 years, depending on the material and the upkeep. Heat and UV shorten it; regular inspections help it go longer."
+                "text": "A well installed membrane in the RGV typically lasts 15 to 25 years, depending on the material and the upkeep. Heat and sun shorten that. Regular inspections help it last longer."
               }
             },
             {
@@ -275,6 +275,7 @@
   "changes": [
     "em/en dashes swapped for commas, colons, or hyphens",
     "review counts (246/252) -> 250+ (match the homepage)",
-    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs",
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
   ]
 }

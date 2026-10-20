@@ -8,6 +8,13 @@
 // - Added: links to the Spanish city roof repair pages, breadcrumb, trust
 //   strip, quote/call buttons, hreflang to /roof-repairs.
 // - Image alt text in Spanish (live used English alts).
+// - 2026-10-20 copy pass: plain, warm rewrite in usted; removed hype and
+//   filler ("su mejor opción", "excelencia", "perspectiva integral",
+//   "técnicas avanzadas", "resistan la prueba del tiempo", "tranquilidad",
+//   "no solo... sino"); H1/title now "Reparación de Techos en Edinburg";
+//   added sheet facts (free inspection, written estimate, 24/7); spoke label
+//   "Daño de la Tormenta" -> "Daños por Tormenta"; Roofle button ->
+//   "Estimado al Instante".
 import InnerPage from '../../layouts/InnerPage.astro';
 import hero from '../../assets/roof-repairs/modern-house.jpeg';
 import restoration from '../../assets/roof-repairs/roof-restoration.jpeg';
@@ -15,49 +22,49 @@ import repair from '../../assets/roof-repairs/roof-repair.jpeg';
 ---
 <InnerPage
   lang="es"
-  title="Reparaciones de Techo | EDEL Roofing & Construction Inc."
-  description="EDEL Roofing & Construction Inc.: su mejor opción para reparaciones de techo en el Valle del Río Grande. ¡Llame al (956) 422-3335 hoy!"
+  title="Reparación de Techos en Edinburg, TX | EDEL Roofing & Construction"
+  description="Reparamos goteras, tejas dañadas y daños por tormenta en Edinburg y todo el Valle. Inspección gratis y precio por escrito. Llame al (956) 422-3335."
   alternates={{ en: '/roof-repairs', es: '/es-mx/roof-repairs' }}
   crumbs={[
     { label: 'Inicio', href: '/es-mx' },
     { label: 'Reparaciones de Techo', href: '/es-mx/roof-repairs' },
   ]}
-  hero={{ eyebrow: 'Nuestros Servicios de Techado', title: 'Reparaciones de Techo', bg: hero }}
+  hero={{ eyebrow: 'Nuestros Servicios de Techado', title: 'Reparación de Techos en Edinburg', bg: hero }}
   intro={{
     eyebrow: 'Reparaciones de Techo',
-    title: 'Restaurar fuerza y protección',
-    body: 'EDEL Roofing &amp; Construction comprende la urgencia de un techo con goteras, tejas dañadas o cualquier problema imprevisto en el techo. Nuestro servicio de reparación de techos está diseñado para abordar rápidamente estas inquietudes, brindando soluciones oportunas que no solo restablecen la integridad de su techo sino también su tranquilidad.',
+    title: '¿Tiene una gotera o tejas dañadas?',
+    body: 'Una gotera o unas tejas dañadas no deben esperar mucho. En EDEL Roofing &amp; Construction hacemos reparación de techos en Edinburg y todo el Valle del Río Grande, y atendemos estos problemas pronto. La inspección es gratis, y le enseñamos lo que encontramos en su techo.',
     cta: { label: 'Contáctenos', href: '/es-mx/contact-us' },
     images: [{ src: restoration, alt: 'Restauración de techo' }],
   }}
   band={{
     eyebrow: 'Nuestro Enfoque',
-    title: 'Reparaciones Integrales de Techos',
-    body: 'Con un equipo de profesionales experimentados y un compromiso con la excelencia, abordamos las reparaciones de techos con una perspectiva integral. No solo solucionamos los problemas visibles sino que también diagnosticamos las causas subyacentes, asegurando una solución duradera que prevenga problemas futuros.',
-    cta: { label: 'Pida una Cotización', href: '/es-mx/contact-us#contacto', roofle: true },
+    title: 'Arreglamos la causa del problema',
+    body: 'Nuestros techadores tienen experiencia y no se quedan con lo que se ve a simple vista. Buscamos de dónde viene el problema y lo arreglamos ahí, para que la misma falla no regrese. Antes de empezar la reparación, usted ya tiene el presupuesto por escrito.',
+    cta: { label: 'Estimado al Instante', href: '/es-mx/contact-us#contacto', roofle: true },
     images: [{ src: repair, alt: 'Reparación de techo' }],
   }}
   benefits={{
-    title: 'Beneficios clave de nuestros servicios de reparación',
+    title: 'Lo que reparamos',
     items: [
-      { title: 'Detección y reparación de fugas', body: 'Nuestros expertos emplean técnicas avanzadas para identificar y reparar fugas, previniendo daños por agua y preservando la integridad estructural de su propiedad.' },
-      { title: 'Reemplazo de tejas', body: 'Las tejas dañadas o faltantes comprometen la defensa de su techo. Nuestros servicios de reemplazo de tejas restauran el aspecto y la protección de su techo.' },
-      { title: 'Reparaciones de emergencia', body: '¿Daños por tormentas o fugas inesperadas? Nuestro equipo de respuesta rápida está equipado para manejar <a href="/es-mx/contact-us">reparaciones de emergencia</a>, minimizando daños mayores a su propiedad.' },
+      { title: 'Detección y reparación de goteras', body: 'Encontramos por dónde entra el agua y lo reparamos antes de que el daño llegue a la estructura de su casa.' },
+      { title: 'Reemplazo de tejas', body: 'Si a su techo le faltan tejas o tiene tejas dañadas, el agua puede entrar. Las cambiamos para que el techo vuelva a proteger su casa y se vea parejo.' },
+      { title: 'Reparaciones de emergencia', body: '¿Le entró agua después de una tormenta? Llámenos para una <a href="/es-mx/contact-us">reparación de emergencia</a>. Contestamos 24/7 y trabajamos para que el daño no crezca.' },
     ],
   }}
   spokes={{
     title: 'Reparación de Techo por Ciudad',
-    intro: 'Cada una de estas páginas cubre la reparación de techos en una ciudad.',
+    intro: 'Si vive en Edinburg, McAllen o Mission, aquí encuentra la página de reparación de techos de su ciudad.',
     links: [
       { href: '/reparacion-de-techo-edinburg-tx', label: 'Reparación de Techo en Edinburg, TX' },
       { href: '/reparacion-de-techo-mcallen-tx', label: 'Reparación de Techo en McAllen, TX' },
       { href: '/reparacion-de-techo-mission-tx', label: 'Reparación de Techo en Mission, TX' },
-      { href: '/es-mx/storm-damage', label: 'Daño de la Tormenta' },
+      { href: '/es-mx/storm-damage', label: 'Daños por Tormenta' },
     ],
   }}
   closing={{
-    title: 'Asegure su propiedad',
-    body: 'No permita que los problemas del techo comprometan su seguridad y comodidad. Elija EDEL Roofing &amp; Construction para reparaciones de techos expertas que resistan la prueba del tiempo. Contáctenos hoy para programar una consulta y dar el primer paso para restaurar la resistencia y protección de su techo.',
+    title: '¿Necesita reparar su techo?',
+    body: 'Llame a EDEL Roofing &amp; Construction para una inspección gratis. Le decimos qué tiene su techo, le damos el precio por escrito y hacemos el trabajo bien.',
     cta: { label: 'Contáctenos', href: '/es-mx/contact-us' },
   }}
 />

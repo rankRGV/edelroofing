@@ -4,7 +4,7 @@
   "city": "mission",
   "service": "coatings",
   "title": "Roof Coating Services in Mission, TX | Edel Roofing & Construction",
-  "description": "Roof coatings for flat and low slope commercial roofs in Mission, TX. Inspection first, written estimate, honest answer on whether a coating fits. Call (956) 422-3335.",
+  "description": "Roof coatings for flat and low slope commercial roofs in Mission, TX. We inspect first and tell you in writing if a coating fits. Call (956) 422-3335.",
   "alternates": null,
   "crumbs": [
     {
@@ -13,7 +13,7 @@
     }
   ],
   "h1": "Roof Coating Services in Mission, TX",
-  "lede": "Edel Roofing &amp; Construction coats aging flat roofs on Mission businesses to add years of service and cut heat through the roof. Free inspection and a straight answer on whether your roof qualifies.",
+  "lede": "Edel Roofing &amp; Construction coats aging flat roofs on Mission businesses so the roof lasts longer and less heat comes through. The inspection is free, and you get a straight answer on whether your roof qualifies.",
   "heroCtas": [
     {
       "label": "Get a Free Estimate",
@@ -31,7 +31,7 @@
       "kind": "text",
       "paras": [
         "Mission has two kinds of commercial roofs right now. New buildings near the Bryan Rd corridor and Sharyland Business Park have new membranes that do not need a coating yet. Older retail and office buildings along Business 83 and Expressway 83 have roofs that have taken years of Valley sun, and some of those are good coating candidates.",
-        "A coating is a reflective liquid layer applied over the existing roof. It does not replace the roof. It protects a membrane that is still sound by sealing small cracks and seams and reflecting heat, which can add years before you need a tear off."
+        "A coating is a reflective liquid layer applied over the existing roof. It does not replace the roof. It covers a membrane that's still sound. It seals small cracks and seams and reflects heat, and that can buy you years before a tear off."
       ]
     },
     {
@@ -58,7 +58,7 @@
         },
         {
           "title": "Ponding areas",
-          "body": "Spots where water sits after rain get noted, because standing water affects which coating works and how long it lasts."
+          "body": "We mark the spots where water sits after rain. Standing water changes which coating works and how long it lasts."
         },
         {
           "title": "Drains and edges",
@@ -81,7 +81,7 @@
       "kind": "proof",
       "proof": [
         {
-          "big": "Honest",
+          "big": "Straight answer",
           "label": "A coating only when the roof qualifies, never as a default upsell"
         },
         {
@@ -105,7 +105,7 @@
       "faqs": [
         {
           "q": "My building is new. Should I coat the roof now?",
-          "a": "Usually not. A new membrane is already doing its job. A coating makes more sense once the roof shows age, and an inspection every year or two tells you when that is."
+          "a": "Usually not. A new membrane is still working fine. A coating makes more sense once the roof shows age, and an inspection every year or two tells you when that is."
         },
         {
           "q": "Can you coat over a roof that got wet in a storm?",
@@ -172,7 +172,7 @@
           "@type": "WebPage",
           "name": "Roof Coating Services in Mission, TX",
           "url": "https://www.edelroofing.com/roof-coating-mission-tx",
-          "description": "Roof coatings for flat and low slope commercial roofs in Mission, TX. Inspection first, written estimate, honest answer on whether a coating fits. Call (956) 422-3335.",
+          "description": "Roof coatings for flat and low slope commercial roofs in Mission, TX. We inspect first and tell you in writing if a coating fits. Call (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -185,7 +185,7 @@
               "name": "My building is new. Should I coat the roof now?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Usually not. A new membrane is already doing its job. A coating makes more sense once the roof shows age, and an inspection every year or two tells you when that is."
+                "text": "Usually not. A new membrane is still working fine. A coating makes more sense once the roof shows age, and an inspection every year or two tells you when that is."
               }
             },
             {
@@ -227,6 +227,7 @@
   ],
   "changes": [
     "review counts (246/252) -> 250+ (match the homepage)",
-    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs",
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
   ]
 }

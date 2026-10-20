@@ -1,52 +1,54 @@
 ---
 // /home-construction, rebuilt from the live Duda page (2026-10-18).
-// Open question: does Edel still sell home construction? The page is off the
-// live nav (2 inlinks). Rebuilt as is so the URL keeps working; not linked
-// from the menu.
+// Home construction is a real Edel service (2026-10-20 copy brief). The page
+// is off the live nav (2 inlinks); not linked from the menu.
 // Copy changes vs live:
 // - "Your input is crucial" -> "Your input matters" (banned word).
 // - Headings written in normal case (CSS uppercases them, same look).
-// - "Over 25 years" kept as live (open question: vs "since 2003").
 // - Added: breadcrumb, trust strip, quote/call buttons.
+// - 2026-10-20 copy pass: plain, warm rewrite; removed hype ("Building
+//   Dreams", "dream home", "masterpiece", "transform", "innovative design",
+//   "the power of teamwork", "utmost care"); "since 2003" replaces "over 25
+//   years"; H1 and title now carry the Rio Grande Valley.
 import InnerPage from '../layouts/InnerPage.astro';
 import hero from '../assets/home-construction/modern-home.webp';
 import pool from '../assets/home-construction/house-with-swimming-pool.jpg';
 import kitchen from '../assets/home-construction/kitchen-construction.webp';
 ---
 <InnerPage
-  title="Home Construction Services | EDEL Roofing & Construction Inc."
-  description="Transform your vision into reality with our trusted home construction services. We bring expertise, quality, and excellence to every project. Contact us today!"
+  title="Home Construction in the RGV | EDEL Roofing & Construction"
+  description="EDEL Roofing & Construction builds new homes in the Rio Grande Valley. We work with you on the layout, materials and finishes. Call (956) 422-3335 to talk."
   alternates={{ en: '/home-construction', es: '/es-mx/home-construction' }}
   crumbs={[
     { label: 'Home', href: '/' },
     { label: 'Home Construction', href: '/home-construction' },
   ]}
-  hero={{ eyebrow: 'Our Construction Services', title: 'Home Construction', bg: hero }}
+  hero={{ eyebrow: 'Construction', title: 'Home Construction in the Rio Grande Valley', bg: hero }}
   intro={{
-    eyebrow: 'Home Construction',
-    title: 'Building Dreams',
-    body: 'EDEL Roofing &amp; Construction is your partner in turning your dream home into a reality. Our <a href="/">Home Construction</a> services combine innovative design, quality craftsmanship, and attention to detail to create a space that embodies your vision, lifestyle, and aspirations.',
+    eyebrow: 'New homes',
+    title: 'Building your new home',
+    body: 'Building a house is a big decision, and you want a builder who listens. EDEL Roofing &amp; Construction offers <a href="/">home construction</a> in the Rio Grande Valley. We pay attention to the details and build the house around the way you and your family live.',
     cta: { label: 'Contact Us', href: '/contact-us' },
     images: [{ src: pool, alt: 'Home Construction' }],
   }}
   band={{
-    eyebrow: 'Home Construction',
-    title: 'Crafting Your Vision',
-    body: "From the initial conceptualization to the final brick, our team of experts collaborates closely with you to bring your dream home to life. We understand that every detail matters, from the layout and materials to the finishing touches. Whether it's a modern masterpiece or a timeless classic, we have the expertise to transform your ideas into a tangible structure.",
-    cta: { label: 'Get Instant Estimate', href: '/contact-us#estimate', roofle: true },
+    eyebrow: 'How we work',
+    title: "You're part of every step",
+    body: "We work closely with you from the first plans through the last brick. The layout, the materials and the finishing touches all matter, and you get a say in each one. Modern or traditional, we build the style you want.",
+    cta: { label: 'Talk to Us About Your Project', href: '/contact-us' },
     images: [{ src: kitchen, alt: 'Kitchen Construction' }],
   }}
   benefits={{
-    title: 'Key Benefits of Our Construction Services',
+    title: 'Why build with Edel',
     items: [
-      { title: 'Experience and Expertise', body: 'With over 25 years in the industry, our experience shines through in every project we undertake.' },
-      { title: 'Collaborative Approach', body: 'We believe in the power of teamwork. Your input matters, and we work closely with you throughout the construction process.' },
-      { title: 'Craftsmanship and Integrity', body: 'Our commitment to excellence and transparency ensures that your home is built with the utmost care and precision.' },
+      { title: 'In the Valley since 2003', body: 'Edel has been working in the Rio Grande Valley since 2003, and everything we have learned goes into each house we build.' },
+      { title: 'We work with you', body: 'Your input matters. We stay in touch through the whole build and make the big decisions together with you.' },
+      { title: 'Careful, honest work', body: 'We build with care, and we are open with you about the work and what it costs.' },
     ],
   }}
   closing={{
-    title: 'Crafting Your Dream Home',
-    body: 'Your dream home is within reach with EDEL Roofing &amp; Construction. Let our Home Construction services be the foundation of your aspirations. Contact us today to discuss your project and take the first step towards a home that reflects your unique story.',
+    title: 'Thinking about building?',
+    body: 'Call EDEL Roofing &amp; Construction and tell us about the home you want to build. We will talk it through with you and explain the next steps.',
     cta: { label: 'Contact Us', href: '/contact-us' },
   }}
 />

@@ -15,6 +15,11 @@
 // The live Duda form's recipient is encrypted in the page. Ours posts to
 // FormSpark (data/forms.ts), to eddie@ + kassie@edelroofing.com (Eddie,
 // 2026-10-18).
+// - 2026-10-20 copy pass: H1 "Contáctenos" -> "Contáctenos en Edinburg, TX"
+//   (keyword + city); title/meta rewritten plainly; eyebrow "Ponerse en
+//   Contacto" (literal) -> "Estamos para ayudarle"; added one short line above
+//   the form (24/7, financing questions go here since there is no ES
+//   financing page).
 import Base from '../../layouts/Base.astro';
 import PageHero from '../../components/PageHero.astro';
 import TrustStrip from '../../components/TrustStrip.astro';
@@ -22,6 +27,7 @@ import ContactCards from '../../components/ContactCards.astro';
 import LeadForm from '../../components/LeadForm.astro';
 import { breadcrumbSchema } from '../../data/schema';
 import { forms } from '../../data/forms';
+import { site } from '../../data/site';
 import hero from '../../assets/home/hero-roof.jpeg';
 
 const crumbs = [
@@ -30,13 +36,13 @@ const crumbs = [
 ];
 ---
 <Base
-  title="Contáctenos | EDEL Roofing & Construction Inc."
-  description="Comuníquese con EDEL Roofing & Construction Inc. en el Valle del Río Grande para techos, remodelación y construcción. ¡Llame hoy al (956) 422-3335!"
+  title="Contáctenos | EDEL Roofing & Construction en Edinburg, TX"
+  description="Llame a EDEL Roofing & Construction al (956) 422-3335 o mándenos un mensaje. Techos, remodelación y construcción en Edinburg y el Valle. Contestamos 24/7."
   lang="es"
   alternates={{ en: '/contact-us', es: '/es-mx/contact-us' }}
   schema={[breadcrumbSchema(crumbs)]}
 >
-  <PageHero crumbs={crumbs} eyebrow="Ponerse en Contacto" title="Contáctenos" bg={hero} lang="es" />
+  <PageHero crumbs={crumbs} eyebrow="Estamos para ayudarle" title="Contáctenos en Edinburg, TX" bg={hero} lang="es" />
   <TrustStrip lang="es" />
 
   <section class="section">
@@ -48,6 +54,10 @@ const crumbs = [
   <section class="section soft">
     <div class="wrap narrow">
       <h2>Mándenos un Mensaje</h2>
+      <p class="note">
+        Cuéntenos qué necesita y le regresamos la llamada. Si tiene preguntas sobre financiamiento, escríbalas aquí
+        también. ¿Es urgente? Llame al <a href={site.phoneHref}>{site.phone}</a>, contestamos 24/7.
+      </p>
       <LeadForm
         id="contacto"
         lang="es"
@@ -70,5 +80,6 @@ const crumbs = [
   .soft { background: var(--bg-soft); }
   .narrow { max-width: 760px; }
   h2 { font-size: clamp(28px, 3.4vw, 40px); text-transform: uppercase; margin-bottom: 24px; }
+  .note { margin: -8px 0 24px; }
   @media (max-width: 600px) { .section { padding-block: 44px; } }
 </style>

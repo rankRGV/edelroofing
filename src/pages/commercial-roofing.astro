@@ -7,10 +7,12 @@
 //   "EDEL ..., the go-to roofing company in Edinburg, brings".
 // - Dropped the Duda slider placeholders ("Slide title", "Write your caption
 //   here").
-// - Kept "over two decades" and "25-year legacy" as live (open question:
-//   "over 25 years" vs "since 2003").
 // - Added: links to the city commercial roofing and roof coating pages,
 //   breadcrumb, trust strip, quote/call buttons.
+// - 2026-10-20 copy pass: plain, warm rewrite; removed hype ("top-notch",
+//   "unwavering", "highest standard", "tackle any commercial roofing
+//   challenge"); "since 2003" replaces "over two decades" and "25-year
+//   legacy"; H1 and title now carry Edinburg and the RGV.
 import InnerPage from '../layouts/InnerPage.astro';
 import hero from '../assets/commercial-roofing/roofing-construction.jpeg';
 import building from '../assets/commercial-roofing/commercial-building.jpg';
@@ -19,25 +21,25 @@ import repair from '../assets/commercial-roofing/commercial-roofing-repair.jpeg'
 import repairing from '../assets/commercial-roofing/repairing-commercial-roof.jpeg';
 ---
 <InnerPage
-  title="Commercial Roofing Services | EDEL Roofing & Construction Inc."
-  description="Discover top-notch commercial roofing services in Rio Grande Valley with us. Our experts ensure durability and excellence for your business. Get a quote today!"
+  title="Commercial Roofing in Edinburg & the RGV | EDEL Roofing"
+  description="Commercial roof installation, repair and replacement in Edinburg and the Rio Grande Valley. Flat, TPO and EPDM roofs. Free consultation and estimate."
   alternates={{ en: '/commercial-roofing', es: '/es-mx/commercial-roofing' }}
   crumbs={[
     { label: 'Home', href: '/' },
     { label: 'Commercial Roofing', href: '/commercial-roofing' },
   ]}
-  hero={{ eyebrow: 'Our Roofing Services', title: 'Commercial Roofing', bg: hero }}
+  hero={{ eyebrow: 'For business owners', title: 'Commercial Roofing in Edinburg and the RGV', bg: hero }}
   intro={{
-    eyebrow: 'Transforming Roofs',
-    title: 'Your Trusted Commercial Roofing Experts',
-    body: 'EDEL Roofing &amp; Construction Inc., the go-to <a href="/">roofing company in Edinburg</a>, brings over two decades of unwavering dedication and expertise to the commercial roofing industry. We understand that your commercial property is a significant investment, and a well-maintained roof is essential to protect that investment. Whether you need a new commercial roof installation, repairs, maintenance, or replacement, we are your trusted partner in the Rio Grande Valley communities.',
+    eyebrow: 'Commercial roofing',
+    title: 'Roofs for Valley businesses',
+    body: 'A leak over your shop floor, office or warehouse is a problem you need fixed fast, and the roof protects everything under it. EDEL Roofing &amp; Construction Inc. is a <a href="/">roofing company in Edinburg</a> that has done commercial roofing since 2003. We install new commercial roofs and handle repairs, maintenance and replacement for businesses across the Rio Grande Valley.',
     cta: { label: 'Contact Us', href: '/contact-us' },
     images: [{ src: building, alt: 'Commercial Roofing' }],
   }}
   band={{
-    eyebrow: 'Commercial Roofing Installation',
-    title: 'Our Commitment to Quality',
-    body: 'With a 25-year legacy rooted in the vision of our founder, Eddie Elizondo, we take pride in our unwavering commitment to quality construction and exceptional customer service. Our team of experienced professionals is dedicated to delivering the highest standard of workmanship, using top-quality materials to ensure the longevity and reliability of your commercial roofing system.',
+    eyebrow: 'Commercial roof installation',
+    title: 'How we handle a commercial job',
+    body: 'Eddie Elizondo started this company on good work and good customer service, and we run commercial jobs the same way. Our crews are experienced, and we use quality materials so your roof keeps doing its job for years. Before any work starts, you get a written estimate with the scope and the price.',
     cta: { label: 'Get Instant Estimate', href: '/contact-us#estimate', roofle: true },
     images: [
       { src: commercial, alt: 'Commercial Roofing' },
@@ -46,16 +48,16 @@ import repairing from '../assets/commercial-roofing/repairing-commercial-roof.jp
     ],
   }}
   benefits={{
-    title: 'Why Choose EDEL Roofing & Construction Inc. for Your Commercial Roofing Needs?',
+    title: 'What we offer businesses',
     items: [
-      { title: 'Comprehensive Services', body: 'Whether you need a new flat roof installation, TPO roofing, EPDM roofing, <a href="/roof-repairs">roof repairs</a>, maintenance, or roof replacement, we provide a comprehensive range of commercial roofing services tailored to your specific needs.' },
-      { title: 'Expertise', body: 'Our team consists of skilled roofing professionals who specialize in commercial roofing projects of all sizes and complexities. We have the knowledge and experience to tackle any commercial roofing challenge.' },
-      { title: 'Quality Materials', body: 'We partner with trusted suppliers to source the highest quality roofing materials, ensuring durability and longevity for your commercial roof.' },
+      { title: 'Flat roofs, TPO and EPDM', body: 'New flat roof installation, TPO roofing, EPDM roofing, <a href="/roof-repairs">roof repairs</a>, maintenance and roof replacement. We fit the work to your building and what it needs.' },
+      { title: 'Buildings of all sizes', body: 'Our crews are skilled at commercial roofing and work on buildings of every size, whether the job is simple or complicated.' },
+      { title: 'Quality materials', body: 'We buy from suppliers we trust and use quality roofing materials made to last on a commercial roof.' },
     ],
   }}
   spokes={{
     title: 'Commercial Roofing by City',
-    intro: 'Each of these pages covers commercial roofing or roof coatings for one city.',
+    intro: 'Is your building in Edinburg, McAllen or Mission? Each page below covers commercial roofing or roof coatings in that city.',
     links: [
       { href: '/commercial-roofing-edinburg', label: 'Commercial Roofing in Edinburg, TX' },
       { href: '/commercial-roofing-mcallen-tx', label: 'Commercial Roofing in McAllen, TX' },
@@ -65,8 +67,8 @@ import repairing from '../assets/commercial-roofing/repairing-commercial-roof.jp
     ],
   }}
   closing={{
-    title: 'Protect Your Commercial Property',
-    body: 'Protect your commercial property with a reliable and long-lasting roofing solution. Contact EDEL Roofing &amp; Construction Inc. today to discuss your commercial <a href="/roof-repairs">roofing repair</a> needs in Edinburg, TX. Our team is ready to provide you with a free consultation and estimate. Trust us to deliver top-notch roofing solutions for your commercial property in the Rio Grande Valley communities.',
+    title: 'Need work on a commercial roof?',
+    body: 'Tell us what is going on with your building, whether it needs commercial <a href="/roof-repairs">roofing repair</a> or a new roof. We work in Edinburg, TX and all over the Rio Grande Valley, and the consultation and estimate are free.',
     cta: { label: 'Contact Us', href: '/contact-us' },
   }}
 />

@@ -7,11 +7,15 @@
 // - Address showed the old 3321 W Alberta Rd office; now 1815 N Jackson Rd.
 // - Stray zero-width character before "Your message" removed.
 // - Added: breadcrumb, quote/call buttons.
+// - 2026-10-20 copy pass: plain, warm rewrite; meta description drops
+//   "top-notch"; H1 and lead shortened; lead adds the phone and "We answer
+//   24/7" (sheet fact).
 // Open: should this page be noindex? Not changed (79 impressions on live).
 import Base from '../layouts/Base.astro';
 import PageHero from '../components/PageHero.astro';
 import ContactCards from '../components/ContactCards.astro';
 import { breadcrumbSchema } from '../data/schema';
+import { site } from '../data/site';
 import hero from '../assets/home/hero-roof.jpeg';
 
 const crumbs = [
@@ -21,13 +25,13 @@ const crumbs = [
 ---
 <Base
   title="Thank You | EDEL Roofing & Construction Inc."
-  description="Contact EDEL Roofing & Construction Inc. in Rio Grande Valley for top-notch roofing, remodeling, and construction services. Call (956) 422-3335 today!"
+  description="Thanks for contacting EDEL Roofing & Construction Inc. in Edinburg. We will call you back soon. Need us now? Call (956) 422-3335."
   schema={[breadcrumbSchema(crumbs)]}
 >
   <PageHero
     crumbs={crumbs}
-    title="Thank you for getting in touch with us."
-    lead="Your message has been received, and we'll be in touch shortly to assist you with your roofing needs."
+    title="Thank you. We got your message."
+    lead={`Someone from our team will call you back soon. If it can't wait, call ${site.phone}. We answer 24/7.`}
     bg={hero}
   />
   <section class="section">

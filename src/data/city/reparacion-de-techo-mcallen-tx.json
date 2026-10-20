@@ -4,7 +4,7 @@
   "city": "mcallen",
   "service": "repair",
   "title": "Reparación de Techo en McAllen, TX | EDEL Roofing & Construction",
-  "description": "Reparación de goteras y daño por viento en McAllen, TX. Estimado escrito antes de empezar, casi siempre en una visita. RCAT #03-0489. Llame al (956) 422-3335.",
+  "description": "Reparación de goteras y daño por viento en McAllen, TX. Estimado escrito antes de empezar, casi siempre en una visita. Llame al (956) 422-3335.",
   "alternates": {
     "en": "/roof-repair-mcallen-tx",
     "es": "/reparacion-de-techo-mcallen-tx"
@@ -63,7 +63,7 @@
         },
         {
           "title": "Tejas levantadas por el viento",
-          "body": "Las tejas que perdieron su sello en una tormenta se vuelven a sellar o se reemplazan, buscando el mejor emparejamiento posible con el resto del techo."
+          "body": "Las tejas que perdieron su sello en una tormenta se vuelven a sellar o se reemplazan con tejas lo más parecidas posible al resto del techo."
         },
         {
           "title": "Tapajuntas",
@@ -162,7 +162,7 @@
     }
   ],
   "cta": {
-    "title": "Obtenga un estimado gratis de reparación de techo en McAllen",
+    "title": "Pida un estimado gratis de reparación de techo en McAllen",
     "line": "Díganos lo que está viendo. Revisamos el techo, le mostramos las fotos y le damos un precio por escrito.",
     "buttons": [
       {
@@ -213,7 +213,7 @@
           "@type": "WebPage",
           "name": "Reparación de Techo en McAllen, TX",
           "url": "https://www.edelroofing.com/reparacion-de-techo-mcallen-tx",
-          "description": "Reparación de goteras y daño por viento en McAllen, TX. Estimado escrito antes de empezar, casi siempre en una visita. RCAT #03-0489. Llame al (956) 422-3335.",
+          "description": "Reparación de goteras y daño por viento en McAllen, TX. Estimado escrito antes de empezar, casi siempre en una visita. Llame al (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -278,6 +278,7 @@
     "Spanish breadcrumb \"Áreas de Servicio\" linked the English /service-areas; now /es-mx/service-areas",
     "em/en dashes swapped for commas, colons, or hyphens",
     "review counts (246/252) -> 250+ (match the homepage)",
-    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs",
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
   ]
 }

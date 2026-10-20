@@ -4,7 +4,7 @@
   "city": "edinburg",
   "service": "replacement",
   "title": "Reemplazo de Techo en Edinburg, TX | EDEL Roofing & Construction",
-  "description": "Reemplazo de techo en Edinburg, TX con una compañía de Edinburg. Techos de tejas con granizo o viejos, retiro completo, alcance escrito. Llame al (956) 422-3335.",
+  "description": "Reemplazo de techo en Edinburg, TX con un techero de Edinburg. Techos con granizo o viejos, retiro completo y alcance por escrito. (956) 422-3335.",
   "alternates": {
     "en": "/roof-replacement-edinburg-tx",
     "es": "/reemplazo-de-techo-en-edinburg-tx"
@@ -37,9 +37,9 @@
       "alt": false,
       "kind": "text",
       "paras": [
-        "Nuestra oficina está en 1815 N Jackson Rd, así que un techo en Edinburg nos queda cerca. Llevamos reemplazando techos en todo el condado de Hidalgo desde 2003.",
+        "Nuestra oficina está en 1815 N Jackson Rd, así que un techo en Edinburg nos queda cerca. Reemplazamos techos en todo el condado de Hidalgo desde 2003.",
         "Las casas de Edinburg se dividen en dos grupos. Cerca del 30% se construyeron antes de 1990, y más de la mitad se construyeron en el 2000 o después, según datos de encuesta del Censo (ACS 2024). El año mediano de construcción es 2002. Las casas más viejas muchas veces ya van en su segundo o tercer techo. Muchas de las más nuevas todavía tienen el techo que puso el constructor, y esos primeros techos ya tienen 20 años o están cerca. La ciudad también sigue creciendo: en 2025 se aprobaron 32 subdivisiones nuevas con 867 lotes, y 45 más estaban en revisión en 2026, según Valley Business Report.",
-        "Cerca de la mitad de las casas de Edinburg las ocupan inquilinos (ACS 2024). Si usted tiene una casa de renta, un alcance de techo y una factura por escrito le sirven para su aseguradora y sus registros."
+        "Cerca de la mitad de las casas de Edinburg las ocupan inquilinos (ACS 2024). Si usted tiene una casa de renta, guarde el alcance del techo y la factura por escrito. Los va a pedir su aseguradora y le sirven para sus registros."
       ]
     },
     {
@@ -129,11 +129,11 @@
         },
         {
           "q": "¿Cuánto tiempo toma?",
-          "a": "La mayoría de las casas en Edinburg toman de uno a tres días, si el clima lo permite. Recibe los tiempos por escrito antes de empezar."
+          "a": "La mayoría de las casas en Edinburg toman de uno a dos días, según el tamaño del techo y el material, y la lluvia puede atrasarlo. Usted recibe los tiempos por escrito antes de empezar."
         },
         {
           "q": "¿Pueden cambiar mis canalones al mismo tiempo?",
-          "a": "Sí. Hacer los canalones junto con el techo significa una sola cuadrilla y no tener que rehacer dos veces el trabajo de fascia o molduras. Vea <a href=\"/gutters-edinburg-tx-es\">canalones en Edinburg</a>."
+          "a": "Sí. Si hacemos los canalones con el techo, una sola cuadrilla hace las dos cosas y la fascia y las molduras se trabajan una sola vez. Vea <a href=\"/gutters-edinburg-tx-es\">canalones en Edinburg</a>."
         },
         {
           "q": "¿Instalan techos en construcción nueva?",
@@ -147,7 +147,7 @@
     }
   ],
   "cta": {
-    "title": "Obtenga un estimado gratis de reemplazo de techo en Edinburg",
+    "title": "Pida un estimado gratis de reemplazo de techo en Edinburg",
     "line": "Estamos aquí mismo en N Jackson Rd. Inspeccionamos el techo y le damos un alcance y un precio por escrito.",
     "buttons": [
       {
@@ -198,7 +198,7 @@
           "@type": "WebPage",
           "name": "Reemplazo de Techo en Edinburg, TX",
           "url": "https://www.edelroofing.com/reemplazo-de-techo-en-edinburg-tx",
-          "description": "Reemplazo de techo en Edinburg, TX con una compañía de Edinburg. Techos de tejas con granizo o viejos, retiro completo, alcance escrito. Llame al (956) 422-3335.",
+          "description": "Reemplazo de techo en Edinburg, TX con un techero de Edinburg. Techos con granizo o viejos, retiro completo y alcance por escrito. (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -227,7 +227,7 @@
               "name": "¿Cuánto tiempo toma?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "La mayoría de las casas en Edinburg toman de uno a tres días, si el clima lo permite. Recibe los tiempos por escrito antes de empezar."
+                "text": "La mayoría de las casas en Edinburg toman de uno a dos días, según el tamaño del techo y el material, y la lluvia puede atrasarlo. Usted recibe los tiempos por escrito antes de empezar."
               }
             },
             {
@@ -235,7 +235,7 @@
               "name": "¿Pueden cambiar mis canalones al mismo tiempo?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Sí. Hacer los canalones junto con el techo significa una sola cuadrilla y no tener que rehacer dos veces el trabajo de fascia o molduras. Vea canalones en Edinburg."
+                "text": "Sí. Si hacemos los canalones con el techo, una sola cuadrilla hace las dos cosas y la fascia y las molduras se trabajan una sola vez. Vea canalones en Edinburg."
               }
             },
             {
@@ -262,6 +262,7 @@
   "changes": [
     "Spanish breadcrumb \"Áreas de Servicio\" linked the English /service-areas; now /es-mx/service-areas",
     "review counts (246/252) -> 250+ (match the homepage)",
-    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs",
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
   ]
 }

@@ -4,7 +4,7 @@
   "city": "mission",
   "service": "commercial",
   "title": "Techado Comercial en Mission, TX | EDEL Roofing & Construction",
-  "description": "Reparación y reemplazo de techos comerciales en Mission, TX para locales, oficinas y edificios industriales. TPO, EPDM, recubrimientos. Llame al (956) 422-3335.",
+  "description": "Reparación y reemplazo de techos comerciales en Mission, TX para locales, oficinas y bodegas. TPO, EPDM y recubrimientos. Llame al (956) 422-3335.",
   "alternates": {
     "en": "/commercial-roofing-mission-tx",
     "es": "/techado-comercial-mission-tx"
@@ -20,7 +20,7 @@
     }
   ],
   "h1": "Techado Comercial en Mission, TX",
-  "lede": "Edel Roofing &amp; Construction instala, repara y reemplaza techos planos y de poca pendiente para negocios y dueños de propiedades en Mission. Estimados comerciales gratis, alcance por escrito, con licencia y seguro.",
+  "lede": "Edel Roofing &amp; Construction instala, repara y reemplaza techos planos y de poca pendiente para negocios y dueños de propiedades en Mission. Le damos un estimado gratis y un alcance por escrito, y tenemos licencia y seguro.",
   "heroCtas": [
     {
       "label": "Obtener Estimado Gratis",
@@ -38,7 +38,7 @@
       "kind": "text",
       "paras": [
         "El lado comercial de Mission está creciendo por los dos extremos. Sobre la Expressway 83 en Bryan Rd, el desarrollo Mission Gateway es parte de lo que la Corporación de Desarrollo Económico de Mission (Mission EDC) llama el corredor de Bryan. Al sur, Sharyland Business Park tiene lugar para unos 2.5 millones de pies cuadrados de construcción industrial cerca del Puente Internacional Anzalduas, y la ampliación de $88 millones del puente agrega seis carriles comerciales. Los edificios más antiguos a lo largo de Business 83 y de la autopista completan el resto.",
-        "Esa mezcla significa dos tipos de trabajos de techo comercial. Las bodegas y tiendas nuevas necesitan un sistema de membrana bien instalado desde la primera vez. Los edificios más antiguos de décadas pasadas necesitan reparaciones, recubrimientos o un reemplazo completo conforme sus techos llegan al final de su vida útil.",
+        "Por eso aquí hay dos tipos de trabajo de techo comercial. Las bodegas y tiendas nuevas necesitan una membrana bien instalada desde la primera vez. Los edificios más viejos necesitan reparaciones, un recubrimiento o un reemplazo completo conforme sus techos se gastan.",
         "Manejamos a Mission desde nuestra oficina en 1815 N Jackson Rd en Edinburg, a unos 26 minutos. Trabajamos en techos comerciales en todo el condado de Hidalgo desde 2003."
       ]
     },
@@ -71,7 +71,7 @@
         },
         {
           "title": "Reparación de bordes y tapajuntas",
-          "body": "Aseguramos el metal del perímetro y los tapajuntas sueltos después del viento, antes de que la próxima tormenta levante la membrana."
+          "body": "Después de un viento fuerte, fijamos el metal del borde y los tapajuntas sueltos para que la próxima tormenta no levante la membrana."
         },
         {
           "title": "Recubrimientos de techo",
@@ -89,7 +89,7 @@
       "kind": "text",
       "paras": [
         "Los documentos de permisos de la Ciudad de Mission indican el International Building Code de 2024 y los códigos de 2024 correspondientes para incendios, plomería, mecánica y energía. Si tiene preguntas sobre un permiso para su edificio, llame a la División de Inspecciones al (956) 580-8691.",
-        "El trabajo comercial requiere más planeación que una casa. Hay inquilinos afectados, las entregas tienen que seguir llegando y algunos trabajos se tienen que hacer por etapas. Inspeccionamos antes de dar un estimado, ponemos todo por escrito y programamos según su edificio. Si administra varias propiedades en Mission, podemos programar inspecciones periódicas para que los problemas pequeños se reparen antes de convertirse en un reemplazo."
+        "Un techo comercial lleva más planeación que una casa. Sus inquilinos lo sienten, las entregas tienen que seguir llegando y algunos trabajos se tienen que hacer por etapas. Inspeccionamos antes de dar un estimado, ponemos todo por escrito y programamos según su edificio. Si administra varias propiedades en Mission, podemos programar inspecciones periódicas para que los problemas pequeños se reparen antes de convertirse en un reemplazo."
       ]
     },
     {
@@ -134,7 +134,7 @@
         },
         {
           "q": "¿Cuánto dura un techo comercial en Mission?",
-          "a": "Una membrana bien instalada en el Valle normalmente dura de 15 a 25 años, según el material y el mantenimiento. El calor y los rayos UV acortan ese tiempo; las inspecciones regulares le ayudan a durar más."
+          "a": "Una membrana bien instalada en el Valle normalmente dura de 15 a 25 años, según el material y el mantenimiento. El calor y el sol acortan ese tiempo. Con inspecciones regulares dura más."
         },
         {
           "q": "¿Inspeccionan techos comerciales después de una tormenta?",
@@ -152,8 +152,8 @@
     }
   ],
   "cta": {
-    "title": "Obtenga un estimado gratis de techado comercial en Mission",
-    "line": "Construcción nueva, techo viejo o una gotera después de la última tormenta: lo inspeccionamos y le ponemos el alcance y el precio por escrito.",
+    "title": "Pida un estimado gratis de techado comercial en Mission",
+    "line": "Si está construyendo o tiene una gotera desde la última tormenta, primero lo revisamos y le ponemos el alcance y el precio por escrito.",
     "buttons": [
       {
         "label": "Programar Inspección Gratis",
@@ -203,7 +203,7 @@
           "@type": "WebPage",
           "name": "Techado Comercial en Mission, TX",
           "url": "https://www.edelroofing.com/techado-comercial-mission-tx",
-          "description": "Reparación y reemplazo de techos comerciales en Mission, TX para locales, oficinas y edificios industriales. TPO, EPDM, recubrimientos. Llame al (956) 422-3335.",
+          "description": "Reparación y reemplazo de techos comerciales en Mission, TX para locales, oficinas y bodegas. TPO, EPDM y recubrimientos. Llame al (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -240,7 +240,7 @@
               "name": "¿Cuánto dura un techo comercial en Mission?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Una membrana bien instalada en el Valle normalmente dura de 15 a 25 años, según el material y el mantenimiento. El calor y los rayos UV acortan ese tiempo; las inspecciones regulares le ayudan a durar más."
+                "text": "Una membrana bien instalada en el Valle normalmente dura de 15 a 25 años, según el material y el mantenimiento. El calor y el sol acortan ese tiempo. Con inspecciones regulares dura más."
               }
             },
             {
@@ -276,6 +276,7 @@
     "Spanish breadcrumb \"Áreas de Servicio\" linked the English /service-areas; now /es-mx/service-areas",
     "em/en dashes swapped for commas, colons, or hyphens",
     "review counts (246/252) -> 250+ (match the homepage)",
-    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs",
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
   ]
 }

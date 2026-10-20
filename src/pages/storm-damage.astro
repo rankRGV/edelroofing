@@ -6,45 +6,49 @@
 // - Headings written in normal case (CSS uppercases them, same look).
 // - Added: links to the McAllen and Mission storm damage pages and Edinburg
 //   roof repair, breadcrumb, trust strip, quote/call buttons.
+// - 2026-10-20 copy pass: plain, warm rewrite; removed hype and patterns
+//   ("We're not just restoring your roof; we're enhancing its resilience",
+//   "fortify", "peace of mind", "ensuring minimal damage"); H1 and title now
+//   carry Edinburg and the RGV; added "We answer 24/7" (sheet fact).
 import InnerPage from '../layouts/InnerPage.astro';
 import hero from '../assets/storm-damage/edel-roofing-storm-damage-2.jpg';
 import storm5 from '../assets/storm-damage/edel-roofing-storm-damage-5.jpg';
 import gray from '../assets/storm-damage/gray-roof-design.jpeg';
 ---
 <InnerPage
-  title="Storm Damage Roof Repair | EDEL Roofing & Construction Inc."
-  description="Is your roof damaged by a storm? Trust EDEL Roofing & Construction Inc. for swift and reliable storm damage roof repair in Rio Grande Valley. Call us today!"
+  title="Storm Damage Roof Repair in Edinburg & the RGV | EDEL Roofing"
+  description="Wind or hail damage on your roof? EDEL Roofing in Edinburg inspects the whole roof, gives you a detailed report and repairs storm damage across the Valley."
   alternates={{ en: '/storm-damage', es: '/es-mx/storm-damage' }}
   crumbs={[
     { label: 'Home', href: '/' },
     { label: 'Storm Damage', href: '/storm-damage' },
   ]}
-  hero={{ eyebrow: 'Our Roofing Services', title: 'Storm Damage Roof Repair', bg: hero }}
+  hero={{ eyebrow: 'After a storm', title: 'Storm Damage Roof Repair in Edinburg and the RGV', bg: hero }}
   intro={{
-    eyebrow: 'Storm Damage Roofing Repair',
-    title: 'Storm-Ready Roof Repair',
-    body: "EDEL Roofing &amp; Construction is your reliable <a href=\"/\">Edinburg roofing contractor</a> for quick and effective storm-related roof repairs. Our team acts swiftly to ensure your home's safety and your peace of mind.",
+    eyebrow: 'Storm damage',
+    title: 'When the storm has passed',
+    body: "Strong wind and hail can tear shingles off, crack them, or open a leak you won't notice until the next rain. EDEL Roofing &amp; Construction is an <a href=\"/\">Edinburg roofing contractor</a>, and we do storm damage roof repair for homes across the Valley. Call us and we'll come check your roof.",
     cta: { label: 'Contact Us', href: '/contact-us' },
     images: [{ src: storm5, alt: 'Storm Damage Roofers' }],
   }}
   band={{
-    eyebrow: 'Our Approach',
-    title: 'Texas-Ready Storm Damage Solutions',
-    body: "We go beyond quick fixes. Our comprehensive approach includes a detailed damage assessment, customized repair plans, and preventative measures to fortify your roof against future storms. We're not just restoring your roof; we're enhancing its resilience.",
+    eyebrow: 'Our approach',
+    title: 'We inspect first, then repair',
+    body: "We check the whole roof, including the spots you can't see from the yard. Then we put together a repair plan for your roof and give you the price. Where it makes sense, we also add fixes that help the roof handle the next storm better.",
     cta: { label: 'Get Instant Estimate', href: '/contact-us#estimate', roofle: true },
     images: [{ src: gray, alt: 'Roof Storm Damage Repair' }],
   }}
   benefits={{
-    title: 'Key Benefits of Our Storm Damage Services',
+    title: 'How we handle storm damage',
     items: [
-      { title: 'Fast, Localized Response in Rio Grande Valley', body: "When storms hit the Rio Grande Valley, time is of the essence. Our local team is trained to respond quickly, ensuring minimal damage and faster recovery. Don't wait for help; we're already in your community." },
-      { title: 'Comprehensive Storm Damage Assessments', body: 'Understanding the full extent of storm damage is key to an effective repair. Our experts conduct thorough inspections, providing you with a detailed report that helps you make informed decisions.' },
-      { title: 'Long-Term Roof Resilience', body: "In a region known for its challenging weather, we don't just repair; we fortify. Our <a href=\"/contact-us\">storm damage services in the Rio Grande Valley</a> include preventative measures that enhance your roof's resilience against future storms." },
+      { title: 'Local crews in the Rio Grande Valley', body: "We're based in Edinburg, so when a storm hits the Valley, our crews are already here. Call as soon as you can and we'll get someone out to look at it." },
+      { title: 'A full damage report', body: 'Knowing everything the storm did is key to a good repair. We inspect the roof closely and give you a detailed report, so you can decide what to fix with all the facts in front of you.' },
+      { title: 'Repairs made for Valley weather', body: "The weather down here is hard on a roof. Our <a href=\"/contact-us\">storm damage services in the Rio Grande Valley</a> include steps that help your roof hold up better the next time." },
     ],
   }}
   spokes={{
     title: 'Storm Damage by City',
-    intro: 'Each of these pages covers storm and hail damage or roof repair for one city.',
+    intro: 'In McAllen or Mission? These pages cover storm and hail damage in your city. In Edinburg, see our roof repair page.',
     links: [
       { href: '/storm-damage-mcallen-tx', label: 'Storm & Hail Damage Roof Repair in McAllen, TX' },
       { href: '/storm-damage-mission-tx', label: 'Storm & Hail Damage Roof Repair in Mission, TX' },
@@ -52,8 +56,8 @@ import gray from '../assets/storm-damage/gray-roof-design.jpeg';
     ],
   }}
   closing={{
-    title: 'Secure Your Property From Storm Damage',
-    body: 'Don\'t let storm damage put your home at risk. Choose EDEL Roofing &amp; Construction for rapid, effective, and long-lasting roof <a href="/roof-repairs">repairs in Edinburg</a>. Contact us today to fortify your property against the elements and restore your peace of mind.',
+    title: 'Did a storm hit your roof?',
+    body: 'Call us. We pick up the phone 24/7. We will inspect the damage and give you a written estimate for <a href="/roof-repairs">repairs in Edinburg</a> or wherever you live in the Valley.',
     cta: { label: 'Contact Us', href: '/contact-us' },
   }}
 />

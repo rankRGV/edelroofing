@@ -37,9 +37,9 @@
       "alt": false,
       "kind": "text",
       "paras": [
-        "Our office is at 1815 N Jackson Rd, so an Edinburg roof is a short drive for us. We have been replacing roofs across Hidalgo County since 2003.",
+        "Our office is at 1815 N Jackson Rd, so an Edinburg roof is a short drive for us. We've replaced roofs across Hidalgo County since 2003.",
         "Edinburg's homes split into two groups. About 30% were built before 1990, and more than half went up in 2000 or later, according to Census survey data (ACS 2024). The median home dates to 2002. Older homes are often on their second or third roof. Many of the newer ones still have the roof the builder put on, and those first roofs are now 20 years old or close to it. The city keeps growing too: 32 new subdivisions with 867 lots were approved in 2025, and 45 more were under review in 2026, according to Valley Business Report.",
-        "About half of Edinburg homes are renter occupied (ACS 2024). If you own a rental, a written roof scope and invoice are useful for your insurer and your records."
+        "About half of Edinburg homes are renter occupied (ACS 2024). If you own a rental, keep the written roof scope and invoice. Your insurer will want them, and so will your records."
       ]
     },
     {
@@ -129,11 +129,11 @@
         },
         {
           "q": "How long does it take?",
-          "a": "Most Edinburg homes take one to three days, weather permitting. You get the timeline in writing before we start."
+          "a": "Most Edinburg homes take one to two days, depending on the size of the roof and the material, and weather can push that back. You get the timeline in writing before we start."
         },
         {
           "q": "Can you replace my gutters at the same time?",
-          "a": "Yes. Doing the gutters with the roof means one crew and no redoing fascia or trim work twice. See <a href=\"/gutters-edinburg-tx\">gutters in Edinburg</a>."
+          "a": "Yes. If we do the gutters with the roof, one crew handles both and the fascia and trim only get touched once. See <a href=\"/gutters-edinburg-tx\">gutters in Edinburg</a>."
         },
         {
           "q": "Do you install new roofs on new construction?",
@@ -227,7 +227,7 @@
               "name": "How long does it take?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Most Edinburg homes take one to three days, weather permitting. You get the timeline in writing before we start."
+                "text": "Most Edinburg homes take one to two days, depending on the size of the roof and the material, and weather can push that back. You get the timeline in writing before we start."
               }
             },
             {
@@ -235,7 +235,7 @@
               "name": "Can you replace my gutters at the same time?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. Doing the gutters with the roof means one crew and no redoing fascia or trim work twice. See gutters in Edinburg."
+                "text": "Yes. If we do the gutters with the roof, one crew handles both and the fascia and trim only get touched once. See gutters in Edinburg."
               }
             },
             {
@@ -262,6 +262,7 @@
   "changes": [
     "\"unlocks stronger warranty coverage\" -> \"gives access to stronger warranty coverage\" (banned word)",
     "review counts (246/252) -> 250+ (match the homepage)",
-    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs",
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
   ]
 }

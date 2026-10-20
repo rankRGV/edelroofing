@@ -4,7 +4,7 @@
   "city": "mission",
   "service": "inspections",
   "title": "Roof Inspections in Mission, TX | Edel Roofing & Construction",
-  "description": "Free roof inspections in Mission, TX. Find out how much life is left on an original 2000s roof before you buy, sell, or renew insurance. Call (956) 422-3335.",
+  "description": "Free roof inspections in Mission, TX. Find out how much life is left on an original 2000s roof before you buy, sell or renew insurance. (956) 422-3335.",
   "alternates": null,
   "crumbs": [
     {
@@ -31,7 +31,7 @@
       "kind": "text",
       "paras": [
         "About half of Mission's homes were built in 2000 or later, and the median year built is 2000 (Census ACS 2020 to 2024). Most of those houses still have their first roof, and that roof is now around 20 years old. In Valley heat, that is about where a shingle roof starts to run out of life.",
-        "So the question we hear most is simple: how long do I have? Some original roofs still have several good years. Others need work now. You cannot tell from the driveway. An inspection on the roof itself answers it."
+        "So the question we hear most is simple. How long do I have? Some original roofs still have several good years. Others need work now. You cannot tell from the driveway. An inspection on the roof itself answers it."
       ]
     },
     {
@@ -41,7 +41,7 @@
       "cards": [
         {
           "title": "Shingles",
-          "body": "Granule loss, brittleness, cracks, curling, and hail bruises across every slope, not just the front."
+          "body": "Granule loss, brittle or curling shingles, cracks and hail bruises. We check every slope, including the back and sides."
         },
         {
           "title": "Flashing",
@@ -135,7 +135,7 @@
   ],
   "cta": {
     "title": "Book a free roof inspection in Mission",
-    "line": "Find out how much life your roof has left. Written report with photos, same visit, no obligation.",
+    "line": "Find out how much life your roof has left. You get a written report with photos before we leave, and you don't owe us anything.",
     "buttons": [
       {
         "label": "Book a Free Inspection",
@@ -179,7 +179,7 @@
           "@type": "WebPage",
           "name": "Roof Inspections in Mission, TX",
           "url": "https://www.edelroofing.com/roof-inspections-mission-tx",
-          "description": "Free roof inspections in Mission, TX. Find out how much life is left on an original 2000s roof before you buy, sell, or renew insurance. Call (956) 422-3335.",
+          "description": "Free roof inspections in Mission, TX. Find out how much life is left on an original 2000s roof before you buy, sell or renew insurance. (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -234,6 +234,7 @@
   ],
   "changes": [
     "review counts (246/252) -> 250+ (match the homepage)",
-    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs"
+    "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs",
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
   ]
 }
