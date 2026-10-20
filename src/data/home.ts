@@ -38,7 +38,6 @@ export type HomeCopy = {
   h1: string;
   assure: [string, string];
   heroText: string;
-  heroArtAlt: string;
   quote: { pill: string; title: string; body: string; button: string; call: string; final: string; note: string };
   services: { title: string; lead: string; items: { eyebrow: string; title: string; body: string; href: string; button: string; alt: string }[] };
   proof: {
@@ -70,7 +69,6 @@ export const homeEn: HomeCopy = {
   assure: ['Free inspection &amp; written estimate', 'Only CertainTeed Select ShingleMaster in the RGV'],
   heroText: `Free roof inspections and written estimates before work begins. We've roofed homes and businesses in the
           Valley since 2003, licensed and insured (${site.license}).`,
-  heroArtAlt: 'Roofs Edel Roofing has completed in the Rio Grande Valley',
   quote: {
     pill: 'Online estimate',
     title: 'See an estimated price for your roof',
@@ -202,7 +200,6 @@ export const homeEs: HomeCopy = {
   assure: ['Inspección y presupuesto por escrito gratis', 'Único CertainTeed Select ShingleMaster en el RGV'],
   heroText: `Inspecciones de techo gratis y presupuestos por escrito antes de empezar el trabajo. Techamos casas y
           negocios en el Valle desde 2003, con licencia y seguro (${site.license}).`,
-  heroArtAlt: 'Techos que Edel Roofing ha terminado en el Valle del Río Grande',
   quote: {
     pill: 'Estimado en línea',
     title: 'Vea un precio estimado para su techo',

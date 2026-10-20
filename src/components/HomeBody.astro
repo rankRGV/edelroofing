@@ -2,7 +2,9 @@
 // Homepage body, shared by / (EN) and /es-mx (ES); copy comes from
 // src/data/home.ts. Section order reworked 2026-10-20 after the cold-visitor
 // review (see the note at the top of home.ts). Reviews come from
-// GoogleReviews.astro (our own section, no EmbedSocial widget).
+// GoogleReviews.astro (our own section, no EmbedSocial widget). The diamond
+// project collage above the estimate card was removed so the card lines up
+// with the headline (Eddie, 2026-10-20).
 import { Image } from 'astro:assets';
 import { bgStyle } from '../data/bg';
 import LeadForm from './LeadForm.astro';
@@ -14,7 +16,6 @@ import { forms } from '../data/forms';
 
 
 import heroRoof from '../assets/home/hero-roof.jpeg';
-import heroProjects from '../assets/home/hero-projects.png';
 import truckHouse from '../assets/home/truck-house.jpeg';
 import residential from '../assets/home/residential.jpg';
 import commercial from '../assets/home/commercial.jpeg';
@@ -80,14 +81,6 @@ const badges = [
       </div>
 
       <div class="hero-side">
-        <Image
-          class="hero-art"
-          src={heroProjects}
-          alt={c.heroArtAlt}
-          widths={[320, 480, 640]}
-          sizes="420px"
-          loading="eager"
-        />
         <div class="quote-card">
           <p class="pill"><span class="dot"></span>{c.quote.pill}</p>
           <h2>{c.quote.title}</h2>
@@ -319,7 +312,6 @@ const badges = [
   .hero-text { font-size: 17px; max-width: 46ch; color: rgba(255, 255, 255, 0.9); margin: 0; }
 
   .hero-side { position: relative; display: grid; justify-items: center; }
-  .hero-art { width: 100%; max-width: 380px; margin-bottom: -110px; }
   .quote-card {
     position: relative;
     width: 100%;
@@ -538,7 +530,6 @@ const badges = [
     .hero::before { background: rgba(45, 0, 1, 0.85); }
     .hero-grid, .split { grid-template-columns: 1fr; gap: 32px; }
     .hero-grid { gap: 24px; }
-    .hero-art { display: none; }
     .quote-card { max-width: none; }
   }
   @media (max-width: 600px) {
