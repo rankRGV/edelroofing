@@ -4,20 +4,22 @@
 import Icon from './Icon.astro';
 import { site } from '../data/site';
 
-interface Props { lang?: 'en' | 'es' }
-const { lang = 'en' } = Astro.props;
+// `cert` swaps the badge line, e.g. on commercial pages where the shingle
+// cert is the wrong proof.
+interface Props { lang?: 'en' | 'es'; cert?: string }
+const { lang = 'en', cert } = Astro.props;
 const items =
   lang === 'es'
     ? [
         { icon: 'star', big: '4.8', text: 'Más de 250 reseñas de Google' },
         { icon: 'shield', big: 'Con licencia', text: `${site.license}, con fianza y asegurados` },
-        { icon: 'badge', big: 'Certificados', text: 'Único CertainTeed Select ShingleMaster en el RGV' },
+        { icon: 'badge', big: 'Certificados', text: cert ?? 'Único CertainTeed Select ShingleMaster en el RGV' },
         { icon: 'clipboard', big: 'Gratis', text: 'Inspección y presupuesto por escrito' },
       ]
     : [
         { icon: 'star', big: '4.8', text: '250+ Google reviews' },
         { icon: 'shield', big: 'Licensed', text: `${site.license}, bonded & insured` },
-        { icon: 'badge', big: 'Certified', text: 'Only CertainTeed Select ShingleMaster in the RGV' },
+        { icon: 'badge', big: 'Certified', text: cert ?? 'Only CertainTeed Select ShingleMaster in the RGV' },
         { icon: 'clipboard', big: 'Free', text: 'Inspection & written estimate' },
       ];
 ---

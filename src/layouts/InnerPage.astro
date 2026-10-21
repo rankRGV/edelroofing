@@ -33,8 +33,9 @@ interface Props {
   benefits?: { title: string; items: { title: string; body: string }[] };
   spokes?: { title: string; intro?: string; links: { href: string; label: string }[] };
   closing: { title: string; body?: string; cta?: Cta };
+  trustCert?: string;
 }
-const { title, description, lang = 'en', alternates, schema = [], crumbs, hero, intro, band, extra = [], benefits, spokes, closing } =
+const { title, description, lang = 'en', alternates, schema = [], crumbs, hero, intro, band, extra = [], benefits, spokes, closing, trustCert } =
   Astro.props;
 const bandCss = await bgStyle(bandBg, 'band');
 const paras = (b: Block) => (Array.isArray(b.body) ? b.body : [b.body]);
@@ -42,7 +43,7 @@ const benefitIcons = ['roof', 'shield', 'badge'] as const;
 ---
 <Base title={title} description={description} lang={lang} alternates={alternates} schema={[breadcrumbSchema(crumbs), ...schema]} image={hero.bg}>
   <PageHero crumbs={crumbs} eyebrow={hero.eyebrow} title={hero.title} lead={hero.lead} bg={hero.bg} lang={lang} />
-  <TrustStrip lang={lang} />
+  <TrustStrip lang={lang} cert={trustCert} />
 
   <section class="section">
     <div class:list={['wrap', intro.images?.length ? 'split' : 'narrow']}>

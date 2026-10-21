@@ -22,11 +22,25 @@ import building from '../../assets/commercial-roofing/commercial-building.jpg';
 import commercial from '../../assets/commercial-roofing/commercial-roofing.jpeg';
 import repair from '../../assets/commercial-roofing/commercial-roofing-repair.jpeg';
 import repairing from '../../assets/commercial-roofing/repairing-commercial-roof.jpeg';
+import { site } from '../../data/site';
+
+// 2026-10-21: mismas certificaciones comerciales que /commercial-roofing
+// (hoja de certificaciones de Dustin).
+const certs = [
+  `Contratista de techos con licencia en Texas (${site.license})`,
+  'Versico Authorized Contractor',
+  'Polyglass Registered Contractor',
+  'KARNAK',
+  'Duro-Last',
+  'GAF',
+  'Owens Corning Preferred Contractor',
+];
 ---
 <InnerPage
   lang="es"
   title="Techos Comerciales en el Valle del Río Grande | EDEL Roofing & Construction"
-  description="Techos comerciales nuevos, reparación y reemplazo en Edinburg y el Valle del Río Grande desde 2003. Techos planos, TPO y EPDM. Llame al (956) 422-3335."
+  description="Techos comerciales nuevos, reparación y reemplazo en Edinburg y el Valle del Río Grande desde 2003. Techos de poca pendiente y techos inclinados. Llame al (956) 422-3335."
+  trustCert="Contratista Versico Authorized y Polyglass Registered"
   alternates={{ en: '/commercial-roofing', es: '/es-mx/commercial-roofing' }}
   crumbs={[
     { label: 'Inicio', href: '/es-mx' },
@@ -54,7 +68,7 @@ import repairing from '../../assets/commercial-roofing/repairing-commercial-roof
   benefits={{
     title: 'Por qué elegir a EDEL para el techo de su negocio',
     items: [
-      { title: 'Servicios completos', body: 'Instalamos techos planos nuevos, techos de TPO y techos de EPDM. También hacemos <a href="/es-mx/roof-repairs">reparaciones</a>, mantenimiento y reemplazo de techo. Le recomendamos lo que de verdad necesita su edificio.' },
+      { title: 'Techos de poca pendiente y techos inclinados', body: 'Un edificio comercial puede tener cualquier tipo de techo: TPO, bitumen modificado, EPDM, PVC, tejas asfálticas, teja o metal. Trabajamos con todos, desde instalaciones nuevas hasta <a href="/es-mx/roof-repairs">reparaciones</a>, mantenimiento y reemplazo.' },
       { title: 'Experiencia', body: 'Nuestro equipo trabaja proyectos comerciales de todos los tamaños, sencillos y complicados. Si su techo tiene un problema, lo revisamos y le explicamos qué opciones tiene.' },
       { title: 'Buenos materiales', body: 'Compramos los materiales con proveedores de confianza. Escogemos materiales que aguanten el uso que recibe un techo comercial y que le duren.' },
     ],
@@ -73,4 +87,21 @@ import repairing from '../../assets/commercial-roofing/repairing-commercial-roof
     body: 'Llame a EDEL Roofing &amp; Construction Inc. y cuéntenos qué está pasando. La consulta es gratis, y antes de empezar le entregamos un presupuesto por escrito con el trabajo y el precio. Atendemos negocios en Edinburg, McAllen, Mission y el resto del Valle del Río Grande.',
     cta: { label: 'Contáctenos', href: '/es-mx/contact-us' },
   }}
-/>
+>
+  <section class="certs">
+    <div class="wrap">
+      <h2>Licencia y certificaciones comerciales</h2>
+      <ul>
+        {certs.map((c) => <li>{c}</li>)}
+      </ul>
+    </div>
+  </section>
+</InnerPage>
+
+<style>
+  .certs { padding-block: 72px; text-align: center; }
+  .certs h2 { font-size: clamp(28px, 3.5vw, 42px); text-transform: uppercase; }
+  .certs ul { list-style: none; margin: 28px auto 0; padding: 0; max-width: 960px; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+  .certs li { padding: 12px 18px; background: var(--white); border: 1px solid var(--line); border-top: 3px solid var(--maroon); border-radius: var(--radius); font-weight: 600; color: var(--ink); }
+  @media (max-width: 900px) { .certs { padding-block: 56px; } }
+</style>

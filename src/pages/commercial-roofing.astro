@@ -19,10 +19,24 @@ import building from '../assets/commercial-roofing/commercial-building.jpg';
 import commercial from '../assets/commercial-roofing/commercial-roofing.jpeg';
 import repair from '../assets/commercial-roofing/commercial-roofing-repair.jpeg';
 import repairing from '../assets/commercial-roofing/repairing-commercial-roof.jpeg';
+import { site } from '../data/site';
+
+// 2026-10-21: Dustin (commercial) asked for the commercial certs instead of
+// the residential ones; list matches his certification sheet.
+const certs = [
+  `Texas licensed roofing contractor (${site.license})`,
+  'Versico Authorized Contractor',
+  'Polyglass Registered Contractor',
+  'KARNAK',
+  'Duro-Last',
+  'GAF',
+  'Owens Corning Preferred Contractor',
+];
 ---
 <InnerPage
   title="Commercial Roofing in Edinburg & the RGV | EDEL Roofing"
-  description="Commercial roof installation, repair and replacement in Edinburg and the Rio Grande Valley. Flat, TPO and EPDM roofs. Free consultation and estimate."
+  description="Commercial roof installation, repair and replacement in Edinburg and the Rio Grande Valley. Low sloped and pitched roofs: TPO, modified, EPDM, PVC, shingles, tile and metal."
+  trustCert="Versico Authorized and Polyglass Registered Contractor"
   alternates={{ en: '/commercial-roofing', es: '/es-mx/commercial-roofing' }}
   crumbs={[
     { label: 'Home', href: '/' },
@@ -50,7 +64,7 @@ import repairing from '../assets/commercial-roofing/repairing-commercial-roof.jp
   benefits={{
     title: 'What we offer businesses',
     items: [
-      { title: 'Flat roofs, TPO and EPDM', body: 'New flat roof installation, TPO roofing, EPDM roofing, <a href="/roof-repairs">roof repairs</a>, maintenance and roof replacement. We fit the work to your building and what it needs.' },
+      { title: 'Low sloped and pitched roofs', body: 'A commercial building can have any kind of roof: TPO, modified bitumen, EPDM, PVC, shingles, tile or metal. We work on all of them, from new installs to <a href="/roof-repairs">roof repairs</a>, maintenance and replacement.' },
       { title: 'Buildings of all sizes', body: 'Our crews are skilled at commercial roofing and work on buildings of every size, whether the job is simple or complicated.' },
       { title: 'Quality materials', body: 'We buy from suppliers we trust and use quality roofing materials made to last on a commercial roof.' },
     ],
@@ -71,4 +85,21 @@ import repairing from '../assets/commercial-roofing/repairing-commercial-roof.jp
     body: 'Tell us what is going on with your building, whether it needs commercial <a href="/roof-repairs">roofing repair</a> or a new roof. We work in Edinburg, TX and all over the Rio Grande Valley, and the consultation and estimate are free.',
     cta: { label: 'Contact Us', href: '/contact-us' },
   }}
-/>
+>
+  <section class="certs">
+    <div class="wrap">
+      <h2>Commercial license and certifications</h2>
+      <ul>
+        {certs.map((c) => <li>{c}</li>)}
+      </ul>
+    </div>
+  </section>
+</InnerPage>
+
+<style>
+  .certs { padding-block: 72px; text-align: center; }
+  .certs h2 { font-size: clamp(28px, 3.5vw, 42px); text-transform: uppercase; }
+  .certs ul { list-style: none; margin: 28px auto 0; padding: 0; max-width: 960px; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+  .certs li { padding: 12px 18px; background: var(--white); border: 1px solid var(--line); border-top: 3px solid var(--maroon); border-radius: var(--radius); font-weight: 600; color: var(--ink); }
+  @media (max-width: 900px) { .certs { padding-block: 56px; } }
+</style>
