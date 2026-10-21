@@ -10,9 +10,14 @@
 // - 2026-10-20 copy pass: plain, warm rewrite; H1 and title now say "Free
 //   Roof Inspection"; meta description drops "expert team ensures quality
 //   work & customer satisfaction"; added "We answer 24/7" (sheet fact).
+// - 2026-10-21: the homepage's "Schedule a Free Inspection" buttons land
+//   here (Edel's visual edit guide), so the page gets an inspection request
+//   form (FormSpark `forms.inspection`, "please call" until the ID is set).
 import InnerPage from '../layouts/InnerPage.astro';
 import hero from '../assets/home/hero-roof.jpeg';
 import { site } from '../data/site';
+import { forms } from '../data/forms';
+import LeadForm from '../components/LeadForm.astro';
 
 const TAVROS = false;
 ---
@@ -25,8 +30,9 @@ const TAVROS = false;
   ]}
   hero={{ eyebrow: 'Free roof inspections', title: 'Book a Free Roof Inspection', bg: hero }}
   intro={{
-    title: 'Two ways to get started',
+    title: 'Ways to get started',
     body: [
+      '<strong>Request an inspection.</strong> Fill out the form below and we will call you to set up a time.',
       `<strong>Call us.</strong> Call <a href="${site.phoneHref}">${site.phone}</a> and we'll set up a time for your free roof inspection. We answer 24/7.`,
       '<strong>Want a price first?</strong> Put your address into the online estimate and find your roof on the satellite map. After you add your name, phone and email, it shows you an estimated price. We confirm the final price in writing after the free inspection.',
     ],
@@ -38,9 +44,33 @@ const TAVROS = false;
     cta: { label: 'Contact Us', href: '/contact-us' },
   }}
 >
+  <section class="section" id="schedule">
+    <div class="wrap form-wrap">
+      <h2>Schedule a Free Inspection</h2>
+      <LeadForm
+        id="inspection"
+        submit="Schedule My Free Inspection"
+        endpoint={forms.inspection}
+        fields={[
+          { name: 'name', label: 'Name', required: true, autocomplete: 'name' },
+          { name: 'phone', label: 'Phone', type: 'tel', required: true, autocomplete: 'tel' },
+          { name: 'email', label: 'Email', type: 'email', autocomplete: 'email' },
+          { name: 'address', label: 'Property address', autocomplete: 'street-address' },
+          { name: 'service', label: 'What do you need?', type: 'select', options: ['Roof Repair', 'Roof Replacement', 'Commercial Roofing', 'Storm Damage Inspection', 'Gutters', 'Not Sure'] },
+          { name: 'message', label: 'Anything we should know?', type: 'textarea' },
+        ]}
+      />
+    </div>
+  </section>
   {TAVROS && (
     <section class="wrap">
       <iframe title="Book an inspection" src="https://tools.gotavros.com/widget/booking/xAmEhIorZ8LXCvdZIZU6" style="width:100%;min-height:800px;border:0"></iframe>
     </section>
   )}
 </InnerPage>
+
+<style>
+  .section { padding-block: 72px; }
+  .form-wrap { max-width: 720px; }
+  .form-wrap h2 { text-align: center; font-size: clamp(28px, 3.4vw, 40px); text-transform: uppercase; }
+</style>

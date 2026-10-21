@@ -1,33 +1,28 @@
 // Homepage copy, EN (/) and ES (/es-mx). One layout (HomeBody.astro), two
 // copy sets.
 //
-// 2026-10-20 cold-visitor rewrite (Eddie approved the fix list). A fresh
-// browser review found the page repeated its intro and trust sections, used
-// four names for the offer, and closed on remodeling. Changes:
-// - Order is now: hero, "What does your roof need?" (services), one proof
-//   section, what happens next, areas + map, FAQ, closing call. The old
-//   intro, specialist, why, trust and "Certified Excellence" sections are
-//   folded into the proof section.
-// - Reviews are our own section (GoogleReviews.astro, real Google reviews
-//   from src/data/reviews.json), not the EmbedSocial widget. The proof lead
-//   no longer repeats the rating, since the section shows it.
-// - One name for the online tool: "instant estimate" / "estimado al
-//   instante". Roofle (checked on live edelroofing.com 2026-10-20) asks for
-//   name, phone and email before it shows a price, and says pricing is
-//   "subject to measurement and/or site verification". So "No phone call
-//   needed" is gone and the page says the final price comes in writing after
-//   the free inspection.
-// - "Over 25 years" / "25 years of expertise" replaced with "since 2003"
-//   (Eddie, 2026-10-20). Superlatives ("top-tier", "unparalleled", "trust
-//   the best") removed.
-// - Facts kept from the approved 2026-10-18 copy and the live site: since
-//   2003, RCAT license, 4.8 / 250+ Google reviews, only CertainTeed Select
-//   ShingleMaster in the RGV, Owens Corning Preferred, CertainTeed / Owens
-//   Corning / GAF, one to two day home replacements, financing, 24/7,
-//   Eddie Elizondo, the 1815 N Jackson Rd office.
-// Earlier ES fixes vs the live /es-mx page (license line, review counts,
-// CertainTeed spelling, usted, real phone number) carry over.
+// 2026-10-21 Edel visual edit guide (Kassie's 8-page PDF, Eddie: implement
+// it). Copy below follows the guide's wording; ES is a faithful translation.
+// - Hero: new H1, brand promise "Built on Trust. Backed by Quality.", new
+//   intro. Main button is "Schedule a Free Inspection" (/book-an-inspection,
+//   ES /es-mx/contact-us); the instant estimate is the second button.
+// - Services: new intro and card text; two new cards, Storm Damage
+//   Inspections and Gutters (Eddie 2026-10-21: Edel takes gutter jobs).
+// - Reviews get their own section; "Why Edel" is a separate section with
+//   three new cards, then credentials and badges.
+// - Process: four steps, a button, and a financing panel.
+// - Areas, FAQ (repair vs replace, timing, warranty, storm documentation
+//   added), closing invitation.
+// - The guide's "since 2003" / "only in the RGV" / license checks are still
+//   open with Edel (10 questions, 2026-10-20 email); claims kept as they were
+//   until they answer. The "one to two days" timing claim is gone: the guide
+//   rewrote that FAQ without a number.
+// Earlier history: 2026-10-20 cold-visitor rewrite (one name for the online
+// tool, "instant estimate"; reviews from src/data/reviews.json, no
+// EmbedSocial; no "25 years").
 import { site } from './site';
+
+type Link = { label: string; href: string };
 
 export type HomeCopy = {
   lang: 'en' | 'es';
@@ -36,24 +31,32 @@ export type HomeCopy = {
   base: string; // '/' or '/es-mx'
   rating: string; // HTML
   h1: string;
+  promise: string;
   assure: [string, string];
   heroText: string;
-  quote: { pill: string; title: string; body: string; button: string; call: string; final: string; note: string };
+  quote: { pill: string; title: string; body: string; schedule: Link; button: string; call: string; note: string };
   services: { title: string; lead: string; items: { eyebrow: string; title: string; body: string; href: string; button: string; alt: string }[] };
-  proof: {
+  reviews: { eyebrow: string; title: string; lead: string; link: string; more: string };
+  why: {
     eyebrow: string;
     title: string;
     lead: string;
-    reviewsLink: string;
     cards: { title: string; body: string }[];
-    projects: { label: string; href: string };
-    about: { label: string; href: string };
+    credentials: string;
+    projects: Link;
+    about: Link;
   };
-  steps: { eyebrow: string; title: string; items: { title: string; body: string }[]; note: string };
+  steps: {
+    eyebrow: string;
+    title: string;
+    items: { title: string; body: string }[];
+    button: Link;
+    financing: { title: string; body: string; button: Link };
+  };
   form?: { title: string; fields: { name: string; label: string; type?: 'text' | 'email' | 'tel'; required?: boolean; autocomplete?: string }[]; submit: string };
   areas: { eyebrow: string; title: string; lead: string; homeLabel: string; button: string; buttonHref: string; small: string; links: Record<string, string>; mapTitle: string };
   faq: { eyebrow: string; title: string; items: { q: string; a: string }[] };
-  cta: { title: string; body: string; button: string; quote: string };
+  cta: { title: string; body: string; schedule: Link; call: string; note: string };
 };
 
 const call = `<a href="${site.phoneHref}">${site.phone}</a>`;
@@ -62,30 +65,32 @@ export const homeEn: HomeCopy = {
   lang: 'en',
   title: 'Edinburg Roofing Contractor | Edel Roofing & Construction',
   description:
-    'Roof repairs, roof replacement and commercial roofing in Edinburg, McAllen and the Rio Grande Valley since 2003. Free inspections and written estimates. Call (956) 422-3335.',
+    'Roof repairs, roof replacement and commercial roofing in Edinburg, McAllen and the Rio Grande Valley. Free inspections and written proposals. Call (956) 422-3335.',
   base: '/',
   rating: 'Rated <strong>4.8</strong> by 250+ Google reviews',
-  h1: 'Roof Repairs and Replacement in Edinburg and the Rio Grande Valley',
+  h1: 'Roofing in Edinburg & the Rio Grande Valley',
+  promise: 'Built on Trust. Backed by Quality.',
   assure: ['Free inspection &amp; written estimate', 'Only CertainTeed Select ShingleMaster in the RGV'],
-  heroText: `Free roof inspections and written estimates before work begins. We've roofed homes and businesses in the
-          Valley since 2003, licensed and insured (${site.license}).`,
+  heroText: `Your roof protects what matters most. EDEL Roofing &amp; Construction provides roof repairs, replacements, and new
+          installations for homes and businesses throughout the Rio Grande Valley. From inspection to final walkthrough, we
+          focus on quality workmanship, clear communication, and respect for your property.`,
   quote: {
     pill: 'Online estimate',
-    title: 'See an estimated price for your roof',
-    body: 'Type in your address and confirm your roof on the satellite map. Add your name, phone and email, and your estimate shows up right away.',
-    button: 'Get Instant Estimate',
-    call: 'Call',
-    final: 'Your final price comes in writing after a free inspection.',
+    title: 'Start with an idea of what your new roof could cost',
+    body: 'Enter your address, identify your roof, and provide your contact information for an initial estimate. We confirm the final scope and price after an on-site inspection.',
+    schedule: { label: 'Schedule a Free Inspection', href: '/book-an-inspection' },
+    button: 'Get an Instant Roof Estimate',
+    call: 'Or call',
     note: 'Se habla español',
   },
   services: {
-    title: 'What does your roof need?',
-    lead: `Pick the closest match. Not sure what's wrong? Call ${call} and we'll come look at it for free.`,
+    title: 'The right roofing solution starts with understanding your roof',
+    lead: 'We evaluate your roof and explain your options so you can make an informed decision.',
     items: [
       {
         eyebrow: 'Repairs',
         title: 'Roof repairs',
-        body: 'Leaks, missing shingles, storm damage, or a spot that keeps coming back. We find what is causing it and give you a written price for the fix.',
+        body: 'Get to the source of leaks, missing shingles, and damaged flashing. We explain our findings and recommend repairs that address the cause.',
         href: '/roof-repairs',
         button: 'Explore roof repairs',
         alt: 'House with a blue roof',
@@ -93,7 +98,7 @@ export const homeEn: HomeCopy = {
       {
         eyebrow: 'Residential',
         title: 'Residential roofing',
-        body: 'New roofs and full replacements for houses across the Valley. We install CertainTeed, Owens Corning and GAF, and most home replacements take one to two days.',
+        body: 'Protect your home with shingle or metal roofing selected for your property, priorities, and budget. We handle replacements and new construction.',
         href: '/residential-roofing',
         button: 'Explore residential roofing',
         alt: 'Large white house with a blue roof',
@@ -101,73 +106,104 @@ export const homeEn: HomeCopy = {
       {
         eyebrow: 'Commercial',
         title: 'Commercial roofing',
-        body: 'Repairs and replacement for commercial buildings across the Rio Grande Valley. You get the scope and the price in writing before work starts.',
+        body: 'Repairs, maintenance, replacements, and new installations for commercial properties. We work with owners, property managers, and contractors on TPO and other commercial roofing systems.',
         href: '/commercial-roofing',
         button: 'Explore commercial roofing',
         alt: 'Commercial building roof',
       },
+      {
+        eyebrow: 'Storm damage',
+        title: 'Storm damage inspections',
+        body: 'We inspect your roof, document visible conditions, and explain recommended repairs.',
+        href: '/storm-damage',
+        button: 'Explore storm damage',
+        alt: 'Roof after storm damage',
+      },
+      {
+        eyebrow: 'Gutters',
+        title: 'Gutters',
+        body: 'Properly installed gutters and downspouts help direct rainwater away from your roofline and foundation.',
+        href: '/contact-us',
+        button: 'Ask about gutters',
+        alt: 'Home roofline',
+      },
     ],
   },
-  proof: {
-    eyebrow: 'Why people call Edel',
-    title: 'Roofing the Valley since 2003',
-    lead: 'Here is what homeowners and businesses in the Valley say about working with us.',
-    reviewsLink: 'Read customer reviews on Google',
+  reviews: {
+    eyebrow: 'Reviews',
+    title: 'Hear from customers who chose EDEL',
+    lead: 'Read what local homeowners and business owners have to say about our workmanship, communication, and service.',
+    link: 'Read Our Google Reviews',
+    more: 'Show more reviews',
+  },
+  why: {
+    eyebrow: 'Why Edel',
+    title: 'You deserve confidence in the company working on your roof',
+    lead: 'Choosing a roofer involves more than comparing prices. You need to understand what is included, how the work will be completed, and who will be there when you have questions.',
     cards: [
-      {
-        title: 'Licensed &amp; certified',
-        body: `Licensed (${site.license}), bonded and insured. The only CertainTeed Select ShingleMaster in the Rio Grande
-            Valley, and an Owens Corning Preferred Contractor.`,
-      },
-      {
-        title: 'Free inspection, written price',
-        body: 'We check your roof for free and write up the estimate. You see the scope and the price before we start.',
-      },
-      {
-        title: 'Local crews',
-        body: `Our office is at ${site.address.street} in Edinburg. Our crews know what Valley heat, wind and storm season
-            do to a roof.`,
-      },
+      { title: 'Clear recommendations', body: 'We explain what we find and help you understand your options.' },
+      { title: 'Detailed written proposals', body: 'Review the proposed scope, materials, and price before approving the work.' },
+      { title: 'Communication &amp; care', body: 'We keep you informed and plan for property protection and jobsite cleanup.' },
     ],
+    credentials: `Licensed (${site.license}), bonded and insured. The only CertainTeed Select ShingleMaster in the Rio Grande
+            Valley, and an Owens Corning Preferred Contractor.`,
     projects: { label: 'See our roofing projects', href: '/projects' },
     about: { label: 'About Edel', href: '/about-us' },
   },
   steps: {
     eyebrow: 'How it works',
-    title: 'What happens after you reach out',
+    title: 'From your first call to your final walkthrough',
     items: [
-      { title: 'Get an estimate or call', body: `Start with the online estimate, or call ${call}. We answer 24/7.` },
-      { title: 'Free inspection', body: 'We come out, check the roof, and tell you what we find.' },
-      { title: 'Written estimate', body: 'You get the scope and the price in writing before any work begins.' },
+      { title: 'Tell us what you need', body: 'Call, request an inspection, or start with an online estimate.' },
+      { title: 'Get your roof inspected', body: 'We evaluate the roof and explain our findings.' },
+      { title: 'Review your options', body: 'Receive a written scope, material selections, and price.' },
+      { title: 'Let us get to work', body: 'We coordinate the project and review the completed work with you.' },
     ],
-    note: 'Want to spread out the cost? <a href="/financing">See financing options</a>.',
+    button: { label: 'Schedule My Free Inspection', href: '/book-an-inspection' },
+    financing: {
+      title: 'More flexibility for your roofing project',
+      body: 'A needed roof repair or replacement can put pressure on your budget. Ask about available financing options and review a payment plan that may work for you. Financing is subject to lender approval and applicable terms.',
+      button: { label: 'Explore Financing Options', href: '/financing' },
+    },
   },
   areas: {
     eyebrow: 'Areas We Serve',
-    title: 'Roofing across the Rio Grande Valley',
-    lead: `We're based in Edinburg and work all over the Valley. Pick your city to see what we do there.`,
+    title: 'Based in Edinburg. Serving the Rio Grande Valley.',
+    lead: 'EDEL provides residential and commercial roofing services in Edinburg, McAllen, Mission, Pharr, Weslaco, Harlingen, Brownsville, Rio Grande City, and surrounding communities.',
     homeLabel: 'Home base',
-    button: 'See all areas we serve',
+    button: 'View Our Service Areas',
     buttonHref: '/service-areas',
-    small: `Don't see your town? Call ${call}. If you're in the Rio Grande Valley, we can help.`,
+    small: `Not sure whether we serve your location? Call ${call} and speak with our team.`,
     links: { Edinburg: '/', McAllen: '/roofing-mcallen-tx', Mission: '/roofing-mission-tx' },
     mapTitle: 'Map to Edel Roofing & Construction in Edinburg, TX',
   },
   faq: {
     eyebrow: 'Questions',
-    title: 'Common questions',
+    title: 'Answers before you get started',
     items: [
       {
         q: 'Is the online estimate my final price?',
         a: 'No. It is an estimate based on a satellite view of your roof. We confirm the final price after a free inspection and give it to you in writing.',
       },
       {
-        q: 'Do you offer free roof inspections in Edinburg?',
-        a: `Yes. We do free roof inspections and estimates across Edinburg and the Rio Grande Valley. Call ${call} or <a href="/book-an-inspection">book an inspection online</a>.`,
+        q: 'Should I repair or replace my roof?',
+        a: "That depends on the roof's age, condition, and extent of damage. An inspection helps us determine whether targeted repairs make sense or replacement would be a better investment. We explain our recommendation.",
       },
       {
-        q: 'How long does a roof replacement take?',
-        a: 'Most residential roof replacements take one to two days, depending on the size of the roof and the material. We give you a timeline before we start.',
+        q: 'Do you offer free roof inspections in Edinburg?',
+        a: `Yes. We do free roof inspections and estimates across Edinburg and the Rio Grande Valley. Call ${call} or <a href="/book-an-inspection">schedule an inspection online</a>.`,
+      },
+      {
+        q: 'How long does a roofing project take?',
+        a: 'Timing depends on roof size, material, condition, weather, and project scope. We discuss the expected schedule before work begins and communicate changes.',
+      },
+      {
+        q: 'What warranty comes with my roof?',
+        a: 'Warranty coverage depends on the roofing system and project. Your proposal identifies the applicable EDEL workmanship warranty and any manufacturer warranty, including terms and limitations.',
+      },
+      {
+        q: 'Can you help document storm damage?',
+        a: 'We can inspect your roof and provide photos, estimates, and information about recommended construction work. Your insurance company determines coverage under your policy.',
       },
       {
         q: 'What roofing brands do you install?',
@@ -176,16 +212,17 @@ export const homeEn: HomeCopy = {
       { q: 'Are you licensed and insured?', a: `Yes. Edel Roofing & Construction is licensed (${site.license}), bonded and insured.` },
       {
         q: 'What areas do you serve?',
-        a: `We're based in Edinburg and serve McAllen, Mission, Pharr, Weslaco, Harlingen, Brownsville and Rio Grande City. <a href="/service-areas">See all areas we serve</a>.`,
+        a: `We're based in Edinburg and serve McAllen, Mission, Pharr, Weslaco, Harlingen, Brownsville, Rio Grande City and surrounding communities. <a href="/service-areas">See all areas we serve</a>.`,
       },
-      { q: 'Do you offer financing?', a: 'Yes. We offer financing for roof replacement and repairs. <a href="/financing">See financing</a>.' },
+      { q: 'Do you offer financing?', a: 'Yes. Financing is available for roof replacement and repairs, subject to lender approval. <a href="/financing">See financing</a>.' },
     ],
   },
   cta: {
-    title: 'Have questions about your roof?',
-    body: 'Talk with Eddie Elizondo and the Edel team about a free inspection and a written estimate. We answer 24/7, and se habla español.',
-    button: 'Call',
-    quote: 'Get Instant Estimate',
+    title: "Let's talk about your roof",
+    body: 'Whether you are dealing with a leak, planning a replacement, or starting a construction project, EDEL is ready to help you understand your options and move forward with confidence.',
+    schedule: { label: 'Schedule a Free Inspection', href: '/book-an-inspection' },
+    call: 'Call',
+    note: 'Se habla español',
   },
 };
 
@@ -193,30 +230,32 @@ export const homeEs: HomeCopy = {
   lang: 'es',
   title: 'Contratista de Techos en Edinburg y el Valle del Río Grande | EDEL Roofing',
   description:
-    'Reparación de techos, reemplazo de techos y techos comerciales en Edinburg, McAllen y el Valle del Río Grande desde 2003. Inspecciones gratis y presupuestos por escrito. Llame al (956) 422-3335.',
+    'Reparación de techos, reemplazo de techos y techos comerciales en Edinburg, McAllen y el Valle del Río Grande. Inspecciones gratis y propuestas por escrito. Llame al (956) 422-3335.',
   base: '/es-mx',
   rating: 'Calificación <strong>4.8</strong> en más de 250 reseñas de Google',
-  h1: 'Reparación y Reemplazo de Techos en Edinburg y el Valle del Río Grande',
+  h1: 'Techos en Edinburg y el Valle del Río Grande',
+  promise: 'Basados en la confianza. Respaldados por la calidad.',
   assure: ['Inspección y presupuesto por escrito gratis', 'Único CertainTeed Select ShingleMaster en el RGV'],
-  heroText: `Inspecciones de techo gratis y presupuestos por escrito antes de empezar el trabajo. Techamos casas y
-          negocios en el Valle desde 2003, con licencia y seguro (${site.license}).`,
+  heroText: `Su techo protege lo que más le importa. EDEL Roofing &amp; Construction hace reparaciones, reemplazos e
+          instalaciones nuevas de techos para casas y negocios en todo el Valle del Río Grande. Desde la inspección hasta la
+          revisión final, cuidamos la calidad del trabajo, la comunicación clara y el respeto por su propiedad.`,
   quote: {
     pill: 'Estimado en línea',
-    title: 'Vea un precio estimado para su techo',
-    body: 'Escriba su dirección y confirme su techo en el mapa satelital. Agregue su nombre, teléfono y correo, y su estimado aparece al momento.',
+    title: 'Tenga una idea de cuánto podría costar su techo nuevo',
+    body: 'Escriba su dirección, identifique su techo y deje sus datos de contacto para recibir un estimado inicial. Confirmamos el alcance y el precio final después de una inspección en su propiedad.',
+    schedule: { label: 'Agende una Inspección Gratis', href: '/es-mx/contact-us' },
     button: 'Estimado al Instante',
-    call: 'Llamar',
-    final: 'El precio final se lo damos por escrito después de una inspección gratis.',
+    call: 'O llame al',
     note: 'Atendemos en español',
   },
   services: {
-    title: '¿Qué necesita su techo?',
-    lead: `Elija la opción más parecida. ¿No sabe qué tiene su techo? Llame al ${call} y vamos a revisarlo gratis.`,
+    title: 'La solución correcta empieza por entender su techo',
+    lead: 'Revisamos su techo y le explicamos sus opciones para que tome una decisión informada.',
     items: [
       {
         eyebrow: 'Reparaciones',
         title: 'Reparación de techos',
-        body: 'Goteras, tejas que faltan, daño por tormenta o una falla que vuelve a aparecer. Encontramos la causa y le damos un precio por escrito para arreglarla.',
+        body: 'Encontramos el origen de goteras, tejas que faltan y tapajuntas dañados. Le explicamos lo que encontramos y le recomendamos reparaciones que atiendan la causa.',
         href: '/es-mx/roof-repairs',
         button: 'Ver reparación de techos',
         alt: 'Casa con techo azul',
@@ -224,7 +263,7 @@ export const homeEs: HomeCopy = {
       {
         eyebrow: 'Residencial',
         title: 'Techos residenciales',
-        body: 'Techos nuevos y reemplazos completos para casas en todo el Valle. Instalamos CertainTeed, Owens Corning y GAF, y la mayoría de los reemplazos de casa toman de uno a dos días.',
+        body: 'Proteja su casa con un techo de tejas asfálticas o de metal escogido según su propiedad, sus prioridades y su presupuesto. Hacemos reemplazos y construcción nueva.',
         href: '/es-mx/residential-roofing',
         button: 'Ver techos residenciales',
         alt: 'Casa blanca grande con techo azul',
@@ -232,46 +271,65 @@ export const homeEs: HomeCopy = {
       {
         eyebrow: 'Comercial',
         title: 'Techos comerciales',
-        body: 'Reparación y reemplazo de techos para edificios comerciales en todo el Valle del Río Grande. Usted recibe el alcance y el precio por escrito antes de empezar.',
+        body: 'Reparaciones, mantenimiento, reemplazos e instalaciones nuevas para propiedades comerciales. Trabajamos con dueños, administradores de propiedades y contratistas en TPO y otros sistemas de techos comerciales.',
         href: '/es-mx/commercial-roofing',
         button: 'Ver techos comerciales',
         alt: 'Techo de un edificio comercial',
       },
+      {
+        eyebrow: 'Tormentas',
+        title: 'Inspección por daño de tormenta',
+        body: 'Revisamos su techo, documentamos lo que se ve y le explicamos las reparaciones que recomendamos.',
+        href: '/es-mx/storm-damage',
+        button: 'Ver daño por tormenta',
+        alt: 'Techo después de una tormenta',
+      },
+      {
+        eyebrow: 'Canaletas',
+        title: 'Canaletas',
+        body: 'Unas canaletas y bajantes bien instalados ayudan a alejar el agua de lluvia de la orilla del techo y de los cimientos.',
+        href: '/es-mx/contact-us',
+        button: 'Pregunte por canaletas',
+        alt: 'Orilla del techo de una casa',
+      },
     ],
   },
-  proof: {
-    eyebrow: 'Por qué llaman a Edel',
-    title: 'Techando el Valle desde 2003',
-    lead: 'Esto es lo que dicen las familias y los negocios del Valle que han trabajado con nosotros.',
-    reviewsLink: 'Lea las reseñas en Google',
+  reviews: {
+    eyebrow: 'Reseñas',
+    title: 'Lo que dicen los clientes que eligieron a EDEL',
+    lead: 'Lea lo que opinan las familias y los dueños de negocios de la zona sobre nuestro trabajo, nuestra comunicación y nuestro servicio.',
+    link: 'Lea Nuestras Reseñas en Google',
+    more: 'Ver más reseñas',
+  },
+  why: {
+    eyebrow: 'Por qué Edel',
+    title: 'Usted merece confiar en la empresa que trabaja en su techo',
+    lead: 'Escoger un techador es más que comparar precios. Usted necesita saber qué incluye el trabajo, cómo se va a hacer y quién va a estar ahí cuando tenga preguntas.',
     cards: [
-      {
-        title: 'Con licencia y certificación',
-        body: `Con licencia (${site.license}), fianza y seguro. El único CertainTeed Select ShingleMaster del Valle del Río
-            Grande y Contratista Preferido de Owens Corning.`,
-      },
-      {
-        title: 'Inspección gratis, precio por escrito',
-        body: 'Revisamos su techo gratis y le damos el presupuesto por escrito. Usted ve el alcance y el precio antes de empezar.',
-      },
-      {
-        title: 'Equipos locales',
-        body: `Nuestra oficina está en ${site.address.street} en Edinburg. Nuestros equipos saben lo que el calor, el viento y
-            la temporada de tormentas del Valle le hacen a un techo.`,
-      },
+      { title: 'Recomendaciones claras', body: 'Le explicamos lo que encontramos y le ayudamos a entender sus opciones.' },
+      { title: 'Propuestas detalladas por escrito', body: 'Revise el alcance, los materiales y el precio antes de aprobar el trabajo.' },
+      { title: 'Comunicación y cuidado', body: 'Lo mantenemos informado y planeamos cómo proteger su propiedad y limpiar al terminar.' },
     ],
+    credentials: `Con licencia (${site.license}), fianza y seguro. El único CertainTeed Select ShingleMaster del Valle del Río
+            Grande y Contratista Preferido de Owens Corning.`,
     projects: { label: 'Vea nuestros proyectos de techos', href: '/es-mx/projects' },
     about: { label: 'Sobre Edel', href: '/es-mx/about-us' },
   },
   steps: {
     eyebrow: 'Cómo funciona',
-    title: 'Qué pasa después de contactarnos',
+    title: 'Desde su primera llamada hasta la revisión final',
     items: [
-      { title: 'Pida un estimado o llame', body: `Empiece con el estimado en línea o llame al ${call}. Contestamos 24/7.` },
-      { title: 'Inspección gratis', body: 'Vamos, revisamos el techo y le decimos lo que encontramos.' },
-      { title: 'Presupuesto por escrito', body: 'Usted recibe el alcance y el precio por escrito antes de empezar cualquier trabajo.' },
+      { title: 'Díganos qué necesita', body: 'Llame, pida una inspección o empiece con un estimado en línea.' },
+      { title: 'Revisamos su techo', body: 'Evaluamos el techo y le explicamos lo que encontramos.' },
+      { title: 'Revise sus opciones', body: 'Reciba por escrito el alcance, los materiales y el precio.' },
+      { title: 'Manos a la obra', body: 'Coordinamos el proyecto y revisamos con usted el trabajo terminado.' },
     ],
-    note: '¿Quiere pagar en partes? Ofrecemos financiamiento. <a href="/es-mx/contact-us">Pregúntenos</a>.',
+    button: { label: 'Agendar Mi Inspección Gratis', href: '/es-mx/contact-us' },
+    financing: {
+      title: 'Más flexibilidad para su proyecto de techo',
+      body: 'Una reparación o un reemplazo de techo puede apretar su presupuesto. Pregunte por las opciones de financiamiento y revise un plan de pagos que le funcione. El financiamiento está sujeto a la aprobación del prestamista y a sus términos.',
+      button: { label: 'Pregunte por Financiamiento', href: '/es-mx/contact-us' },
+    },
   },
   form: {
     title: 'Contáctenos',
@@ -285,30 +343,42 @@ export const homeEs: HomeCopy = {
   },
   areas: {
     eyebrow: 'Áreas que Atendemos',
-    title: 'Techos en todo el Valle del Río Grande',
-    lead: 'Estamos en Edinburg y trabajamos en todo el Valle. Elija su ciudad para ver lo que hacemos ahí.',
+    title: 'Con sede en Edinburg. Atendemos el Valle del Río Grande.',
+    lead: 'EDEL ofrece servicios de techos residenciales y comerciales en Edinburg, McAllen, Mission, Pharr, Weslaco, Harlingen, Brownsville, Rio Grande City y comunidades cercanas.',
     homeLabel: 'Sede principal',
-    button: 'Vea todas las áreas que atendemos',
+    button: 'Vea Nuestras Áreas de Servicio',
     buttonHref: '/es-mx/service-areas',
-    small: `¿No ve su ciudad? Llame al ${call}. Si está en el Valle del Río Grande, podemos ayudarle.`,
+    small: `¿No sabe si llegamos a su zona? Llame al ${call} y hable con nuestro equipo.`,
     links: { Edinburg: '/es-mx', McAllen: '/roofing-mcallen-tx-es', Mission: '/roofing-mission-tx-es' },
     mapTitle: 'Mapa a Edel Roofing & Construction en Edinburg, TX',
   },
   faq: {
     eyebrow: 'Preguntas',
-    title: 'Preguntas frecuentes',
+    title: 'Respuestas antes de empezar',
     items: [
       {
         q: '¿El estimado en línea es mi precio final?',
         a: 'No. Es un estimado basado en una vista satelital de su techo. Confirmamos el precio final después de una inspección gratis y se lo damos por escrito.',
       },
       {
-        q: '¿Ofrecen inspecciones de techo gratis en Edinburg?',
-        a: `Sí. Hacemos inspecciones y estimados de techo gratis en Edinburg y todo el Valle del Río Grande. Llame al ${call} o pida una inspección en línea.`,
+        q: '¿Debo reparar o reemplazar mi techo?',
+        a: 'Depende de la edad del techo, su estado y qué tan extenso es el daño. Una inspección nos ayuda a ver si conviene hacer reparaciones puntuales o si un reemplazo es mejor inversión. Le explicamos nuestra recomendación.',
       },
       {
-        q: '¿Cuánto tarda el reemplazo de un techo?',
-        a: 'La mayoría de los reemplazos de techo residencial toman de uno a dos días, según el tamaño del techo y el material. Le damos el tiempo estimado antes de comenzar.',
+        q: '¿Ofrecen inspecciones de techo gratis en Edinburg?',
+        a: `Sí. Hacemos inspecciones y estimados de techo gratis en Edinburg y todo el Valle del Río Grande. Llame al ${call} o <a href="/es-mx/contact-us">pida una inspección en línea</a>.`,
+      },
+      {
+        q: '¿Cuánto tarda un proyecto de techo?',
+        a: 'Depende del tamaño del techo, el material, su estado, el clima y el alcance del proyecto. Hablamos del tiempo estimado antes de empezar y le avisamos si algo cambia.',
+      },
+      {
+        q: '¿Qué garantía tiene mi techo?',
+        a: 'La garantía depende del sistema de techo y del proyecto. Su propuesta indica la garantía de mano de obra de EDEL y cualquier garantía del fabricante que aplique, con sus términos y limitaciones.',
+      },
+      {
+        q: '¿Me pueden ayudar a documentar el daño por tormenta?',
+        a: 'Podemos inspeccionar su techo y darle fotos, estimados e información sobre el trabajo de construcción que recomendamos. Su compañía de seguros decide qué cubre su póliza.',
       },
       {
         q: '¿Qué marcas de techo instalan?',
@@ -317,18 +387,19 @@ export const homeEs: HomeCopy = {
       { q: '¿Tienen licencia y seguro?', a: `Sí. Edel Roofing & Construction tiene licencia (${site.license}), fianza y seguro.` },
       {
         q: '¿Qué áreas atienden?',
-        a: 'Estamos en Edinburg y atendemos McAllen, Mission, Pharr, Weslaco, Harlingen, Brownsville y Rio Grande City. <a href="/es-mx/service-areas">Vea todas las áreas que atendemos</a>.',
+        a: 'Estamos en Edinburg y atendemos McAllen, Mission, Pharr, Weslaco, Harlingen, Brownsville, Rio Grande City y comunidades cercanas. <a href="/es-mx/service-areas">Vea todas las áreas que atendemos</a>.',
       },
       {
         q: '¿Ofrecen financiamiento?',
-        a: 'Sí. Ofrecemos financiamiento para reemplazo y reparación de techos. <a href="/es-mx/contact-us">Contáctenos</a>.',
+        a: 'Sí. Hay financiamiento para reemplazo y reparación de techos, sujeto a la aprobación del prestamista. <a href="/es-mx/contact-us">Contáctenos</a>.',
       },
     ],
   },
   cta: {
-    title: '¿Tiene preguntas sobre su techo?',
-    body: 'Hable con Eddie Elizondo y el equipo de Edel sobre una inspección gratis y un presupuesto por escrito. Contestamos 24/7 y hablamos español.',
-    button: 'Llamar',
-    quote: 'Estimado al Instante',
+    title: 'Hablemos de su techo',
+    body: 'Ya sea que tenga una gotera, esté planeando un reemplazo o vaya a empezar un proyecto de construcción, en EDEL le ayudamos a entender sus opciones y a avanzar con confianza.',
+    schedule: { label: 'Agende una Inspección Gratis', href: '/es-mx/contact-us' },
+    call: 'Llamar',
+    note: 'Atendemos en español',
   },
 };

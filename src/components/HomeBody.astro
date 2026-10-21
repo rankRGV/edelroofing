@@ -5,6 +5,9 @@
 // GoogleReviews.astro (our own section, no EmbedSocial widget). The diamond
 // project collage above the estimate card was removed so the card lines up
 // with the headline (Eddie, 2026-10-20).
+// 2026-10-21: reworked to Edel's visual edit guide (see home.ts): schedule
+// button first in the hero, five service cards, reviews and "Why Edel" as
+// two sections, four steps plus a financing panel, new closing invitation.
 import { Image } from 'astro:assets';
 import { bgStyle } from '../data/bg';
 import LeadForm from './LeadForm.astro';
@@ -20,6 +23,9 @@ import truckHouse from '../assets/home/truck-house.jpeg';
 import residential from '../assets/home/residential.jpg';
 import commercial from '../assets/home/commercial.jpeg';
 import repairs from '../assets/home/repairs.jpg';
+import storm from '../assets/storm-damage/edel-roofing-storm-damage-2.jpg';
+// Stand-in until Kassie sends a real gutter photo (asked 2026-10-21).
+import gutters from '../assets/projects/house-roof.webp';
 import ctaBg from '../assets/home/cta-background.webp';
 import certainteed from '../assets/badges/certainteed-select-shinglemaster.png';
 import owensCorning from '../assets/badges/owens-corning-preferred.webp';
@@ -36,8 +42,8 @@ const heroBg = await bgStyle(heroRoof, 'hero');
 const truckBg = await bgStyle(truckHouse, 'band');
 const ctaBgSrc = await bgStyle(ctaBg, 'band');
 
-const serviceImgs = [repairs, residential, commercial];
-const proofIcons = ['badge', 'clipboard', 'users'] as const;
+const serviceImgs = [repairs, residential, commercial, storm, gutters];
+const whyIcons = ['clipboard', 'badge', 'users'] as const;
 
 const areas: { name: string; href?: string; home?: boolean }[] = [
   { name: 'Edinburg', href: c.areas.links.Edinburg, home: true },
@@ -73,6 +79,7 @@ const badges = [
           <span set:html={c.rating} />
         </a>
         <h1>{c.h1}</h1>
+        <p class="promise">{c.promise}</p>
         <ul class="assure">
           <li><Icon name="clipboard" /><Fragment set:html={c.assure[0]} /></li>
           <li><Icon name="badge" />{c.assure[1]}</li>
@@ -85,9 +92,9 @@ const badges = [
           <p class="pill"><span class="dot"></span>{c.quote.pill}</p>
           <h2>{c.quote.title}</h2>
           <p>{c.quote.body}</p>
-          <a class="btn btn--big" href={quoteFallback(c.lang)} data-roofle-open>{c.quote.button}</a>
-          <a class="btn btn--ghost btn--big" href={site.phoneHref}><Icon name="phone" />{c.quote.call} {site.phone}</a>
-          <p class="final">{c.quote.final}</p>
+          <a class="btn btn--big" href={c.quote.schedule.href}>{c.quote.schedule.label}</a>
+          <a class="btn btn--ghost btn--big" href={quoteFallback(c.lang)} data-roofle-open>{c.quote.button}</a>
+          <p class="final">{c.quote.call} <a href={site.phoneHref}>{site.phone}</a></p>
           <p class="hablamos">{c.quote.note}</p>
         </div>
       </div>
@@ -113,28 +120,38 @@ const badges = [
     </div>
   </section>
 
-  {/* Proof: reviews, credentials and badges in one place. */}
+  {/* Reviews */}
   <section class="section soft" id="reviews">
     <div class="wrap center">
-      <p class="eyebrow">{c.proof.eyebrow}</p>
-      <h2>{c.proof.title}</h2>
-      <p class="lead">{c.proof.lead}</p>
+      <p class="eyebrow">{c.reviews.eyebrow}</p>
+      <h2>{c.reviews.title}</h2>
+      <p class="lead">{c.reviews.lead}</p>
     </div>
     <div class="wrap">
-      <GoogleReviews lang={c.lang} />
+      <GoogleReviews lang={c.lang} show={3} more={c.reviews.more} />
     </div>
+    <div class="wrap center actions">
+      <a class="btn" href={site.googleMaps} rel="noopener" target="_blank">{c.reviews.link}</a>
+    </div>
+  </section>
+
+  {/* Why Edel: three promises, then credentials and badges. */}
+  <section class="section">
     <div class="wrap center">
-      <a class="text-link" href={site.googleMaps} rel="noopener" target="_blank">{c.proof.reviewsLink}<Icon name="arrow" /></a>
+      <p class="eyebrow">{c.why.eyebrow}</p>
+      <h2>{c.why.title}</h2>
+      <p class="lead">{c.why.lead}</p>
     </div>
     <div class="wrap proof-grid">
-      {c.proof.cards.map((card, i) => (
+      {c.why.cards.map((card, i) => (
         <div class="proof-card">
-          <Icon name={proofIcons[i]} />
+          <Icon name={whyIcons[i]} />
           <h3 set:html={card.title} />
           <p set:html={card.body} />
         </div>
       ))}
     </div>
+    <p class="wrap center credentials" set:html={c.why.credentials} />
     <ul class="wrap badges">
       {badges.map((b) => (
         <li>
@@ -144,8 +161,8 @@ const badges = [
       ))}
     </ul>
     <div class="wrap center actions">
-      <a class="btn" href={c.proof.projects.href}>{c.proof.projects.label}</a>
-      <a class="btn btn--ghost" href={c.proof.about.href}>{c.proof.about.label}</a>
+      <a class="btn" href={c.why.projects.href}>{c.why.projects.label}</a>
+      <a class="btn btn--ghost" href={c.why.about.href}>{c.why.about.label}</a>
     </div>
   </section>
 
@@ -163,7 +180,12 @@ const badges = [
           </li>
         ))}
       </ol>
-      <p class="steps-note" set:html={c.steps.note} />
+      <a class="btn btn--white" href={c.steps.button.href}>{c.steps.button.label}</a>
+      <div class="finance">
+        <h3>{c.steps.financing.title}</h3>
+        <p>{c.steps.financing.body}</p>
+        <a class="btn btn--light" href={c.steps.financing.button.href}>{c.steps.financing.button.label}</a>
+      </div>
     </div>
   </section>
 
@@ -238,10 +260,12 @@ const badges = [
       <div>
         <h2>{c.cta.title}</h2>
         <p set:html={c.cta.body} />
+        <p class="promise">{c.promise}</p>
       </div>
       <div class="cta-actions">
-        <a class="btn btn--white" href={site.phoneHref}><Icon name="phone" />{c.cta.button} {site.phone}</a>
-        <a class="btn btn--light" href={quoteFallback(c.lang)} data-roofle-open>{c.cta.quote}</a>
+        <a class="btn btn--white" href={c.cta.schedule.href}>{c.cta.schedule.label}</a>
+        <a class="btn btn--light" href={site.phoneHref}><Icon name="phone" />{c.cta.call} {site.phone}</a>
+        <p class="cta-note">{c.cta.note}</p>
       </div>
     </div>
   </section>
@@ -351,12 +375,13 @@ const badges = [
 
   /* Services: three cards */
   .services {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 28px;
     margin-top: 36px;
   }
-  .service { display: flex; flex-direction: column; text-align: left; }
+  .service { display: flex; flex-direction: column; text-align: left; flex: 0 1 calc((100% - 56px) / 3); }
   .service :global(img) { aspect-ratio: 4 / 3; margin-bottom: 18px; }
   .service h3 { font-size: clamp(26px, 2.6vw, 32px); text-transform: uppercase; margin-bottom: 8px; }
   .service p:not(.eyebrow) { flex: 1; }
@@ -407,7 +432,7 @@ const badges = [
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(79, 0, 0, 0.82);
+    background: rgba(79, 0, 0, 0.92);
     z-index: -1;
   }
   .photo-band h2, .photo-band h3 { color: var(--white); }
@@ -418,8 +443,9 @@ const badges = [
     padding: 0;
     margin: 36px 0 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 32px;
+    margin-bottom: 36px;
   }
   .steps li p { max-width: 32ch; margin-inline: auto; }
   .steps li p :global(a) { color: var(--white); font-weight: 600; white-space: nowrap; }
@@ -435,8 +461,19 @@ const badges = [
     font-weight: 700;
   }
   .steps h3 { font-size: 28px; text-transform: uppercase; margin: 12px 0 6px; }
-  .steps-note { margin: 32px 0 0; }
-  .steps-note :global(a) { color: var(--white); font-weight: 600; }
+  .finance {
+    max-width: 760px;
+    margin: 48px auto 0;
+    padding: 32px 28px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: var(--radius);
+    background: rgba(0, 0, 0, 0.18);
+  }
+  .finance h3 { font-size: 28px; text-transform: uppercase; margin: 0 0 8px; }
+  .finance p { margin: 0 0 18px; }
+  .promise { font-family: var(--font-head); font-size: 20px; font-weight: 600; letter-spacing: 0.02em; margin: 0 0 14px; }
+  .credentials { max-width: 70ch; margin-top: 36px; font-weight: 600; color: var(--ink); }
+  .cta-note { margin: 4px 0 0; font-weight: 600; text-align: center; }
 
   /* Areas */
   .areas {
@@ -465,7 +502,7 @@ const badges = [
      maroon edge and an arrow so the plain ones don't read as broken links. */
   a.area { border-left: 3px solid var(--maroon); color: var(--maroon); }
   a.area:hover { border-color: var(--maroon); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); }
-  span.area { background: transparent; font-weight: 500; color: var(--muted); }
+  span.area { background: transparent; border-style: dashed; font-weight: 500; color: var(--muted); }
   .area-name { display: inline-flex; align-items: center; justify-content: center; gap: 6px; }
   .area-name :global(svg) { width: 16px; height: 16px; flex: none; }
   .area.home { background: var(--maroon-mid); border-color: var(--maroon-mid); color: var(--white); }
@@ -525,6 +562,7 @@ const badges = [
     .section { padding-block: 60px; }
     .services, .proof-grid, .steps { grid-template-columns: 1fr; }
     .services { gap: 40px; }
+    .service { flex-basis: 100%; }
     .badges { grid-template-columns: repeat(4, 1fr); }
     .hero { padding-block: 28px 40px; }
     .hero::before { background: rgba(45, 0, 1, 0.85); }
@@ -534,6 +572,7 @@ const badges = [
   }
   @media (max-width: 600px) {
     /* Keep the quote button on the first phone screen. */
+    .hero .promise { font-size: 16px; margin-bottom: 10px; }
     .hero { padding-block: 18px 32px; }
     .hero-grid { gap: 18px; }
     .rating { gap: 8px; font-size: 14px; margin-bottom: 12px; flex-wrap: nowrap; }

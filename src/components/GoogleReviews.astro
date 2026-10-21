@@ -9,8 +9,13 @@
 import Icon from './Icon.astro';
 import data from '../data/reviews.json';
 
-interface Props { lang?: 'en' | 'es' }
-const { lang = 'en' } = Astro.props;
+// `show` caps the cards shown up front; the rest open under `more`.
+// Roof reviews go first (Edel's visual edit guide, 2026-10-21).
+interface Props { lang?: 'en' | 'es'; show?: number; more?: string }
+const { lang = 'en', show, more } = Astro.props;
+const sorted = [...data.reviews].sort((a, b) => Number(/roof/i.test(b.text)) - Number(/roof/i.test(a.text)));
+const first = show ? sorted.slice(0, show) : sorted;
+const rest = show ? sorted.slice(show) : [];
 
 const t = {
   en: {
@@ -38,7 +43,7 @@ const month = new Intl.DateTimeFormat(lang === 'es' ? 'es-MX' : 'en-US', { month
     <strong>{t.summary}</strong>
   </p>
   <ul class="cards">
-    {data.reviews.map((r) => (
+    {first.map((r) => (
       <li class="card">
         <span class="stars" role="img" aria-label={t.stars(r.rating)}>
           {Array.from({ length: r.rating }).map(() => <Icon name="star" />)}
@@ -52,11 +57,33 @@ const month = new Intl.DateTimeFormat(lang === 'es' ? 'es-MX' : 'en-US', { month
       </li>
     ))}
   </ul>
+  {rest.length > 0 && (
+    <details class="more">
+      <summary>{more}</summary>
+      <ul class="cards">
+        {rest.map((r) => (
+      <li class="card">
+        <span class="stars" role="img" aria-label={t.stars(r.rating)}>
+          {Array.from({ length: r.rating }).map(() => <Icon name="star" />)}
+        </span>
+        <blockquote>{r.text}</blockquote>
+        <p class="who">
+          <strong>{r.name}</strong>
+          <span>{t.source}, {month.format(new Date(r.date))}</span>
+        </p>
+        <a class="read" href={r.url} rel="noopener" target="_blank">{t.read}</a>
+      </li>
+    ))}
+      </ul>
+    </details>
+  )}
   <p class="note">{t.note}</p>
 </div>
 
 <style>
   .g-reviews { margin-top: 36px; }
+  .more { margin-top: 20px; }
+  .more summary { cursor: pointer; text-align: center; font-weight: 600; color: var(--maroon); margin-bottom: 20px; }
   .summary { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px; margin: 0 0 24px; color: var(--ink-strong); }
   .stars { display: inline-flex; gap: 2px; color: #f5a623; }
   .stars :global(svg) { width: 18px; height: 18px; }
