@@ -1,0 +1,236 @@
+---
+// Vision, Mission and Core Values for /about-us and /es-mx/about-us.
+// Wording is Edel's own, from Kassie's 2026-10-22 design (one PNG). Kept as
+// sent, even where it uses words we'd normally avoid ("fostering",
+// "exceptional"): it is the client's statement (Eddie, 2026-10-22).
+// Built as real text, not the PNG, so Google and screen readers can read it
+// and it stays sharp on phones. Layout follows her design: three panels,
+// "Our" small and dark over a big maroon word, short rule, key words in bold
+// maroon, E-D-E-L letter tiles, maroon roof-line wedge at the bottom.
+// <b> marks the words she highlighted. Her rooftop photo is swapped for a real
+// shingle roof already on the site (no stock silhouettes).
+import { getImage } from 'astro:assets';
+import roofImg from '../assets/inner/house-roof.webp';
+
+interface Value { word: string; text: string }
+interface Props {
+  lang?: 'en' | 'es';
+}
+const { lang = 'en' } = Astro.props;
+const roof = await getImage({ src: roofImg, width: 900, format: 'webp' });
+
+const copy = {
+  en: {
+    label: 'Our vision, mission and core values',
+    our: 'Our',
+    ourCore: 'Our core',
+    vision: 'Vision',
+    mission: 'Mission',
+    values: 'Values',
+    visionText:
+      'To transform every customer into a <b>valued friend</b> and <b>member</b> of the EDEL family. We aim to create <b>remarkable experiences</b> that inspire loyalty and referrals, fostering <b>lasting relationships</b> built on trust and <b>exceptional service</b>.',
+    missionText:
+      'To instill <b>confidence</b> and <b>peace of mind</b> in every customer by delivering <b>exceptional quality</b>, <b>craftsmanship</b>, and <b>professionalism</b>. We strive to be the <b>trusted roofing partner</b> that you can rely on, providing services with <b>integrity</b> and <b>expertise</b>.',
+    valuesList: [
+      { word: 'Educate', text: 'the customer' },
+      { word: 'Do', text: 'the right thing' },
+      { word: 'Elevate', text: 'the customer experience' },
+      { word: 'Leave', text: 'a lasting impression for continued relationships &amp; friendships' },
+    ] as Value[],
+  },
+  // Spanish: faithful translation of the same text. The E-D-E-L words stay in
+  // English because they spell the company name; the line under each one is
+  // in Spanish. Flagged for Kassie to check.
+  es: {
+    label: 'Nuestra visión, misión y valores',
+    our: 'Nuestra',
+    ourCore: 'Nuestros',
+    vision: 'Visión',
+    mission: 'Misión',
+    values: 'Valores',
+    visionText:
+      'Convertir a cada cliente en un <b>amigo valioso</b> y <b>miembro</b> de la familia EDEL. Buscamos crear <b>experiencias memorables</b> que inspiren lealtad y recomendaciones, fomentando <b>relaciones duraderas</b> basadas en la confianza y un <b>servicio excepcional</b>.',
+    missionText:
+      'Dar <b>confianza</b> y <b>tranquilidad</b> a cada cliente con <b>calidad excepcional</b>, <b>buena mano de obra</b> y <b>profesionalismo</b>. Queremos ser el <b>socio de techos de confianza</b> con el que usted puede contar, con servicios hechos con <b>integridad</b> y <b>experiencia</b>.',
+    valuesList: [
+      { word: 'Educate', text: 'Educar al cliente' },
+      { word: 'Do', text: 'Hacer lo correcto' },
+      { word: 'Elevate', text: 'Mejorar la experiencia del cliente' },
+      { word: 'Leave', text: 'Dejar una impresión duradera para seguir con relaciones y amistades' },
+    ] as Value[],
+  },
+}[lang];
+---
+<section class="mv" aria-labelledby="mv-title" style={`--roof: url(${roof.src})`}>
+  <div class="wrap">
+    <h2 id="mv-title" class="sr-only">{copy.label}</h2>
+    <div class="panels">
+      <article class="panel">
+        <h3><span class="our">{copy.our}</span><span class="big">{copy.vision}</span></h3>
+        <span class="rule" aria-hidden="true"></span>
+        <p class="statement" set:html={copy.visionText} />
+      </article>
+
+      <article class="panel">
+        <h3><span class="our">{copy.our}</span><span class="big">{copy.mission}</span></h3>
+        <span class="rule" aria-hidden="true"></span>
+        <p class="statement" set:html={copy.missionText} />
+      </article>
+
+      <article class="panel">
+        <h3><span class="our">{copy.ourCore}</span><span class="big">{copy.values}</span></h3>
+        <span class="rule" aria-hidden="true"></span>
+        <ul class="values">
+          {copy.valuesList.map((v) => (
+            <li>
+              <span class="tile" aria-hidden="true">{v.word[0]}</span>
+              <span class="value-text">
+                <strong>{v.word}</strong>
+                <span set:html={v.text} />
+              </span>
+            </li>
+          ))}
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<style>
+  .mv {
+    padding-block: 88px;
+    background: linear-gradient(180deg, #f1f1f2 0%, var(--white) 55%);
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  .panels {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-items: stretch;
+  }
+  .panel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 44px 32px 150px;
+    background: linear-gradient(180deg, var(--white) 0%, var(--bg-warm) 100%);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    overflow: hidden;
+  }
+  /* Rooftop under open sky, fading up into the panel, like her design. */
+  .panel::before {
+    content: '';
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 150px;
+    background: var(--roof) center 22% / cover no-repeat;
+    -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 55%);
+    mask-image: linear-gradient(180deg, transparent 0%, #000 55%);
+  }
+  /* Roof-line wedge in Edel maroon, like the bottom of her design. */
+  .panel::after {
+    content: '';
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 56px;
+    background: linear-gradient(90deg, var(--maroon-dark), var(--maroon-mid));
+    clip-path: polygon(0 45%, 55% 0, 100% 40%, 100% 100%, 0 100%);
+  }
+  h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: var(--font-body);
+    text-transform: uppercase;
+    line-height: 0.95;
+  }
+  .our {
+    font-size: clamp(26px, 2.6vw, 36px);
+    font-weight: 800;
+    color: var(--ink-strong);
+  }
+  .big {
+    font-size: clamp(40px, 4.4vw, 60px);
+    font-weight: 900;
+    letter-spacing: -0.01em;
+    color: var(--maroon);
+  }
+  .rule {
+    display: block;
+    width: 64px;
+    height: 3px;
+    margin: 20px auto 24px;
+    background: var(--maroon);
+  }
+  .statement {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--ink);
+  }
+  .statement :global(b) { font-weight: 700; color: var(--maroon); }
+
+  .values {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 14px;
+    width: 100%;
+    text-align: left;
+  }
+  .values li {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 16px;
+    align-items: center;
+  }
+  .tile {
+    display: grid;
+    place-items: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 3px;
+    background: linear-gradient(180deg, var(--maroon-mid), var(--maroon-dark));
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.18);
+    color: var(--white);
+    font-family: var(--font-body);
+    font-size: 30px;
+    font-weight: 900;
+  }
+  .value-text {
+    padding-left: 16px;
+    border-left: 1px solid rgba(79, 0, 0, 0.35);
+    font-size: 14px;
+    line-height: 1.35;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+  .value-text strong {
+    display: block;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--maroon);
+  }
+
+  @media (max-width: 1000px) {
+    .panels { grid-template-columns: 1fr; max-width: 560px; margin-inline: auto; }
+  }
+  @media (max-width: 600px) {
+    .mv { padding-block: 56px; }
+    .panel { padding: 36px 22px 140px; }
+    .statement { font-size: 17px; }
+  }
+</style>

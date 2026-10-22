@@ -20,7 +20,10 @@
 //   -> "desde 2003"; removed hype ("soluciones de primer nivel", "excelencia",
 //   "sueños", "transformación", "viaje"); H1/title now carry Edinburg; Roofle
 //   button -> "Estimado al Instante"; intro CTA -> "Contáctenos".
+// - 2026-10-22: Vision, Mission and Core Values added (Kassie's design and
+//   wording, MissionValues.astro), after the story band.
 import InnerPage from '../../layouts/InnerPage.astro';
+import MissionValues from '../../components/MissionValues.astro';
 import hero from '../../assets/inner/edel-roofing-banner.webp';
 import truck from '../../assets/about-us/edel-truck.webp';
 import building from '../../assets/about-us/commercial-building.jpg';
@@ -63,4 +66,6 @@ import house from '../../assets/about-us/modern-house.jpg';
     body: '¿Necesita un techo nuevo, una remodelación o una casa nueva? Llame a Eddie Elizondo y al equipo de EDEL y cuéntenos qué tiene en mente. Si se trata de su techo, lo revisamos gratis y le damos un presupuesto por escrito antes de empezar.',
     cta: { label: 'Estimado al Instante', href: '/es-mx/contact-us#contacto', roofle: true },
   }}
-/>
+>
+  <MissionValues lang="es" />
+</InnerPage>

@@ -12,7 +12,10 @@
 // - 2026-10-20 copy pass: plain, warm rewrite; removed hype ("top-notch",
 //   "exceptional", "dreams", "Partner in Transformation"); "since 2003"
 //   replaces "25-year legacy"; "Reader's Choice" spelled "Readers' Choice".
+// - 2026-10-22: Vision, Mission and Core Values added (Kassie's design and
+//   wording, MissionValues.astro), after the story band.
 import InnerPage from '../layouts/InnerPage.astro';
+import MissionValues from '../components/MissionValues.astro';
 import hero from '../assets/inner/edel-roofing-banner.webp';
 import truck from '../assets/about-us/edel-truck.webp';
 import building from '../assets/about-us/commercial-building.jpg';
@@ -54,4 +57,6 @@ import house from '../assets/about-us/modern-house.jpg';
     body: "Need a roof repair, a new roof, a remodel or a new home? Call Eddie Elizondo and the EDEL team and tell us what you need. For roofs, we start with a free inspection and give you a written estimate before any work begins.",
     cta: { label: 'Get Instant Estimate', href: '/contact-us#estimate', roofle: true },
   }}
-/>
+>
+  <MissionValues />
+</InnerPage>
