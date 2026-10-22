@@ -34,14 +34,15 @@ interface Props {
   spokes?: { title: string; intro?: string; links: { href: string; label: string }[] };
   closing: { title: string; body?: string; cta?: Cta };
   trustCert?: string;
+  noindex?: boolean;
 }
-const { title, description, lang = 'en', alternates, schema = [], crumbs, hero, intro, band, extra = [], benefits, spokes, closing, trustCert } =
+const { title, description, lang = 'en', alternates, schema = [], crumbs, hero, intro, band, extra = [], benefits, spokes, closing, trustCert, noindex = false } =
   Astro.props;
 const bandCss = await bgStyle(bandBg, 'band');
 const paras = (b: Block) => (Array.isArray(b.body) ? b.body : [b.body]);
 const benefitIcons = ['roof', 'shield', 'badge'] as const;
 ---
-<Base title={title} description={description} lang={lang} alternates={alternates} schema={[breadcrumbSchema(crumbs), ...schema]} image={hero.bg}>
+<Base title={title} description={description} lang={lang} alternates={alternates} schema={[breadcrumbSchema(crumbs), ...schema]} image={hero.bg} noindex={noindex}>
   <PageHero crumbs={crumbs} eyebrow={hero.eyebrow} title={hero.title} lead={hero.lead} bg={hero.bg} lang={lang} />
   <TrustStrip lang={lang} cert={trustCert} />
 

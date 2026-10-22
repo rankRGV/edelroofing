@@ -1,0 +1,37 @@
+---
+// /energy-relief-program, rebuilt 2026-10-22 so every live Duda URL exists on
+// the new site (Eddie: keep all pages for now, 301 later if needed).
+// The live page is a 2024 offer headline ("Get FREE Blown-in Insulation and
+// an Attic Breeze Vent") on top of a word-for-word copy of
+// /residential-roofing. That copy is NOT repeated here (duplicate content);
+// this page only states the offer the live page states.
+// noindex and out of the sitemap until Edel confirms the program is still
+// running and who qualifies (0 impressions in the 10/18 inventory).
+// Open (Edel): is the program still offered? Who qualifies? Who funds it?
+import InnerPage from '../layouts/InnerPage.astro';
+import hero from '../assets/inner/house-roof.webp';
+import { site } from '../data/site';
+---
+<InnerPage
+  title="Energy Relief Program | Edel Roofing & Construction"
+  description="Ask Edel Roofing about the Energy Relief Program: free blown-in attic insulation and an Attic Breeze vent. Call (956) 422-3335 to check if it's open."
+  noindex
+  crumbs={[
+    { label: 'Home', href: '/' },
+    { label: 'Energy Relief Program', href: '/energy-relief-program' },
+  ]}
+  hero={{ eyebrow: 'Energy Relief Program', title: 'Energy Relief Program', bg: hero }}
+  intro={{
+    title: 'Free blown-in insulation and an Attic Breeze vent',
+    body: [
+      'Through our Energy Relief Program, Edel Roofing has offered homeowners free blown-in attic insulation and an Attic Breeze attic vent.',
+      `Programs like this open and close, so please call before you count on it. Call <a href="${site.phoneHref}">${site.phone}</a> and ask if the program is open and if your home qualifies.`,
+    ],
+    cta: { label: 'Contact Us', href: '/contact-us' },
+  }}
+  closing={{
+    title: 'Getting work done on your roof?',
+    body: 'Ask about the program when you book your free roof inspection.',
+    cta: { label: 'Schedule a Free Inspection', href: '/book-an-inspection' },
+  }}
+/>

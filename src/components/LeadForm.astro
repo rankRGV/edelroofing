@@ -6,7 +6,11 @@
 // FormSpark's spam trap: bots tick the hidden box, FormSpark drops the entry,
 // and the script skips the send. With no endpoint the form stops the submit
 // and asks people to call, so a lead never goes into a dead end.
+// At launch a real submit also sends GA4 generate_lead and a Meta Lead
+// (tags only load when PREVIEW is off). Set lead={false} on forms that
+// aren't leads (job applications).
 import { site } from '../data/site';
+import { TRACKING } from '../data/launch.mjs';
 
 type Field = { name: string; label: string; type?: 'text' | 'email' | 'tel' | 'textarea' | 'select'; options?: string[]; required?: boolean; autocomplete?: string };
 interface Props {
@@ -16,8 +20,9 @@ interface Props {
   endpoint?: string;
   redirect?: string;
   lang?: 'en' | 'es';
+  lead?: boolean;
 }
-const { id, fields, submit, endpoint, redirect, lang = 'en' } = Astro.props;
+const { id, fields, submit, endpoint, redirect, lang = 'en', lead = true } = Astro.props;
 const es = lang === 'es';
 const pending = es
   ? `Este formulario todavía no está conectado. Llámenos al ${site.phone}.`
@@ -38,6 +43,7 @@ const failed = es
   data-sent={sent}
   data-failed={failed}
   data-redirect={redirect}
+  data-ga4={lead ? TRACKING.ga4 : undefined}
 >
   <input class="hp" type="checkbox" name="_honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
   {fields.map((f) => (
@@ -67,6 +73,15 @@ const failed = es
       status.textContent = text;
       status.hidden = false;
     };
+    // Redirecting forms land on a thank-you page that fires the Meta Lead
+    // and the Ads conversion itself, so only GA4 is sent from here.
+    const track = () => {
+      const ga4 = form.dataset.ga4;
+      if (!ga4) return;
+      const w = window as unknown as { gtag?: (...a: unknown[]) => void; fbq?: (...a: unknown[]) => void };
+      w.gtag?.('event', 'generate_lead', { send_to: ga4, form_id: form.id });
+      if (!form.dataset.redirect) w.fbq?.('track', 'Lead');
+    };
     const done = () => {
       if (form.dataset.redirect) return window.location.assign(form.dataset.redirect);
       form.reset();
@@ -87,6 +102,7 @@ const failed = es
           body: JSON.stringify({ ...Object.fromEntries(new FormData(form)), page: location.pathname }),
         });
         if (!res.ok) throw new Error(String(res.status));
+        track();
         done();
       } catch {
         show(form.dataset.failed!);

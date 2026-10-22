@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/copy-legacy.mjs",
+    "build": "astro build && node scripts/sitemap-lastmod.mjs && node scripts/copy-legacy.mjs && node scripts/launch-guard.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },

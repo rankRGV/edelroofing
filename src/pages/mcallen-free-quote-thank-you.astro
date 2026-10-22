@@ -2,12 +2,14 @@
 // /mcallen-free-quote-thank-you, rebuilt from the live Duda page
 // (2026-10-18). Not in the 10/18 inventory (Eddie built it 2026-10-17); it is
 // where the ads form lands. noindex, as live.
-// At launch this page must fire the Google Ads form conversion and the Meta
-// Lead event (live Duda page does both); tracking stays off on the preview.
+// Fires the Google Ads form conversion and the Meta Lead, like the live Duda
+// page. Only at launch: tracking is off while PREVIEW is on.
 // Copy changes vs live: <title> was the slug; now a real title.
 import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
 import { site } from '../data/site';
+import { PREVIEW, TRACKING } from '../data/launch.mjs';
+const conversion = TRACKING.adsFormConversion;
 ---
 <Base title="Thanks, We Got Your Request | Edel Roofing" noindex roofle={false}>
   <section class="ty">
@@ -18,6 +20,12 @@ import { site } from '../data/site';
       <a class="btn" href={site.phoneHref}><Icon name="phone" />Call {site.phone}</a>
     </div>
   </section>
+  {!PREVIEW && (
+    <script is:inline define:vars={{ conversion }}>
+      if (window.gtag) gtag('event', 'conversion', { send_to: conversion });
+      if (window.fbq) fbq('track', 'Lead');
+    </script>
+  )}
 </Base>
 
 <style>

@@ -1,0 +1,36 @@
+---
+// Tracking tags, the same set the live Duda site loads (checked 2026-10-22):
+// Google Ads gtag, two GTM containers and the Meta Pixel. Renders nothing on
+// the preview (PREVIEW in data/launch.mjs). <Tracking /> goes in <head>;
+// <Tracking body /> right after <body> is the GTM noscript fallback.
+import { PREVIEW, TRACKING as T } from '../data/launch.mjs';
+
+interface Props {
+  body?: boolean;
+}
+const { body = false } = Astro.props;
+---
+{!PREVIEW && !body && (
+  <Fragment>
+    <script is:inline define:vars={{ T }}>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { dataLayer.push(arguments); };
+      gtag('js', new Date());
+      gtag('config', T.googleAds);
+      [T.gtmMain, T.gtmAds].forEach(function (id) {
+        dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtm.js?id=' + id;
+        document.head.appendChild(s);
+      });
+      !function (f, b, e, v, n, t, s) { if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); }; if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0; t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', T.metaPixel);
+      fbq('track', 'PageView');
+    </script>
+    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${T.googleAds}`}></script>
+  </Fragment>
+)}
+{!PREVIEW && body && (
+  <noscript><iframe src={`https://www.googletagmanager.com/ns.html?id=${T.gtmMain}`} height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+)}
