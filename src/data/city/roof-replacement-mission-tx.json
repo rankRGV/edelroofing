@@ -93,7 +93,7 @@
       "proof": [
         {
           "big": "Certified",
-          "label": "The only CertainTeed SELECT ShingleMaster in the Rio Grande Valley"
+          "label": "The only CertainTeed ShingleMaster PRO in the Rio Grande Valley"
         },
         {
           "big": "RCAT #03-0489",
@@ -124,7 +124,7 @@
         },
         {
           "q": "Which shingles do you install?",
-          "a": "CertainTeed, Owens Corning, and GAF. We are the only CertainTeed SELECT ShingleMaster in the Rio Grande Valley, which gives you access to stronger warranty coverage on CertainTeed roofs."
+          "a": "CertainTeed, Owens Corning, and GAF. We are the only CertainTeed ShingleMaster PRO in the Rio Grande Valley, which gives you access to stronger warranty coverage on CertainTeed roofs."
         },
         {
           "q": "Can the storm claim pay for my new roof?",
@@ -222,7 +222,7 @@
               "name": "Which shingles do you install?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "CertainTeed, Owens Corning, and GAF. We are the only CertainTeed SELECT ShingleMaster in the Rio Grande Valley, which gives you access to stronger warranty coverage on CertainTeed roofs."
+                "text": "CertainTeed, Owens Corning, and GAF. We are the only CertainTeed ShingleMaster PRO in the Rio Grande Valley, which gives you access to stronger warranty coverage on CertainTeed roofs."
               }
             },
             {

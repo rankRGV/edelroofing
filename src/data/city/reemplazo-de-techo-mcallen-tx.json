@@ -4,7 +4,7 @@
   "city": "mcallen",
   "service": "replacement",
   "title": "Reemplazo de Techo en McAllen, TX | EDEL Roofing & Construction",
-  "description": "Techos nuevos de tejas en McAllen, TX. CertainTeed SELECT ShingleMaster, retiro completo, madera revisada y alcance por escrito. (956) 422-3335.",
+  "description": "Techos nuevos de tejas en McAllen, TX. CertainTeed ShingleMaster PRO, retiro completo, madera revisada y alcance por escrito. (956) 422-3335.",
   "alternates": {
     "en": "/roof-replacement-mcallen-tx",
     "es": "/reemplazo-de-techo-mcallen-tx"
@@ -20,7 +20,7 @@
     }
   ],
   "h1": "Reemplazo de Techo en McAllen, TX",
-  "lede": "Edel Roofing &amp; Construction reemplaza techos de tejas en casas de McAllen con retiro completo del techo viejo y un alcance de trabajo por escrito antes de empezar. Somos el único CertainTeed SELECT ShingleMaster en el Valle del Río Grande.",
+  "lede": "Edel Roofing &amp; Construction reemplaza techos de tejas en casas de McAllen con retiro completo del techo viejo y un alcance de trabajo por escrito antes de empezar. Somos el único CertainTeed ShingleMaster PRO en el Valle del Río Grande.",
   "heroCtas": [
     {
       "label": "Obtener Estimado Gratis",
@@ -65,7 +65,7 @@
         },
         {
           "title": "Elección de teja",
-          "body": "CertainTeed, Owens Corning o GAF. Como CertainTeed SELECT ShingleMaster le podemos ofrecer una cobertura de garantía CertainTeed más fuerte."
+          "body": "CertainTeed, Owens Corning o GAF. Como CertainTeed ShingleMaster PRO le podemos ofrecer una cobertura de garantía CertainTeed más fuerte."
         },
         {
           "title": "Ventilación y membrana",
@@ -97,7 +97,7 @@
       "proof": [
         {
           "big": "ShingleMaster",
-          "label": "El único CertainTeed SELECT ShingleMaster en el Valle del Río Grande"
+          "label": "El único CertainTeed ShingleMaster PRO en el Valle del Río Grande"
         },
         {
           "big": "4.8★",
@@ -197,7 +197,7 @@
           "@type": "WebPage",
           "name": "Reemplazo de Techo en McAllen, TX",
           "url": "https://www.edelroofing.com/reemplazo-de-techo-mcallen-tx",
-          "description": "Techos nuevos de tejas en McAllen, TX. CertainTeed SELECT ShingleMaster, retiro completo, madera revisada y alcance por escrito. (956) 422-3335.",
+          "description": "Techos nuevos de tejas en McAllen, TX. CertainTeed ShingleMaster PRO, retiro completo, madera revisada y alcance por escrito. (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }

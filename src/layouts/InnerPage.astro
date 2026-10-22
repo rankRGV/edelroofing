@@ -31,18 +31,27 @@ interface Props {
   band?: Block;
   extra?: Block[];
   benefits?: { title: string; items: { title: string; body: string }[] };
+  // Questions people ask (from People Also Ask). Answers may hold links.
+  // Also written out as FAQPage schema, like the city pages.
+  faq?: { title: string; items: { q: string; a: string }[] };
   spokes?: { title: string; intro?: string; links: { href: string; label: string }[] };
   closing: { title: string; body?: string; cta?: Cta };
   trustCert?: string;
   noindex?: boolean;
 }
-const { title, description, lang = 'en', alternates, schema = [], crumbs, hero, intro, band, extra = [], benefits, spokes, closing, trustCert, noindex = false } =
+const { title, description, lang = 'en', alternates, schema = [], crumbs, hero, intro, band, extra = [], benefits, spokes, closing, trustCert, noindex = false, faq } =
   Astro.props;
 const bandCss = await bgStyle(bandBg, 'band');
 const paras = (b: Block) => (Array.isArray(b.body) ? b.body : [b.body]);
 const benefitIcons = ['roof', 'shield', 'badge'] as const;
+const strip = (h: string) => h.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&');
+const faqSchema = faq && {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.items.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: strip(f.a) } })),
+};
 ---
-<Base title={title} description={description} lang={lang} alternates={alternates} schema={[breadcrumbSchema(crumbs), ...schema]} image={hero.bg} noindex={noindex}>
+<Base title={title} description={description} lang={lang} alternates={alternates} schema={[breadcrumbSchema(crumbs), ...schema, ...(faqSchema ? [faqSchema] : [])]} image={hero.bg} noindex={noindex}>
   <PageHero crumbs={crumbs} eyebrow={hero.eyebrow} title={hero.title} lead={hero.lead} bg={hero.bg} lang={lang} />
   <TrustStrip lang={lang} cert={trustCert} />
 
@@ -98,7 +107,7 @@ const benefitIcons = ['roof', 'shield', 'badge'] as const;
 
   {extra.map((b, i) => (
     <section class:list={['section', { soft: i % 2 === 0 }]}>
-      <div class:list={['wrap split', { flip: i % 2 === 0 }]}>
+      <div class:list={['wrap', b.images?.[0] ? 'split' : 'narrow', { flip: i % 2 === 0 }]}>
         <div>
           {b.eyebrow && <p class="eyebrow">{b.eyebrow}</p>}
           <h2>{b.title}</h2>
@@ -125,6 +134,22 @@ const benefitIcons = ['roof', 'shield', 'badge'] as const;
             </li>
           ))}
         </ul>
+      </div>
+    </section>
+  )}
+
+  {faq && (
+    <section class="section">
+      <div class="wrap narrow">
+        <h2>{faq.title}</h2>
+        <div class="faqs">
+          {faq.items.map((f) => (
+            <details>
+              <summary>{f.q}<Icon name="plus" /></summary>
+              <p set:html={f.a} />
+            </details>
+          ))}
+        </div>
       </div>
     </section>
   )}
@@ -185,6 +210,13 @@ const benefitIcons = ['roof', 'shield', 'badge'] as const;
   .benefits :global(svg) { width: 34px; height: 34px; color: var(--maroon); }
   .benefits h3 { font-size: 26px; margin: 14px 0 8px; }
   .benefits p { margin: 0; }
+  .faqs { display: grid; gap: 12px; margin-top: 24px; }
+  details { background: var(--white); border: 1px solid var(--line); border-left: 3px solid var(--maroon); border-radius: var(--radius); }
+  summary { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 20px; cursor: pointer; font-weight: 600; color: var(--ink-strong); list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary :global(svg) { width: 18px; height: 18px; color: var(--maroon); flex: none; transition: transform 0.15s ease; }
+  details[open] summary :global(svg) { transform: rotate(45deg); }
+  details p { padding: 0 20px 18px; margin: 0; }
 
   @media (max-width: 900px) {
     .section { padding-block: 60px; }

@@ -93,7 +93,7 @@
       "proof": [
         {
           "big": "Certificado",
-          "label": "El único CertainTeed SELECT ShingleMaster en el Valle del Río Grande"
+          "label": "El único CertainTeed ShingleMaster PRO en el Valle del Río Grande"
         },
         {
           "big": "RCAT #03-0489",
@@ -124,7 +124,7 @@
         },
         {
           "q": "¿Qué tejas instalan?",
-          "a": "CertainTeed, Owens Corning y GAF. Somos el único CertainTeed SELECT ShingleMaster en el Valle del Río Grande, lo que le da acceso a una cobertura de garantía más fuerte en techos CertainTeed."
+          "a": "CertainTeed, Owens Corning y GAF. Somos el único CertainTeed ShingleMaster PRO en el Valle del Río Grande, lo que le da acceso a una cobertura de garantía más fuerte en techos CertainTeed."
         },
         {
           "q": "¿El reclamo por tormenta puede pagar mi techo nuevo?",
@@ -222,7 +222,7 @@
               "name": "¿Qué tejas instalan?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "CertainTeed, Owens Corning y GAF. Somos el único CertainTeed SELECT ShingleMaster en el Valle del Río Grande, lo que le da acceso a una cobertura de garantía más fuerte en techos CertainTeed."
+                "text": "CertainTeed, Owens Corning y GAF. Somos el único CertainTeed ShingleMaster PRO en el Valle del Río Grande, lo que le da acceso a una cobertura de garantía más fuerte en techos CertainTeed."
               }
             },
             {

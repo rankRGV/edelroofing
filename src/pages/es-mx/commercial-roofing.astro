@@ -16,6 +16,11 @@
 //   "inquebrantable", "excepcional", "de primera calidad", "de primer
 //   nivel", "Transformando", "cualquier desafío"); H1/title now carry "Valle
 //   del Río Grande"; Roofle button -> "Estimado al Instante".
+// - 2026-10-22 money page pass: same new sections as /commercial-roofing,
+//   translated in usted. Title and H1 keep "Techos Comerciales" (GSC: #1
+//   for "techos comerciales" and "techo comercial"). "impermeabilización"
+//   is the Spanish search word for coatings. Cert "con licencia en Texas"
+//   -> "con licencia RCAT" (Texas doesn't license roofers).
 import InnerPage from '../../layouts/InnerPage.astro';
 import hero from '../../assets/commercial-roofing/roofing-construction.jpeg';
 import building from '../../assets/commercial-roofing/commercial-building.jpg';
@@ -27,7 +32,7 @@ import { site } from '../../data/site';
 // 2026-10-21: mismas certificaciones comerciales que /commercial-roofing
 // (hoja de certificaciones de Dustin).
 const certs = [
-  `Contratista de techos con licencia en Texas (${site.license})`,
+  `Contratista de techos con licencia RCAT (${site.license})`,
   'Versico Authorized Contractor',
   'Polyglass Registered Contractor',
   'KARNAK',
@@ -46,7 +51,7 @@ const certs = [
     { label: 'Inicio', href: '/es-mx' },
     { label: 'Techos Comerciales', href: '/es-mx/commercial-roofing' },
   ]}
-  hero={{ eyebrow: 'Nuestros Servicios de Techado', title: 'Techos Comerciales en el Valle del Río Grande', bg: hero }}
+  hero={{ eyebrow: 'Nuestros Servicios de Techado', title: 'Techos Comerciales en el Valle del Río Grande', lead: 'TPO, PVC, EPDM, bitumen modificado, lámina e impermeabilización para negocios en todo el Valle del Río Grande.', bg: hero }}
   intro={{
     eyebrow: 'Techos para negocios',
     title: 'Techos comerciales desde 2003',
@@ -65,12 +70,69 @@ const certs = [
       { src: repairing, alt: 'Reparando un techo comercial' },
     ],
   }}
+  extra={[
+    {
+      eyebrow: 'Techos de poca pendiente',
+      title: 'Los sistemas de techo comercial que trabajamos',
+      body: [
+        'La mayoría de los edificios comerciales del Valle tienen un techo de poca pendiente, que muchos llaman techo plano, o un techo de lámina. Esto es cada sistema, en palabras sencillas.',
+        'El TPO es una sola capa de membrana blanca. Las uniones se sueldan con aire caliente, y la superficie blanca refleja mucho del sol. Es una de las opciones más comunes en techos nuevos de poca pendiente. El PVC también es una membrana de una capa con uniones soldadas, y aguanta bien donde llega grasa o químicos al techo, como encima de la cocina de un restaurante.',
+        'El EPDM es una membrana de hule negro con uniones pegadas o con cinta. El bitumen modificado es a base de asfalto y se pone en capas de rollo, con soplete, en frío o autoadherible. Somos Versico Authorized Contractor y Polyglass Registered Contractor.',
+        'Los techos de lámina son comunes en talleres y bodegas. Los problemas de siempre son tornillos flojos u oxidados, arandelas gastadas y uniones que se abren. La impermeabilización, con un recubrimiento de silicón o acrílico, se pone sobre un techo que todavía está en buen estado para sellarlo y reflejar el calor. Impermeabilizar no arregla un techo que ya está mojado por debajo.',
+      ],
+    },
+    {
+      eyebrow: 'Opciones',
+      title: 'Reparar, impermeabilizar, recubrir o reemplazar',
+      body: [
+        'La decisión depende sobre todo de lo que hay debajo de la superficie. Si el aislamiento bajo la membrana está seco y los problemas están en pocos lugares, una reparación o una impermeabilización le pueden dar años más. Un techo sobrepuesto (recover) es un techo nuevo que se pone sobre el techo existente, donde el código lo permite. Cuando el agua ya mojó el aislamiento en áreas grandes, hay que quitar el techo viejo.',
+        'Los códigos importan al cambiar un techo. Edinburg usa el Código Internacional de Conservación de Energía de 2018. Según la sección C503.3.1, cuando se reemplaza un techo que tiene todo su aislamiento encima de la cubierta, el techo nuevo tiene que cumplir con los niveles de aislamiento actuales. Un techo sobrepuesto es una excepción. Pregunte por esto desde el principio, porque cambia el presupuesto.',
+        'Le damos un presupuesto por escrito con el alcance y el precio antes de empezar, para que pueda comparar las opciones.',
+      ],
+    },
+    {
+      eyebrow: 'El viento',
+      title: 'El viento y los techos comerciales del Valle',
+      body: [
+        'Las tormentas fuertes de aquí le pegan duro a los edificios comerciales. En su informe sobre el huracán Dolly de 2008, el Centro Nacional de Huracanes escribió que algunos edificios de construcción sencilla, como bodegas o estructuras industriales, tuvieron daños importantes por el viento. Durante el huracán Hanna en 2020, el Servicio Meteorológico Nacional reportó techos de lámina arrancados o doblados en McAllen y daño al techo de un taller de mantenimiento de una escuela en Mission.',
+        'El viento jala más fuerte en las orillas y las esquinas de un techo, así que el metal del perímetro, los tapajuntas de las orillas y los tornillos son lo primero que hay que revisar después de una tormenta.',
+      ],
+    },
+    {
+      eyebrow: 'Administradores',
+      title: 'Para dueños y administradores de propiedades',
+      body: [
+        'Si administra más de un edificio, podemos programar inspecciones regulares para encontrar los problemas pequeños antes de que se conviertan en goteras sobre el local de un inquilino. Usted recibe lo que encontramos y el precio por escrito, y usted decide qué se hace y cuándo.',
+      ],
+    },
+  ]}
   benefits={{
     title: 'Por qué elegir a EDEL para el techo de su negocio',
     items: [
       { title: 'Techos de poca pendiente y techos inclinados', body: 'Un edificio comercial puede tener cualquier tipo de techo: TPO, bitumen modificado, EPDM, PVC, tejas asfálticas, teja o metal. Trabajamos con todos, desde instalaciones nuevas hasta <a href="/es-mx/roof-repairs">reparaciones</a>, mantenimiento y reemplazo.' },
       { title: 'Experiencia', body: 'Nuestro equipo trabaja proyectos comerciales de todos los tamaños, sencillos y complicados. Si su techo tiene un problema, lo revisamos y le explicamos qué opciones tiene.' },
       { title: 'Buenos materiales', body: 'Compramos los materiales con proveedores de confianza. Escogemos materiales que aguanten el uso que recibe un techo comercial y que le duren.' },
+    ],
+  }}
+  faq={{
+    title: 'Preguntas sobre techos comerciales',
+    items: [
+      {
+        q: '¿Cuánto cuesta un techo comercial?',
+        a: 'Depende de los pies cuadrados, el sistema de techo, cuántas capas viejas hay que quitar, cuánto aislamiento mojado hay que cambiar, lo que pide el código de energía para el aislamiento, los cambios de drenaje y qué tan fácil es llegar al techo. Después de una inspección le damos el alcance y el precio por escrito.',
+      },
+      {
+        q: '¿Conviene impermeabilizar o reemplazar el techo?',
+        a: 'La impermeabilización funciona en un techo que todavía está sano y seco por debajo. Si el agua ya mojó el aislamiento, el impermeabilizante la deja atrapada, y el techo se tiene que reparar en esas áreas o reemplazar. Una inspección le dice en qué caso está.',
+      },
+      {
+        q: '¿El TPO es buen techo para el Valle?',
+        a: 'El TPO es blanco, así que refleja mucho del sol, y sus uniones soldadas aguantan bien. Es una opción común en techos de poca pendiente en lugares calurosos como el nuestro. El sistema correcto para su edificio también depende de lo que hay sobre el techo, como extractores de cocina o mucho paso de gente.',
+      },
+      {
+        q: '¿Trabajan techos comerciales fuera de Edinburg?',
+        a: 'Sí. Hacemos techos comerciales en todo el Valle del Río Grande. Vea nuestras páginas de <a href="/techado-comercial-mcallen-tx">McAllen</a> y <a href="/techado-comercial-mission-tx">Mission</a>.',
+      },
     ],
   }}
   spokes={{

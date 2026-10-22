@@ -10,20 +10,28 @@
 //   "Expert", "advanced techniques", "rapid response team", "peace of
 //   mind", "stand the test of time"); softened "ensuring a lasting solution
 //   that prevents future problems"; added "We answer 24/7" (sheet fact).
+// - 2026-10-22 money page pass (site-rebuild/money-pages-research.md): added
+//   leak-now steps (TDI temporary repair + receipts tip), where Valley roofs
+//   leak (NOAA heat normals; Ray and Hugo reviews), how we trace a leak (Ian
+//   and Fernando reviews), repair or replace, and a FAQ from People Also Ask
+//   (Texas cost, the Florida 25% rule, insurance, RCAT license). No prices:
+//   Edel hasn't confirmed a repair range. Open (Edel): metal, tile and flat
+//   roof repairs, tarping.
 import InnerPage from '../layouts/InnerPage.astro';
 import hero from '../assets/roof-repairs/modern-house.jpeg';
 import restoration from '../assets/roof-repairs/roof-restoration.jpeg';
 import repair from '../assets/roof-repairs/roof-repair.jpeg';
+import { site } from '../data/site';
 ---
 <InnerPage
-  title="Roof Repair in Edinburg, TX | Edel Roofing & Construction"
-  description="Leak repair, shingle replacement and emergency roof repair in Edinburg, TX. Free inspection and a written price before we start. Call (956) 422-3335."
+  title="Roof Repair in Edinburg, TX | 24/7 Leak Repair | Edel Roofing"
+  description="Roof leak and storm repair in Edinburg and the Rio Grande Valley. We find where the water gets in and put the price in writing. Call (956) 422-3335, 24/7."
   alternates={{ en: '/roof-repairs', es: '/es-mx/roof-repairs' }}
   crumbs={[
     { label: 'Home', href: '/' },
     { label: 'Roof Repairs', href: '/roof-repairs' },
   ]}
-  hero={{ eyebrow: 'Roof repairs', title: 'Roof Repairs in Edinburg, TX', bg: hero }}
+  hero={{ eyebrow: 'Roof repairs', title: 'Roof Repairs in Edinburg, TX', lead: 'Leaks, missing shingles, lifted vents and storm damage. Someone answers the phone 24/7.', bg: hero }}
   intro={{
     eyebrow: 'Leaks and damage',
     title: 'Got a leak? Call us.',
@@ -38,12 +46,75 @@ import repair from '../assets/roof-repairs/roof-repair.jpeg';
     cta: { label: 'Get Instant Estimate', href: '/contact-us#estimate', roofle: true },
     images: [{ src: repair, alt: 'Roof Repair' }],
   }}
+  extra={[
+    {
+      eyebrow: 'Leaking right now?',
+      title: 'What to do before we get there',
+      body: [
+        `Call us at <a href="${site.phoneHref}">${site.phone}</a>. Someone answers 24/7, and we'll set up the soonest visit we can.`,
+        "While you wait, move furniture and electronics away from the drip and put a bucket or towels under it. If a ceiling is sagging or holding water, keep everyone out of that room. Don't climb onto a wet roof to look for the hole. Wet shingles and metal are slick.",
+        'Take photos and video of the leak and anything it soaked. The Texas Department of Insurance tells homeowners to make only temporary repairs that stop more damage and to keep the receipts. If you think you will file a claim, hold on to every receipt.',
+      ],
+    },
+    {
+      eyebrow: 'Where leaks start',
+      title: 'Where Valley roofs usually leak',
+      body: [
+        'Most leaks start where something goes through the roof or where two surfaces meet, not in the open middle of the shingles.',
+        "Pipe vents are a common one. The rubber boot around a plumbing vent cracks with age, or wind lifts the metal base plate. Ray called us after wind lifted the base plates on two of his pipe vents. He wrote that he got \"a detailed scope of work and a quote\" before we secured them.",
+        'Flashing is another. These are the metal pieces where the roof meets a wall, a chimney, a skylight or a valley. When flashing comes loose or the sealant around it gives out, water runs right behind it.',
+        'Heat plays a part too. McAllen averages about 40 days a year at 100°F or hotter (NOAA 1991 to 2020 normals). Caulk and sealant around vents and edges dry out and crack in that kind of sun, and nails can back out as the deck heats up and cools down every day.',
+        'The roof edge counts as well. Hugo hired us for his fascia, and while we were there we showed him "a few other areas of concern around the edge" of his roof.',
+      ],
+    },
+    {
+      eyebrow: 'Finding the source',
+      title: 'How we track down a leak',
+      body: [
+        'Water can run along the deck and the rafters before it drips, so the stain on your ceiling is often a few feet away from where the water gets in. We check the roof itself and look for the path the water took.',
+        'On Ian\'s roof, he wrote, the crew "used drone technology plus time in the attic to assess damage." Fernando said we sent him "pictures of the repairs before, during &amp; after the job was done," and that the crew ran a big magnet over the grass to pick up old nails.',
+      ],
+    },
+    {
+      eyebrow: 'Repair or replace',
+      title: 'When a repair is the right call',
+      body: [
+        'A repair makes sense when the damage is in one area and the rest of the roof is in good shape. If shingles are cracking, curling or shedding granules all over, or the roof keeps leaking in new places, more patches usually end up costing more than a new roof.',
+        'We will tell you which one we would do and why, and you get a written price before any work starts. If it turns out you need a new roof, our <a href="/residential-roofing">residential roofing</a> page explains how a replacement works.',
+      ],
+    },
+  ]}
   benefits={{
     title: 'What we repair',
     items: [
       { title: 'Leak detection and repair', body: "We find where the water is getting in and fix it before it does more damage to your house." },
       { title: 'Shingle replacement', body: "Damaged or missing shingles let wind and water get under your roof. We replace them so the roof looks right and keeps the weather out again." },
       { title: 'Emergency repairs', body: 'Storm damage or a leak that showed up overnight? Call us. We answer 24/7 and handle <a href="/contact-us">emergency repairs</a> to keep more water from getting in.' },
+    ],
+  }}
+  faq={{
+    title: 'Roof repair questions',
+    items: [
+      {
+        q: 'How much does a roof repair cost in Texas?',
+        a: 'It depends on what failed and how much of the roof it affects. Resealing a pipe vent is a small job. Replacing rotted wood under an old leak is a bigger one. The height and pitch of the roof and the roofing material also change the labor. After a free inspection you get the price in writing, before we start.',
+      },
+      {
+        q: 'What is the 25% rule for roofing?',
+        a: 'It is a Florida building code rule. In Florida, if more than 25% of a roof section is repaired or replaced within 12 months, that section has to be brought up to current code. Texas has no statewide version of it. Cities here set their own permit rules, so for a large repair ask your city building department or ask us at the inspection.',
+      },
+      {
+        q: 'Will my homeowners insurance pay for a roof leak?',
+        a: 'Your policy decides. Sudden damage, like wind tearing shingles off, is a different case from a roof that wore out with age, and many policies treat the two differently. We inspect the roof and show you what we found. You and your insurance company decide on the claim. We are not a public adjuster, and Texas law does not allow a contractor to act as one on a house it works on. More on claims is on our <a href="/storm-damage">storm damage</a> page.',
+      },
+      {
+        q: 'Can I call at night or on a weekend?',
+        a: `Yes. Someone answers <a href="${site.phoneHref}">${site.phone}</a> 24/7, and we will set up the soonest visit we can.`,
+      },
+      {
+        q: 'Is Edel licensed?',
+        a: 'Texas does not license roofers at the state level. The Roofing Contractors Association of Texas (RCAT) runs a voluntary license, and Edel holds RCAT license #03-0489 for commercial and residential roofing. When you compare roofers, ask each one for their RCAT number and proof of insurance.',
+      },
     ],
   }}
   spokes={{

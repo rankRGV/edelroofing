@@ -23,6 +23,11 @@
 //   ShingleMaster / Owens Corning Preferred, free inspection, written
 //   estimate, financing via /es-mx/contact-us); H1 now carries Edinburg;
 //   Roofle button -> "Estimado al Instante".
+// - 2026-10-22 money page pass: same new sections as /residential-roofing,
+//   translated in usted. "techo de lámina" (110/mo) and "tejas" are the
+//   Spanish words people search. English reviews are retold without quote
+//   marks; Alejandro's review is quoted as he wrote it, in Spanish.
+//   ShingleMaster PRO replaces "Select ShingleMaster".
 import InnerPage from '../../layouts/InnerPage.astro';
 import hero from '../../assets/residential-roofing/house-with-swimming-pool.jpg';
 import construction from '../../assets/residential-roofing/roofing-construction.jpeg';
@@ -32,14 +37,14 @@ import newRoof from '../../assets/residential-roofing/new-residential-roof.jpeg'
 ---
 <InnerPage
   lang="es"
-  title="Techos Residenciales en Edinburg, TX | EDEL Roofing & Construction Inc."
-  description="Techos nuevos y reemplazo de techos para casas en Edinburg y el Valle del Río Grande desde 2003. CertainTeed, Owens Corning y GAF. Llame al (956) 422-3335."
+  title="Techos Residenciales en Edinburg, TX | Tejas y Lámina | EDEL Roofing"
+  description="Techos nuevos de tejas y de lámina para casas en Edinburg y el Valle del Río Grande. CertainTeed ShingleMaster PRO. Inspección gratis y presupuesto por escrito. (956) 422-3335."
   alternates={{ en: '/residential-roofing', es: '/es-mx/residential-roofing' }}
   crumbs={[
     { label: 'Inicio', href: '/es-mx' },
     { label: 'Techos Residenciales', href: '/es-mx/residential-roofing' },
   ]}
-  hero={{ eyebrow: 'Nuestros Servicios de Techado', title: 'Techos Residenciales en Edinburg', bg: hero }}
+  hero={{ eyebrow: 'Nuestros Servicios de Techado', title: 'Techos Residenciales en Edinburg', lead: 'Techos nuevos de tejas y de lámina para casas en todo el Valle, con inspección gratis y precio por escrito.', bg: hero }}
   intro={{
     eyebrow: 'Techos para su casa',
     title: 'Un techo que dure y que se vea bien',
@@ -50,7 +55,7 @@ import newRoof from '../../assets/residential-roofing/new-residential-roof.jpeg'
   band={{
     eyebrow: 'Instalación de Techo',
     title: 'Cómo instalamos su techo nuevo',
-    body: 'Un techo bien instalado depende del cuidado en cada paso. Medimos con precisión, usamos buenos materiales y nuestros techadores saben hacer su trabajo. Nos importa que el techo dure y que quede como usted lo quiere, hasta la última teja. EDEL tiene la certificación CertainTeed Select ShingleMaster (somos los únicos en el Valle) y es Contratista Preferido de Owens Corning.',
+    body: 'Un techo bien instalado depende del cuidado en cada paso. Medimos con precisión, usamos buenos materiales y nuestros techadores saben hacer su trabajo. Nos importa que el techo dure y que quede como usted lo quiere, hasta la última teja. EDEL tiene la certificación CertainTeed ShingleMaster PRO (somos los únicos en el Valle) y es Contratista Preferido de Owens Corning.',
     cta: { label: 'Estimado al Instante', href: '/es-mx/contact-us#contacto', roofle: true },
     images: [
       { src: install, alt: 'Instalación de techo residencial' },
@@ -58,12 +63,70 @@ import newRoof from '../../assets/residential-roofing/new-residential-roof.jpeg'
       { src: newRoof, alt: 'Techo residencial nuevo' },
     ],
   }}
+  extra={[
+    {
+      eyebrow: '¿Ya necesita techo nuevo?',
+      title: 'Señales de que su techo necesita reemplazo',
+      body: [
+        'Un techo casi nunca falla de un día para otro. Estas son las señales que buscamos en una inspección: tejas que se enrollan, se agrietan o ya perdieron la gravilla (a veces la gravilla aparece en las canaletas), partes blandas al caminar el techo, goteras que salen en un lugar nuevo después de cada tormenta y madera que se hunde entre las vigas.',
+        'La edad también cuenta. Si su techo es el mismo con el que se construyó la casa, y la casa es de finales de los 90 o principios de los 2000, como muchas en Edinburg y McAllen, vale la pena revisarlo aunque todavía no gotee.',
+        'Si el daño está solo en un área y el resto está bien, puede que solo necesite una <a href="/es-mx/roof-repairs">reparación de techo</a>. Le decimos cuál de las dos haríamos.',
+      ],
+    },
+    {
+      eyebrow: 'El material',
+      title: '¿Tejas o techo de lámina?',
+      body: [
+        'Las tejas de asfalto (shingles) son las que tienen la mayoría de las casas del Valle. Las tejas arquitectónicas, también llamadas dimensionales, son más gruesas que las tejas planas de tres lengüetas y vienen en muchos colores. Cuestan menos de instalar que el metal. Instalamos tejas CertainTeed, Owens Corning y GAF.',
+        'Un techo de metal o de lámina cuesta más al principio y por lo general dura más que las tejas. Los colores claros reflejan más el sol, lo cual ayuda donde en verano la temperatura llega cerca de 100°F. El metal de junta alzada (standing seam) tiene los tornillos escondidos bajo las juntas. Los paneles con tornillos expuestos cuestan menos, pero hay que revisar los tornillos y sus arandelas con los años.',
+        'En la inspección le explicamos las líneas de tejas y las opciones de metal que instalamos, y cuánto costaría cada una en su casa. Usted escoge el material y el color.',
+      ],
+    },
+    {
+      eyebrow: 'Qué incluye',
+      title: 'Qué incluye un reemplazo de techo',
+      body: [
+        'Quitamos el techo viejo hasta la madera (el deck) y revisamos esa madera. El triplay y las tablas podridas se cambian antes de poner lo nuevo. Homer escribió que en su casa cambiamos todas las tejas, el triplay podrido y las tablas podridas.',
+        'Después va la base impermeable, los tapajuntas, las ventilas y el techo nuevo. Las ventilas importan con este calor, porque un ático muy caliente maltrata las tejas. A Gerardo le pusimos ventilas nuevas en el ático y canaletas nuevas.',
+        'Si tiene canaletas que quiere conservar, las podemos quitar y volver a poner. Jose escribió que el equipo quitó y volvió a instalar las canaletas que ya tenía. Al final el equipo limpia. Fernando contó que pasaron un imán grande por el pasto para recoger los clavos viejos, y Mayra escribió que el patio quedó completamente limpio.',
+      ],
+    },
+    {
+      eyebrow: 'El tiempo',
+      title: 'Cuánto tarda',
+      body: [
+        'La mayoría de las casas quedan en uno o dos días. Las reseñas de nuestros clientes coinciden. Gerardo escribió que cambiamos su techo en 2 días, y Alejandro escribió: "Lupe es un verdadero profesional, amable confiable, explicó y respondió a todas mis preguntas", y que "en un día y medio reemplazaron el techo". Un techo más grande o más inclinado, mucha madera podrida o la lluvia pueden alargar el trabajo, y le damos el calendario antes de empezar.',
+        'Escoger los colores es parte del proceso. Jose contó que Rollie les mostró los colores disponibles y el mejor color de molduras para su casa. Walter escribió que lo llevaron a ver techos recién instalados antes de escoger el suyo.',
+      ],
+    },
+  ]}
   benefits={{
     title: 'Lo que recibe con EDEL',
     items: [
       { title: 'Materiales y estilos para escoger', body: 'Trabajamos con muchos materiales y estilos, como tejas de asfalto y techos de metal, para casas y también para negocios. Instalamos CertainTeed, Owens Corning y GAF, entre otras marcas.' },
       { title: 'Opciones de eficiencia energética', body: 'Tenemos opciones de techo con mejor eficiencia energética. Si le interesa, le explicamos cuáles hay para su casa y en qué se diferencian.' },
       { title: 'Hecho para durar', body: 'Usamos buenos materiales y los instalamos con cuidado, para que su techo nuevo le dure por muchos años.' },
+    ],
+  }}
+  faq={{
+    title: 'Preguntas sobre reemplazo de techo',
+    items: [
+      {
+        q: '¿Cuánto cuesta reemplazar un techo en Texas?',
+        a: 'El precio depende del tamaño del techo, la inclinación, cuántos pisos tiene la casa, el material (el metal cuesta más que las tejas), cuántas capas viejas hay que quitar y cuánta madera hay que cambiar. Puede pedir un <a href="/es-mx/contact-us#contacto" data-roofle-open>estimado al instante</a> en línea como punto de partida. Confirmamos el alcance y el precio final por escrito después de una inspección gratis. También ofrecemos financiamiento; pregúntenos.',
+      },
+      {
+        q: '¿El seguro cubre un techo de 20 años en Texas?',
+        a: 'La edad sola no lo decide. El Departamento de Seguros de Texas dice que las aseguradoras no pueden negar ni cancelar una póliza solo por la edad del techo, pero el estado del techo sí cuenta. También explica que, conforme el techo envejece, algunas compañías cambian la cobertura del techo a valor real en efectivo (actual cash value), que paga el valor depreciado en vez del costo de un techo nuevo. Revise su póliza, y vea nuestra página de <a href="/es-mx/storm-damage">daños por tormenta</a> para saber cómo funcionan los reclamos.',
+      },
+      {
+        q: '¿Qué significa CertainTeed ShingleMaster PRO?',
+        a: 'Es una credencial de CertainTeed para contratistas de techos. CertainTeed tiene a EDEL como ShingleMaster PRO, y en su buscador de contratistas ningún otro techador del Valle del Río Grande tiene el nivel PRO ni el nivel más alto, PREMIER (revisado en octubre de 2026). CertainTeed dice que los contratistas PRO pueden ofrecer sus garantías extendidas SureStart PLUS, que agregan cobertura a la garantía normal de las tejas. Pregúntenos cuál le conviene.',
+      },
+      {
+        q: '¿También cambian canaletas?',
+        a: 'Sí. Podemos poner canaletas nuevas junto con el techo nuevo, o quitar sus canaletas y volver a instalarlas. Vea nuestra página de <a href="/gutters-edinburg-tx-es">canaletas</a>.',
+      },
     ],
   }}
   spokes={{

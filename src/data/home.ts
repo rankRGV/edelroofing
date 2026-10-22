@@ -70,7 +70,7 @@ export const homeEn: HomeCopy = {
   rating: 'Rated <strong>4.8</strong> by 250+ Google reviews',
   h1: 'Roofing in Edinburg & the Rio Grande Valley',
   promise: 'Built on Trust. Backed by Quality.',
-  assure: ['Free inspection &amp; written estimate', 'Only CertainTeed Select ShingleMaster in the RGV'],
+  assure: ['Free inspection &amp; written estimate', 'Only CertainTeed ShingleMaster PRO in the RGV'],
   heroText: `Your roof protects what matters most. EDEL Roofing &amp; Construction provides roof repairs, replacements, and new
           installations for homes and businesses throughout the Rio Grande Valley. From inspection to final walkthrough, we
           focus on quality workmanship, clear communication, and respect for your property.`,
@@ -145,7 +145,7 @@ export const homeEn: HomeCopy = {
       { title: 'Detailed written proposals', body: 'Review the proposed scope, materials, and price before approving the work.' },
       { title: 'Communication &amp; care', body: 'We keep you informed and plan for property protection and jobsite cleanup.' },
     ],
-    credentials: `Licensed (${site.license}), bonded and insured. The only CertainTeed Select ShingleMaster in the Rio Grande
+    credentials: `Licensed (${site.license}), bonded and insured. The only CertainTeed ShingleMaster PRO in the Rio Grande
             Valley, and an Owens Corning Preferred Contractor.`,
     projects: { label: 'See our roofing projects', href: '/projects' },
     about: { label: 'About Edel', href: '/about-us' },
@@ -207,7 +207,7 @@ export const homeEn: HomeCopy = {
       },
       {
         q: 'What roofing brands do you install?',
-        a: 'We install CertainTeed, Owens Corning and GAF, among others. Edel is the only CertainTeed Select ShingleMaster in the Rio Grande Valley.',
+        a: 'We install CertainTeed, Owens Corning and GAF, among others. Edel is the only CertainTeed ShingleMaster PRO in the Rio Grande Valley.',
       },
       { q: 'Are you licensed and insured?', a: `Yes. Edel Roofing & Construction is licensed (${site.license}), bonded and insured.` },
       {
@@ -235,7 +235,7 @@ export const homeEs: HomeCopy = {
   rating: 'Calificación <strong>4.8</strong> en más de 250 reseñas de Google',
   h1: 'Techos en Edinburg y el Valle del Río Grande',
   promise: 'Basados en la confianza. Respaldados por la calidad.',
-  assure: ['Inspección y presupuesto por escrito gratis', 'Único CertainTeed Select ShingleMaster en el RGV'],
+  assure: ['Inspección y presupuesto por escrito gratis', 'Único CertainTeed ShingleMaster PRO en el RGV'],
   heroText: `Su techo protege lo que más le importa. EDEL Roofing &amp; Construction hace reparaciones, reemplazos e
           instalaciones nuevas de techos para casas y negocios en todo el Valle del Río Grande. Desde la inspección hasta la
           revisión final, cuidamos la calidad del trabajo, la comunicación clara y el respeto por su propiedad.`,
@@ -310,7 +310,7 @@ export const homeEs: HomeCopy = {
       { title: 'Propuestas detalladas por escrito', body: 'Revise el alcance, los materiales y el precio antes de aprobar el trabajo.' },
       { title: 'Comunicación y cuidado', body: 'Lo mantenemos informado y planeamos cómo proteger su propiedad y limpiar al terminar.' },
     ],
-    credentials: `Con licencia (${site.license}), fianza y seguro. El único CertainTeed Select ShingleMaster del Valle del Río
+    credentials: `Con licencia (${site.license}), fianza y seguro. El único CertainTeed ShingleMaster PRO del Valle del Río
             Grande y Contratista Preferido de Owens Corning.`,
     projects: { label: 'Vea nuestros proyectos de techos', href: '/es-mx/projects' },
     about: { label: 'Sobre Edel', href: '/es-mx/about-us' },
@@ -382,7 +382,7 @@ export const homeEs: HomeCopy = {
       },
       {
         q: '¿Qué marcas de techo instalan?',
-        a: 'Instalamos CertainTeed, Owens Corning y GAF, entre otras. Edel es el único CertainTeed Select ShingleMaster del Valle del Río Grande.',
+        a: 'Instalamos CertainTeed, Owens Corning y GAF, entre otras. Edel es el único CertainTeed ShingleMaster PRO del Valle del Río Grande.',
       },
       { q: '¿Tienen licencia y seguro?', a: `Sí. Edel Roofing & Construction tiene licencia (${site.license}), fianza y seguro.` },
       {

@@ -18,21 +18,26 @@
 //   "soluciones expertas", "tranquilidad", "resiliencia", "no solo...
 //   estamos"); "respuesta rápida" tied to the real 24/7 line; Roofle button
 //   -> "Estimado al Instante".
+// - 2026-10-22 money page pass: same new sections as /storm-damage,
+//   translated in usted, same sources (NHC, NWS, TDI, TWIA, Bus. & Com.
+//   Code 27.02, Insurance Code 4102.163). English reviews are retold
+//   without quote marks.
 import InnerPage from '../../layouts/InnerPage.astro';
 import hero from '../../assets/storm-damage/edel-roofing-storm-damage-2.jpg';
 import storm5 from '../../assets/storm-damage/edel-roofing-storm-damage-5.jpg';
 import gray from '../../assets/storm-damage/gray-roof-design.jpeg';
+import { site } from '../../data/site';
 ---
 <InnerPage
   lang="es"
   title="Reparación de Daños por Tormenta en el Valle del Río Grande | EDEL Roofing"
-  description="¿Una tormenta le dañó el techo? Lo revisamos gratis en Edinburg y todo el Valle del Río Grande. Contestamos 24/7. Llame al (956) 422-3335."
+  description="¿El viento o el granizo le dañaron el techo? EDEL Roofing en Edinburg revisa todo el techo, le explica lo que hizo la tormenta y repara el daño en todo el Valle. 24/7."
   alternates={{ en: '/storm-damage', es: '/es-mx/storm-damage' }}
   crumbs={[
     { label: 'Inicio', href: '/es-mx' },
     { label: 'Daño de la Tormenta', href: '/es-mx/storm-damage' },
   ]}
-  hero={{ eyebrow: 'Nuestros Servicios de Techado', title: 'Reparación de Daños por Tormenta en el Valle del Río Grande', bg: hero }}
+  hero={{ eyebrow: 'Nuestros Servicios de Techado', title: 'Reparación de Daños por Tormenta en el Valle del Río Grande', lead: 'Reparación de daños por viento y granizo para casas en todo el Valle del Río Grande. Llame 24/7.', bg: hero }}
   intro={{
     eyebrow: 'Reparación de Techo por Daño de Tormenta',
     title: 'Después de la tormenta, llámenos',
@@ -47,12 +52,88 @@ import gray from '../../assets/storm-damage/gray-roof-design.jpeg';
     cta: { label: 'Estimado al Instante', href: '/es-mx/contact-us#contacto', roofle: true },
     images: [{ src: gray, alt: 'Diseño de techo gris' }],
   }}
+  extra={[
+    {
+      eyebrow: 'Qué revisar',
+      title: 'Lo que el viento y el granizo le hacen a un techo',
+      body: [
+        'El viento se mete bajo la orilla de una teja y rompe el sello que la mantiene pegada. Algunas tejas se arrancan y caen al patio. Otras se doblan, quedan marcadas y vuelven a quedar planas, así que desde el suelo se ven bien pero pueden dejar pasar el agua. El viento también levanta las bases de metal de las ventilas. Ray nos llamó después de que el viento levantó las bases de dos ventilas de su techo.',
+        'El granizo le quita la gravilla a las tejas y deja partes blandas y golpeadas. Abolla ventilas, canaletas y paneles de lámina. En un techo de lámina, el viento fuerte puede doblar los paneles desde las orillas. Después del huracán Hanna, el Servicio Meteorológico Nacional reportó techos de lámina arrancados o doblados en McAllen.',
+        'Mucho de este daño no se ve desde el patio. Por eso revisamos todo el techo de cerca.',
+      ],
+    },
+    {
+      eyebrow: 'Después de la tormenta',
+      title: 'El primer día después de una tormenta',
+      body: [
+        'No se suba al techo. Tome fotos y video del daño por fuera y por dentro, con la fecha. El Departamento de Seguros de Texas (TDI) dice que haga su reclamo lo antes posible y que haga solo reparaciones temporales que eviten más daño, como tapar una abertura. Guarde los recibos.',
+        `Luego llámenos al <a href="${site.phoneHref}">${site.phone}</a> para una inspección. Después de una tormenta fuerte llegan cuadrillas de fuera a tocar puertas. TDI recomienda nunca firmar un contrato con espacios en blanco y reportar al contratista que no cumpla la ley con el Procurador General de Texas al 800-621-0508.`,
+      ],
+    },
+    {
+      eyebrow: 'El clima del Valle',
+      title: 'Tormentas que ha visto el Valle',
+      body: [
+        'El huracán Dolly tocó tierra en South Padre Island el 23 de julio de 2008. El Centro Nacional de Huracanes registró ráfagas de 74 mph en Harlingen, 71 mph en Weslaco, 60 mph en el aeropuerto de Edinburg y 52 mph en McAllen. Su informe dice que el daño en Brownsville fue sobre todo material de techo perdido.',
+        'La noche del 29 de marzo de 2012 cayó granizo del tamaño de pelotas de béisbol en el norte de McAllen por más de media hora, con una ráfaga de 74 mph en el aeropuerto Miller de McAllen. La tormenta también llegó a Edinburg y Mission. El Servicio Meteorológico Nacional contó más de 1,000 casas y negocios dañados y 2,800 reclamos de dueños de casa, unos $260 millones asegurados.',
+        'El huracán Hanna, el 25 de julio de 2020, trajo ráfagas de 60 mph a McAllen y de 54 mph al aeropuerto de Edinburg. En Edinburg se volaron tejas, y en Edcouch se cayó un techo.',
+        'La temporada de huracanes va del 1 de junio al 30 de noviembre, y el punto más alto es alrededor del 10 de septiembre. El granizo y el viento también llegan con las tormentas de primavera.',
+      ],
+    },
+    {
+      eyebrow: 'El seguro',
+      title: 'Cómo funciona un reclamo de techo en Texas',
+      body: [
+        'Después de que usted hace el reclamo, TDI dice que su compañía de seguros tiene 15 días hábiles para confirmarlo, 15 días hábiles después de tener todo lo que necesita para aprobarlo o negarlo, y 5 días hábiles después para pagar. Si tiene hipoteca, el cheque puede venir también a nombre de su banco, y TDI dice que la compañía hipotecaria debe comunicarse con usted dentro de 10 días para liberar el dinero de la reparación.',
+        'Con cobertura de costo de reemplazo, el pago por lo general llega en dos partes: el primer cheque, y el resto después de empezar la reparación. Algunas pólizas pagan valor real en efectivo en techos viejos, lo que descuenta la depreciación. La hoja de declaraciones de su póliza dice cuál tiene y cuál es su deducible de viento y granizo.',
+        'El condado de Hidalgo no está en el área de la Asociación de Seguros contra Tormentas de Texas (TWIA). TWIA cubre 14 condados de la costa, entre ellos Cameron y Willacy. Así que en la mayoría de las casas de Edinburg, McAllen y Mission, los reclamos por viento y granizo van por la póliza normal de la casa.',
+      ],
+    },
+    {
+      eyebrow: 'La ley de Texas',
+      title: 'El deducible le toca pagarlo a usted',
+      body: [
+        'La ley de Texas (Código de Negocios y Comercio 27.02) dice que el dueño de casa tiene que pagar el deducible de un reclamo de propiedad. Un techador no puede pagarlo, perdonarlo, absorberlo ni darle un reembolso para cubrirlo. Hacerlo es un delito menor Clase B. Todo contrato de techo de $1,000 o más que se vaya a pagar con un reclamo de seguro tiene que llevar un aviso sobre esto en letra negrita.',
+        'Si un contratista le ofrece "cubrirle el deducible", es motivo para no contratarlo.',
+      ],
+    },
+    {
+      eyebrow: 'Lo que hacemos',
+      title: 'Lo que hacemos y lo que no hacemos',
+      body: [
+        'Inspeccionamos el techo, le mostramos lo que hizo la tormenta y le damos un presupuesto por escrito para la reparación o el techo nuevo. Usted decide qué hacer con él y qué mandar a su compañía de seguros.',
+        'No somos ajustadores públicos y no negociamos su reclamo. El Código de Seguros de Texas 4102.163 no permite que un contratista actúe como ajustador público en una propiedad donde está trabajando.',
+        'Alejandra escribió que las últimas tormentas del Valle trajeron vientos fuertes y granizo, que la inspeccionamos y le dijimos que necesitaba techo nuevo por el daño del granizo, que el equipo llegó listo al día siguiente y que terminó el techo en menos de 3 días. Alyssa escribió que fuimos hasta el condado de Starr a reparar el daño de una tormenta.',
+      ],
+    },
+  ]}
   benefits={{
     title: 'Por qué llamar a EDEL después de una tormenta',
     items: [
       { title: 'Equipo local en el Valle del Río Grande', body: 'Cuando pega una tormenta en el Valle, conviene revisar el techo pronto. Nuestro equipo es de aquí y tiene su oficina en Edinburg, así que no tiene que esperar a que llegue alguien de fuera.' },
       { title: 'Revisión completa del daño', body: 'Para reparar bien, primero hay que saber todo lo que dañó la tormenta. Revisamos su techo completo y le damos un informe detallado, para que usted decida con toda la información en la mano.' },
       { title: 'Un techo más fuerte para la próxima', body: 'El clima del Valle es duro con los techos. Además de reparar, le recomendamos medidas para que su techo resista mejor. Pregunte por nuestros <a href="/es-mx/contact-us">servicios de daños por tormenta en el Valle del Río Grande</a>.' },
+    ],
+  }}
+  faq={{
+    title: 'Preguntas sobre daños por tormenta',
+    items: [
+      {
+        q: '¿Qué hago si mi techo gotea durante una tormenta?',
+        a: `Quédese adentro y no se suba al techo. Aleje lo que pueda del agua, ponga cubetas bajo las goteras y no deje que nadie entre a un cuarto donde el techo interior esté colgado. Tome fotos. Luego llámenos al <a href="${site.phoneHref}">${site.phone}</a> a cualquier hora.`,
+      },
+      {
+        q: '¿A quién llamo si el granizo dañó mi techo?',
+        a: 'Llame a su compañía de seguros para empezar el reclamo, y llame a un techador local para que lo inspeccione. Pídale al techador su número de licencia RCAT y su comprobante de seguro. EDEL está en Edinburg y tiene la licencia RCAT #03-0489.',
+      },
+      {
+        q: '¿$30,000 es mucho por un techo?',
+        a: 'Depende del tamaño del techo, el material y lo que haya debajo del techo viejo. Un techo grande de metal puede costar mucho más que un techo de tejas en una casa chica. Lo mejor es pedir presupuestos por escrito con el mismo alcance de trabajo, para comparar el mismo trabajo.',
+      },
+      {
+        q: '¿Trabajan fuera de Edinburg?',
+        a: 'Sí. Trabajamos en todo el Valle del Río Grande, incluyendo McAllen, Mission, Pharr, Weslaco, Harlingen y Rio Grande City, y hemos reparado daños por tormenta en el condado de Starr.',
+      },
     ],
   }}
   spokes={{

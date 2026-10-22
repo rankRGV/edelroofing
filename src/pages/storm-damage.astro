@@ -10,20 +10,29 @@
 //   ("We're not just restoring your roof; we're enhancing its resilience",
 //   "fortify", "peace of mind", "ensuring minimal damage"); H1 and title now
 //   carry Edinburg and the RGV; added "We answer 24/7" (sheet fact).
+// - 2026-10-22 money page pass (site-rebuild/money-pages-research.md): added
+//   what wind and hail do, the first day after a storm (TDI), the Valley's
+//   storm record (NHC Dolly 2008, NWS March 2012 hail, NWS Hanna 2020; the
+//   2023/2025 storms stay on the city pages), how a Texas claim works (TDI
+//   15/15/5 business days, ACV/RCV, TWIA area), the deductible law (Bus. &
+//   Com. Code 27.02), what we do and don't do (Insurance Code 4102.163),
+//   Alejandra and Alyssa reviews, FAQ. Open (Edel): tarping, written photo
+//   reports as standard.
 import InnerPage from '../layouts/InnerPage.astro';
 import hero from '../assets/storm-damage/edel-roofing-storm-damage-2.jpg';
 import storm5 from '../assets/storm-damage/edel-roofing-storm-damage-5.jpg';
 import gray from '../assets/storm-damage/gray-roof-design.jpeg';
+import { site } from '../data/site';
 ---
 <InnerPage
   title="Storm Damage Roof Repair in Edinburg & the RGV | EDEL Roofing"
-  description="Wind or hail damage on your roof? EDEL Roofing in Edinburg inspects the whole roof, gives you a detailed report and repairs storm damage across the Valley."
+  description="Wind or hail damage on your roof? EDEL Roofing in Edinburg inspects the whole roof, explains what the storm did, and repairs storm damage across the Valley. 24/7."
   alternates={{ en: '/storm-damage', es: '/es-mx/storm-damage' }}
   crumbs={[
     { label: 'Home', href: '/' },
     { label: 'Storm Damage', href: '/storm-damage' },
   ]}
-  hero={{ eyebrow: 'After a storm', title: 'Storm Damage Roof Repair in Edinburg and the RGV', bg: hero }}
+  hero={{ eyebrow: 'After a storm', title: 'Storm Damage Roof Repair in Edinburg and the RGV', lead: 'Wind and hail damage repair for homes across the Rio Grande Valley. Call 24/7.', bg: hero }}
   intro={{
     eyebrow: 'Storm damage',
     title: 'When the storm has passed',
@@ -38,12 +47,88 @@ import gray from '../assets/storm-damage/gray-roof-design.jpeg';
     cta: { label: 'Get Instant Estimate', href: '/contact-us#estimate', roofle: true },
     images: [{ src: gray, alt: 'Roof Storm Damage Repair' }],
   }}
+  extra={[
+    {
+      eyebrow: 'What to look for',
+      title: 'What wind and hail do to a roof',
+      body: [
+        "Wind gets under the edge of a shingle and breaks the seal that holds it down. Some shingles tear off and land in the yard. Others fold back, crease and lie flat again, so they look fine from the ground but can let water in. Wind also lifts metal vent plates. Ray called us after wind lifted the base plates on two of his pipe vents.",
+        'Hail knocks the granules off shingles and leaves soft, bruised spots. It dents metal vents, gutters and metal roof panels. On a metal roof, strong wind can peel panels back at the edges. After Hurricane Hanna, the National Weather Service logged sheet metal roofs blown off or torn back in McAllen.',
+        "A lot of this damage can't be seen from the yard. That's why we inspect the whole roof, up close.",
+      ],
+    },
+    {
+      eyebrow: 'Right after the storm',
+      title: 'The first day after a storm',
+      body: [
+        'Stay off the roof. Take photos and video of the damage outside and inside, with the date. The Texas Department of Insurance (TDI) says to file your claim as soon as you can and to make only temporary repairs that stop more damage, like covering an opening. Keep the receipts for those.',
+        `Then call us at <a href="${site.phoneHref}">${site.phone}</a> to set up an inspection. After a big storm, out of town crews knock on doors. TDI tells homeowners never to sign a contract that has blank spaces and to report a contractor who breaks the law to the Texas Attorney General at 800-621-0508.`,
+      ],
+    },
+    {
+      eyebrow: 'Valley weather',
+      title: 'Storms the Valley has seen',
+      body: [
+        'Hurricane Dolly came ashore at South Padre Island on July 23, 2008. The National Hurricane Center recorded gusts of 74 mph at Harlingen, 71 mph at Weslaco, 60 mph at the Edinburg airport and 52 mph at McAllen. Its report says damage in Brownsville "consisted mainly of lost roofing material."',
+        'On the night of March 29, 2012, hail up to baseball size fell on north McAllen for more than half an hour, with a 74 mph gust at McAllen Miller Airport. The storm also hit Edinburg and Mission. The National Weather Service counted more than 1,000 homes and businesses damaged and 2,800 homeowner claims, about $260 million insured.',
+        'Hurricane Hanna, on July 25, 2020, brought gusts of 60 mph to McAllen and 54 mph to the Edinburg airport. Shingles blew off in Edinburg, and a roof collapsed in Edcouch.',
+        'Hurricane season runs from June 1 to November 30, and the peak is around September 10. Hail and wind come in spring storms too.',
+      ],
+    },
+    {
+      eyebrow: 'Insurance',
+      title: 'How a Texas roof claim works',
+      body: [
+        'After you file, TDI says your insurance company has 15 business days to acknowledge the claim, 15 business days after it has everything it needs to approve or deny it, and 5 business days after that to pay. If you have a mortgage, the check may include your lender, and TDI says the mortgage company should contact you within 10 days about releasing the money for repairs.',
+        'With replacement cost coverage, the payment usually comes in two parts: the first check, then the rest after repairs start. Some policies pay actual cash value on older roofs, which takes depreciation out. Your declarations page shows which one you have and what your wind and hail deductible is.',
+        "Hidalgo County is not in the Texas Windstorm Insurance Association's area. TWIA covers 14 coastal counties, including Cameron and Willacy. So for most homes in Edinburg, McAllen and Mission, wind and hail claims go through the regular homeowners policy.",
+      ],
+    },
+    {
+      eyebrow: 'Texas law',
+      title: 'Your deductible is yours to pay',
+      body: [
+        'Texas law (Business and Commerce Code 27.02) says a homeowner has to pay the deductible on a property claim. A roofer can not pay it, waive it, absorb it or give you a rebate to cover it. That is a Class B misdemeanor. Any roofing contract of $1,000 or more that will be paid from an insurance claim has to carry a notice about this in bold print.',
+        'If a contractor offers to "cover your deductible," that is a reason to walk away.',
+      ],
+    },
+    {
+      eyebrow: 'Our part',
+      title: 'What we do, and what we do not',
+      body: [
+        'We inspect the roof, show you what the storm did, and give you a written estimate for the repair or the new roof. You decide what to do with it and what to send your insurance company.',
+        'We are not a public adjuster, and we do not negotiate your claim. Texas Insurance Code 4102.163 does not allow a contractor to act as a public adjuster on a property it is working on.',
+        'Alejandra wrote that after "the most recent valley storms brought strong winds and hail," we inspected and told her she needed a new roof from the hail damage. "A crew was scheduled and arrived ready to go the next day," and the roof was finished "in under 3 days." Alyssa wrote that we were "willing to come all the way to starr county" to repair storm damage.',
+      ],
+    },
+  ]}
   benefits={{
     title: 'How we handle storm damage',
     items: [
       { title: 'Local crews in the Rio Grande Valley', body: "We're based in Edinburg, so when a storm hits the Valley, our crews are already here. Call as soon as you can and we'll get someone out to look at it." },
       { title: 'A full damage report', body: 'Knowing everything the storm did is key to a good repair. We inspect the roof closely and give you a detailed report, so you can decide what to fix with all the facts in front of you.' },
       { title: 'Repairs made for Valley weather', body: "The weather down here is hard on a roof. Our <a href=\"/contact-us\">storm damage services in the Rio Grande Valley</a> include steps that help your roof hold up better the next time." },
+    ],
+  }}
+  faq={{
+    title: 'Storm damage questions',
+    items: [
+      {
+        q: 'What should I do if my roof is leaking during a storm?',
+        a: `Stay inside and stay off the roof. Move what you can away from the water, put buckets under the drips, and keep people out of any room where the ceiling is sagging. Take photos. Then call us at <a href="${site.phoneHref}">${site.phone}</a>, any hour.`,
+      },
+      {
+        q: 'Who do I call for hail damage on my roof?',
+        a: 'Call your insurance company to start the claim, and call a local roofer to inspect. Ask the roofer for an RCAT license number and proof of insurance. Edel is based in Edinburg and holds RCAT license #03-0489.',
+      },
+      {
+        q: 'Is $30,000 too much for a roof?',
+        a: 'It depends on the size of the roof, the material and what is under the old roof. A large metal roof can cost far more than a shingle roof on a small house. The best check is to get written bids that cover the same scope, so you are comparing the same work.',
+      },
+      {
+        q: 'Do you work outside Edinburg?',
+        a: 'Yes. We work across the Rio Grande Valley, including McAllen, Mission, Pharr, Weslaco, Harlingen and Rio Grande City, and we have done storm repairs in Starr County.',
+      },
     ],
   }}
   spokes={{

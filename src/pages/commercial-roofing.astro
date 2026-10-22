@@ -13,6 +13,15 @@
 //   "unwavering", "highest standard", "tackle any commercial roofing
 //   challenge"); "since 2003" replaces "over two decades" and "25-year
 //   legacy"; H1 and title now carry Edinburg and the RGV.
+// - 2026-10-22 money page pass (site-rebuild/money-pages-research.md): added
+//   the low slope systems explained (TPO 140/mo is the biggest commercial
+//   term), metal and coatings, repair/coat/recover/replace, the 2018 IECC
+//   above-deck insulation rule (Edinburg), wind on Valley commercial roofs
+//   (NHC Dolly, NWS Hanna), property managers (regular inspection schedules
+//   are on the live Edinburg commercial page), FAQ. Dustin's certs list
+//   kept; "Texas licensed" -> "RCAT licensed" (Texas doesn't license
+//   roofers). Open (Edel): named projects, a commercial client review,
+//   warranty types, maintenance plans, working in occupied buildings.
 import InnerPage from '../layouts/InnerPage.astro';
 import hero from '../assets/commercial-roofing/roofing-construction.jpeg';
 import building from '../assets/commercial-roofing/commercial-building.jpg';
@@ -24,7 +33,7 @@ import { site } from '../data/site';
 // 2026-10-21: Dustin (commercial) asked for the commercial certs instead of
 // the residential ones; list matches his certification sheet.
 const certs = [
-  `Texas licensed roofing contractor (${site.license})`,
+  `RCAT licensed roofing contractor (${site.license})`,
   'Versico Authorized Contractor',
   'Polyglass Registered Contractor',
   'KARNAK',
@@ -42,7 +51,7 @@ const certs = [
     { label: 'Home', href: '/' },
     { label: 'Commercial Roofing', href: '/commercial-roofing' },
   ]}
-  hero={{ eyebrow: 'For business owners', title: 'Commercial Roofing in Edinburg and the RGV', bg: hero }}
+  hero={{ eyebrow: 'For business owners', title: 'Commercial Roofing in Edinburg and the RGV', lead: 'TPO, PVC, EPDM, modified bitumen, metal and roof coatings for businesses across the Rio Grande Valley.', bg: hero }}
   intro={{
     eyebrow: 'Commercial roofing',
     title: 'Roofs for Valley businesses',
@@ -61,12 +70,69 @@ const certs = [
       { src: repairing, alt: 'Commercial Roof Installation' },
     ],
   }}
+  extra={[
+    {
+      eyebrow: 'Low slope roofs',
+      title: 'The commercial roof systems we work on',
+      body: [
+        'Most commercial buildings in the Valley have a low slope roof, often called a flat roof, or a metal roof. Here is what each system is, in plain terms.',
+        'TPO is a single layer of white membrane. The seams are welded with hot air, and the white surface reflects a lot of the sun. It is one of the most common choices on new low slope roofs. PVC is also a welded single ply membrane, and it holds up well where grease or chemicals reach the roof, like over a restaurant kitchen.',
+        'EPDM is a black rubber membrane with glued or taped seams. Modified bitumen is asphalt based and goes down in rolled layers, either torched, cold applied or self adhered. We are a Versico Authorized Contractor and a Polyglass Registered Contractor.',
+        'Metal roofs are common on shops and warehouses. The usual problems are loose or rusted screws, worn washers and seams that open up. A roof coating, silicone or acrylic, goes over a roof that is still sound to seal it and reflect heat. A coating is not a fix for a roof that is already wet underneath. Our <a href="/roof-coatings-mcallen-tx">roof coatings</a> page covers that in more detail.',
+      ],
+    },
+    {
+      eyebrow: 'Options',
+      title: 'Repair, coat, recover or replace',
+      body: [
+        'The right choice depends mostly on what is under the surface. If the insulation under the membrane is dry and the problems are in a few spots, a repair or a coating can buy years. A recover puts a new roof over one existing roof where the code allows it. When water has soaked the insulation across big areas, the old roof has to come off.',
+        'Codes matter on a reroof. Edinburg uses the 2018 International Energy Conservation Code. Under section C503.3.1, when you replace a roof that has its insulation entirely above the deck, the new roof has to meet current insulation levels. A recover is an exception. Ask about it early, because it changes the budget.',
+        'We give you a written estimate with the scope and the price before any work starts, so you can compare options side by side.',
+      ],
+    },
+    {
+      eyebrow: 'Wind',
+      title: 'Wind and Valley commercial roofs',
+      body: [
+        'Big storms here hit commercial buildings hard. In its report on Hurricane Dolly in 2008, the National Hurricane Center wrote that "some buildings of modest construction such as warehouses or industrial-type structures experienced significant wind damage." During Hurricane Hanna in 2020, the National Weather Service logged sheet metal roofs blown off or torn back in McAllen and roof damage to a school maintenance shed in Mission.',
+        'Wind pulls hardest at the edges and corners of a roof, so perimeter metal, edge flashing and fasteners are the first places to check after a storm.',
+      ],
+    },
+    {
+      eyebrow: 'Property managers',
+      title: 'For owners and property managers',
+      body: [
+        'If you manage more than one building, we can set up regular inspection schedules so small problems get caught before they become leaks over a tenant\'s space. You get the findings and the price in writing, and you decide what gets done and when.',
+      ],
+    },
+  ]}
   benefits={{
     title: 'What we offer businesses',
     items: [
       { title: 'Low sloped and pitched roofs', body: 'A commercial building can have any kind of roof: TPO, modified bitumen, EPDM, PVC, shingles, tile or metal. We work on all of them, from new installs to <a href="/roof-repairs">roof repairs</a>, maintenance and replacement.' },
       { title: 'Buildings of all sizes', body: 'Our crews are skilled at commercial roofing and work on buildings of every size, whether the job is simple or complicated.' },
       { title: 'Quality materials', body: 'We buy from suppliers we trust and use quality roofing materials made to last on a commercial roof.' },
+    ],
+  }}
+  faq={{
+    title: 'Commercial roofing questions',
+    items: [
+      {
+        q: 'How much does a commercial roof cost?',
+        a: 'It depends on the square footage, the roof system, how many old layers come off, how much wet insulation has to be replaced, what the energy code requires for insulation, drainage changes, and how easy the roof is to reach. After an inspection you get a written scope and price.',
+      },
+      {
+        q: 'Should I coat my roof or replace it?',
+        a: 'A coating works on a roof that is still sound and dry underneath. If water has soaked the insulation, a coating will trap it, and the roof needs to be repaired in those areas or replaced. An inspection tells you which case you are in.',
+      },
+      {
+        q: 'Is TPO a good roof for the Valley?',
+        a: 'TPO is white, so it reflects much of the sun, and its welded seams hold up well. It is a common choice for low slope roofs in hot climates like ours. The right system for your building also depends on what is on the roof, like kitchen exhaust or a lot of foot traffic.',
+      },
+      {
+        q: 'Do you work on commercial buildings outside Edinburg?',
+        a: 'Yes. We do commercial roofing across the Rio Grande Valley. See our pages for <a href="/commercial-roofing-mcallen-tx">McAllen</a> and <a href="/commercial-roofing-mission-tx">Mission</a>.',
+      },
     ],
   }}
   spokes={{

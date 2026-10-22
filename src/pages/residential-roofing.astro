@@ -17,6 +17,16 @@
 //   "crowns your property", "stands the test of time"); removed unproven
 //   claims ("significantly save on utility bills", "adding value"); added
 //   sheet facts (brands, ShingleMaster, one to two days, free inspection).
+// - 2026-10-22 money page pass (site-rebuild/money-pages-research.md): added
+//   signs it's time, shingles vs metal (material words carry the search
+//   demand: shingle roof 390, metal roof 320, standing seam 170), what a
+//   replacement includes and how long it takes (Homer, Gerardo, Jose,
+//   Fernando, Mayra, Alejandro, Walter reviews), and a FAQ (Texas cost, roof
+//   age and insurance per TDI, ShingleMaster PRO per CertainTeed's finder,
+//   gutters). ShingleMaster PRO replaces "Select ShingleMaster"
+//   (site-rebuild/certainteed-claim-check.md). No prices, no named metal
+//   systems: Edel hasn't confirmed them. Open (Edel): metal systems, tile,
+//   mobile home roofs, price range, warranty terms.
 import InnerPage from '../layouts/InnerPage.astro';
 import hero from '../assets/residential-roofing/house-with-swimming-pool.jpg';
 import construction from '../assets/residential-roofing/roofing-construction.jpeg';
@@ -25,14 +35,14 @@ import residential from '../assets/residential-roofing/residential-roofing.jpeg'
 import newRoof from '../assets/residential-roofing/new-residential-roof.jpeg';
 ---
 <InnerPage
-  title="Residential Roofing in Edinburg, TX | Edel Roofing & Construction"
-  description="New roofs and roof replacement for homes in Edinburg and the Rio Grande Valley. CertainTeed, Owens Corning and GAF. Free inspection and written estimate."
+  title="Residential Roofing in Edinburg, TX | Shingle & Metal Roofs | Edel Roofing"
+  description="New shingle and metal roofs for homes in Edinburg and the Rio Grande Valley. CertainTeed ShingleMaster PRO. Free inspection and written estimate. (956) 422-3335."
   alternates={{ en: '/residential-roofing', es: '/es-mx/residential-roofing' }}
   crumbs={[
     { label: 'Home', href: '/' },
     { label: 'Residential Roofing', href: '/residential-roofing' },
   ]}
-  hero={{ eyebrow: 'Residential roofing', title: 'Residential Roofing in Edinburg, TX', bg: hero }}
+  hero={{ eyebrow: 'Residential roofing', title: 'Residential Roofing in Edinburg, TX', lead: 'New shingle and metal roofs for homes across the Valley, with a free inspection and a written price.', bg: hero }}
   intro={{
     eyebrow: 'For homeowners',
     title: 'A new roof for your Edinburg home',
@@ -43,7 +53,7 @@ import newRoof from '../assets/residential-roofing/new-residential-roof.jpeg';
   band={{
     eyebrow: 'Roof installation',
     title: 'How your new roof goes on',
-    body: "It starts with a free inspection and a written estimate, so you see the scope and the price before anything comes off. You choose the material and the color. We install CertainTeed, Owens Corning and GAF, among others, and we're the only CertainTeed Select ShingleMaster in the Rio Grande Valley. Most houses are done in one to two days. A bigger roof or a different material can take longer, and we'll tell you before we start.",
+    body: "It starts with a free inspection and a written estimate, so you see the scope and the price before anything comes off. You choose the material and the color. We install CertainTeed, Owens Corning and GAF, among others, and we're the only CertainTeed ShingleMaster PRO in the Rio Grande Valley. Most houses are done in one to two days. A bigger roof or a different material can take longer, and we'll tell you before we start.",
     cta: { label: 'Get Instant Estimate', href: '/contact-us#estimate', roofle: true },
     images: [
       { src: install, alt: 'Roof Installation Residential' },
@@ -51,12 +61,70 @@ import newRoof from '../assets/residential-roofing/new-residential-roof.jpeg';
       { src: newRoof, alt: 'New Residential Roof' },
     ],
   }}
+  extra={[
+    {
+      eyebrow: 'Time for a new roof?',
+      title: 'Signs your roof needs replacing',
+      body: [
+        "A roof rarely fails all at once. These are the signs we look for at an inspection: shingles that curl, crack or have lost their granules (you may see the granules in your gutters), bare or soft spots when the roof is walked, leaks that show up in a new place after each storm, and decking that sags between the rafters.",
+        "Age matters too. If your roof is the one the house was built with and the house went up in the late 1990s or early 2000s, like a lot of homes in Edinburg and McAllen, it's worth having it looked at even if nothing is dripping yet.",
+        'If only one area is damaged and the rest is sound, a <a href="/roof-repairs">roof repair</a> may be all you need. We will tell you which one we would do.',
+      ],
+    },
+    {
+      eyebrow: 'Choosing a material',
+      title: 'Shingles or metal?',
+      body: [
+        "Asphalt shingles are what you see on most houses in the Valley. Architectural (also called dimensional) shingles are thicker than the old flat three-tab kind and come in a lot of colors. They cost less to put on than metal. We install CertainTeed, Owens Corning and GAF shingles.",
+        "A metal roof costs more up front and usually lasts longer than shingles. Lighter colors reflect more of the sun, which helps in a place where summer highs sit near 100°F. Standing seam metal has the screws hidden under raised seams. Exposed fastener panels cost less, but the screws and their washers need checking over the years.",
+        "At the inspection we go over the shingle lines and the metal options we install, and what each would cost on your house. You choose the material and the color.",
+      ],
+    },
+    {
+      eyebrow: 'What you are paying for',
+      title: 'What a roof replacement includes',
+      body: [
+        'We take the old roof off down to the wood deck, then check the deck. Rotted plywood and boards get replaced before anything new goes on. Homer wrote that we replaced "all shingles, rotted plywood, rotted boards, etc." on his house.',
+        'Then the underlayment, flashing, vents and the new roof go on. Vents matter in this heat, because a hot attic is hard on shingles. Gerardo\'s roof was "upgraded with new attic vents and gutters."',
+        'If you have gutters you want to keep, we can take them down and put them back. Jose wrote that the crew was "able to remove and reinstall the gutters we had already." At the end the crew cleans up. Fernando said they ran a big magnet through the grass for old nails, and Mayra wrote that "the yard was left completely clean."',
+      ],
+    },
+    {
+      eyebrow: 'Timeline',
+      title: 'How long it takes',
+      body: [
+        'Most houses are done in one to two days. Our reviews line up with that: Gerardo wrote that "they replaced roofing in 2 days," and Alejandro wrote that the crew replaced his roof "en un día y medio." A bigger or steeper roof, a lot of rotted decking, or rain can add time, and we give you the schedule before we start.',
+        'Picking colors is part of the process. Jose said Rollie showed them "the variety of colors they offered along with the best trimming color for the house." Walter wrote that he was driven around to see recent installs before he chose his.',
+      ],
+    },
+  ]}
   benefits={{
     title: 'What you get with Edel',
     items: [
       { title: 'Your choice of material', body: 'Asphalt shingles, metal roofing and other materials and styles. We work on homes and on commercial buildings.' },
       { title: 'Energy efficient options', body: 'Ask us about roofing options made for better energy efficiency. We can go over them with you at the inspection.' },
       { title: 'Good materials, careful work', body: 'We use quality materials and take care with the installation, so your new roof keeps working for years.' },
+    ],
+  }}
+  faq={{
+    title: 'Roof replacement questions',
+    items: [
+      {
+        q: 'How much does it cost to replace a roof in Texas?',
+        a: 'The price depends on the size of the roof, how steep it is, how many stories the house has, the material (metal costs more than shingles), how many old layers come off, and how much decking needs replacing. You can get an <a href="/contact-us#estimate" data-roofle-open>instant estimate</a> online as a starting point. We confirm the final scope and price in writing after a free inspection. We also offer <a href="/financing">financing</a>.',
+      },
+      {
+        q: 'Will insurance cover a 20 year old roof in Texas?',
+        a: 'Age alone does not decide it. The Texas Department of Insurance says insurers can not refuse or drop a policy because of roof age by itself, but the condition of the roof still counts. TDI also notes that as roofs age, some companies switch roof coverage to actual cash value, which pays the depreciated value instead of the cost of a new roof. Check your policy, and see our <a href="/storm-damage">storm damage</a> page for how claims work.',
+      },
+      {
+        q: 'What does CertainTeed ShingleMaster PRO mean?',
+        a: 'It is a CertainTeed credential for roofing contractors. CertainTeed lists Edel as a ShingleMaster PRO, and in CertainTeed\'s contractor finder no other Rio Grande Valley roofer holds PRO or the higher PREMIER level (checked October 2026). CertainTeed says PRO contractors can offer its SureStart PLUS extended warranties, which add coverage on top of the standard shingle warranty. Ask us which one fits your roof.',
+      },
+      {
+        q: 'Do you replace gutters too?',
+        a: 'Yes. We can put new gutters on with the new roof, or take your existing gutters down and reinstall them. See our <a href="/gutters-edinburg-tx">gutters</a> page.',
+      },
     ],
   }}
   spokes={{

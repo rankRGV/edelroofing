@@ -15,21 +15,26 @@
 //   added sheet facts (free inspection, written estimate, 24/7); spoke label
 //   "Daño de la Tormenta" -> "Daños por Tormenta"; Roofle button ->
 //   "Estimado al Instante".
+// - 2026-10-22 money page pass: same new sections as /roof-repairs,
+//   translated in usted (site-rebuild/money-pages-research.md). English
+//   reviews are retold in Spanish without quote marks (they weren't written
+//   in Spanish).
 import InnerPage from '../../layouts/InnerPage.astro';
 import hero from '../../assets/roof-repairs/modern-house.jpeg';
 import restoration from '../../assets/roof-repairs/roof-restoration.jpeg';
 import repair from '../../assets/roof-repairs/roof-repair.jpeg';
+import { site } from '../../data/site';
 ---
 <InnerPage
   lang="es"
-  title="Reparación de Techos en Edinburg, TX | EDEL Roofing & Construction"
-  description="Reparamos goteras, tejas dañadas y daños por tormenta en Edinburg y todo el Valle. Inspección gratis y precio por escrito. Llame al (956) 422-3335."
+  title="Reparación de Techos en Edinburg, TX | Goteras 24/7 | EDEL Roofing"
+  description="Reparamos goteras y daños por tormenta en Edinburg y todo el Valle. Encontramos por dónde entra el agua y le damos el precio por escrito. Llame 24/7 al (956) 422-3335."
   alternates={{ en: '/roof-repairs', es: '/es-mx/roof-repairs' }}
   crumbs={[
     { label: 'Inicio', href: '/es-mx' },
     { label: 'Reparaciones de Techo', href: '/es-mx/roof-repairs' },
   ]}
-  hero={{ eyebrow: 'Nuestros Servicios de Techado', title: 'Reparación de Techos en Edinburg', bg: hero }}
+  hero={{ eyebrow: 'Nuestros Servicios de Techado', title: 'Reparación de Techos en Edinburg', lead: 'Goteras, tejas que faltan, ventilas levantadas y daños por tormenta. Contestamos el teléfono 24/7.', bg: hero }}
   intro={{
     eyebrow: 'Reparaciones de Techo',
     title: '¿Tiene una gotera o tejas dañadas?',
@@ -44,12 +49,75 @@ import repair from '../../assets/roof-repairs/roof-repair.jpeg';
     cta: { label: 'Estimado al Instante', href: '/es-mx/contact-us#contacto', roofle: true },
     images: [{ src: repair, alt: 'Reparación de techo' }],
   }}
+  extra={[
+    {
+      eyebrow: '¿Tiene una gotera ahora?',
+      title: 'Qué hacer mientras llegamos',
+      body: [
+        `Llámenos al <a href="${site.phoneHref}">${site.phone}</a>. Contestamos 24/7 y le damos la visita más pronta que podamos.`,
+        'Mientras tanto, aleje los muebles y aparatos eléctricos de la gotera y ponga una cubeta o toallas debajo. Si un techo interior está colgado o tiene agua acumulada, que nadie entre a ese cuarto. No se suba a un techo mojado a buscar el hoyo. Las tejas y la lámina mojadas resbalan.',
+        'Tome fotos y video de la gotera y de todo lo que se mojó. El Departamento de Seguros de Texas recomienda hacer solo reparaciones temporales que eviten más daño y guardar los recibos. Si piensa hacer un reclamo al seguro, guarde todos los recibos.',
+      ],
+    },
+    {
+      eyebrow: 'Dónde empiezan',
+      title: 'Por dónde suelen entrar las goteras en el Valle',
+      body: [
+        'La mayoría de las goteras empiezan donde algo atraviesa el techo o donde se juntan dos superficies, no en medio de las tejas.',
+        'Las ventilas de plomería son un caso común. El hule alrededor del tubo se agrieta con los años, o el viento levanta la base de metal. Ray nos llamó después de que el viento levantó las bases de dos ventilas de su techo. Escribió que recibió un alcance de trabajo detallado y una cotización antes de que las aseguráramos.',
+        'Otro caso son los tapajuntas (flashing). Son las piezas de metal donde el techo se junta con una pared, una chimenea, un tragaluz o un valle del techo. Cuando se aflojan o el sellador a su alrededor falla, el agua se mete por detrás.',
+        'El calor también influye. McAllen tiene en promedio unos 40 días al año de 100°F o más (promedios de NOAA de 1991 a 2020). Con ese sol, el sellador alrededor de ventilas y orillas se reseca y se agrieta, y los clavos pueden salirse poco a poco porque la madera se calienta y se enfría todos los días.',
+        'La orilla del techo también cuenta. Hugo nos contrató para arreglar su fascia, y cuando estábamos ahí le mostramos otras áreas en la orilla de su techo que necesitaban atención.',
+      ],
+    },
+    {
+      eyebrow: 'Buscar el origen',
+      title: 'Cómo encontramos una gotera',
+      body: [
+        'El agua puede correr por la madera y las vigas antes de gotear, así que la mancha en su techo interior muchas veces está a unos pies de donde entra el agua. Revisamos el techo y buscamos el camino que siguió el agua.',
+        'En el techo de Ian, según escribió, el equipo usó un dron y revisó el ático para evaluar el daño. Fernando dijo que le mandamos fotos de las reparaciones antes, durante y después del trabajo, y que el equipo pasó un imán grande por el pasto para recoger los clavos viejos.',
+      ],
+    },
+    {
+      eyebrow: '¿Reparar o reemplazar?',
+      title: 'Cuándo conviene una reparación',
+      body: [
+        'Una reparación conviene cuando el daño está en un área y el resto del techo está en buen estado. Si las tejas se están agrietando, enrollando o perdiendo la gravilla en todo el techo, o si las goteras siguen saliendo en lugares nuevos, seguir parchando por lo general sale más caro que un techo nuevo.',
+        'Le decimos qué haríamos nosotros y por qué, y usted recibe el precio por escrito antes de empezar. Si resulta que necesita un techo nuevo, nuestra página de <a href="/es-mx/residential-roofing">techos residenciales</a> explica cómo es un reemplazo.',
+      ],
+    },
+  ]}
   benefits={{
     title: 'Lo que reparamos',
     items: [
       { title: 'Detección y reparación de goteras', body: 'Encontramos por dónde entra el agua y lo reparamos antes de que el daño llegue a la estructura de su casa.' },
       { title: 'Reemplazo de tejas', body: 'Si a su techo le faltan tejas o tiene tejas dañadas, el agua puede entrar. Las cambiamos para que el techo vuelva a proteger su casa y se vea parejo.' },
       { title: 'Reparaciones de emergencia', body: '¿Le entró agua después de una tormenta? Llámenos para una <a href="/es-mx/contact-us">reparación de emergencia</a>. Contestamos 24/7 y trabajamos para que el daño no crezca.' },
+    ],
+  }}
+  faq={{
+    title: 'Preguntas sobre reparación de techos',
+    items: [
+      {
+        q: '¿Cuánto cuesta reparar un techo en Texas?',
+        a: 'Depende de qué falló y de cuánto techo afecta. Sellar una ventila es un trabajo pequeño. Cambiar madera podrida debajo de una gotera vieja es más grande. La altura y la inclinación del techo y el material también cambian la mano de obra. Después de una inspección gratis, usted recibe el precio por escrito antes de que empecemos.',
+      },
+      {
+        q: '¿Qué es la regla del 25% en techos?',
+        a: 'Es una regla del código de construcción de Florida. En Florida, si se repara o reemplaza más del 25% de una sección del techo en 12 meses, esa sección tiene que cumplir con el código actual. Texas no tiene una regla igual a nivel estatal. Aquí cada ciudad pone sus reglas de permisos, así que para una reparación grande pregunte en el departamento de construcción de su ciudad o pregúntenos en la inspección.',
+      },
+      {
+        q: '¿Mi seguro de casa paga una gotera?',
+        a: 'Lo decide su póliza. Un daño repentino, como el viento arrancando tejas, no es lo mismo que un techo que se gastó con los años, y muchas pólizas tratan los dos casos de forma distinta. Nosotros inspeccionamos el techo y le mostramos lo que encontramos. Usted y su compañía de seguros deciden sobre el reclamo. No somos ajustadores públicos, y la ley de Texas no permite que un contratista actúe como uno en una casa donde trabaja. Hay más sobre reclamos en nuestra página de <a href="/es-mx/storm-damage">daños por tormenta</a>.',
+      },
+      {
+        q: '¿Puedo llamar de noche o en fin de semana?',
+        a: `Sí. Contestamos el <a href="${site.phoneHref}">${site.phone}</a> 24/7 y le damos la visita más pronta que podamos.`,
+      },
+      {
+        q: '¿EDEL tiene licencia?',
+        a: 'Texas no da licencias estatales a los techadores. La Asociación de Contratistas de Techos de Texas (RCAT) tiene una licencia voluntaria, y EDEL tiene la licencia RCAT #03-0489 para techos comerciales y residenciales. Cuando compare techadores, pídale a cada uno su número RCAT y su comprobante de seguro.',
+      },
     ],
   }}
   spokes={{

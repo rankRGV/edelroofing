@@ -4,7 +4,7 @@
   "city": "mcallen",
   "service": "replacement",
   "title": "Roof Replacement in McAllen, TX | Edel Roofing & Construction",
-  "description": "New shingle roofs for McAllen, TX homes. CertainTeed SELECT ShingleMaster, full tear off, decking checked, written scope. Call (956) 422-3335.",
+  "description": "New shingle roofs for McAllen, TX homes. CertainTeed ShingleMaster PRO, full tear off, decking checked, written scope. Call (956) 422-3335.",
   "alternates": {
     "en": "/roof-replacement-mcallen-tx",
     "es": "/reemplazo-de-techo-mcallen-tx"
@@ -20,7 +20,7 @@
     }
   ],
   "h1": "Roof Replacement in McAllen, TX",
-  "lede": "Edel Roofing &amp; Construction replaces shingle roofs on McAllen homes with a full tear off and a written scope before work starts. We are the only CertainTeed SELECT ShingleMaster in the Rio Grande Valley.",
+  "lede": "Edel Roofing &amp; Construction replaces shingle roofs on McAllen homes with a full tear off and a written scope before work starts. We are the only CertainTeed ShingleMaster PRO in the Rio Grande Valley.",
   "heroCtas": [
     {
       "label": "Get a Free Estimate",
@@ -65,7 +65,7 @@
         },
         {
           "title": "Shingle choice",
-          "body": "CertainTeed, Owens Corning, or GAF. As a CertainTeed SELECT ShingleMaster we can offer stronger CertainTeed warranty coverage."
+          "body": "CertainTeed, Owens Corning, or GAF. As a CertainTeed ShingleMaster PRO we can offer stronger CertainTeed warranty coverage."
         },
         {
           "title": "Ventilation and underlayment",
@@ -97,7 +97,7 @@
       "proof": [
         {
           "big": "ShingleMaster",
-          "label": "The only CertainTeed SELECT ShingleMaster in the Rio Grande Valley"
+          "label": "The only CertainTeed ShingleMaster PRO in the Rio Grande Valley"
         },
         {
           "big": "4.8★",
@@ -197,7 +197,7 @@
           "@type": "WebPage",
           "name": "Roof Replacement in McAllen, TX",
           "url": "https://www.edelroofing.com/roof-replacement-mcallen-tx",
-          "description": "New shingle roofs for McAllen, TX homes. CertainTeed SELECT ShingleMaster, full tear off, decking checked, written scope. Call (956) 422-3335.",
+          "description": "New shingle roofs for McAllen, TX homes. CertainTeed ShingleMaster PRO, full tear off, decking checked, written scope. Call (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }

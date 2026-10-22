@@ -24,7 +24,7 @@ export const orgSchema = {
   name: 'Edel Roofing and Construction Inc',
   url: `${SITE_URL}/`,
   description:
-    'Edel Roofing and Construction Inc. specializes in residential and commercial roofing across Edinburg and the Rio Grande Valley. Owens Corning Preferred and CertainTeed SELECT ShingleMaster contractor.',
+    'Edel Roofing and Construction Inc. specializes in residential and commercial roofing across Edinburg and the Rio Grande Valley. Owens Corning Preferred and CertainTeed ShingleMaster PRO contractor.',
   telephone: '+1-956-422-3335',
   email: site.email,
   priceRange: '$$',
@@ -63,7 +63,7 @@ export const orgSchema = {
     {
       '@type': 'EducationalOccupationalCredential',
       credentialCategory: 'certification',
-      name: 'CertainTeed SELECT ShingleMaster',
+      name: 'CertainTeed ShingleMaster PRO',
       recognizedBy: { '@type': 'Organization', name: 'CertainTeed' },
     },
     {
