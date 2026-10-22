@@ -21,12 +21,15 @@
 //   for "techos comerciales" and "techo comercial"). "impermeabilización"
 //   is the Spanish search word for coatings. Cert "con licencia en Texas"
 //   -> "con licencia RCAT" (Texas doesn't license roofers).
+// 2026-10-22: Kassie's recent job photos: intro is the TRB building in
+//   McAllen; "How we handle a commercial job" leads with the Starbucks in
+//   McAllen (Dustin asked for a different photo there).
 import InnerPage from '../../layouts/InnerPage.astro';
 import hero from '../../assets/commercial-roofing/roofing-construction.jpeg';
-import building from '../../assets/commercial-roofing/commercial-building.jpg';
+import trb from '../../assets/projects/recent/edel-trb-mcallen-commercial-roof.jpg';
+import starbucks from '../../assets/projects/recent/edel-starbucks-mcallen-commercial-roof.jpg';
 import commercial from '../../assets/commercial-roofing/commercial-roofing.jpeg';
 import repair from '../../assets/commercial-roofing/commercial-roofing-repair.jpeg';
-import repairing from '../../assets/commercial-roofing/repairing-commercial-roof.jpeg';
 import { site } from '../../data/site';
 
 // 2026-10-21: mismas certificaciones comerciales que /commercial-roofing
@@ -57,7 +60,7 @@ const certs = [
     title: 'Techos comerciales desde 2003',
     body: 'EDEL Roofing &amp; Construction Inc. trabaja techos comerciales en el Valle del Río Grande desde 2003. Su edificio es una inversión grande, y una gotera afecta a sus clientes, a su mercancía y a su día de trabajo. Por eso un techo en buen estado importa tanto. Instalamos techos comerciales nuevos y también hacemos reparaciones, mantenimiento y reemplazos para negocios en todo el Valle.',
     cta: { label: 'Contáctenos', href: '/es-mx/contact-us' },
-    images: [{ src: building, alt: 'Edificio comercial' }],
+    images: [{ src: trb, alt: 'Techo comercial del edificio TRB en McAllen, TX, hecho por EDEL Roofing' }],
   }}
   band={{
     eyebrow: 'Instalación de Techo Comercial',
@@ -65,9 +68,9 @@ const certs = [
     body: 'Eddie Elizondo fundó EDEL con una idea que no ha cambiado: construir bien y tratar bien al cliente. Nuestros techadores tienen años de experiencia en techos comerciales. Trabajamos con buenos materiales y los instalamos con cuidado, para que el techo de su negocio dure muchos años.',
     cta: { label: 'Estimado al Instante', href: '/es-mx/contact-us#contacto', roofle: true },
     images: [
+      { src: starbucks, alt: 'Techo comercial del Starbucks en McAllen, TX, hecho por EDEL Roofing' },
       { src: commercial, alt: 'Techo comercial' },
       { src: repair, alt: 'Reparación de techo comercial' },
-      { src: repairing, alt: 'Reparando un techo comercial' },
     ],
   }}
   extra={[

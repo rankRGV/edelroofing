@@ -101,7 +101,7 @@ export const homeEn: HomeCopy = {
         body: 'Protect your home with shingle or metal roofing selected for your property, priorities, and budget. We handle replacements and new construction.',
         href: '/residential-roofing',
         button: 'Explore residential roofing',
-        alt: 'Large white house with a blue roof',
+        alt: 'Home after an EDEL roof remodel and additions',
       },
       {
         eyebrow: 'Commercial',
@@ -109,7 +109,7 @@ export const homeEn: HomeCopy = {
         body: 'Repairs, maintenance, replacements, and new installations for commercial properties. We work with owners, property managers, and contractors on TPO and other commercial roofing systems.',
         href: '/commercial-roofing',
         button: 'Explore commercial roofing',
-        alt: 'Commercial building roof',
+        alt: 'Commercial roof on the TRB building in McAllen, TX',
       },
       {
         eyebrow: 'Storm damage',
@@ -266,7 +266,7 @@ export const homeEs: HomeCopy = {
         body: 'Proteja su casa con un techo de tejas asfálticas o de metal escogido según su propiedad, sus prioridades y su presupuesto. Hacemos reemplazos y construcción nueva.',
         href: '/es-mx/residential-roofing',
         button: 'Ver techos residenciales',
-        alt: 'Casa blanca grande con techo azul',
+        alt: 'Casa después de una remodelación de techo y ampliaciones de EDEL',
       },
       {
         eyebrow: 'Comercial',
@@ -274,7 +274,7 @@ export const homeEs: HomeCopy = {
         body: 'Reparaciones, mantenimiento, reemplazos e instalaciones nuevas para propiedades comerciales. Trabajamos con dueños, administradores de propiedades y contratistas en TPO y otros sistemas de techos comerciales.',
         href: '/es-mx/commercial-roofing',
         button: 'Ver techos comerciales',
-        alt: 'Techo de un edificio comercial',
+        alt: 'Techo comercial del edificio TRB en McAllen, TX',
       },
       {
         eyebrow: 'Tormentas',

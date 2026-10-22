@@ -22,12 +22,15 @@
 //   kept; "Texas licensed" -> "RCAT licensed" (Texas doesn't license
 //   roofers). Open (Edel): named projects, a commercial client review,
 //   warranty types, maintenance plans, working in occupied buildings.
+// 2026-10-22: Kassie's recent job photos: intro is the TRB building in
+//   McAllen; "How we handle a commercial job" leads with the Starbucks in
+//   McAllen (Dustin asked for a different photo there).
 import InnerPage from '../layouts/InnerPage.astro';
 import hero from '../assets/commercial-roofing/roofing-construction.jpeg';
-import building from '../assets/commercial-roofing/commercial-building.jpg';
+import trb from '../assets/projects/recent/edel-trb-mcallen-commercial-roof.jpg';
+import starbucks from '../assets/projects/recent/edel-starbucks-mcallen-commercial-roof.jpg';
 import commercial from '../assets/commercial-roofing/commercial-roofing.jpeg';
 import repair from '../assets/commercial-roofing/commercial-roofing-repair.jpeg';
-import repairing from '../assets/commercial-roofing/repairing-commercial-roof.jpeg';
 import { site } from '../data/site';
 
 // 2026-10-21: Dustin (commercial) asked for the commercial certs instead of
@@ -57,7 +60,7 @@ const certs = [
     title: 'Roofs for Valley businesses',
     body: 'A leak over your shop floor, office or warehouse is a problem you need fixed fast, and the roof protects everything under it. EDEL Roofing &amp; Construction Inc. is a <a href="/">roofing company in Edinburg</a> that has done commercial roofing since 2003. We install new commercial roofs and handle repairs, maintenance and replacement for businesses across the Rio Grande Valley.',
     cta: { label: 'Contact Us', href: '/contact-us' },
-    images: [{ src: building, alt: 'Commercial Roofing' }],
+    images: [{ src: trb, alt: 'Commercial roof on the TRB building in McAllen, TX, by EDEL Roofing' }],
   }}
   band={{
     eyebrow: 'Commercial roof installation',
@@ -65,9 +68,9 @@ const certs = [
     body: 'Eddie Elizondo started this company on good work and good customer service, and we run commercial jobs the same way. Our crews are experienced, and we use quality materials so your roof keeps doing its job for years. Before any work starts, you get a written estimate with the scope and the price.',
     cta: { label: 'Get Instant Estimate', href: '/contact-us#estimate', roofle: true },
     images: [
+      { src: starbucks, alt: 'Commercial roof on the Starbucks in McAllen, TX, by EDEL Roofing' },
       { src: commercial, alt: 'Commercial Roofing' },
       { src: repair, alt: 'Commercial Roofing Repair' },
-      { src: repairing, alt: 'Commercial Roof Installation' },
     ],
   }}
   extra={[

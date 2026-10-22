@@ -173,9 +173,11 @@ const faqSchema = faq && {
   .rounded { border-radius: var(--radius); width: 100%; object-fit: cover; }
   .split > :global(img.rounded) { aspect-ratio: 4 / 3; }
 
-  .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); gap: 10px; }
-  .gallery :global(img) { aspect-ratio: 1; }
-  .gallery :global(img.main) { grid-column: 1 / -1; aspect-ratio: 4 / 3; }
+  /* Flex, not grid: auto-fit with minmax(0, 1fr) collapsed the small photos
+     under the main one to 1px wide (fixed 2026-10-22). */
+  .gallery { display: flex; flex-wrap: wrap; gap: 10px; }
+  .gallery :global(img) { flex: 1 1 0; min-width: 0; aspect-ratio: 1; }
+  .gallery :global(img.main) { flex-basis: 100%; aspect-ratio: 4 / 3; }
 
   .band {
     position: relative;
