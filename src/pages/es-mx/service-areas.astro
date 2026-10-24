@@ -20,7 +20,7 @@ import SpokeLinks from '../../components/SpokeLinks.astro';
 import CtaBand from '../../components/CtaBand.astro';
 import Icon from '../../components/Icon.astro';
 import { site } from '../../data/site';
-import { breadcrumbSchema, SITE_URL } from '../../data/schema';
+import { breadcrumbSchema, SITE_URL, ORG_ID } from '../../data/schema';
 import hero from '../../assets/home/truck-house.jpeg';
 
 const crumbs = [
@@ -63,7 +63,7 @@ const schema = [
     inLanguage: 'es',
     description:
       'Edel Roofing & Construction da servicio en Edinburg, McAllen, Mission, Pharr, Weslaco, Harlingen, Brownsville y Rio Grande City con reemplazo de techo, reparaciones y techado comercial.',
-    about: { '@id': SITE_URL },
+    about: { '@id': ORG_ID },
   },
 ];
 ---

@@ -5,6 +5,9 @@
 import { site } from './site';
 
 export const SITE_URL = 'https://www.edelroofing.com';
+// One @id for the business. The 30 city pages' JSON already point here; the
+// bare SITE_URL left them dangling (audit 2026-10-23).
+export const ORG_ID = `${SITE_URL}/#roofingcontractor`;
 
 export const serviceCities = [
   'Edinburg',
@@ -20,7 +23,7 @@ export const serviceCities = [
 export const orgSchema = {
   '@context': 'https://schema.org',
   '@type': 'RoofingContractor',
-  '@id': SITE_URL,
+  '@id': ORG_ID,
   name: 'Edel Roofing and Construction Inc',
   url: `${SITE_URL}/`,
   description:

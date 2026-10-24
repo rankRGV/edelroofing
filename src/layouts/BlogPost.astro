@@ -12,7 +12,7 @@ import Base from './Base.astro';
 import CtaBand from '../components/CtaBand.astro';
 import Icon from '../components/Icon.astro';
 import { site, quoteFallback } from '../data/site';
-import { breadcrumbSchema, SITE_URL } from '../data/schema';
+import { breadcrumbSchema, SITE_URL, ORG_ID } from '../data/schema';
 
 interface Props {
   post: CollectionEntry<'blog'>;
@@ -45,7 +45,7 @@ const schema = [
     image: new URL(ogImage.src, SITE_URL).href,
     mainEntityOfPage: new URL(path, SITE_URL).href,
     ...(d.author && { author: { '@type': 'Person', name: d.author } }),
-    publisher: { '@id': SITE_URL },
+    publisher: { '@id': ORG_ID },
   },
 ];
 const alternates = twin ? (es ? { en: `/${twin.id}`, es: path } : { en: path, es: `/${twin.id}` }) : undefined;

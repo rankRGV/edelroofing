@@ -55,6 +55,9 @@ const shareUrl = new URL(share.src, shareOrigin).href;
     {alt && <link rel="alternate" hreflang="es" href={alt.es} />}
     {alt && <link rel="alternate" hreflang="x-default" href={alt.en} />}
     {PREVIEW ? <meta name="robots" content="noindex, nofollow" /> : noindex && <meta name="robots" content="noindex" />}
+    {/* Search Console token copied from the live Duda site (2026-10-23), so the
+        property stays verified after the move. */}
+    <meta name="google-site-verification" content="ohdZvMYf5KswinJZpevrLM7S20W8x82nBCYS-YNWurU" />
     <meta name="theme-color" content="#4f0000" />
     <link rel="icon" href="/favicon.ico" sizes="48x48" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />

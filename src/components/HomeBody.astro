@@ -14,7 +14,7 @@ import LeadForm from './LeadForm.astro';
 import type { HomeCopy } from '../data/home';
 import Icon from './Icon.astro';
 import GoogleReviews from './GoogleReviews.astro';
-import { site, addressLine, quoteFallback } from '../data/site';
+import { site, addressLine, quoteFallback, mapEmbed } from '../data/site';
 import { forms } from '../data/forms';
 
 
@@ -226,7 +226,7 @@ const badges = [
         <div class="map">
           <iframe
             title={c.areas.mapTitle}
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d23667.384708486312!2d-98.2055292!3d26.2596735!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8665a146c4b26d97%3A0x676b08ea4b4d1f8c!2sEDEL%20Roofing%20and%20Construction%20Inc.!5e1!3m2!1sen!2sus!4v1747828235672!5m2!1sen!2sus"
+            src={mapEmbed}
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
             allowfullscreen></iframe>

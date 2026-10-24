@@ -15,12 +15,17 @@ export const site = {
   license: 'RCAT #03-0489',
   facebook: 'https://facebook.com/edelroofing',
   instagram: 'https://www.instagram.com/edel_roofing_construction/',
-  googleMaps:
-    'https://www.google.com/maps/place/EDEL+Roofing+and+Construction+Inc./@26.2596735,-98.2055292,17z/data=!3m1!4b1!4m6!3m5!1s0x8665a146c4b26d97:0x676b08ea4b4d1f8c!8m2!3d26.2596735!4d-98.2055292!16s%2Fg%2F11c4bcl32y?entry=ttu',
+  // Opens the GBP listing by its CID. The old link carried the 3321 W Alberta
+  // Rd pin (26.2596735, -98.2055292), about 7 km off (audit 2026-10-23).
+  googleMaps: 'https://maps.google.com/?cid=7452059810793332620',
   yelp: 'https://www.yelp.com/biz/edel-roofing-and-construction-edinburg-3',
 };
 
 export const addressLine = `${site.address.street}, ${site.address.city}, ${site.address.region} ${site.address.zip}`;
+
+// Map embed by name + address, so the pin lands on 1815 N Jackson Rd
+// (resolves to 26.32355, -98.18402, same as the schema geo; checked 2026-10-23).
+export const mapEmbed = `https://www.google.com/maps?q=${encodeURIComponent(`${site.legalName}, ${addressLine}`)}&output=embed`;
 
 // Where "Get Instant Estimate" goes when the Roofle slide-out hasn't loaded:
 // the quote section of the contact page in the visitor's language (the

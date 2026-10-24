@@ -5,7 +5,7 @@
 // - Em dash in the lead swapped for a colon.
 // - "252 Google reviews" -> "250+ Google reviews" (match the homepage).
 // - WebPage schema "about" pointed at #roofingcontractor, which no block
-//   uses; it now points at the RoofingContractor @id.
+//   uses; it now points at ORG_ID (#roofingcontractor, 2026-10-23).
 // - Added: McAllen and Mission page lists (their city x service pages had
 //   ~2 inlinks each), breadcrumb, quote/call buttons in the hero.
 // "Seamless gutter" is the product name (one-piece gutters), kept on purpose.
@@ -20,7 +20,7 @@ import SpokeLinks from '../components/SpokeLinks.astro';
 import CtaBand from '../components/CtaBand.astro';
 import Icon from '../components/Icon.astro';
 import { site } from '../data/site';
-import { breadcrumbSchema, SITE_URL } from '../data/schema';
+import { breadcrumbSchema, SITE_URL, ORG_ID } from '../data/schema';
 import hero from '../assets/home/truck-house.jpeg';
 
 const crumbs = [
@@ -62,7 +62,7 @@ const schema = [
     url: `${SITE_URL}/service-areas`,
     description:
       'Edel Roofing & Construction serves Edinburg, McAllen, Mission, Pharr, Weslaco, Harlingen, Brownsville and Rio Grande City with roof replacement, repairs and commercial roofing.',
-    about: { '@id': SITE_URL },
+    about: { '@id': ORG_ID },
   },
 ];
 ---
