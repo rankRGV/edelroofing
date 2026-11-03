@@ -1,4 +1,6 @@
-// Types + loader for the 30 city x service pages (src/data/city/*.json).
+// Types + loader for the city pages (src/data/city/*.json): the 30 city x
+// service pages plus the Harlingen and Brownsville hubs (EN + ES, added
+// 2026-11-03, sources in site-rebuild/cameron-county-city-pages-research.md).
 // The JSON files were parsed from the live Duda pages on 2026-10-18 with
 // site-rebuild/tools/parse_city.py; edit them by hand from here on.
 export type CitySection = {
@@ -14,7 +16,7 @@ export type CitySection = {
 export type CityPage = {
   path: string;
   lang: 'en' | 'es';
-  city: 'mcallen' | 'mission' | 'edinburg';
+  city: 'mcallen' | 'mission' | 'edinburg' | 'harlingen' | 'brownsville';
   service: string;
   title: string;
   description: string;

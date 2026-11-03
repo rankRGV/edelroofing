@@ -1,0 +1,283 @@
+{
+  "path": "/roofing-harlingen-tx",
+  "lang": "en",
+  "city": "harlingen",
+  "service": "hub",
+  "title": "Roofing Contractor in Harlingen, TX | Edel Roofing & Construction",
+  "description": "Roof replacement, repairs, commercial roofs and gutters for Harlingen, TX homes and businesses. Rated 4.8 on Google. Free inspection: (956) 422-3335.",
+  "alternates": {
+    "en": "/roofing-harlingen-tx",
+    "es": "/roofing-harlingen-tx-es"
+  },
+  "h1": "Roofing Contractor in Harlingen, TX",
+  "lede": "Edel Roofing &amp; Construction replaces and repairs roofs for Harlingen homes and businesses. We drive over from our Edinburg shop, and the inspection and written estimate are free.",
+  "heroCtas": [
+    {
+      "label": "Book a Free Inspection",
+      "href": "/book-an-inspection"
+    },
+    {
+      "label": "Call (956) 422-3335",
+      "href": "tel:+19564223335"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Roofing in Harlingen from our Edinburg shop",
+      "alt": false,
+      "kind": "text",
+      "paras": [
+        "Our shop is at 1815 N Jackson Rd in Edinburg, about 42 miles from Harlingen City Hall. Without traffic that's around 50 minutes down the expressway. We don't have an office in Harlingen. We take Harlingen jobs from Edinburg, the same way we've roofed across the Valley since 2003.",
+        "Cameron County isn't new to us. One of our recent jobs is a CertainTeed shingle roof on a home on South Padre Island, and the photos are on our <a href=\"/residential-roofing\">residential roofing page</a>. Harlingen gets the same Gulf storms and falls under the same state windstorm rules, so this page covers both."
+      ]
+    },
+    {
+      "title": "Roofing services for Harlingen",
+      "alt": true,
+      "kind": "cards",
+      "cards": [
+        {
+          "title": "Roof Replacement",
+          "body": "Full tear off and a new roof with CertainTeed, Owens Corning or GAF shingles. We check the decking once the old roof is off, and you see the price in writing before anything starts.",
+          "href": "/residential-roofing"
+        },
+        {
+          "title": "Roof Repairs",
+          "body": "Leaks, blown off shingles and worn flashing. Under Texas rules, a repair smaller than 100 square feet that doesn't touch the decking needs no windstorm inspection.",
+          "href": "/roof-repairs"
+        },
+        {
+          "title": "Commercial Roofing",
+          "body": "Flat and low slope roofs for offices, shops and warehouses: TPO, EPDM and modified bitumen, plus leak repair on roofs already in place.",
+          "href": "/commercial-roofing"
+        },
+        {
+          "title": "Storm Damage",
+          "body": "After hail or a hard wind, we check the roof and write up what we find so you have something to show your insurance company.",
+          "href": "/storm-damage"
+        },
+        {
+          "title": "Gutters",
+          "body": "Seamless gutters and gutter repair, so September rain (Harlingen's wettest month) runs away from the house instead of down the walls.",
+          "href": "/gutters-edinburg-tx"
+        },
+        {
+          "title": "Free Roof Inspection",
+          "body": "We walk the roof, write down what we find and tell you plainly what shape it's in. There's no charge.",
+          "href": "/book-an-inspection"
+        }
+      ]
+    },
+    {
+      "title": "Harlingen homes are older than most in the Valley",
+      "alt": false,
+      "kind": "text",
+      "paras": [
+        "The Census puts the median Harlingen home at 1988. About 36% of homes were built before 1980, another 36% between 1980 and 1999, and only 28% in 2000 or later (Census ACS 2020 to 2024). In Edinburg, by comparison, more than half the homes went up in 2000 or later.",
+        "That means a lot of Harlingen roofs have been replaced at least once, and some carry patches from past storms. On a roof like that, the real condition shows up when the old shingles come off. Soft or rotted decking has to be replaced before the new roof goes on, and the state's windstorm guidance says the same thing.",
+        "The rules changed recently too. The City of Harlingen moved to the 2024 International Residential Code on October 1, 2025, and its permit guide lists roof replacements as work that needs a building permit. Starting without one costs double the normal permit fee."
+      ]
+    },
+    {
+      "title": "Steps for a roof replacement in Harlingen",
+      "alt": true,
+      "kind": "cards",
+      "cards": [
+        {
+          "title": "1. Free inspection",
+          "body": "We come out from Edinburg, look over the roof from the ground up and write down what we find."
+        },
+        {
+          "title": "2. Written estimate",
+          "body": "You get the price on paper before any work. Ask about the shingle's wind rating: Texas windstorm rules call for shingles tested to Class F or Class H."
+        },
+        {
+          "title": "3. City permit",
+          "body": "Harlingen requires a permit for a roof replacement. Building Permits and Inspections is at 502 E Tyler Ave, (956) 216-5169."
+        },
+        {
+          "title": "4. Windstorm inspection",
+          "body": "If you want TWIA coverage, set up the state windstorm inspection before tear off. The city says waiting until the job is done can make certification harder and more costly."
+        },
+        {
+          "title": "5. Tear off and decking",
+          "body": "The old roof comes off and damaged boards get replaced. This is the stage the windstorm inspector needs to see, before shingles cover it."
+        },
+        {
+          "title": "6. New roof and cleanup",
+          "body": "The new roof goes on with nails (the windstorm code doesn't allow staples), the yard gets cleaned, and the city inspection gets closed out."
+        }
+      ]
+    },
+    {
+      "title": "Harlingen storms and what they did to roofs",
+      "alt": false,
+      "kind": "text",
+      "paras": [
+        "Hurricane Dolly came ashore on South Padre Island on July 23, 2008. The airport in Harlingen recorded a 74 mph gust, and a rain gauge just northeast of town caught 15 inches, the highest total anywhere in the storm (National Hurricane Center).",
+        "In July 2020, Hurricane Hanna pushed a 63 mph gust across the Harlingen airport before the station lost power. The Hurricane Center's report says hundreds of poorly built structures had roof damage, and the Weather Service placed the worst winds along Interstate 2 between Harlingen, San Benito and McAllen.",
+        "Storms without names do damage too. On April 2, 2017, golf ball size hail was reported at 7th Street and Vinson in north Harlingen. On June 4, 2023, the airport measured an 82 mph gust. On May 9, 2026, a microburst ran from Harlingen toward Laureles, and the Weather Service survey found part of the roof torn off the garden center greenhouse at Lowe's on the east side (NOAA Storm Events).",
+        "Wind usually starts at the edge. The Insurance Institute for Business and Home Safety says roof damage often begins when wind gets under the roof edge and starts pulling it away. After a storm, look along the edges and the ridge and check the yard for shingles, then call us for a free look."
+      ]
+    },
+    {
+      "title": "Why Harlingen homeowners call Edel",
+      "alt": true,
+      "kind": "proof",
+      "proof": [
+        {
+          "big": "RCAT",
+          "label": "RCAT licensed (#03-0489), bonded and insured"
+        },
+        {
+          "big": "4.8★",
+          "label": "Average from 250+ Google reviews"
+        },
+        {
+          "big": "PRO",
+          "label": "CertainTeed ShingleMaster PRO, the only one in the Rio Grande Valley"
+        },
+        {
+          "big": "Since 2003",
+          "label": "Roofing homes and businesses across the Valley"
+        }
+      ]
+    },
+    {
+      "title": "Harlingen roofing questions",
+      "alt": false,
+      "kind": "faq",
+      "faqs": [
+        {
+          "q": "Do you do roofing work in Harlingen?",
+          "a": "Yes. We take roof replacements, repairs, commercial roofs and gutter jobs in Harlingen. Our shop is in Edinburg, about 50 minutes away, and the inspection and estimate cost nothing. Call (956) 422-3335 to set a time."
+        },
+        {
+          "q": "Do I need a permit to replace my roof in Harlingen?",
+          "a": "Yes. The City of Harlingen's permit guide lists roof replacements as work that needs a building permit, and the city has used the 2024 residential code since October 1, 2025. Work started without a permit pays double the normal fee. For questions about your property, call Building Permits and Inspections at (956) 216-5169."
+        },
+        {
+          "q": "Does a small roof repair need a windstorm inspection?",
+          "a": "Not always. The Texas Department of Insurance (TDI) says roof repairs under 100 square feet that don't involve the decking are exempt. A full replacement or a big repair needs an inspection while the work is going on if you want the home to stay eligible for TWIA. When you're not sure, TDI asks you to call its windstorm office first at 800-248-6032. The office that covers Cameron County is in Corpus Christi."
+        },
+        {
+          "q": "Can my insurance company drop me because my roof is old?",
+          "a": "Not for age alone. TDI says Texas insurers can't turn you down or drop you only because of your roof's age, but the roof's condition still counts, and an older roof can be moved to actual cash value, which pays less. If you got a letter about your roof, a free inspection tells you what shape it's really in."
+        },
+        {
+          "q": "A shingle blew off my roof. What should I do?",
+          "a": "Keep the shingle if you find it, and look from the ground for more missing pieces near the edges and the ridge. One missing shingle is a small repair, but it leaves the layer underneath open to sun and rain. Don't let it sit into September: it's Harlingen's wettest month, with 5.31 inches of rain on average (NOAA 1991 to 2020). Call us and we'll come check it."
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Get a free roof inspection in Harlingen",
+    "line": "Tell us what's going on with your roof. We'll drive over from Edinburg, take a look and give you the price in writing.",
+    "buttons": [
+      {
+        "label": "Book a Free Inspection",
+        "href": "/book-an-inspection"
+      },
+      {
+        "label": "Call (956) 422-3335",
+        "href": "tel:+19564223335"
+      }
+    ],
+    "sub": "EDEL Roofing and Construction, Edinburg, TX, serving Harlingen and Cameron County"
+  },
+  "crumbs": [
+    {
+      "label": "Service Areas",
+      "href": "/service-areas"
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.edelroofing.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Service Areas",
+              "item": "https://www.edelroofing.com/service-areas"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Roofing Contractor Harlingen TX",
+              "item": "https://www.edelroofing.com/roofing-harlingen-tx"
+            }
+          ]
+        },
+        {
+          "@type": "WebPage",
+          "name": "Roofing Contractor in Harlingen, TX",
+          "url": "https://www.edelroofing.com/roofing-harlingen-tx",
+          "description": "Roof replacement, repairs, commercial roofs and gutters for Harlingen, TX homes and businesses. Rated 4.8 on Google. Free inspection: (956) 422-3335.",
+          "inLanguage": "en",
+          "about": {
+            "@id": "https://www.edelroofing.com/#roofingcontractor"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Do you do roofing work in Harlingen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We take roof replacements, repairs, commercial roofs and gutter jobs in Harlingen. Our shop is in Edinburg, about 50 minutes away, and the inspection and estimate cost nothing. Call (956) 422-3335 to set a time."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need a permit to replace my roof in Harlingen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. The City of Harlingen's permit guide lists roof replacements as work that needs a building permit, and the city has used the 2024 residential code since October 1, 2025. Work started without a permit pays double the normal fee. For questions about your property, call Building Permits and Inspections at (956) 216-5169."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does a small roof repair need a windstorm inspection?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Not always. The Texas Department of Insurance (TDI) says roof repairs under 100 square feet that don't involve the decking are exempt. A full replacement or a big repair needs an inspection while the work is going on if you want the home to stay eligible for TWIA. When you're not sure, TDI asks you to call its windstorm office first at 800-248-6032. The office that covers Cameron County is in Corpus Christi."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can my insurance company drop me because my roof is old?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Not for age alone. TDI says Texas insurers can't turn you down or drop you only because of your roof's age, but the roof's condition still counts, and an older roof can be moved to actual cash value, which pays less. If you got a letter about your roof, a free inspection tells you what shape it's really in."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "A shingle blew off my roof. What should I do?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Keep the shingle if you find it, and look from the ground for more missing pieces near the edges and the ridge. One missing shingle is a small repair, but it leaves the layer underneath open to sun and rain. Don't let it sit into September: it's Harlingen's wettest month, with 5.31 inches of rain on average (NOAA 1991 to 2020). Call us and we'll come check it."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "changes": [
+    "2026-11-03 new page (not on the live Duda site). Built from sourced facts only; sources in site-rebuild/cameron-county-city-pages-research.md. No Edel office or address in this city is implied (Brownsville office planned 2027, no GBP there). No prices, metal, tile, mobile homes or tarping (unconfirmed by Edel)."
+  ]
+}

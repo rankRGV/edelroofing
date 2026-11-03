@@ -1,0 +1,313 @@
+{
+  "path": "/roofing-brownsville-tx-es",
+  "lang": "es",
+  "city": "brownsville",
+  "service": "hub",
+  "title": "Contratista de Techos en Brownsville, TX | Edel Roofing & Construction",
+  "description": "Techos en Brownsville, TX: reemplazo, reparaciones, techado comercial y canaletas, con los pasos de permiso y vientos explicados. Inspección gratis: (956) 422-3335.",
+  "alternates": {
+    "en": "/roofing-brownsville-tx",
+    "es": "/roofing-brownsville-tx-es"
+  },
+  "h1": "Contratista de Techos en Brownsville, TX",
+  "lede": "Edel Roofing &amp; Construction hace reemplazos de techo, reparaciones, techado comercial y canaletas en Brownsville. Bajamos desde Edinburg para una inspección gratis y le damos el precio por escrito.",
+  "heroCtas": [
+    {
+      "label": "Reciba un Estimado Gratis",
+      "href": "/es-mx/contact-us"
+    },
+    {
+      "label": "Llame al (956) 422-3335",
+      "href": "tel:+19564223335"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Techos para la ciudad más grande del Valle",
+      "alt": false,
+      "kind": "text",
+      "paras": [
+        "Brownsville contó 186,738 habitantes en el Censo de 2020, más que McAllen o cualquier otra ciudad del Valle. Son muchos techos, desde casas en el distrito histórico del centro hasta colonias terminadas en los últimos años.",
+        "Nuestro taller está en Edinburg, a unas 67 millas del ayuntamiento de Brownsville, y no tenemos oficina en Brownsville. Cuando usted llama, escogemos un día que le acomode y bajamos. Hacemos techos en el Valle desde 2003, incluyendo un techo de shingle CertainTeed en una casa de South Padre Island que puede ver en nuestra <a href=\"/es-mx/residential-roofing\">página de techos residenciales</a>."
+      ]
+    },
+    {
+      "title": "Lo que hacemos en Brownsville",
+      "alt": true,
+      "kind": "cards",
+      "cards": [
+        {
+          "title": "Reemplazo de Techo",
+          "body": "Sale el techo viejo y entra uno nuevo, con shingle de CertainTeed, Owens Corning o GAF. El precio va por escrito antes de empezar, y el patio queda limpio al terminar.",
+          "href": "/es-mx/residential-roofing"
+        },
+        {
+          "title": "Reparación de Techos",
+          "body": "Shingles que faltan en las orillas, goteras alrededor de ventilas y flashing, daño por viento cuando pasa un frente. Buscamos por dónde entra de verdad el agua.",
+          "href": "/es-mx/roof-repairs"
+        },
+        {
+          "title": "Techado Comercial",
+          "body": "TPO, EPDM y bitumen modificado para edificios de techo plano o de poca pendiente, y reparación de goteras en techos comerciales que ya están puestos.",
+          "href": "/es-mx/commercial-roofing"
+        },
+        {
+          "title": "Daño por Tormenta",
+          "body": "Un reporte por escrito del daño por viento o granizo que puede entregarle al ajustador de su aseguranza. No somos ajustadores públicos, y se lo decimos desde el principio.",
+          "href": "/es-mx/storm-damage"
+        },
+        {
+          "title": "Canaletas",
+          "body": "Canaletas sin costuras, reparaciones y protectores de canaleta. TWIA no pide certificado de vientos para trabajos de canaletas.",
+          "href": "/gutters-edinburg-tx-es"
+        },
+        {
+          "title": "Inspección Gratis",
+          "body": "Subimos al techo, anotamos lo que vemos y se lo explicamos en palabras sencillas. No cuesta nada.",
+          "href": "/es-mx/contact-us"
+        }
+      ]
+    },
+    {
+      "title": "Casas de Brownsville: un centro antiguo y mucho nuevo",
+      "alt": false,
+      "kind": "text",
+      "paras": [
+        "Las casas de Brownsville son más nuevas de lo que mucha gente piensa. Cerca del 42% se construyeron en el año 2000 o después, el 29% entre 1980 y 1999 y cerca del 30% antes de 1980, y la casa típica es de 1995 (Censo ACS 2020 a 2024). Más o menos el 68% son casas para una sola familia, y cerca del 62% las habitan sus dueños.",
+        "La construcción no ha parado. El centro de investigación de bienes raíces de Texas A&amp;M encontró que el valor medio de las casas en el condado de Cameron subió 127% de 2019 a 2025, y su economista señaló a las casas nuevas como la razón principal (Texas Tribune, agosto de 2026). Muchas de esas casas más nuevas todavía tienen su primer techo. Un primer techo de principios de los 2000 ya pasa de 20 años, en una ciudad que promedia unos 140 días al año a 90 grados o más (NOAA 1991 a 2020). Ya es tiempo de que alguien lo revise.",
+        "Del otro lado está el centro. El Distrito Histórico del Centro de Brownsville, en el Registro Nacional, abarca edificios de 1848 a 1969 entre East Levee y East 15th Street. El código de la ciudad permite que el oficial de patrimonio revise los permisos de construcción en las zonas de revisión patrimonial, así que un cambio de techo ahí puede llevar una revisión extra. Pregunte a la ciudad antes de decidir un color o material nuevo."
+      ]
+    },
+    {
+      "title": "Permisos y cuotas para cambiar el techo en Brownsville",
+      "alt": true,
+      "kind": "text",
+      "paras": [
+        "El techado no está en la lista de trabajos que Brownsville deja hacer sin permiso, así que cuente con sacar uno para cambiar el techo. La Sección 18-123 del Código de la Ciudad pone la cuota residencial en $50 hasta 500 pies cuadrados, $70 de 501 a 2,000 pies cuadrados y $150 arriba de eso. Si se empieza antes de tener el permiso, la cuota se duplica.",
+        "La ciudad construye con el Código Residencial Internacional de 2018. Los permisos se tramitan en la oficina de Inspecciones y Permisos de Construcción en City Plaza, 1034 E Levee St, segundo piso, y las inspecciones se piden al 956-548-6150."
+      ]
+    },
+    {
+      "title": "Cómo va un trabajo de techo en Brownsville",
+      "alt": false,
+      "kind": "cards",
+      "cards": [
+        {
+          "title": "1. Llame o aparte en línea",
+          "body": "Denos la dirección y díganos qué está viendo. Escogemos un día para bajar desde Edinburg."
+        },
+        {
+          "title": "2. En el techo",
+          "body": "Revisamos el shingle, las esquinas y las orillas, el flashing y las ventilas, y anotamos lo que encontramos."
+        },
+        {
+          "title": "3. Precio por escrito",
+          "body": "Recibe un estimado por escrito sin costo. Si dice que no, no nos debe nada."
+        },
+        {
+          "title": "4. Permiso y vientos",
+          "body": "Se saca el permiso de la ciudad, y si usted tiene TWIA, la inspección de vientos de TDI se programa antes de quitar el techo viejo."
+        },
+        {
+          "title": "5. Quitar y techo nuevo",
+          "body": "Se cambia la madera dañada y se pone el techo nuevo mientras el inspector todavía puede ver el trabajo de abajo."
+        },
+        {
+          "title": "6. Para terminar",
+          "body": "Limpiamos el patio, se cierra la inspección de la ciudad, y TDI emite el certificado de vientos a TWIA cuando el trabajo pasa."
+        }
+      ]
+    },
+    {
+      "title": "Certificados de vientos en el condado de Cameron",
+      "alt": true,
+      "kind": "text",
+      "paras": [
+        "Todo el condado de Cameron está en la zona de catástrofe de TWIA. Para comprar o mantener una póliza de vientos de TWIA, la mayoría de las casas necesitan un certificado de cumplimiento del Departamento de Seguros de Texas (TDI), y cambiar el techo está en la lista de trabajos que lo necesitan.",
+        "El tiempo es lo que más se pasa por alto. El certificado regular sale de una inspección hecha mientras se pone el techo, por un inspector de TDI o un ingeniero nombrado por TDI. Si el techo ya está terminado, un ingeniero con licencia todavía puede inspeccionarlo para un certificado de obra terminada, pero TDI dice que eso puede costar más. TDI también les dice a los dueños que le pregunten a su contratista cómo se van a cumplir los requisitos de inspección antes de empezar.",
+        "Dos cosas más. Desde el 1 de abril de 2026, la certificación sigue los códigos de 2024, y la velocidad de viento de diseño se fija para cada dirección en lugar de un solo número para toda la ciudad. Y las casas construidas entre 1988 y el 18 de junio de 2009 sin certificado todavía pueden calificar para TWIA, con un recargo del 15% en la prima."
+      ]
+    },
+    {
+      "title": "Viento y granizo registrados en Brownsville",
+      "alt": false,
+      "kind": "text",
+      "paras": [
+        "Cuando el huracán Dolly llegó a South Padre Island en julio de 2008, el aeropuerto de Brownsville registró una ráfaga de 68 mph. El informe del Centro Nacional de Huracanes dice que el daño en Brownsville fue sobre todo material de techo perdido.",
+        "En julio de 2020, durante el huracán Hanna, un tornado pequeño cruzó el lado oeste del aeropuerto, y dos casas de la colonia de al lado perdieron grandes partes de su techo (NOAA Storm Events). El 8 de enero de 2024, una tormenta de invierno sin nombre dejó una ráfaga de 74 mph en el aeropuerto. Y el 1 de noviembre de 2025, el Servicio Meteorológico midió granizo de 1.25 pulgadas en su propia oficina cerca del aeropuerto.",
+        "La guía de construcción costera de FEMA dice que el levantamiento por viento en un techo es más fuerte en las esquinas, y luego en las orillas. Esos son los lugares que hay que revisar primero después de una tormenta."
+      ]
+    },
+    {
+      "title": "Por qué en Brownsville llaman a Edel",
+      "alt": true,
+      "kind": "proof",
+      "proof": [
+        {
+          "big": "RCAT",
+          "label": "Con licencia RCAT (#03-0489), fianza y seguro"
+        },
+        {
+          "big": "4.8★",
+          "label": "Promedio de más de 250 reseñas en Google"
+        },
+        {
+          "big": "PRO",
+          "label": "CertainTeed ShingleMaster PRO, el único en el Valle del Río Grande"
+        },
+        {
+          "big": "Desde 2003",
+          "label": "Cambiando y reparando techos en el Valle"
+        }
+      ]
+    },
+    {
+      "title": "Preguntas sobre techos en Brownsville",
+      "alt": false,
+      "kind": "faq",
+      "faqs": [
+        {
+          "q": "¿Van hasta Brownsville?",
+          "a": "Sí. Bajamos desde nuestro taller en Edinburg para reemplazos de techo, reparaciones, techos comerciales y canaletas. La inspección y el estimado por escrito son gratis. Llame al (956) 422-3335 para escoger un día."
+        },
+        {
+          "q": "¿Cuánto cuesta el permiso para cambiar el techo en Brownsville?",
+          "a": "La cuota de la ciudad para un techo residencial es de $50 hasta 500 pies cuadrados, $70 de 501 a 2,000 pies cuadrados y $150 arriba de 2,000 pies cuadrados, según la Sección 18-123 del Código de la Ciudad. Eso es solo el permiso, no el techo. Si se empieza sin permiso, la cuota se duplica."
+        },
+        {
+          "q": "¿Necesito inspección de vientos para un techo nuevo en Brownsville?",
+          "a": "Si quiere cobertura de vientos de TWIA, sí. Un reemplazo de techo necesita certificado de TDI, y la inspección se debe hacer mientras se instala el techo. Las reparaciones de menos de 100 pies cuadrados que no tocan la madera están exentas. La línea de vientos de TDI es el 800-248-6032."
+        },
+        {
+          "q": "Mi casa es de 2005 y nunca tuvo certificado de vientos. ¿Todavía puedo tener TWIA?",
+          "a": "Puede ser. TWIA dice que las casas construidas de 1988 al 18 de junio de 2009 sin certificado todavía pueden ser elegibles, con un recargo del 15% en la prima. Pregunte a TWIA o a su agente qué aplica a su póliza antes de cambiar el techo."
+        },
+        {
+          "q": "¿El aire salado arruina los techos en Brownsville?",
+          "a": "Menos de lo que se piensa en casi toda la ciudad. La advertencia de FEMA sobre la corrosión rápida de metales es para casas a menos de 3,000 pies del mar, y el ayuntamiento de Brownsville está a unas 23 millas de la playa de Boca Chica. Para la mayoría de las casas de Brownsville, el riesgo mayor es el viento que levanta las orillas y las esquinas."
+        },
+        {
+          "q": "¿Cuál es la temporada más lluviosa en Brownsville?",
+          "a": "Septiembre. En el aeropuerto de Brownsville llueven 5.73 pulgadas en promedio ese mes, de unas 26.8 pulgadas en todo el año (NOAA 1991 a 2020). Si su techo ya gotea, no espere. Llámenos y le apartamos una inspección gratis."
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Reciba una inspección de techo gratis en Brownsville",
+    "line": "Cuéntenos de su techo y escoja un día. Bajamos desde Edinburg, lo revisamos y le damos el precio por escrito.",
+    "buttons": [
+      {
+        "label": "Reciba un Estimado Gratis",
+        "href": "/es-mx/contact-us"
+      },
+      {
+        "label": "Llame al (956) 422-3335",
+        "href": "tel:+19564223335"
+      }
+    ],
+    "sub": "EDEL Roofing and Construction, Edinburg, TX, dando servicio en Brownsville y el condado de Cameron"
+  },
+  "crumbs": [
+    {
+      "label": "Áreas de Servicio",
+      "href": "/es-mx/service-areas"
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Inicio",
+              "item": "https://www.edelroofing.com/es-mx"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Áreas de Servicio",
+              "item": "https://www.edelroofing.com/es-mx/service-areas"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Contratista de Techos Brownsville TX",
+              "item": "https://www.edelroofing.com/roofing-brownsville-tx-es"
+            }
+          ]
+        },
+        {
+          "@type": "WebPage",
+          "name": "Contratista de Techos en Brownsville, TX",
+          "url": "https://www.edelroofing.com/roofing-brownsville-tx-es",
+          "description": "Techos en Brownsville, TX: reemplazo, reparaciones, techado comercial y canaletas, con los pasos de permiso y vientos explicados. Inspección gratis: (956) 422-3335.",
+          "inLanguage": "es",
+          "about": {
+            "@id": "https://www.edelroofing.com/#roofingcontractor"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Van hasta Brownsville?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. Bajamos desde nuestro taller en Edinburg para reemplazos de techo, reparaciones, techos comerciales y canaletas. La inspección y el estimado por escrito son gratis. Llame al (956) 422-3335 para escoger un día."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cuánto cuesta el permiso para cambiar el techo en Brownsville?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "La cuota de la ciudad para un techo residencial es de $50 hasta 500 pies cuadrados, $70 de 501 a 2,000 pies cuadrados y $150 arriba de 2,000 pies cuadrados, según la Sección 18-123 del Código de la Ciudad. Eso es solo el permiso, no el techo. Si se empieza sin permiso, la cuota se duplica."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Necesito inspección de vientos para un techo nuevo en Brownsville?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Si quiere cobertura de vientos de TWIA, sí. Un reemplazo de techo necesita certificado de TDI, y la inspección se debe hacer mientras se instala el techo. Las reparaciones de menos de 100 pies cuadrados que no tocan la madera están exentas. La línea de vientos de TDI es el 800-248-6032."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Mi casa es de 2005 y nunca tuvo certificado de vientos. ¿Todavía puedo tener TWIA?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Puede ser. TWIA dice que las casas construidas de 1988 al 18 de junio de 2009 sin certificado todavía pueden ser elegibles, con un recargo del 15% en la prima. Pregunte a TWIA o a su agente qué aplica a su póliza antes de cambiar el techo."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿El aire salado arruina los techos en Brownsville?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Menos de lo que se piensa en casi toda la ciudad. La advertencia de FEMA sobre la corrosión rápida de metales es para casas a menos de 3,000 pies del mar, y el ayuntamiento de Brownsville está a unas 23 millas de la playa de Boca Chica. Para la mayoría de las casas de Brownsville, el riesgo mayor es el viento que levanta las orillas y las esquinas."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cuál es la temporada más lluviosa en Brownsville?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Septiembre. En el aeropuerto de Brownsville llueven 5.73 pulgadas en promedio ese mes, de unas 26.8 pulgadas en todo el año (NOAA 1991 a 2020). Si su techo ya gotea, no espere. Llámenos y le apartamos una inspección gratis."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "changes": [
+    "2026-11-03 new page (not on the live Duda site). Built from sourced facts only; sources in site-rebuild/cameron-county-city-pages-research.md. No Edel office or address in this city is implied (Brownsville office planned 2027, no GBP there). No prices, metal, tile, mobile homes or tarping (unconfirmed by Edel)."
+  ]
+}

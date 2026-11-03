@@ -57,6 +57,8 @@ export const mainNav: NavItem[] = [
       { label: 'Edinburg', href: '/' },
       { label: 'McAllen', href: '/roofing-mcallen-tx' },
       { label: 'Mission', href: '/roofing-mission-tx' },
+      { label: 'Harlingen', href: '/roofing-harlingen-tx' },
+      { label: 'Brownsville', href: '/roofing-brownsville-tx' },
     ],
   },
   { label: 'Projects', href: '/projects' },

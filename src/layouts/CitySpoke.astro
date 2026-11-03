@@ -54,7 +54,7 @@ const nowrapWords = (text: string) =>
     .map((w) => `<span class="nw">${w.replace(/&/g, '&amp;').replace(/</g, '&lt;')}</span>`)
     .join(' ');
 const ctaButton = page.cta.buttons[0];
-const cityName = { mcallen: 'McAllen', mission: 'Mission', edinburg: 'Edinburg' }[page.city] ?? '';
+const cityName = { mcallen: 'McAllen', mission: 'Mission', edinburg: 'Edinburg', harlingen: 'Harlingen', brownsville: 'Brownsville' }[page.city] ?? '';
 const moreTitle = es ? `Más páginas de techos en ${cityName}` : `More Roofing Pages for ${cityName}`;
 ---
 <Base title={page.title} description={page.description} lang={page.lang} alternates={page.alternates ?? undefined} schema={page.schema} image={bgs[page.service] ?? hubBg}>

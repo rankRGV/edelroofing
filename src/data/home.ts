@@ -174,7 +174,7 @@ export const homeEn: HomeCopy = {
     button: 'View Our Service Areas',
     buttonHref: '/service-areas',
     small: `Not sure whether we serve your location? Call ${call} and speak with our team.`,
-    links: { Edinburg: '/', McAllen: '/roofing-mcallen-tx', Mission: '/roofing-mission-tx' },
+    links: { Edinburg: '/', McAllen: '/roofing-mcallen-tx', Mission: '/roofing-mission-tx', Harlingen: '/roofing-harlingen-tx', Brownsville: '/roofing-brownsville-tx' },
     mapTitle: 'Map to Edel Roofing & Construction in Edinburg, TX',
   },
   faq: {
@@ -349,7 +349,7 @@ export const homeEs: HomeCopy = {
     button: 'Vea Nuestras Áreas de Servicio',
     buttonHref: '/es-mx/service-areas',
     small: `¿No sabe si llegamos a su zona? Llame al ${call} y hable con nuestro equipo.`,
-    links: { Edinburg: '/es-mx', McAllen: '/roofing-mcallen-tx-es', Mission: '/roofing-mission-tx-es' },
+    links: { Edinburg: '/es-mx', McAllen: '/roofing-mcallen-tx-es', Mission: '/roofing-mission-tx-es', Harlingen: '/roofing-harlingen-tx-es', Brownsville: '/roofing-brownsville-tx-es' },
     mapTitle: 'Mapa a Edel Roofing & Construction en Edinburg, TX',
   },
   faq: {

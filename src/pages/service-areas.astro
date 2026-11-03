@@ -14,6 +14,7 @@
 //   larger per the 2020 Census); "mid-Valley" -> "Mid Valley", "low-slope"
 //   -> "low slope" (no hyphens); closing button now says what its link does
 //   ("Book a Free Inspection", href unchanged).
+// - 2026-11-03: Harlingen and Brownsville now link to their new city pages.
 import Base from '../layouts/Base.astro';
 import PageHero from '../components/PageHero.astro';
 import SpokeLinks from '../components/SpokeLinks.astro';
@@ -34,8 +35,8 @@ const cities: { name: string; line: string; href?: string; home?: boolean }[] = 
   { name: 'Mission', line: 'Roofing for Mission and the Sharyland area.', href: '/roofing-mission-tx' },
   { name: 'Pharr', line: 'Roofing for Pharr and the central Valley.' },
   { name: 'Weslaco', line: 'Roofing for Weslaco and the Mid Valley.' },
-  { name: 'Harlingen', line: 'Roofing for Harlingen and Cameron County.' },
-  { name: 'Brownsville', line: 'Roofing for Brownsville and the southern Valley.' },
+  { name: 'Harlingen', line: 'Roofing for Harlingen and Cameron County.', href: '/roofing-harlingen-tx' },
+  { name: 'Brownsville', line: 'Roofing for Brownsville and the southern Valley.', href: '/roofing-brownsville-tx' },
   { name: 'Rio Grande City', line: 'Roofing for Rio Grande City and Starr County.' },
 ];
 

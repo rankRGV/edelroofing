@@ -1,0 +1,283 @@
+{
+  "path": "/roofing-harlingen-tx-es",
+  "lang": "es",
+  "city": "harlingen",
+  "service": "hub",
+  "title": "Contratista de Techos en Harlingen, TX | Edel Roofing & Construction",
+  "description": "Reemplazo de techo, reparaciones, techado comercial y canaletas en Harlingen, TX. Calificación de 4.8 en Google. Inspección gratis: (956) 422-3335.",
+  "alternates": {
+    "en": "/roofing-harlingen-tx",
+    "es": "/roofing-harlingen-tx-es"
+  },
+  "h1": "Contratista de Techos en Harlingen, TX",
+  "lede": "Edel Roofing &amp; Construction reemplaza y repara techos de casas y negocios en Harlingen. Vamos desde nuestro taller en Edinburg, y la inspección y el estimado por escrito son gratis.",
+  "heroCtas": [
+    {
+      "label": "Reciba un Estimado Gratis",
+      "href": "/es-mx/contact-us"
+    },
+    {
+      "label": "Llame al (956) 422-3335",
+      "href": "tel:+19564223335"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Techos en Harlingen desde nuestro taller en Edinburg",
+      "alt": false,
+      "kind": "text",
+      "paras": [
+        "Nuestro taller está en 1815 N Jackson Rd en Edinburg, a unas 42 millas del ayuntamiento de Harlingen. Sin tráfico son como 50 minutos por la autopista. No tenemos oficina en Harlingen. Tomamos trabajos en Harlingen desde Edinburg, igual que hemos hecho techos por todo el Valle desde 2003.",
+        "El condado de Cameron no es nuevo para nosotros. Uno de nuestros trabajos recientes es un techo de shingle CertainTeed en una casa de South Padre Island, y las fotos están en nuestra <a href=\"/es-mx/residential-roofing\">página de techos residenciales</a>. A Harlingen le tocan las mismas tormentas del Golfo y las mismas reglas estatales de vientos fuertes, así que esta página explica las dos cosas."
+      ]
+    },
+    {
+      "title": "Servicios de techado para Harlingen",
+      "alt": true,
+      "kind": "cards",
+      "cards": [
+        {
+          "title": "Reemplazo de Techo",
+          "body": "Quitamos el techo viejo completo y ponemos uno nuevo con shingle de CertainTeed, Owens Corning o GAF. Revisamos la madera cuando sale el techo viejo, y usted ve el precio por escrito antes de empezar.",
+          "href": "/es-mx/residential-roofing"
+        },
+        {
+          "title": "Reparación de Techos",
+          "body": "Goteras, shingles que levantó el viento y flashing gastado. Según las reglas de Texas, una reparación de menos de 100 pies cuadrados que no toca la madera no necesita inspección de vientos.",
+          "href": "/es-mx/roof-repairs"
+        },
+        {
+          "title": "Techado Comercial",
+          "body": "Techos planos y de poca pendiente para oficinas, tiendas y bodegas: TPO, EPDM y bitumen modificado, y reparación de goteras en techos que ya están puestos.",
+          "href": "/es-mx/commercial-roofing"
+        },
+        {
+          "title": "Daño por Tormenta",
+          "body": "Después del granizo o de un viento fuerte, revisamos el techo y le damos por escrito lo que encontramos para que tenga algo que enseñarle a su aseguranza.",
+          "href": "/es-mx/storm-damage"
+        },
+        {
+          "title": "Canaletas",
+          "body": "Canaletas sin costuras y reparación de canaletas, para que la lluvia de septiembre (el mes más lluvioso de Harlingen) se aleje de la casa y no baje por las paredes.",
+          "href": "/gutters-edinburg-tx-es"
+        },
+        {
+          "title": "Inspección Gratis",
+          "body": "Subimos al techo, anotamos lo que encontramos y le decimos claramente en qué estado está. No cuesta nada.",
+          "href": "/es-mx/contact-us"
+        }
+      ]
+    },
+    {
+      "title": "Las casas de Harlingen son más viejas que en casi todo el Valle",
+      "alt": false,
+      "kind": "text",
+      "paras": [
+        "Según el Censo, la casa típica de Harlingen es de 1988. Cerca del 36% de las casas se construyeron antes de 1980, otro 36% entre 1980 y 1999, y solo el 28% en el año 2000 o después (Censo ACS 2020 a 2024). En Edinburg, en cambio, más de la mitad de las casas son del 2000 en adelante.",
+        "Eso quiere decir que muchos techos de Harlingen ya se cambiaron por lo menos una vez, y algunos traen parches de tormentas pasadas. En un techo así, el estado real se ve cuando sale el shingle viejo. La madera blanda o podrida se tiene que cambiar antes de poner el techo nuevo, y las guías estatales de vientos fuertes dicen lo mismo.",
+        "Las reglas también cambiaron hace poco. La Ciudad de Harlingen adoptó el Código Residencial Internacional de 2024 el 1 de octubre de 2025, y su guía de permisos pone el reemplazo de techo en la lista de trabajos que necesitan permiso de construcción. Si se empieza sin permiso, se paga el doble."
+      ]
+    },
+    {
+      "title": "Pasos para reemplazar un techo en Harlingen",
+      "alt": true,
+      "kind": "cards",
+      "cards": [
+        {
+          "title": "1. Inspección gratis",
+          "body": "Vamos desde Edinburg, revisamos el techo completo y anotamos lo que encontramos."
+        },
+        {
+          "title": "2. Estimado por escrito",
+          "body": "Usted recibe el precio en papel antes de cualquier trabajo. Pregunte por la clasificación de viento del shingle: las reglas de Texas piden shingle probado como Clase F o Clase H."
+        },
+        {
+          "title": "3. Permiso de la ciudad",
+          "body": "Harlingen pide permiso para reemplazar un techo. La oficina de Permisos e Inspecciones está en 502 E Tyler Ave, (956) 216-5169."
+        },
+        {
+          "title": "4. Inspección de vientos",
+          "body": "Si quiere cobertura de TWIA, programe la inspección estatal de vientos antes de quitar el techo. La ciudad dice que esperar hasta terminar puede hacer el certificado más difícil y más caro."
+        },
+        {
+          "title": "5. Quitar el techo y la madera",
+          "body": "Sale el techo viejo y se cambian las tablas dañadas. Esta es la etapa que el inspector de vientos necesita ver, antes de que el shingle la tape."
+        },
+        {
+          "title": "6. Techo nuevo y limpieza",
+          "body": "El techo nuevo se pone con clavos (el código de vientos no permite grapas), se limpia el patio y se cierra la inspección de la ciudad."
+        }
+      ]
+    },
+    {
+      "title": "Las tormentas de Harlingen y lo que les hicieron a los techos",
+      "alt": false,
+      "kind": "text",
+      "paras": [
+        "El huracán Dolly tocó tierra en South Padre Island el 23 de julio de 2008. El aeropuerto de Harlingen registró una ráfaga de 74 mph, y un pluviómetro al noreste de la ciudad juntó 15 pulgadas, la cifra más alta de toda la tormenta (Centro Nacional de Huracanes).",
+        "En julio de 2020, el huracán Hanna dejó una ráfaga de 63 mph en el aeropuerto de Harlingen antes de que la estación se quedara sin luz. El informe del Centro de Huracanes dice que cientos de estructuras mal construidas tuvieron daño en el techo, y el Servicio Meteorológico ubicó los peores vientos sobre la Interestatal 2, entre Harlingen, San Benito y McAllen.",
+        "Las tormentas sin nombre también hacen daño. El 2 de abril de 2017 se reportó granizo del tamaño de una pelota de golf en 7th Street y Vinson, al norte de Harlingen. El 4 de junio de 2023 el aeropuerto midió una ráfaga de 82 mph. El 9 de mayo de 2026 una microráfaga corrió de Harlingen hacia Laureles, y la inspección del Servicio Meteorológico encontró parte del techo arrancado del invernadero del centro de jardinería de Lowe's, en el lado este (NOAA Storm Events).",
+        "El viento casi siempre empieza por la orilla. El Insurance Institute for Business and Home Safety dice que el daño al techo muchas veces empieza cuando el viento se mete debajo de la orilla y la va jalando. Después de una tormenta, revise las orillas y la cumbrera, busque shingles en el patio y llámenos para una revisión gratis."
+      ]
+    },
+    {
+      "title": "Por qué en Harlingen llaman a Edel",
+      "alt": true,
+      "kind": "proof",
+      "proof": [
+        {
+          "big": "RCAT",
+          "label": "Con licencia RCAT (#03-0489), fianza y seguro"
+        },
+        {
+          "big": "4.8★",
+          "label": "Promedio de más de 250 reseñas en Google"
+        },
+        {
+          "big": "PRO",
+          "label": "CertainTeed ShingleMaster PRO, el único en el Valle del Río Grande"
+        },
+        {
+          "big": "Desde 2003",
+          "label": "Haciendo techos de casas y negocios por todo el Valle"
+        }
+      ]
+    },
+    {
+      "title": "Preguntas sobre techos en Harlingen",
+      "alt": false,
+      "kind": "faq",
+      "faqs": [
+        {
+          "q": "¿Hacen trabajos de techo en Harlingen?",
+          "a": "Sí. Tomamos reemplazos de techo, reparaciones, techos comerciales y canaletas en Harlingen. Nuestro taller está en Edinburg, como a 50 minutos, y la inspección y el estimado no cuestan nada. Llame al (956) 422-3335 para apartar una cita."
+        },
+        {
+          "q": "¿Necesito permiso para cambiar mi techo en Harlingen?",
+          "a": "Sí. La guía de permisos de la Ciudad de Harlingen pone el reemplazo de techo en la lista de trabajos que necesitan permiso de construcción, y la ciudad usa el código residencial de 2024 desde el 1 de octubre de 2025. Si se empieza sin permiso, se paga el doble. Para preguntas sobre su propiedad, llame a Permisos e Inspecciones al (956) 216-5169."
+        },
+        {
+          "q": "¿Una reparación chica necesita inspección de vientos?",
+          "a": "No siempre. El Departamento de Seguros de Texas (TDI) dice que las reparaciones de menos de 100 pies cuadrados que no tocan la madera están exentas. Un reemplazo completo o una reparación grande necesita inspección mientras se hace el trabajo si quiere que la casa siga siendo elegible para TWIA. Si no está seguro, TDI pide que primero llame a su oficina de vientos al 800-248-6032. La oficina que cubre el condado de Cameron está en Corpus Christi."
+        },
+        {
+          "q": "¿Me puede cancelar la aseguranza porque mi techo es viejo?",
+          "a": "No solo por la edad. TDI dice que en Texas las aseguranzas no pueden negarle ni cancelarle la póliza solo por la edad del techo, pero el estado del techo sí cuenta, y a un techo viejo lo pueden pasar a valor real en efectivo, que paga menos. Si le llegó una carta sobre su techo, una inspección gratis le dice en qué estado está de verdad."
+        },
+        {
+          "q": "El viento me tumbó un shingle. ¿Qué hago?",
+          "a": "Guarde el shingle si lo encuentra, y fíjese desde el suelo si faltan más cerca de las orillas y la cumbrera. Un shingle que falta es una reparación chica, pero deja la capa de abajo expuesta al sol y la lluvia. No lo deje para septiembre: es el mes más lluvioso de Harlingen, con 5.31 pulgadas en promedio (NOAA 1991 a 2020). Llámenos y vamos a revisarlo."
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Reciba una inspección de techo gratis en Harlingen",
+    "line": "Cuéntenos qué le está pasando a su techo. Vamos desde Edinburg, lo revisamos y le damos el precio por escrito.",
+    "buttons": [
+      {
+        "label": "Reciba un Estimado Gratis",
+        "href": "/es-mx/contact-us"
+      },
+      {
+        "label": "Llame al (956) 422-3335",
+        "href": "tel:+19564223335"
+      }
+    ],
+    "sub": "EDEL Roofing and Construction, Edinburg, TX, dando servicio en Harlingen y el condado de Cameron"
+  },
+  "crumbs": [
+    {
+      "label": "Áreas de Servicio",
+      "href": "/es-mx/service-areas"
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Inicio",
+              "item": "https://www.edelroofing.com/es-mx"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Áreas de Servicio",
+              "item": "https://www.edelroofing.com/es-mx/service-areas"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Contratista de Techos Harlingen TX",
+              "item": "https://www.edelroofing.com/roofing-harlingen-tx-es"
+            }
+          ]
+        },
+        {
+          "@type": "WebPage",
+          "name": "Contratista de Techos en Harlingen, TX",
+          "url": "https://www.edelroofing.com/roofing-harlingen-tx-es",
+          "description": "Reemplazo de techo, reparaciones, techado comercial y canaletas en Harlingen, TX. Calificación de 4.8 en Google. Inspección gratis: (956) 422-3335.",
+          "inLanguage": "es",
+          "about": {
+            "@id": "https://www.edelroofing.com/#roofingcontractor"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Hacen trabajos de techo en Harlingen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. Tomamos reemplazos de techo, reparaciones, techos comerciales y canaletas en Harlingen. Nuestro taller está en Edinburg, como a 50 minutos, y la inspección y el estimado no cuestan nada. Llame al (956) 422-3335 para apartar una cita."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Necesito permiso para cambiar mi techo en Harlingen?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. La guía de permisos de la Ciudad de Harlingen pone el reemplazo de techo en la lista de trabajos que necesitan permiso de construcción, y la ciudad usa el código residencial de 2024 desde el 1 de octubre de 2025. Si se empieza sin permiso, se paga el doble. Para preguntas sobre su propiedad, llame a Permisos e Inspecciones al (956) 216-5169."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Una reparación chica necesita inspección de vientos?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No siempre. El Departamento de Seguros de Texas (TDI) dice que las reparaciones de menos de 100 pies cuadrados que no tocan la madera están exentas. Un reemplazo completo o una reparación grande necesita inspección mientras se hace el trabajo si quiere que la casa siga siendo elegible para TWIA. Si no está seguro, TDI pide que primero llame a su oficina de vientos al 800-248-6032. La oficina que cubre el condado de Cameron está en Corpus Christi."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Me puede cancelar la aseguranza porque mi techo es viejo?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No solo por la edad. TDI dice que en Texas las aseguranzas no pueden negarle ni cancelarle la póliza solo por la edad del techo, pero el estado del techo sí cuenta, y a un techo viejo lo pueden pasar a valor real en efectivo, que paga menos. Si le llegó una carta sobre su techo, una inspección gratis le dice en qué estado está de verdad."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "El viento me tumbó un shingle. ¿Qué hago?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Guarde el shingle si lo encuentra, y fíjese desde el suelo si faltan más cerca de las orillas y la cumbrera. Un shingle que falta es una reparación chica, pero deja la capa de abajo expuesta al sol y la lluvia. No lo deje para septiembre: es el mes más lluvioso de Harlingen, con 5.31 pulgadas en promedio (NOAA 1991 a 2020). Llámenos y vamos a revisarlo."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "changes": [
+    "2026-11-03 new page (not on the live Duda site). Built from sourced facts only; sources in site-rebuild/cameron-county-city-pages-research.md. No Edel office or address in this city is implied (Brownsville office planned 2027, no GBP there). No prices, metal, tile, mobile homes or tarping (unconfirmed by Edel)."
+  ]
+}

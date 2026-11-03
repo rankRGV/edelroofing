@@ -1,0 +1,313 @@
+{
+  "path": "/roofing-brownsville-tx",
+  "lang": "en",
+  "city": "brownsville",
+  "service": "hub",
+  "title": "Roofing Contractor in Brownsville, TX | Edel Roofing & Construction",
+  "description": "Roofers for Brownsville, TX: roof replacement, repairs, commercial roofs and gutters, with permit and windstorm steps explained. Free inspection: (956) 422-3335.",
+  "alternates": {
+    "en": "/roofing-brownsville-tx",
+    "es": "/roofing-brownsville-tx-es"
+  },
+  "h1": "Roofing Contractor in Brownsville, TX",
+  "lede": "Edel Roofing &amp; Construction does roof replacements, repairs, commercial roofing and gutters for Brownsville. We come down from Edinburg for a free inspection and give you the price in writing.",
+  "heroCtas": [
+    {
+      "label": "Book a Free Inspection",
+      "href": "/book-an-inspection"
+    },
+    {
+      "label": "Call (956) 422-3335",
+      "href": "tel:+19564223335"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Roofing for the biggest city in the Valley",
+      "alt": false,
+      "kind": "text",
+      "paras": [
+        "Brownsville counted 186,738 people in the 2020 Census, more than McAllen or any other Valley city. That's a lot of roofs, from homes in the downtown historic district to subdivisions finished in the last few years.",
+        "Our shop is in Edinburg, about 67 miles from Brownsville City Hall, and we don't have a Brownsville office. When you call, we pick a day that works for you and drive down. We've roofed in the Valley since 2003, including a CertainTeed shingle roof on a South Padre Island home that you can see on our <a href=\"/residential-roofing\">residential roofing page</a>."
+      ]
+    },
+    {
+      "title": "What we do in Brownsville",
+      "alt": true,
+      "kind": "cards",
+      "cards": [
+        {
+          "title": "Roof Replacement",
+          "body": "Old roof off, new roof on, with CertainTeed, Owens Corning or GAF shingles. The price is in writing before we start, and the yard is cleaned when we finish.",
+          "href": "/residential-roofing"
+        },
+        {
+          "title": "Roof Repairs",
+          "body": "Missing shingles at the edges, leaks around vents and flashing, wind damage after a front blows through. We find where the water really gets in.",
+          "href": "/roof-repairs"
+        },
+        {
+          "title": "Commercial Roofing",
+          "body": "TPO, EPDM and modified bitumen for flat and low slope buildings, and leak repair on commercial roofs that are already up.",
+          "href": "/commercial-roofing"
+        },
+        {
+          "title": "Storm Damage",
+          "body": "A written report of wind or hail damage you can hand to your insurance adjuster. We aren't public adjusters, and we tell you that up front.",
+          "href": "/storm-damage"
+        },
+        {
+          "title": "Gutters",
+          "body": "Seamless gutters, repairs and gutter guards. TWIA doesn't ask for a windstorm certificate on gutter work.",
+          "href": "/gutters-edinburg-tx"
+        },
+        {
+          "title": "Free Inspection",
+          "body": "We get on the roof, note what we see and explain it in plain words. It costs nothing.",
+          "href": "/book-an-inspection"
+        }
+      ]
+    },
+    {
+      "title": "Brownsville homes: an old downtown and a lot of new",
+      "alt": false,
+      "kind": "text",
+      "paras": [
+        "Brownsville's housing is newer than many people expect. About 42% of homes were built in 2000 or later, 29% between 1980 and 1999 and about 30% before 1980, and the median home dates to 1995 (Census ACS 2020 to 2024). Roughly 68% are single family houses, and about 62% are lived in by their owners.",
+        "Building hasn't slowed down. Texas A&amp;M's real estate research center found Cameron County's median home value rose 127% from 2019 to 2025, and its economist pointed to new housing as the biggest driver (Texas Tribune, August 2026). Many of those newer homes still have their first roof. A first roof from the early 2000s is now past 20 years old, in a city that averages about 140 days a year at 90 degrees or hotter (NOAA 1991 to 2020). That's old enough to get it looked at.",
+        "The other end is downtown. The Central Brownsville Historic District, on the National Register, covers buildings from 1848 to 1969 between East Levee and East 15th Street. City code lets the heritage officer screen building permits in heritage screening areas, so a reroof there can take an extra review. Ask the city before you settle on a new color or material."
+      ]
+    },
+    {
+      "title": "Reroof permits and fees in Brownsville",
+      "alt": true,
+      "kind": "text",
+      "paras": [
+        "Roofing isn't on Brownsville's list of work that can skip a permit, so plan on one for a reroof. City Code Section 18-123 sets the residential reroof fee at $50 for up to 500 square feet, $70 for 501 to 2,000 square feet and $150 above that. Start before the permit is issued and the fee doubles.",
+        "The city builds to the 2018 International Residential Code. Permits go through the Building Inspections and Permitting office at City Plaza, 1034 E Levee St, second floor, and inspections can be requested at 956-548-6150."
+      ]
+    },
+    {
+      "title": "How a Brownsville roof job goes",
+      "alt": false,
+      "kind": "cards",
+      "cards": [
+        {
+          "title": "1. Call or book online",
+          "body": "Give us the address and tell us what you're seeing. We set a day to drive down from Edinburg."
+        },
+        {
+          "title": "2. On the roof",
+          "body": "We check the shingles, the corners and edges, the flashing and the vents, and write down what we find."
+        },
+        {
+          "title": "3. Price in writing",
+          "body": "You get a written estimate at no charge. If you say no, you don't owe us anything."
+        },
+        {
+          "title": "4. Permit and windstorm",
+          "body": "The city permit gets pulled, and if you carry TWIA, the TDI windstorm inspection gets scheduled before the old roof comes off."
+        },
+        {
+          "title": "5. Tear off and new roof",
+          "body": "Damaged decking is replaced and the new roof goes on while the inspector can still see the work underneath."
+        },
+        {
+          "title": "6. Wrap up",
+          "body": "We clean the yard, the city inspection gets closed, and TDI issues the windstorm certificate to TWIA once the work passes."
+        }
+      ]
+    },
+    {
+      "title": "Windstorm certificates in Cameron County",
+      "alt": true,
+      "kind": "text",
+      "paras": [
+        "All of Cameron County is in TWIA's catastrophe area. To buy or keep a TWIA wind policy, most homes need a certificate of compliance from the Texas Department of Insurance (TDI), and replacing a roof is on the list of work that needs one.",
+        "Timing is the part people miss. The regular certificate comes from an inspection done while the roof is going on, by a TDI inspector or an engineer TDI has appointed. If the roof is already finished, a licensed engineer can still inspect it for a completed construction certificate, but TDI says that may cost more. TDI also tells homeowners to ask their contractor how the inspection requirements will be met before work starts.",
+        "Two more things to know. Since April 1, 2026, certification follows the 2024 codes, and the design wind speed is set for each address instead of one number for the whole city. And homes built between 1988 and June 18, 2009 without a certificate may still qualify for TWIA, with a 15% surcharge on the premium."
+      ]
+    },
+    {
+      "title": "Brownsville wind and hail on record",
+      "alt": false,
+      "kind": "text",
+      "paras": [
+        "When Hurricane Dolly hit South Padre Island in July 2008, the Brownsville airport recorded a 68 mph gust. The National Hurricane Center's report says damage in Brownsville \"consisted mainly of lost roofing material.\"",
+        "In July 2020, during Hurricane Hanna, a small tornado crossed the west side of the airport, and two homes in the next neighborhood lost large sections of their roofs (NOAA Storm Events). On January 8, 2024, a winter storm with no name pushed a 74 mph gust across the airport. And on November 1, 2025, the Weather Service measured 1.25 inch hail at its own office near the airport.",
+        "FEMA's coastal building guide says wind uplift on a roof is strongest at the corners, then along the edges. Those are the spots to check first after a storm."
+      ]
+    },
+    {
+      "title": "Why Brownsville homeowners call Edel",
+      "alt": true,
+      "kind": "proof",
+      "proof": [
+        {
+          "big": "RCAT",
+          "label": "RCAT licensed (#03-0489), bonded and insured"
+        },
+        {
+          "big": "4.8★",
+          "label": "Average from 250+ Google reviews"
+        },
+        {
+          "big": "PRO",
+          "label": "CertainTeed ShingleMaster PRO, the only one in the Rio Grande Valley"
+        },
+        {
+          "big": "Since 2003",
+          "label": "Replacing and repairing roofs in the Valley"
+        }
+      ]
+    },
+    {
+      "title": "Brownsville roofing questions",
+      "alt": false,
+      "kind": "faq",
+      "faqs": [
+        {
+          "q": "Do you come to Brownsville?",
+          "a": "Yes. We drive down from our Edinburg shop for roof replacements, repairs, commercial roofs and gutters. The inspection and the written estimate are free. Call (956) 422-3335 to pick a day."
+        },
+        {
+          "q": "How much is a reroof permit in Brownsville?",
+          "a": "The city fee for a residential reroof is $50 for up to 500 square feet, $70 for 501 to 2,000 square feet and $150 over 2,000 square feet, under City Code Section 18-123. That's the permit only, not the roof. Starting work without the permit doubles the fee."
+        },
+        {
+          "q": "Do I need a windstorm inspection for a new roof in Brownsville?",
+          "a": "If you want TWIA wind coverage, yes. A roof replacement needs a TDI certificate, and the inspection should happen while the roof is being installed. Small repairs under 100 square feet that don't touch the decking are exempt. TDI's windstorm line is 800-248-6032."
+        },
+        {
+          "q": "My house was built in 2005 and never got a windstorm certificate. Can I still get TWIA?",
+          "a": "Possibly. TWIA says homes built from 1988 to June 18, 2009 without a certificate can still be eligible, with a 15% premium surcharge. Ask TWIA or your agent what applies to your policy before you replace the roof."
+        },
+        {
+          "q": "Does salt air ruin roofs in Brownsville?",
+          "a": "Less than people think for most of the city. FEMA's warning about fast metal corrosion is for homes within 3,000 feet of the ocean, and Brownsville City Hall is about 23 miles from Boca Chica Beach. For most Brownsville homes, the bigger risk is wind lifting the edges and corners."
+        },
+        {
+          "q": "When is the rainiest time of year in Brownsville?",
+          "a": "September. It averages 5.73 inches of rain at the Brownsville airport, out of about 26.8 inches for the whole year (NOAA 1991 to 2020). If your roof is already leaking, don't wait for it. Call and we'll set up a free inspection."
+        }
+      ]
+    }
+  ],
+  "cta": {
+    "title": "Get a free roof inspection in Brownsville",
+    "line": "Tell us about your roof and pick a day. We'll drive down from Edinburg, look it over and write up the price.",
+    "buttons": [
+      {
+        "label": "Book a Free Inspection",
+        "href": "/book-an-inspection"
+      },
+      {
+        "label": "Call (956) 422-3335",
+        "href": "tel:+19564223335"
+      }
+    ],
+    "sub": "EDEL Roofing and Construction, Edinburg, TX, serving Brownsville and Cameron County"
+  },
+  "crumbs": [
+    {
+      "label": "Service Areas",
+      "href": "/service-areas"
+    }
+  ],
+  "schema": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.edelroofing.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Service Areas",
+              "item": "https://www.edelroofing.com/service-areas"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Roofing Contractor Brownsville TX",
+              "item": "https://www.edelroofing.com/roofing-brownsville-tx"
+            }
+          ]
+        },
+        {
+          "@type": "WebPage",
+          "name": "Roofing Contractor in Brownsville, TX",
+          "url": "https://www.edelroofing.com/roofing-brownsville-tx",
+          "description": "Roofers for Brownsville, TX: roof replacement, repairs, commercial roofs and gutters, with permit and windstorm steps explained. Free inspection: (956) 422-3335.",
+          "inLanguage": "en",
+          "about": {
+            "@id": "https://www.edelroofing.com/#roofingcontractor"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Do you come to Brownsville?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We drive down from our Edinburg shop for roof replacements, repairs, commercial roofs and gutters. The inspection and the written estimate are free. Call (956) 422-3335 to pick a day."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How much is a reroof permit in Brownsville?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The city fee for a residential reroof is $50 for up to 500 square feet, $70 for 501 to 2,000 square feet and $150 over 2,000 square feet, under City Code Section 18-123. That's the permit only, not the roof. Starting work without the permit doubles the fee."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need a windstorm inspection for a new roof in Brownsville?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "If you want TWIA wind coverage, yes. A roof replacement needs a TDI certificate, and the inspection should happen while the roof is being installed. Small repairs under 100 square feet that don't touch the decking are exempt. TDI's windstorm line is 800-248-6032."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "My house was built in 2005 and never got a windstorm certificate. Can I still get TWIA?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Possibly. TWIA says homes built from 1988 to June 18, 2009 without a certificate can still be eligible, with a 15% premium surcharge. Ask TWIA or your agent what applies to your policy before you replace the roof."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does salt air ruin roofs in Brownsville?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Less than people think for most of the city. FEMA's warning about fast metal corrosion is for homes within 3,000 feet of the ocean, and Brownsville City Hall is about 23 miles from Boca Chica Beach. For most Brownsville homes, the bigger risk is wind lifting the edges and corners."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "When is the rainiest time of year in Brownsville?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "September. It averages 5.73 inches of rain at the Brownsville airport, out of about 26.8 inches for the whole year (NOAA 1991 to 2020). If your roof is already leaking, don't wait for it. Call and we'll set up a free inspection."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "changes": [
+    "2026-11-03 new page (not on the live Duda site). Built from sourced facts only; sources in site-rebuild/cameron-county-city-pages-research.md. No Edel office or address in this city is implied (Brownsville office planned 2027, no GBP there). No prices, metal, tile, mobile homes or tarping (unconfirmed by Edel)."
+  ]
+}
