@@ -89,7 +89,7 @@
       "proof": [
         {
           "big": "Con Licencia",
-          "label": "Techero con licencia del estado, con fianza y seguro"
+          "label": "Con licencia RCAT (#03-0489), fianza y seguro"
         },
         {
           "big": "4.8★",
@@ -116,7 +116,7 @@
         },
         {
           "q": "¿Cuánto cuesta reemplazar un techo en Mission?",
-          "a": "Un reemplazo completo de shingle en una casa típica de Mission normalmente sale entre $8,000 y $18,000. El tamaño y la inclinación del techo, lo que se quita y el shingle que escoja deciden el precio. El estimado es por escrito, gratis y antes de cualquier trabajo. Llame o pida una inspección para saber su número."
+          "a": "El tamaño y la inclinación del techo, lo que se quita y el shingle que escoja deciden el precio. El estimado es por escrito, gratis y antes de cualquier trabajo. Llame o pida una inspección para saber su número."
         },
         {
           "q": "¿Necesito cambiar todo el techo o se puede reparar?",
@@ -202,7 +202,7 @@
               "name": "¿Cuánto cuesta reemplazar un techo en Mission?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Un reemplazo completo de shingle en una casa típica de Mission normalmente sale entre $8,000 y $18,000. El tamaño y la inclinación del techo, lo que se quita y el shingle que escoja deciden el precio. El estimado es por escrito, gratis y antes de cualquier trabajo. Llame o pida una inspección para saber su número."
+                "text": "El tamaño y la inclinación del techo, lo que se quita y el shingle que escoja deciden el precio. El estimado es por escrito, gratis y antes de cualquier trabajo. Llame o pida una inspección para saber su número."
               }
             },
             {
@@ -238,6 +238,7 @@
     "em/en dashes swapped for commas, colons, or hyphens",
     "review counts (246/252) -> 250+ (match the homepage)",
     "2026-10-18 overlap pass: claim de casas 'de los años 70 y 80' cambiado por cifras del Censo ACS (solo ~15% de las casas de Mission son de antes de 1980)",
-    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy",
+    "2026-11-03 claim pass (Eddie OK): price range removed from the cost FAQ and license card now says RCAT licensed per the 10/22 decision (no price ranges on money pages until Edel confirms; Texas doesn't license roofers, so RCAT licensed). FAQPage schema resynced."
   ]
 }

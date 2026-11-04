@@ -105,7 +105,7 @@
         },
         {
           "big": "RCAT #03-0489",
-          "label": "Contratista de techos con licencia en Texas, con fianza y seguro"
+          "label": "Contratista de techos con licencia RCAT, con fianza y seguro"
         },
         {
           "big": "Desde 2003",
@@ -120,7 +120,7 @@
       "faqs": [
         {
           "q": "¿Cuánto cuesta un techo nuevo en McAllen?",
-          "a": "Para una casa típica en McAllen, un reemplazo completo de tejas generalmente cuesta de $8,000 a $18,000. El tamaño del techo, la pendiente, el material que se quita y la línea de tejas que elija cambian la cantidad. Recibe un estimado escrito antes de empezar cualquier trabajo."
+          "a": "El tamaño del techo, la pendiente, el material que se quita y la línea de tejas que elija cambian la cantidad. Recibe un estimado escrito antes de empezar cualquier trabajo."
         },
         {
           "q": "¿Cuánto tiempo toma el trabajo?",
@@ -210,7 +210,7 @@
               "name": "¿Cuánto cuesta un techo nuevo en McAllen?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Para una casa típica en McAllen, un reemplazo completo de tejas generalmente cuesta de $8,000 a $18,000. El tamaño del techo, la pendiente, el material que se quita y la línea de tejas que elija cambian la cantidad. Recibe un estimado escrito antes de empezar cualquier trabajo."
+                "text": "El tamaño del techo, la pendiente, el material que se quita y la línea de tejas que elija cambian la cantidad. Recibe un estimado escrito antes de empezar cualquier trabajo."
               }
             },
             {
@@ -263,6 +263,7 @@
     "em/en dashes swapped for commas, colons, or hyphens",
     "review counts (246/252) -> 250+ (match the homepage)",
     "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs",
-    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy",
+    "2026-11-03 claim pass (Eddie OK): price range removed from the cost FAQ and license card now says RCAT licensed per the 10/22 decision (no price ranges on money pages until Edel confirms; Texas doesn't license roofers, so RCAT licensed). FAQPage schema resynced."
   ]
 }

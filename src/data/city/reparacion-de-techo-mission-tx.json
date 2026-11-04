@@ -121,7 +121,7 @@
       "faqs": [
         {
           "q": "¿Cuál es un precio justo para una reparación de techo en Mission?",
-          "a": "La mayoría de las reparaciones cuestan entre unos cientos de dólares y alrededor de $1,500. Dónde cae la suya depende de lo que falló y de qué tan grande es el área. Por teléfono no le podemos dar un número justo. Escribimos el estimado después de ver el techo y antes de empezar."
+          "a": "El precio depende de lo que falló y de qué tan grande es el área. Por teléfono no le podemos dar un número justo. Escribimos el estimado después de ver el techo y antes de empezar."
         },
         {
           "q": "Mi techo tiene más de 20 años. ¿Mi seguro todavía lo va a cubrir?",
@@ -211,7 +211,7 @@
               "name": "¿Cuál es un precio justo para una reparación de techo en Mission?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "La mayoría de las reparaciones cuestan entre unos cientos de dólares y alrededor de $1,500. Dónde cae la suya depende de lo que falló y de qué tan grande es el área. Por teléfono no le podemos dar un número justo. Escribimos el estimado después de ver el techo y antes de empezar."
+                "text": "El precio depende de lo que falló y de qué tan grande es el área. Por teléfono no le podemos dar un número justo. Escribimos el estimado después de ver el techo y antes de empezar."
               }
             },
             {
@@ -264,6 +264,7 @@
     "em/en dashes swapped for commas, colons, or hyphens",
     "review counts (246/252) -> 250+ (match the homepage)",
     "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs",
-    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy",
+    "2026-11-03 claim pass (Eddie OK): price range removed from the cost FAQ per the 10/22 decision (no price ranges on money pages until Edel confirms; Texas doesn't license roofers, so RCAT licensed). FAQPage schema resynced."
   ]
 }

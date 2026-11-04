@@ -112,7 +112,7 @@
       "faqs": [
         {
           "q": "Should I get a roof inspection before buying a house in McAllen?",
-          "a": "Yes, especially if the house was built before 2000. A full shingle replacement on a typical McAllen home generally runs $8,000 to $18,000, and that is better to know before you close than after."
+          "a": "Yes, especially if the house was built before 2000. If the roof needs replacing, that's a big cost, and it's better to know before you close than after."
         },
         {
           "q": "Isn't the home inspector's report enough?",
@@ -192,7 +192,7 @@
               "name": "Should I get a roof inspection before buying a house in McAllen?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes, especially if the house was built before 2000. A full shingle replacement on a typical McAllen home generally runs $8,000 to $18,000, and that is better to know before you close than after."
+                "text": "Yes, especially if the house was built before 2000. If the roof needs replacing, that's a big cost, and it's better to know before you close than after."
               }
             },
             {
@@ -236,6 +236,7 @@
     "em/en dashes swapped for commas, colons, or hyphens",
     "review counts (246/252) -> 250+ (match the homepage)",
     "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs",
-    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy",
+    "2026-11-03 claim pass (Eddie OK): price range removed from the cost FAQ per the 10/22 decision (no price ranges on money pages until Edel confirms; Texas doesn't license roofers, so RCAT licensed). FAQPage schema resynced."
   ]
 }

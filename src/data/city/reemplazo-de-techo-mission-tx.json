@@ -120,7 +120,7 @@
         },
         {
           "q": "¿Cuánto cuesta un reemplazo de techo en Mission?",
-          "a": "Un reemplazo completo de tejas en una casa típica de Mission generalmente cuesta de $8,000 a $18,000. El tamaño y la pendiente del techo y la teja que elija hacen la diferencia. El estimado por escrito llega antes de cualquier trabajo."
+          "a": "El tamaño y la pendiente del techo y la teja que elija hacen la diferencia. El estimado por escrito llega antes de cualquier trabajo."
         },
         {
           "q": "¿Qué tejas instalan?",
@@ -214,7 +214,7 @@
               "name": "¿Cuánto cuesta un reemplazo de techo en Mission?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Un reemplazo completo de tejas en una casa típica de Mission generalmente cuesta de $8,000 a $18,000. El tamaño y la pendiente del techo y la teja que elija hacen la diferencia. El estimado por escrito llega antes de cualquier trabajo."
+                "text": "El tamaño y la pendiente del techo y la teja que elija hacen la diferencia. El estimado por escrito llega antes de cualquier trabajo."
               }
             },
             {
@@ -259,6 +259,7 @@
     "em/en dashes swapped for commas, colons, or hyphens",
     "review counts (246/252) -> 250+ (match the homepage)",
     "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs",
-    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy",
+    "2026-11-03 claim pass (Eddie OK): price range removed from the cost FAQ per the 10/22 decision (no price ranges on money pages until Edel confirms; Texas doesn't license roofers, so RCAT licensed). FAQPage schema resynced."
   ]
 }

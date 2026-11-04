@@ -113,7 +113,7 @@
       "proof": [
         {
           "big": "RCAT #03-0489",
-          "label": "Contratista de techos con licencia en Texas, con fianza y seguro"
+          "label": "Contratista de techos con licencia RCAT, con fianza y seguro"
         },
         {
           "big": "4.8★",
@@ -140,7 +140,7 @@
         },
         {
           "q": "¿Cuánto cuesta reparar un techo en McAllen?",
-          "a": "La mayoría de las reparaciones cuestan desde unos cientos de dólares hasta alrededor de $1,500. El precio depende de lo que falló y de qué tanto del techo está afectado. Recibe un estimado escrito después de la inspección y antes de cualquier trabajo."
+          "a": "El precio depende de lo que falló y de qué tanto del techo está afectado. Recibe un estimado escrito después de la inspección y antes de cualquier trabajo."
         },
         {
           "q": "¿Necesito permiso para una reparación de techo en McAllen?",
@@ -234,7 +234,7 @@
               "name": "¿Cuánto cuesta reparar un techo en McAllen?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "La mayoría de las reparaciones cuestan desde unos cientos de dólares hasta alrededor de $1,500. El precio depende de lo que falló y de qué tanto del techo está afectado. Recibe un estimado escrito después de la inspección y antes de cualquier trabajo."
+                "text": "El precio depende de lo que falló y de qué tanto del techo está afectado. Recibe un estimado escrito después de la inspección y antes de cualquier trabajo."
               }
             },
             {
@@ -279,6 +279,7 @@
     "em/en dashes swapped for commas, colons, or hyphens",
     "review counts (246/252) -> 250+ (match the homepage)",
     "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs",
-    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy",
+    "2026-11-03 claim pass (Eddie OK): price range removed from the cost FAQ and license card now says RCAT licensed per the 10/22 decision (no price ranges on money pages until Edel confirms; Texas doesn't license roofers, so RCAT licensed). FAQPage schema resynced."
   ]
 }

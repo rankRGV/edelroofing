@@ -125,7 +125,7 @@
         },
         {
           "q": "¿Cuánto cuesta un techo nuevo en Edinburg?",
-          "a": "Para una casa típica en Edinburg, un reemplazo completo de tejas generalmente cuesta de $8,000 a $18,000, según el tamaño, la pendiente y la teja que elija. Primero viene el estimado por escrito."
+          "a": "Depende del tamaño y la pendiente del techo y de la teja que elija, así que le damos el precio después de medir. Primero viene el estimado por escrito."
         },
         {
           "q": "¿Cuánto tiempo toma?",
@@ -219,7 +219,7 @@
               "name": "¿Cuánto cuesta un techo nuevo en Edinburg?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Para una casa típica en Edinburg, un reemplazo completo de tejas generalmente cuesta de $8,000 a $18,000, según el tamaño, la pendiente y la teja que elija. Primero viene el estimado por escrito."
+                "text": "Depende del tamaño y la pendiente del techo y de la teja que elija, así que le damos el precio después de medir. Primero viene el estimado por escrito."
               }
             },
             {
@@ -263,6 +263,7 @@
     "Spanish breadcrumb \"Áreas de Servicio\" linked the English /service-areas; now /es-mx/service-areas",
     "review counts (246/252) -> 250+ (match the homepage)",
     "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs",
-    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy",
+    "2026-11-03 claim pass (Eddie OK): price range removed from the cost FAQ per the 10/22 decision (no price ranges on money pages until Edel confirms; Texas doesn't license roofers, so RCAT licensed). FAQPage schema resynced."
   ]
 }

@@ -88,7 +88,7 @@
       "proof": [
         {
           "big": "Con Licencia",
-          "label": "Licencia del estado de Texas, con fianza y seguro"
+          "label": "Con licencia RCAT (#03-0489), fianza y seguro"
         },
         {
           "big": "4.8★",
@@ -119,7 +119,7 @@
         },
         {
           "q": "¿Cuánto cuesta un reemplazo de techo en McAllen?",
-          "a": "Para una casa típica en McAllen, un reemplazo completo de tejas normalmente está entre $8,000 y $18,000. El tamaño del techo, la inclinación, lo que tiene puesto ahora y la teja que escoja cambian el número. Le damos el estimado por escrito antes de cualquier trabajo, sin compromiso. Llame o haga su cita en línea para saber el número real de su techo."
+          "a": "El tamaño del techo, la inclinación, lo que tiene puesto ahora y la teja que escoja cambian el número. Le damos el estimado por escrito antes de cualquier trabajo, sin compromiso. Llame o haga su cita en línea para saber el número real de su techo."
         },
         {
           "q": "¿Ayudan con reclamaciones de seguro por daños de granizo o tormenta en McAllen?",
@@ -207,7 +207,7 @@
               "name": "¿Cuánto cuesta un reemplazo de techo en McAllen?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Para una casa típica en McAllen, un reemplazo completo de tejas normalmente está entre $8,000 y $18,000. El tamaño del techo, la inclinación, lo que tiene puesto ahora y la teja que escoja cambian el número. Le damos el estimado por escrito antes de cualquier trabajo, sin compromiso. Llame o haga su cita en línea para saber el número real de su techo."
+                "text": "El tamaño del techo, la inclinación, lo que tiene puesto ahora y la teja que escoja cambian el número. Le damos el estimado por escrito antes de cualquier trabajo, sin compromiso. Llame o haga su cita en línea para saber el número real de su techo."
               }
             },
             {
@@ -237,6 +237,7 @@
     "card \"Reparaciones de Techo\" now links /reparacion-de-techo-mcallen-tx (city pages had ~2 inlinks)",
     "em/en dashes swapped for commas, colons, or hyphens",
     "review counts (246/252) -> 250+ (match the homepage)",
-    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy",
+    "2026-11-03 claim pass (Eddie OK): price range removed from the cost FAQ and license card now says RCAT licensed per the 10/22 decision (no price ranges on money pages until Edel confirms; Texas doesn't license roofers, so RCAT licensed). FAQPage schema resynced."
   ]
 }

@@ -125,7 +125,7 @@
         },
         {
           "q": "How much does a new roof cost in Edinburg?",
-          "a": "For a typical Edinburg home, a full shingle replacement generally runs between $8,000 and $18,000, depending on size, pitch, and the shingle you choose. The written estimate comes first."
+          "a": "It depends on the size and pitch of the roof and the shingle you choose, so we price it after we measure. The written estimate comes first."
         },
         {
           "q": "How long does it take?",
@@ -219,7 +219,7 @@
               "name": "How much does a new roof cost in Edinburg?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "For a typical Edinburg home, a full shingle replacement generally runs between $8,000 and $18,000, depending on size, pitch, and the shingle you choose. The written estimate comes first."
+                "text": "It depends on the size and pitch of the roof and the shingle you choose, so we price it after we measure. The written estimate comes first."
               }
             },
             {
@@ -263,6 +263,7 @@
     "\"unlocks stronger warranty coverage\" -> \"gives access to stronger warranty coverage\" (banned word)",
     "review counts (246/252) -> 250+ (match the homepage)",
     "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs",
-    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy",
+    "2026-11-03 claim pass (Eddie OK): price range removed from the cost FAQ per the 10/22 decision (no price ranges on money pages until Edel confirms; Texas doesn't license roofers, so RCAT licensed). FAQPage schema resynced."
   ]
 }

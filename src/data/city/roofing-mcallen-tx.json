@@ -91,7 +91,7 @@
       "proof": [
         {
           "big": "Licensed",
-          "label": "Licensed by Texas, bonded and insured"
+          "label": "RCAT licensed (#03-0489), bonded and insured"
         },
         {
           "big": "4.8★",
@@ -122,7 +122,7 @@
         },
         {
           "q": "How much does a roof replacement cost in McAllen?",
-          "a": "For a typical McAllen home, a full shingle replacement usually runs between $8,000 and $18,000. Roof size, pitch, what's on the roof now and the shingle you pick all change the number. You get a written estimate before any work, with no obligation. Call us or book an inspection online to get the real number for your roof."
+          "a": "Roof size, pitch, what's on the roof now and the shingle you pick all change the number. You get a written estimate before any work, with no obligation. Call us or book an inspection online to get the real number for your roof."
         },
         {
           "q": "Do you handle insurance claims for storm or hail damage in McAllen?",
@@ -210,7 +210,7 @@
               "name": "How much does a roof replacement cost in McAllen?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "For a typical McAllen home, a full shingle replacement usually runs between $8,000 and $18,000. Roof size, pitch, what's on the roof now and the shingle you pick all change the number. You get a written estimate before any work, with no obligation. Call us or book an inspection online to get the real number for your roof."
+                "text": "Roof size, pitch, what's on the roof now and the shingle you pick all change the number. You get a written estimate before any work, with no obligation. Call us or book an inspection online to get the real number for your roof."
               }
             },
             {
@@ -237,6 +237,7 @@
   "changes": [
     "em/en dashes swapped for commas, colons, or hyphens",
     "review counts (246/252) -> 250+ (match the homepage)",
-    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy",
+    "2026-11-03 claim pass (Eddie OK): price range removed from the cost FAQ and license card now says RCAT licensed per the 10/22 decision (no price ranges on money pages until Edel confirms; Texas doesn't license roofers, so RCAT licensed). FAQPage schema resynced."
   ]
 }

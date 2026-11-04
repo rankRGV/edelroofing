@@ -117,7 +117,7 @@
         },
         {
           "q": "How much does roof repair cost in Edinburg?",
-          "a": "Most repairs run from a few hundred dollars to around $1,500, depending on what is wrong and how much of the roof is affected. We give a written estimate after inspecting and before any work starts, so you know the number before you commit."
+          "a": "It depends on what is wrong and how much of the roof is affected. We give a written estimate after inspecting and before any work starts, so you know the number before you commit."
         },
         {
           "q": "How fast can you get to my roof in Edinburg?",
@@ -207,7 +207,7 @@
               "name": "How much does roof repair cost in Edinburg?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Most repairs run from a few hundred dollars to around $1,500, depending on what is wrong and how much of the roof is affected. We give a written estimate after inspecting and before any work starts, so you know the number before you commit."
+                "text": "It depends on what is wrong and how much of the roof is affected. We give a written estimate after inspecting and before any work starts, so you know the number before you commit."
               }
             },
             {
@@ -241,6 +241,7 @@
   ],
   "changes": [
     "review counts (246/252) -> 250+ (match the homepage)",
-    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy",
+    "2026-11-03 claim pass (Eddie OK): price range removed from the cost FAQ per the 10/22 decision (no price ranges on money pages until Edel confirms; Texas doesn't license roofers, so RCAT licensed). FAQPage schema resynced."
   ]
 }

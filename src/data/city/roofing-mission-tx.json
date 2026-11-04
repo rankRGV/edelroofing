@@ -92,7 +92,7 @@
       "proof": [
         {
           "big": "Licensed",
-          "label": "State licensed roofer, bonded and insured"
+          "label": "RCAT licensed (#03-0489), bonded and insured"
         },
         {
           "big": "4.8★",
@@ -119,7 +119,7 @@
         },
         {
           "q": "How much does a roof replacement cost in Mission?",
-          "a": "A full shingle replacement on a typical Mission home usually costs between $8,000 and $18,000. The size and pitch of the roof, what we're tearing off and the shingle you choose decide where you land. The estimate is written, free and comes before any work. Call or book an inspection to get your number."
+          "a": "The size and pitch of the roof, what we're tearing off and the shingle you choose decide where you land. The estimate is written, free and comes before any work. Call or book an inspection to get your number."
         },
         {
           "q": "Do I need a full replacement or can my roof be repaired?",
@@ -203,7 +203,7 @@
               "name": "How much does a roof replacement cost in Mission?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A full shingle replacement on a typical Mission home usually costs between $8,000 and $18,000. The size and pitch of the roof, what we're tearing off and the shingle you choose decide where you land. The estimate is written, free and comes before any work. Call or book an inspection to get your number."
+                "text": "The size and pitch of the roof, what we're tearing off and the shingle you choose decide where you land. The estimate is written, free and comes before any work. Call or book an inspection to get your number."
               }
             },
             {
@@ -239,6 +239,7 @@
     "em/en dashes swapped for commas, colons, or hyphens",
     "review counts (246/252) -> 250+ (match the homepage)",
     "2026-10-18 overlap pass: '1970s and 80s' housing claim replaced with Census ACS figures (only ~15% of Mission homes predate 1980)",
-    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy",
+    "2026-11-03 claim pass (Eddie OK): price range removed from the cost FAQ and license card now says RCAT licensed per the 10/22 decision (no price ranges on money pages until Edel confirms; Texas doesn't license roofers, so RCAT licensed). FAQPage schema resynced."
   ]
 }

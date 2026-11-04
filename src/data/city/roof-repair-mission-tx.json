@@ -121,7 +121,7 @@
       "faqs": [
         {
           "q": "What is a fair price for a roof repair in Mission?",
-          "a": "Most repairs fall between a few hundred dollars and about $1,500. Where yours lands depends on what failed and how big the area is. We can't give you a fair number over the phone. We write the estimate after we see the roof and before we start."
+          "a": "The price depends on what failed and how big the area is. We can't give you a fair number over the phone. We write the estimate after we see the roof and before we start."
         },
         {
           "q": "My roof is over 20 years old. Will my insurance still cover it?",
@@ -211,7 +211,7 @@
               "name": "What is a fair price for a roof repair in Mission?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Most repairs fall between a few hundred dollars and about $1,500. Where yours lands depends on what failed and how big the area is. We can't give you a fair number over the phone. We write the estimate after we see the roof and before we start."
+                "text": "The price depends on what failed and how big the area is. We can't give you a fair number over the phone. We write the estimate after we see the roof and before we start."
               }
             },
             {
@@ -263,6 +263,7 @@
     "em/en dashes swapped for commas, colons, or hyphens",
     "review counts (246/252) -> 250+ (match the homepage)",
     "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs",
-    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy",
+    "2026-11-03 claim pass (Eddie OK): price range removed from the cost FAQ per the 10/22 decision (no price ranges on money pages until Edel confirms; Texas doesn't license roofers, so RCAT licensed). FAQPage schema resynced."
   ]
 }

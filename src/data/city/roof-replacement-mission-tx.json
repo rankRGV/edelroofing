@@ -120,7 +120,7 @@
         },
         {
           "q": "What does a roof replacement cost in Mission?",
-          "a": "A full shingle replacement on a typical Mission home generally runs between $8,000 and $18,000. The size and pitch of the roof and the shingle you pick make the difference. The written estimate comes before any work."
+          "a": "The size and pitch of the roof and the shingle you pick make the difference. The written estimate comes before any work."
         },
         {
           "q": "Which shingles do you install?",
@@ -214,7 +214,7 @@
               "name": "What does a roof replacement cost in Mission?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A full shingle replacement on a typical Mission home generally runs between $8,000 and $18,000. The size and pitch of the roof and the shingle you pick make the difference. The written estimate comes before any work."
+                "text": "The size and pitch of the roof and the shingle you pick make the difference. The written estimate comes before any work."
               }
             },
             {
@@ -259,6 +259,7 @@
     "em/en dashes swapped for commas, colons, or hyphens",
     "review counts (246/252) -> 250+ (match the homepage)",
     "2026-10-18 overlap pass: body copy, lede, FAQs, CTA and meta description rewritten with sourced local facts (site-rebuild/city-pages-overlap-research.md); FAQPage schema rebuilt from the new FAQs",
-    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy"
+    "2026-10-20 copy pass: plain, warm rewrite; hype and AI tells removed, no dashes in copy, \"since 2003\" wording, meta description trimmed to 155 chars; FAQPage schema and WebPage description resynced to the new copy",
+    "2026-11-03 claim pass (Eddie OK): price range removed from the cost FAQ per the 10/22 decision (no price ranges on money pages until Edel confirms; Texas doesn't license roofers, so RCAT licensed). FAQPage schema resynced."
   ]
 }
