@@ -1,10 +1,11 @@
 ---
 title: "Reparación de Techo en Edinburg y el Valle"
 seoTitle: "Reparación de Techo en Edinburg y el Valle"
-description: "Reparación de techo en Edinburg y el Valle: cómo saber si necesita reparación o reemplazo, cuánto cuesta y qué pasa cuando vamos a revisar."
+description: "Reparación de techo en Edinburg y el Valle: cómo saber si necesita reparación o reemplazo, qué cambia el costo y qué pasa cuando vamos a revisar."
 lang: es
 pubDate: 2026-07-09
 modDate: 2026-07-09
+updatedDate: 2026-11-03
 author: "Eddie Elizondo"
 image: ../../assets/blog/edinburgroofrepair.webp
 schemaHeadline: "Reparación de Techo en Edinburg y el Valle"
@@ -12,11 +13,12 @@ twin: roof-repair-edinburg-rgv-guide
 changes:
   - "em/en dashes swapped for commas, colons, or hyphens"
   - "2026-10-20 copy pass: voz más sencilla y cálida con usted; sin guiones en el texto; espacio faltante después de las etiquetas de costo corregido; no se cambiaron datos, costos, enlaces ni fechas"
+  - "2026-11-03: se quitaron los rangos de precio (Edel no los ha confirmado; decision del 10/22). Las secciones de costo ahora explican que cambia el precio. Se agrego updatedDate."
 ---
 
 ## Cómo saber si su techo necesita reparación, cuánto cuesta y qué esperar
 
-La mayoría de los problemas de techo en Edinburg y el resto del Valle del Río Grande empiezan pequeños. Una teja que se levanta después de una tormenta. Una gotera lenta que solo aparece cuando llueve. Granulado en la canaleta. La pregunta es si basta con una reparación o si el techo necesita un reemplazo completo. Esta guía explica cómo saber la diferencia, cuánto cuesta reparar un techo en el Valle y qué pasa cuando llega el techador.
+La mayoría de los problemas de techo en Edinburg y el resto del Valle del Río Grande empiezan pequeños. Una teja que se levanta después de una tormenta. Una gotera lenta que solo aparece cuando llueve. Granulado en la canaleta. La pregunta es si basta con una reparación o si el techo necesita un reemplazo completo. Esta guía explica cómo saber la diferencia, qué cambia el costo de una reparación en el Valle y qué pasa cuando llega el techador.
 
 ## Señales de que su techo necesita reparación
 
@@ -38,15 +40,15 @@ La verdad es que no se puede saber con certeza hasta que alguien camine el techo
 
 ## ¿Cuánto cuesta reparar un techo en el Valle del Río Grande?
 
-El costo depende de lo que falló. Estos son rangos aproximados para los trabajos más comunes en el área de Edinburg y McAllen:
+El costo depende de lo que falló y de lo que encontramos al subir. No ponemos precios aquí, porque el mismo trabajo puede costar muy distinto en dos casas. Estos son los trabajos más comunes en el área de Edinburg y McAllen y lo que cambia el precio de cada uno:
 
-- **Reparación de tejas (sección pequeña):** $250 a $600 para reparar o reemplazar unas pocas tejas dañadas o que faltan.
-- **Reparación o reemplazo de tapajuntas:** $200 a $500, según cuántas penetraciones hay y si el sello de abajo necesita trabajo.
-- **Diagnóstico y sellado de gotera:** $300 a $700. Incluye encontrar por dónde entra el agua de verdad, más allá del daño que se ve, y sellarlo.
-- **Reemplazo de cumbrera:** $500 a $1,200 para una casa de un piso. La cumbrera recibe más viento que el resto del techo y muchas veces es la primera parte que falla.
-- **Reparación de sección grande (daño severo por tormenta):** $1,000 a $3,500, según el área y el material.
+- **Reparación de tejas (sección pequeña):** cuántas tejas están dañadas o faltan.
+- **Reparación o reemplazo de tapajuntas:** cuántas penetraciones hay y si el sello de abajo necesita trabajo.
+- **Diagnóstico y sellado de gotera:** cuánto tarda encontrar por dónde entra el agua de verdad, más allá del daño que se ve, y sellarlo.
+- **Reemplazo de cumbrera:** qué tan larga es la cumbrera. La cumbrera recibe más viento que el resto del techo y muchas veces es la primera parte que falla.
+- **Reparación de sección grande (daño severo por tormenta):** el tamaño del área, el material y si hay que cambiar la madera de abajo.
 
-Estos son estimados, no cotizaciones. Para tener un número real, alguien tiene que inspeccionar su techo. Damos estimados por escrito antes de empezar cualquier trabajo.
+Para tener un número real, alguien tiene que inspeccionar su techo. Damos estimados por escrito antes de empezar cualquier trabajo.
 
 ## ¿El seguro de la casa cubre las reparaciones de techo?
 

@@ -5,6 +5,7 @@ description: "What a fair roof repair price looks like in Mission, TX, how the 2
 lang: en
 pubDate: 2026-08-17
 modDate: 2026-08-17
+updatedDate: 2026-11-03
 author: "Eddie Elizondo"
 image: ../../assets/blog/missioninsurancezreplacement.webp
 schemaHeadline: "Roof Repair Cost in Mission, TX | EDEL Roofing & Construction"
@@ -12,6 +13,7 @@ twin: costo-de-reparacion-de-techo-en-mission-tx-que-es-justo-y-que-cubre-el-seg
 changes:
   - "em/en dashes swapped for commas, colons, or hyphens"
   - "2026-10-20 copy pass: plain, warm voice edit; dashes and hyphens removed from copy; no facts, costs, links or dates changed"
+  - "2026-11-03: price ranges removed (Edel hasn't confirmed prices; 10/22 claim decision). The cost sections now explain what changes the price. updatedDate added."
 ---
 
 ### What a fair price looks like, what the 25% rule means, and whether insurance will pay
@@ -20,13 +22,13 @@ When a Mission homeowner calls us about a roof repair, the same two questions co
 
 ## What is a fair price for a roof repair in Mission?
 
-Most repairs cost a few hundred dollars up to about $1,500, depending on what's wrong and how much of the roof is affected. Fixing one piece of flashing or a small patch of shingles is at the low end. A repair that covers a wider area, or one where we find soft decking once we're up there, costs more.
+There isn't one fair number for every roof. The price depends on what's wrong and how much of the roof is affected. Fixing one piece of flashing or a small patch of shingles costs less. A repair that covers a wider area, or one where we find soft decking once we're up there, costs more.
 
 A fair price comes with a written estimate after someone has actually looked at your roof. A number quoted over the phone, before anyone has been up there, isn't one. We walk the roof first, tell you what we find, and give you the estimate in writing before any work starts.
 
 ## What's the average cost to repair a roof in Texas?
 
-Across the state, small repairs like flashing, a section of shingles or a vent boot usually cost between $300 and $1,500. Bigger repairs that involve the decking or a larger damaged area cost more than that. Mission has something a lot of the state doesn't deal with as much: steady heat and UV exposure age shingles faster here than almost anywhere else in the country. A repair that looks minor from the ground can be sitting on material that's already brittle underneath. That's part of why we inspect before we quote instead of pricing off a description.
+A statewide average won't tell you much about your roof. Small repairs like flashing, a section of shingles or a vent boot cost less, and repairs that involve the decking or a larger damaged area cost more. Mission has something a lot of the state doesn't deal with as much: steady heat and UV exposure age shingles faster here than almost anywhere else in the country. A repair that looks minor from the ground can be sitting on material that's already brittle underneath. That's part of why we inspect before we quote instead of pricing off a description.
 
 ## What is the 25% rule for roofing?
 

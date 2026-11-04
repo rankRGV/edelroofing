@@ -1,10 +1,11 @@
 ---
 title: "Roof Repair in Edinburg & the RGV"
 seoTitle: "Roof Repair in Edinburg, TX | Repair vs Replace | EDEL Roofing"
-description: "Roof repair in Edinburg and the RGV: how to tell a repair from a replacement, what common repairs cost, and what happens when we come out."
+description: "Roof repair in Edinburg and the RGV: how to tell a repair from a replacement, what changes the cost, and what happens when we come out."
 lang: en
 pubDate: 2026-07-06
 modDate: 2026-07-06
+updatedDate: 2026-11-03
 author: "Eddie Elizondo"
 image: ../../assets/blog/edinburgroofdamage.webp
 schemaHeadline: "Roof Repair in Edinburg, TX | Repair vs Replace | EDEL Roofing"
@@ -12,11 +13,12 @@ twin: reparacion-de-techo-en-edinburg-y-el-valle
 changes:
   - "em/en dashes swapped for commas, colons, or hyphens"
   - "2026-10-20 copy pass: plain, warm voice edit; dashes and hyphens removed from copy; missing space after the bold cost labels fixed; no facts, costs, links or dates changed"
+  - "2026-11-03: price ranges removed (Edel hasn't confirmed prices; 10/22 claim decision). The cost sections now explain what changes the price. updatedDate added."
 ---
 
 ## How to tell if your roof needs a repair, what it costs, and what to expect
 
-Most roof problems in Edinburg and the rest of the Rio Grande Valley start small. A shingle lifts after a storm. A slow drip shows up only when it rains. You find a patch of granules in the gutter. The question is whether a repair will do or whether the roof needs to be replaced. This guide covers how to tell the difference, what roof repair costs in the RGV, and what happens when a roofer comes out.
+Most roof problems in Edinburg and the rest of the Rio Grande Valley start small. A shingle lifts after a storm. A slow drip shows up only when it rains. You find a patch of granules in the gutter. The question is whether a repair will do or whether the roof needs to be replaced. This guide covers how to tell the difference, what changes the cost of a repair in the RGV, and what happens when a roofer comes out.
 
 ## Signs your roof needs a repair
 
@@ -38,15 +40,15 @@ Honestly, you can't know for sure until someone walks the roof and checks the de
 
 ## How much does roof repair cost in the Rio Grande Valley?
 
-The cost depends on what failed. These are rough ranges for the most common jobs around Edinburg and McAllen:
+The cost depends on what failed and what we find once we're up there. We don't list prices here, because the same job can cost very different amounts on two houses. These are the most common repairs around Edinburg and McAllen and what moves the price on each:
 
-- **Shingle repair (small section):** $250 to $600 to patch a few damaged or missing shingles.
-- **Flashing repair or replacement:** $200 to $500, depending on how many penetrations are involved and whether the seal underneath needs work.
-- **Leak diagnosis and patch:** $300 to $700. That covers finding where the water actually gets in, beyond the damage you can see, and sealing it.
-- **Ridge cap replacement:** $500 to $1,200 for a one story home. Ridge caps take the most wind and are often the first part of the roof to fail.
-- **Larger section repair (significant storm damage):** $1,000 to $3,500, depending on the area and the material.
+- **Shingle repair (small section):** how many shingles are damaged or missing.
+- **Flashing repair or replacement:** how many penetrations are involved and whether the seal underneath needs work.
+- **Leak diagnosis and patch:** how long it takes to find where the water actually gets in, beyond the damage you can see, and seal it.
+- **Ridge cap replacement:** how long the ridge is. Ridge caps take the most wind and are often the first part of the roof to fail.
+- **Larger section repair (significant storm damage):** the size of the area, the material, and whether the decking underneath has to be replaced.
 
-These are estimates, not quotes. To get a real number, someone has to inspect your roof. We give written estimates before any work begins.
+To get a real number, someone has to inspect your roof. We give written estimates before any work begins.
 
 ## Does homeowner's insurance cover roof repairs?
 
