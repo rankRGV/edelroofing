@@ -4,7 +4,7 @@
   "city": "mcallen",
   "service": "storm",
   "title": "Storm & Hail Damage Roof Repair in McAllen, TX | Edel Roofing & Construction",
-  "description": "Hail and wind damage roof inspection and repair in McAllen, TX. Written report with photos for your insurance claim. Free inspection: (956) 422-3335.",
+  "description": "Hail and wind damage roof inspection and repair in McAllen, TX. Most inspections include photos and a written explanation for your claim. Free inspection: (956) 422-3335.",
   "alternates": null,
   "crumbs": [
     {
@@ -61,7 +61,7 @@
           "body": "On commercial roofs, wind lifted membrane at the edges and punctures from hail."
         },
         {
-          "title": "Photos and a written report",
+          "title": "Photos and a written explanation",
           "body": "Everything we find, documented for your insurance company."
         }
       ]
@@ -117,7 +117,7 @@
         },
         {
           "q": "Can you meet my insurance adjuster?",
-          "a": "We can share our written report and photos with you to give to your adjuster. The claim itself is between you and your insurance company."
+          "a": "Most of our inspections come with photos and a written explanation, and you can give those to your adjuster. The claim itself is between you and your insurance company."
         },
         {
           "q": "How do I get a storm damage inspection in McAllen?",
@@ -128,7 +128,7 @@
   ],
   "cta": {
     "title": "Get a free storm damage inspection in McAllen",
-    "line": "We check every slope, photograph what we find, and give you a written report for your insurer.",
+    "line": "We check every slope, and most inspections come with photos and a written explanation for your insurer.",
     "buttons": [
       {
         "label": "Book a Free Inspection",
@@ -172,7 +172,7 @@
           "@type": "WebPage",
           "name": "Storm & Hail Damage Roof Repair in McAllen, TX",
           "url": "https://www.edelroofing.com/storm-damage-mcallen-tx",
-          "description": "Hail and wind damage roof inspection and repair in McAllen, TX. Written report with photos for your insurance claim. Free inspection: (956) 422-3335.",
+          "description": "Hail and wind damage roof inspection and repair in McAllen, TX. Most inspections include photos and a written explanation for your claim. Free inspection: (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }
@@ -209,7 +209,7 @@
               "name": "Can you meet my insurance adjuster?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "We can share our written report and photos with you to give to your adjuster. The claim itself is between you and your insurance company."
+                "text": "Most of our inspections come with photos and a written explanation, and you can give those to your adjuster. The claim itself is between you and your insurance company."
               }
             },
             {

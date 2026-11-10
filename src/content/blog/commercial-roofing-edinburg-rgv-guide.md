@@ -93,7 +93,7 @@ Right now TPO is the most common choice for new commercial roofs because it's re
 Often, yes. If the damage is isolated and the rest of the roof is sound, a repair or recoat can extend the roof's life for much less than a full replacement.
 
 **Do you help with insurance claims for storm or hail damage?**
-We inspect the roof and give you a written report of what we find, which you can use as documentation for a claim. We're not a public adjuster, but we can walk you through what we saw.
+We inspect the roof, and most of our inspections come with photos and a written explanation of what we find, which you can use as documentation for a claim. We're not a public adjuster, but we can walk you through what we saw.
 
 **How do I get a commercial roofing estimate?**
 Call (956) 422-3335 or book online. We'll set up a time to walk the roof and give you a free written estimate.

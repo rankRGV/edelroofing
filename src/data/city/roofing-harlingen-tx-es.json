@@ -57,6 +57,11 @@
           "href": "/es-mx/storm-damage"
         },
         {
+          "title": "Techos de Casas Móviles",
+          "body": "Cerca del 9% de las casas de Harlingen son casas móviles (Censo ACS). También reparamos y cambiamos techos de casas móviles, y los registros de viento de aquí muestran que reciben mucho del daño cuando pasa una tormenta.",
+          "href": "/es-mx/roof-repairs"
+        },
+        {
           "title": "Canaletas",
           "body": "Canaletas sin costuras y reparación de canaletas, para que la lluvia de septiembre (el mes más lluvioso de Harlingen) se aleje de la casa y no baje por las paredes.",
           "href": "/gutters-edinburg-tx-es"
@@ -93,11 +98,11 @@
         },
         {
           "title": "3. Permiso de la ciudad",
-          "body": "Harlingen pide permiso para reemplazar un techo. La oficina de Permisos e Inspecciones está en 502 E Tyler Ave, (956) 216-5169."
+          "body": "Harlingen pide permiso para reemplazar un techo. Edel está registrado con la ciudad y saca el permiso. La oficina de Permisos e Inspecciones está en 502 E Tyler Ave, (956) 216-5169."
         },
         {
           "title": "4. Inspección de vientos",
-          "body": "Si quiere cobertura de TWIA, programe la inspección estatal de vientos antes de quitar el techo. La ciudad dice que esperar hasta terminar puede hacer el certificado más difícil y más caro."
+          "body": "Si quiere cobertura de TWIA, la inspección estatal de vientos se tiene que programar antes de quitar el techo. Nosotros programamos la inspección de vientos. Por lo general contratamos a un ingeniero de vientos certificado e independiente, porque los inspectores de TDI solo vienen a la zona un par de veces al mes. Si el inspector tiene que ver la madera o la base impermeable, no queremos dejar su techo abierto mientras esperamos, con lluvia en camino."
         },
         {
           "title": "5. Quitar el techo y la madera",
@@ -154,7 +159,11 @@
         },
         {
           "q": "¿Necesito permiso para cambiar mi techo en Harlingen?",
-          "a": "Sí. La guía de permisos de la Ciudad de Harlingen pone el reemplazo de techo en la lista de trabajos que necesitan permiso de construcción, y la ciudad usa el código residencial de 2024 desde el 1 de octubre de 2025. Si se empieza sin permiso, se paga el doble. Para preguntas sobre su propiedad, llame a Permisos e Inspecciones al (956) 216-5169."
+          "a": "Sí. La guía de permisos de la Ciudad de Harlingen pone el reemplazo de techo en la lista de trabajos que necesitan permiso de construcción, y la ciudad usa el código residencial de 2024 desde el 1 de octubre de 2025. Si se empieza sin permiso, se paga el doble. Para preguntas sobre su propiedad, llame a Permisos e Inspecciones al (956) 216-5169. Edel está registrado con la ciudad y saca el permiso de su trabajo."
+        },
+        {
+          "q": "¿Quién se encarga de la inspección de vientos de mi techo?",
+          "a": "Nosotros. Por lo general contratamos a un ingeniero de vientos certificado e independiente, porque los inspectores de TDI solo vienen a la zona un par de veces al mes. Si el inspector tiene que ver la madera o la base impermeable, no queremos dejar su techo abierto mientras esperamos, con lluvia en camino."
         },
         {
           "q": "¿Una reparación chica necesita inspección de vientos?",
@@ -245,7 +254,15 @@
               "name": "¿Necesito permiso para cambiar mi techo en Harlingen?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Sí. La guía de permisos de la Ciudad de Harlingen pone el reemplazo de techo en la lista de trabajos que necesitan permiso de construcción, y la ciudad usa el código residencial de 2024 desde el 1 de octubre de 2025. Si se empieza sin permiso, se paga el doble. Para preguntas sobre su propiedad, llame a Permisos e Inspecciones al (956) 216-5169."
+                "text": "Sí. La guía de permisos de la Ciudad de Harlingen pone el reemplazo de techo en la lista de trabajos que necesitan permiso de construcción, y la ciudad usa el código residencial de 2024 desde el 1 de octubre de 2025. Si se empieza sin permiso, se paga el doble. Para preguntas sobre su propiedad, llame a Permisos e Inspecciones al (956) 216-5169. Edel está registrado con la ciudad y saca el permiso de su trabajo."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Quién se encarga de la inspección de vientos de mi techo?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nosotros. Por lo general contratamos a un ingeniero de vientos certificado e independiente, porque los inspectores de TDI solo vienen a la zona un par de veces al mes. Si el inspector tiene que ver la madera o la base impermeable, no queremos dejar su techo abierto mientras esperamos, con lluvia en camino."
               }
             },
             {
@@ -278,6 +295,7 @@
     }
   ],
   "changes": [
-    "2026-11-03 new page (not on the live Duda site). Built from sourced facts only; sources in site-rebuild/cameron-county-city-pages-research.md. No Edel office or address in this city is implied (Brownsville office planned 2027, no GBP there). No prices, metal, tile, mobile homes or tarping (unconfirmed by Edel)."
+    "2026-11-03 new page (not on the live Duda site). Built from sourced facts only; sources in site-rebuild/cameron-county-city-pages-research.md. No Edel office or address in this city is implied (Brownsville office planned 2027, no GBP there). No prices, metal, tile, mobile homes or tarping (unconfirmed by Edel).",
+    "2026-11-09 Edel's email answers added: Edel sets up the windstorm inspection and usually hires a third party certified windstorm engineer (TDI's inspectors only come to the area a couple times a month, and Edel won't leave decking open waiting), Edel is registered and pulls permits in all RGV cities, mobile home roofs yes. Still no prices on this page; still no Cameron County job named beyond South Padre."
   ]
 }

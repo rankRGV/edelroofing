@@ -203,7 +203,7 @@ export const homeEn: HomeCopy = {
       },
       {
         q: 'Can you help document storm damage?',
-        a: 'We can inspect your roof and provide photos, estimates, and information about recommended construction work. Your insurance company determines coverage under your policy.',
+        a: 'We can inspect your roof and provide photos, estimates, and information about the work we recommend. Your insurance company determines coverage under your policy.',
       },
       {
         q: 'What roofing brands do you install?',
@@ -219,7 +219,7 @@ export const homeEn: HomeCopy = {
   },
   cta: {
     title: "Let's talk about your roof",
-    body: 'Whether you are dealing with a leak, planning a replacement, or starting a construction project, EDEL is ready to help you understand your options and move forward with confidence.',
+    body: 'Whether you are dealing with a leak or planning a replacement, EDEL is ready to help you understand your options and move forward with confidence.',
     schedule: { label: 'Schedule a Free Inspection', href: '/book-an-inspection' },
     call: 'Call',
     note: 'Se habla español',
@@ -378,7 +378,7 @@ export const homeEs: HomeCopy = {
       },
       {
         q: '¿Me pueden ayudar a documentar el daño por tormenta?',
-        a: 'Podemos inspeccionar su techo y darle fotos, estimados e información sobre el trabajo de construcción que recomendamos. Su compañía de seguros decide qué cubre su póliza.',
+        a: 'Podemos inspeccionar su techo y darle fotos, estimados e información sobre el trabajo que recomendamos. Su compañía de seguros decide qué cubre su póliza.',
       },
       {
         q: '¿Qué marcas de techo instalan?',
@@ -397,7 +397,7 @@ export const homeEs: HomeCopy = {
   },
   cta: {
     title: 'Hablemos de su techo',
-    body: 'Ya sea que tenga una gotera, esté planeando un reemplazo o vaya a empezar un proyecto de construcción, en EDEL le ayudamos a entender sus opciones y a avanzar con confianza.',
+    body: 'Ya sea que tenga una gotera o esté planeando un reemplazo, en EDEL le ayudamos a entender sus opciones y a avanzar con confianza.',
     schedule: { label: 'Agende una Inspección Gratis', href: '/es-mx/contact-us' },
     call: 'Llamar',
     note: 'Atendemos en español',

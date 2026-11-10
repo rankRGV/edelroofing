@@ -93,7 +93,7 @@ Hoy TPO es la opción más común para techos comerciales nuevos porque es refle
 Muchas veces sí. Si el daño está aislado y el resto del techo está en buen estado, una reparación o un recubrimiento puede alargar la vida del techo por mucho menos que un reemplazo completo.
 
 **¿Ayudan con reclamos de seguro por daños de tormenta o granizo?**
-Inspeccionamos el techo y le damos un reporte por escrito de lo que encontramos, que le sirve como documentación para un reclamo. No somos ajustadores públicos, pero le podemos explicar lo que vimos.
+Inspeccionamos el techo, y la mayoría de nuestras inspecciones incluyen fotos y una explicación por escrito de lo que encontramos, que le sirve como documentación para un reclamo. No somos ajustadores públicos, pero le podemos explicar lo que vimos.
 
 **¿Cómo obtengo un estimado de techado comercial?**
 Llame al (956) 422-3335 o pida una cita en línea. Vamos a caminar el techo y le damos un estimado gratis por escrito.

@@ -4,7 +4,7 @@
   "city": "mcallen",
   "service": "inspections",
   "title": "Roof Inspections in McAllen, TX | Edel Roofing & Construction",
-  "description": "Free roof inspections in McAllen, TX for home buyers, sellers, and owners with an aging roof. Written report the same visit. Call (956) 422-3335.",
+  "description": "Free roof inspections in McAllen, TX for home buyers, sellers, and owners with an aging roof. Most come with photos and a written explanation. Call (956) 422-3335.",
   "alternates": null,
   "crumbs": [
     {
@@ -13,7 +13,7 @@
     }
   ],
   "h1": "Roof Inspections in McAllen, TX",
-  "lede": "Edel Roofing &amp; Construction inspects roofs for McAllen homeowners, buyers, sellers, and property managers. The inspection is free, and you get a written report the same visit.",
+  "lede": "Edel Roofing &amp; Construction inspects roofs for McAllen homeowners, buyers, sellers, and property managers. The inspection is free, and most come with photos and a written explanation of what we found.",
   "heroCtas": [
     {
       "label": "Book a Free Inspection",
@@ -135,7 +135,7 @@
   ],
   "cta": {
     "title": "Book a free roof inspection in McAllen",
-    "line": "We check the roof up close and give you a written report with photos the same visit. No obligation.",
+    "line": "We check the roof up close, and most inspections come with photos and a written explanation. No obligation.",
     "buttons": [
       {
         "label": "Book a Free Inspection",
@@ -179,7 +179,7 @@
           "@type": "WebPage",
           "name": "Roof Inspections in McAllen, TX",
           "url": "https://www.edelroofing.com/roof-inspections-mcallen-tx",
-          "description": "Free roof inspections in McAllen, TX for home buyers, sellers, and owners with an aging roof. Written report the same visit. Call (956) 422-3335.",
+          "description": "Free roof inspections in McAllen, TX for home buyers, sellers, and owners with an aging roof. Most come with photos and a written explanation. Call (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }

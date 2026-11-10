@@ -5,7 +5,7 @@ description: "Qué es un precio justo por una reparación de techo en Mission, T
 lang: es
 pubDate: 2026-08-27
 modDate: 2026-08-27
-updatedDate: 2026-11-03
+updatedDate: 2026-11-09
 author: "Eddie Elizondo"
 image: ../../assets/blog/reparaciontecho.webp
 schemaHeadline: "Costo de Reparación de Techo en Mission, TX | EDEL Roofing & Construction"
@@ -14,6 +14,7 @@ changes:
   - "em/en dashes swapped for commas, colons, or hyphens"
   - "2026-10-20 copy pass: voz más sencilla y cálida con usted; sin guiones en el texto; no se cambiaron datos, costos, enlaces ni fechas"
   - "2026-11-03: se quitaron los rangos de precio (Edel no los ha confirmado; decision del 10/22). Las secciones de costo ahora explican que cambia el precio. Se agrego updatedDate."
+  - "2026-11-09: respuestas de Edel por correo: las reparaciones empiezan en $450; los rangos salen del estimado al instante del sitio, no por telefono. Se cambio la pregunta del telefono y la seccion de precio justo; updatedDate actualizado."
 ---
 
 ### Qué es un precio justo, qué significa la regla del 25% y si el seguro va a pagar
@@ -22,7 +23,7 @@ Cuando un dueño de casa en Mission nos llama por una reparación de techo, casi
 
 ## ¿Cuál es un precio justo por una reparación de techo en Mission?
 
-No hay un solo número justo para todos los techos. El precio depende del problema y de qué tanto del techo está afectado. Arreglar un tapajuntas o una sección pequeña de tejas cuesta menos. Una reparación que cubre un área más grande, o donde encontramos la duela blanda una vez que subimos, cuesta más.
+No hay un solo número justo para todos los techos. El precio depende del problema y de qué tanto del techo está afectado. Arreglar un tapajuntas o una sección pequeña de tejas cuesta menos. Una reparación que cubre un área más grande, o donde encontramos la duela blanda una vez que subimos, cuesta más. Nuestras reparaciones de techo empiezan en $450.
 
 Un precio justo viene con un estimado por escrito después de que alguien revisó el techo en persona. Un número que le dan por teléfono, antes de que nadie haya visto el techo, no lo es. Primero caminamos el techo, le decimos lo que encontramos y le damos el estimado por escrito antes de empezar cualquier trabajo.
 
@@ -50,7 +51,7 @@ Esa diferencia importa en Mission. Las casas más antiguas cerca de Conway Avenu
 
 ## Preguntas frecuentes sobre el costo de reparación de techo en Mission
 
-<details><summary><strong>¿Me pueden dar un precio de reparación por teléfono?</strong></summary><p>Un precio real, no. Le podemos dar un rango aproximado según lo que nos describa, pero el estimado de verdad viene después de revisar el techo en persona. Hay reparaciones que suenan pequeñas y resultan más grandes cuando vemos la duela, y también pasa al revés.</p></details>
+<details><summary><strong>¿Me pueden dar un precio de reparación por teléfono?</strong></summary><p>No. Para un rango, use el <a href="/es-mx/contact-us#contacto">estimado al instante</a> de nuestro sitio. El estimado de verdad viene después de revisar el techo en persona. Hay reparaciones que suenan pequeñas y resultan más grandes cuando vemos la duela, y también pasa al revés.</p></details>
 
 <details><summary><strong>¿Una reparación alguna vez se convierte en un reemplazo?</strong></summary><p>A veces, si el área dañada pasa ese 25% o si el techo ya está tan viejo que una reparación solo le daría una temporada más. Le decimos en qué situación está antes de hacer cualquier cosa. Una llamada de reparación no es excusa para venderle un reemplazo que no necesita.</p></details>
 

@@ -79,7 +79,7 @@
         },
         {
           "title": "Inspecciones",
-          "body": "Inspecciones de rutina y después de tormentas, con un informe escrito y fotos para dueños y administradores."
+          "body": "Inspecciones de rutina y después de tormentas, y la mayoría incluyen fotos y una explicación por escrito para dueños y administradores."
         }
       ]
     },
@@ -138,7 +138,7 @@
         },
         {
           "q": "¿Inspeccionan techos comerciales después de una tormenta?",
-          "a": "Sí. Después de vientos fuertes o granizo caminamos el techo, revisamos los bordes, las costuras, los tapajuntas y los equipos del techo, y le damos un informe escrito con fotos para su aseguradora. No somos ajustadores públicos, así que el reclamo es entre usted y su compañía de seguros."
+          "a": "Sí. Después de vientos fuertes o granizo caminamos el techo, revisamos los bordes, las costuras, los tapajuntas y los equipos del techo, y casi siempre le damos fotos y una explicación por escrito para su aseguradora. No somos ajustadores públicos, así que el reclamo es entre usted y su compañía de seguros."
         },
         {
           "q": "¿Pueden trabajar según el horario de nuestros inquilinos?",
@@ -248,7 +248,7 @@
               "name": "¿Inspeccionan techos comerciales después de una tormenta?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Sí. Después de vientos fuertes o granizo caminamos el techo, revisamos los bordes, las costuras, los tapajuntas y los equipos del techo, y le damos un informe escrito con fotos para su aseguradora. No somos ajustadores públicos, así que el reclamo es entre usted y su compañía de seguros."
+                "text": "Sí. Después de vientos fuertes o granizo caminamos el techo, revisamos los bordes, las costuras, los tapajuntas y los equipos del techo, y casi siempre le damos fotos y una explicación por escrito para su aseguradora. No somos ajustadores públicos, así que el reclamo es entre usted y su compañía de seguros."
               }
             },
             {

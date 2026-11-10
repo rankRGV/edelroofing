@@ -57,6 +57,11 @@
           "href": "/storm-damage"
         },
         {
+          "title": "Mobile Home Roofs",
+          "body": "About 9% of Harlingen homes are mobile homes (Census ACS). We repair and replace mobile home roofs too, and wind records here show they take a lot of the damage when a storm comes through.",
+          "href": "/roof-repairs"
+        },
+        {
           "title": "Gutters",
           "body": "Seamless gutters and gutter repair, so September rain (Harlingen's wettest month) runs away from the house instead of down the walls.",
           "href": "/gutters-edinburg-tx"
@@ -93,11 +98,11 @@
         },
         {
           "title": "3. City permit",
-          "body": "Harlingen requires a permit for a roof replacement. Building Permits and Inspections is at 502 E Tyler Ave, (956) 216-5169."
+          "body": "Harlingen requires a permit for a roof replacement. Edel is registered with the city and pulls the permit. Building Permits and Inspections is at 502 E Tyler Ave, (956) 216-5169."
         },
         {
           "title": "4. Windstorm inspection",
-          "body": "If you want TWIA coverage, set up the state windstorm inspection before tear off. The city says waiting until the job is done can make certification harder and more costly."
+          "body": "If you want TWIA coverage, the state windstorm inspection has to be set up before tear off. We set up the windstorm inspection for you. We usually hire a third party certified windstorm engineer, because TDI's own inspectors only come to our area a couple of times a month. If the inspector has to see the decking or underlayment, we don't want your roof sitting open while we wait, with rain on the way."
         },
         {
           "title": "5. Tear off and decking",
@@ -154,7 +159,11 @@
         },
         {
           "q": "Do I need a permit to replace my roof in Harlingen?",
-          "a": "Yes. The City of Harlingen's permit guide lists roof replacements as work that needs a building permit, and the city has used the 2024 residential code since October 1, 2025. Work started without a permit pays double the normal fee. For questions about your property, call Building Permits and Inspections at (956) 216-5169."
+          "a": "Yes. The City of Harlingen's permit guide lists roof replacements as work that needs a building permit, and the city has used the 2024 residential code since October 1, 2025. Work started without a permit pays double the normal fee. For questions about your property, call Building Permits and Inspections at (956) 216-5169. Edel is registered with the city and pulls the permit for your job."
+        },
+        {
+          "q": "Who handles the windstorm inspection on my roof?",
+          "a": "We do. We usually hire a third party certified windstorm engineer, because TDI's own inspectors only come to our area a couple of times a month. If the inspector has to see the decking or underlayment, we don't want your roof sitting open while we wait, with rain on the way."
         },
         {
           "q": "Does a small roof repair need a windstorm inspection?",
@@ -245,7 +254,15 @@
               "name": "Do I need a permit to replace my roof in Harlingen?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. The City of Harlingen's permit guide lists roof replacements as work that needs a building permit, and the city has used the 2024 residential code since October 1, 2025. Work started without a permit pays double the normal fee. For questions about your property, call Building Permits and Inspections at (956) 216-5169."
+                "text": "Yes. The City of Harlingen's permit guide lists roof replacements as work that needs a building permit, and the city has used the 2024 residential code since October 1, 2025. Work started without a permit pays double the normal fee. For questions about your property, call Building Permits and Inspections at (956) 216-5169. Edel is registered with the city and pulls the permit for your job."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Who handles the windstorm inspection on my roof?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We do. We usually hire a third party certified windstorm engineer, because TDI's own inspectors only come to our area a couple of times a month. If the inspector has to see the decking or underlayment, we don't want your roof sitting open while we wait, with rain on the way."
               }
             },
             {
@@ -278,6 +295,7 @@
     }
   ],
   "changes": [
-    "2026-11-03 new page (not on the live Duda site). Built from sourced facts only; sources in site-rebuild/cameron-county-city-pages-research.md. No Edel office or address in this city is implied (Brownsville office planned 2027, no GBP there). No prices, metal, tile, mobile homes or tarping (unconfirmed by Edel)."
+    "2026-11-03 new page (not on the live Duda site). Built from sourced facts only; sources in site-rebuild/cameron-county-city-pages-research.md. No Edel office or address in this city is implied (Brownsville office planned 2027, no GBP there). No prices, metal, tile, mobile homes or tarping (unconfirmed by Edel).",
+    "2026-11-09 Edel's email answers added: Edel sets up the windstorm inspection and usually hires a third party certified windstorm engineer (TDI's inspectors only come to the area a couple times a month, and Edel won't leave decking open waiting), Edel is registered and pulls permits in all RGV cities, mobile home roofs yes. Still no prices on this page; still no Cameron County job named beyond South Padre."
   ]
 }

@@ -13,7 +13,7 @@
     }
   ],
   "h1": "Roof Inspections in Mission, TX",
-  "lede": "Edel Roofing &amp; Construction inspects roofs on Mission homes and buildings for free. You get a written report with photos and a straight answer about how much life the roof has left.",
+  "lede": "Edel Roofing &amp; Construction inspects roofs on Mission homes and buildings for free. Most inspections come with photos and a written explanation, and you get a straight answer about how much life the roof has left.",
   "heroCtas": [
     {
       "label": "Book a Free Inspection",
@@ -93,7 +93,7 @@
         },
         {
           "big": "Photos",
-          "label": "A written report you can share with a buyer, seller, or insurer"
+          "label": "Photos and a written explanation (with most inspections) you can share with a buyer, seller, or insurer"
         },
         {
           "big": "Licensed",
@@ -124,7 +124,7 @@
         },
         {
           "q": "How long does a roof inspection take?",
-          "a": "Most residential roofs take 30 to 45 minutes. You get the written report the same visit."
+          "a": "Most residential roofs take 30 to 45 minutes. Most inspections come with photos and a written explanation of what we found."
         },
         {
           "q": "How do I book an inspection in Mission?",
@@ -135,7 +135,7 @@
   ],
   "cta": {
     "title": "Book a free roof inspection in Mission",
-    "line": "Find out how much life your roof has left. You get a written report with photos before we leave, and you don't owe us anything.",
+    "line": "Find out how much life your roof has left. Most inspections come with photos and a written explanation, and you don't owe us anything.",
     "buttons": [
       {
         "label": "Book a Free Inspection",
@@ -216,7 +216,7 @@
               "name": "How long does a roof inspection take?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Most residential roofs take 30 to 45 minutes. You get the written report the same visit."
+                "text": "Most residential roofs take 30 to 45 minutes. Most inspections come with photos and a written explanation of what we found."
               }
             },
             {

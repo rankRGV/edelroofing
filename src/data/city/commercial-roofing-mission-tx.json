@@ -79,7 +79,7 @@
         },
         {
           "title": "Inspections",
-          "body": "Regular inspections, and inspections after a storm, with a written report and photos for owners and managers."
+          "body": "Regular inspections, and inspections after a storm, and most come with photos and a written explanation for owners and managers."
         }
       ]
     },
@@ -138,7 +138,7 @@
         },
         {
           "q": "Do you inspect commercial roofs after a storm?",
-          "a": "Yes. After high wind or hail we walk the roof, check the edges, seams, flashing, and rooftop units, and give you a written report with photos for your insurer. We are not a public adjuster, so the claim is between you and your insurance company."
+          "a": "Yes. After high wind or hail we walk the roof, check the edges, seams, flashing, and rooftop units, and most of the time you get photos and a written explanation for your insurer. We are not a public adjuster, so the claim is between you and your insurance company."
         },
         {
           "q": "Can you work around our tenants?",
@@ -248,7 +248,7 @@
               "name": "Do you inspect commercial roofs after a storm?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. After high wind or hail we walk the roof, check the edges, seams, flashing, and rooftop units, and give you a written report with photos for your insurer. We are not a public adjuster, so the claim is between you and your insurance company."
+                "text": "Yes. After high wind or hail we walk the roof, check the edges, seams, flashing, and rooftop units, and most of the time you get photos and a written explanation for your insurer. We are not a public adjuster, so the claim is between you and your insurance company."
               }
             },
             {

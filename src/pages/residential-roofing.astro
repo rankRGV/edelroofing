@@ -30,6 +30,10 @@
 // 2026-10-22: Kassie's recent job photos (CompanyCam, sent by email): hero is
 //   the CertainTeed shingle roof on South Padre Island; intro is a home Edel
 //   remodeled and added onto.
+// 2026-11-09 Edel's email answers: metal install + repair, tile repairs only
+//   (no Mexican clay), mobile homes yes, gutter repair yes, workmanship
+//   warranty 5 to 25 years by system. Remodel alt text dropped (Edel: don't
+//   advertise remodeling).
 import InnerPage from '../layouts/InnerPage.astro';
 import hero from '../assets/projects/recent/edel-certainteed-shingle-roof-south-padre-1.jpg';
 import remodel from '../assets/projects/recent/edel-residential-roof-remodel.jpg';
@@ -52,7 +56,7 @@ import newRoof from '../assets/residential-roofing/new-residential-roof.jpeg';
     title: 'A new roof for your Edinburg home',
     body: "Maybe your roof is getting old, or the same spot keeps leaking after every storm. EDEL Roofing &amp; Construction Inc. puts new roofs on homes in Edinburg and across the Valley. Our <a href=\"/\">residential roofing services in Edinburg</a> start with a free inspection and a written price. We pick materials that hold up and look right on your house.",
     cta: { label: 'Contact Us', href: '/contact-us' },
-    images: [{ src: remodel, alt: 'Home after an EDEL roof remodel and additions' }],
+    images: [{ src: remodel, alt: 'Home with a new roof by EDEL Roofing' }],
   }}
   band={{
     eyebrow: 'Roof installation',
@@ -81,6 +85,7 @@ import newRoof from '../assets/residential-roofing/new-residential-roof.jpeg';
       body: [
         "Asphalt shingles are what you see on most houses in the Valley. Architectural (also called dimensional) shingles are thicker than the old flat three-tab kind and come in a lot of colors. They cost less to put on than metal. We install CertainTeed, Owens Corning and GAF shingles.",
         "A metal roof costs more up front and usually lasts longer than shingles. Lighter colors reflect more of the sun, which helps in a place where summer highs sit near 100°F. Standing seam metal has the screws hidden under raised seams. Exposed fastener panels cost less, but the screws and their washers need checking over the years.",
+        "We install and repair metal roofs on homes. Tile is different: we repair tile roofs but don't put new ones on, and we pass on Mexican clay tile, which doesn't lay right. We also roof mobile homes.",
         "At the inspection we go over the shingle lines and the metal options we install, and what each would cost on your house. You choose the material and the color.",
       ],
     },
@@ -105,7 +110,7 @@ import newRoof from '../assets/residential-roofing/new-residential-roof.jpeg';
   benefits={{
     title: 'What you get with Edel',
     items: [
-      { title: 'Your choice of material', body: 'Asphalt shingles, metal roofing and other materials and styles. We work on homes and on commercial buildings.' },
+      { title: 'Your choice of material', body: 'Asphalt shingles or metal, on houses and mobile homes. We work on commercial buildings too.' },
       { title: 'Energy efficient options', body: 'Ask us about roofing options made for better energy efficiency. We can go over them with you at the inspection.' },
       { title: 'Good materials, careful work', body: 'We use quality materials and take care with the installation, so your new roof keeps working for years.' },
     ],
@@ -126,8 +131,16 @@ import newRoof from '../assets/residential-roofing/new-residential-roof.jpeg';
         a: 'It is a CertainTeed credential for roofing contractors. CertainTeed lists Edel as a ShingleMaster PRO, and in CertainTeed\'s contractor finder no other Rio Grande Valley roofer holds PRO or the higher PREMIER level (checked October 2026). CertainTeed says PRO contractors can offer its SureStart PLUS extended warranties, which add coverage on top of the standard shingle warranty. Ask us which one fits your roof.',
       },
       {
+        q: 'What warranty comes with a new roof?',
+        a: 'Our workmanship warranty runs 5 to 25 years, depending on the roof system you pick. We tell you the exact terms for your roof in the written estimate.',
+      },
+      {
+        q: 'Do you work on mobile homes?',
+        a: 'Yes. We repair and replace roofs on mobile homes as well as houses.',
+      },
+      {
         q: 'Do you replace gutters too?',
-        a: 'Yes. We can put new gutters on with the new roof, or take your existing gutters down and reinstall them. See our <a href="/gutters-edinburg-tx">gutters</a> page.',
+        a: 'Yes. We can put new gutters on with the new roof, take your existing gutters down and reinstall them, or repair the ones you have. See our <a href="/gutters-edinburg-tx">gutters</a> page.',
       },
     ],
   }}

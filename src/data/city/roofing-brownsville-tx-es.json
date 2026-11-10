@@ -53,8 +53,13 @@
         },
         {
           "title": "Daño por Tormenta",
-          "body": "Un reporte por escrito del daño por viento o granizo que puede entregarle al ajustador de su aseguranza. No somos ajustadores públicos, y se lo decimos desde el principio.",
+          "body": "Fotos y una explicación por escrito del daño por viento o granizo, en la mayoría de las inspecciones, que puede entregarle al ajustador de su aseguranza. No somos ajustadores públicos, y se lo decimos desde el principio.",
           "href": "/es-mx/storm-damage"
+        },
+        {
+          "title": "Techos de Casas Móviles",
+          "body": "Reparamos y cambiamos techos de casas móviles, además de casas.",
+          "href": "/es-mx/roof-repairs"
         },
         {
           "title": "Canaletas",
@@ -106,7 +111,7 @@
         },
         {
           "title": "4. Permiso y vientos",
-          "body": "Se saca el permiso de la ciudad, y si usted tiene TWIA, la inspección de vientos de TDI se programa antes de quitar el techo viejo."
+          "body": "Nosotros sacamos el permiso de la ciudad. Si usted tiene TWIA, programamos la inspección de vientos antes de quitar el techo viejo, por lo general con un ingeniero de vientos certificado e independiente para que el trabajo no espere el calendario de TDI."
         },
         {
           "title": "5. Quitar y techo nuevo",
@@ -125,6 +130,7 @@
       "paras": [
         "Todo el condado de Cameron está en la zona de catástrofe de TWIA. Para comprar o mantener una póliza de vientos de TWIA, la mayoría de las casas necesitan un certificado de cumplimiento del Departamento de Seguros de Texas (TDI), y cambiar el techo está en la lista de trabajos que lo necesitan.",
         "El tiempo es lo que más se pasa por alto. El certificado regular sale de una inspección hecha mientras se pone el techo, por un inspector de TDI o un ingeniero nombrado por TDI. Si el techo ya está terminado, un ingeniero con licencia todavía puede inspeccionarlo para un certificado de obra terminada, pero TDI dice que eso puede costar más. TDI también les dice a los dueños que le pregunten a su contratista cómo se van a cumplir los requisitos de inspección antes de empezar.",
+        "En un trabajo de Edel, nosotros nos encargamos. Por lo general contratamos a un ingeniero de vientos certificado e independiente, porque los inspectores de TDI solo vienen a la zona un par de veces al mes. Si el inspector tiene que ver la madera o la base impermeable, no queremos dejar su techo abierto mientras esperamos, con lluvia en camino.",
         "Dos cosas más. Desde el 1 de abril de 2026, la certificación sigue los códigos de 2024, y la velocidad de viento de diseño se fija para cada dirección en lugar de un solo número para toda la ciudad. Y las casas construidas entre 1988 y el 18 de junio de 2009 sin certificado todavía pueden calificar para TWIA, con un recargo del 15% en la prima."
       ]
     },
@@ -172,11 +178,11 @@
         },
         {
           "q": "¿Cuánto cuesta el permiso para cambiar el techo en Brownsville?",
-          "a": "La cuota de la ciudad para un techo residencial es de $50 hasta 500 pies cuadrados, $70 de 501 a 2,000 pies cuadrados y $150 arriba de 2,000 pies cuadrados, según la Sección 18-123 del Código de la Ciudad. Eso es solo el permiso, no el techo. Si se empieza sin permiso, la cuota se duplica."
+          "a": "La cuota de la ciudad para un techo residencial es de $50 hasta 500 pies cuadrados, $70 de 501 a 2,000 pies cuadrados y $150 arriba de 2,000 pies cuadrados, según la Sección 18-123 del Código de la Ciudad. Eso es solo el permiso, no el techo. Si se empieza sin permiso, la cuota se duplica. Edel está registrado y saca el permiso de su trabajo."
         },
         {
           "q": "¿Necesito inspección de vientos para un techo nuevo en Brownsville?",
-          "a": "Si quiere cobertura de vientos de TWIA, sí. Un reemplazo de techo necesita certificado de TDI, y la inspección se debe hacer mientras se instala el techo. Las reparaciones de menos de 100 pies cuadrados que no tocan la madera están exentas. La línea de vientos de TDI es el 800-248-6032."
+          "a": "Si quiere cobertura de vientos de TWIA, sí. Un reemplazo de techo necesita certificado de TDI, y la inspección se debe hacer mientras se instala el techo. Las reparaciones de menos de 100 pies cuadrados que no tocan la madera están exentas. La línea de vientos de TDI es el 800-248-6032. En nuestros trabajos, nosotros programamos la inspección."
         },
         {
           "q": "Mi casa es de 2005 y nunca tuvo certificado de vientos. ¿Todavía puedo tener TWIA?",
@@ -267,7 +273,7 @@
               "name": "¿Cuánto cuesta el permiso para cambiar el techo en Brownsville?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "La cuota de la ciudad para un techo residencial es de $50 hasta 500 pies cuadrados, $70 de 501 a 2,000 pies cuadrados y $150 arriba de 2,000 pies cuadrados, según la Sección 18-123 del Código de la Ciudad. Eso es solo el permiso, no el techo. Si se empieza sin permiso, la cuota se duplica."
+                "text": "La cuota de la ciudad para un techo residencial es de $50 hasta 500 pies cuadrados, $70 de 501 a 2,000 pies cuadrados y $150 arriba de 2,000 pies cuadrados, según la Sección 18-123 del Código de la Ciudad. Eso es solo el permiso, no el techo. Si se empieza sin permiso, la cuota se duplica. Edel está registrado y saca el permiso de su trabajo."
               }
             },
             {
@@ -275,7 +281,7 @@
               "name": "¿Necesito inspección de vientos para un techo nuevo en Brownsville?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Si quiere cobertura de vientos de TWIA, sí. Un reemplazo de techo necesita certificado de TDI, y la inspección se debe hacer mientras se instala el techo. Las reparaciones de menos de 100 pies cuadrados que no tocan la madera están exentas. La línea de vientos de TDI es el 800-248-6032."
+                "text": "Si quiere cobertura de vientos de TWIA, sí. Un reemplazo de techo necesita certificado de TDI, y la inspección se debe hacer mientras se instala el techo. Las reparaciones de menos de 100 pies cuadrados que no tocan la madera están exentas. La línea de vientos de TDI es el 800-248-6032. En nuestros trabajos, nosotros programamos la inspección."
               }
             },
             {
@@ -308,6 +314,7 @@
     }
   ],
   "changes": [
-    "2026-11-03 new page (not on the live Duda site). Built from sourced facts only; sources in site-rebuild/cameron-county-city-pages-research.md. No Edel office or address in this city is implied (Brownsville office planned 2027, no GBP there). No prices, metal, tile, mobile homes or tarping (unconfirmed by Edel)."
+    "2026-11-03 new page (not on the live Duda site). Built from sourced facts only; sources in site-rebuild/cameron-county-city-pages-research.md. No Edel office or address in this city is implied (Brownsville office planned 2027, no GBP there). No prices, metal, tile, mobile homes or tarping (unconfirmed by Edel).",
+    "2026-11-09 Edel's email answers added: Edel sets up the windstorm inspection and usually hires a third party certified windstorm engineer (TDI's inspectors only come to the area a couple times a month, and Edel won't leave decking open waiting), Edel is registered and pulls permits in all RGV cities, mobile home roofs yes. Still no prices on this page; still no Cameron County job named beyond South Padre."
   ]
 }

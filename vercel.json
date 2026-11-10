@@ -84,6 +84,31 @@
       "source": "/edelroofing-intelligence",
       "destination": "/intelligence/edelroofing-intelligence",
       "permanent": true
+    },
+    {
+      "source": "/home-construction",
+      "destination": "/residential-roofing",
+      "permanent": true
+    },
+    {
+      "source": "/home-remodeling",
+      "destination": "/residential-roofing",
+      "permanent": true
+    },
+    {
+      "source": "/es-mx/home-construction",
+      "destination": "/es-mx/residential-roofing",
+      "permanent": true
+    },
+    {
+      "source": "/es-mx/home-remodeling",
+      "destination": "/es-mx/residential-roofing",
+      "permanent": true
+    },
+    {
+      "source": "/energy-relief-program",
+      "destination": "/financing",
+      "permanent": true
     }
   ]
 }

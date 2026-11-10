@@ -4,7 +4,7 @@
   "city": "mission",
   "service": "storm",
   "title": "Storm & Hail Damage Roof Repair in Mission, TX | Edel Roofing & Construction",
-  "description": "Hail, wind, and hurricane rain damage roof repair in Mission, TX. Free inspection, photos, and a written report for your insurer. Call (956) 422-3335.",
+  "description": "Hail, wind, and hurricane rain damage roof repair in Mission, TX. Free inspection; most come with photos and a written explanation. Call (956) 422-3335.",
   "alternates": null,
   "crumbs": [
     {
@@ -13,7 +13,7 @@
     }
   ],
   "h1": "Storm & Hail Damage Roof Repair in Mission, TX",
-  "lede": "Edel Roofing &amp; Construction inspects and repairs Mission roofs hurt by hail, high wind and heavy rain. The inspection is free, and you get photos and a written report to give your insurer.",
+  "lede": "Edel Roofing &amp; Construction inspects and repairs Mission roofs hurt by hail, high wind and heavy rain. The inspection is free, and most come with photos and a written explanation you can give your insurer.",
   "heroCtas": [
     {
       "label": "Get a Free Inspection",
@@ -65,7 +65,7 @@
       "paras": [
         "First, look for active leaks and protect what is inside. Then take photos of any damage you can see from the ground, including gutters, screens, and cars, with the date. Call your insurance company to report it and ask about the deadline for your policy.",
         "Get the roof inspected before you agree to any work. The <a href=\"https://www.tdi.texas.gov/tips/after-hail-or-windstorms.html\">Texas Department of Insurance</a> suggests getting more than one bid, checking references, and not paying in full up front. In Texas it is illegal for a contractor to waive or rebate your deductible.",
-        "Hidalgo County is outside the TWIA coastal area, so your claim goes through your regular homeowners policy, not the Texas Windstorm Insurance Association. We document what we find with photos and a written report. We are not a public adjuster; the claim decision is between you and your insurer."
+        "Hidalgo County is outside the TWIA coastal area, so your claim goes through your regular homeowners policy, not the Texas Windstorm Insurance Association. Most of our inspections come with photos and a written explanation of what we found. We are not a public adjuster; the claim decision is between you and your insurer."
       ]
     },
     {
@@ -83,7 +83,7 @@
         },
         {
           "title": "3. Report",
-          "body": "You get photos and a written report, and we tell you if the damage is cosmetic."
+          "body": "Most inspections come with photos and a written explanation, and we tell you if the damage is cosmetic."
         },
         {
           "title": "4. Estimate",
@@ -144,7 +144,7 @@
   ],
   "cta": {
     "title": "Get a free storm damage inspection in Mission",
-    "line": "We check the whole roof, take photos, and give you a written report. If it is cosmetic, we tell you.",
+    "line": "We check the whole roof, and most inspections come with photos and a written explanation. If it is cosmetic, we tell you.",
     "buttons": [
       {
         "label": "Book a Free Inspection",
@@ -188,7 +188,7 @@
           "@type": "WebPage",
           "name": "Storm & Hail Damage Roof Repair in Mission, TX",
           "url": "https://www.edelroofing.com/storm-damage-mission-tx",
-          "description": "Hail, wind, and hurricane rain damage roof repair in Mission, TX. Free inspection, photos, and a written report for your insurer. Call (956) 422-3335.",
+          "description": "Hail, wind, and hurricane rain damage roof repair in Mission, TX. Free inspection; most come with photos and a written explanation. Call (956) 422-3335.",
           "about": {
             "@id": "https://www.edelroofing.com/#roofingcontractor"
           }

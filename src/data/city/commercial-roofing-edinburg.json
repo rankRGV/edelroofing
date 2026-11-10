@@ -120,7 +120,7 @@
         },
         {
           "q": "Can you help with an insurance claim for hail or storm damage to a commercial roof?",
-          "a": "We inspect the damage and give you a written report of what we found. That report helps when you file a claim. We are not a public adjuster. What we can do is go over what we saw with you, so you know what to bring up with your insurance company."
+          "a": "We inspect the damage, and most of our inspections come with photos and a written explanation of what we found. That helps when you file a claim. We are not a public adjuster. What we can do is go over what we saw with you, so you know what to bring up with your insurance company."
         },
         {
           "q": "How do I get a commercial roofing estimate in Edinburg?",
@@ -212,7 +212,7 @@
               "name": "Can you help with an insurance claim for hail or storm damage to a commercial roof?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "We inspect the damage and give you a written report of what we found. That report helps when you file a claim. We are not a public adjuster. What we can do is go over what we saw with you, so you know what to bring up with your insurance company."
+                "text": "We inspect the damage, and most of our inspections come with photos and a written explanation of what we found. That helps when you file a claim. We are not a public adjuster. What we can do is go over what we saw with you, so you know what to bring up with your insurance company."
               }
             },
             {

@@ -126,7 +126,7 @@
         },
         {
           "q": "Do you handle insurance claims for storm or hail damage in McAllen?",
-          "a": "We inspect the damage and give you a written report of what we find, which helps when you file your claim. We are not a public adjuster. We'll go over what we saw so you know what to show your insurance company. We've done this for homeowners and property managers across McAllen after big hailstorms."
+          "a": "We inspect the damage, and most inspections come with photos and a written explanation of what we find, which helps when you file your claim. We are not a public adjuster. We'll go over what we saw so you know what to show your insurance company. We've done this for homeowners and property managers across McAllen after big hailstorms."
         },
         {
           "q": "How do I get a roofing estimate in McAllen?",
@@ -218,7 +218,7 @@
               "name": "Do you handle insurance claims for storm or hail damage in McAllen?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "We inspect the damage and give you a written report of what we find, which helps when you file your claim. We are not a public adjuster. We'll go over what we saw so you know what to show your insurance company. We've done this for homeowners and property managers across McAllen after big hailstorms."
+                "text": "We inspect the damage, and most inspections come with photos and a written explanation of what we find, which helps when you file your claim. We are not a public adjuster. We'll go over what we saw so you know what to show your insurance company. We've done this for homeowners and property managers across McAllen after big hailstorms."
               }
             },
             {

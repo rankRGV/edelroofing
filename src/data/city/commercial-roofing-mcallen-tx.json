@@ -69,7 +69,7 @@
         },
         {
           "title": "Inspections and maintenance",
-          "body": "Scheduled inspections for owners and property managers, with a written report of what needs work now and what can wait."
+          "body": "Scheduled inspections for owners and property managers, with our findings: what needs work now and what can wait. Most inspections come with photos and a written explanation."
         }
       ]
     },
@@ -156,7 +156,7 @@
         },
         {
           "q": "Do you document storm damage on commercial roofs?",
-          "a": "Yes. We inspect after a storm and give you a written report with photos for your insurer. We are not a public adjuster, so the claim itself is between you and your insurance company."
+          "a": "Yes. We inspect after a storm, and most of our inspections come with photos and a written explanation you can give your insurer. We are not a public adjuster, so the claim itself is between you and your insurance company."
         },
         {
           "q": "How do I get a commercial estimate in McAllen?",
@@ -270,7 +270,7 @@
               "name": "Do you document storm damage on commercial roofs?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. We inspect after a storm and give you a written report with photos for your insurer. We are not a public adjuster, so the claim itself is between you and your insurance company."
+                "text": "Yes. We inspect after a storm, and most of our inspections come with photos and a written explanation you can give your insurer. We are not a public adjuster, so the claim itself is between you and your insurance company."
               }
             },
             {

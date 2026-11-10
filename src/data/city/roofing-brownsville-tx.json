@@ -53,8 +53,13 @@
         },
         {
           "title": "Storm Damage",
-          "body": "A written report of wind or hail damage you can hand to your insurance adjuster. We aren't public adjusters, and we tell you that up front.",
+          "body": "Photos and a written explanation of wind or hail damage, with most inspections, that you can hand to your insurance adjuster. We aren't public adjusters, and we tell you that up front.",
           "href": "/storm-damage"
+        },
+        {
+          "title": "Mobile Home Roofs",
+          "body": "We repair and replace roofs on mobile homes as well as houses.",
+          "href": "/roof-repairs"
         },
         {
           "title": "Gutters",
@@ -106,7 +111,7 @@
         },
         {
           "title": "4. Permit and windstorm",
-          "body": "The city permit gets pulled, and if you carry TWIA, the TDI windstorm inspection gets scheduled before the old roof comes off."
+          "body": "We pull the city permit. If you carry TWIA, we set up the windstorm inspection before the old roof comes off, usually with a third party certified windstorm engineer so the job doesn't wait on TDI's schedule."
         },
         {
           "title": "5. Tear off and new roof",
@@ -125,6 +130,7 @@
       "paras": [
         "All of Cameron County is in TWIA's catastrophe area. To buy or keep a TWIA wind policy, most homes need a certificate of compliance from the Texas Department of Insurance (TDI), and replacing a roof is on the list of work that needs one.",
         "Timing is the part people miss. The regular certificate comes from an inspection done while the roof is going on, by a TDI inspector or an engineer TDI has appointed. If the roof is already finished, a licensed engineer can still inspect it for a completed construction certificate, but TDI says that may cost more. TDI also tells homeowners to ask their contractor how the inspection requirements will be met before work starts.",
+        "On an Edel job, we handle it. We usually hire a third party certified windstorm engineer, because TDI's own inspectors only come to our area a couple of times a month. If the inspector has to see the decking or underlayment, we don't want your roof sitting open while we wait, with rain on the way.",
         "Two more things to know. Since April 1, 2026, certification follows the 2024 codes, and the design wind speed is set for each address instead of one number for the whole city. And homes built between 1988 and June 18, 2009 without a certificate may still qualify for TWIA, with a 15% surcharge on the premium."
       ]
     },
@@ -172,11 +178,11 @@
         },
         {
           "q": "How much is a reroof permit in Brownsville?",
-          "a": "The city fee for a residential reroof is $50 for up to 500 square feet, $70 for 501 to 2,000 square feet and $150 over 2,000 square feet, under City Code Section 18-123. That's the permit only, not the roof. Starting work without the permit doubles the fee."
+          "a": "The city fee for a residential reroof is $50 for up to 500 square feet, $70 for 501 to 2,000 square feet and $150 over 2,000 square feet, under City Code Section 18-123. That's the permit only, not the roof. Starting work without the permit doubles the fee. Edel is registered and pulls the permit for your job."
         },
         {
           "q": "Do I need a windstorm inspection for a new roof in Brownsville?",
-          "a": "If you want TWIA wind coverage, yes. A roof replacement needs a TDI certificate, and the inspection should happen while the roof is being installed. Small repairs under 100 square feet that don't touch the decking are exempt. TDI's windstorm line is 800-248-6032."
+          "a": "If you want TWIA wind coverage, yes. A roof replacement needs a TDI certificate, and the inspection should happen while the roof is being installed. Small repairs under 100 square feet that don't touch the decking are exempt. TDI's windstorm line is 800-248-6032. On our jobs, we set up the inspection for you."
         },
         {
           "q": "My house was built in 2005 and never got a windstorm certificate. Can I still get TWIA?",
@@ -267,7 +273,7 @@
               "name": "How much is a reroof permit in Brownsville?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The city fee for a residential reroof is $50 for up to 500 square feet, $70 for 501 to 2,000 square feet and $150 over 2,000 square feet, under City Code Section 18-123. That's the permit only, not the roof. Starting work without the permit doubles the fee."
+                "text": "The city fee for a residential reroof is $50 for up to 500 square feet, $70 for 501 to 2,000 square feet and $150 over 2,000 square feet, under City Code Section 18-123. That's the permit only, not the roof. Starting work without the permit doubles the fee. Edel is registered and pulls the permit for your job."
               }
             },
             {
@@ -275,7 +281,7 @@
               "name": "Do I need a windstorm inspection for a new roof in Brownsville?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "If you want TWIA wind coverage, yes. A roof replacement needs a TDI certificate, and the inspection should happen while the roof is being installed. Small repairs under 100 square feet that don't touch the decking are exempt. TDI's windstorm line is 800-248-6032."
+                "text": "If you want TWIA wind coverage, yes. A roof replacement needs a TDI certificate, and the inspection should happen while the roof is being installed. Small repairs under 100 square feet that don't touch the decking are exempt. TDI's windstorm line is 800-248-6032. On our jobs, we set up the inspection for you."
               }
             },
             {
@@ -308,6 +314,7 @@
     }
   ],
   "changes": [
-    "2026-11-03 new page (not on the live Duda site). Built from sourced facts only; sources in site-rebuild/cameron-county-city-pages-research.md. No Edel office or address in this city is implied (Brownsville office planned 2027, no GBP there). No prices, metal, tile, mobile homes or tarping (unconfirmed by Edel)."
+    "2026-11-03 new page (not on the live Duda site). Built from sourced facts only; sources in site-rebuild/cameron-county-city-pages-research.md. No Edel office or address in this city is implied (Brownsville office planned 2027, no GBP there). No prices, metal, tile, mobile homes or tarping (unconfirmed by Edel).",
+    "2026-11-09 Edel's email answers added: Edel sets up the windstorm inspection and usually hires a third party certified windstorm engineer (TDI's inspectors only come to the area a couple times a month, and Edel won't leave decking open waiting), Edel is registered and pulls permits in all RGV cities, mobile home roofs yes. Still no prices on this page; still no Cameron County job named beyond South Padre."
   ]
 }

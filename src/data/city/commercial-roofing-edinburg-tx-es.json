@@ -120,7 +120,7 @@
         },
         {
           "q": "¿Pueden ayudarme con un reclamo de seguro por daños de granizo o tormenta en un techo comercial?",
-          "a": "Inspeccionamos el daño y le damos un informe por escrito de lo que encontramos. Ese informe le ayuda cuando presenta el reclamo. No somos ajustadores públicos. Lo que sí hacemos es explicarle lo que vimos, para que sepa qué hablar con su compañía de seguros."
+          "a": "Inspeccionamos el daño, y la mayoría de nuestras inspecciones incluyen fotos y una explicación por escrito de lo que encontramos. Eso le ayuda cuando presenta el reclamo. No somos ajustadores públicos. Lo que sí hacemos es explicarle lo que vimos, para que sepa qué hablar con su compañía de seguros."
         },
         {
           "q": "¿Cómo obtengo un estimado de techado comercial en Edinburg?",
@@ -213,7 +213,7 @@
               "name": "¿Pueden ayudarme con un reclamo de seguro por daños de granizo o tormenta en un techo comercial?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Inspeccionamos el daño y le damos un informe por escrito de lo que encontramos. Ese informe le ayuda cuando presenta el reclamo. No somos ajustadores públicos. Lo que sí hacemos es explicarle lo que vimos, para que sepa qué hablar con su compañía de seguros."
+                "text": "Inspeccionamos el daño, y la mayoría de nuestras inspecciones incluyen fotos y una explicación por escrito de lo que encontramos. Eso le ayuda cuando presenta el reclamo. No somos ajustadores públicos. Lo que sí hacemos es explicarle lo que vimos, para que sepa qué hablar con su compañía de seguros."
               }
             },
             {

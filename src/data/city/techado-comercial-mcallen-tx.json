@@ -69,7 +69,7 @@
         },
         {
           "title": "Inspecciones y mantenimiento",
-          "body": "Inspecciones programadas para dueños y administradores de propiedades, con un informe escrito de lo que necesita trabajo ahora y lo que puede esperar."
+          "body": "Inspecciones programadas para dueños y administradores de propiedades, con lo que encontramos: lo que necesita trabajo ahora y lo que puede esperar. La mayoría incluyen fotos y una explicación por escrito."
         }
       ]
     },
@@ -156,7 +156,7 @@
         },
         {
           "q": "¿Documentan el daño por tormenta en techos comerciales?",
-          "a": "Sí. Inspeccionamos después de una tormenta y le damos un informe escrito con fotos para su aseguradora. No somos ajustadores públicos, así que el reclamo es entre usted y su compañía de seguros."
+          "a": "Sí. Inspeccionamos después de una tormenta, y la mayoría de nuestras inspecciones incluyen fotos y una explicación por escrito para su aseguradora. No somos ajustadores públicos, así que el reclamo es entre usted y su compañía de seguros."
         },
         {
           "q": "¿Cómo obtengo un estimado comercial en McAllen?",
@@ -270,7 +270,7 @@
               "name": "¿Documentan el daño por tormenta en techos comerciales?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Sí. Inspeccionamos después de una tormenta y le damos un informe escrito con fotos para su aseguradora. No somos ajustadores públicos, así que el reclamo es entre usted y su compañía de seguros."
+                "text": "Sí. Inspeccionamos después de una tormenta, y la mayoría de nuestras inspecciones incluyen fotos y una explicación por escrito para su aseguradora. No somos ajustadores públicos, así que el reclamo es entre usted y su compañía de seguros."
               }
             },
             {

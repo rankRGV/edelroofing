@@ -5,7 +5,7 @@ description: "What a fair roof repair price looks like in Mission, TX, how the 2
 lang: en
 pubDate: 2026-08-17
 modDate: 2026-08-17
-updatedDate: 2026-11-03
+updatedDate: 2026-11-09
 author: "Eddie Elizondo"
 image: ../../assets/blog/missioninsurancezreplacement.webp
 schemaHeadline: "Roof Repair Cost in Mission, TX | EDEL Roofing & Construction"
@@ -14,6 +14,7 @@ changes:
   - "em/en dashes swapped for commas, colons, or hyphens"
   - "2026-10-20 copy pass: plain, warm voice edit; dashes and hyphens removed from copy; no facts, costs, links or dates changed"
   - "2026-11-03: price ranges removed (Edel hasn't confirmed prices; 10/22 claim decision). The cost sections now explain what changes the price. updatedDate added."
+  - "2026-11-09: Edel's email answers: repairs start at $450; price ranges come from the instant estimate on the site, not the phone. Phone FAQ and fair price section changed; updatedDate bumped."
 ---
 
 ### What a fair price looks like, what the 25% rule means, and whether insurance will pay
@@ -22,7 +23,7 @@ When a Mission homeowner calls us about a roof repair, the same two questions co
 
 ## What is a fair price for a roof repair in Mission?
 
-There isn't one fair number for every roof. The price depends on what's wrong and how much of the roof is affected. Fixing one piece of flashing or a small patch of shingles costs less. A repair that covers a wider area, or one where we find soft decking once we're up there, costs more.
+There isn't one fair number for every roof. The price depends on what's wrong and how much of the roof is affected. Fixing one piece of flashing or a small patch of shingles costs less. A repair that covers a wider area, or one where we find soft decking once we're up there, costs more. Our roof repairs start at $450.
 
 A fair price comes with a written estimate after someone has actually looked at your roof. A number quoted over the phone, before anyone has been up there, isn't one. We walk the roof first, tell you what we find, and give you the estimate in writing before any work starts.
 
@@ -50,7 +51,7 @@ That difference matters in Mission. The older homes near Conway Avenue and downt
 
 ## Frequently asked questions about roof repair cost in Mission
 
-<details><summary><strong>Can you give me a repair price over the phone?</strong></summary><p>Not a real one. We can give you a rough range from what you describe, but the actual estimate comes after we see the roof in person. Repairs that sound small sometimes turn out bigger once we see the decking, and sometimes it goes the other way.</p></details>
+<details><summary><strong>Can you give me a repair price over the phone?</strong></summary><p>No. For a range, use the <a href="/contact-us#estimate" data-roofle-open>instant estimate</a> on our site. The real estimate comes after we see the roof in person. Repairs that sound small sometimes turn out bigger once we see the decking, and sometimes it goes the other way.</p></details>
 
 <details><summary><strong>Does a repair ever turn into a replacement?</strong></summary><p>Sometimes, if the damaged area crosses that 25% line or the roof is old enough that a repair would only buy one more season. We tell you which one you're in before we do anything. A repair call is not our excuse to sell you a replacement you don't need.</p></details>
 

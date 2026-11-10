@@ -123,7 +123,7 @@
         },
         {
           "q": "¿Ayudan con reclamaciones de seguro por daños de granizo o tormenta en McAllen?",
-          "a": "Inspeccionamos el daño y le damos un reporte escrito de lo que encontramos, que le sirve para presentar su reclamación. No somos ajustadores públicos. Le explicamos lo que vimos para que sepa qué enseñarle a su compañía de seguros. Ya lo hemos hecho con dueños de casa en McAllen después de varias granizadas."
+          "a": "Inspeccionamos el daño, y la mayoría de las inspecciones incluyen fotos y una explicación por escrito de lo que encontramos, que le sirve para presentar su reclamación. No somos ajustadores públicos. Le explicamos lo que vimos para que sepa qué enseñarle a su compañía de seguros. Ya lo hemos hecho con dueños de casa en McAllen después de varias granizadas."
         },
         {
           "q": "¿Cómo consigo un estimado de techos en McAllen?",
@@ -215,7 +215,7 @@
               "name": "¿Ayudan con reclamaciones de seguro por daños de granizo o tormenta en McAllen?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Inspeccionamos el daño y le damos un reporte escrito de lo que encontramos, que le sirve para presentar su reclamación. No somos ajustadores públicos. Le explicamos lo que vimos para que sepa qué enseñarle a su compañía de seguros. Ya lo hemos hecho con dueños de casa en McAllen después de varias granizadas."
+                "text": "Inspeccionamos el daño, y la mayoría de las inspecciones incluyen fotos y una explicación por escrito de lo que encontramos, que le sirve para presentar su reclamación. No somos ajustadores públicos. Le explicamos lo que vimos para que sepa qué enseñarle a su compañía de seguros. Ya lo hemos hecho con dueños de casa en McAllen después de varias granizadas."
               }
             },
             {

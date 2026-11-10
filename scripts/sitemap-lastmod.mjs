@@ -36,7 +36,7 @@ const TODAY = new Date().toISOString().slice(0, 10);
 // Pages that stay out of the sitemap: noindex pages (404, ads landing and
 // its thank-you, energy relief until Edel confirms the offer) and the
 // generic form thank-you page.
-const EXCLUDE = new Set(['/404', '/mcallen-free-quote', '/mcallen-free-quote-thank-you', '/thank-you', '/energy-relief-program']);
+const EXCLUDE = new Set(['/404', '/mcallen-free-quote', '/mcallen-free-quote-thank-you', '/thank-you']);
 const SKIP_DIRS = new Set(['_astro', ...LEGACY]);
 
 async function htmlFiles(dir) {
