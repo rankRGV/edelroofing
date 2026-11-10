@@ -1,8 +1,8 @@
 ---
 // /book-an-inspection, rebuilt from the live Duda page (2026-10-18).
-// The live page is only a Tavros (old agency, gotavros.com) booking iframe.
-// It is LEFT OUT here until Eddie/Edel decide keep, replace, or drop, and
-// confirm who receives those bookings. Flip TAVROS to true to bring it back.
+// The live page is only a Tavros (gotavros.com) booking iframe.
+// 2026-11-10: calendar is back above the form (Eddie 11/3: Tavros stays;
+// conversion audit found it still switched off).
 // Copy changes vs live:
 // - No H1 on live; "Book an Inspection" is now the H1.
 // - Added: call + quote options, worded like the homepage quote card,
@@ -18,12 +18,12 @@ import hero from '../assets/home/hero-roof.jpeg';
 import { site } from '../data/site';
 import { forms } from '../data/forms';
 import LeadForm from '../components/LeadForm.astro';
-
-const TAVROS = false;
+import { TAVROS_URL } from '../data/site';
 ---
 <InnerPage
   title="Book a Free Roof Inspection | Edel Roofing, Edinburg TX"
   description="Book a free roof inspection with Edel Roofing & Construction in Edinburg and the Rio Grande Valley. Call (956) 422-3335 or start with an online estimate."
+  alternates={{ en: '/book-an-inspection', es: '/es-mx/book-an-inspection' }}
   crumbs={[
     { label: 'Home', href: '/' },
     { label: 'Book an Inspection', href: '/book-an-inspection' },
@@ -32,7 +32,7 @@ const TAVROS = false;
   intro={{
     title: 'Ways to get started',
     body: [
-      '<strong>Request an inspection.</strong> Fill out the form below and we will call you to set up a time.',
+      '<strong>Pick a time.</strong> Use the calendar below, or fill out the form and we will call you to set up a time.',
       `<strong>Call us.</strong> Call <a href="${site.phoneHref}">${site.phone}</a> and we'll set up a time for your free roof inspection. We answer 24/7.`,
       '<strong>Want a price first?</strong> Put your address into the online estimate and find your roof on the satellite map. After you add your name, phone and email, it shows you an estimated price. We confirm the final price in writing after the free inspection.',
     ],
@@ -44,9 +44,15 @@ const TAVROS = false;
     cta: { label: 'Contact Us', href: '/contact-us' },
   }}
 >
-  <section class="section" id="schedule">
+  <section class="section" id="calendar">
+    <div class="wrap">
+      <h2 class="center-h">Pick a Time</h2>
+      <iframe class="tavros" title="Book an inspection" src={TAVROS_URL} loading="lazy"></iframe>
+    </div>
+  </section>
+  <section class="section soft" id="schedule">
     <div class="wrap form-wrap">
-      <h2>Schedule a Free Inspection</h2>
+      <h2 class="center-h">Rather we call you?</h2>
       <LeadForm
         id="inspection"
         submit="Schedule My Free Inspection"
@@ -62,15 +68,11 @@ const TAVROS = false;
       />
     </div>
   </section>
-  {TAVROS && (
-    <section class="wrap">
-      <iframe title="Book an inspection" src="https://tools.gotavros.com/widget/booking/xAmEhIorZ8LXCvdZIZU6" style="width:100%;min-height:800px;border:0"></iframe>
-    </section>
-  )}
 </InnerPage>
 
 <style>
   .section { padding-block: 72px; }
   .form-wrap { max-width: 720px; }
-  .form-wrap h2 { text-align: center; font-size: clamp(28px, 3.4vw, 40px); text-transform: uppercase; }
+  .center-h { text-align: center; font-size: clamp(28px, 3.4vw, 40px); text-transform: uppercase; }
+  .tavros { display: block; width: 100%; min-height: 800px; border: 0; }
 </style>

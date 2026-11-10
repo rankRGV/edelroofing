@@ -5,6 +5,9 @@
 // GoogleReviews.astro (our own section, no EmbedSocial widget). The diamond
 // project collage above the estimate card was removed so the card lines up
 // with the headline (Eddie, 2026-10-20).
+// 2026-11-10 (conversion audit): hero adds the RCAT license line, and the
+// small "Or call" text link is now a labeled call button (same CTA, easier
+// to see and tap on a phone).
 // 2026-10-21: reworked to Edel's visual edit guide (see home.ts): schedule
 // button first in the hero, five service cards, reviews and "Why Edel" as
 // two sections, four steps plus a financing panel, new closing invitation.
@@ -84,6 +87,7 @@ const badges = [
         <ul class="assure">
           <li><Icon name="clipboard" /><Fragment set:html={c.assure[0]} /></li>
           <li><Icon name="badge" />{c.assure[1]}</li>
+          <li><Icon name="shield" />{es ? `Con licencia, ${site.license}` : `Licensed, ${site.license}`}</li>
         </ul>
         <p class="hero-text" set:html={c.heroText} />
       </div>
@@ -95,7 +99,7 @@ const badges = [
           <p>{c.quote.body}</p>
           <a class="btn btn--big" href={c.quote.schedule.href}>{c.quote.schedule.label}</a>
           <a class="btn btn--ghost btn--big" href={quoteFallback(c.lang)} data-roofle-open>{c.quote.button}</a>
-          <p class="final">{c.quote.call} <a href={site.phoneHref}>{site.phone}</a></p>
+          <a class="btn btn--ghost btn--big" href={site.phoneHref}><Icon name="phone" />{es ? `Llame al ${site.phone}` : `Call ${site.phone}`}</a>
           <p class="hablamos">{c.quote.note}</p>
         </div>
       </div>

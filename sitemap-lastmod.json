@@ -1,6 +1,6 @@
 {
  "/": {
-  "hash": "86b5ff14044d7f19",
+  "hash": "a4a41d613cbfcae0",
   "lastmod": "2026-11-10"
  },
  "/about-us": {
@@ -12,8 +12,8 @@
   "lastmod": "2026-11-09"
  },
  "/book-an-inspection": {
-  "hash": "303185067780de59",
-  "lastmod": "2026-10-22"
+  "hash": "606195ec2327feaa",
+  "lastmod": "2026-11-10"
  },
  "/commercial-roofing": {
   "hash": "01020975a96930ce",
@@ -48,12 +48,16 @@
   "lastmod": "2026-11-09"
  },
  "/es-mx": {
-  "hash": "64911d998106f03b",
+  "hash": "dc9af4ab94abf1e2",
   "lastmod": "2026-11-10"
  },
  "/es-mx/about-us": {
   "hash": "41bda74bb299fc08",
   "lastmod": "2026-10-22"
+ },
+ "/es-mx/book-an-inspection": {
+  "hash": "1ba17c0f59f0b3b4",
+  "lastmod": "2026-11-10"
  },
  "/es-mx/commercial-roofing": {
   "hash": "f99b28058fe99236",
@@ -62,6 +66,10 @@
  "/es-mx/contact-us": {
   "hash": "d56ba5b6f53ef7bd",
   "lastmod": "2026-10-22"
+ },
+ "/es-mx/financing": {
+  "hash": "bf604a12dffb1f43",
+  "lastmod": "2026-11-10"
  },
  "/es-mx/projects": {
   "hash": "c2da96748e24317a",

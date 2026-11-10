@@ -1,6 +1,7 @@
 ---
 // One slim sticky row: logo, menu, phone, quote button. Address, email and
-// social links live in the footer. Mobile: logo, round call button, menu.
+// social links live in the footer. Mobile: logo, labeled call button, menu
+// (was an unlabeled round icon until the 2026-11-10 conversion audit).
 import { Image } from 'astro:assets';
 import logo from '../assets/edel-logo.png';
 import { site, mainNav, mainNavEs, quoteFallback } from '../data/site';
@@ -61,6 +62,7 @@ const isActive = (href: string) => (href === home ? path === home : path === hre
 
       <a class="call-round" href={site.phoneHref} aria-label={`${t.call} Edel Roofing ${site.phone}`}>
         <Icon name="phone" />
+        <span>{t.call}</span>
       </a>
       <details class="mobile-menu">
         <summary aria-label={t.menu}><Icon name="menu" /></summary>
@@ -191,15 +193,19 @@ const isActive = (href: string) => (href === home ? path === home : path === hre
     .quote { display: none; }
     .actions { gap: 12px; }
     .call-round {
-      display: grid;
-      place-items: center;
-      width: 52px;
-      height: 52px;
-      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      min-height: 48px;
+      padding: 0 16px;
+      border-radius: 999px;
       background: var(--maroon);
       color: var(--white);
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
     }
-    .call-round :global(svg) { width: 24px; height: 24px; }
+    .call-round :global(svg) { width: 20px; height: 20px; }
     .mobile-menu { display: block; }
     .mobile-menu summary {
       list-style: none;

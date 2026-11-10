@@ -32,6 +32,11 @@ export const mapEmbed = `https://www.google.com/maps?q=${encodeURIComponent(`${s
 // Roofle embed on /contact-us, the Spanish form on /es-mx/contact-us).
 export const quoteFallback = (lang: 'en' | 'es' = 'en') => (lang === 'es' ? '/es-mx/contact-us#contacto' : '/contact-us#estimate');
 
+// Tavros (GoHighLevel) booking calendar from the live /book-an-inspection.
+// Stays: Isaiah Del Toro still works with Edel, and ProLine "web lead" leads
+// come from it (Eddie, 2026-11-03).
+export const TAVROS_URL = 'https://tools.gotavros.com/widget/booking/xAmEhIorZ8LXCvdZIZU6';
+
 export type NavItem = { label: string; href: string; children?: NavItem[] };
 
 // Four top links (the live Duda header had seven). The logo goes home and
@@ -76,7 +81,8 @@ export const mainNav: NavItem[] = [
 
 // Spanish menu: same four-link shape as English. Áreas de Servicio is added
 // (the live ES menu left it out); Inicio and Contáctenos moved like Home and
-// Contact Us. There is no Spanish blog index or financing page.
+// Contact Us. There is no Spanish blog index. Financiamiento added under
+// Sobre Nosotros 2026-11-10 (new /es-mx/financing page), same as EN.
 export const mainNavEs: NavItem[] = [
   {
     label: 'Servicios',
@@ -96,6 +102,7 @@ export const mainNavEs: NavItem[] = [
     children: [
       { label: 'Sobre Edel', href: '/es-mx/about-us' },
       { label: 'Contáctenos', href: '/es-mx/contact-us' },
+      { label: 'Financiamiento', href: '/es-mx/financing' },
     ],
   },
 ];

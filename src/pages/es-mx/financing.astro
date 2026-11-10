@@ -1,0 +1,34 @@
+---
+// /es-mx/financing, added 2026-11-10 (conversion audit: the ES home's
+// financing button and FAQ had no Spanish page to land on). Faithful
+// translation of /financing, usted voice. Same rules as EN: rates kept OFF
+// until Eddie confirms with Edel they are APR (2026-11-09); no approval or
+// "no credit" claims.
+import InnerPage from '../../layouts/InnerPage.astro';
+import hero from '../../assets/home/truck-house.jpeg';
+import { site } from '../../data/site';
+---
+<InnerPage
+  lang="es"
+  title="Financiamiento de Techos en Edinburg, TX | EDEL Roofing & Construction"
+  description="EDEL Roofing ofrece financiamiento para reemplazo y reparación de techos en Edinburg y el Valle del Río Grande. Llame al (956) 422-3335 y pregunte por sus opciones."
+  alternates={{ en: '/financing', es: '/es-mx/financing' }}
+  crumbs={[
+    { label: 'Inicio', href: '/es-mx' },
+    { label: 'Financiamiento', href: '/es-mx/financing' },
+  ]}
+  hero={{ eyebrow: 'Financiamiento', title: 'Financiamiento de Techos en Edinburg', bg: hero }}
+  intro={{
+    title: 'Pague su techo poco a poco',
+    body: [
+      'Un techo nuevo o una reparación grande a veces llega cuando usted no lo tenía planeado. Ofrecemos financiamiento para reemplazo y reparación de techos en Edinburg y todo el Valle.',
+      `Cuando llame al <a href="${site.phoneHref}">${site.phone}</a> para agendar su inspección gratis, pregúntenos por el financiamiento. Antes de empezar cualquier trabajo le damos un estimado por escrito, así sabe exactamente cuánto va a financiar.`,
+    ],
+    cta: { label: 'Estimado al Instante', href: '/es-mx/contact-us#contacto', roofle: true },
+  }}
+  closing={{
+    title: 'Empiece con una inspección gratis',
+    body: 'Un techador con licencia de Edinburg revisa su techo y le prepara el estimado. Después usted decide cómo quiere pagarlo.',
+    cta: { label: 'Contáctenos', href: '/es-mx/contact-us' },
+  }}
+/>

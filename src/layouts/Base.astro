@@ -6,6 +6,7 @@ import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Tracking from '../components/Tracking.astro';
+import StickyCall from '../components/StickyCall.astro';
 import { PREVIEW } from '../data/launch.mjs';
 import { getImage } from 'astro:assets';
 import { orgSchema } from '../data/schema';
@@ -81,6 +82,7 @@ const shareUrl = new URL(share.src, shareOrigin).href;
       <slot />
     </main>
     <Footer lang={lang} switchHref={switchHref} />
+    <StickyCall lang={lang} />
     {/* Roofle instant quote slide-out (same widget id as the live site) */}
     {roofle && (
       <Fragment>

@@ -243,7 +243,7 @@ export const homeEs: HomeCopy = {
     pill: 'Estimado en línea',
     title: 'Tenga una idea de cuánto podría costar su techo nuevo',
     body: 'Escriba su dirección, identifique su techo y deje sus datos de contacto para recibir un estimado inicial. Confirmamos el alcance y el precio final después de una inspección en su propiedad.',
-    schedule: { label: 'Agende una Inspección Gratis', href: '/es-mx/contact-us' },
+    schedule: { label: 'Agende una Inspección Gratis', href: '/es-mx/book-an-inspection' },
     button: 'Estimado al Instante',
     call: 'O llame al',
     note: 'Atendemos en español',
@@ -324,11 +324,11 @@ export const homeEs: HomeCopy = {
       { title: 'Revise sus opciones', body: 'Reciba por escrito el alcance, los materiales y el precio.' },
       { title: 'Manos a la obra', body: 'Coordinamos el proyecto y revisamos con usted el trabajo terminado.' },
     ],
-    button: { label: 'Agendar Mi Inspección Gratis', href: '/es-mx/contact-us' },
+    button: { label: 'Agendar Mi Inspección Gratis', href: '/es-mx/book-an-inspection' },
     financing: {
       title: 'Más flexibilidad para su proyecto de techo',
       body: 'Una reparación o un reemplazo de techo puede apretar su presupuesto. Pregunte por las opciones de financiamiento y revise un plan de pagos que le funcione. El financiamiento está sujeto a la aprobación del prestamista y a sus términos.',
-      button: { label: 'Pregunte por Financiamiento', href: '/es-mx/contact-us' },
+      button: { label: 'Pregunte por Financiamiento', href: '/es-mx/financing' },
     },
   },
   form: {
@@ -366,7 +366,7 @@ export const homeEs: HomeCopy = {
       },
       {
         q: '¿Ofrecen inspecciones de techo gratis en Edinburg?',
-        a: `Sí. Hacemos inspecciones y estimados de techo gratis en Edinburg y todo el Valle del Río Grande. Llame al ${call} o <a href="/es-mx/contact-us">pida una inspección en línea</a>.`,
+        a: `Sí. Hacemos inspecciones y estimados de techo gratis en Edinburg y todo el Valle del Río Grande. Llame al ${call} o <a href="/es-mx/book-an-inspection">pida una inspección en línea</a>.`,
       },
       {
         q: '¿Cuánto tarda un proyecto de techo?',
@@ -391,14 +391,14 @@ export const homeEs: HomeCopy = {
       },
       {
         q: '¿Ofrecen financiamiento?',
-        a: 'Sí. Hay financiamiento para reemplazo y reparación de techos, sujeto a la aprobación del prestamista. <a href="/es-mx/contact-us">Contáctenos</a>.',
+        a: 'Sí. Hay financiamiento para reemplazo y reparación de techos, sujeto a la aprobación del prestamista. <a href="/es-mx/financing">Vea el financiamiento</a>.',
       },
     ],
   },
   cta: {
     title: 'Hablemos de su techo',
     body: 'Ya sea que tenga una gotera o esté planeando un reemplazo, en EDEL le ayudamos a entender sus opciones y a avanzar con confianza.',
-    schedule: { label: 'Agende una Inspección Gratis', href: '/es-mx/contact-us' },
+    schedule: { label: 'Agende una Inspección Gratis', href: '/es-mx/book-an-inspection' },
     call: 'Llamar',
     note: 'Atendemos en español',
   },

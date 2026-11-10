@@ -1,0 +1,71 @@
+---
+// /es-mx/book-an-inspection, added 2026-11-10 (conversion audit: ES
+// "Agendar Inspección" buttons had no Spanish page and some pointed at the
+// English one). Faithful translation of /book-an-inspection, usted voice.
+// Same Tavros calendar (stays per Eddie 2026-11-03) and the same FormSpark
+// inspection form; LeadForm's hidden page field tells EN and ES apart.
+import InnerPage from '../../layouts/InnerPage.astro';
+import hero from '../../assets/home/hero-roof.jpeg';
+import { site } from '../../data/site';
+import { forms } from '../../data/forms';
+import LeadForm from '../../components/LeadForm.astro';
+import { TAVROS_URL } from '../../data/site';
+---
+<InnerPage
+  lang="es"
+  title="Agende una Inspección de Techo Gratis | EDEL Roofing, Edinburg TX"
+  description="Agende una inspección de techo gratis con EDEL Roofing & Construction en Edinburg y el Valle del Río Grande. Llame al (956) 422-3335 o empiece con un estimado en línea."
+  alternates={{ en: '/book-an-inspection', es: '/es-mx/book-an-inspection' }}
+  crumbs={[
+    { label: 'Inicio', href: '/es-mx' },
+    { label: 'Agendar Inspección', href: '/es-mx/book-an-inspection' },
+  ]}
+  hero={{ eyebrow: 'Inspecciones de techo gratis', title: 'Agende una Inspección de Techo Gratis', bg: hero }}
+  intro={{
+    title: 'Cómo empezar',
+    body: [
+      '<strong>Escoja una hora.</strong> Use el calendario de abajo, o llene el formulario y le llamamos para ponernos de acuerdo.',
+      `<strong>Llámenos.</strong> Llame al <a href="${site.phoneHref}">${site.phone}</a> y agendamos su inspección de techo gratis. Contestamos 24/7.`,
+      '<strong>¿Quiere un precio primero?</strong> Escriba su dirección en el estimado en línea y busque su techo en el mapa satelital. Después de poner su nombre, teléfono y correo, le muestra un precio estimado. El precio final se lo confirmamos por escrito después de la inspección gratis.',
+    ],
+    cta: { label: 'Estimado al Instante', href: '/es-mx/contact-us#contacto', roofle: true },
+  }}
+  closing={{
+    title: '¿No está seguro de lo que necesita su techo?',
+    body: 'Para eso es la inspección. Revisamos el techo, le decimos lo que vemos y le damos el trabajo y el precio por escrito antes de empezar.',
+    cta: { label: 'Contáctenos', href: '/es-mx/contact-us' },
+  }}
+>
+  <section class="section" id="calendario">
+    <div class="wrap">
+      <h2 class="center-h">Escoja una Hora</h2>
+      <iframe class="tavros" title="Agende una inspección" src={TAVROS_URL} loading="lazy"></iframe>
+    </div>
+  </section>
+  <section class="section soft" id="schedule">
+    <div class="wrap form-wrap">
+      <h2 class="center-h">¿Prefiere que le llamemos?</h2>
+      <LeadForm
+        id="inspection"
+        lang="es"
+        submit="Agendar Mi Inspección Gratis"
+        endpoint={forms.inspection}
+        fields={[
+          { name: 'name', label: 'Nombre', required: true, autocomplete: 'name' },
+          { name: 'phone', label: 'Teléfono', type: 'tel', required: true, autocomplete: 'tel' },
+          { name: 'email', label: 'Correo electrónico', type: 'email', autocomplete: 'email' },
+          { name: 'address', label: 'Dirección de la propiedad', autocomplete: 'street-address' },
+          { name: 'service', label: '¿Qué necesita?', type: 'select', options: ['Reparación de techo', 'Reemplazo de techo', 'Techo comercial', 'Inspección por tormenta', 'Canalones', 'No estoy seguro'] },
+          { name: 'message', label: '¿Algo que debamos saber?', type: 'textarea' },
+        ]}
+      />
+    </div>
+  </section>
+</InnerPage>
+
+<style>
+  .section { padding-block: 72px; }
+  .form-wrap { max-width: 720px; }
+  .center-h { text-align: center; font-size: clamp(28px, 3.4vw, 40px); text-transform: uppercase; }
+  .tavros { display: block; width: 100%; min-height: 800px; border: 0; }
+</style>

@@ -16,17 +16,21 @@ const { lang = 'en', show, more } = Astro.props;
 const sorted = [...data.reviews].sort((a, b) => Number(/roof/i.test(b.text)) - Number(/roof/i.test(a.text)));
 const first = show ? sorted.slice(0, show) : sorted;
 const rest = show ? sorted.slice(show) : [];
+// One count sitewide: round down to the nearest 50 ("250+"), so this never
+// disagrees with the hero and trust strips as new reviews come in (2026-11-10).
+const countFloor = Math.floor(data.count / 50) * 50;
+const countLabel = `${countFloor}+`;
 
 const t = {
   en: {
-    summary: `${data.rating} out of 5 from ${data.count} Google reviews`,
+    summary: `${data.rating} out of 5 from ${countLabel} Google reviews`,
     stars: (n: number) => `${n} out of 5 stars`,
     source: 'Google review',
     read: 'Read on Google',
     note: 'Recent reviews from Google, shown as our customers wrote them.',
   },
   es: {
-    summary: `${data.rating} de 5 en ${data.count} reseñas de Google`,
+    summary: `${data.rating} de 5 en más de ${countFloor} reseñas de Google`,
     stars: (n: number) => `${n} de 5 estrellas`,
     source: 'Reseña de Google',
     read: 'Ver en Google',

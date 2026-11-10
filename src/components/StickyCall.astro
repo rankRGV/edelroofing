@@ -1,0 +1,91 @@
+---
+// Phone-only sticky call bar (conversion audit 2026-11-10: no persistent,
+// labeled call option on phones). Same pattern as Cool Aid's StickyCallCTA:
+// slides up after the visitor scrolls past about a third of the screen,
+// dismissible for the rest of the page view, hidden at 1025px and up where
+// the header shows the phone number.
+import Icon from './Icon.astro';
+import { site } from '../data/site';
+
+interface Props { lang?: 'en' | 'es' }
+const { lang = 'en' } = Astro.props;
+const es = lang === 'es';
+---
+<div id="sticky-call" class="sticky-call" aria-hidden="true">
+  <a class="call" href={site.phoneHref} tabindex="-1">
+    <Icon name="phone" />
+    <span>{es ? 'Llame ahora' : 'Call now'}: {site.phone}</span>
+  </a>
+  <button type="button" class="close" aria-label={es ? 'Cerrar' : 'Dismiss'} tabindex="-1">&times;</button>
+</div>
+
+<script>
+  const bar = document.getElementById('sticky-call');
+  if (bar) {
+    let dismissed = false;
+    const focusables = bar.querySelectorAll<HTMLElement>('a, button');
+    const show = (on: boolean) => {
+      bar.classList.toggle('on', on);
+      bar.setAttribute('aria-hidden', on ? 'false' : 'true');
+      focusables.forEach((el) => (el.tabIndex = on ? 0 : -1));
+    };
+    const onScroll = () => {
+      if (!dismissed) show(window.scrollY > window.innerHeight * 0.35);
+    };
+    bar.querySelector('.close')?.addEventListener('click', () => {
+      dismissed = true;
+      show(false);
+    });
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+</script>
+
+<style>
+  .sticky-call {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+    z-index: 40;
+    display: none;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+    transform: translateY(calc(100% + 24px));
+    transition: transform 250ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .sticky-call.on { transform: none; }
+  .call {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 48px;
+    border-radius: 10px;
+    background: var(--maroon);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  .call :global(svg) { width: 18px; height: 18px; }
+  .close {
+    flex: none;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    background: transparent;
+    font-size: 28px;
+    line-height: 1;
+    color: var(--muted);
+    cursor: pointer;
+  }
+  @media (max-width: 1024px) { .sticky-call { display: flex; } }
+  @media (prefers-reduced-motion: reduce) { .sticky-call { transition: none; } }
+</style>

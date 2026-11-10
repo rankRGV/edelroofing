@@ -24,7 +24,7 @@
   "heroCtas": [
     {
       "label": "Obtener Estimado Gratis",
-      "href": "/book-an-inspection"
+      "href": "/es-mx/book-an-inspection"
     },
     {
       "label": "Llamar (956) 422-3335",
@@ -140,7 +140,7 @@
         },
         {
           "q": "¿Cómo obtengo un estimado de reemplazo en McAllen?",
-          "a": "Llame al (956) 422-3335 o <a href=\"/book-an-inspection\">programe una inspección en línea</a>. Caminamos el techo, lo medimos y le damos un estimado por escrito gratis."
+          "a": "Llame al (956) 422-3335 o <a href=\"/es-mx/book-an-inspection\">programe una inspección en línea</a>. Caminamos el techo, lo medimos y le damos un estimado por escrito gratis."
         }
       ]
     }
@@ -151,7 +151,7 @@
     "buttons": [
       {
         "label": "Programar Inspección Gratis",
-        "href": "/book-an-inspection"
+        "href": "/es-mx/book-an-inspection"
       },
       {
         "label": "Llamar (956) 422-3335",
