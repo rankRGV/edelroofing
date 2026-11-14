@@ -172,10 +172,11 @@ const badges = [
   </section>
 
   {/* What happens next */}
-  <section class="section photo-band" style={truckBg}>
+  <section class="section photo-band acc" style={truckBg}>
     <div class="wrap center">
       <p class="eyebrow">{c.steps.eyebrow}</p>
-      <h2>{c.steps.title}</h2>
+      <h2 class="acc-h">{c.steps.title}</h2>
+      <div class="acc-body">
       <ol class="steps">
         {c.steps.items.map((st, i) => (
           <li>
@@ -186,6 +187,7 @@ const badges = [
         ))}
       </ol>
       <a class="btn btn--white" href={c.steps.button.href}>{c.steps.button.label}</a>
+      </div>
       <div class="finance">
         <h3>{c.steps.financing.title}</h3>
         <p>{c.steps.financing.body}</p>
@@ -580,7 +582,7 @@ const badges = [
     .hero .promise { font-size: 16px; margin-bottom: 10px; }
     .hero { padding-block: 18px 32px; }
     .hero-grid { gap: 18px; }
-    .rating { gap: 8px; font-size: 14px; margin-bottom: 12px; flex-wrap: nowrap; }
+    .rating { gap: 8px; font-size: 14px; margin-bottom: 12px; flex-wrap: nowrap; min-height: 44px; margin-top: -10px; }
     .stars :global(svg) { width: 16px; height: 16px; }
     .hero h1 { font-size: 32px; margin-bottom: 14px; max-width: none; }
     .hero h1:lang(es) { font-size: 28px; }
@@ -612,5 +614,47 @@ const badges = [
     .cta-actions { width: 100%; }
     /* The phone number made this button wider than a 320px screen. */
     .cta .btn { width: 100%; white-space: normal; text-align: center; padding-inline: 16px; }
+  }
+
+  /* Phones, mobile pass 2026-11-14 (measured: services were 3,074px tall,
+     3.6 screens). Same words and links, less scrolling. */
+  @media (max-width: 760px) {
+    /* Services: compact rows, small photo, two lines of text. */
+    .services { gap: 12px; }
+    .service {
+      display: grid;
+      grid-template-columns: 96px minmax(0, 1fr);
+      grid-template-areas: 'img title' 'img body' 'btn btn';
+      column-gap: 14px;
+      align-items: start;
+      padding: 12px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+    .service :global(img) { grid-area: img; width: 96px; height: 96px; aspect-ratio: 1; margin: 0; }
+    .service .eyebrow { display: none; }
+    .service h3 { grid-area: title; font-size: 21px; margin: 2px 0 4px; }
+    .service p:not(.eyebrow) { grid-area: body; margin: 0; font-size: 14px; line-height: 1.5; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; }
+    .service .btn { grid-area: btn; justify-self: stretch; margin-top: 12px; min-height: 44px; font-size: 14px; }
+    /* Why Edel: the three promise cards swipe; credentials and badges stay open. */
+    .proof-grid {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 12px;
+      padding-bottom: 6px;
+      margin-inline: calc(var(--gutter) * -1);
+      padding-inline: var(--gutter);
+      scroll-padding-inline: var(--gutter);
+    }
+    .proof-card { flex: 0 0 84%; scroll-snap-align: start; }
+    .credentials { margin-top: 24px; }
+    .actions { margin-top: 24px; }
+    /* Steps collapse under their heading; financing stays visible. */
+    .photo-band.acc .acc-h { text-align: left; }
+    .finance { margin-top: 20px; }
+    .map { aspect-ratio: 16 / 10; }
+    summary { min-height: 44px; padding: 14px 16px; }
   }
 </style>

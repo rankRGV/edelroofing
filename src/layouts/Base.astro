@@ -7,6 +7,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Tracking from '../components/Tracking.astro';
 import StickyCall from '../components/StickyCall.astro';
+import MobileUX from '../components/MobileUX.astro';
 import { PREVIEW } from '../data/launch.mjs';
 import { getImage } from 'astro:assets';
 import { orgSchema } from '../data/schema';
@@ -49,6 +50,8 @@ const shareUrl = new URL(share.src, shareOrigin).href;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {/* Phone accordions only collapse when JS runs (see MobileUX.astro). */}
+    <script is:inline>document.documentElement.classList.add('js');</script>
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
     <link rel="canonical" href={canonical.href} />
@@ -83,6 +86,7 @@ const shareUrl = new URL(share.src, shareOrigin).href;
     </main>
     <Footer lang={lang} switchHref={switchHref} />
     <StickyCall lang={lang} />
+    <MobileUX />
     {/* Roofle instant quote slide-out (same widget id as the live site) */}
     {roofle && (
       <Fragment>

@@ -80,10 +80,10 @@ const faqSchema = faq && {
   </section>
 
   {band && (
-    <section class="section band" style={bandCss}>
+    <section class="section band acc" style={bandCss}>
       <div class:list={['wrap', { split: band.images?.length }]}>
         {band.images && band.images.length > 0 && (
-          <div class="gallery">
+          <div class="gallery acc-body">
             {band.images.map((img, i) => (
               <Image
                 src={img.src}
@@ -97,35 +97,39 @@ const faqSchema = faq && {
         )}
         <div class:list={{ narrow: !band.images?.length }}>
           {band.eyebrow && <p class="eyebrow">{band.eyebrow}</p>}
-          <h2>{band.title}</h2>
+          <h2 class="acc-h">{band.title}</h2>
+          <div class="acc-body">
           {paras(band).map((p) => <p set:html={p} />)}
           {band.cta && <a class="btn btn--light" href={band.cta.href} data-roofle-open={band.cta.roofle ? '' : undefined}>{band.cta.label}</a>}
+          </div>
         </div>
       </div>
     </section>
   )}
 
   {extra.map((b, i) => (
-    <section class:list={['section', { soft: i % 2 === 0 }]}>
+    <section class:list={['section', 'acc', { soft: i % 2 === 0 }]}>
       <div class:list={['wrap', b.images?.[0] ? 'split' : 'narrow', { flip: i % 2 === 0 }]}>
         <div>
           {b.eyebrow && <p class="eyebrow">{b.eyebrow}</p>}
-          <h2>{b.title}</h2>
+          <h2 class="acc-h">{b.title}</h2>
+          <div class="acc-body">
           {paras(b).map((p) => <p set:html={p} />)}
           {b.cta && <a class="btn" href={b.cta.href} data-roofle-open={b.cta.roofle ? '' : undefined}>{b.cta.label}</a>}
+          </div>
         </div>
         {b.images?.[0] && (
-          <Image src={b.images[0].src} alt={b.images[0].alt} widths={[480, 760, 1100]} sizes="(max-width: 900px) 100vw, 560px" class="rounded" />
+          <Image src={b.images[0].src} alt={b.images[0].alt} widths={[480, 760, 1100]} sizes="(max-width: 900px) 100vw, 560px" class="rounded acc-body" />
         )}
       </div>
     </section>
   ))}
 
   {benefits && (
-    <section class="section">
+    <section class="section acc">
       <div class="wrap">
-        <h2 class="center">{benefits.title}</h2>
-        <ul class="benefits">
+        <h2 class="center acc-h">{benefits.title}</h2>
+        <ul class="benefits acc-body">
           {benefits.items.map((b, i) => (
             <li>
               <Icon name={benefitIcons[i % 3]} />
@@ -225,5 +229,17 @@ const faqSchema = faq && {
     .split { grid-template-columns: 1fr; gap: 32px; }
     .flip > :global(img) { order: 0; }
     .benefits { grid-template-columns: 1fr; }
+  }
+  /* Phones (mobile pass 2026-11-14): the intro stays open; the band, extra
+     sections and benefits collapse under their heading. Photos sit under the
+     text when a section is opened. */
+  @media (max-width: 760px) {
+    .section { padding-block: 40px; }
+    .acc .split { gap: 16px; }
+    .acc .split > .gallery, .acc .split > :global(img) { order: 2; }
+    .acc h2.center { text-align: left; }
+    .benefits { margin-top: 0; gap: 12px; }
+    .benefits li { padding: 18px; }
+    summary { min-height: 44px; padding: 14px 16px; }
   }
 </style>

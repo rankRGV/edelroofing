@@ -96,5 +96,8 @@ const t =
     .actions .btn { flex: 1 1 100%; }
     .stars :global(svg) { width: 15px; height: 15px; }
     .rating { font-size: 13px; gap: 8px; }
+    /* 44px tap rows without moving the layout (mobile pass 2026-11-14). */
+    .rating { min-height: 44px; margin-block: -10px; }
+    .crumbs a { display: inline-block; padding-block: 12px; margin-block: -12px; }
   }
 </style>

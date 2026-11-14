@@ -55,4 +55,10 @@ const { title, intro, links, soft = false } = Astro.props;
   a:hover { border-color: var(--maroon); color: var(--maroon); }
   a :global(svg) { width: 18px; height: 18px; flex: none; color: var(--maroon); }
   @media (max-width: 600px) { .spokes { padding-block: 48px; } }
+  /* Phones: shorter link rows, still 44px+ to tap (mobile pass 2026-11-14). */
+  @media (max-width: 760px) {
+    .spokes { padding-block: 36px; }
+    ul { gap: 8px; margin-top: 16px; }
+    a { min-height: 50px; padding: 10px 14px; }
+  }
 </style>

@@ -228,4 +228,15 @@ const schema = [
     .section { padding-block: 40px 56px; }
     .posts { grid-template-columns: 1fr; gap: 16px; }
   }
+  /* Phones (mobile pass 2026-11-14): photo beside the text, excerpt cut to
+     three lines (full text stays in the HTML; the post has it all). */
+  @media (max-width: 760px) {
+    .posts { gap: 10px; }
+    .card { flex-direction: row; align-items: stretch; }
+    .card :global(img) { width: 104px; flex: none; aspect-ratio: auto; height: auto; min-height: 100%; }
+    .body { padding: 12px 14px; }
+    .meta { margin-bottom: 4px; }
+    h2 { font-size: 18px; }
+    .body p:not(.meta) { margin: 4px 0 6px; font-size: 13px; line-height: 1.45; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; overflow: hidden; }
+  }
 </style>

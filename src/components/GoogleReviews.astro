@@ -129,4 +129,21 @@ const month = new Intl.DateTimeFormat(lang === 'es' ? 'es-MX' : 'en-US', { month
     .card:nth-child(n + 4) { display: none; }
     .card { padding: 20px; }
   }
+  /* Phones, mobile pass 2026-11-14: reviews stay visible (Eddie) but swipe
+     side to side, so three cards take one card's height. */
+  @media (max-width: 760px) {
+    .g-reviews { margin-top: 20px; }
+    .cards {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 12px;
+      margin-inline: calc(var(--gutter) * -1);
+      padding: 0 var(--gutter) 8px;
+      scroll-padding-inline: var(--gutter);
+    }
+    .card { flex: 0 0 86%; scroll-snap-align: start; }
+    .read { display: inline-flex; align-items: center; min-height: 44px; margin-block: -10px; align-self: flex-start; }
+    .more summary { display: flex; align-items: center; justify-content: center; min-height: 44px; margin-bottom: 12px; }
+  }
 </style>

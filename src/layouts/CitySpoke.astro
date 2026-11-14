@@ -60,10 +60,17 @@ const moreTitle = es ? `Más páginas de techos en ${cityName}` : `More Roofing 
 <Base title={page.title} description={page.description} lang={page.lang} alternates={page.alternates ?? undefined} schema={page.schema} image={bgs[page.service] ?? hubBg}>
   <PageHero crumbs={crumbs} title={page.h1} lead={plain(page.lede)} bg={bgs[page.service] ?? hubBg} lang={page.lang} />
 
-  {page.sections.map((s) => (
-    <section class:list={['section', { soft: s.alt }]}>
+  {page.sections.map((s, i) => {
+    // Phones (mobile pass 2026-11-14): the first section, credentials (proof)
+    // and FAQs stay as they are; service link cards become a compact list;
+    // other sections collapse under their heading (text stays in the HTML).
+    const linkCards = s.kind === 'cards' && s.cards!.some((c) => c.href);
+    const acc = i > 0 && !!s.title && (s.kind === 'text' || (s.kind === 'cards' && !linkCards));
+    return (
+    <section class:list={['section', { soft: s.alt, acc, compact: linkCards }]}>
       <div class:list={['wrap', { narrow: s.kind === 'text' || s.kind === 'faq' }]}>
-        {s.title && <h2>{s.title}</h2>}
+        {s.title && <h2 class:list={{ 'acc-h': acc }}>{s.title}</h2>}
+        <div class="acc-body">
         {s.paras?.map((p) => <p set:html={p} />)}
 
         {s.kind === 'cards' && (
@@ -105,9 +112,11 @@ const moreTitle = es ? `Más páginas de techos en ${cityName}` : `More Roofing 
             ))}
           </div>
         )}
+        </div>
       </div>
     </section>
-  ))}
+    );
+  })}
 
   {siblings.length > 0 && <SpokeLinks title={moreTitle} links={siblings} soft />}
 
@@ -183,5 +192,18 @@ const moreTitle = es ? `Más páginas de techos en ${cityName}` : `More Roofing 
   @media (max-width: 600px) {
     .cards { grid-template-columns: minmax(0, 1fr); }
     .proof strong { font-size: 24px; }
+  }
+  /* Phones: tighter sections; service link cards become a compact list
+     (title, two lines of the text, link). Full text stays in the HTML. */
+  @media (max-width: 760px) {
+    .section { padding-block: 40px; }
+    .compact .cards { gap: 10px; margin-top: 18px; }
+    .compact .card { padding: 14px 16px; border-top-width: 1px; border-left: 3px solid var(--maroon); }
+    .compact .card h3 { font-size: 20px; margin-bottom: 4px; }
+    .compact .card p { font-size: 14px; line-height: 1.5; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; }
+    .compact .more { padding-top: 8px; }
+    .proof { gap: 10px; margin-top: 18px; }
+    .proof li { padding: 14px 10px; }
+    summary { min-height: 44px; padding: 14px 16px; }
   }
 </style>

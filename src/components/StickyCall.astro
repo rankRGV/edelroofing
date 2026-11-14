@@ -1,41 +1,50 @@
 ---
-// Phone-only sticky call bar (conversion audit 2026-11-10: no persistent,
-// labeled call option on phones). Same pattern as Cool Aid's StickyCallCTA:
-// slides up after the visitor scrolls past about a third of the screen,
-// dismissible for the rest of the page view, hidden at 1025px and up where
-// the header shows the phone number.
+// Phone bottom bar (first added in the 2026-11-10 conversion audit).
+// Mobile pass 2026-11-14 (Eddie): two actions, Call + Free Inspection, so the
+// inspection page is one tap from every page (23 of 69 pages had no
+// inspection link at all on phones). Smaller than before (about 64px, was
+// 78px) and no dismiss button. Slides up after the visitor scrolls past about
+// a third of the screen (the hero already shows both actions). Hidden at
+// 1025px and up, where the header shows the phone number.
+// On the inspection, thank-you and ads pages it shows Call only: the
+// inspection link would point at the page itself or pull an ad visitor away
+// from the ad's own form.
 import Icon from './Icon.astro';
 import { site } from '../data/site';
 
 interface Props { lang?: 'en' | 'es' }
 const { lang = 'en' } = Astro.props;
 const es = lang === 'es';
+const path = Astro.url.pathname.replace(/\.html$/, '').replace(/\/$/, '');
+const inspectHref = es ? '/es-mx/book-an-inspection' : '/book-an-inspection';
+const callOnly = /book-an-inspection|thank-you|mcallen-free-quote/.test(path);
 ---
-<div id="sticky-call" class="sticky-call" aria-hidden="true">
-  <a class="call" href={site.phoneHref} tabindex="-1">
+<div id="sticky-call" class:list={['sticky-call', { solo: callOnly }]} aria-hidden="true">
+  <a class="call" href={site.phoneHref} tabindex="-1" aria-label={`${es ? 'Llamar' : 'Call'} ${site.phone}`}>
     <Icon name="phone" />
-    <span>{es ? 'Llame ahora' : 'Call now'}: {site.phone}</span>
+    <span>{callOnly ? `${es ? 'Llamar' : 'Call'} ${site.phone}` : es ? 'Llamar' : 'Call'}</span>
   </a>
-  <button type="button" class="close" aria-label={es ? 'Cerrar' : 'Dismiss'} tabindex="-1">&times;</button>
+  {!callOnly && (
+    <a class="inspect" href={inspectHref} tabindex="-1">
+      <Icon name="clipboard" />
+      <span>{es ? 'Inspección gratis' : 'Free Inspection'}</span>
+    </a>
+  )}
 </div>
 
 <script>
   const bar = document.getElementById('sticky-call');
   if (bar) {
-    let dismissed = false;
-    const focusables = bar.querySelectorAll<HTMLElement>('a, button');
-    const show = (on: boolean) => {
-      bar.classList.toggle('on', on);
-      bar.setAttribute('aria-hidden', on ? 'false' : 'true');
-      focusables.forEach((el) => (el.tabIndex = on ? 0 : -1));
+    const links = bar.querySelectorAll<HTMLElement>('a');
+    let on = false;
+    const show = (v: boolean) => {
+      if (v === on) return;
+      on = v;
+      bar.classList.toggle('on', v);
+      bar.setAttribute('aria-hidden', v ? 'false' : 'true');
+      links.forEach((el) => (el.tabIndex = v ? 0 : -1));
     };
-    const onScroll = () => {
-      if (!dismissed) show(window.scrollY > window.innerHeight * 0.35);
-    };
-    bar.querySelector('.close')?.addEventListener('click', () => {
-      dismissed = true;
-      show(false);
-    });
+    const onScroll = () => show(window.scrollY > window.innerHeight * 0.35);
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
   }
@@ -44,48 +53,44 @@ const es = lang === 'es';
 <style>
   .sticky-call {
     position: fixed;
-    left: 12px;
-    right: 12px;
-    bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+    left: 0;
+    right: 0;
+    bottom: 0;
     z-index: 40;
     display: none;
-    align-items: center;
     gap: 8px;
-    padding: 8px;
+    padding: 8px 12px calc(8px + env(safe-area-inset-bottom, 0px));
     background: var(--white);
-    border: 1px solid var(--line);
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
-    transform: translateY(calc(100% + 24px));
+    border-top: 1px solid var(--line);
+    box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.12);
+    transform: translateY(110%);
     transition: transform 250ms cubic-bezier(0.23, 1, 0.32, 1);
   }
   .sticky-call.on { transform: none; }
-  .call {
+  .sticky-call a {
     flex: 1;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
     min-height: 48px;
+    padding: 0 10px;
     border-radius: 10px;
-    background: var(--maroon);
-    color: var(--white);
+    border: 2px solid var(--maroon);
     font-weight: 700;
     font-size: 16px;
+    white-space: nowrap;
     text-decoration: none;
   }
-  .call :global(svg) { width: 18px; height: 18px; }
-  .close {
-    flex: none;
-    width: 44px;
-    height: 44px;
-    border: 0;
-    background: transparent;
-    font-size: 28px;
-    line-height: 1;
-    color: var(--muted);
-    cursor: pointer;
+  .call { background: var(--white); color: var(--maroon); flex: 0.8; }
+  .solo .call { flex: 1; background: var(--maroon); color: var(--white); }
+  .inspect { background: var(--maroon); color: var(--white); flex: 1.2; }
+  .sticky-call :global(svg) { width: 18px; height: 18px; flex: none; }
+  @media (max-width: 1024px) {
+    .sticky-call { display: flex; }
+    /* Room at the page end so the bar never covers the last footer line. */
+    :global(body) { padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px)); }
   }
-  @media (max-width: 1024px) { .sticky-call { display: flex; } }
+  @media (max-width: 359px) { .sticky-call a { font-size: 15px; gap: 6px; } }
   @media (prefers-reduced-motion: reduce) { .sticky-call { transition: none; } }
 </style>

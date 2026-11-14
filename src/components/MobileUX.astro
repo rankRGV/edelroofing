@@ -1,0 +1,119 @@
+---
+// Phone-only behavior shared by every page (mobile pass 2026-11-14, same
+// engine as Collision Masters commit 48fffa4). Desktop never changes:
+// - Header slides away on scroll down and comes back on any scroll up
+//   (transform only, so nothing moves and CLS stays 0).
+// - Accordions: sections marked .acc collapse on phones. Every word stays in
+//   the HTML on load (Google indexes it; nothing loads on tap). Only CSS hides
+//   a closed body, and only on phones. Without JS everything shows open.
+---
+<script>
+  const phone = matchMedia('(max-width: 760px)');
+  const mobileHeader = matchMedia('(max-width: 1024px)');
+
+  // Header hide / show.
+  const header = document.querySelector<HTMLElement>('.site-header');
+  if (header) {
+    const menu = header.querySelector<HTMLDetailsElement>('.mobile-menu');
+    let lastY = scrollY;
+    let hidden = false;
+    let ticking = false;
+    const setHidden = (h: boolean) => {
+      if (h === hidden) return;
+      hidden = h;
+      header.classList.toggle('is-hidden', h);
+    };
+    const update = () => {
+      ticking = false;
+      const y = Math.max(0, scrollY);
+      const max = document.documentElement.scrollHeight - innerHeight;
+      if (!mobileHeader.matches || y <= header.offsetHeight || menu?.open) { setHidden(false); lastY = y; return; }
+      if (y >= max - 4) { lastY = y; return; } // iOS bounce at the bottom
+      const d = y - lastY;
+      if (Math.abs(d) < 10) return; // small moves add up, so no flicker
+      if (header.contains(document.activeElement) && document.activeElement !== document.body) { setHidden(false); lastY = y; return; }
+      setHidden(d > 0);
+      lastY = y;
+    };
+    addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+    header.addEventListener('focusin', () => setHidden(false));
+    menu?.addEventListener('toggle', () => { if (menu.open) setHidden(false); });
+    mobileHeader.addEventListener('change', update);
+  }
+
+  // Phone accordions: the heading becomes a button.
+  const accs = document.querySelectorAll<HTMLElement>('.acc');
+  const wire = () => {
+    if (!phone.matches) return;
+    accs.forEach((acc) => {
+      if (acc.dataset.wired) return;
+      const h = acc.querySelector<HTMLElement>('.acc-h');
+      const body = acc.querySelector<HTMLElement>('.acc-body');
+      if (!h || !body) return;
+      acc.dataset.wired = '1';
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'acc-btn';
+      while (h.firstChild) btn.appendChild(h.firstChild);
+      h.appendChild(btn);
+      if (!body.id) body.id = 'acc-' + Math.random().toString(36).slice(2, 8);
+      btn.setAttribute('aria-controls', body.id);
+      btn.setAttribute('aria-expanded', String(acc.classList.contains('open')));
+      btn.addEventListener('click', () => {
+        const on = acc.classList.toggle('open');
+        btn.setAttribute('aria-expanded', String(on));
+      });
+    });
+  };
+  wire();
+  phone.addEventListener('change', wire);
+  // A #link into a closed section opens it.
+  const openFor = (id: string) => {
+    const el = id ? document.getElementById(decodeURIComponent(id)) : null;
+    const acc = el?.closest<HTMLElement>('.acc');
+    if (acc && !acc.classList.contains('open')) acc.querySelector<HTMLButtonElement>('.acc-btn')?.click();
+  };
+  openFor(location.hash.slice(1));
+  addEventListener('hashchange', () => openFor(location.hash.slice(1)));
+</script>
+
+<style is:global>
+  @media (max-width: 1024px) {
+    .site-header { transition: transform 0.22s ease; }
+    .site-header.is-hidden { transform: translateY(-100%); }
+    :root { scroll-padding-top: 16px; }
+  }
+  @media (max-width: 1024px) and (prefers-reduced-motion: reduce) {
+    .site-header { transition: none; }
+  }
+
+  .acc-btn { all: unset; box-sizing: border-box; display: block; cursor: pointer; }
+  .acc-btn:focus-visible { outline: 2px solid var(--maroon); outline-offset: 4px; }
+  @media (max-width: 760px) {
+    html.js .acc:not(.open) .acc-body { display: none; }
+    html.js .acc .acc-h { position: relative; padding-right: 44px; margin-bottom: 0; min-height: 44px; }
+    html.js .acc.open .acc-h { margin-bottom: 16px; }
+    html.js .acc .acc-h .acc-btn { width: calc(100% + 44px); margin-right: -44px; padding-right: 44px; min-height: 44px; }
+    html.js .acc .acc-h::after {
+      content: '+';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 32px;
+      height: 32px;
+      display: grid;
+      place-items: center;
+      border: 1px solid currentColor;
+      border-radius: 50%;
+      font-family: var(--font-body, sans-serif);
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 1;
+      pointer-events: none;
+    }
+    html.js .acc.open .acc-h::after { content: '\2013'; }
+    /* Collapsed sections need less air around them. */
+    html.js .acc.section { padding-block: 28px; }
+  }
+</style>

@@ -170,4 +170,13 @@ const { Content } = await render(post);
     .layout { padding-block: 24px 48px; }
     .feature { margin-bottom: 24px; }
   }
+  /* Phones (mobile pass 2026-11-14): related posts swipe side to side. */
+  @media (max-width: 760px) {
+    .related { padding-block: 36px; }
+    .related ul { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 12px; margin-inline: calc(var(--gutter) * -1); padding: 0 var(--gutter) 8px; scroll-padding-inline: var(--gutter); }
+    .related li { flex: 0 0 78%; scroll-snap-align: start; }
+    /* 44px tap rows without moving the layout. */
+    .crumbs a { display: inline-block; padding-block: 12px; margin-block: -12px; }
+    .twin { display: inline-flex; align-items: center; min-height: 44px; margin-top: 6px; margin-bottom: -11px; }
+  }
 </style>
