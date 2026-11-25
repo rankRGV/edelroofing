@@ -35,8 +35,8 @@ const TODAY = new Date().toISOString().slice(0, 10);
 
 // Pages that stay out of the sitemap: noindex pages (404, ads landing and
 // its thank-you, energy relief until Edel confirms the offer) and the
-// generic form thank-you page.
-const EXCLUDE = new Set(['/404', '/mcallen-free-quote', '/mcallen-free-quote-thank-you', '/thank-you']);
+// generic form thank-you page. /financing is noindex per GoodLeap (2026-11-25).
+const EXCLUDE = new Set(['/404', '/mcallen-free-quote', '/mcallen-free-quote-thank-you', '/thank-you', '/financing']);
 const SKIP_DIRS = new Set(['_astro', ...LEGACY]);
 
 async function htmlFiles(dir) {

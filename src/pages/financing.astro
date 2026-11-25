@@ -15,14 +15,24 @@
 // Rates kept OFF the page until Eddie confirms with Edel they are APR
 //   (Eddie, 2026-11-09). Open (Edel): application link; APR or not. No approval or
 //   "no credit" claims.
+// 2026-11-25: GoodLeap GoodLink added (Edel fwd 11/24, Logan Barlow). Per
+//   GoodLeap's partner guide: their approved paragraph word for word (do not
+//   edit it), their logo, button to the GoodLink, English only, page noindex
+//   (blocks bot applications; also listed in sitemap EXCLUDE). GoodLeap
+//   reviews this page once live. Same block for the live Duda site:
+//   duda-pages/financing-goodleap.html.
 import InnerPage from '../layouts/InnerPage.astro';
 import hero from '../assets/home/truck-house.jpeg';
 import { site } from '../data/site';
+import goodleapLogo from '../assets/goodleap-logo.svg?raw';
+
+const goodlink = 'https://www.goodleap.dev/edelroofingandconstructioninc/7711c3a7-ed9a-4103-901a-c53e8f8d636c';
 ---
 <InnerPage
   title="Roof Financing in Edinburg, TX | Edel Roofing & Construction"
   description="Edel Roofing offers financing for roof replacement and repairs in Edinburg and the Rio Grande Valley. Call (956) 422-3335 to ask about your options."
   alternates={{ en: '/financing', es: '/es-mx/financing' }}
+  noindex
   crumbs={[
     { label: 'Home', href: '/' },
     { label: 'Financing', href: '/financing' },
@@ -32,7 +42,7 @@ import { site } from '../data/site';
     title: 'Pay for your roof over time',
     body: [
       "A new roof or a big repair can come up when you weren't planning for it. We offer financing for roof replacement and repairs in Edinburg and the Valley.",
-      `When you call <a href="${site.phoneHref}">${site.phone}</a> to set up your free inspection, ask us about financing. You'll get a written estimate before any work starts, so you know exactly how much you'd be financing.`,
+      `You can apply online through GoodLeap below, or call <a href="${site.phoneHref}">${site.phone}</a> and ask us about financing when you set up your free inspection. You'll get a written estimate before any work starts, so you know exactly how much you'd be financing.`,
     ],
     cta: { label: 'Get Instant Estimate', href: '/contact-us#estimate', roofle: true },
   }}
@@ -41,4 +51,40 @@ import { site } from '../data/site';
     body: 'A licensed Edinburg roofer checks your roof and writes up the estimate. Then you decide how you want to pay for it.',
     cta: { label: 'Contact Us', href: '/contact-us' },
   }}
-/>
+>
+  <section class="gl" aria-labelledby="gl-title">
+    <div class="wrap">
+      <div class="gl-card">
+        <Fragment set:html={goodleapLogo} />
+        <h2 id="gl-title">Apply for Financing</h2>
+        <p>We have partnered with GoodLeap to offer flexible payment options for your project. GoodLeap uses a soft credit check until funding and the highest score from all 3 bureaus to see if you qualify. It also takes just a few minutes to get started.</p>
+        <a class="btn" href={goodlink} target="_blank" rel="noopener">Get Started</a>
+        <p class="gl-call">Questions about financing? Call <a href={site.phoneHref}>{site.phone}</a></p>
+      </div>
+    </div>
+  </section>
+</InnerPage>
+
+<style>
+  .gl { padding-block: 72px; background: var(--bg-warm); }
+  .gl-card {
+    max-width: 820px;
+    margin-inline: auto;
+    padding: 44px 40px;
+    text-align: center;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-top: 4px solid var(--maroon);
+    border-radius: var(--radius);
+  }
+  .gl-card :global(.gl-logo) { display: block; width: 220px; max-width: 70%; height: auto; margin: 0 auto 18px; }
+  .gl-card h2 { font-size: clamp(28px, 3.6vw, 40px); text-transform: uppercase; margin: 0 0 16px; }
+  .gl-card p { max-width: 640px; margin: 0 auto 24px; font-size: 17px; }
+  .gl-call { margin: 20px auto 0 !important; font-size: 15px !important; color: var(--muted); }
+  .gl-call a { color: var(--maroon); font-weight: 700; text-decoration: none; }
+  @media (max-width: 760px) {
+    .gl { padding-block: 40px; }
+    .gl-card { padding: 28px 20px; }
+    .gl-card .btn { display: block; }
+  }
+</style>
