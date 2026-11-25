@@ -1,44 +1,64 @@
 ---
-// /financing, rebuilt from the live Duda page (2026-10-18).
-// The live page is only the eyebrow and H1: no lender, terms, or form.
-// Copy changes vs live:
-// - Meta description promised "Apply online today and get a quick decision";
-//   there is no online application, so it now says to call.
-// - Added one plain section using the homepage FAQ's own wording ("We offer
-//   financing options for roof replacement and repairs"), plus breadcrumb,
-//   trust strip, quote/call buttons, closing call band.
-// - 2026-10-20 copy pass: plain, warm rewrite; eyebrow "Flexible Financing
-//   Options" -> "Financing" ("flexible" is not confirmed); H1 and title now
-//   name roof financing and Edinburg.
-// 2026-11-09 Edel's email: several lenders, rates 0% to 18% depending on
-//   credit; he will try to get an application link from one lender.
-// Rates kept OFF the page until Eddie confirms with Edel they are APR
-//   (Eddie, 2026-11-09). Open (Edel): application link; APR or not. No approval or
-//   "no credit" claims.
+// /financing, GoodLeap version (2026-11-25).
+// Edel's lender is now GoodLeap (GoodLink email 11/24). GoodLeap's partner
+// guide rules for this page:
+// - Their approved paragraph word for word (the intro body below) and their
+//   approved logo (src/assets/goodleap/). No loan claims of our own: no
+//   rates, APR, terms, "no credit check" or "guaranteed approval".
+// - One button to Edel's QuickLink (goodleap.quickLink in data/site.ts),
+//   added only after GoodLeap approves the page.
+// - noindex (keeps bots and fake applications out) and out of the sitemap
+//   (EXCLUDE in scripts/sitemap-lastmod.mjs). Stays noindex after launch.
+// - English only. /es-mx/financing stays the call-to-ask page, with no
+//   GoodLeap copy.
+// History: 2026-10-18 rebuilt from the live Duda page; 2026-11-09 rates kept
+// off until confirmed as APR (still off: GoodLeap's form shows estimates).
 import InnerPage from '../layouts/InnerPage.astro';
 import hero from '../assets/home/truck-house.jpeg';
-import { site } from '../data/site';
+import { site, goodleap } from '../data/site';
+
+// GoodLeap's approved logo, if it has been added (see the folder's README).
+const logos = import.meta.glob<{ default: ImageMetadata }>('../assets/goodleap/*.{svg,png,jpg,jpeg,webp}', { eager: true });
+const logo = Object.values(logos)[0]?.default;
+const logoHtml = logo
+  ? `<img src="${logo.src}" alt="GoodLeap" width="200" height="${Math.round((200 * logo.height) / logo.width)}" loading="lazy" style="display:block;height:auto;margin-bottom:8px" />`
+  : '';
+
+// GoodLeap's approved copy. Do not edit.
+const approved =
+  'We have partnered with GoodLeap to offer flexible payment options for your project. GoodLeap uses a soft credit check until funding and the highest score from all 3 bureaus to see if you qualify. It also takes just a few minutes to get started.';
 ---
 <InnerPage
-  title="Roof Financing in Edinburg, TX | Edel Roofing & Construction"
-  description="Edel Roofing offers financing for roof replacement and repairs in Edinburg and the Rio Grande Valley. Call (956) 422-3335 to ask about your options."
+  title="Roof Financing | Edel Roofing & Construction"
+  description="Flexible payment options for your roofing project through our partner GoodLeap. Start with a free roof inspection in Edinburg and the Rio Grande Valley."
+  noindex={true}
   alternates={{ en: '/financing', es: '/es-mx/financing' }}
   crumbs={[
     { label: 'Home', href: '/' },
     { label: 'Financing', href: '/financing' },
   ]}
-  hero={{ eyebrow: 'Financing', title: 'Roof Financing in Edinburg', bg: hero }}
+  hero={{
+    eyebrow: 'Financing',
+    title: 'Roof Financing',
+    lead: 'Pay for your new roof or repair over time, with flexible payment options through our partner GoodLeap.',
+    bg: hero,
+  }}
   intro={{
-    title: 'Pay for your roof over time',
-    body: [
-      "A new roof or a big repair can come up when you weren't planning for it. We offer financing for roof replacement and repairs in Edinburg and the Valley.",
-      `When you call <a href="${site.phoneHref}">${site.phone}</a> to set up your free inspection, ask us about financing. You'll get a written estimate before any work starts, so you know exactly how much you'd be financing.`,
+    title: 'Financing with GoodLeap',
+    body: [...(logoHtml ? [logoHtml] : []), approved],
+    cta: { label: 'Get Started', href: goodleap.quickLink || '#financing' },
+  }}
+  benefits={{
+    title: 'How it works',
+    items: [
+      { title: 'Free inspection', body: "A licensed Edel roofer checks your roof and gives you a written estimate before any work starts, so you know how much you'd be financing." },
+      { title: 'Apply with GoodLeap', body: 'Click Get Started to see your options and apply.' },
+      { title: 'We get to work', body: 'Once your financing is set, we schedule your project.' },
     ],
-    cta: { label: 'Get Instant Estimate', href: '/contact-us#estimate', roofle: true },
   }}
   closing={{
     title: 'Start with a free inspection',
-    body: 'A licensed Edinburg roofer checks your roof and writes up the estimate. Then you decide how you want to pay for it.',
-    cta: { label: 'Contact Us', href: '/contact-us' },
+    body: `Have questions about financing? Call <a href="${site.phoneHref}">${site.phone}</a> and ask when you set up your inspection.`,
+    cta: { label: 'Schedule a Free Inspection', href: '/book-an-inspection' },
   }}
 />

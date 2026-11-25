@@ -106,3 +106,12 @@ export const mainNavEs: NavItem[] = [
     ],
   },
 ];
+
+// GoodLeap financing (2026-11-25). quickLink is Edel's custom GoodLeap
+// QuickLink, from GoodLeap's 11/24 email to Edel. Leave it empty until
+// GoodLeap reviews and approves /financing: their partner guide says to add
+// the link once the page is approved. While empty, the Get Started button
+// stays on the page but goes nowhere.
+export const goodleap = {
+  quickLink: '',
+};
